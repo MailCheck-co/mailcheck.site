@@ -143,3 +143,10 @@
 .fixed {
   overflow: hidden;
 }
+
+
+@media only screen and (max-width: 320px) {
+  .container {
+    padding: 0 25px;
+  }
+}

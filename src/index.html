@@ -2,7 +2,9 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js gt-ie9 ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js gt-ie9"> <!--<![endif]-->
-  <head>
+<html lang="en">
+
+<head>
     <!--
 
       Description:
@@ -14,16 +16,13 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- #DNS prefetching -->
-    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers -->
-    <link rel="dns-prefetch" href="//ajax.googleapis.com">
-    <link rel="dns-prefetch" href="//use.typekit.net">
-    <link rel="dns-prefetch" href="//google-analytics.com">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <!-- #Asset Prefetching -->
-    <!-- Fetch and Download Assets before requested by the user  -->
-    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:resource-prefetching -->
-    <link rel="prefetch" href="">
+    <title>Mailcheck</title>
+    <meta name="description" content="">
+    <meta name="robots" content="all">
 
     <!-- #Page Prefetching -->
     <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
@@ -31,197 +30,348 @@
 
     <!-- #Typekit -->
 
-    <title>Sassy Starter</title>
-    <meta name="description" content="">
-    <meta name="robots" content="all">
-
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <!-- http://mathiasbynens.be/notes/rel-shortcut-icon -->
     <!-- http://mathiasbynens.be/notes/touch-icons -->
     <link rel="icon" type="image/ico" href="favicon.ico">
-    <link rel="icon" type="image/png" href="/icons/favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- CSS, you gotta have style -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet" media="all" onload="if(media!='all')media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
     <!-- Modernizer, cause some browsers suck -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
+</head>
+<body>
 
-
-    <script src="js/app.js"></script>
-    <!-- Google Analytics -->
-
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-
-    </head>
-  <body>
-
-  <header>
-
-      <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100px"  height="50px" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 200 100" xml:space="preserve" enable-background="new 0 0 200 100">
-        <path id="symbol" d="M84.8 7.4L91 7.5 91 0h6.5v7.1h5.4V0h6.8v7.2h5.6V0l5.9 0v14.8l-5.6 5.6 1.5 23.7c0 0 16.8 0.5 38.5 2.7 16.8 1.7 44.4 6.8 44.4 6.8s-47.1-6.3-100.4-6.3C50.3 47.3 0 53.7 0 53.7s27-4.9 42.3-6.5c14.3-1.5 40.2-3 40.2-3L84 20.5l-5.2-5.1V0h6L84.8 7.4 84.8 7.4zM32.4 98.1v-2.6L7.2 96.5 32.4 98.1zM192.1 96.4l-25.2 1.9v-2.7L192.1 96.4z" style="clip-rule:evenodd;fill-rule:evenodd;fill:#D5AA6D"/>
-        <path id="logo" d="M160.4 95.6v4.3h-1.2v-5.4h2.8v1.1H160.4L160.4 95.6 160.4 95.6zM155.5 99.9v-2.2h-1.8v2.2h-1.2v-5.4h1.2v2.1h1.8v-2.1h1.2v5.4H155.5L155.5 99.9 155.5 99.9zM148.9 99.9v-3.4l-2.2 3.4h-1v-5.4h1.2v3.3l2.2-3.3h1v5.4H148.9L148.9 99.9 148.9 99.9zM142.5 95.6v4.3h-1.2v-4.3h-1v-1.1h3.3v1.1H142.5L142.5 95.6 142.5 95.6zM137.7 99.9l-1.2-4-1.2 4h-1.2l1.7-5.4h1.4l1.7 5.4H137.7L137.7 99.9 137.7 99.9zM130 96l-0.6 1.9h1.2L130 96 130 96 130 96zM131.3 99.9l-0.3-1H129l-0.4 1h-1.3l2.1-5.4h1l2.1 5.4H131.3L131.3 99.9 131.3 99.9zM123.3 95.5c-0.5 0-0.8 0.2-1.1 0.5-0.3 0.3-0.4 0.7-0.4 1.2 0 0.5 0.1 0.9 0.4 1.2 0.3 0.3 0.7 0.5 1.1 0.5 0.6 0 1-0.3 1.3-0.9h1.3c-0.2 0.6-0.5 1.1-1 1.4-0.5 0.4-1 0.6-1.6 0.6-0.8 0-1.4-0.3-2-0.8-0.5-0.5-0.8-1.2-0.8-2 0-0.8 0.3-1.4 0.8-2 0.5-0.5 1.2-0.8 2-0.8 0.6 0 1.2 0.2 1.6 0.5 0.5 0.4 0.8 0.8 1 1.5h-1.3C124.3 95.8 123.9 95.5 123.3 95.5L123.3 95.5 123.3 95.5zM117.1 99.9v-2.2h-1.9v2.2h-1.2v-5.4h1.2v2.1h1.9v-2.1h1.2v5.4H117.1L117.1 99.9 117.1 99.9zM110.2 96c-0.3-0.3-0.7-0.5-1.1-0.5-0.4 0-0.8 0.2-1.1 0.5-0.3 0.3-0.4 0.7-0.4 1.2s0.1 0.9 0.4 1.2c0.3 0.3 0.7 0.5 1.1 0.5 0.5 0 0.8-0.2 1.1-0.5 0.3-0.3 0.4-0.7 0.4-1.2C110.7 96.7 110.5 96.3 110.2 96L110.2 96 110.2 96zM111.1 99.2c-0.5 0.5-1.2 0.8-2 0.8-0.8 0-1.4-0.3-2-0.8-0.5-0.5-0.8-1.2-0.8-2 0-0.8 0.3-1.5 0.8-2 0.5-0.5 1.2-0.8 2-0.8 0.8 0 1.4 0.3 2 0.8 0.5 0.5 0.8 1.2 0.8 2C111.9 98 111.6 98.6 111.1 99.2L111.1 99.2 111.1 99.2zM105 99.9h-1.4l-1.6-2.5v2.5h-1.2v-5.4h1.2V97l1.6-2.5h1.3l-1.8 2.7L105 99.9 105 99.9 105 99.9zM92.2 94.2c-0.3 0-0.6-0.1-0.9-0.4-0.2-0.3-0.3-0.5-0.3-0.9h0.7c0 0.2 0 0.3 0.1 0.4 0.1 0.1 0.2 0.2 0.3 0.2 0.3 0 0.5-0.2 0.5-0.6h0.7c0 0.3-0.1 0.6-0.4 0.9C92.9 94.1 92.6 94.2 92.2 94.2L92.2 94.2 92.2 94.2zM93.2 99.9v-3.4L91 99.9h-1v-5.4h1.2v3.3l2.2-3.3h1v5.4H93.2L93.2 99.9 93.2 99.9zM84.6 97.6c-0.1-0.1-0.3-0.1-0.6-0.1h-0.3v1.3H84c0.6 0 0.8-0.2 0.8-0.6C84.8 97.9 84.7 97.7 84.6 97.6L84.6 97.6 84.6 97.6zM85.4 99.5c-0.3 0.3-0.8 0.4-1.4 0.4h-1.5v-5.4h1.2v2c0.7 0 1.2 0.1 1.6 0.3 0.5 0.3 0.7 0.7 0.7 1.4C86 98.8 85.8 99.2 85.4 99.5L85.4 99.5 85.4 99.5zM86.4 99.9v-5.4h1.2v5.4H86.4L86.4 99.9 86.4 99.9zM78.4 97.6h-0.7v1.2h0.6c0.5 0 0.7-0.2 0.7-0.6C79.1 97.8 78.9 97.6 78.4 97.6L78.4 97.6 78.4 97.6zM78.2 95.6h-0.5v1.1h0.4c0.4 0 0.7-0.2 0.7-0.6C78.8 95.7 78.6 95.6 78.2 95.6L78.2 95.6 78.2 95.6zM79.4 97c0.6 0.2 0.9 0.6 0.9 1.3 0 1.1-0.6 1.7-1.9 1.7h-1.8v-5.4h1.8c0.5 0 0.9 0.1 1.2 0.3 0.3 0.2 0.5 0.6 0.5 1.1C80 96.4 79.8 96.7 79.4 97L79.4 97 79.4 97zM72.7 96c-0.3-0.3-0.7-0.5-1.1-0.5-0.4 0-0.8 0.2-1.1 0.5-0.3 0.3-0.4 0.7-0.4 1.2s0.2 0.9 0.4 1.2c0.3 0.3 0.7 0.5 1.1 0.5 0.5 0 0.8-0.2 1.1-0.5 0.3-0.3 0.4-0.7 0.4-1.2C73.1 96.7 73 96.3 72.7 96L72.7 96 72.7 96zM73.5 99.2c-0.5 0.5-1.2 0.8-2 0.8-0.8 0-1.4-0.3-2-0.8-0.5-0.5-0.8-1.2-0.8-2 0-0.8 0.3-1.5 0.8-2 0.5-0.5 1.2-0.8 2-0.8 0.8 0 1.4 0.3 2 0.8 0.5 0.5 0.8 1.2 0.8 2C74.3 98 74.1 98.6 73.5 99.2L73.5 99.2 73.5 99.2zM65.7 95.6v4.3h-1.2v-5.4h2.8v1.1H65.7L65.7 95.6 65.7 95.6zM60.7 96c-0.3-0.3-0.7-0.5-1.1-0.5-0.4 0-0.8 0.2-1.1 0.5-0.3 0.3-0.4 0.7-0.4 1.2s0.1 0.9 0.4 1.2c0.3 0.3 0.7 0.5 1.1 0.5 0.5 0 0.8-0.2 1.1-0.5 0.3-0.3 0.4-0.7 0.4-1.2C61.1 96.7 61 96.3 60.7 96L60.7 96 60.7 96zM61.5 99.2c-0.5 0.5-1.2 0.8-2 0.8-0.8 0-1.4-0.3-2-0.8-0.5-0.5-0.8-1.2-0.8-2 0-0.8 0.3-1.5 0.8-2 0.5-0.5 1.2-0.8 2-0.8 0.8 0 1.4 0.3 2 0.8 0.5 0.5 0.8 1.2 0.8 2C62.3 98 62.1 98.6 61.5 99.2L61.5 99.2 61.5 99.2zM54 99.9l-1.2-4-1.2 4h-1.2l1.7-5.4h1.4l1.7 5.4H54L54 99.9 54 99.9zM46.3 96l-0.6 1.9h1.2L46.3 96 46.3 96 46.3 96zM47.6 99.9l-0.3-1h-1.9l-0.4 1h-1.3l2.1-5.4h1l2.1 5.4H47.6L47.6 99.9 47.6 99.9zM40.6 99.9v-2.2h-1.8v2.2h-1.2v-5.4h1.2v2.1h1.8v-2.1h1.2v5.4H40.6L40.6 99.9zM31.7 59h-9.5v2.9l2.4 0.5V79h-9.4V62.3l2.4-0.5V59H8.2v2.9l2.5 0.5v16.9l-2.5 0.5v2.8h19.7v5.7h4.4l0.2-9.3h-3.2V62.3l2.4-0.5V59zM34.1 59v2.9l2.5 0.5v16.9l-2.5 0.5v2.8h9.5v-2.8l-2.5-0.5v-1l9.3-9.7 0.1 0v10.7l-2.4 0.5v2.8h9.5v-2.8l-2.5-0.5V62.3l2.5-0.5V59h-9.5v2.9l2.4 0.5v1.3l-9.3 9.6-0.1 0V62.3l2.5-0.5V59H34.1zM59 59v6.3h3.5l0.2-2.6h4.2v16.6l-2.5 0.5v2.8H74v-2.8l-2.5-0.5V62.6h4.2l0.2 2.6h3.5V59H59zM86.3 72.7h5.3L89 64.4h-0.1L86.3 72.7 86.3 72.7zM77.9 79.8l1.6-0.2 7-20.5h4.7l7 20.5 1.6 0.2v2.8h-7.8v-2.8l1.6-0.3-1-3.2h-7.5l-1 3.2 1.6 0.3v2.8h-7.8V79.8zM111.1 68.7c-0.1 2.4-0.4 4.4-0.8 6.1-0.5 1.7-1.1 3.1-1.8 4.2h9V62.6h-6L111.1 68.7 111.1 68.7zM124.4 88.4h-4.2v-5.8h-14.1v5.8h-4.3l-0.3-9.4h1.8c0.8-0.7 1.5-1.9 2.1-3.4 0.6-1.6 1-3.9 1.1-6.9l0.4-6.4-2.2-0.5V59h19.9v2.9l-2.4 0.5V79h2.7L124.4 88.4zM141.5 68.6h-7.8v-5.9h7.4l0.2 2.8h3.5V59h-18.2v2.9l2.4 0.5v16.9l-2.4 0.5v2.8h18.2v-6.4h-3.5l-0.2 2.8h-7.4v-6.7h7.8V68.6zM162.6 62.6v16.6l-2.5 0.5v2.8h9.5v-2.8l-2.5-0.5V62.3l2.5-0.5V59h-20.6v2.9l2.4 0.5-0.1 7.4c0 3.5-0.3 5.9-0.8 7.1-0.5 1.3-1.4 2-2.9 2.1h-0.6v3.6h1.1c2.6 0 4.6-1 5.8-3 1.2-2 1.9-5.3 2-9.9l0.1-7.1H162.6zM178.7 71.4V79h4c1.3 0 2.3-0.4 3-1.1 0.7-0.7 1.1-1.7 1.1-2.8 0-1.1-0.3-2-1-2.6-0.7-0.7-1.7-1-3-1H178.7L178.7 71.4zM181.1 59v2.9l-2.5 0.5V59H181.1L181.1 59zM178.7 59v8.7h4c2.7 0 4.8 0.7 6.3 2 1.5 1.3 2.3 3.1 2.3 5.3 0 2.3-0.8 4.1-2.3 5.5-1.6 1.4-3.7 2.1-6.3 2.1h-11v-2.8l2.5-0.5V62.3l-2.5-0.5V59H178.7z" style="clip-rule:evenodd;fill-rule:evenodd;fill:#FFF"/>
-        </svg>
-      </div>
-      <div class="burger">
-          <a class="a" href="#"><span></span></a>
-      </div>
-
-  </header>
-
-  <div class="container">
-    <div class="pagination">
-        <a class="arrow" href="http://citadel-consult.com/">Главная</a>
-        <a class="arrow" href="http://citadel-consult.com/blog/">Блог</a>
-        <a class="arrow active" href="#">Компания в Канаде</a>
+<!--Header-->
+<header role="banner">
+    <div class="wrapper-header">
+        <a class="logo" href="/"><img src="/img/logo.png" width="138" height="27" alt="mail"></a>
+        <nav class="header-nav" role="navigation">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+            <a class="nav-link" href="#faq">FAQ</a>
+        </nav>
+        <a href="https://app.mailcheck.co/"><button class="btn btn-sign-in">sign in</button></a>
     </div>
-  </div>
-  <div class="container">
-      <h1>Компания в Канаде</h1>
+</header>
 
-      <p>Респектабельная юрисдикция с высокой репутацией – именно так можно описать Канаду в нескольких словах. Ниже мы
-          расскажем в каких случаях и для каких целей стоит учредить компанию в Канаде или купить полочную (готовую)
-          компанию в Канаде.
+<!--Mobile menu-->
+<span class="burger" id="burger"></span>
+<nav class="mobile-menu" role="navigation" id="mobile-menu">
+    <a class="nav-link mobile-menu-links" href="#features">Features</a>
+    <a class="nav-link mobile-menu-links" href="#pricing">Pricing</a>
+    <a class="nav-link mobile-menu-links" href="#">About Us</a>
+    <a class="nav-link mobile-menu-links" href="#contact-us">Contact Us</a>
+    <a class="nav-link mobile-menu-links" href="#faq">FAQ</a>
+    <a href="https://app.mailcheck.co/"><button class="btn btn-sign-in mobile-btn">sign in</button></a>
+</nav>
 
-      <p>Limited Partnership, или сокращенно LP, – одна из самых востребованных и часто используемых
-          организационно-правовых форм.</p>
 
-      <p class="b">Почему наши клиенты выбирают Канаду?</p>
+<!--Manage customers...-->
+<main class="manage-customers" role="main">
+    <div class="container">
+        <div class="wrapper-main">
+            <h1 class="title">manage all your customers<br>
+                in one place</h1>
+            <p class="main-text">Take control over your customers, folter all the bots.
+                Performance tracker for Media Buying Teams, Agencies and Affiliates.</p>
+            <div class="main-buttons">
+                <a href="https://app.mailcheck.co/"><button class="btn btn-live-demo">live demo</button>
+                  <button class="btn btn-start">start</button></a>
+            </div>
+            <p class="scroll-text">scroll to see more</p>
+            <div class="point"></div>
+        </div>
+    </div>
+</main>
 
-      <p><span class="b">Во-первых,</span> из соображений отсутствия налогов при выполнении определенных условий. Аналогично британским ограниченным партнерствам, канадские LP являются транспарентными (прозрачными) для целей налогообложения. Это означает, что партнерство само по себе не платит налоги в Канаде. Обязанность по уплате налогов возлагается на каждого отдельно взятого партнера. В классической ситуации номинальными партнерами являются компании или физические лица из офшорных юрисдикций,
-          что позволяет не платить налоги в принципе.</p>
 
-      <p>Если же партнер является канадским резидентом, то ему необходимо включать прибыль,
-          полученную им в качестве партнера LP, в свою налоговую декларацию.</p>
+<!--Welcome to the featuress-->
+<section class="welcome" id="features" >
 
-      <p><span class="b">Во-вторых,</span> в Канаде, в отличиe от Великобритании, отсутствуют требования подачи информации о лицах с существенным контролем (persons with significant control) в государственные реестры, что весьма неплохо,
-          если вы не желаете раскрывать факт владения иностранной компанией широкой публике.</p>
+        <div class="wrapper-welcome">
+            <h2 class="title title-welcome">welcome to the features</h2>
+            <p class="text-thin text-welcome">Take control over your customers, folter all the bots.
+                Performance tracker for
+                Media Buying Teams, Agencies and Affiliates.</p>
+            <div class="welcome-flex">
+                <img class="mail" src="img/mail-float.png" width="742" height="575" alt="mail">
+                <ul class="welcome-items">
+                    <li>
+                        <span class="digits">01</span>
+                        <p class="text-thin item">Performance tracker for Media Buying Teams, Agencies and Affiliates.</p>
+                    </li>
+                    <li>
+                        <span class="digits">02</span>
+                        <p class="text-thin item">Take control over your customers, folter all the bots. </p>
+                    </li>
+                    <li>
+                        <span class="digits">03</span>
+                        <p class="text-thin item">Take control over your customers, folter all the bots. Performance tracker
+                            for
+                            Media Buying </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-      <p>Не стоит, однако, забывать о некоторых минусах, связанных с Канадой. Например, важно отметить тот факт, что Канада не является участницей Гаагской конвенции, отменяющей требование легализации иностранных официальных документов от 05.10.1961, что несколько усложняет процедуру легализации документов для использования их на территории иностранного государства. Такая сложность носит исключительно технический характер,
-          ведь документы могут быть легализированы для конкретной страны посредством консульской легализации.</p>
+</section>
 
-      <p class="b">Процедура регистрации компании в Канаде.</p>
 
-      <p>По сути, у вас есть два варианта покупки канадской компании:</p>
+<!--Choose your audience-->
+<section class="choose-your" id="choose-your">
+    <div class="container">
+        <div class="wrapper-choose">
+            <h2 class="title">choose your audience</h2>
+            <input class="read-more-checkbox" type="checkbox" id="read-more">
+            <p class="text-thin art">Now you can choose your audience.
+                Only real customers! Performance tracker for Media Buying Teams, Agencies and Affiliates.
+                Now you can choose your audience. Only real customers! Performance tracker for Media Buying Teams,
+                Agencies and Affiliates. Now you can choose your audience.<br>
+                Only real customers! Performance tracker for Media Buying Teams, Agencies and Affiliates.
+                Now you can choose your audience. Only real customers! </p>
+            <p class="text-thin art">Performance tracker for Media Buying Teams, Agencies and Affiliates. Now you can
+                choose your audience. Only real customers!
+                Performance tracker for Media Buying Teams, Agencies and Affiliates.<br>
+                Now you can choose your audience. Only real customers!
+                Performance tracker for Media Buying Teams, Agencies and Affiliates.
+                Now you can choose your audience. Only real customers! Performance tracker for Media Buying Teams,
+                Agencies and Affiliates.</p>
+            <label class="read-more-label" for="read-more"></label>
+        </div>
+    </div>
+</section>
 
-      <ul>
-          <li>Вы можете купить готовую (полочную) компанию. Этот вариант будет интересен в том случае, если вы хотите
-              сэкономить время на процедуре регистрации компании. Единственный минус – вы лишаетесь возможности выбора
-              имени вашей компании, как если бы вы регистрировали канадскую компанию «с нуля». Полочные компании
-              предоставляются по умолчанию с полным номинальным сервисом партнеров;
-          </li>
-          <li>Вы можете учредить новую компанию с тем наименованием, которое вам по нраву, при условии, конечно, что аналогичные названия ранее не были зарегистрированы. Учредить компанию
-              организационно-правовой формы LP в Канаде могут минимум 2 партнера: один ограниченный партнер и один генеральный партнер. Но следует заметить, что одно и то же лицо может быть как генеральным партнером,
-              так и ограниченным партнером («one man company»).  Партнерами могут быть физические лица, либо компании из любых стран.
-          </li>
-      </ul>
 
-      <p class="b">Структура партнерства:</p>
+<!--Pricing plans-->
+<section id="pricing" class="cost-effective">
 
-      <ul>
-          <li><span class="b">Генеральный партнер (General Partner).</span> Генеральные партнеры несут неограниченную персональную
-              ответственность по обязательствам LP. Управлять партнерством могут только генеральные партнеры. Заметим,
-              что если в качестве генерального партнера назначается компания (любая нерезидентная компания, не
-              канадская), сначала ее необходимо зарегистрировать как экстра-провинциальную корпорацию и получить
-              соответствующую экстра-провинциальную лицензию (для ограниченных партнеров таких требований нет).
-          </li>
-          <li><span class="b">Ограниченный партнер (Limited Partner).</span> Ответственность ограниченных
-              партнеров ограничена размерами их вклада в партнерство.
-          </li>
-      </ul>
+    <div class="wrapper-cost">
+        <h2 class="title title-cost">Cost-effective pricing plans</h2>
+        <p class="text-thin margin">Take control over your customers, folter all the bots.
+            Performance tracker for
+            Media Buying Teams, Agencies and Affiliates.</p>
+        <div class="container cards">
+            <div class="card" id="pro">
+                <h3 class="title-colored">pro</h3>
+                <span class="title lowercase">$ 10/mo</span>
+                <span class="card-features-text">  1,000
+                        emails to validate included</span>
+                <span class="card-features-text">  $0.005/1,000
+                        overage charge</span>
+                <a href="https://app.mailcheck.co/"><button class="btn btn-choose">choose</button></a>
+            </div>
+            <div class="card" id="agency">
+                <h3 class="title-colored cyan">agency</h3>
+                <span class="title lowercase">$ 30/mo</span>
+                <span class="card-features-text">  5,000
+                         emails to validate included</span>
+                <span class="card-features-text">  $0.004/1,000
+                        overage charge</span>
+                <a href="https://app.mailcheck.co/"><button class="btn btn-choose btn-cyan">choose</button></a>
+            </div>
+            <div class="card" id="enterprise">
+                <h3 class="title-colored grey">enterprise</h3>
+                <span class="title lowercase">$ 100/mo</span>
+                <span class="card-features-text">  20,000
+                        emails to validate included</span>
+                <span class="card-features-text">  $0.003/1,000
+                        overage charge</span>
+                <a href="https://app.mailcheck.co/"><button class="btn btn-choose btn-grey">choose</button></a>
+            </div>
+            <div class="card" id="custom">
+                <h3 class="title-colored red">custom</h3>
+                <span class="card-features-text">  <span class="bold">EPIC</span>
+                        100,000+
+                        emails to validate included</span>
+                <span class="card-features-text">  <span class="bold">LEGENDARY</span>
+                        1,000,000,000+
+                        emails to validate included</span>
+                <a href="https://app.mailcheck.co/"><button class="btn btn-choose btn-red">choose</button></a>
+            </div>
+        </div>
+    </div>
 
-      <p>Если вы используете услугу номинальных партнеров, управлять партнерством по факту будет лицо, которое вы, как
-          бенефициар, определите в качестве поверенного по генеральной доверенности от партнеров.
-      </p>
-      <p>В случае, если вы используете услугу номинальных партнеров, факт владения партнерством будет
-          подтверждаться трастовыми декларациями (Declaration of Trust) от каждого из номинальных партнеров.
-      </p>
+    <ul class="pagination" id="pagination">
+        <li><a class="pag-item pag-item1 active" id="pag-item1" href="#pro">pro</a></li>
+        <li><a class="pag-item pag-item2" id="pag-item2" href="#agency">agency</a></li>
+        <li><a class="pag-item pag-item3" id="pag-item3" href="#enterprise">enterprise</a></li>
+        <li><a class="pag-item pag-item4" id="pag-item4" href="#custom">custom</a></li>
+    </ul>
 
-      <p class="b">Отчетность LP в Канаде.</p>
+    <!-- Slider main container -->
+    <div class="swiper-container" id="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" id="slide1">
+                <div class="card">
+                    <h3 class="title-colored">pro</h3>
+                    <span class="title lowercase">$ 10/mo</span>
+                    <span class="card-features-text">   1,000
+                        emails to validate included</span>
+                    <span class="card-features-text">  $0.005/1,000
+                        overage charge</span>
+                    <a href="https://app.mailcheck.co/"><button class="btn btn-choose">choose</button></a>
+                </div>
+            </div>
+            <div class="swiper-slide" id="slide2">
+                <div class="card">
+                    <h3 class="title-colored cyan">agency</h3>
+                    <span class="title lowercase">$ 30/mo</span>
+                    <span class="card-features-text">  5,000
+                         emails to validate included</span>
+                    <span class="card-features-text">  $0.004/1,000
+                        overage charge</span>
+                    <a href="https://app.mailcheck.co/"><button class="btn btn-choose btn-cyan">choose</button></a>
+                </div>
+            </div>
+            <div class="swiper-slide" id="slide3">
+                <div class="card">
+                    <h3 class="title-colored grey">enterprise</h3>
+                    <span class="title lowercase">$ 100/mo</span>
+                    <span class="card-features-text">  20,000
+                        emails to validate included</span>
+                    <span class="card-features-text">  $0.003/1,000
+                        overage charge</span>
+                    <a href="https://app.mailcheck.co/"><button class="btn btn-choose btn-grey">choose</button></a>
+                </div>
+            </div>
+            <div class="swiper-slide" id="slide4">
+                <div class="card">
+                    <h3 class="title-colored red">custom</h3>
+                    <span class="card-features-text">  <span class="bold">EPIC</span>
+                        100,000+
+                        emails to validate included</span>
+                    <span class="card-features-text">  <span class="bold">LEGENDARY</span>
+                        1,000,000,000+
+                        emails to validate included</span>
+                    <a href="https://app.mailcheck.co/"><button class="btn btn-choose btn-red">choose</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <p>Партнерство обязано предоставлять лишь статистическую отчетность (Annual Return) на ежегодной основе. Отчет
-          включает в себя основные данные о структуре управления партнерством (данные о партнерах), адрес компании и
-          виды деятельности, которые компания осуществляет.</p>
 
-      <p>Требования к подаче финансовой отчетности отсутствуют.</p>
+</section>
 
-      <p class="b">Резюме.</p>
 
-      <p>Канадское LP — одна из самых популярных организационно-правовых форм компаний среди программистов,
-          разработчиков программного обеспечения, торговых компаний и поставщиков IT услуг для рынков Канады, США и
-          Европы. Партнерства используются также как агентские компании и для ведения онлайн-бизнеса (разработка
-          веб-сайтов, интернет-маркетинг, онлайн-магазины).</p>
+<!--Questions-->
+<section id="faq" class="frequent-questions">
 
-      <p>Учитывая высокую респектабельность юрисдикции, а также возможность вести деятельность без налоговых издержек,
-          такой инструмент широко используется бизнесменами по всему миру.</p>
+        <div class="wrapper-questions">
+            <h3 class="title-small">most frequent questions</h3>
 
-      <p>Компания «Цитадель – Налоговый Консалтинг» поможет вам с регистрацией, юридическим и, при необходимости,
-          бухгалтерским сопровождением компаний в Канаде «под ключ».</p>
+            <div class="accordion">
+                <div class="tab">
+                    <input class="input-radio" type="radio" id="radio1" name="acc-tabs">
+                    <label class="tab-label" for="radio1">Take control over your customers?</label>
+                    <div class="tab-content">
+                        <p class="tab-text">Now you can choose your audience. Only real customers!
+                            Performance tracker for Media Buying Teams, Agencies and Affiliates.
+                            Now you can choose your audience.</p>
+                    </div>
+                </div>
 
-      <p>Записывайтесь на консультацию прямо сейчас.</p>
+                <div class="tab">
+                    <input class="input-radio" type="radio" id="radio2" name="acc-tabs">
+                    <label class="tab-label" for="radio2">Is it possible to create carrier and use the sign?</label>
+                    <div class="tab-content">
+                        <p class="tab-text">Some text here</p>
+                    </div>
+                </div>
 
-      <div class="fb-share">
-          <div class="svg-fb"><svg height="16px" width="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="_1pbq" color="#ffffff"><path fill="#ffffff" fill-rule="evenodd" d="M8 14H3.667C2.733 13.9 2 13.167 2 12.233V3.667A1.65 1.65 0 0 1
-            3.667 2h8.666A1.65 1.65 0 0 1 14 3.667v8.566c0 .934-.733
-            1.667-1.667
-            1.767H10v-3.967h1.3l.7-2.066h-2V6.933c0-.466.167-.9.867-.9H12v-1.8c.033
-            0-.933-.266-1.533-.266-1.267 0-2.434.7-2.467
-            2.133v1.867H6v2.066h2V14z"></path></svg></div><div class="share-text">Share</div><div class="reposts-amount">5</div>
-      </div>
-  </div>
-      <div class="title-block"><h2>Оформите заявку</h2><p>и наш юрист свяжется с вами в течение 20 минут</p></div>
+                <div class="tab">
+                    <input class="input-radio" type="radio" id="radio3" name="acc-tabs">
+                    <label class="tab-label" for="radio3">Which currency is displayed in the monetary value boxes?</label>
+                    <div class="tab-content">
+                        <p class="tab-text">Some text here</p>
+                    </div>
+                </div>
 
-      <form>
-          <div class="container bottom">
-              <div class="inputs">
-                  <input type="text" name="yourName" placeholder="Ваше имя">
-                  <input type="text" name="phone" placeholder="Ваш телефон">
-                  <input type="text" name="email" placeholder="И/или ваш E-Mail адрес">
-              </div>
+                <div class="tab">
+                    <input class="input-radio" type="radio" id="radio4" name="acc-tabs">
+                    <label class="tab-label" for="radio4">Why can I not connect my equipment to your server?</label>
+                    <div class="tab-content">
+                        <p class="tab-text">Some text here</p>
+                    </div>
+                </div>
 
-              <div class="checkboxes">
-                  <p>Выберите услугу: </p>
-                  <div class="block-checkboxes">
-                      <label>
-                          <input type="checkbox" id="first-checkbox" checked>
-                          <span>консультация</span>
-                      </label>
+                <div class="tab">
+                    <input class="input-radio" type="radio" id="radio5" name="acc-tabs">
+                    <label class="tab-label" for="radio5">Why can I not upgrade the firmware?</label>
+                    <div class="tab-content">
+                        <p class="tab-text">Some text here</p>
+                    </div>
+                </div>
+            </div>
+            <img class="filter-img" src="/img/filter.png" width="444" height="568" alt="filter">
+        </div>
 
-                      <label>
-                          <input type="checkbox" id="second-checkbox">
-                          <span>покупка готовой компании</span>
-                      </label>
+</section>
 
-                      <label>
-                          <input type="checkbox" id="third-checkbox">
-                          <span>регистрация компании</span>
-                      </label>
 
-                      <label>
-                          <input type="checkbox" id="fourth-checkbox">
-                          <span>открытие счета в банке</span>
-                      </label>
-                  </div>
-              </div>
-              <button class="offer-btn" type="submit">Оформить заявку</button>
-          </div>
-      </form>
+<!--Contact us-->
+<section id="contact-us-section" class="contact-us">
+    <div class="container">
+        <form id="contact-us" class="contact-form">
+            <h2 class="title title-contact">contact us</h2>
+            <input class="input" type="text" placeholder="Name" required>
+            <input class="input" type="email" placeholder="Email" required>
+            <textarea class="input input-message" placeholder="Message" required></textarea>
+            <button class="btn btn-submit" type="submit">submit</button>
+        </form>
+    </div>
+</section>
 
-      <footer>
-          <div class="copyright">
-              Цитадель
-              <div style="font-size: 20pt; display: inline; position: relative; bottom:-8px">&reg</div>. Налоговый консалтинг 2012-2017.<br>
-              Иностранные компании, счета в банках за рубежом.<br>
-              Все права защищены.
-          </div>
-      </footer>
 
-  </body>
+<!--Footer-->
+<footer>
+    <div class="wrapper-footer">
+        <div class="footer-logo-copyright">
+            <a class="logo2" href="/"><img src="/img/logo2.png" width="162" height="27" alt="logo2"></a>
+            <span class="copyright">&#x24B8; 2017-2018 MailCheck</span>
+        </div>
+        <nav class="footer-nav" role="navigation">
+            <a class="nav-link footer-nav-link" href="#features">Features</a>
+            <a class="nav-link footer-nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link footer-nav-link" href="#">About Us</a>
+            <a class="nav-link footer-nav-link" href="#contact-us">Contact Us</a>
+            <a class="nav-link footer-nav-link" href="#">Privacy policy</a>
+            <a class="nav-link footer-nav-link" href="#">Terms and conditions</a>
+        </nav>
+        <span class="copyright2">&#x24B8; 2017-2018 MailCheck</span>
+    </div>
+</footer>
+
+
+<div class="popup-container" id="popup-block">
+    <div class="popup" id="popup-itself">
+            <span class="popup-close" id="close"></span>
+        <span class="popup-thanks">Thanks for filling out
+            our form!</span>
+        <p class="popup-text">We will look over your message and get back to you by tomorrow.
+            Your friends at MailCheck!</p>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+
+<script src="js/main.js"></script>
+
+
+</body>
 </html>
