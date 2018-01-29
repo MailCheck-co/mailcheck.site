@@ -1,0 +1,60 @@
+.digits {
+  opacity: 0.91;
+  color: #1bced4;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
+  letter-spacing: 1.9px;
+  margin: 0 0 8px 0;
+}
+
+.mail {
+  width: 100%;
+  height: 100%;
+  transform: translateY(10px) translateX(-100px);
+}
+
+.text-thin {
+  max-width: 600px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.item {
+  text-align: left;
+}
+
+.welcome-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+
+  list-style: none;
+
+  padding-left: 15px;
+
+
+
+  li {
+    max-width: 308px;
+    margin-bottom: 30px;
+  }
+}
+
+.welcome-flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wrapper-welcome {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}

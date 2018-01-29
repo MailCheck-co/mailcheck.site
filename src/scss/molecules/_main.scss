@@ -1,0 +1,78 @@
+.btn-live-demo {
+  width: 140px;
+  height: 52px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  background: transparent;
+
+  margin-right: 20px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.btn-start {
+  width: 140px;
+  height: 52px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #1bced4;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.main-buttons {
+  display: flex;
+
+  min-height: 52px;
+
+  margin-bottom: 80px;
+}
+
+.main-text {
+  max-width: 540px;
+  min-height: 68px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  /* Text style for "Take contr" */
+  letter-spacing: 0.9px;
+
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.manage-customers {
+  background: url("/img/lines.png") no-repeat;
+  background-position: center center;
+  background-size: 150% 90%;
+}
+
+.scroll-text {
+  max-width: 140px;
+  min-height: 14px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.wrapper-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 70px 0;
+}

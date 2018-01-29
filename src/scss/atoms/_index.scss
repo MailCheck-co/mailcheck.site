@@ -7,3 +7,27 @@
 // that can’t be broken down any further without ceasing to be functional.
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
+
+.container {
+  display: block;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.title {
+  max-width: 600px;
+  height: auto;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
