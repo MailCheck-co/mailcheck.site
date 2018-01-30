@@ -52,10 +52,14 @@
   margin: 0 0 40px;
 }
 
+.man {
+  position: absolute;
+
+}
 .manage-customers {
-  background: url("/img/lines.png") no-repeat;
-  background-position: center center;
-  background-size: 150% 90%;
+  background: url("/img/lines.png") no-repeat, url("/img/man.png") no-repeat;
+  background-position: 0 35%, 130% 0;
+  background-size:  100% 75%, 50%;
 }
 
 .scroll-text {
@@ -74,5 +78,5 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 70px 0;
+  padding: 70px 0 170px;
 }

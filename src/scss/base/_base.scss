@@ -7,8 +7,12 @@ html {
 }
 
 * {
+  outline: none;
   &:before,
   &:after { box-sizing: inherit; }
+  &:focus{
+    outline: none;
+  }
 }
 
 body {
@@ -23,6 +27,7 @@ a {
   background: transparent;
   text-decoration: none;
   transition: color .2s;
+  outline: none;
 }
 
 img {
@@ -36,6 +41,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family-display;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
 }

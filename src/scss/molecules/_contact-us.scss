@@ -1,0 +1,59 @@
+
+.input-email {
+  display: block;
+  box-sizing: border-box;
+  width: 420px;
+  height: 52px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+.input-message {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 420px;
+  height: 120px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  opacity: 0.4;
+  font-size: 16px;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+.input-name {
+  display: block;
+  box-sizing: border-box;
+  width: 420px;
+  height: 52px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+.wrapper-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
