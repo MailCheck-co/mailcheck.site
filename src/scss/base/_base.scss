@@ -13,8 +13,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: $color-text;
-  font-family: $font-family-default;
+  font-family: 'Roboto', sans-serif;
   min-height: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
@@ -22,7 +21,6 @@ body {
 
 a {
   background: transparent;
-  color: $color-link;
   text-decoration: none;
   transition: color .2s;
 }
