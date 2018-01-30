@@ -1,0 +1,40 @@
+.btn-sign-in {
+  width: 140px;
+  height: 52px;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, .5);
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+
+  margin-right: 20px;
+}
+
+.wrapper-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  max-width: 1280px;
+  height: 90px;
+  margin: 0 auto;
+}

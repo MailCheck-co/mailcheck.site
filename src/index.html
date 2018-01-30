@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<!--[if IE 8]>
-<html class="no-js lt-ie9 ie8"> <![endif]-->
-<!--[if IE 9]>
-<html class="no-js gt-ie9 ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js gt-ie9"> <!--<![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js gt-ie9 ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js gt-ie9"> <!--<![endif]-->
 <head>
+    <!--
+
+      Description:
+      Version:
+      Author:
+
+    //-->
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <!-- #DNS prefetching -->
-    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers -->
-    <link rel="dns-prefetch" href="//ajax.googleapis.com">
-    <link rel="dns-prefetch" href="//use.typekit.net">
-    <link rel="dns-prefetch" href="//google-analytics.com">
-
-    <!-- #Asset Prefetching -->
-    <!-- Fetch and Download Assets before requested by the user  -->
-    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:resource-prefetching -->
-    <link rel="prefetch" href="">
 
     <!-- #Page Prefetching -->
     <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
     <link rel="prefetch" href="index.html">
 
     <!-- #Typekit -->
+
     <title>Sassy Starter</title>
     <meta name="description" content="">
     <meta name="robots" content="all">
@@ -37,18 +32,84 @@
     <!-- http://mathiasbynens.be/notes/rel-shortcut-icon -->
     <!-- http://mathiasbynens.be/notes/touch-icons -->
     <link rel="icon" type="image/ico" href="favicon.ico">
-    <link rel="icon" type="image/png" href="/icons/favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- CSS, you gotta have style -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900" rel="stylesheet">
+
     <!-- Modernizer, cause some browsers suck -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
     <script src="js/app.js"></script>
-    <!-- Google Analytics -->
 </head>
 <body>
 
+<!--Header-->
+<header>
+    <div class="wrapper-header">
+        <img src="/img/logo.png">
+        <nav class="header-nav">
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#">FAQ</a>
+        </nav>
+        <button class="btn-sign-in">sign in</button>
+    </div>
+</header>
+
+<!--Manage customers...-->
+<main class="manage-customers">
+    <div class="container">
+        <div class="wrapper-main">
+            <h1 class="title">MANAGE ALL YOUR CUSTOMERS
+                IN ONE PLACE</h1>
+            <p class="main-text">Take control over your customers, folter all the bots.
+                Performance tracker for Media Buying Teams, Agencies and Affiliates.</p>
+            <div class="main-buttons">
+                <button class="btn-live-demo">live demo</button>
+                <button class="btn-start">start</button>
+            </div>
+            <p class="scroll-text">scroll to see more</p>
+            <img class="scroll" src="/img/scroller.png">
+        </div>
+    </div>
+</main>
+
+<section class="welcome">
+    <div class="container">
+        <div class="wrapper-welcome">
+            <h2 class="title">welcome to the features</h2>
+            <p class="text-thin">Take control over your customers, folter all the bots.
+                Performance tracker for Media Buying Teams, Agencies and Affiliates.</p>
+            <div class="welcome-flex">
+                <img class="mail" src="img/mail-float.png">
+                <ul class="welcome-items">
+                    <li>
+                        <h3 class="digits">01</h3>
+                        <p class="text-thin item">Performance tracker for Media Buying Teams, Agencies and Affiliates.</p>
+                    </li>
+                    <li>
+                        <h3 class="digits">02</h3>
+                        <p class="text-thin item">Take control over your customers, folter all the bots. </p>
+                    </li>
+                    <li>
+                        <h3 class="digits">03</h3>
+                        <p class="text-thin item">Take control over your customers, folter all the bots. Performance tracker
+                            for
+                            Media Buying </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer></footer>
 
 </body>
 </html>
