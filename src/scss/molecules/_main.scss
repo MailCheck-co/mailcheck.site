@@ -1,33 +1,13 @@
 .btn-live-demo {
-  width: 140px;
-  height: 52px;
-  outline: none;
-  border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, .5);
   background: transparent;
 
   margin-right: 20px;
-
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
 }
 
 .btn-start {
-  width: 140px;
-  height: 52px;
-  outline: none;
   border: none;
-  border-radius: 5px;
   background-color: #1bced4;
-
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
 }
 
 .main-buttons {
@@ -53,9 +33,9 @@
 }
 
 .manage-customers {
-  background: url("/img/lines.png") no-repeat;
-  background-position: center center;
-  background-size: 150% 90%;
+  background: url("/img/lines.png") no-repeat, url("/img/man.png") no-repeat;
+  background-position: 0 35%, 130% 0;
+  background-size:  100% 75%, 50%;
 }
 
 .scroll-text {
@@ -74,5 +54,5 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 70px 0;
+  padding: 70px 0 170px;
 }
