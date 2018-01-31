@@ -1,23 +1,23 @@
 .btn-sign-in {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, .5);
+
+  &:hover {
+    border-color: #fff;
+  }
+
+  &:active {
+    border-color: rgba(255, 255, 255, .5);
+  }
+}
+
+.burger {
+  display: none;
 }
 
 .header-nav {
   display: flex;
   justify-content: space-between;
-}
-
-.nav-link {
-  display: flex;
-  justify-content: center;
-  align-items: middle;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.8px;
-
-  margin-right: 20px;
 }
 
 .wrapper-header {
@@ -28,4 +28,47 @@
   max-width: 1280px;
   height: 90px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+
+  .btn-sign-in {
+    display: none;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin-right: 30px;
+
+    &:before, &:after {
+      position: absolute;
+      content: '';
+      background: #fff;
+      width: 40px;
+      height: 5px;
+    }
+
+    &:before {
+      top: -9px;
+    }
+
+    &:after {
+      top: 9px;
+    }
+  }
+
+  .logo {
+    margin-left: 30px;
+  }
+
+  .wrapper-header {
+    justify-content: space-between;
+  }
 }

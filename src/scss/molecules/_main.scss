@@ -3,11 +3,29 @@
   background: transparent;
 
   margin-right: 20px;
+
+  &:hover {
+    border-color: #fff;
+  }
+
+  &:active {
+    border-color: rgba(255, 255, 255, .5);
+  }
 }
 
 .btn-start {
   border: none;
   background-color: #1bced4;
+
+  &:hover {
+    color: #1bced4;
+    background-color: #fff;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: #1bced4;
+  }
 }
 
 .main-buttons {
@@ -23,7 +41,7 @@
   min-height: 68px;
   color: #ffffff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 27px;
   /* Text style for "Take contr" */
   letter-spacing: 0.9px;
@@ -33,9 +51,8 @@
 }
 
 .manage-customers {
-  background: url("/img/lines.png") no-repeat, url("/img/man.png") no-repeat;
-  background-position: 0 35%, 130% 0;
-  background-size:  100% 75%, 50%;
+  background: url("/img/lines.png") no-repeat 0 35%, url("/img/man.png") no-repeat 125% 0;
+  background-size:  100% 75%, 654px 740px;
 }
 
 .scroll-text {
@@ -55,4 +72,22 @@
   justify-content: space-around;
   align-items: center;
   padding: 70px 0 170px;
+}
+
+@media only screen and (max-width: 768px) {
+  .manage-customers {
+    background: none;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .scroll-text {
+    display: none;
+  }
+
+  .wrapper-main {
+    padding-bottom: 0;
+  }
 }

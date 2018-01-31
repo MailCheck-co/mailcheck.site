@@ -1,13 +1,91 @@
 .art {
   max-width: 520px;
-  width: 50%;
-  margin-right: 35px;
+  width: 49%;
+  margin: 0;
   text-align: left;
 }
 
+.read-more-checkbox {
+  display: none;
+}
+
+.read-more-label {
+  display: none;
+}
+
 .wrapper-choose {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .art {
+    height: 50px;
+    width: 100%;
+    margin: 0 0 25px 0;
+    overflow: hidden;
+
+    &:last-of-type{
+      display: none;
+    }
+  }
+
+  .read-more-label {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: block;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 100px;
+      top: 5px;
+      width: 5px;
+      height: 5px;
+      border-left: 2px solid #1bced4;
+      border-bottom: 2px solid #1bced4;
+      transform: rotate(-45deg);
+    }
+
+    &:before {
+      position: absolute;
+      display: block;
+      width: 100px;
+      content: 'read more';
+      color: #1bced4;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  .read-more-checkbox:checked ~ .art{
+    height: auto;
+  }
+
+  .read-more-checkbox:checked ~ .art:last-of-type{
+    display: block;
+  }
+
+  .read-more-checkbox:checked ~ .read-more-label:before {
+    content: "read less";
+  }
+
+  .read-more-checkbox:checked ~ .read-more-label:after {
+    transform: rotate(135deg) translate(3px, 2px);
+  }
+
+  .wrapper-choose {
+    position: relative;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+  }
 }

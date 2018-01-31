@@ -5,31 +5,73 @@
 .btn-choose {
   width: 160px;
   height: 52px;
-  border-radius: 5px;
   border: 1px solid rgba(85, 187, 255, 0.5);
-  outline: none;
   background: transparent;
   color: #55baff;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
   margin-bottom: 30px;
+
+  &:hover {
+    border-color: #55baff;
+    background-color: #55baff;
+    color: #fff;
+  }
+
+  &:active {
+    border-color: rgba(85, 187, 255, 0.5);
+    background: transparent;
+    color: #55baff;
+  }
 }
 
 .btn-cyan {
   border-color: rgba(30, 223, 208, 0.51);
   color: #1edfd0;
+
+  &:hover {
+    border-color: #1edfd0;
+    background-color: #1edfd0;
+    color: #fff;
+  }
+
+  &:active {
+    border-color: rgba(30, 223, 208, 0.51);
+    color: #1edfd0;
+    background: transparent;
+  }
 }
 
 .btn-grey {
   border-color: rgba(125, 125, 125, 0.5);
   color: #7d7d7d;
+
+  &:hover {
+    border-color: #7d7d7d;
+    background-color: #7d7d7d;
+    color: #fff;
+  }
+
+  &:active {
+    border-color: rgba(125, 125, 125, 0.5);
+    color: #7d7d7d;
+    background: transparent;
+  }
 }
 
 .btn-red {
   border-color: rgba(230, 81, 78, 0.51);
   color: #e6514e;
+
+  &:hover {
+    border-color: #e6514e;;
+    background-color: #e6514e;;
+    color: #fff;
+  }
+
+  &:active {
+    border-color: rgba(230, 81, 78, 0.51);
+    color: #e6514e;
+    background: transparent;
+  }
 }
 
 .card {
@@ -56,7 +98,7 @@
 }
 
 .margin {
-  margin-bottom: 35px;
+  margin-bottom: 47px;
 }
 
 .lowercase {
@@ -77,6 +119,11 @@
   margin: 25px 0 5px;
 }
 
+.title-cost {
+  margin-bottom: 32px;
+}
+
+
 .cyan {
   color: #1edfd0;
 }
@@ -93,5 +140,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 230px;
+  }
 }
