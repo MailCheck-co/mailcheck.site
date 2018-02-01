@@ -20,7 +20,7 @@
 
     <!-- #Typekit -->
 
-    <title>Sassy Starter</title>
+    <title>Mailcheck</title>
     <meta name="description" content="">
     <meta name="robots" content="all">
 
@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <!-- Modernizer, cause some browsers suck -->
 
@@ -51,20 +51,21 @@
 <!--Header-->
 <header>
     <div class="wrapper-header">
-        <a href="/"><img src="/img/logo.png" width="138px" height="27px" alt="mail"></a>
+        <a class="logo" href="/"><img src="/img/logo.png" width="138px" height="27px" alt="mail"></a>
         <nav class="header-nav">
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
             <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Contact Us</a>
-            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+            <a class="nav-link" href="#faq">FAQ</a>
         </nav>
         <button class="btn btn-sign-in">sign in</button>
+        <span class="burger"></span>
     </div>
 </header>
 
 <!--Manage customers...-->
-<main class="manage-customers">
+<main id="features" class="manage-customers">
     <div class="container">
         <div class="wrapper-main">
             <h1 class="title">manage all your customers<br>
@@ -119,6 +120,7 @@
     <div class="container">
         <div class="wrapper-choose">
             <h2 class="title">choose your audience</h2>
+            <input class="read-more-checkbox" type="checkbox" id="read-more">
             <p class="text-thin art">Now you can choose your audience.
                 Only real customers! Performance tracker for Media Buying Teams, Agencies and Affiliates.
                 Now you can choose your audience. Only real customers! Performance tracker for Media Buying Teams,
@@ -132,16 +134,17 @@
                 Performance tracker for Media Buying Teams, Agencies and Affiliates.
                 Now you can choose your audience. Only real customers! Performance tracker for Media Buying Teams,
                 Agencies and Affiliates.</p>
+            <label class="read-more-label" for="read-more"></label>
         </div>
     </div>
 </section>
 
 
 <!--Pricing plans-->
-<section class="cost-effective">
+<section id="pricing" class="cost-effective">
     <div class="container">
         <div class="wrapper-cost">
-            <h2 class="title">Cost-effective pricing plans</h2>
+            <h2 class="title title-cost">Cost-effective pricing plans</h2>
             <p class="text-thin margin">Take control over your customers, folter all the bots.
                 Performance tracker for<br>
                 Media Buying Teams, Agencies and Affiliates.</p>
@@ -153,7 +156,7 @@
                         included events</span>
                 <span class="card-features-text">  $0.04/1,000
                         overage charge</span>
-                <button class="btn-choose">choose</button>
+                <button class="btn btn-choose">choose</button>
             </div>
             <div class="card">
                 <h3 class="title-colored cyan">agency</h3>
@@ -162,7 +165,7 @@
                         included events</span>
                 <span class="card-features-text">  $0.04/1,000
                         overage charge</span>
-                <button class="btn-choose btn-cyan">choose</button>
+                <button class="btn btn-choose btn-cyan">choose</button>
             </div>
             <div class="card">
                 <h3 class="title-colored grey">enterprise</h3>
@@ -171,7 +174,7 @@
                         included events</span>
                 <span class="card-features-text">  $0.04/1,000
                         overage charge</span>
-                <button class="btn-choose btn-grey">choose</button>
+                <button class="btn btn-choose btn-grey">choose</button>
             </div>
             <div class="card">
                 <h3 class="title-colored red">custom</h3>
@@ -181,14 +184,15 @@
                 <span class="card-features-text">  <span class="bold">LEGENDARY</span>
                         1,000,000,000+
                         included events</span>
-                <button class="btn-choose btn-red">choose</button>
+                <button class="btn btn-choose btn-red">choose</button>
             </div>
         </div>
     </div>
 </section>
 
+
 <!--Questions-->
-<section class="frequent-questions">
+<section id="faq" class="frequent-questions">
     <div class="container">
         <div class="wrapper-questions">
             <h3 class="title-small">most frequent questions</h3>
@@ -241,21 +245,39 @@
     </div>
 </section>
 
+
 <!--Contact us-->
-<section class="contact-us">
+<section id="contact-us" class="contact-us">
     <div class="container">
-    <div class="wrapper-contact">
         <form class="contact-form">
-            <h2 class="title">contact us</h2>
+            <h2 class="title title-contact">contact us</h2>
             <input class="input" type="text" placeholder="Name" required>
             <input class="input" type="email" placeholder="Email" required>
             <textarea class="input input-message" placeholder="Message" required></textarea>
             <button class="btn btn-submit">submit</button>
         </form>
     </div>
-    </div>
 </section>
-<footer></footer>
+
+
+<!--Footer-->
+<footer>
+    <div class="wrapper-footer">
+        <div class="footer-logo-copyright">
+            <a class="logo2" href="/"><img src="/img/logo2.png" width="162px" height="27px" alt="logo2"></a>
+            <span class="copyright">&#x24B8 2017 MailCheck</span>
+        </div>
+        <nav class="footer-nav">
+            <a class="nav-link footer-nav-link" href="#features">Features</a>
+            <a class="nav-link footer-nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link footer-nav-link" href="#">About Us</a>
+            <a class="nav-link footer-nav-link" href="#contact-us">Contact Us</a>
+            <a class="nav-link footer-nav-link" href="#">Privacy policy</a>
+            <a class="nav-link footer-nav-link" href="#">Terms and conditions</a>
+        </nav>
+        <span class="copyright2">&#x24B8 2017 MailCheck</span>
+    </div>
+</footer>
 
 </body>
 </html>

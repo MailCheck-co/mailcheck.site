@@ -1,6 +1,16 @@
 .btn-submit {
   border: none;
-  background-image: linear-gradient(-55deg, #1bced4 0%, #1bced4 100%);
+  background-color: #1bced4;
+
+  &:hover {
+    color: #1bced4;
+    background-color: #fff;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: #1bced4;
+  }
 }
 
 .contact-form {
@@ -9,12 +19,23 @@
   align-items: center;
 }
 
+.contact-us {
+  background: url("/img/city.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 117px 0 117px;
+}
+
 .input-message {
   height: 120px;
   margin-bottom: 30px;
+  resize: none;
 
   &::placeholder {
     color: #fff;
   }
 }
 
+.title-contact {
+  margin-bottom: 81px;
+}

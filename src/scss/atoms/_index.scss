@@ -19,6 +19,17 @@
   letter-spacing: 0.8px;
   text-transform: uppercase;
   color: #ffffff;
+
+  transition: all .25s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    color: #fff;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 .container {
@@ -48,6 +59,28 @@
 
   &::placeholder {
     color: #fff;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 1px #fff inset;
+    font-weight: 500;
+  }
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+
+  margin-right: 20px;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
