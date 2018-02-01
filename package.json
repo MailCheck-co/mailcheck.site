@@ -13,7 +13,9 @@
     "build": "cross-env NODE_ENV=production; gulp build",
     "deploy": "gulp build && firebase deploy --only hosting --token 1/q5FZwCX2ol9368imSkEp1BhietIc48tBq5IYflabfTGas_UjjI3K0horooa5HlmD"
   },
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^4.1.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",

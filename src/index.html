@@ -39,6 +39,8 @@
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
+
 
     <!-- Modernizer, cause some browsers suck -->
 
@@ -148,20 +150,26 @@
                 Media Buying Teams, Agencies and Affiliates.</p>
 
 
-            <div class="c-slider" id="hammer-slider">
-                <div class="c-slider__container">
-                    <div class="c-slider__slide">
-                        <span style="color: red">1231311231</span>
-                    </div>
-                    <div class="c-slider__slide">
-                        <span style="color: red">1231311231</span>
-                    </div>
-                    <div class="c-slider__slide">
-                        <span style="color: red">1231311231</span>
-                    </div>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
                 </div>
-            </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
 
 
 
@@ -296,6 +304,7 @@
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
