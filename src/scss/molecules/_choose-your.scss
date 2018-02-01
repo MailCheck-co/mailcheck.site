@@ -5,12 +5,14 @@
   text-align: left;
 }
 
-.read-more-checkbox {
-  display: none;
-}
+.read-more {
+  &-checkbox {
+    display: none;
+  }
 
-.read-more-label {
-  display: none;
+  &-label {
+    display: none;
+  }
 }
 
 .wrapper-choose {
@@ -28,7 +30,7 @@
     margin: 0 0 25px 0;
     overflow: hidden;
 
-    &:last-of-type{
+    &:last-of-type {
       display: none;
     }
   }
@@ -65,11 +67,11 @@
     }
   }
 
-  .read-more-checkbox:checked ~ .art{
+  .read-more-checkbox:checked ~ .art {
     height: auto;
   }
 
-  .read-more-checkbox:checked ~ .art:last-of-type{
+  .read-more-checkbox:checked ~ .art:last-of-type {
     display: block;
   }
 
