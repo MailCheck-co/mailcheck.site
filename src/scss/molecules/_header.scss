@@ -11,10 +11,6 @@
   }
 }
 
-.burger {
-  display: none;
-}
-
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -37,31 +33,6 @@
 
   .btn-sign-in {
     display: none;
-  }
-
-  .burger {
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 5px;
-    background: #fff;
-    margin-right: 30px;
-
-    &:before, &:after {
-      position: absolute;
-      content: '';
-      background: #fff;
-      width: 40px;
-      height: 5px;
-    }
-
-    &:before {
-      top: -9px;
-    }
-
-    &:after {
-      top: 9px;
-    }
   }
 
   .logo {

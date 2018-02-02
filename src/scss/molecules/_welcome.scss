@@ -9,9 +9,9 @@
 }
 
 .mail {
-  width: 742px;
-  height: 575px;
-  transform: translateY(10px) translateX(-100px);
+  min-width: 10%;
+  max-width: 70%;
+  height: 100%;
 }
 
 .item {
@@ -23,8 +23,9 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   list-style: none;
+  max-width: 400px;
 
-  padding-left: 15px;
+  margin: 15px;
 
   li {
     width: 100%;
@@ -46,33 +47,52 @@
   align-items: center;
 }
 
+.title-welcome {
+  margin: 0 30px 30px;
+}
+
+.text-welcome {
+  max-width: 600px;
+}
+
 @media only screen and (max-width: 768px) {
+  .digits {
+    margin-right: 15px;
+  }
+
   .mail{
     order: 10;
-    transform: none;
     width: 100%;
     height: 100%;
   }
 
+  .text-welcome {
+    text-align: left;
+    margin: 0 30px 25px;
+  }
+
   .welcome-items {
+    flex-flow: row wrap;
     padding: 0;
     width: 100%;
     li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
       border-top: 1px solid rgba(255, 255, 255, 0.2);
-      margin: 0;
-      padding-top: 15px;
+      margin: 0 15px 0;
     }
   }
 
   .welcome-flex {
     flex-flow: row wrap;
+    justify-content: flex-start;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .mail{
     order: 10;
-    transform: none;
     width: 100%;
     height: 100%;
   }
@@ -80,14 +100,20 @@
   .welcome-items {
     padding: 0;
     width: 100%;
+    max-width: 1020px;
     li {
       border-top: 1px solid rgba(255, 255, 255, 0.2);
-      margin: 0;
+      margin: 0 15px 0;
       padding-top: 15px;
     }
   }
 
   .welcome-flex {
     flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .wrapper-welcome {
+
   }
 }

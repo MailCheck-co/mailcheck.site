@@ -51,7 +51,7 @@
 }
 
 .manage-customers {
-  background: url("/img/lines.png") no-repeat 0 35%, url("/img/man.png") no-repeat 125% 0;
+  background: url("/img/lines.png") no-repeat 0 35%, url("/img/man.png") no-repeat 780px -20px;
   background-size:  100% 75%, 654px 740px;
 }
 
@@ -74,9 +74,19 @@
   padding: 70px 0 170px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .manage-customers {
+    background-position: 0 35%, 715px -15px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .manage-customers {
-    background: none;
+    padding-top: 100px;
+    margin-top: -100px;
+    background-position: 0 35%, 500px 0;
+    background-size: 0, 654px 740px;
+    background-origin: padding-box;
   }
 
   .scroll {
@@ -91,3 +101,20 @@
     padding-bottom: 0;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .manage-customers {
+    background-position: 240px -30px;
+    background-size: 0, 654px 740px;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .manage-customers {
+    background-position: 100px -65px;
+    background-size: 0, 654px 740px;
+  }
+}
+
+
