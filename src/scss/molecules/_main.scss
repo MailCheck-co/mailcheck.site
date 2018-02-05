@@ -51,8 +51,53 @@
 }
 
 .manage-customers {
-  background: url("/img/lines.png") no-repeat 0 35%, url("/img/man.png") no-repeat 780px -20px;
+  background: url("/img/lines.png") no-repeat 0 35%, url("/img/man.png") no-repeat 90% 50%;
   background-size:  100% 75%, 654px 740px;
+}
+
+.point {
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(-55deg, #1edfcf 0%, #55bbff 100%);
+  border-radius: 50%;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-image: linear-gradient(-55deg, #1edfcf 0%, #55bbff 100%);
+    animation: pulse-blue 1.3s forwards infinite;
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: -5px;
+    left: 5px;
+    height: 60px;
+    width: 1px;
+    background-image: linear-gradient(-55deg, #1edfcf 0%, #55bbff 100%);
+  }
+}
+
+@keyframes pulse-blue {
+  from {
+    transform: scale(.5);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
 
 .scroll-text {
@@ -74,6 +119,18 @@
   padding: 70px 0 170px;
 }
 
+@media only screen and (min-width: 1920px) {
+  .manage-customers {
+    background-position: 0 35%, 1135px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .manage-customers {
+    background-position: 0 35%, 780px -20px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .manage-customers {
     background-position: 0 35%, 715px -15px;
@@ -89,7 +146,7 @@
     background-origin: padding-box;
   }
 
-  .scroll {
+  .point {
     display: none;
   }
 

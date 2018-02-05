@@ -66,7 +66,7 @@
 </header>
 
 <!--Mobile-menu CSS-->
-<label for="mob-menu-checkbox">
+<label class="popup-label" for="mob-menu-checkbox">
     <input id="mob-menu-checkbox" type="checkbox">
     <span class="burger"></span>
     <nav class="mobile-menu" role="navigation">
@@ -93,7 +93,7 @@
                 <button class="btn btn-start">start</button>
             </div>
             <p class="scroll-text">scroll to see more</p>
-            <img class="scroll" src="/img/scroller.png" width="38" height="82" alt="scroll">
+            <div class="point"></div>
         </div>
     </div>
 </main>
@@ -325,9 +325,9 @@
     <div class="container">
         <form id="contact-us" class="contact-form">
             <h2 class="title title-contact">contact us</h2>
-            <input class="input" type="text" placeholder="Name" required>
-            <input class="input" type="email" placeholder="Email" required>
-            <textarea class="input input-message" placeholder="Message" required></textarea>
+            <input class="input" type="text" placeholder="Name" >
+            <input class="input" type="email" placeholder="Email" >
+            <textarea class="input input-message" placeholder="Message" ></textarea>
             <button class="btn btn-submit">submit</button>
         </form>
     </div>
@@ -353,8 +353,19 @@
     </div>
 </footer>
 
+
+
+<div class="popup-container" id="popup-block">
+    <div class="popup" id="popup-itself">
+            <span class="popup-close" id="close"></span>
+        <span class="popup-thanks">Thanks for filling out
+            our form!</span>
+        <p class="popup-text">We will look over your message and get back to you by tomorrow.
+            Your friends at MailCheck!</p>
+    </div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 </html>
