@@ -4,7 +4,6 @@ const popUpBlock = document.getElementById('popup-block');
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    popUp.classList.add("open");
     popUpBlock.classList.add("open");
 
     document.body.classList.add('fixed');
@@ -12,7 +11,10 @@ form.addEventListener('submit', function (e) {
     popUpBlock.addEventListener("click", function (event) {
         let target = event.target;
         if (target.classList.contains('popup-close') || target.classList.contains("popup-container")) {
-            popUpBlock.classList.remove('open');
+            popUpBlock.classList.add('close');
+            setTimeout( function() {
+                popUpBlock.classList.remove('open');
+            }, 2000 );
             document.body.classList.remove('fixed');
         }
     })

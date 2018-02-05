@@ -69,9 +69,10 @@
 }
 
 .nav-link {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: middle;
+  align-items: center;
   color: #ffffff;
   font-size: 14px;
   font-weight: 300;
@@ -80,11 +81,20 @@
   margin-right: 20px;
 
   &:after {
+    position: absolute;
     content: '';
     display: block;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 1px;
+    background: #fff;
+    transition: .3s;
   }
-  &:hover {
-    text-decoration: underline;
+
+  &:hover:after {
+    right: 1px;
+    left: 1px;
   }
 }
 

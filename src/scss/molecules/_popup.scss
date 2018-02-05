@@ -1,9 +1,4 @@
 .popup {
-
-  &.open {
-
-  }
-
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -17,10 +12,6 @@
   max-width: 640px;
   height: 315px;
   background-image: linear-gradient(to top, #1edfcf 0%, #55bbff 100%);
-
-  animation-name: fade-in;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
 }
 
 @keyframes fade-in {
@@ -37,13 +28,11 @@
 
 @keyframes fade-out {
   from {
-    opacity: 0;
-    transform: scale(.5);
+    opacity: 1;
   }
 
   to {
-    opacity: 1;
-    transform: scale(1);
+    opacity: 0;
   }
 }
 
@@ -51,6 +40,15 @@
 
   &.open {
     display: block;
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+
+  &.close {
+    animation-name: fade-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
   }
 
   position: fixed;
