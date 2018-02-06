@@ -65,23 +65,20 @@
     </div>
 </header>
 
-<!--Mobile-menu CSS-->
-<label class="popup-label" for="mob-menu-checkbox">
-    <input id="mob-menu-checkbox" type="checkbox">
-    <span class="burger"></span>
-    <nav class="mobile-menu" role="navigation">
-        <a class="nav-link mobile-menu-links" href="#features">Features</a>
-        <a class="nav-link mobile-menu-links" href="#pricing">Pricing</a>
-        <a class="nav-link mobile-menu-links" href="#">About Us</a>
-        <a class="nav-link mobile-menu-links" href="#contact-us">Contact Us</a>
-        <a class="nav-link mobile-menu-links" href="#faq">FAQ</a>
-        <button class="btn btn-sign-in mobile-btn">sign in</button>
-    </nav>
-</label>
+<!--Mobile menu-->
+<span class="burger" id="burger"></span>
+<nav class="mobile-menu" role="navigation" id="mobile-menu">
+    <a class="nav-link mobile-menu-links" href="#features">Features</a>
+    <a class="nav-link mobile-menu-links" href="#pricing">Pricing</a>
+    <a class="nav-link mobile-menu-links" href="#">About Us</a>
+    <a class="nav-link mobile-menu-links" href="#contact-us">Contact Us</a>
+    <a class="nav-link mobile-menu-links" href="#faq">FAQ</a>
+    <button class="btn btn-sign-in mobile-btn">sign in</button>
+</nav>
 
 
 <!--Manage customers...-->
-<main id="features" class="manage-customers" role="main">
+<main class="manage-customers" role="main">
     <div class="container">
         <div class="wrapper-main">
             <h1 class="title">manage all your customers<br>
@@ -100,7 +97,7 @@
 
 
 <!--Welcome to the featuress-->
-<section class="welcome">
+<section class="welcome" id="features" >
 
         <div class="wrapper-welcome">
             <h2 class="title title-welcome">welcome to the features</h2>
@@ -354,7 +351,7 @@
 </footer>
 
 
-
+<div class="blur"></div>
 <div class="popup-container" id="popup-block">
     <div class="popup" id="popup-itself">
             <span class="popup-close" id="close"></span>
