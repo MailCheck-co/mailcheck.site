@@ -49,6 +49,22 @@
 
 .title-welcome {
   margin: 0 30px 30px;
+
+  &:before {
+     position: absolute;
+     display: block;
+     height: 170px;
+     width: 1024px;
+     z-index: -1;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     content: 'features';
+     font-size: 160px;
+     font-weight: 900;
+     color: rgba(17, 50, 78, 0.2);
+     text-transform: uppercase;
+   }
 }
 
 .text-welcome {
@@ -69,6 +85,10 @@
   .text-welcome {
     text-align: left;
     margin: 0 30px 25px;
+  }
+
+  .title-welcome:before {
+    display: none;
   }
 
   .welcome-items {

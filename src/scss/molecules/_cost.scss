@@ -132,6 +132,21 @@
 
 .title-cost {
   margin-bottom: 32px;
+  &:before {
+    position: absolute;
+    display: block;
+    height: 170px;
+    width: auto;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: 'pricing';
+    font-size: 160px;
+    font-weight: 900;
+    color: rgba(17, 50, 78, 0.2);
+    text-transform: uppercase;
+  }
 }
 
 
@@ -171,6 +186,10 @@
   }
 
   .cards {
+    display: none;
+  }
+
+  .title-cost:before {
     display: none;
   }
 

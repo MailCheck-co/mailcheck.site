@@ -82,6 +82,22 @@
   text-transform: uppercase;
   letter-spacing: 1.6px;
   text-align: center;
+
+  &:before {
+    position: absolute;
+    display: block;
+    height: 170px;
+    width: 1024px;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: 'faq';
+    font-size: 160px;
+    font-weight: 900;
+    color: rgba(17, 50, 78, 0.2);
+    text-transform: uppercase;
+  }
 }
 
 .wrapper-questions {
@@ -118,6 +134,10 @@
     width: 50%;
     height: 100%;
     margin-bottom: 25px;
+  }
+
+  .title-small:before {
+    display: none;
   }
 
   .wrapper-questions {

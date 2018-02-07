@@ -12,6 +12,13 @@
   max-width: 640px;
   height: 315px;
   background-image: linear-gradient(to top, #1edfcf 0%, #55bbff 100%);
+
+  &.open {
+    display: flex;
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
 }
 
 @keyframes fade-in {
@@ -36,11 +43,21 @@
   }
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .popup-container {
 
   &.open {
-    display: block;
-    animation-name: fade-in;
+    display: flex;
+    animation-name: fade;
     animation-fill-mode: forwards;
     animation-duration: 1s;
   }
@@ -57,15 +74,20 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background: url("/img/city.png") no-repeat;
+  background-size: 150% 150%;
+  background-position: center 50%;
 
-  //&:before {
-  //  content: '';
-  //  display: block;
-  //  width: 100%;
-  //  height: 100%;
-  //  z-index: 2000 ;
-  //  filter: blur(20px);
-  //}
+  &:before {
+    content: '';
+    background: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: blur(20px);
+  }
 }
 
 .popup-close {
