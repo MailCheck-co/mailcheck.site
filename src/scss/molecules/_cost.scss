@@ -78,9 +78,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 22%;
-  max-width: 200px;
+  width: 200px;
   height: 346px;
+  margin: 0 10px;
   border-radius: 5px;
   background-image: linear-gradient(to top, #030914 0%, #030914 100%);
 }
@@ -96,8 +96,20 @@
   margin-bottom: 20px;
 }
 
+.cards {
+  display: flex;
+  width: 100%;
+  margin-bottom: 150px;
+  padding: 0;
+
+}
+
 .margin {
-  margin-bottom: 47px;
+  margin: 0 40px 47px;
+
+  font-weight: 300;
+
+  max-width: 600px;
 }
 
 .lowercase {
@@ -135,15 +147,34 @@
   color: #e6514e;
 }
 
+.swiper-container {
+  display: none;
+}
+
 .wrapper-cost {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 150px;
+  justify-content: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .margin {
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .card {
     width: 230px;
+  }
+
+  .cards {
+    display: none;
+  }
+
+  .swiper-container {
+    display: flex;
   }
 }

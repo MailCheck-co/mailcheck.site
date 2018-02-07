@@ -20,7 +20,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
+  max-width: 880px;
+  margin: 0 auto 55px;
 }
 
 @media only screen and (max-width: 768px) {

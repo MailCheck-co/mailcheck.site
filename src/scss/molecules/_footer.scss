@@ -61,10 +61,13 @@
 
   .footer-nav {
     margin: 0 0 25px 0;
+    height: 350px;
+    width: 210px;
   }
 
   .footer-nav-link {
     margin-right: 50px;
+    max-width: 100px;
   }
 
   .wrapper-footer {

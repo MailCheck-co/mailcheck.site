@@ -69,9 +69,10 @@
 }
 
 .nav-link {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: middle;
+  align-items: center;
   color: #ffffff;
   font-size: 14px;
   font-weight: 300;
@@ -79,8 +80,21 @@
 
   margin-right: 20px;
 
-  &:hover {
-    text-decoration: underline;
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 1px;
+    background: #fff;
+    transition: .3s;
+  }
+
+  &:hover:after {
+    right: 1px;
+    left: 1px;
   }
 }
 
@@ -107,4 +121,15 @@
   text-align: center;
 
   margin-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 320px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+.fixed {
+  overflow: hidden;
 }

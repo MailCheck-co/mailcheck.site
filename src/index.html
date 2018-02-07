@@ -2,6 +2,8 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js gt-ie9 ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js gt-ie9"> <!--<![endif]-->
+<html lang="en">
+
 <head>
     <!--
 
@@ -14,19 +16,19 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- #Page Prefetching -->
-    <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
-    <link rel="prefetch" href="index.html">
-
-    <!-- #Typekit -->
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
     <title>Mailcheck</title>
     <meta name="description" content="">
     <meta name="robots" content="all">
 
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- #Page Prefetching -->
+    <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
+    <link rel="prefetch" href="index.html">
+
+    <!-- #Typekit -->
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <!-- http://mathiasbynens.be/notes/rel-shortcut-icon -->
@@ -39,6 +41,8 @@
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
+
 
     <!-- Modernizer, cause some browsers suck -->
 
@@ -47,10 +51,10 @@
 <body>
 
 <!--Header-->
-<header>
+<header role="banner">
     <div class="wrapper-header">
-        <a class="logo" href="/"><img src="/img/logo.png" width="138px" height="27px" alt="mail"></a>
-        <nav class="header-nav">
+        <a class="logo" href="/"><img src="/img/logo.png" width="138" height="27" alt="mail"></a>
+        <nav class="header-nav" role="navigation">
             <a class="nav-link" href="#features">Features</a>
             <a class="nav-link" href="#pricing">Pricing</a>
             <a class="nav-link" href="#">About Us</a>
@@ -58,12 +62,23 @@
             <a class="nav-link" href="#faq">FAQ</a>
         </nav>
         <button class="btn btn-sign-in">sign in</button>
-        <span class="burger"></span>
     </div>
 </header>
 
+<!--Mobile menu-->
+<span class="burger" id="burger"></span>
+<nav class="mobile-menu" role="navigation" id="mobile-menu">
+    <a class="nav-link mobile-menu-links" href="#features">Features</a>
+    <a class="nav-link mobile-menu-links" href="#pricing">Pricing</a>
+    <a class="nav-link mobile-menu-links" href="#">About Us</a>
+    <a class="nav-link mobile-menu-links" href="#contact-us">Contact Us</a>
+    <a class="nav-link mobile-menu-links" href="#faq">FAQ</a>
+    <button class="btn btn-sign-in mobile-btn">sign in</button>
+</nav>
+
+
 <!--Manage customers...-->
-<main id="features" class="manage-customers">
+<main class="manage-customers" role="main">
     <div class="container">
         <div class="wrapper-main">
             <h1 class="title">manage all your customers<br>
@@ -75,22 +90,22 @@
                 <button class="btn btn-start">start</button>
             </div>
             <p class="scroll-text">scroll to see more</p>
-            <img class="scroll" src="/img/scroller.png" width="38px" height="82px" alt="scroll">
+            <div class="point"></div>
         </div>
     </div>
 </main>
 
 
-<!--Welome to the featuress-->
-<section class="welcome">
-    <div class="container">
+<!--Welcome to the featuress-->
+<section class="welcome" id="features" >
+
         <div class="wrapper-welcome">
-            <h2 class="title">welcome to the features</h2>
-            <p class="text-thin">Take control over your customers, folter all the bots.
-                Performance tracker for <br>
+            <h2 class="title title-welcome">welcome to the features</h2>
+            <p class="text-thin text-welcome">Take control over your customers, folter all the bots.
+                Performance tracker for
                 Media Buying Teams, Agencies and Affiliates.</p>
             <div class="welcome-flex">
-                <img class="mail" src="img/mail-float.png" width="742px" height="575px" alt="mail">
+                <img class="mail" src="img/mail-float.png" width="742" height="575" alt="mail">
                 <ul class="welcome-items">
                     <li>
                         <span class="digits">01</span>
@@ -109,7 +124,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+
 </section>
 
 
@@ -140,77 +155,116 @@
 
 <!--Pricing plans-->
 <section id="pricing" class="cost-effective">
-    <div class="container">
-        <div class="wrapper-cost">
-            <h2 class="title title-cost">Cost-effective pricing plans</h2>
-            <p class="text-thin margin">Take control over your customers, folter all the bots.
-                Performance tracker for<br>
-                Media Buying Teams, Agencies and Affiliates.</p>
 
-
-            <div class="c-slider" id="hammer-slider">
-                <div class="c-slider__container">
-                    <div class="c-slider__slide">
-                        <span style="color: red">1231311231</span>
-                    </div>
-                    <div class="c-slider__slide">
-                        <span style="color: red">1231311231</span>
-                    </div>
-                    <div class="c-slider__slide">
-                        <span style="color: red">1231311231</span>
-                    </div>
-                </div>
+    <div class="wrapper-cost">
+        <h2 class="title title-cost">Cost-effective pricing plans</h2>
+        <p class="text-thin margin">Take control over your customers, folter all the bots.
+            Performance tracker for
+            Media Buying Teams, Agencies and Affiliates.</p>
+        <div class="container cards">
+            <div class="card">
+                <h3 class="title-colored">pro</h3>
+                <span class="title lowercase">$ 99/mo</span>
+                <span class="card-features-text">  1,000,000
+                        included events</span>
+                <span class="card-features-text">  $0.04/1,000
+                        overage charge</span>
+                <button class="btn btn-choose">choose</button>
             </div>
-
-
-
-
-
-            <!--<div class="card">-->
-                <!--<h3 class="title-colored">pro</h3>-->
-                <!--<span class="title lowercase">$ 99/mo</span>-->
-                <!--<span class="card-features-text">  1,000,000-->
-                        <!--included events</span>-->
-                <!--<span class="card-features-text">  $0.04/1,000-->
-                        <!--overage charge</span>-->
-                <!--<button class="btn btn-choose">choose</button>-->
-            <!--</div>-->
-            <!--<div class="card">-->
-                <!--<h3 class="title-colored cyan">agency</h3>-->
-                <!--<span class="title lowercase">$ 399/mo</span>-->
-                <!--<span class="card-features-text">  1,000,000-->
-                        <!--included events</span>-->
-                <!--<span class="card-features-text">  $0.04/1,000-->
-                        <!--overage charge</span>-->
-                <!--<button class="btn btn-choose btn-cyan">choose</button>-->
-            <!--</div>-->
-            <!--<div class="card">-->
-                <!--<h3 class="title-colored grey">enterprise</h3>-->
-                <!--<span class="title lowercase">$ 999/mo</span>-->
-                <!--<span class="card-features-text">  1,000,000-->
-                        <!--included events</span>-->
-                <!--<span class="card-features-text">  $0.04/1,000-->
-                        <!--overage charge</span>-->
-                <!--<button class="btn btn-choose btn-grey">choose</button>-->
-            <!--</div>-->
-            <!--<div class="card">-->
-                <!--<h3 class="title-colored red">custom</h3>-->
-                <!--<span class="card-features-text">  <span class="bold">EPIC</span>-->
-                        <!--100,000,000+-->
-                        <!--included events</span>-->
-                <!--<span class="card-features-text">  <span class="bold">LEGENDARY</span>-->
-                        <!--1,000,000,000+-->
-                        <!--included events</span>-->
-                <!--<button class="btn btn-choose btn-red">choose</button>-->
-            <!--</div>-->
+            <div class="card">
+                <h3 class="title-colored cyan">agency</h3>
+                <span class="title lowercase">$ 399/mo</span>
+                <span class="card-features-text">  1,000,000
+                        included events</span>
+                <span class="card-features-text">  $0.04/1,000
+                        overage charge</span>
+                <button class="btn btn-choose btn-cyan">choose</button>
+            </div>
+            <div class="card">
+                <h3 class="title-colored grey">enterprise</h3>
+                <span class="title lowercase">$ 999/mo</span>
+                <span class="card-features-text">  1,000,000
+                        included events</span>
+                <span class="card-features-text">  $0.04/1,000
+                        overage charge</span>
+                <button class="btn btn-choose btn-grey">choose</button>
+            </div>
+            <div class="card">
+                <h3 class="title-colored red">custom</h3>
+                <span class="card-features-text">  <span class="bold">EPIC</span>
+                        100,000,000+
+                        included events</span>
+                <span class="card-features-text">  <span class="bold">LEGENDARY</span>
+                        1,000,000,000+
+                        included events</span>
+                <button class="btn btn-choose btn-red">choose</button>
+            </div>
         </div>
     </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3 class="title-colored">pro</h3>
+                    <span class="title lowercase">$ 99/mo</span>
+                    <span class="card-features-text">  1,000,000
+                        included events</span>
+                    <span class="card-features-text">  $0.04/1,000
+                        overage charge</span>
+                    <button class="btn btn-choose">choose</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3 class="title-colored cyan">agency</h3>
+                    <span class="title lowercase">$ 399/mo</span>
+                    <span class="card-features-text">  1,000,000
+                        included events</span>
+                    <span class="card-features-text">  $0.04/1,000
+                        overage charge</span>
+                    <button class="btn btn-choose btn-cyan">choose</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3 class="title-colored grey">enterprise</h3>
+                    <span class="title lowercase">$ 999/mo</span>
+                    <span class="card-features-text">  1,000,000
+                        included events</span>
+                    <span class="card-features-text">  $0.04/1,000
+                        overage charge</span>
+                    <button class="btn btn-choose btn-grey">choose</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3 class="title-colored red">custom</h3>
+                    <span class="card-features-text">  <span class="bold">EPIC</span>
+                        100,000,000+
+                        included events</span>
+                    <span class="card-features-text">  <span class="bold">LEGENDARY</span>
+                        1,000,000,000+
+                        included events</span>
+                    <button class="btn btn-choose btn-red">choose</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+
 </section>
 
 
 <!--Questions-->
 <section id="faq" class="frequent-questions">
-    <div class="container">
+
         <div class="wrapper-questions">
             <h3 class="title-small">most frequent questions</h3>
 
@@ -257,20 +311,20 @@
                     </div>
                 </div>
             </div>
-            <img class="filter-img" src="/img/filter.png" width="444px" height="568px" alt="filter">
+            <img class="filter-img" src="/img/filter.png" width="444" height="568" alt="filter">
         </div>
-    </div>
+
 </section>
 
 
 <!--Contact us-->
-<section id="contact-us" class="contact-us">
+<section class="contact-us">
     <div class="container">
-        <form class="contact-form">
+        <form id="contact-us" class="contact-form">
             <h2 class="title title-contact">contact us</h2>
-            <input class="input" type="text" placeholder="Name" required>
-            <input class="input" type="email" placeholder="Email" required>
-            <textarea class="input input-message" placeholder="Message" required></textarea>
+            <input class="input" type="text" placeholder="Name" >
+            <input class="input" type="email" placeholder="Email" >
+            <textarea class="input input-message" placeholder="Message" ></textarea>
             <button class="btn btn-submit">submit</button>
         </form>
     </div>
@@ -281,10 +335,10 @@
 <footer>
     <div class="wrapper-footer">
         <div class="footer-logo-copyright">
-            <a class="logo2" href="/"><img src="/img/logo2.png" width="162px" height="27px" alt="logo2"></a>
-            <span class="copyright">&#x24B8 2017 MailCheck</span>
+            <a class="logo2" href="/"><img src="/img/logo2.png" width="162" height="27" alt="logo2"></a>
+            <span class="copyright">&#x24B8; 2017 MailCheck</span>
         </div>
-        <nav class="footer-nav">
+        <nav class="footer-nav" role="navigation">
             <a class="nav-link footer-nav-link" href="#features">Features</a>
             <a class="nav-link footer-nav-link" href="#pricing">Pricing</a>
             <a class="nav-link footer-nav-link" href="#">About Us</a>
@@ -292,11 +346,23 @@
             <a class="nav-link footer-nav-link" href="#">Privacy policy</a>
             <a class="nav-link footer-nav-link" href="#">Terms and conditions</a>
         </nav>
-        <span class="copyright2">&#x24B8 2017 MailCheck</span>
+        <span class="copyright2">&#x24B8; 2017 MailCheck</span>
     </div>
 </footer>
 
-<script src="js/main.js"></script>
 
+<div class="blur"></div>
+<div class="popup-container" id="popup-block">
+    <div class="popup" id="popup-itself">
+            <span class="popup-close" id="close"></span>
+        <span class="popup-thanks">Thanks for filling out
+            our form!</span>
+        <p class="popup-text">We will look over your message and get back to you by tomorrow.
+            Your friends at MailCheck!</p>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

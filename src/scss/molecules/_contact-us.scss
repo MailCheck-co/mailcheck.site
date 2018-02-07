@@ -39,3 +39,16 @@
 .title-contact {
   margin-bottom: 81px;
 }
+
+
+@media only screen and (min-width: 1440px) {
+  .contact-us {
+    background-position: 50% 95%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .contact-us {
+    background-position: 50% 15%;
+  }
+}
