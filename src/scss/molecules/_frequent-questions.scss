@@ -19,12 +19,20 @@
   &:checked ~ .tab-label:after {
     transform: rotate(135deg);
   }
+
+  &:checked ~ .tab-label {
+    padding-bottom: 5px;
+  }
+}
+
+.filter-img {
+  transform: translate(120px, -50px);
 }
 
 .tab {
   width: 100%;
 
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.21);
 }
 
@@ -40,7 +48,8 @@
   line-height: 24px;
   letter-spacing: 0.8px;
   padding-right: 10px;
-  margin-top: 8px;
+  margin-top: 0;
+
 }
 
 .tab-label {
@@ -54,7 +63,7 @@
   line-height: 27px;
   letter-spacing: 0.9px;
   cursor: pointer;
-  padding: 0 10px 0 0;
+  padding: 0 10px 13px 0;
 
 
   &:after {
