@@ -38,6 +38,22 @@
 
 .title-contact {
   margin-bottom: 81px;
+
+  &:before {
+    position: absolute;
+    display: block;
+    height: 170px;
+    width: 1024px;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: 'contact';
+    font-size: 160px;
+    font-weight: 900;
+    color: rgba(17, 50, 78, 0.2);
+    text-transform: uppercase;
+  }
 }
 
 
@@ -50,5 +66,11 @@
 @media only screen and (min-width: 1920px) {
   .contact-us {
     background-position: 50% 15%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title-contact:before {
+    display: none;
   }
 }
