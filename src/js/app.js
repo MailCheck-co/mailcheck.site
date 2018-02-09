@@ -121,18 +121,18 @@ document.addEventListener("DOMContentLoaded", function () {
         centeredSlides: true
     });
 
-    // const slide1 = document.getElementById('slide1');
-    // const slide2 = document.getElementById('slide2');
-    // const slide3 = document.getElementById('slide3');
-    // const slide4 = document.getElementById('slide4');
+    const slide1 = document.getElementById('slide1');
+    const slide2 = document.getElementById('slide2');
+    const slide3 = document.getElementById('slide3');
+    const slide4 = document.getElementById('slide4');
 
     const arr = document.querySelectorAll('.pag-item');
 
-    const arrayOfSlides = Array.from(document.querySelectorAll('.swiper-slide'));
-    console.log(arrayOfSlides, 'arrayOfSlides');
-    // const arrayOfSlides = [slide1, slide2, slide3, slide4];
+    // const arrayOfSlides = Array.from(document.querySelectorAll('.swiper-slide'));
+    // console.log(arrayOfSlides, 'arrayOfSlides');
+    const arrayOfSlides = [slide1, slide2, slide3, slide4];
 
-    /*mySwiper.on('slideChangeTransitionStart', function () {
+    mySwiper.on('slideChangeTransitionStart', function () {
         for (let i = 0; i < arrayOfSlides.length; i++) {
             let j = arrayOfSlides.findIndex(x => {
                 l = x.classList;
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             arr[j].classList.add('active');
         }
-    })*/
+    })
 
     //               Anthony
     // mySwiper.on('slideChangeTransitionStart', () => {
