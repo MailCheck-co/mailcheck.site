@@ -161,7 +161,7 @@
             Performance tracker for
             Media Buying Teams, Agencies and Affiliates.</p>
         <div class="container cards">
-            <div class="card">
+            <div class="card" id="pro">
                 <h3 class="title-colored">pro</h3>
                 <span class="title lowercase">$ 99/mo</span>
                 <span class="card-features-text">  1,000,000
@@ -170,7 +170,7 @@
                         overage charge</span>
                 <button class="btn btn-choose">choose</button>
             </div>
-            <div class="card">
+            <div class="card" id="agency">
                 <h3 class="title-colored cyan">agency</h3>
                 <span class="title lowercase">$ 399/mo</span>
                 <span class="card-features-text">  1,000,000
@@ -179,7 +179,7 @@
                         overage charge</span>
                 <button class="btn btn-choose btn-cyan">choose</button>
             </div>
-            <div class="card">
+            <div class="card" id="enterprise">
                 <h3 class="title-colored grey">enterprise</h3>
                 <span class="title lowercase">$ 999/mo</span>
                 <span class="card-features-text">  1,000,000
@@ -188,7 +188,7 @@
                         overage charge</span>
                 <button class="btn btn-choose btn-grey">choose</button>
             </div>
-            <div class="card">
+            <div class="card" id="custom">
                 <h3 class="title-colored red">custom</h3>
                 <span class="card-features-text">  <span class="bold">EPIC</span>
                         100,000,000+
@@ -201,12 +201,19 @@
         </div>
     </div>
 
+    <ul class="pagination" id="pagination">
+        <li><a class="pag-item pag-item1 active" id="pag-item1" href="#pro">pro</a></li>
+        <li><a class="pag-item pag-item2" id="pag-item2" href="#agency">agency</a></li>
+        <li><a class="pag-item pag-item3" id="pag-item3" href="#enterprise">enterprise</a></li>
+        <li><a class="pag-item pag-item4" id="pag-item4" href="#custom">custom</a></li>
+    </ul>
+
     <!-- Slider main container -->
-    <div class="swiper-container">
+    <div class="swiper-container" id="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="slide1">
                 <div class="card">
                     <h3 class="title-colored">pro</h3>
                     <span class="title lowercase">$ 99/mo</span>
@@ -217,7 +224,7 @@
                     <button class="btn btn-choose">choose</button>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="slide2">
                 <div class="card">
                     <h3 class="title-colored cyan">agency</h3>
                     <span class="title lowercase">$ 399/mo</span>
@@ -228,7 +235,7 @@
                     <button class="btn btn-choose btn-cyan">choose</button>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="slide3">
                 <div class="card">
                     <h3 class="title-colored grey">enterprise</h3>
                     <span class="title lowercase">$ 999/mo</span>
@@ -239,7 +246,7 @@
                     <button class="btn btn-choose btn-grey">choose</button>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="slide4">
                 <div class="card">
                     <h3 class="title-colored red">custom</h3>
                     <span class="card-features-text">  <span class="bold">EPIC</span>
@@ -252,9 +259,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
 
 

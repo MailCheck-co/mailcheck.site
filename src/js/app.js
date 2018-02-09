@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(function () {
                     popUpBlock.classList.remove('open', 'close');
                     popUp.classList.remove('open', 'close');
-                }, 1000);
+                }, 200);
                 document.body.classList.remove('fixed');
             }
         })
@@ -30,53 +30,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const burger = document.getElementById('burger');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    burger.addEventListener('click', function () {
-        if (!burger.classList.contains('open')) {
-            burger.classList.add('open');
-            document.body.classList.add('fixed');
-            mobileMenu.classList.add('open');
-            mobileMenu.addEventListener('click', function (event) {
-                let target = event.target;
-                if (target.classList.contains('nav-link') || target.classList.contains('mobile-btn')) {
-                    mobileMenu.classList.add('close');
-                    burger.classList.remove('open');
-                    setTimeout(function () {
-                        mobileMenu.classList.remove('open');
-                        document.body.classList.remove('fixed');
-                        mobileMenu.classList.remove('open');
-                        mobileMenu.classList.remove('close');
-                    }, 1000);
-                }
-            });
-        } else {
-            mobileMenu.classList.add('close');
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('open');
+        document.body.classList.toggle('fixed');
+        mobileMenu.classList.toggle('open');
+    });
+
+    mobileMenu.addEventListener('click', function (e) {
+        let target = e.target;
+        if (target.classList.contains('nav-link') || target.classList.contains('mobile-btn')) {
+            document.body.classList.toggle('fixed');
+            mobileMenu.classList.remove('open');
             burger.classList.remove('open');
-            setTimeout(function () {
-                mobileMenu.classList.remove('open');
-                document.body.classList.remove('fixed');
-                mobileMenu.classList.remove('open');
-                mobileMenu.classList.remove('close');
-            }, 1000);
         }
-    });
 
-    var mySwiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        initialSlide: 0,
-        loop: true,
-        spaceBetween: 50
     });
-
 
     // scrollmagic
     let controller = new ScrollMagic.Controller();
 
+    let m = {y: '+=50', opacity:0};
 
-    let tween = new TweenMax.from('#features', 1.5, {y: '+=50', opacity:0});
-    let tween1 = new TweenMax.from('#choose-your', 1.5, {y: '+=50', opacity:0});
-    let tween2 = new TweenMax.from('#pricing', 1.5, {y: '+=50', opacity:0});
-    let tween3 = new TweenMax.from('#faq', 1.5, {y: '+=50', opacity:0});
-    let tween4 = new TweenMax.from('#contact-us-section', 1.5, {y: '+=50', opacity:0});
+    let tween = new TweenMax.from('#features', 1.5, m );
+    let tween1 = new TweenMax.from('#choose-your', 1.5, m);
+    let tween2 = new TweenMax.from('#pricing', 1.5, m);
+    let tween3 = new TweenMax.from('#faq', 1.5, m);
+    let tween4 = new TweenMax.from('#contact-us-section', 1.5, m);
 
     let scene = new ScrollMagic.Scene({
         triggerElement: "#features",
@@ -122,5 +101,62 @@ document.addEventListener("DOMContentLoaded", function () {
     })
         .setTween(tween4)
         .addTo(controller);
+
+    const pagination = document.getElementById('pagination');
+
+    pagination.addEventListener('click', function (e) {
+        let target = e.target;
+        for (let i = 0; i < arr.length; i++){
+            if (target === arr[i]){
+                mySwiper.slideTo(i + 1);
+            }
+        }
+    });
+
+    const mySwiper = new Swiper('.swiper-container', {
+        slidesPerView: 1.25,
+        initialSlide: 0,
+        loop: true,
+        spaceBetween: 5,
+        centeredSlides: true
+    });
+
+    // const slide1 = document.getElementById('slide1');
+    // const slide2 = document.getElementById('slide2');
+    // const slide3 = document.getElementById('slide3');
+    // const slide4 = document.getElementById('slide4');
+
+    const arr = document.querySelectorAll('.pag-item');
+
+    const arrayOfSlides = Array.from(document.querySelectorAll('.swiper-slide'));
+    console.log(arrayOfSlides, 'arrayOfSlides');
+    // const arrayOfSlides = [slide1, slide2, slide3, slide4];
+
+    /*mySwiper.on('slideChangeTransitionStart', function () {
+        for (let i = 0; i < arrayOfSlides.length; i++) {
+            let j = arrayOfSlides.findIndex(x => {
+                l = x.classList;
+                return l.contains('swiper-slide-active') || l.contains('swiper-slide-duplicate-active')
+            });
+            arr.forEach( function(item) {
+                item.classList.remove('active');
+            });
+            arr[j].classList.add('active');
+        }
+    })*/
+
+    //               Anthony
+    // mySwiper.on('slideChangeTransitionStart', () => {
+    //     let a = arrayOfSlides.map((elem, index) => {
+    //         if (elem.classList.contains('swiper-slide-active')) {
+    //             return index;
+    //         }
+    //     });
+    //     arr.forEach( function(item) {
+    //         item.classList.remove('active');
+    //     });
+    //     arr[a].classList.add('active');
+    // })
+
 });
 

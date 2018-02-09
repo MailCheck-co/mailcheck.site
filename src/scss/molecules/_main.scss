@@ -2,7 +2,7 @@
   border: 1px solid rgba(255, 255, 255, .5);
   background: transparent;
   margin-right: 20px;
-  z-index: 100;
+  z-index: 1;
 
   &:hover {
     border-color: #fff;
@@ -16,7 +16,7 @@
 .btn-start {
   border: none;
   background-color: #1bced4;
-  z-index: 100;
+  z-index: 1;
 
   &:hover {
     color: #1bced4;
