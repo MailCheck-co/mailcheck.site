@@ -90,10 +90,6 @@
     margin: 0 30px 25px;
   }
 
-  .title-welcome:before {
-    display: none;
-  }
-
   .welcome-items {
     flex-flow: row wrap;
     width: 100%;
@@ -122,6 +118,11 @@
   .item {
     max-width: 1024px;
   }
+
+  .title-welcome:before {
+    display: none;
+  }
+
 
   .welcome-items {
     padding: 0;

@@ -84,16 +84,13 @@
 
 @media only screen and (max-width: 768px) {
   .contact-us:before {
-    background-position: 50% 5%;
-  }
-
-  .title-contact:before {
-    display: none;
+    background-position: 50% 0;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .contact-us:before {
-    background-position: 50% 0;
+@media only screen and (max-width: 1024px) {
+
+  .title-contact:before {
+    display: none;
   }
 }

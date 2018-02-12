@@ -49,13 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // scrollmagic
     let controller = new ScrollMagic.Controller();
 
-    let m = {y: '+=50', opacity:0};
+    let movementParameters = {y: '+=50', opacity:0};
 
-    let tween = new TweenMax.from('#features', 1.5, m );
-    let tween1 = new TweenMax.from('#choose-your', 1.5, m);
-    let tween2 = new TweenMax.from('#pricing', 1.5, m);
-    let tween3 = new TweenMax.from('#faq', 1.5, m);
-    let tween4 = new TweenMax.from('#contact-us-section', 1.5, m);
+    let tween = new TweenMax.from('#features', 1.5, movementParameters );
+    let tween1 = new TweenMax.from('#choose-your', 1.5, movementParameters);
+    let tween2 = new TweenMax.from('#pricing', 1.5, movementParameters);
+    let tween3 = new TweenMax.from('#faq', 1.5, movementParameters);
+    let tween4 = new TweenMax.from('#contact-us-section', 1.5, movementParameters);
 
     let scene = new ScrollMagic.Scene({
         triggerElement: "#features",
@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .addTo(controller);
 
     const pagination = document.getElementById('pagination');
+    const arr = document.querySelectorAll('.pag-item');
 
     pagination.addEventListener('click', function (e) {
         let target = e.target;
@@ -126,10 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const slide3 = document.getElementById('slide3');
     const slide4 = document.getElementById('slide4');
 
-    const arr = document.querySelectorAll('.pag-item');
-
-    // const arrayOfSlides = Array.from(document.querySelectorAll('.swiper-slide'));
-    // console.log(arrayOfSlides, 'arrayOfSlides');
     const arrayOfSlides = [slide1, slide2, slide3, slide4];
 
     mySwiper.on('slideChangeTransitionStart', function () {
@@ -145,18 +142,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
-    //               Anthony
-    // mySwiper.on('slideChangeTransitionStart', () => {
-    //     let a = arrayOfSlides.map((elem, index) => {
-    //         if (elem.classList.contains('swiper-slide-active')) {
-    //             return index;
-    //         }
-    //     });
-    //     arr.forEach( function(item) {
-    //         item.classList.remove('active');
-    //     });
-    //     arr[a].classList.add('active');
-    // })
 
 });
 
