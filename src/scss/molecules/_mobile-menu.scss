@@ -3,7 +3,14 @@
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -54,26 +61,12 @@
   }
 
   .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: linear-gradient(to top, #1edfcf 0%, #55bbff 100%);
+    transition: all 1s ease;
+    z-index: 100;
 
     &.open {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      z-index: 100;
-      animation-name: mob-move;
-      animation-duration: 1s;
-    }
-
-    &.close {
-      animation-name: mob-move-rev;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+      left: 0;
     }
 
     &-links {
@@ -92,25 +85,5 @@
   .mobile-btn {
     display: block;
     margin-left: 45px;
-  }
-}
-
-@keyframes mob-move {
-  from {
-    left: 320px;
-  }
-
-  to {
-    left: 0;
-  }
-}
-
-@keyframes mob-move-rev {
-
-  from {
-    left: 0;
-  }
-  to {
-    left: 320px;
   }
 }
