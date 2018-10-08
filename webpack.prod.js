@@ -1,16 +1,19 @@
 const path = require('path');
 
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
     devtool: 'source-map',
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js'
+    },
     output: {
         filename: '[name].[hash:20].js',
         path: buildPath
@@ -105,9 +108,10 @@ module.exports = {
                 opengraph: false,
                 twitter: false,
                 yandex: false,
-                windows: false
+                windows: true
             }
         }),
+        new DuplicatePackageCheckerPlugin(),
         new ExtractTextPlugin('styles.[md5:contenthash:hex:20].css', {
             allChunks: true
         }),

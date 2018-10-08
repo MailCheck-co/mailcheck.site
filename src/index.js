@@ -1,6 +1,6 @@
 
-require('normalize.css/normalize.css');
-require('./styles/index.scss');
+import 'normalize.css/normalize.css';
+import './styles/index.scss';
 
 document.addEventListener("DOMContentLoaded", () => {
 

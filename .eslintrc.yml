@@ -1,0 +1,26 @@
+env:
+    browser: true
+    es6: true
+    node: true
+extends: 'eslint:recommended'
+parserOptions:
+    ecmaVersion: 2015
+    sourceType: module
+rules:
+    indent:
+    - 0
+    - tab
+    linebreak-style:
+    - 1
+    - unix
+    quotes:
+    - 1
+    - single
+    semi:
+    - 1
+    - always
+    no-unused-vars:
+    - 1
+    no-sparse-arrays:
+    - 1
+
