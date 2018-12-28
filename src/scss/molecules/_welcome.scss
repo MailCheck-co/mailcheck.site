@@ -1,0 +1,142 @@
+.digits {
+  opacity: 0.91;
+  color: #1bced4;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
+  letter-spacing: 1.9px;
+}
+
+.mail {
+  min-width: 10%;
+  max-width: 70%;
+  height: 100%;
+  margin: 20px;
+}
+
+.item {
+  text-align: left;
+  max-width: 300px;
+}
+
+.welcome-items {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  list-style: none;
+  max-width: 400px;
+  margin: 15px;
+
+  li {
+    width: 100%;
+    margin-bottom: 11px;
+  }
+}
+
+.welcome-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper-welcome {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-welcome {
+  margin: 0 30px 25px;
+
+  &:before {
+     position: absolute;
+     display: block;
+     height: 170px;
+     width: 1024px;
+     z-index: -1;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     content: 'features';
+     font-size: 160px;
+     font-weight: 900;
+     color: rgba(17, 50, 78, 0.2);
+     text-transform: uppercase;
+   }
+}
+
+.text-welcome {
+  max-width: 600px;
+  margin-bottom: 21px;
+}
+
+@media only screen and (max-width: 768px) {
+  .digits {
+    margin-right: 15px;
+  }
+
+  .mail{
+    order: 10;
+    width: 100%;
+    height: 100%;
+    margin: 0 10px 0 0;
+    max-width: 100%;
+  }
+
+  .text-welcome {
+    text-align: left;
+    margin: 0 30px 25px;
+  }
+
+  .welcome-items {
+    flex-flow: row wrap;
+    width: 100%;
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      margin: 0 15px 0;
+    }
+  }
+
+  .welcome-flex {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mail{
+    order: 10;
+    width: 100%;
+    height: 100%;
+  }
+
+  .item {
+    max-width: 1024px;
+  }
+
+  .title-welcome:before {
+    display: none;
+  }
+
+
+  .welcome-items {
+    padding: 0;
+    width: 100%;
+    max-width: 1020px;
+    li {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      margin: 0 15px 0;
+      padding-top: 15px;
+    }
+  }
+
+  .welcome-flex {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}

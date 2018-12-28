@@ -1,18 +1,20 @@
 const path = require('path');
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
+const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
     devtool: 'source-map',
     entry: {
-        index: './src/index.js'
+        index: './src/index.js',
+        terms: './src/terms.js'
     },
     output: {
         filename: '[name].[hash:20].js',
@@ -78,13 +80,20 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html',
-            // Inject the js bundle at the end of the body of the given template
-            inject: 'body',
+            filename: 'index.html',
+            inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            template: './terms.html',
+            filename: 'terms.html',
+            chunks: ['terms'],
+            inject: 'body'
+        }),
+        new CopyWebpackPlugin([{ context: './src/assets', from: 'img/**/*.*', to: buildPath }]),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
             // Your source logo
-            logo: './src/assets/icon.png',
+            logo: './src/assets/icons/favicon.png',
             // The prefix for all image files (might be a folder or a name)
             prefix: 'icons-[hash]/',
             // Generate a cache file with control hashes and
@@ -93,9 +102,8 @@ module.exports = {
             // Inject the html into the html-webpack-plugin
             inject: true,
             // favicon background color (see https://github.com/haydenbleasel/favicons#usage)
-            background: '#fff',
+            background: '#000',
             // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
-            title: '{{projectName}}',
 
             // which icons should be generated (see https://github.com/haydenbleasel/favicons#usage)
             icons: {

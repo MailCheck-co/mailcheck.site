@@ -1,0 +1,156 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 530px;
+  min-width: 300px;
+  margin: 50px 20px 100px;
+}
+
+.input-radio {
+  display: none;
+
+  &:checked ~ .tab-content {
+    max-height: 200px;
+  }
+
+  &:checked ~ .tab-label:after {
+    transform: rotate(135deg);
+  }
+
+  &:checked ~ .tab-label {
+    padding-bottom: 5px;
+  }
+}
+
+.filter-img {
+  transform: translate(120px, -50px);
+}
+
+.tab {
+  width: 100%;
+
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.tab-content{
+  max-height: 0;
+  overflow: hidden;
+}
+
+.tab-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  padding: 0 10px;
+  margin-top: 0;
+}
+
+.tab-label {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.9px;
+  cursor: pointer;
+  padding: 0 13px 13px 10px;
+
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    right: 0;
+    top: 10px;
+    border-left: 1px solid #1bced4;
+    border-bottom: 1px solid #1bced4;
+    transform: rotate(-45deg);
+    transition: all .5s ease;
+  }
+
+}
+
+.title-small {
+  width: 100%;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  text-align: center;
+
+  &:before {
+    position: absolute;
+    display: block;
+    height: 170px;
+    width: 1024px;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: 'faq';
+    font-size: 160px;
+    font-weight: 900;
+    color: rgba(17, 50, 78, 0.2);
+    text-transform: uppercase;
+  }
+}
+
+.wrapper-questions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 1024px){
+  .accordion {
+    margin: 0;
+  }
+
+  .filter-img {
+    transform: none;
+  }
+
+  .title-small:before {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .accordion {
+    max-width: 80%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .filter-img {
+    order: -1;
+    transform: translateY(50px);
+    min-width: 10%;
+    max-width: 70%;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 25px;
+  }
+
+  .wrapper-questions {
+    justify-content: center;
+  }
+}
+

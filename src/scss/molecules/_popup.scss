@@ -1,0 +1,166 @@
+.popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  max-width: 640px;
+  height: 315px;
+  background-image: linear-gradient(to top, #1edfcf 0%, #55bbff 100%);
+
+  &.open {
+    display: flex;
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-container {
+
+  &.open {
+    display: flex;
+    animation-name: fade;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+
+  &.close {
+    animation-name: fade-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/img/city.png") no-repeat center 50%;
+  background-size: 150% 150%;
+
+  &:before {
+    content: '';
+    background: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: blur(20px);
+  }
+}
+
+.popup-close {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+
+  &:before {
+    position: relative;
+    content: '';
+    display: block;
+    top: 10px;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transform: rotate(-45deg);
+  }
+
+  &:after {
+    display: block;
+    position: relative;
+    content: '';
+    top: 7px;
+    right: 0;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+}
+
+.popup-thanks {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin: 90px 80px 37px;
+  text-align: center;
+}
+
+.popup-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  text-align: center;
+
+  max-width: 520px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .popup {
+    margin: 0 20px;
+    max-height: 260px;
+    height: 100%;
+  }
+
+  .popup-thanks {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 45px 15px 20px;
+    max-width: 95%;
+  }
+
+  .popup-text {
+    font-size: 16px;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}

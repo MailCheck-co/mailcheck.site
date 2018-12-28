@@ -9,7 +9,7 @@
         "build": "webpack --config webpack.prod.js --mode production",
         "lint": "eslint . *.js",
         "preview": "npm run build && http-server dist",
-        "kickstart": "node kickstarter"
+        "deploy": "webpack --config webpack.prod.js --mode production && firebase deploy --only hosting"
     },
     "repository": {
         "type": "git",
@@ -41,6 +41,7 @@
     },
     "homepage": "https://github.com/lifenautjoe/webpack-starter-basic#readme",
     "dependencies": {
+        "copy-webpack-plugin": "^4.6.0",
         "normalize.css": "^8.0.0"
     },
     "devDependencies": {

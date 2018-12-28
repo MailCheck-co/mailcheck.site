@@ -1,136 +1,366 @@
 <!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js gt-ie9 ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js gt-ie9"> <!--<![endif]-->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{projectName}}</title>
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" value="Webpack basic starter project">
-    <meta name="Description" content="A simple webpack starter project for your basic web development needs."/>
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Webpack basic starter project"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="https://lifenautjoe.github.io/webpack-starter-basic/"/>
-    <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg"/>
-    <meta property="og:description" content="A simple webpack starter project for your basic web development needs."/>
-    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="{{mobileHeaderColor}}">
-    <!-- Mobile header color Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="{{mobileHeaderColor}}">
-    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Mailcheck</title>
+  <meta name="description" content="">
+  <meta name="robots" content="all">
+
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- CSS, you gotta have style -->
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet"
+        media="all" onload="if(media!='all')media='all'">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
+
 </head>
 <body>
-<div class="video-background">
-    <div class="video-foreground">
-        <iframe
-            src="https://www.youtube.com/embed/iIEIjo4dvSs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=iIEIjo4dvSs"
-            frameborder="0" allowfullscreen></iframe>
+
+<!--Header-->
+<header role="banner">
+  <div class="wrapper-header">
+    <a class="logo" href="/">
+      <img src="img/logo.png" width="138" height="27" alt="mailcheck">
+    </a>
+    <nav class="header-nav" role="navigation">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#">About Us</a>
+      <a class="nav-link" href="#contact-us">Contact Us</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+    </nav>
+    <a href="https://app.mailcheck.co/" class="btn btn-sign-in">sign in</a>
+  </div>
+</header>
+
+<!--Mobile menu-->
+<span class="burger" id="burger"></span>
+<nav class="mobile-menu" role="navigation" id="mobile-menu">
+  <a class="nav-link mobile-menu-links" href="#features">Features</a>
+  <a class="nav-link mobile-menu-links" href="#pricing">Pricing</a>
+  <a class="nav-link mobile-menu-links" href="#">About Us</a>
+  <a class="nav-link mobile-menu-links" href="#contact-us">Contact Us</a>
+  <a class="nav-link mobile-menu-links" href="#faq">FAQ</a>
+  <a href="https://app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
+</nav>
+
+
+<!--Manage customers...-->
+<main class="manage-customers" role="main">
+  <div class="container">
+    <div class="wrapper-main">
+      <h1 class="title">manage all your customers<br>
+        in one place</h1>
+      <p class="main-text">Take control over your customers, folter all the bots.
+        Performance tracker for Media Buying Teams, Agencies and Affiliates.</p>
+      <div class="main-buttons">
+        <a href="https://app.mailcheck.co/" class="btn btn-live-demo">live demo</a>
+        <a href="https://app.mailcheck.co/" class="btn btn-start">start</a>
+      </div>
+      <p class="scroll-text">scroll to see more</p>
+      <div class="point"></div>
     </div>
-</div>
-<div class="splash">
-    <div class="splash__content">
-        <div class="splash-title">
-            <a href="https://github.com/lifenautjoe/webpack-starter-basic" target="_blank"><img
-                class="splash-title__img"
-                src="<%= require('./src/assets/logo-on-dark-bg.png') %>"
-                alt="webpack logo"></a>
-        </div>
-        <div class="splash-overview">
-            <h1 class="splash-overview__heading">I'm a a simple webpack 4 starter project for your basic web development
-                needs.
-            </h1>
-            <div class="splash-overview__star">
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/lifenautjoe/webpack-starter-basic"
-                   data-show-count="true"
-                   aria-label="Star lifenautjoe/webpack-starter-basic on GitHub">Star</a>
-            </div>
-            <div class="splash-overview__conclusion">
-                <strong> No <a href="https://pragprog.com/the-pragmatic-programmer/extracts/wizards">wizard code</a>,
-                    understandable, scalable.</strong>
-            </div>
-            <div class="splash-overview__details">
-                A <strong>minimal</strong> yet <strong>rich</strong> set of featuasdad res to get you going.
-                <div class="splash-overview-plugins">
-                    <button id="plugins-trigger" class="splash-overview-plugins__trigger">
-                        Show features
-                    </button>
-                    <ul id="plugins" class="splash-overview-plugins__list">
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/babel/babel-loader">Use the latest
-                                JavaScript</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/sass-loader">Write styles in
-                                Sass</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/url-loader">Load and bundle your
-                                assets</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank"
-                               href="https://github.com/webpack/webpack-dev-server">Start a development server and
-                                preview your work</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/postcss/autoprefixer">Automatic css vendor
-                                prefixes</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/uglifyjs-webpack-plugin">Optimizes
-                                scripts for production</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/NMFR/optimize-css-assets-webpack-plugin">Optimizes
-                                styles for production</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/jantimon/favicons-webpack-plugin">Generates
-                                favicons</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank"
-                               href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">Adds
-                                mobile headers color</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="splash-overview-start">
-                <div class="splash-overview-start__command">
-                    git clone https://github.com/lifenautjoe/webpack-starter-basic PROJECT-NAME
-                </div>
-                <div class="splash-overview-start__command">
-                    cd PROJECT-NAME
-                </div>
-                <div class="splash-overview-start__command">
-                    npm install <span class="splash-overview-start__comment"># Install dependencies </span>
-                </div>
-                <div class="splash-overview-start__command">
-                    npm run kickstart <span class="splash-overview-start__comment"># Configure your project</span>
-                </div>
-                <div class="splash-overview-start__command">
-                    npm run start <span class="splash-overview-start__comment"># Start the development server</span>
-                </div>
-                <div class="splash-overview-start__command">
-                    npm run build <span class="splash-overview-start__comment"># Build for production</span>
-                </div>
-            </div>
-            <div class="splash-overview-issues">
-                <div>Have an issue or are in need of guidance?</div>
-                <strong>Open an issue <a
-                    href="https://github.com/lifenautjoe/webpack3-starter/issues">here</a>. </strong>
-            </div>
-            <div class="splash-overview-footer">
-                A project by <strong><a target="_blank"
-                                        href="https://www.instagram.com/lifenautjoe">@lifenautjoe</a></strong>.
-            </div>
-        </div>
+  </div>
+</main>
+
+
+<!--Welcome to the featuress-->
+<section class="welcome" id="features">
+
+  <div class="wrapper-welcome">
+    <h2 class="title title-welcome">welcome to the features</h2>
+    <p class="text-thin text-welcome">Take control over your customers, folter all the bots.
+      Performance tracker for
+      Media Buying Teams, Agencies and Affiliates.</p>
+    <div class="welcome-flex">
+      <img class="mail" src="img/mail-float.png" width="742" height="575" alt="mail">
+      <ul class="welcome-items">
+        <li>
+          <span class="digits">01</span>
+          <p class="text-thin item">Performance tracker for Media Buying Teams, Agencies and Affiliates.</p>
+        </li>
+        <li>
+          <span class="digits">02</span>
+          <p class="text-thin item">Take control over your customers, folter all the bots. </p>
+        </li>
+        <li>
+          <span class="digits">03</span>
+          <p class="text-thin item">Take control over your customers, folter all the bots. Performance tracker
+            for
+            Media Buying</p>
+        </li>
+      </ul>
     </div>
+  </div>
+
+</section>
+
+
+<!--Choose your audience-->
+<section class="choose-your" id="choose-your">
+  <div class="container">
+    <div class="wrapper-choose">
+      <h2 class="title">choose your audience</h2>
+      <input class="read-more-checkbox" type="checkbox" id="read-more">
+      <p class="text-thin art">Now you can choose your audience.
+        Only real customers! Performance tracker for Media Buying Teams, Agencies and Affiliates.
+        Now you can choose your audience. Only real customers! Performance tracker for Media Buying Teams,
+        Agencies and Affiliates. Now you can choose your audience.<br>
+        Only real customers! Performance tracker for Media Buying Teams, Agencies and Affiliates.
+        Now you can choose your audience. Only real customers! </p>
+      <p class="text-thin art">Performance tracker for Media Buying Teams, Agencies and Affiliates. Now you can
+        choose your audience. Only real customers!
+        Performance tracker for Media Buying Teams, Agencies and Affiliates.<br>
+        Now you can choose your audience. Only real customers!
+        Performance tracker for Media Buying Teams, Agencies and Affiliates.
+        Now you can choose your audience. Only real customers! Performance tracker for Media Buying Teams,
+        Agencies and Affiliates.</p>
+      <label class="read-more-label" for="read-more"></label>
+    </div>
+  </div>
+</section>
+
+
+<!--Pricing plans-->
+<section id="pricing" class="cost-effective">
+
+  <div class="wrapper-cost">
+    <h2 class="title title-cost">Cost-effective pricing plans</h2>
+    <p class="text-thin margin">Take control over your customers, folter all the bots.
+      Performance tracker for
+      Media Buying Teams, Agencies and Affiliates.</p>
+    <div class="container cards">
+      <div class="card" id="pro">
+        <h3 class="title-colored">pro</h3>
+        <span class="title lowercase">$ 10/mo</span>
+        <span class="card-features-text">  1,000
+                        emails to validate included</span>
+        <span class="card-features-text">  $0.005/1,000
+                        overage charge</span>
+        <a href="https://app.mailcheck.co/" class="btn btn-choose">choose</a>
+      </div>
+      <div class="card" id="agency">
+        <h3 class="title-colored cyan">agency</h3>
+        <span class="title lowercase">$ 30/mo</span>
+        <span class="card-features-text">  5,000
+                         emails to validate included</span>
+        <span class="card-features-text">  $0.004/1,000
+                        overage charge</span>
+        <a href="https://app.mailcheck.co/" class="btn btn-choose btn-cyan">choose</a>
+      </div>
+      <div class="card" id="enterprise">
+        <h3 class="title-colored grey">enterprise</h3>
+        <span class="title lowercase">$ 100/mo</span>
+        <span class="card-features-text">  20,000
+                        emails to validate included</span>
+        <span class="card-features-text">  $0.003/1,000
+                        overage charge</span>
+        <a href="https://app.mailcheck.co/" class="btn btn-choose btn-grey">choose</a>
+      </div>
+      <div class="card" id="custom">
+        <h3 class="title-colored red">custom</h3>
+        <span class="card-features-text">  <span class="bold">EPIC</span>
+                        100,000+
+                        emails to validate included</span>
+        <span class="card-features-text">  <span class="bold">LEGENDARY</span>
+                        1,000,000,000+
+                        emails to validate included</span>
+        <a href="https://app.mailcheck.co/" class="btn btn-choose btn-red">choose</a>
+      </div>
+    </div>
+  </div>
+
+  <ul class="pagination" id="pagination">
+    <li><a class="pag-item pag-item1 active" id="pag-item1" href="#pro">pro</a></li>
+    <li><a class="pag-item pag-item2" id="pag-item2" href="#agency">agency</a></li>
+    <li><a class="pag-item pag-item3" id="pag-item3" href="#enterprise">enterprise</a></li>
+    <li><a class="pag-item pag-item4" id="pag-item4" href="#custom">custom</a></li>
+  </ul>
+
+  <!-- Slider main container -->
+  <div class="swiper-container" id="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide" id="slide1">
+        <div class="card">
+          <h3 class="title-colored">pro</h3>
+          <span class="title lowercase">$ 10/mo</span>
+          <span class="card-features-text">   1,000
+                        emails to validate included</span>
+          <span class="card-features-text">  $0.005/1,000
+                        overage charge</span>
+          <a href="https://app.mailcheck.co/">
+            <button class="btn btn-choose">choose</button>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-slide" id="slide2">
+        <div class="card">
+          <h3 class="title-colored cyan">agency</h3>
+          <span class="title lowercase">$ 30/mo</span>
+          <span class="card-features-text">  5,000
+                         emails to validate included</span>
+          <span class="card-features-text">  $0.004/1,000
+                        overage charge</span>
+          <a href="https://app.mailcheck.co/">
+            <button class="btn btn-choose btn-cyan">choose</button>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-slide" id="slide3">
+        <div class="card">
+          <h3 class="title-colored grey">enterprise</h3>
+          <span class="title lowercase">$ 100/mo</span>
+          <span class="card-features-text">  20,000
+                        emails to validate included</span>
+          <span class="card-features-text">  $0.003/1,000
+                        overage charge</span>
+          <a href="https://app.mailcheck.co/">
+            <button class="btn btn-choose btn-grey">choose</button>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-slide" id="slide4">
+        <div class="card">
+          <h3 class="title-colored red">custom</h3>
+          <span class="card-features-text">  <span class="bold">EPIC</span>
+                        100,000+
+                        emails to validate included</span>
+          <span class="card-features-text">  <span class="bold">LEGENDARY</span>
+                        1,000,000,000+
+                        emails to validate included</span>
+          <a href="https://app.mailcheck.co/">
+            <button class="btn btn-choose btn-red">choose</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Questions-->
+<section id="faq" class="frequent-questions">
+
+  <div class="wrapper-questions">
+    <h3 class="title-small">most frequent questions</h3>
+
+    <div class="accordion">
+      <div class="tab">
+        <input class="input-radio" type="radio" id="radio1" name="acc-tabs">
+        <label class="tab-label" for="radio1">Take control over your customers?</label>
+        <div class="tab-content">
+          <p class="tab-text">Now you can choose your audience. Only real customers!
+            Performance tracker for Media Buying Teams, Agencies and Affiliates.
+            Now you can choose your audience.</p>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input class="input-radio" type="radio" id="radio2" name="acc-tabs">
+        <label class="tab-label" for="radio2">Is it possible to create carrier and use the sign?</label>
+        <div class="tab-content">
+          <p class="tab-text">Some text here</p>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input class="input-radio" type="radio" id="radio3" name="acc-tabs">
+        <label class="tab-label" for="radio3">Which currency is displayed in the monetary value boxes?</label>
+        <div class="tab-content">
+          <p class="tab-text">Some text here</p>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input class="input-radio" type="radio" id="radio4" name="acc-tabs">
+        <label class="tab-label" for="radio4">Why can I not connect my equipment to your server?</label>
+        <div class="tab-content">
+          <p class="tab-text">Some text here</p>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input class="input-radio" type="radio" id="radio5" name="acc-tabs">
+        <label class="tab-label" for="radio5">Why can I not upgrade the firmware?</label>
+        <div class="tab-content">
+          <p class="tab-text">Some text here</p>
+        </div>
+      </div>
+    </div>
+    <img class="filter-img" src="./img/filter.png" width="444" height="568" alt="filter">
+  </div>
+
+</section>
+
+
+<!--Contact us-->
+<section id="contact-us-section" class="contact-us">
+  <div class="container">
+    <form id="contact-us" class="contact-form">
+      <h2 class="title title-contact">contact us</h2>
+      <input class="input" type="text" placeholder="Name" required>
+      <input class="input" type="email" placeholder="Email" required>
+      <textarea class="input input-message" placeholder="Message" required></textarea>
+      <button class="btn btn-submit" type="submit">submit</button>
+    </form>
+  </div>
+</section>
+
+
+<!--Footer-->
+<footer>
+  <div class="wrapper-footer">
+    <div class="footer-logo-copyright">
+      <a class="logo2" href="/"><img src="./img/logo2.png" width="162" height="27" alt="logo2"></a>
+      <span class="copyright">&#x24B8; 2017-2018 MailCheck</span>
+    </div>
+    <nav class="footer-nav" role="navigation">
+      <a class="nav-link footer-nav-link" href="#features">Features</a>
+      <a class="nav-link footer-nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link footer-nav-link" href="#">About Us</a>
+      <a class="nav-link footer-nav-link" href="#contact-us">Contact Us</a>
+      <a class="nav-link footer-nav-link" href="#">Privacy policy</a>
+      <a class="nav-link footer-nav-link" href="terms.html">Terms and conditions</a>
+    </nav>
+    <span class="copyright2">&#x24B8; 2017-2018 MailCheck</span>
+  </div>
+</footer>
+
+
+<div class="popup-container" id="popup-block">
+  <div class="popup" id="popup-itself">
+    <span class="popup-close" id="close"></span>
+    <span class="popup-thanks">Thanks for filling out
+            our form!</span>
+    <p class="popup-text">We will look over your message and get back to you by tomorrow.
+      Your friends at MailCheck!</p>
+  </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+
 
 </body>
 </html>

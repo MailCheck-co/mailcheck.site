@@ -1,0 +1,46 @@
+.btn-sign-in {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .5);
+
+  &:hover {
+    border-color: #fff;
+  }
+
+  &:active {
+    border-color: rgba(255, 255, 255, .5);
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  max-width: 1280px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+
+  .btn-sign-in {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 30px;
+    z-index: 100;
+  }
+
+  .wrapper-header {
+    justify-content: space-between;
+  }
+}

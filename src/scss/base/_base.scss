@@ -1,0 +1,46 @@
+@viewport { width: device-width; }
+
+html {
+  background-color: $color-background;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  outline: none;
+  &:before,
+  &:after { box-sizing: inherit; }
+  &:focus{
+    outline: none;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+  transition: color .2s;
+  outline: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
