@@ -89,11 +89,11 @@ module.exports = {
             chunks: ['terms'],
             inject: 'body'
         }),
-        new CopyWebpackPlugin([{ context: './src/assets/icons', from: '**/*.*', to: buildPath }]),
+        new CopyWebpackPlugin([{ context: './src/assets/root', from: '**/*.*', to: buildPath }]),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
             // Your source logo
-            logo: './src/assets/icons/favicon.png',
+            logo: './src/assets/root/favicon.png',
             // The prefix for all image files (might be a folder or a name)
             prefix: 'icons-[hash]/',
             // Generate a cache file with control hashes and
