@@ -16,7 +16,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
 
   <title>Mailcheck</title>
-  <meta name="description" content="">
+  <meta name="description" content="An application to clean your subscription list from bounces, and enrich data about customers">
   <meta name="robots" content="all">
 
   <link rel="icon" type="image/ico" href="favicon.ico">
@@ -35,10 +35,8 @@
 <!--Header-->
 <header role="banner">
   <div class="wrapper-header">
-    <a class="logo" href="/">
-      <img src="img/logo.png" width="138" height="27" alt="mailcheck">
-    </a>
-    <nav class="header-nav" role="navigation">
+      <a class="logo" href="/"><img src="<%=require('./src/assets/img/logo.png')%>" width="138" height="27" alt="mail"></a>
+      <nav class="header-nav" role="navigation">
       <a class="nav-link" href="#features">Features</a>
       <a class="nav-link" href="#pricing">Pricing</a>
       <a class="nav-link" href="#">About Us</a>
@@ -89,7 +87,7 @@
       Performance tracker for
       Media Buying Teams, Agencies and Affiliates.</p>
     <div class="welcome-flex">
-      <img class="mail" src="img/mail-float.png" width="742" height="575" alt="mail">
+      <img class="mail" src="<%=require('./src/assets/img/mail-float.png')%>" width="742" height="575" alt="mail">
       <ul class="welcome-items">
         <li>
           <span class="digits">01</span>
@@ -305,7 +303,7 @@
         </div>
       </div>
     </div>
-    <img class="filter-img" src="./img/filter.png" width="444" height="568" alt="filter">
+    <img class="filter-img" src="<%=require('./src/assets/img/filter.png')%>" width="444" height="568" alt="filter">
   </div>
 
 </section>
@@ -329,7 +327,7 @@
 <footer>
   <div class="wrapper-footer">
     <div class="footer-logo-copyright">
-      <a class="logo2" href="/"><img src="./img/logo2.png" width="162" height="27" alt="logo2"></a>
+      <a class="logo2" href="/"><img src="<%=require('./src/assets/img/logo2.png')%>" width="162" height="27" alt="logo2"></a>
       <span class="copyright">&#x24B8; 2017-2018 MailCheck</span>
     </div>
     <nav class="footer-nav" role="navigation">
