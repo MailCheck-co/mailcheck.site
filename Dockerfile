@@ -2,8 +2,8 @@ FROM node:8
 
 WORKDIR /opt/app
 
-COPY package.json ./
-COPY functions/package.json ./functions/
+COPY package.json package-lock.json ./
+COPY functions/package.json functions/package-lock.json ./functions/
 RUN npm i --silent && npm i --silent --prefix functions
 COPY . .
 
