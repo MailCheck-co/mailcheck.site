@@ -2,8 +2,8 @@
 const functions = require('firebase-functions');
 const nodemailer = require('nodemailer');
 
-const gmailEmail = functions.config().gmail.email || "email";
-const gmailPassword = functions.config().gmail.password || "password";
+const gmailEmail = functions.config().gmail.email || 'email';
+const gmailPassword = functions.config().gmail.password || 'password';
 
 const mailTransport = nodemailer.createTransport({
   service: 'gmail',
@@ -15,16 +15,16 @@ const mailTransport = nodemailer.createTransport({
 
 exports.sendMail = functions.https.onRequest((req, res) => {
 
-  let template = ``;
+  let template = '';
 
   for (let key in req.body) {
-    template += (`<p><b>${key}: </b>${req.body[key]}</p>`)
+    template += (`<p><b>${key}: </b>${req.body[key]}</p>`);
   }
-  console.log("Got mail:",template);
+  console.log('Got mail:',template);
 
   const mailOptions = {
     from: `Mailcheck Landing <${gmailEmail}>`,
-    to: `sales@nodeart.io`,
+    to: 'sales@nodeart.io',
     subject: 'Mailchek form',
     html: template
   };
@@ -36,7 +36,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
       return res.status(500);
     } else {
       console.log('Message sent to:', info.envelope.to);
-      res.send({data: "ok"});
+      res.send({data: 'ok'});
       res.status(200).end();
     }
   });

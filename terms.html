@@ -20,10 +20,82 @@
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet"
         media="all" onload="if(media!='all')media='all'">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
 
 </head>
 <body>
-<p class="terms">Terms and Conditions</p>
+
+<!--Header-->
+<header role="banner">
+    <div class="wrapper-header">
+        <a class="logo" href="/"><img src="<%=require('./src/assets/img/logo.png')%>" width="138" height="27" alt="mail"></a>
+        <nav class="header-nav" role="navigation">
+            <a class="nav-link" href="/#features">Features</a>
+            <a class="nav-link" href="/#pricing">Pricing</a>
+            <a class="nav-link" href="/#">About Us</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+            <a class="nav-link" href="/#faq">FAQ</a>
+        </nav>
+        <a href="//app.mailcheck.co/" class="btn btn-sign-in">sign in</a>
+    </div>
+</header>
+
+<!--Terms and Conditions-->
+<main class="terms" id="terms">
+    <div class="container">
+        <div class="wrapper-choose">
+            <h2 class="title">Terms &amp; Conditions</h2>
+            <input class="read-more-checkbox" type="checkbox" id="read-more">
+            <p class="text-thin art">Now you can choose your audience.
+                Only real customers! Performance tracker for Media Buying Teams, Agencies and Affiliates.
+                Now you can choose your audience. Only real customers! Performance tracker for Media Buying Teams,
+                Agencies and Affiliates. Now you can choose your audience.<br>
+                Only real customers! Performance tracker for Media Buying Teams, Agencies and Affiliates.
+                Now you can choose your audience. Only real customers! </p>
+            <p class="text-thin art">Performance tracker for Media Buying Teams, Agencies and Affiliates. Now you can
+                choose your audience. Only real customers!
+                Performance tracker for Media Buying Teams, Agencies and Affiliates.<br>
+                Now you can choose your audience. Only real customers!
+                Performance tracker for Media Buying Teams, Agencies and Affiliates.
+                Now you can choose your audience. Only real customers! Performance tracker for Media Buying Teams,
+                Agencies and Affiliates.</p>
+            <label class="read-more-label" for="read-more"></label>
+        </div>
+    </div>
+</main>
+
+<!--Contact us-->
+<section id="contact-us-section" class="contact-us">
+    <div class="container">
+        <form id="contact-us" class="contact-form">
+            <h2 class="title title-contact">contact us</h2>
+            <input class="input" type="text" placeholder="Name" required>
+            <input class="input" type="email" placeholder="Email" required>
+            <textarea class="input input-message" placeholder="Message" required></textarea>
+            <button class="btn btn-submit" type="submit">submit</button>
+        </form>
+    </div>
+</section>
+
+
+<!--Footer-->
+<footer>
+    <div class="wrapper-footer">
+        <div class="footer-logo-copyright">
+            <a class="logo2" href="/"><img src="<%=require('./src/assets/img/logo2.png')%>" width="162" height="27" alt="logo2"></a>
+            <span class="copyright">&#x24B8; 2017-2018 MailCheck</span>
+        </div>
+        <nav class="footer-nav" role="navigation">
+            <a class="nav-link footer-nav-link" href="/#features">Features</a>
+            <a class="nav-link footer-nav-link" href="/#pricing">Pricing</a>
+            <a class="nav-link footer-nav-link" href="/#">About Us</a>
+            <a class="nav-link footer-nav-link" href="/#contact-us">Contact Us</a>
+            <a class="nav-link footer-nav-link" href="/#">Privacy policy</a>
+            <a class="nav-link footer-nav-link" href="#">Terms and conditions</a>
+            <a class="nav-link footer-nav-link" href="//nodeart.io">Product of NodeArt</a>
+        </nav>
+        <span class="copyright2">&#x24B8; 2017-2018 MailCheck</span>
+    </div>
+</footer>
+
 </body>
 </html>
