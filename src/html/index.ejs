@@ -46,7 +46,7 @@
 <!--Header-->
 <header role="banner">
   <div class="wrapper-header">
-      <a class="logo" href="/"><img src="<%=require('./src/assets/img/logo.png')%>" width="138" height="27" alt="mail"></a>
+      <a class="logo" href="/"><img src="<%=require('../assets/img/logo.png')%>" width="138" height="27" alt="mail"></a>
       <nav class="header-nav" role="navigation">
       <a class="nav-link" href="#features">Features</a>
       <a class="nav-link" href="#pricing">Pricing</a>
@@ -98,7 +98,7 @@
       Performance tracker for
       Media Buying Teams, Agencies and Affiliates.</p>
     <div class="welcome-flex">
-      <img class="mail" src="<%=require('./src/assets/img/mail-float.png')%>" width="742" height="575" alt="mail">
+      <img class="mail" src="<%=require('../assets/img/mail-float.png')%>" width="742" height="575" alt="mail">
       <ul class="welcome-items">
         <li>
           <span class="digits">01</span>
@@ -314,7 +314,7 @@
         </div>
       </div>
     </div>
-    <img class="filter-img" src="<%=require('./src/assets/img/filter.png')%>" width="444" height="568" alt="filter">
+    <img class="filter-img" src="<%=require('../assets/img/filter.png')%>" width="444" height="568" alt="filter">
   </div>
 
 </section>
@@ -334,25 +334,7 @@
 </section>
 
 
-<!--Footer-->
-<footer>
-  <div class="wrapper-footer">
-    <div class="footer-logo-copyright">
-      <a class="logo2" href="/"><img src="<%=require('./src/assets/img/logo2.png')%>" width="162" height="27" alt="logo2"></a>
-      <span class="copyright">&#x24B8; 2017-2018 MailCheck</span>
-    </div>
-    <nav class="footer-nav" role="navigation">
-      <a class="nav-link footer-nav-link" href="#features">Features</a>
-      <a class="nav-link footer-nav-link" href="#pricing">Pricing</a>
-      <a class="nav-link footer-nav-link" href="#">About Us</a>
-      <a class="nav-link footer-nav-link" href="#contact-us">Contact Us</a>
-      <a class="nav-link footer-nav-link" href="#">Privacy policy</a>
-      <a class="nav-link footer-nav-link" href="terms.html">Terms and conditions</a>
-      <a class="nav-link footer-nav-link" href="//nodeart.io">Product of NodeArt</a>
-    </nav>
-    <span class="copyright2">&#x24B8; 2017-2018 MailCheck</span>
-  </div>
-</footer>
+<%=require('./partials/footer.ejs')%>
 
 
 <div class="popup-container" id="popup-block">

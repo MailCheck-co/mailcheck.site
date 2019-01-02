@@ -70,13 +70,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './src/html/index.ejs',
       filename: 'index.html',
       chunks: ['index'],
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './terms.html',
+      template: './src/html/terms.ejs',
       filename: 'terms.html',
       chunks: ['terms'],
       inject: true
