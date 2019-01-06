@@ -6,7 +6,8 @@ module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: {
     index: './src/index.js',
-    terms: './src/terms.js'
+    terms: './src/terms.js',
+    404: './src/404.js',
   },
   devServer: {
     port: 8080,
@@ -89,5 +90,11 @@ module.exports = {
       chunks: ['terms'],
       inject: true
     }),
+      new HtmlWebpackPlugin({
+          template: './src/html/404.hbs',
+          filename: '404.html',
+          chunks: ['terms'],
+          inject: true
+      }),
   ]
 };
