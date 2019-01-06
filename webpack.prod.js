@@ -74,12 +74,20 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+            {
+                test: /\.hbs$/,
+                loader: 'handlebars-loader',
+                query: {
+                    inlineRequires: '/img/',
+                    knownHelpersOnly: false,
+                }
+            },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/html/index.ejs',
+            template: './src/html/index.hbs',
             filename: 'index.html',
             chunks: ['index'],
             inject: 'body',
@@ -89,7 +97,7 @@ module.exports = {
             }
         }),
         new HtmlWebpackPlugin({
-            template: './src/html/terms.ejs',
+            template: './src/html/terms.hbs',
             filename: 'terms.html',
             chunks: ['terms'],
             inject: 'body',

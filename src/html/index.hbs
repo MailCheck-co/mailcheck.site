@@ -43,33 +43,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXLTC2Z"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!--Header-->
-<header role="banner">
-  <div class="wrapper-header">
-      <a class="logo" href="/"><img src="<%=require('../assets/img/logo.png')%>" width="138" height="27" alt="mail"></a>
-      <nav class="header-nav" role="navigation">
-      <a class="nav-link" href="#features">Features</a>
-      <a class="nav-link" href="#pricing">Pricing</a>
-      <a class="nav-link" href="#">About Us</a>
-      <a class="nav-link" href="#contact-us">Contact Us</a>
-      <a class="nav-link" href="#faq">FAQ</a>
-    </nav>
-    <a href="//app.mailcheck.co/" class="btn btn-sign-in">sign in</a>
-  </div>
-</header>
-
-<!--Mobile menu-->
-<span class="burger" id="burger"></span>
-<nav class="mobile-menu" role="navigation" id="mobile-menu">
-  <a class="nav-link mobile-menu-links" href="#features">Features</a>
-  <a class="nav-link mobile-menu-links" href="#pricing">Pricing</a>
-  <a class="nav-link mobile-menu-links" href="#">About Us</a>
-  <a class="nav-link mobile-menu-links" href="#contact-us">Contact Us</a>
-  <a class="nav-link mobile-menu-links" href="#faq">FAQ</a>
-  <a href="//app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
-</nav>
-
-
+{{>partials/header}}
 <!--Manage customers...-->
 <main class="manage-customers" role="main">
   <div class="container">
@@ -98,7 +72,7 @@
       Performance tracker for
       Media Buying Teams, Agencies and Affiliates.</p>
     <div class="welcome-flex">
-      <img class="mail" src="<%=require('../assets/img/mail-float.png')%>" width="742" height="575" alt="mail">
+      <img class="mail" src="../assets/img/mail-float.png" width="742" height="575" alt="mail">
       <ul class="welcome-items">
         <li>
           <span class="digits">01</span>
@@ -314,38 +288,15 @@
         </div>
       </div>
     </div>
-    <img class="filter-img" src="<%=require('../assets/img/filter.png')%>" width="444" height="568" alt="filter">
+    <img class="filter-img" src="../assets/img/filter.png" width="444" height="568" alt="filter">
   </div>
 
 </section>
 
 
-<!--Contact us-->
-<section id="contact-us-section" class="contact-us">
-  <div class="container">
-    <form id="contact-us" class="contact-form">
-      <h2 class="title title-contact">contact us</h2>
-      <input class="input" type="text" placeholder="Name" required>
-      <input class="input" type="email" placeholder="Email" required>
-      <textarea class="input input-message" placeholder="Message" required></textarea>
-      <button class="btn btn-submit" type="submit">submit</button>
-    </form>
-  </div>
-</section>
+{{>partials/contactus}}
+{{>partials/footer}}
 
-
-<%=require('./partials/footer.ejs')%>
-
-
-<div class="popup-container" id="popup-block">
-  <div class="popup" id="popup-itself">
-    <span class="popup-close" id="close"></span>
-    <span class="popup-thanks">Thanks for filling out
-            our form!</span>
-    <p class="popup-text">We will look over your message and get back to you by tomorrow.
-      Your friends at MailCheck!</p>
-  </div>
-</div>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
 

@@ -35,20 +35,8 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXLTC2Z"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!--Header-->
-<header role="banner">
-    <div class="wrapper-header">
-        <a class="logo" href="/"><img src="<%=require('../assets/img/logo.png')%>" width="138" height="27" alt="mail"></a>
-        <nav class="header-nav" role="navigation">
-            <a class="nav-link" href="/#features">Features</a>
-            <a class="nav-link" href="/#pricing">Pricing</a>
-            <a class="nav-link" href="/#">About Us</a>
-            <a class="nav-link" href="#contact-us">Contact Us</a>
-            <a class="nav-link" href="/#faq">FAQ</a>
-        </nav>
-        <a href="//app.mailcheck.co/" class="btn btn-sign-in">sign in</a>
-    </div>
-</header>
+{{>partials/header}}
+
 
 <!--Terms and Conditions-->
 <main class="terms" id="terms">
@@ -74,20 +62,8 @@
     </div>
 </main>
 
-<!--Contact us-->
-<section id="contact-us-section" class="contact-us">
-    <div class="container">
-        <form id="contact-us" class="contact-form">
-            <h2 class="title title-contact">contact us</h2>
-            <input class="input" type="text" placeholder="Name" required>
-            <input class="input" type="email" placeholder="Email" required>
-            <textarea class="input input-message" placeholder="Message" required></textarea>
-            <button class="btn btn-submit" type="submit">submit</button>
-        </form>
-    </div>
-</section>
-
-<%=require('./partials/footer.ejs')%>
+{{>partials/contactus}}
+{{>partials/footer}}
 
 </body>
 </html>
