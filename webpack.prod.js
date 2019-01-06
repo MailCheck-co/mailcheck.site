@@ -74,21 +74,37 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+            {
+                test: /\.hbs$/,
+                loader: 'handlebars-loader',
+                query: {
+                    inlineRequires: '/img/',
+                    knownHelpersOnly: false,
+                }
+            },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: './src/html/index.hbs',
             filename: 'index.html',
             chunks: ['index'],
-            inject: 'body'
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
         }),
         new HtmlWebpackPlugin({
-            template: './terms.html',
+            template: './src/html/terms.hbs',
             filename: 'terms.html',
             chunks: ['terms'],
-            inject: 'body'
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
         }),
         new CopyWebpackPlugin([{ context: './src/assets/root', from: '**/*.*', to: buildPath }]),
         new CleanWebpackPlugin(buildPath),

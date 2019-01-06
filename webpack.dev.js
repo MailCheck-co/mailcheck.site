@@ -65,18 +65,26 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+        {
+            test: /\.hbs$/,
+            loader: 'handlebars-loader',
+            query: {
+                inlineRequires: '/img/',
+                knownHelpersOnly: false,
+            }
+        },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './src/html/index.hbs',
       filename: 'index.html',
       chunks: ['index'],
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './terms.html',
+      template: './src/html/terms.hbs',
       filename: 'terms.html',
       chunks: ['terms'],
       inject: true
