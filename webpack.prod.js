@@ -14,7 +14,8 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         index: './src/index.js',
-        terms: './src/terms.js'
+        terms: './src/terms.js',
+        404: './src/404.js',
     },
     output: {
         filename: '[name].[hash:20].js',
@@ -100,6 +101,16 @@ module.exports = {
             template: './src/html/terms.hbs',
             filename: 'terms.html',
             chunks: ['terms'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/404.hbs',
+            filename: '404.html',
+            chunks: ['404'],
             inject: 'body',
             minify: {
                 removeComments: true,
