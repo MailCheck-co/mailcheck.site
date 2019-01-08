@@ -7,7 +7,32 @@ import './scss/styles.scss';
     const popUpBlock = document.getElementById('popup-block');
 
     form.addEventListener('submit', function (e) {
+        const nameValue = form.querySelector("input[type=text]").value;
+        const mailValue = form.querySelector("input[type=email]").value;
+        const textareaValue = form.querySelector(".input-message").value;
+
         e.preventDefault();
+
+        const data = {
+            name: nameValue,
+            email: mailValue,
+            subject: textareaValue
+        };
+
+        const formData = new FormData();
+
+        for (let name in data) {
+            formData.append(name, data[name]);
+        }
+
+        fetch('/sendMail', {
+            method: "POST",
+            body: formData
+        })
+            .then(res => res.text())
+            .then(() => form.reset())
+            .catch(e => console.log(e));
+
         popUpBlock.classList.add('open');
 
         popUp.classList.add('open');
@@ -117,7 +142,7 @@ import './scss/styles.scss';
     });
 
     const mySwiper = new Swiper('.swiper-container', {
-        slidesPerView: 1.25,
+        slidesPerView: 1,
         initialSlide: 0,
         loop: true,
         spaceBetween: 5,

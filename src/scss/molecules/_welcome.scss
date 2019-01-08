@@ -36,7 +36,7 @@
 .welcome-flex {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .title-welcome {
-  margin: 0 30px 25px;
+  margin: 25px 30px;
 
   &:before {
      position: absolute;
