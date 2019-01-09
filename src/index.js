@@ -7,61 +7,62 @@ import './scss/styles.scss';
   const popUpBlock = document.getElementById('popup-block');
 
   form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    popUpBlock.classList.add('open');
-    form.addEventListener('submit', function (e) {
-        const nameValue = form.querySelector("input[type=text]").value;
-        const mailValue = form.querySelector("input[type=email]").value;
-        const textareaValue = form.querySelector(".input-message").value;
+      e.preventDefault();
+      popUpBlock.classList.add('open');
+      form.addEventListener('submit', function (e) {
+          const nameValue = form.querySelector("input[type=text]").value;
+          const mailValue = form.querySelector("input[type=email]").value;
+          const textareaValue = form.querySelector(".input-message").value;
 
-        e.preventDefault();
+          e.preventDefault();
 
-        const data = {
-            name: nameValue,
-            email: mailValue,
-            subject: textareaValue
-        };
+          const data = {
+              name: nameValue,
+              email: mailValue,
+              subject: textareaValue
+          };
 
-        const formData = new FormData();
+          const formData = new FormData();
 
-        for (let name in data) {
-            formData.append(name, data[name]);
-        }
+          for (let name in data) {
+              formData.append(name, data[name]);
+          }
 
-        fetch('/sendMail', {
-            method: "POST",
-            body: formData
-        })
-            .then(res => res.text())
-            .then(() => form.reset())
-            .catch(e => console.log(e));
+          fetch('/sendMail', {
+              method: "POST",
+              body: formData
+          })
+              .then(res => res.text())
+              .then(() => form.reset())
+              .catch(e => console.log(e));
 
-        popUpBlock.classList.add('open');
+          popUpBlock.classList.add('open');
 
-    popUp.classList.add('open');
+          popUp.classList.add('open');
 
-    document.body.classList.add('fixed');
-    window.dataLayer.push({
-      'eventCategory': 'site',
-      'eventAction': 'contactform',
-      'eventLabel': 'submit',
-      'eventValue': '',
-      'event':'gaEvent',
-    });
+          document.body.classList.add('fixed');
+          window.dataLayer.push({
+              'eventCategory': 'site',
+              'eventAction': 'contactform',
+              'eventLabel': 'submit',
+              'eventValue': '',
+              'event': 'gaEvent',
+          });
 
-    popUpBlock.addEventListener('click', function (event) {
-      let target = event.target;
-      if (target.classList.contains('popup-close') || target.classList.contains('popup-container')) {
-        popUpBlock.classList.add('close');
+          popUpBlock.addEventListener('click', function (event) {
+              let target = event.target;
+              if (target.classList.contains('popup-close') || target.classList.contains('popup-container')) {
+                  popUpBlock.classList.add('close');
 
-        popUp.classList.add('close');
-        setTimeout(function () {
-          popUpBlock.classList.remove('open', 'close');
-          popUp.classList.remove('open', 'close');
-        }, 200);
-        document.body.classList.remove('fixed');
-      }
-    });
+                  popUp.classList.add('close');
+                  setTimeout(function () {
+                      popUpBlock.classList.remove('open', 'close');
+                      popUp.classList.remove('open', 'close');
+                  }, 200);
+                  document.body.classList.remove('fixed');
+              }
+          });
+      });
   });
 
   const burger = document.getElementById('burger');
@@ -152,7 +153,7 @@ import './scss/styles.scss';
   });
 
     const mySwiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
+        slidesPerView: 1.25,
         initialSlide: 0,
         loop: true,
         spaceBetween: 5,
