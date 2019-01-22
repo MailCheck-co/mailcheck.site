@@ -6,9 +6,6 @@ import './scss/styles.scss';
   const popUp = document.getElementById('popup-itself');
   const popUpBlock = document.getElementById('popup-block');
 
-  form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      popUpBlock.classList.add('open');
       form.addEventListener('submit', function (e) {
           const nameValue = form.querySelector("input[type=text]").value;
           const mailValue = form.querySelector("input[type=email]").value;
@@ -63,7 +60,6 @@ import './scss/styles.scss';
               }
           });
       });
-  });
 
   const burger = document.getElementById('burger');
   const mobileMenu = document.getElementById('mobile-menu');
