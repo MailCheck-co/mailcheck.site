@@ -22,6 +22,8 @@
 .contact-us {
   padding: 117px 0;
   z-index: 100;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .contact-us:before {
