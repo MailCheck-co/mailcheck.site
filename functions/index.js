@@ -1,7 +1,5 @@
-'use strict';
 const functions = require('firebase-functions');
 const nodemailer = require('nodemailer');
-
 const gmailEmail = functions.config().gmail.email || 'email';
 const gmailPassword = functions.config().gmail.password || 'password';
 
@@ -15,12 +13,13 @@ const mailTransport = nodemailer.createTransport({
 
 exports.sendMail = functions.https.onRequest((req, res) => {
 
-  let template = '';
+    let pb = JSON.parse(req.body);
+    let keys = Object.keys(pb);
 
-  for (let key in req.body) {
-    template += (`<p><b>${key}: </b>${req.body[key]}</p>`);
-  }
-  console.log('Got mail:',template);
+    let template = '';
+
+    keys.forEach(e => template += `<p><b>${e}: </b>${pb[e]}</p>`);
+    console.log('Got mail:',template);
 
   const mailOptions = {
     from: `Mailcheck Landing <${gmailEmail}>`,

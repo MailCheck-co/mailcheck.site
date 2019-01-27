@@ -27,7 +27,7 @@ import './scss/styles.scss';
 
           fetch('/sendMail', {
               method: "POST",
-              body: formData
+              body: JSON.stringify(data)
           })
               .then(res => res.text())
               .then(() => form.reset())
