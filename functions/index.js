@@ -23,7 +23,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
 
   const mailOptions = {
     from: `Mailcheck Landing <${gmailEmail}>`,
-    to: 'sales@nodeart.io',
+    to: 'contact@mailcheck.co',
     subject: 'Mailcheсk form',
     html: template
   };
