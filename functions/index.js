@@ -16,7 +16,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
     let pb = JSON.parse(req.body);
     let keys = Object.keys(pb);
 
-    let template = '';
+    let template = '<h2>Contact form from mailcheck.co</h2>';
 
     keys.forEach(e => template += `<p><b>${e}: </b>${pb[e]}</p>`);
     console.log('Got mail:',template);
