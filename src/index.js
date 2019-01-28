@@ -10,13 +10,15 @@ import './scss/styles.scss';
           const nameValue = form.querySelector("input[type=text]").value;
           const mailValue = form.querySelector("input[type=email]").value;
           const textareaValue = form.querySelector(".input-message").value;
+          const referrerValue = document.referrer;
 
           e.preventDefault();
 
           const data = {
               name: nameValue,
               email: mailValue,
-              subject: textareaValue
+              subject: textareaValue,
+              referrer: referrerValue
           };
 
           const formData = new FormData();
