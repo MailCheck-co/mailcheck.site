@@ -2,7 +2,7 @@ project:
   key: MAIL
   plan:
     key: MLAND
-    name: mailcheck.co fb console https://console.firebase.google.com/project/mailcheck-landing/overview
+    name: Landing
 stages:
 - jobs:
   - scripts:
