@@ -137,3 +137,9 @@ fabric.properties
 
 /bamboo-specs/
 dist
+README.md
+.gitignore
+.dockerignore
+.editorconfig
+.eslintignore
+.eslintrc.yml
