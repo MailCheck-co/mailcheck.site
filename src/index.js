@@ -1,7 +1,7 @@
 import 'normalize.css/normalize.css';
 import './scss/styles.scss';
 
-import './refer';
+import './js/refer';
 
 (function () {
   const form = document.getElementById('contact-us');
