@@ -1,6 +1,7 @@
 (function (window, document) {
 
     const COOKIE_KEY = 'affil';
+    const DOMAIN = '.mailcheck.co';
 
     const isEmpty = (obj) => Object.keys(obj).length === 0;
 
@@ -102,7 +103,7 @@
             newParams,
         );
         const cookie = JSON.stringify(merged);
-        setCookie(COOKIE_KEY, cookie, {path: '/'});
+        setCookie(COOKIE_KEY, cookie, {path: '/', domain: DOMAIN});
     };
 
     const run = () => {
