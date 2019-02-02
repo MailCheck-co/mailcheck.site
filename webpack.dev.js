@@ -7,7 +7,6 @@ module.exports = {
   entry: {
     index: './src/index.js',
     terms: './src/terms.js',
-    refer: './src/refer.js',
     404: './src/404.js',
   },
   devServer: {
