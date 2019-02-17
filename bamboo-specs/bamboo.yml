@@ -6,5 +6,5 @@ project:
 stages:
 - jobs:
   - scripts:
-    - '[ "$bamboo_repository_git_branch" = "master" ] && docker build --force-rm=true --build-arg firebasekey=$bamboo_firebasekey --tag=registry.nodeart.io/mailcheck/land:latest .'
+    - '[ "$bamboo_repository_git_branch" = "master" ] && docker build --build-arg firebasekey=$bamboo_firebasekey --tag=registry.nodeart.io/mailcheck/land:latest .'
     - '[ "$bamboo_repository_git_branch" = "master" ] && docker rmi registry.nodeart.io/mailcheck/land:latest'
