@@ -103,13 +103,32 @@
 
 .text-thin {
   width: 100%;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.8px;
   text-align: center;
   margin: 0 0 15px 0;
+
+  &-link {
+    text-decoration: underline;
+  }
+}
+
+.terms-text {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.terms-text > li {
+  list-style-position: inside;
+}
+
+.subtitle {
+  margin: 5px auto;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .terms {
@@ -136,7 +155,11 @@
 
 @media only screen and (max-width: 320px) {
   .container {
-    padding: 0 25px;
+    padding: 0 15px;
+  }
+
+  .terms-text {
+    text-align: left;
   }
 }
 
@@ -147,6 +170,6 @@
 
 @media only screen and (max-width: 320px) {
   .container {
-    padding: 0 25px;
+    padding: 0 15px;
   }
 }
