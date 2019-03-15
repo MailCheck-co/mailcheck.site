@@ -2,9 +2,15 @@ project:
   key: MAIL
   plan:
     key: MLAND
-    name: Landing
+    name: mailcheck-landing.firebaseapp.com
 stages:
-- jobs:
-  - scripts:
-    - '[ "$bamboo_repository_git_branch" = "master" ] && docker build --build-arg firebasekey=$bamboo_firebasekey --tag=registry.nodeart.io/mailcheck/land:latest .'
-    - '[ "$bamboo_repository_git_branch" = "master" ] && docker rmi registry.nodeart.io/mailcheck/land:latest'
+  - jobs:
+      - scripts:
+          - '#!/bin/bash'
+          - 'set -euo pipefail'
+          - 'export image_name=registry.nodeart.io/mailcheck/land:latest'
+          - '[ "$bamboo_repository_git_branch" = "master" ] && docker build --build-arg firebasekey=$bamboo_firebasekey --tag=$image_name .'
+          - '[ "$bamboo_repository_git_branch" = "master" ] && docker rmi $image_name'
+          - '[ "$bamboo_repository_git_branch" = "master" ] && echo "Building and deployment completed successfully" && exit 0'
+          - '[ "$bamboo_repository_git_branch" != "master" ] && echo "Automatic building and deployment enabled only for master branch"'
+        interpreter: shell
