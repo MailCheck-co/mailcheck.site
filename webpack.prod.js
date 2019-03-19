@@ -15,6 +15,7 @@ module.exports = {
     entry: {
         index: './src/index.js',
         terms: './src/terms.js',
+        privacy: './src/privacy.js',
         404: './src/404.js',
     },
     output: {
@@ -101,6 +102,16 @@ module.exports = {
             template: './src/html/terms.hbs',
             filename: 'terms.html',
             chunks: ['terms'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/privacy.hbs',
+            filename: 'privacy.html',
+            chunks: ['privacy'],
             inject: 'body',
             minify: {
                 removeComments: true,

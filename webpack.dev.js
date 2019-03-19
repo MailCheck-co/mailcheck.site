@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     terms: './src/terms.js',
+    privacy: './src/privacy.js',
     refer: './src/refer.js',
     404: './src/404.js',
   },
@@ -89,6 +90,12 @@ module.exports = {
       template: './src/html/terms.hbs',
       filename: 'terms.html',
       chunks: ['terms'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/privacy.hbs',
+      filename: 'privacy.html',
+      chunks: ['privacy'],
       inject: true
     }),
       new HtmlWebpackPlugin({
