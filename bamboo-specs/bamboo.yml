@@ -9,7 +9,7 @@ stages:
           - '#!/bin/bash'
           - 'set -euo pipefail'
           - 'export image_name=registry.nodeart.io/mailcheck/land:latest'
-          - '[ "$bamboo_repository_git_branch" = "master" ] && docker build --build-arg firebasekey=$bamboo_firebasekey --tag=$image_name .'
+          - '[ "$bamboo_repository_git_branch" = "master" ] && docker build --build-arg firebasekey=$(cat /run/secrets/firebase_key) --tag=$image_name .'
           - '[ "$bamboo_repository_git_branch" = "master" ] && docker rmi $image_name'
           - '[ "$bamboo_repository_git_branch" = "master" ] && echo "Building and deployment completed successfully" && exit 0'
           - '[ "$bamboo_repository_git_branch" != "master" ] && echo "Automatic building and deployment enabled only for master branch"'
