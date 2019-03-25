@@ -42,6 +42,11 @@
   box-sizing: border-box;
 }
 
+.content-block {
+  max-width: 880px;
+  margin: auto;
+}
+
 .fixed {
   overflow: hidden;
 }
