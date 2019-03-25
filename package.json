@@ -9,7 +9,8 @@
         "build": "webpack --config webpack.prod.js --mode production",
         "lint": "eslint . *.js",
         "preview": "npm run build && http-server dist",
-        "deploy": "webpack --config webpack.prod.js --mode production && firebase deploy"
+        "deploy_hosting": "firebase deploy --only hosting",
+        "deploy_functions": "firebase deploy --only functions"
     },
     "repository": {
         "type": "git",
