@@ -9,9 +9,9 @@ import './js/refer';
   const popUpBlock = document.getElementById('popup-block');
 
       form.addEventListener('submit', function (e) {
-          const nameValue = form.querySelector("input[type=text]").value;
-          const mailValue = form.querySelector("input[type=email]").value;
-          const textareaValue = form.querySelector(".input-message").value;
+          const nameValue = form.querySelector('input[type=text]').value;
+          const mailValue = form.querySelector('input[type=email]').value;
+          const textareaValue = form.querySelector('.input-message').value;
           const referrerValue = document.referrer;
 
           e.preventDefault();
@@ -30,7 +30,7 @@ import './js/refer';
           }
 
           fetch('/sendMail', {
-              method: "POST",
+              method: 'POST',
               body: JSON.stringify(data)
           })
               .then(res => res.text())
