@@ -22,7 +22,7 @@ RUN --mount=type=bind,source=functions/package.json,target=functions/package.jso
     --mount=type=cache,target=/root/.npm,id=npm_cache \
     npm --prefer-offline ci --silent --prefix functions
 
-FROM credentials AS build
+FROM credentials AS build_hosting
 RUN --mount=type=bind,source=src,target=src \
     --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
@@ -33,27 +33,25 @@ RUN --mount=type=bind,source=src,target=src \
     npm run build
 
 FROM credentials AS deploy_hosting
-RUN --mount=type=bind,source=src,target=src \
-    --mount=type=bind,source=.firebaserc,target=.firebaserc \
-    --mount=type=bind,source=firebase.json,target=firebase.json \
-    --mount=type=bind,source=package.json,target=package.json \
-    --mount=type=bind,source=package-lock.json,target=package-lock.json \
-    --mount=type=bind,source=/opt/app/node_modules,target=node_modules,from=landing_dependencies \
-    --mount=type=bind,source=/opt/app/dist,target=dist,from=build \
-    npm run deploy_hosting
-
-FROM credentials AS deploy_functions
 RUN --mount=type=bind,source=.firebaserc,target=.firebaserc \
     --mount=type=bind,source=firebase.json,target=firebase.json \
     --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
-    --mount=type=bind,source=functions/index.js,target=functions/index.js \
-    --mount=type=bind,source=functions/package.json,target=functions/package.json \
-    --mount=type=bind,source=functions/package-lock.json,target=functions/package-lock.json \
-    --mount=type=bind,source=/opt/app/functions/node_modules,target=functions/node_modules,from=functions_dependencies \
+    --mount=type=bind,source=/opt/app/node_modules,target=node_modules,from=landing_dependencies \
+    --mount=type=bind,source=/opt/app/dist,target=dist,from=build_hosting \
+    npm run deploy_hosting
+
+FROM credentials AS deploy_functions
+WORKDIR /opt/app/functions
+RUN --mount=type=bind,source=.firebaserc,target=/opt/app/.firebaserc \
+    --mount=type=bind,source=firebase.json,target=/opt/app/firebase.json \
+    --mount=type=bind,source=functions/index.js,target=index.js \
+    --mount=type=bind,source=functions/package.json,target=package.json \
+    --mount=type=bind,source=functions/package-lock.json,target=package-lock.json \
+    --mount=type=bind,source=/opt/app/functions/node_modules,target=node_modules,from=functions_dependencies \
     npm run deploy_functions
 
-FROM build AS bind_stages
+FROM base_stage AS bind_stages
 RUN --mount=target=.,from=deploy_functions \
     --mount=target=.,from=deploy_hosting
 
