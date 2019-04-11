@@ -9,6 +9,7 @@ module.exports = {
     terms: './src/terms.js',
     privacy: './src/privacy.js',
     blog: './src/blog.js',
+    scholarship: './src/scholarship.js',
     refer: './src/refer.js',
     404: './src/404.js',
   },
@@ -103,6 +104,12 @@ module.exports = {
       template: './src/html/blog.hbs',
       filename: 'blog.html',
       chunks: ['blog'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/scholarship.hbs',
+      filename: 'scholarship.html',
+      chunks: ['scholarship'],
       inject: true
     }),
       new HtmlWebpackPlugin({
