@@ -1,11 +1,11 @@
 .copyright {
   max-width: 143px;
   height: 16px;
-  opacity: 0.5;
+  opacity: .5;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.8px;
+  letter-spacing: .8px;
 
   margin-bottom: 50px;
 }
@@ -18,7 +18,7 @@
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
-  max-height: 130px;
+  max-height: 160px;
   height: 100%;
   margin-right: 25%;
   margin-bottom: 20px;
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 240px;
+  height: 320px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -17,6 +17,7 @@ module.exports = {
         terms: './src/terms.js',
         privacy: './src/privacy.js',
         blog: './src/blog.js',
+        scholarship: './src/scholarship.js',
         404: './src/404.js',
     },
     output: {
@@ -123,6 +124,16 @@ module.exports = {
             template: './src/html/blog.hbs',
             filename: 'blog.html',
             chunks: ['blog'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/scholarship.hbs',
+            filename: 'scholarship.html',
+            chunks: ['scholarship'],
             inject: 'body',
             minify: {
                 removeComments: true,
