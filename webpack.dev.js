@@ -9,6 +9,8 @@ module.exports = {
     terms: './src/terms.js',
     privacy: './src/privacy.js',
     blog: './src/blog.js',
+    csv_file: './src/csv-file.js',
+    right_approach: './src/right-approach.js',
     scholarship: './src/scholarship.js',
     refer: './src/refer.js',
     404: './src/404.js',
@@ -107,7 +109,19 @@ module.exports = {
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/scholarship.hbs',
+      template: './src/html/blog/csv-file.hbs',
+      filename: 'csv-file.html',
+      chunks: ['csv_file'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/right-approach.hbs',
+      filename: 'right-approach.html',
+      chunks: ['right_approach'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/scholarship.hbs',
       filename: 'scholarship.html',
       chunks: ['scholarship'],
       inject: true
