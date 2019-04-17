@@ -11,6 +11,8 @@ module.exports = {
     blog: './src/blog.js',
     csv_file: './src/csv-file.js',
     right_approach: './src/right-approach.js',
+    increase_emails_deliverability: './src/increase-emails-deliverability.js',
+    bounce_rate: './src/bounce-rate.js',
     scholarship: './src/scholarship.js',
     refer: './src/refer.js',
     404: './src/404.js',
@@ -118,6 +120,18 @@ module.exports = {
       template: './src/html/blog/right-approach.hbs',
       filename: 'right-approach.html',
       chunks: ['right_approach'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/increase-emails-deliverability.hbs',
+      filename: 'increase-emails-deliverability.html',
+      chunks: ['increase_emails_deliverability'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/bounce-rate.hbs',
+      filename: 'bounce-rate.html',
+      chunks: ['bounce_rate'],
       inject: true
     }),
     new HtmlWebpackPlugin({
