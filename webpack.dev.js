@@ -13,6 +13,8 @@ module.exports = {
     right_approach: './src/right-approach.js',
     increase_emails_deliverability: './src/increase-emails-deliverability.js',
     bounce_rate: './src/bounce-rate.js',
+    catch_all_servers: './src/catch-all-servers.js',
+    guide: './src/guide.js',
     scholarship: './src/scholarship.js',
     refer: './src/refer.js',
     404: './src/404.js',
@@ -126,6 +128,18 @@ module.exports = {
       template: './src/html/blog/increase-emails-deliverability.hbs',
       filename: 'increase-emails-deliverability.html',
       chunks: ['increase_emails_deliverability'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/catch-all-servers.hbs',
+      filename: 'catch-all-servers.html',
+      chunks: ['catch_all_servers'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/guide.hbs',
+      filename: 'guide.html',
+      chunks: ['guide'],
       inject: true
     }),
     new HtmlWebpackPlugin({
