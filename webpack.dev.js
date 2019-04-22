@@ -9,11 +9,11 @@ module.exports = {
     terms: './src/terms.js',
     privacy: './src/privacy.js',
     blog: './src/blog.js',
-    csv_file: './src/csv-file.js',
-    right_approach: './src/right-approach.js',
-    increase_emails_deliverability: './src/increase-emails-deliverability.js',
-    bounce_rate: './src/bounce-rate.js',
-    catch_all_servers: './src/catch-all-servers.js',
+    csvFile: './src/csv-file.js',
+    rightApproach: './src/rightApproach.js',
+    increaseEmailsDeliverability: './src/increaseEmailsDeliverability.js',
+    bounceRate: './src/bounceRate.js',
+    catchAllServers: './src/catchAllServers.js',
     guide: './src/guide.js',
     scholarship: './src/scholarship.js',
     refer: './src/refer.js',
@@ -77,14 +77,14 @@ module.exports = {
           }
         ]
       },
-        {
-            test: /\.hbs$/,
-            loader: 'handlebars-loader',
-            query: {
-                inlineRequires: '/img/',
-                knownHelpersOnly: false,
-            }
-        },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+        query: {
+          inlineRequires: '/img/',
+          knownHelpersOnly: false,
+        }
+      },
     ],
   },
   plugins: [
@@ -113,27 +113,27 @@ module.exports = {
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/blog/csv-file.hbs',
-      filename: 'csv-file.html',
-      chunks: ['csv_file'],
+      template: './src/html/blog/csvFile.hbs',
+      filename: 'csvFile.html',
+      chunks: ['csvFile'],
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/blog/right-approach.hbs',
-      filename: 'right-approach.html',
-      chunks: ['right_approach'],
+      template: './src/html/blog/rightApproach.hbs',
+      filename: 'rightApproach.html',
+      chunks: ['rightApproach'],
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/blog/increase-emails-deliverability.hbs',
-      filename: 'increase-emails-deliverability.html',
-      chunks: ['increase_emails_deliverability'],
+      template: './src/html/blog/increaseEmailsDeliverability.hbs',
+      filename: 'increaseEmailsDeliverability.html',
+      chunks: ['increaseEmailsDeliverability'],
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/blog/catch-all-servers.hbs',
-      filename: 'catch-all-servers.html',
-      chunks: ['catch_all_servers'],
+      template: './src/html/blog/catchAllServers.hbs',
+      filename: 'catchAllServers.html',
+      chunks: ['catchAllServers'],
       inject: true
     }),
     new HtmlWebpackPlugin({
@@ -143,9 +143,9 @@ module.exports = {
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/blog/bounce-rate.hbs',
-      filename: 'bounce-rate.html',
-      chunks: ['bounce_rate'],
+      template: './src/html/blog/bounceRate.hbs',
+      filename: 'bounceRate.html',
+      chunks: ['bounceRate'],
       inject: true
     }),
     new HtmlWebpackPlugin({
@@ -154,11 +154,11 @@ module.exports = {
       chunks: ['scholarship'],
       inject: true
     }),
-      new HtmlWebpackPlugin({
-          template: './src/html/404.hbs',
-          filename: '404.html',
-          chunks: ['terms'],
-          inject: true
-      }),
+    new HtmlWebpackPlugin({
+      template: './src/html/404.hbs',
+      filename: '404.html',
+      chunks: ['terms'],
+      inject: true
+    }),
   ]
 };

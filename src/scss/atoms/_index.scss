@@ -45,7 +45,6 @@
 .content-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 880px;
   margin: auto;
 }
@@ -171,6 +170,47 @@
   text-align: center;
 }
 
+.article {
+  &-title {
+    width: 100%;
+    height: auto;
+    margin: 20px auto 0;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+  }
+
+  &-date {
+    width: 100%;
+    margin: 0 0 10px;
+    color: #fff;
+    opacity: .5;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+
+  &-image {
+    margin: 15px auto;
+  }
+
+  &-snippet {
+    margin: 0 0 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .container {
     padding: 0 15px;
@@ -185,3 +225,4 @@
     padding-inline-start: 0;
   }
 }
+
