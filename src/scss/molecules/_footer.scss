@@ -18,7 +18,7 @@
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
-  max-height: 160px;
+  max-height: 150px;
   height: 100%;
   margin-right: 25%;
   margin-bottom: 20px;
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 320px;
+  height: 270px;
 }
 
 @media only screen and (max-width: 768px) {

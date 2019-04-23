@@ -17,6 +17,12 @@ module.exports = {
         terms: './src/terms.js',
         privacy: './src/privacy.js',
         blog: './src/blog.js',
+        csvFile: './src/csvFile.js',
+        rightApproach: './src/rightApproach.js',
+        increaseEmailsDeliverability: './src/increaseEmailsDeliverability.js',
+        bounceRate: './src/bounceRate.js',
+        catchAllServers: './src/catchAllServers.js',
+        guide: './src/guide.js',
         scholarship: './src/scholarship.js',
         404: './src/404.js',
     },
@@ -131,7 +137,67 @@ module.exports = {
             }
         }),
         new HtmlWebpackPlugin({
-            template: './src/html/scholarship.hbs',
+            template: './src/html/blog/csvFile.hbs',
+            filename: 'csvFile.html',
+            chunks: ['csvFile'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/rightApproach.hbs',
+            filename: 'rightApproach.html',
+            chunks: ['rightApproach'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/increaseEmailsDeliverability.hbs',
+            filename: 'increaseEmailsDeliverability.html',
+            chunks: ['increaseEmailsDeliverability'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/catchAllServers.hbs',
+            filename: 'catchAllServers.html',
+            chunks: ['catchAllServers'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/guide.hbs',
+            filename: 'guide.html',
+            chunks: ['guide'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/bounceRate.hbs',
+            filename: 'bounceRate.html',
+            chunks: ['bounceRate'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/scholarship.hbs',
             filename: 'scholarship.html',
             chunks: ['scholarship'],
             inject: 'body',
