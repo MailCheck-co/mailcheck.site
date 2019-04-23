@@ -17,13 +17,16 @@ module.exports = {
         terms: './src/terms.js',
         privacy: './src/privacy.js',
         blog: './src/blog.js',
-        csvFile: './src/csvFile.js',
-        rightApproach: './src/rightApproach.js',
-        increaseEmailsDeliverability: './src/increaseEmailsDeliverability.js',
-        bounceRate: './src/bounceRate.js',
-        catchAllServers: './src/catchAllServers.js',
-        guide: './src/guide.js',
-        scholarship: './src/scholarship.js',
+        csvFile: './src/blog.js',
+        rightApproach: './src/blog.js',
+        increaseEmailsDeliverability: './src/blog.js',
+        googlePlus: './src/blog.js',
+        emailMarketingTips: './src/blog.js',
+        sellingCartCustomization: './src/blog.js',
+        bounceRate: './src/blog.js',
+        catchAllServers: './src/blog.js',
+        guide: './src/blog.js',
+        scholarship: './src/blog.js',
         404: './src/404.js',
     },
     output: {
@@ -200,6 +203,36 @@ module.exports = {
             template: './src/html/blog/scholarship.hbs',
             filename: 'scholarship.html',
             chunks: ['scholarship'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/googlePlus.hbs',
+            filename: 'googlePlus.html',
+            chunks: ['googlePlus'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/emailMarketingTips.hbs',
+            filename: 'emailMarketingTips.html',
+            chunks: ['emailMarketingTips'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/sellingCartCustomization.hbs',
+            filename: 'sellingCartCustomization.html',
+            chunks: ['sellingCartCustomization'],
             inject: 'body',
             minify: {
                 removeComments: true,

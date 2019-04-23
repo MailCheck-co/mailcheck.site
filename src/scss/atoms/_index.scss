@@ -119,6 +119,7 @@
 
   &-link {
     text-decoration: underline;
+    word-wrap: break-word;
   }
 }
 
@@ -182,6 +183,10 @@
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 1.6px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &-date {
@@ -209,9 +214,24 @@
     line-height: 24px;
     letter-spacing: 1px;
   }
+
+  &-quote {
+    padding: 5px 15px;
+    border-left: 1px solid white;
+    margin: 0 0 15px 20px;
+    opacity: .6;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
+  .article-quote {
+    margin-left: 0;
+  }
+
   .container {
     padding: 0 15px;
   }
