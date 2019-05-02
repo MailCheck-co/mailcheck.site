@@ -26,6 +26,10 @@ module.exports = {
         bounceRate: './src/blog.js',
         catchAllServers: './src/blog.js',
         guide: './src/blog.js',
+        emailMarketingMetrics: './src/blog.js',
+        enforceEmailMarketing: './src/blog.js',
+        smallBusinessTips: './src/blog.js',
+        personalizeYourNewsletter: './src/blog.js',
         scholarship: './src/blog.js',
         404: './src/404.js',
     },
@@ -233,6 +237,46 @@ module.exports = {
             template: './src/html/blog/sellingCartCustomization.hbs',
             filename: 'sellingCartCustomization.html',
             chunks: ['sellingCartCustomization'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/emailMarketingMetrics.hbs',
+            filename: 'emailMarketingMetrics.html',
+            chunks: ['emailMarketingMetrics'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/enforceEmailMarketing.hbs',
+            filename: 'enforceEmailMarketing.html',
+            chunks: ['enforceEmailMarketing'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/smallBusinessTips.hbs',
+            filename: 'smallBusinessTips.html',
+            chunks: ['smallBusinessTips'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/personalizeYourNewsletter.hbs',
+            filename: 'personalizeYourNewsletter.html',
+            chunks: ['personalizeYourNewsletter'],
             inject: 'body',
             minify: {
                 removeComments: true,

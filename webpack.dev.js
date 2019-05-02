@@ -19,6 +19,10 @@ module.exports = {
     googlePlus: './src/blog.js',
     emailMarketingTips: './src/blog.js',
     sellingCartCustomization: './src/blog.js',
+    emailMarketingMetrics: './src/blog.js',
+    enforceEmailMarketing: './src/blog.js',
+    smallBusinessTips: './src/blog.js',
+    personalizeYourNewsletter: './src/blog.js',
     refer: './src/refer.js',
     404: './src/404.js',
   },
@@ -173,6 +177,30 @@ module.exports = {
       template: './src/html/blog/sellingCartCustomization.hbs',
       filename: 'sellingCartCustomization.html',
       chunks: ['sellingCartCustomization'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/emailMarketingMetrics.hbs',
+      filename: 'emailMarketingMetrics.html',
+      chunks: ['emailMarketingMetrics'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/enforceEmailMarketing.hbs',
+      filename: 'enforceEmailMarketing.html',
+      chunks: ['enforceEmailMarketing'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/smallBusinessTips.hbs',
+      filename: 'smallBusinessTips.html',
+      chunks: ['smallBusinessTips'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/personalizeYourNewsletter.hbs',
+      filename: 'personalizeYourNewsletter.html',
+      chunks: ['personalizeYourNewsletter'],
       inject: true
     }),
     new HtmlWebpackPlugin({
