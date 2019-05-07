@@ -23,6 +23,9 @@ module.exports = {
     enforceEmailMarketing: './src/blog.js',
     smallBusinessTips: './src/blog.js',
     personalizeYourNewsletter: './src/blog.js',
+    emailMarketingTrends: './src/blog.js',
+    sendersReputation: './src/blog.js',
+    emailMarketingCampaignGuide: './src/blog.js',
     refer: './src/refer.js',
     404: './src/404.js',
   },
@@ -189,6 +192,24 @@ module.exports = {
       template: './src/html/blog/enforceEmailMarketing.hbs',
       filename: 'enforceEmailMarketing.html',
       chunks: ['enforceEmailMarketing'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/emailMarketingTrends.hbs',
+      filename: 'emailMarketingTrends.html',
+      chunks: ['emailMarketingTrends'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/sendersReputation.hbs',
+      filename: 'sendersReputation.html',
+      chunks: ['sendersReputation'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/emailMarketingCampaignGuide.hbs',
+      filename: 'emailMarketingCampaignGuide.html',
+      chunks: ['emailMarketingCampaignGuide'],
       inject: true
     }),
     new HtmlWebpackPlugin({
