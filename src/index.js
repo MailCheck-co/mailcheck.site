@@ -95,6 +95,7 @@ import './js/refer';
   let tween3 = new TweenMax.from('#faq', 1.5, movementParameters);
   let tween4 = new TweenMax.from('#contact-us-section', 1.5, movementParameters);
 
+    // eslint-disable-next-line no-unused-vars
   let scene = new ScrollMagic.Scene({
     triggerElement: '#features',
     duration: 0,
@@ -104,7 +105,8 @@ import './js/refer';
       .setTween(tween)
       .addTo(controller);
 
-  let scene1 = new ScrollMagic.Scene({
+    // eslint-disable-next-line no-unused-vars
+    let scene1 = new ScrollMagic.Scene({
     triggerElement: '#choose-your',
     duration: 0,
     offset: -100,
@@ -113,6 +115,7 @@ import './js/refer';
       .setTween(tween1)
       .addTo(controller);
 
+// eslint-disable-next-line no-unused-vars
   let scene2 = new ScrollMagic.Scene({
     triggerElement: '#pricing',
     duration: 0,
@@ -122,6 +125,7 @@ import './js/refer';
       .setTween(tween2)
       .addTo(controller);
 
+    // eslint-disable-next-line no-unused-vars
   let scene3 = new ScrollMagic.Scene({
     triggerElement: '#faq',
     duration: 0,
@@ -131,6 +135,7 @@ import './js/refer';
       .setTween(tween3)
       .addTo(controller);
 
+// eslint-disable-next-line no-unused-vars
   let scene4 = new ScrollMagic.Scene({
     triggerElement: '#contact-us-section',
     duration: 0,

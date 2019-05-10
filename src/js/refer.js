@@ -7,7 +7,8 @@
 
     const getCookie = (name) => {
         const matches = document.cookie.match(new RegExp(
-            '(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
+            // eslint-disable-next-line no-useless-escape
+        '(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
         ));
         return matches ? decodeURIComponent(matches[1]) : undefined;
     };
@@ -83,6 +84,7 @@
 
     const readExistedParams = () => {
         const cookie = getCookie(COOKIE_KEY);
+        // eslint-disable-next-line no-extra-boolean-cast
         if (!!cookie) {
             try {
                 return JSON.parse(cookie);
@@ -100,8 +102,7 @@
         const merged = Object.assign(
             {},
             existedParams,
-            newParams,
-        );
+            newParams);
         const cookie = JSON.stringify(merged);
         setCookie(COOKIE_KEY, cookie, {path: '/', domain: DOMAIN});
     };
