@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Mailcheck | Blog | Why hosting email at home isn't good idea</title>
+  <meta name="description" content="Why hosting email at home isn't good idea">
+  <meta name="robots" content="all">
+
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="canonical" href="https://www.mailcheck.co/why-hosting-email-at-home-is-not-good-idea">
+
+  <!-- CSS, you gotta have style -->
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet"
+        media="all" onload="if(media!='all')media='all'">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-KXLTC2Z');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXLTC2Z"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+{{>../partials/header}}
+
+
+<!--Privacy Policy-->
+<main class="terms">
+  <div class="container">
+    <div class="content-block">
+      <h1 class="title">Why hosting email at home isn't good idea</h1>
+      <p class="text-thin terms-text">Now days it's pretty simple task to launch mail server at home. Tools like docker
+        and virtualization can help us to run MTA in a few minutes. But you shouldn't. SMTP wasn't designed in secure
+        manner and SPAM is q global problem for that old standard.</p>
+      <p class="text-thin terms-text no-intent">In times of old web there was lots of small mail providers, but with evolution of
+        web most of mails concentrated at big email providers, like Gmail, Hotmail etc.</p>
+      <p class="text-thin terms-text no-intent">They started their epic fight against spam. DNSBL lists and manual ip blocks. And
+        spammers started to extensively burn resources needed for sending mails. At some grade buying new ip stated to
+        be more expensive then revenue from it.</p>
+      <p class="text-thin terms-text no-intent">And then spammers realized that each household has unique and private IP. And
+        virus epidemic exploded in internet. Infected programs sended millions of mails. And it was legitimate ips.</p>
+      <p class="text-thin terms-text no-intent">At some point big mail providers calculated that almost all legitimate mails
+        received from data centers and servers on them. But almost all mails from home networks are spam.</p>
+      <p class="text-thin terms-text no-intent">Then big mail providers started to grade incoming mails also by as net records.
+        Mails from residential ips received penalty as more suspicious. Of course SPF, DKIM, DMARC and other technical
+        methods will allow sender to bypass spam filter, but probability of being trapped is much more from residential
+        iPs.</p>
+      <p class="text-thin terms-text no-intent">Also, in a difference of home iPs - even virtual servers have static IPs. Another
+        problem that in most home networks IPS are floating, that makes correct usage of SPF impossible. Even more - you
+        can't guess who was yours predecessor, who controlled that IP before.</p>
+      <p class="text-thin terms-text no-intent">That's why if you wanna send mails you should better rent SaaS service like G
+        Suite, or at least setup server at
+        Data center.</p>
+    </div>
+  </div>
+</main>
+
+{{>../partials/contactus}}
+{{>../partials/footer}}
+{{>../partials/TAWK.to-script}}
+
+</body>
+</html>

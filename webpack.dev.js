@@ -26,6 +26,8 @@ module.exports = {
     emailMarketingTrends: './src/blog.js',
     sendersReputation: './src/blog.js',
     emailMarketingCampaignGuide: './src/blog.js',
+    hostingEmail: './src/blog.js',
+    abandonedCartHacks: './src/blog.js',
     refer: './src/refer.js',
     404: './src/404.js',
   },
@@ -222,6 +224,18 @@ module.exports = {
       template: './src/html/blog/personalizeYourNewsletter.hbs',
       filename: 'personalizeYourNewsletter.html',
       chunks: ['personalizeYourNewsletter'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/hostingEmail',
+      filename: 'why-hosting-email-at-home-is-not-good-idea.html',
+      chunks: ['hostingEmail'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/abandonedCartHacks.hbs',
+      filename: 'abandoned-cart-hacks.html',
+      chunks: ['abandonedCartHacks'],
       inject: true
     }),
     new HtmlWebpackPlugin({
