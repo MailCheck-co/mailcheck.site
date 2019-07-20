@@ -33,6 +33,8 @@ module.exports = {
         emailMarketingTrends: './src/blog.js',
         sendersReputation: './src/blog.js',
         emailMarketingCampaignGuide: './src/blog.js',
+        hostingEmail: './src/blog.js',
+        abandonedCartHacks: './src/blog.js',
         scholarship: './src/blog.js',
         404: './src/404.js',
     },
@@ -317,6 +319,26 @@ module.exports = {
             }
         }),
         new HtmlWebpackPlugin({
+            template: './src/html/blog/hostingEmail.hbs',
+            filename: 'why-hosting-email-at-home-is-not-good-idea.html',
+            chunks: ['hostingEmail'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/abandonedCartHacks.hbs',
+            filename: 'abandoned-cart-hacks.html',
+            chunks: ['abandonedCartHacks'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
             template: './src/html/404.hbs',
             filename: '404.html',
             chunks: ['404'],
@@ -326,7 +348,7 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
-        new CopyWebpackPlugin([{ context: './src/assets/root', from: '**/*.*', to: buildPath }]),
+        new CopyWebpackPlugin([{context: './src/assets/root', from: '**/*.*', to: buildPath}]),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
             // Your source logo
