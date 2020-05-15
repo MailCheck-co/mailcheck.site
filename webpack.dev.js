@@ -27,8 +27,9 @@ module.exports = {
     sendersReputation: './src/blog.js',
     emailMarketingCampaignGuide: './src/blog.js',
     hostingEmail: './src/blog.js',
+    howMailcheckCanHelp: './src/blog.js',
     abandonedCartHacks: './src/blog.js',
-    refer: './src/refer.js',
+    refer: './src/js/refer.js',
     404: './src/404.js',
   },
   devServer: {
@@ -227,9 +228,15 @@ module.exports = {
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/blog/hostingEmail',
+      template: './src/html/blog/hostingEmail.hbs',
       filename: 'why-hosting-email-at-home-is-not-good-idea.html',
       chunks: ['hostingEmail'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/howMailcheckCanHelp.hbs',
+      filename: 'how-mailcheck-can-help-your-business.html',
+      chunks: ['howMailcheckCanHelp'],
       inject: true
     }),
     new HtmlWebpackPlugin({
