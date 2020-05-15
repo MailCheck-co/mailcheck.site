@@ -34,6 +34,7 @@ module.exports = {
         sendersReputation: './src/blog.js',
         emailMarketingCampaignGuide: './src/blog.js',
         hostingEmail: './src/blog.js',
+        howMailcheckCanHelp: './src/blog.js',
         abandonedCartHacks: './src/blog.js',
         scholarship: './src/blog.js',
         404: './src/404.js',
@@ -322,6 +323,16 @@ module.exports = {
             template: './src/html/blog/hostingEmail.hbs',
             filename: 'why-hosting-email-at-home-is-not-good-idea.html',
             chunks: ['hostingEmail'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/howMailcheckCanHelp.hbs',
+            filename: 'how-mailcheck-can-help-your-business.html',
+            chunks: ['howMailcheckCanHelp'],
             inject: 'body',
             minify: {
                 removeComments: true,
