@@ -121,6 +121,16 @@
     text-decoration: underline;
     word-wrap: break-word;
   }
+  
+  &-link-blue {
+    color: #6495ed;
+  }
+  
+  &-small {
+    margin: 0 auto 15px;
+    font-size: 12px;
+    text-align: initial;
+  }
 }
 
 .terms-text {
@@ -148,6 +158,12 @@
   margin: 5px auto;
   font-weight: 500;
   text-transform: uppercase;
+  
+  &-lowercase {
+    max-width: 450px;
+    margin-bottom: 20px;
+    text-transform: none;
+  }
 }
 
 .terms {

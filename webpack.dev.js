@@ -29,6 +29,7 @@ module.exports = {
     hostingEmail: './src/blog.js',
     howMailcheckCanHelp: './src/blog.js',
     abandonedCartHacks: './src/blog.js',
+    emailMarketingCovid19: './src/blog.js',
     refer: './src/js/refer.js',
     404: './src/404.js',
   },
@@ -243,6 +244,12 @@ module.exports = {
       template: './src/html/blog/abandonedCartHacks.hbs',
       filename: 'abandoned-cart-hacks.html',
       chunks: ['abandonedCartHacks'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/emailMarketingCovid19.hbs',
+      filename: 'email-marketing-during-post-Covid-19-times.html',
+      chunks: ['emailMarketingCovid19'],
       inject: true
     }),
     new HtmlWebpackPlugin({
