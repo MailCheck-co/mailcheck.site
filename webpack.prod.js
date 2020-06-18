@@ -38,6 +38,7 @@ module.exports = {
         abandonedCartHacks: './src/blog.js',
         scholarship: './src/blog.js',
         emailMarketingCovid19: './src/blog.js',
+        sixTipsToWriteAnEmail: './src/blog.js',
         404: './src/404.js',
     },
     output: {
@@ -354,6 +355,16 @@ module.exports = {
             template: './src/html/blog/emailMarketingCovid19.hbs',
             filename: 'email-marketing-during-post-Covid-19-times.html',
             chunks: ['emailMarketingCovid19'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/sixTipsToWriteAnEmail.hbs',
+            filename: 'six-tips-to-write-an-email-that-prompts-your-subscribers-to-action.html',
+            chunks: ['sixTipsToWriteAnEmail'],
             inject: 'body',
             minify: {
                 removeComments: true,
