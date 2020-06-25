@@ -31,6 +31,7 @@ module.exports = {
     abandonedCartHacks: './src/blog.js',
     emailMarketingCovid19: './src/blog.js',
     sixTipsToWriteAnEmail: './src/blog.js',
+    emailBlasts: './src/blog.js',
     refer: './src/js/refer.js',
     404: './src/404.js',
   },
@@ -257,6 +258,12 @@ module.exports = {
       template: './src/html/blog/sixTipsToWriteAnEmail.hbs',
       filename: 'six-tips-to-write-an-email-that-prompts-your-subscribers-to-action.html',
       chunks: ['sixTipsToWriteAnEmail'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/emailBlasts.hbs',
+      filename: 'email-blasts.html',
+      chunks: ['emailBlasts'],
       inject: true
     }),
     new HtmlWebpackPlugin({
