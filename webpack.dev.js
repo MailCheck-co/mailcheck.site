@@ -32,6 +32,7 @@ module.exports = {
     emailMarketingCovid19: './src/blog.js',
     sixTipsToWriteAnEmail: './src/blog.js',
     emailBlasts: './src/blog.js',
+    doesBuyingEmailListsStillWork: './src/blog.js',
     refer: './src/js/refer.js',
     404: './src/404.js',
   },
@@ -264,6 +265,12 @@ module.exports = {
       template: './src/html/blog/emailBlasts.hbs',
       filename: 'email-blasts.html',
       chunks: ['emailBlasts'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/doesBuyingEmailListsStillWork.hbs',
+      filename: 'does-buying-email-lists-still-work.html',
+      chunks: ['doesBuyingEmailListsStillWork'],
       inject: true
     }),
     new HtmlWebpackPlugin({
