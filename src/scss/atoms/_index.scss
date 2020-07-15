@@ -162,6 +162,12 @@
   margin: 5px auto;
   font-weight: 500;
   text-transform: uppercase;
+
+  &-left {
+    margin: 5px 0 20px;
+    text-align: left;
+    text-transform: none;
+  }
   
   &-lowercase {
     max-width: 450px;
@@ -178,6 +184,22 @@
   &-bold {
     margin: 30px auto;
     font-weight: bold;
+  }
+}
+
+.text-with-image {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  .terms-text,
+  .article-image {
+    flex-basis: 48%;
+    width: 48%;
+  }
+
+  .article-image {
+    margin: 0 0 0 10px;
   }
 }
 
@@ -271,6 +293,23 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .text-with-image {
+    flex-direction: column;
+
+    .terms-text,
+    .article-image {
+      flex-basis: 100%;
+      width: 100%;
+    }
+
+    .article-image {
+      max-width: 450px;
+      margin: 0 auto;
+    }
   }
 }
 

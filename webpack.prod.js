@@ -41,6 +41,7 @@ module.exports = {
         sixTipsToWriteAnEmail: './src/blog.js',
         emailBlasts: './src/blog.js',
         doesBuyingEmailListsStillWork: './src/blog.js',
+        whatIsEmailAPI: './src/blog.js',
         404: './src/404.js',
     },
     output: {
@@ -387,6 +388,16 @@ module.exports = {
             template: './src/html/blog/doesBuyingEmailListsStillWork.hbs',
             filename: 'does-buying-email-lists-still-work.html',
             chunks: ['doesBuyingEmailListsStillWork'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/whatIsEmailAPI.hbs',
+            filename: 'what-is-email-API-and-why-do-I-need-one.html',
+            chunks: ['whatIsEmailAPI'],
             inject: 'body',
             minify: {
                 removeComments: true,
