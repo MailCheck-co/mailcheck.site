@@ -34,6 +34,7 @@ module.exports = {
     emailBlasts: './src/blog.js',
     doesBuyingEmailListsStillWork: './src/blog.js',
     whatIsEmailAPI: './src/blog.js',
+    tenTipsToWarmUpColdEmails: './src/blog.js',
     refer: './src/js/refer.js',
     404: './src/404.js',
   },
@@ -278,6 +279,12 @@ module.exports = {
       template: './src/html/blog/whatIsEmailAPI.hbs',
       filename: 'what-is-email-API-and-why-do-I-need-one.html',
       chunks: ['whatIsEmailAPI'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/tenTipsToWarmUpColdEmails.hbs',
+      filename: '10-tips-to-warm-up-your-cold-emails.html',
+      chunks: ['tenTipsToWarmUpColdEmails'],
       inject: true
     }),
     new HtmlWebpackPlugin({
