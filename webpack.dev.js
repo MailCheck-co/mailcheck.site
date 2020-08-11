@@ -35,6 +35,7 @@ module.exports = {
     doesBuyingEmailListsStillWork: './src/blog.js',
     whatIsEmailAPI: './src/blog.js',
     tenTipsToWarmUpColdEmails: './src/blog.js',
+    emailValidationsAPIIncreaseECommerceConversion: './src/blog.js',
     refer: './src/js/refer.js',
     404: './src/404.js',
   },
@@ -285,6 +286,12 @@ module.exports = {
       template: './src/html/blog/tenTipsToWarmUpColdEmails.hbs',
       filename: '10-tips-to-warm-up-your-cold-emails.html',
       chunks: ['tenTipsToWarmUpColdEmails'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog/emailValidationsAPIIncreaseECommerceConversion.hbs',
+      filename: 'emails-validation-API-increase-E-Commerce-conversion.html',
+      chunks: ['emailValidationsAPIIncreaseECommerceConversion'],
       inject: true
     }),
     new HtmlWebpackPlugin({
