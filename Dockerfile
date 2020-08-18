@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.0.2-experimental
 
-FROM node:8.15.1-stretch AS base_stage
+FROM node:12.18.3-stretch AS base_stage
 WORKDIR /opt/app
 
 FROM base_stage AS credentials
