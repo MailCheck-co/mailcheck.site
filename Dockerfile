@@ -8,7 +8,7 @@ ARG firebasekey
 ENV FIREBASE_TOKEN="$firebasekey" \
     NODE_ENV='production'
 RUN --mount=type=cache,target=/root/.npm,id=npm_cache \
-    npm install -g firebase-tools@6.5.0
+    npm install -g firebase-tools@8.7.0
 
 FROM base_stage AS landing_dependencies
 RUN --mount=type=bind,source=package.json,target=package.json \
