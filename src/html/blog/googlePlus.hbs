@@ -61,7 +61,7 @@
         API users when it comes to a Google+ shutdown.</p>
       <p class="text-thin terms-text no-intent">From a client’s point of view, the use of Gmail Photos and a further shift to Docs
         should be as clear as possible — at first glance, these services are independent and united within one platform
-        that is a point of access called Single Sign-On <a class="text-thin text-thin-link"
+        that is a point of access called Single Sign-On <a class="text-thin text-thin-link" rel="nofollow"
                                                            href="https://accounts.google.com">accounts.google.com</a>.
         But as developers, we know, that terms “shutdown”, “takeover”, “integrate” involve great meaning (and also work)
         for those people, who take part in this process. So, let’s take a closer look at a process of Google’s one of
@@ -115,21 +115,21 @@
         information. The trick is that you can't get userID if this user never logged in to our website. But despite
         this, users were able to post pictures at web-albums that were linked with email using old PicasaWebAlbums. That
         suggested that old API allows getting to user’s account using userID or user’s email.</p>
-      <p class="text-thin terms-text no-intent">Let’s check: <a class="text-thin text-thin-link"
-                                                      href="https://picasaweb.google.com/data/feed/api/user/nosov@nodeart.io?deprecation-extension=true">https://picasaweb.google.com/data/feed/api/user/nosov@nodeart.io?deprecation-extension=true</a>
+      <p class="text-thin terms-text no-intent">Let’s check: <a class="text-thin text-thin-link" rel="nofollow"
+                                                                href="https://picasaweb.google.com/data/feed/api/user/nosov@nodeart.io?deprecation-extension=true">https://picasaweb.google.com/data/feed/api/user/nosov@nodeart.io?deprecation-extension=true</a>
       </p>
       <ul class="text-thin terms-text">
-        <li><a class="text-thin text-thin-link" href="https://picasaweb.google.com/data/feed/api/user/">https://picasaweb.google.com/data/feed/api/user/</a>
+        <li><a class="text-thin text-thin-link" rel="nofollow" href="https://picasaweb.google.com/data/feed/api/user/">https://picasaweb.google.com/data/feed/api/user/</a>
         </li>
-        <li>API’s endpoint; — <a class="text-thin text-thin-link" href="mailto:nosov@nodeart.io">nosov@nodeart.io</a> — user’s
+        <li>API’s endpoint; — <a class="text-thin text-thin-link" rel="nofollow" href="mailto:nosov@nodeart.io">nosov@nodeart.io</a> — user’s
           email for validation (as we can see, it is not required to use Gmails only). User should have Google Apps
           accounts (this validation is very helpful with lead generation), users with Google+ accounts also have this
-          (by linking a third-party email beforehand), for example, <a class="text-thin text-thin-link"
+          (by linking a third-party email beforehand), for example, <a class="text-thin text-thin-link" rel="nofollow"
                                                                        href="https://yandex.ru/">Yandex.ru</a></li>
         <li>deprecation-extension=true — the indication about an imminent end of API's life.</li>
       </ul>
       <p class="text-thin terms-text no-intent">If we will try to pass nonexistent email, we’ll get clear interpreted response:
-        “Unable to find a user with email <a class="text-thin text-thin-link" href="mailto:noname@nodeart.io">noname@nodeart.io</a>,
+        “Unable to find a user with email <a class="text-thin text-thin-link" rel="nofollow"  href="mailto:noname@nodeart.io">noname@nodeart.io</a>,
         that leads to the conclusion that this email is not valid. And even more — if we will try to send a group
         mailing address to the API the answer be “Unknown user”. It would then be possible to distinguish the difference
         between personal G-Suite emails and corporate emails. It’s hard to say that we can “catch” personal data this
