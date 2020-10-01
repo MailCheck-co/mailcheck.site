@@ -41,7 +41,8 @@ module.exports = {
   },
   devServer: {
     port: 8080,
-    contentBase: path.join(__dirname, 'dist')
+    contentBase: path.join(__dirname, 'dist'),
+    stats: 'minimal',
   },
   module: {
     rules: [
@@ -54,7 +55,14 @@ module.exports = {
         }
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader', options: { sourceMap: true } },
+          { loader: 'css-loader', options: { sourceMap: true } },
+        ]
+      },
+      {
+        test: /\.scss$/,
         use: [
           {
             // creates style nodes from JS strings
@@ -81,8 +89,7 @@ module.exports = {
           }
           // Please note we are not running postcss here
         ]
-      }
-      ,
+      },
       {
         // Load all images as base64 encoding if they are smaller than 8192 bytes
         test: /\.(png|jpg|gif)$/,
