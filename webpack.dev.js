@@ -38,6 +38,9 @@ module.exports = {
     emailValidationsAPIIncreaseECommerceConversion: './src/blog.js',
     refer: './src/js/refer.js',
     404: './src/404.js',
+    faq: './src/faq.js',
+    mobMenu: './src/js/mob-menu.js',
+    scroll: './src/js/scroll.js',
   },
   devServer: {
     port: 8080,
@@ -103,6 +106,13 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'svg-url-loader',
+          options: {}
+        }
       },
       {
         test: /\.hbs$/,
@@ -305,6 +315,12 @@ module.exports = {
       template: './src/html/404.hbs',
       filename: '404.html',
       chunks: ['terms'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/faq.hbs',
+      filename: 'faq.html',
+      chunks: ['faq'],
       inject: true
     }),
   ]

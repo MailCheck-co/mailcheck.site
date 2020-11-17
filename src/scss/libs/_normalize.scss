@@ -7,12 +7,10 @@
 // Normalize.scss settings
 // =============================================================================
 
-
 // Set to true if you want to add support for IE6 and IE7
 // Notice: setting to true might render some elements
 // slightly differently than when set to false
 $legacy_support_for_ie: false !default; // Used also in Compass
-
 
 // Set the default font family here so you don't have to override it later
 $normalized_font_family: sans-serif !default;
@@ -62,6 +60,7 @@ audio,
 canvas,
 video {
   display: inline-block;
+
   @if $legacy_support_for_ie {
     *display: inline;
     *zoom: 1;
@@ -81,7 +80,8 @@ audio:not([controls]) {
 // Hide the `template` element in IE, Safari, and Firefox < 22.
 //
 
-[hidden], template {
+[hidden],
+template {
   display: none;
 }
 
@@ -98,8 +98,9 @@ html {
   @if $legacy_support_for_ie {
     font-size: 100%; // 1
   }
-  background: $background;
+
   color: $color;
+  background: $background;
   -webkit-text-size-adjust: 100%; // 2
   -ms-text-size-adjust: 100%; // 2
 }
@@ -136,7 +137,6 @@ a {
 
   // 2
 
-
   // 3
 
   &:hover,
@@ -154,33 +154,33 @@ a {
 
 @if $normalize_headings == true {
   h1 {
-    font-size: $h1_font_size;
     margin: $h1_margin;
+    font-size: $h1_font_size;
   }
 
   h2 {
-    font-size: $h2_font_size;
     margin: $h2_margin;
+    font-size: $h2_font_size;
   }
 
   h3 {
-    font-size: $h3_font_size;
     margin: $h3_margin;
+    font-size: $h3_font_size;
   }
 
   h4 {
-    font-size: $h4_font_size;
     margin: $h4_margin;
+    font-size: $h4_font_size;
   }
 
   h5 {
-    font-size: $h5_font_size;
     margin: $h5_margin;
+    font-size: $h5_font_size;
   }
 
   h6 {
-    font-size: $h6_font_size;
     margin: $h6_margin;
+    font-size: $h6_font_size;
   }
 }
 
@@ -199,8 +199,8 @@ dfn {
 // Addresses styling not present in IE6/7/8/9
 
 mark {
-  background: #ff0;
   color: #000;
+  background: #ff0;
 }
 
 // Addresses margins set differently in IE6/7
@@ -218,11 +218,12 @@ code,
 kbd,
 pre,
 samp {
+  font-size: 1em;
   font-family: monospace, serif;
+
   @if $legacy_support_for_ie {
     _font-family: 'courier new', monospace;
   }
-  font-size: 1em;
 }
 
 // Improves readability of pre-formatted text in all browsers
@@ -251,8 +252,8 @@ q {
 
 // 2
 q {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: '';
     content: none;
   }
@@ -269,9 +270,9 @@ small {
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -333,6 +334,7 @@ nav {
 
 img {
   border: 0; // 1
+
   @if $legacy_support_for_ie {
     -ms-interpolation-mode: bicubic; // 2
   }
@@ -368,9 +370,9 @@ figure {
 // Define consistent border, margin, and padding
 
 fieldset {
-  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;
 }
 
 // 1. Corrects color not being inherited in IE6/7/8/9
@@ -379,9 +381,10 @@ fieldset {
 // 4. Corrects alignment displayed oddly in IE6/7
 
 legend {
-  border: 0; // 1
   padding: 0; // 2
   white-space: normal; // 3
+  border: 0; // 1
+
   @if $legacy_support_for_ie {
     *margin-left: -7px; // 4
   }
@@ -396,10 +399,11 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit; // 1
-  font-size: 100%; // 2
   margin: 0; // 3
+  font-size: 100%; // 2
+  font-family: inherit; // 1
   vertical-align: baseline; // 4
+
   @if $legacy_support_for_ie {
     *vertical-align: middle; // 4
   }
@@ -407,7 +411,8 @@ textarea {
 
 // Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
 
-button, input {
+button,
+input {
   line-height: normal;
 }
 
@@ -433,8 +438,9 @@ button,
 html input[type="button"], // 1
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button; // 2
   cursor: pointer; // 3
+  -webkit-appearance: button; // 2
+
   @if $legacy_support_for_ie {
     *overflow: visible;  // 4
   }
@@ -450,10 +456,11 @@ input[disabled] {
 // Removes inner padding and border in FF3+
 // www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
 
-button, input {
+button,
+input {
   &::-moz-focus-inner {
-    border: 0;
     padding: 0;
+    border: 0;
   }
 }
 
@@ -480,10 +487,10 @@ input {
   // 1. Addresses appearance set to searchfield in S5, Chrome
   // 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
   &[type="search"] {
-    -webkit-appearance: textfield; // 1
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box; // 2
     box-sizing: content-box;
+    -webkit-appearance: textfield; // 1
 
     // Remove inner padding and search cancel button in Safari 5 and Chrome
     // on OS X.
@@ -501,6 +508,7 @@ input {
   &[type="radio"] {
     box-sizing: border-box; // 1
     padding: 0; // 2
+
     @if $legacy_support_for_ie {
       *height: 13px; // 3
       *width: 13px; // 3

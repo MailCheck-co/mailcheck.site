@@ -4,44 +4,45 @@
 // ==========================================================================
 
 @media print {
-  *{
-    &:before,
-    &:after {
-      background: transparent !important;
+  * {
+    &::before,
+    &::after {
       color: #000 !important; // Black prints faster: http://www.sanbeiji.com/archives/953
-      box-shadow: none !important;
       text-shadow: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
     }
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")";
   }
 
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")";
   }
 
- // Don't show links that are fragment identifiers,
- // or use the `javascript:` pseudo protocol
+  // Don't show links that are fragment identifiers,
+  // or use the `javascript:` pseudo protocol
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
     content: "";
   }
 
   pre,
   blockquote {
-      border: 1px solid #999;
-      page-break-inside: avoid;
+    page-break-inside: avoid;
+    border: 1px solid #999;
   }
 
- // Printing Tables:
- // http://css-discuss.incutio.com/wiki/Printing_Tables
+  // Printing Tables:
+  // http://css-discuss.incutio.com/wiki/Printing_Tables
 
   thead { display: table-header-group; }
 

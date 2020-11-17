@@ -9,19 +9,18 @@
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
 
 .btn {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
-  width: 140px;
-  height: 52px;
-  outline: none;
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 16px;
+  justify-content: center;
+  padding: 20px 40px;
+  color: $primary-white;
   font-weight: 700;
+  font-size: 16px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  transition: transform .25s ease;
+  border-radius: 5px;
+  outline: none;
+  transition: transform 0.25s ease;
 
   &:hover {
     transform: translateY(-1px);
@@ -34,12 +33,17 @@
 
 .container {
   display: block;
+  box-sizing: border-box;
+  width: 100%;
   min-width: 320px;
   max-width: 1200px;
-  width: 100%;
-  padding: 0 40px;
   margin: 0 auto;
-  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.section-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 .content-block {
@@ -56,63 +60,83 @@
 .input {
   display: block;
   box-sizing: border-box;
-  min-width: 300px;
-  max-width: 420px;
   width: 100%;
-  height: 52px;
+  min-width: 300px;
+  max-height: 52px;
   margin-bottom: 20px;
   padding: 20px;
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background-color: rgba(255, 255, 255, 0.4);
-  color: #fff;
+  color: $primary-white;
   font-size: 16px;
+  background-color: $dark-04;
+  border: 1px solid $dark-04;
+  border-radius: 5px;
+
+  &.input-verify {
+    position: relative;
+    margin-bottom: 8px;
+    padding: 20px 45px 18px 15px;
+    background-color: $dark-01;
+    border-color: transparent;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: $dark-02;
+      font-size: 16px;
+      font-style: italic;
+      letter-spacing: 0.8px;
+    }
+
+    &:focus {
+      font-weight: 500;
+      background-color: $dark-05;
+      box-shadow: 0 0 0 1px $primary-white inset;
+    }
+  }
 
   &::placeholder {
-    color: #fff;
+    color: $primary-white;
   }
 
   &:focus {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 0 1px #fff inset;
     font-weight: 500;
+    background-color: $dark-05;
+    box-shadow: 0 0 0 1px $primary-white inset;
   }
 }
 
 .nav-link {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-right: 20px;
-  color: #ffffff;
-  font-size: 14px;
+  color: $primary-white;
   font-weight: 300;
+  font-size: 14px;
   letter-spacing: 0.8px;
 
-  &:after {
+  &::after {
     position: absolute;
-    left: 50%;
     right: 50%;
     bottom: 0;
+    left: 50%;
     display: block;
     height: 1px;
-    background: #fff;
-    transition: .3s;
+    background: $primary-white;
+    transition: 0.3s;
     content: '';
   }
 
-  &:hover:after {
+  &:hover::after {
     right: 1px;
     left: 1px;
   }
 }
 
 .text-thin {
-  margin: 0 0 15px 0;
-  color: #fff;
-  font-size: 16px;
+  color: $primary-white;
   font-weight: 300;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.8px;
   text-align: center;
@@ -121,11 +145,11 @@
     text-decoration: underline;
     word-wrap: break-word;
   }
-  
+
   &-link-blue {
-    color: #6495ed;
+    color: $light-blue-link;
   }
-  
+
   &-small {
     margin: 0 auto 15px;
     font-size: 12px;
@@ -143,7 +167,7 @@
 }
 
 .no-intent {
-  text-indent: 0px;
+  text-indent: 0;
 }
 
 .terms-text > li {
@@ -158,6 +182,42 @@
   }
 }
 
+.section-heading {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.section-title-lg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  margin: 0;
+  color: $section-titles-color;
+  font-weight: 900;
+  font-size: clamp(44px, 14vw, 255px);
+  line-height: 0.2;
+  letter-spacing: 0.05px;
+  text-align: center;
+}
+
+.section-subtitle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: $primary-white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 .subtitle {
   margin: 5px auto;
   font-weight: 500;
@@ -168,7 +228,7 @@
     text-align: left;
     text-transform: none;
   }
-  
+
   &-lowercase {
     max-width: 450px;
     margin-bottom: 20px;
@@ -177,10 +237,10 @@
 }
 
 .text-center {
-  margin: 5px auto;
   max-width: 450px;
+  margin: 5px auto;
   text-indent: 20px;
-  
+
   &-bold {
     margin: 30px auto;
     font-weight: bold;
@@ -205,23 +265,23 @@
 
 .terms {
   margin: 0;
-  color: #fff;
-  text-align: center;
+  color: $primary-white;
   font-weight: 700;
   font-size: 46px;
+  text-align: center;
 }
 
 .title {
   width: 100%;
   height: auto;
   margin-bottom: 25px;
-  color: #ffffff;
-  font-size: 32px;
+  color: $primary-white;
   font-weight: 600;
+  font-size: 32px;
   line-height: 40px;
-  text-transform: uppercase;
   letter-spacing: 1.6px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .article {
@@ -229,13 +289,13 @@
     width: 100%;
     height: auto;
     margin: 20px auto 0;
-    color: #ffffff;
-    font-size: 24px;
+    color: $primary-white;
     font-weight: 500;
+    font-size: 24px;
     line-height: 30px;
+    letter-spacing: 1.6px;
     text-align: left;
     text-transform: uppercase;
-    letter-spacing: 1.6px;
 
     &:hover {
       text-decoration: underline;
@@ -246,15 +306,15 @@
   &-time {
     width: 100%;
     margin: 0 0 10px;
-    color: #fff;
-    opacity: .5;
-    font-size: 14px;
+    color: $primary-white;
     font-weight: 300;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 1px;
     text-align: left;
+    opacity: 0.5;
   }
-  
+
   &-time {
     margin: -15px 0 25px 20px;
     font-style: italic;
@@ -263,36 +323,36 @@
   &-image {
     margin: 15px auto;
   }
-  
+
   &-image-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
-  
+
   &-image-description {
     margin: 0 0 15px 20px;
   }
 
   &-snippet {
     margin: 0 0 15px;
-    color: #fff;
-    font-size: 16px;
+    color: $primary-white;
     font-weight: 300;
-    text-align: left;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
+    text-align: left;
   }
 
   &-quote {
-    padding: 5px 15px;
-    border-left: 1px solid white;
     margin: 0 0 15px 20px;
-    opacity: .6;
-    text-align: left;
-    font-size: 16px;
+    padding: 5px 15px;
     font-weight: 400;
+    font-size: 16px;
     line-height: 26px;
+    text-align: left;
+    border-left: 1px solid $primary-white;
+    opacity: 0.6;
   }
 }
 
@@ -332,3 +392,25 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .btn {
+    padding: 20px 20px;
+  }
+
+  .section-heading {
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+
+  .section-subtitle {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section-heading {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

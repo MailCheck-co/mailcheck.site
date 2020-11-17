@@ -1,69 +1,96 @@
+button.burger-wrapper {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
 .burger {
   display: none;
 }
 
 .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   position: fixed;
   top: 0;
   left: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
-
-  .burger {
+  .burger-wrapper {
     position: absolute;
-    top: 40px;
+    top: 30px;
     right: 5px;
-    display: block;
-    width: 40px;
-    height: 5px;
-    background: #fff;
-    margin-right: 30px;
     z-index: 200;
-    transition: all .5s ease;
-
-    &:before, &:after {
-      position: absolute;
-      content: '';
-      background: #fff;
-      width: 40px;
-      height: 5px;
-      transition: all .5s ease;
-    }
-
-    &:before {
-      top: -9px;
-    }
-
-    &:after {
-      top: 9px;
-    }
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
 
     &.open {
       position: fixed;
       background: transparent;
 
-      &:after {
-        transform: rotate(-45deg);
-        top: 0;
-      }
+      .burger {
+        background-color: transparent;
 
-      &:before {
-        transform: rotate(45deg);
-        top: 0;
+        &::after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+
+        &::before {
+          top: 0;
+          transform: rotate(45deg);
+        }
       }
     }
   }
 
+  .burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: $primary-white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 4px;
+      background: $primary-white;
+      transition: all 0.5s ease;
+      content: '';
+    }
+
+    &::before {
+      top: -9px;
+    }
+
+    &::after {
+      top: 9px;
+    }
+  }
+
   .mobile-menu {
-    background-image: linear-gradient(to top, #1edfcf 0%, #55bbff 100%);
-    transition: all 1s ease;
     z-index: 100;
+    background-image: $mob-menu-gradient;
+    transition: all 1s ease;
 
     &.open {
       left: 0;
@@ -71,8 +98,8 @@
 
     &-links {
       margin: 0 50px 35px;
-      font-size: 16px;
       font-weight: 400;
+      font-size: 16px;
       letter-spacing: 0.8px;
       text-align: left;
 
@@ -84,8 +111,8 @@
 
   .mobile-btn {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-left: 45px;
   }
 }

@@ -30,6 +30,10 @@
             {
                 "source": "/sendMail",
                 "function": "sendMail"
+            },
+            {
+                "source": "/checkMail",
+                "function": "checkMail"
             }
         ],
         "cleanUrls": true,

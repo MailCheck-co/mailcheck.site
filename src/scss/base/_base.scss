@@ -1,38 +1,42 @@
 @viewport { width: device-width; }
 
 html {
-  background-color: $color-background;
   box-sizing: border-box;
   height: 100%;
+  overflow-x: hidden;
+  background-color: $color-background;
+  scroll-behavior: smooth;
 }
 
 * {
   outline: none;
-  &:before,
-  &:after { box-sizing: inherit; }
-  &:focus{
+
+  &::before,
+  &::after { box-sizing: inherit; }
+
+  &:focus {
     outline: none;
   }
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto', sans-serif;
   min-height: 100%;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 a {
-  background: transparent;
   text-decoration: none;
-  transition: color .2s;
+  background: transparent;
   outline: none;
+  transition: color 0.2s;
 }
 
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -41,8 +45,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
   font-weight: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 strong {
