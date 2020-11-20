@@ -9,9 +9,9 @@
 // Styleguide 10.1
 
 @mixin reset-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 // Hovers
@@ -58,7 +58,9 @@
 @mixin mq($breakpoint, $query: 'min-width', $type: 'screen') {
   @if $fix-mqs {
     @if $fix-mqs >= $breakpoint { @content; }
-  } @else {
+  }
+
+  @else {
     @media #{$type} and (#{$query}: #{$breakpoint}) { @content; }
   }
 }
@@ -72,13 +74,13 @@
 @mixin clearfix {
   *zoom: 1;
 
-  &:before,
-  &:after {
-    content: '';
+  &::before,
+  &::after {
     display: table;
+    content: '';
   }
 
-  &:after { clear: both; }
+  &::after { clear: both; }
 }
 
 // Hide Text
@@ -87,8 +89,8 @@
 
 @mixin hide-text {
   overflow: hidden;
-  text-indent: 101%;
   white-space: nowrap;
+  text-indent: 101%;
 }
 
 // Hidden
@@ -109,14 +111,14 @@
 // @usage - `@include visuallyhidden`
 
 @mixin visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 
   // Extends the .visuallyhidden class to allow the element to be focusable
   // when navigated to via the keyboard: h5bp.com/p
@@ -124,12 +126,12 @@
   &.focusable {
     &:active,
     &:focus {
-      clip: auto;
+      position: static;
+      width: auto;
       height: auto;
       margin: 0;
       overflow: visible;
-      position: static;
-      width: auto;
+      clip: auto;
     }
   }
 }

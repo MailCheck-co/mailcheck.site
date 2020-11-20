@@ -1,12 +1,22 @@
 .accordion {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  max-width: 530px;
-  min-width: 300px;
-  margin: 50px 20px 100px;
+  margin: 50px 20px 50px;
+}
+
+.accordion-column {
+  width: 48%;
+}
+
+.filter-img {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .input-radio {
@@ -16,7 +26,7 @@
     max-height: 200px;
   }
 
-  &:checked ~ .tab-label:after {
+  &:checked ~ .tab-label::after {
     transform: rotate(135deg);
   }
 
@@ -25,132 +35,153 @@
   }
 }
 
-.filter-img {
-  //transform: translate(120px, -50px); @TODO add breakpoint to fix position (don't remove translate)
-}
-
 .tab {
-  width: 100%;
-
   margin-bottom: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+  border-bottom: 1px solid $dark-02;
 }
 
-.tab-content{
+.tab-content {
   max-height: 0;
-  overflow: hidden;
+  overflow: auto;
+  transition: 0.35s ease-in-out;
+
+  &::-webkit-scrollbar {
+    width: 0.3em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(17, 50, 78, 0.2);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-accent;
+    border: 2px solid $primary-accent;
+    border-radius: 5px;
+  }
 }
 
 .tab-text {
-  color: #ffffff;
-  font-size: 16px;
+  margin-top: 0;
+  padding: 0 10px;
+  color: $primary-white;
   font-weight: 300;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.8px;
-  padding: 0 10px;
-  margin-top: 0;
+  word-break: break-word;
+
+  & > a {
+    color: $primary-accent;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .tab-label {
   position: relative;
   display: block;
-  width: 100%;
   box-sizing: border-box;
-  color: #ffffff;
-  font-size: 18px;
+  width: 100%;
+  padding: 0 13px 13px 10px;
+  color: $primary-white;
   font-weight: 500;
+  font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.9px;
   cursor: pointer;
-  padding: 0 13px 13px 10px;
 
-
-  &:after {
+  &::after {
     position: absolute;
+    top: 10px;
+    right: 0;
     display: block;
-    content: '';
     width: 5px;
     height: 5px;
-    right: 0;
-    top: 10px;
-    border-left: 1px solid #1bced4;
-    border-bottom: 1px solid #1bced4;
+    border-bottom: 1px solid $primary-accent;
+    border-left: 1px solid $primary-accent;
     transform: rotate(-45deg);
-    transition: all .5s ease;
+    transition: all 0.5s ease;
+    content: '';
   }
-
 }
 
 .title-small {
   width: 100%;
-  color: #ffffff;
-  font-size: 32px;
+  color: $primary-white;
   font-weight: 600;
+  font-size: 32px;
   line-height: 48px;
-  text-transform: uppercase;
   letter-spacing: 1.6px;
   text-align: center;
+  text-transform: uppercase;
 
-  &:before {
+  &::before {
     position: absolute;
-    display: block;
-    height: 170px;
-    width: 1024px;
-    z-index: -1;
-    left: 0;
     right: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 1024px;
+    height: 170px;
     margin: 0 auto;
-    content: 'faq';
-    font-size: 160px;
+    color: $section-titles-color;
     font-weight: 900;
-    color: rgba(17, 50, 78, 0.2);
+    font-size: 160px;
     text-transform: uppercase;
+    content: 'faq';
   }
 }
 
 .wrapper-questions {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0 auto 50px;
+  padding: 50px 20px 0;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
   .accordion {
-    margin: 0;
+    margin: 0 0 50px 0;
   }
 
   .filter-img {
     transform: none;
   }
 
-  .title-small:before {
+  .title-small::before {
     display: none;
   }
 }
 
-
 @media only screen and (max-width: 768px) {
   .accordion {
+    flex-direction: column;
+    justify-content: start;
     max-width: 80%;
-    margin: 0;
+    margin: 0 0 30px 0;
     padding: 0 10px;
+  }
+
+  .accordion-column {
+    width: 100%;
   }
 
   .filter-img {
     order: -1;
-    transform: translateY(50px);
+    width: 50%;
     min-width: 10%;
     max-width: 70%;
-    width: 50%;
-    height: 100%;
     margin-bottom: 25px;
+    transform: translateY(50px);
   }
 
   .wrapper-questions {
     justify-content: center;
+    padding: 50px 20px 0;
   }
 }
-

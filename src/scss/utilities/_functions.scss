@@ -28,11 +28,14 @@
   @if not unitless($target) {
     $target: strip-units($target);
   }
+
   @if not unitless($context) {
     $context: strip-units($context);
   }
-  @if $target == 0 { @return 0 }
-  @return $target / $context + 0em;
+
+  @if $target == 0 { @return 0; }
+
+  @return $target / $context + 0;
 }
 // rem()
 //
@@ -48,11 +51,14 @@
   @if not unitless($target) {
     $target: strip-units($target);
   }
+
   @if not unitless($context) {
     $context: strip-units($context);
   }
-  @if $target == 0 { @return 0 }
-  @return $target / $context + 0rem;
+
+  @if $target == 0 { @return 0; }
+
+  @return $target / $context + 0;
 }
 
 // px()
@@ -69,11 +75,14 @@
   @if not unitless($target) {
     $pxval: strip-units($target);
   }
+
   @if not unitless($context) {
     $base: strip-units($context);
   }
-  @if $target == 0 { @return 0 }
-  @return $target * $context + 0px;
+
+  @if $target == 0 { @return 0; }
+
+  @return $target * $context + 0;
 }
 
 // Map Functions
@@ -92,7 +101,9 @@
       @return false;
     }
     $map: map-get($map, $key);
-  } @return true;
+  }
+
+  @return true;
 }
 
 // map-deep-get($map)
@@ -104,7 +115,9 @@
 @function map-deep-get($map, $keys...) {
   @each $key in $keys {
     $map: map-get($map, $key);
-  } @return $map;
+  }
+
+  @return $map;
 }
 
 // z()
@@ -116,7 +129,9 @@
 @function z($indexes...) {
   @if not map-has-nested-keys($zindex, $indexes...) {
     @warn 'No index found for `#{inspect($indexes...)}` in $zindex map. Property omitted.';
-  } @return map-deep-get($zindex, $indexes...);
+  }
+
+  @return map-deep-get($zindex, $indexes...);
 }
 
 // bp()
@@ -128,5 +143,7 @@
 @function bp($point...) {
   @if not map-has-nested-keys($breakpoints, $point...) {
     @warn 'No breakpoint found for `#{inspect($point...)}` in $breakpoints map. Property omitted.';
-  } @return map-deep-get($breakpoints, $point...);
+  }
+
+  @return map-deep-get($breakpoints, $point...);
 }

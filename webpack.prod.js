@@ -46,6 +46,9 @@ module.exports = {
         emailValidationsAPIIncreaseECommerceConversion: './src/blog.js',
         refer: './src/js/refer.js',
         404: './src/404.js',
+        faq: './src/faq.js',
+        mobMenu: './src/js/mob-menu.js',
+        scroll: './src/js/scroll.js',
     },
     output: {
         filename: '[name].[hash:20].js',
@@ -107,6 +110,13 @@ module.exports = {
                 ]
             },
             {
+                test: /\.svg$/,
+                use: {
+                    loader: 'svg-url-loader',
+                    options: {}
+                }
+            },
+            {
                 test: /\.hbs$/,
                 loader: 'handlebars-loader',
                 query: {
@@ -131,6 +141,16 @@ module.exports = {
             template: './src/html/terms.hbs',
             filename: 'terms.html',
             chunks: ['terms'],
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/faq.hbs',
+            filename: 'faq.html',
+            chunks: ['faq'],
             inject: 'body',
             minify: {
                 removeComments: true,
@@ -429,7 +449,7 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
-        new CopyWebpackPlugin([{context: './src/assets/root', from: '**/*.*', to: buildPath}]),
+        new CopyWebpackPlugin([{ context: './src/assets/root', from: '**/*.*', to: buildPath }]),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
             // Your source logo

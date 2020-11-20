@@ -1,13 +1,24 @@
+.choose-your {
+  &::before {
+    position: absolute;
+    top: -185%;
+    width: 100%;
+    height: 452px;
+    background: url(../assets/img/lines.svg) no-repeat center;
+    background-size: cover;
+    content: "";
+    pointer-events: none;
+  }
+}
+
 .swiper-container {
   width: 100%;
-  max-width: 80%;
   height: 350px;
 }
 
-
 .art {
-  max-width: 520px;
   width: 49%;
+  max-width: 520px;
   margin: 0;
   text-align: left;
 }
@@ -29,41 +40,14 @@
   justify-content: space-between;
   max-width: 880px;
   margin: 0 auto 95px;
-
-  .title:before {
-    position: absolute;
-    display: block;
-    height: 165px;
-    width: auto;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    content: 'you can';
-    font-size: 150px;
-    font-weight: 900;
-    color: rgba(17, 50, 78, 0.2);
-    text-transform: uppercase;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .wrapper-choose .title:before {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 768px) {
   .art {
-    height: 50px;
     width: 100%;
     max-width: 700px;
     margin: 0 0 25px 0;
     overflow: hidden;
-
-    &:last-of-type {
-      display: none;
-    }
   }
 
   .read-more-label {
@@ -72,68 +56,51 @@
     left: 0;
     display: block;
 
-    &:after {
-      content: '';
+    &::after {
       position: absolute;
-      display: block;
-      left: 100px;
       top: 5px;
+      left: 100px;
+      display: block;
       width: 5px;
       height: 5px;
-      border-left: 2px solid #1bced4;
-      border-bottom: 2px solid #1bced4;
+      border-bottom: 2px solid $primary-accent;
+      border-left: 2px solid $primary-accent;
       transform: rotate(-45deg);
+      content: '';
     }
 
-    &:before {
+    &::before {
       position: absolute;
       display: block;
       width: 100px;
-      content: 'read more';
-      color: #1bced4;
-      font-size: 16px;
+      color: $primary-accent;
       font-weight: 700;
-      text-transform: uppercase;
+      font-size: 16px;
       letter-spacing: 0.8px;
+      text-transform: uppercase;
+      content: 'read more';
     }
-  }
-
-
-  .read-more-checkbox:checked ~ {
-
-    .art {
-      height: auto;
-    }
-
-    .art:last-of-type {
-      display: block;
-    }
-
-    .read-more-label:before {
-      content: "read less";
-    }
-
-    .read-more-label:after {
-      transform: rotate(135deg) translate(3px, 2px);
-    }
-
   }
 
   .wrapper-choose {
     position: relative;
     flex-flow: column nowrap;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
     height: auto;
+    margin-bottom: 50px;
+  }
 
-    .title:before {
-      display: none;
+  .choose-your {
+    &::before {
+      top: -43%;
+      left: 0;
+      background-position: center left 40%;
+      background-size: auto;
+    }
+
+    .title {
+      margin-bottom: 5px;
     }
   }
-
-  .choose-your .container {
-    padding: 0 30px;
-  }
 }
-
-

@@ -8,9 +8,12 @@
         "dev": "webpack-dev-server --config webpack.dev.js --mode development",
         "build": "webpack --config webpack.prod.js --mode production",
         "lint": "eslint . *.js",
+        "lint-css": "stylelint \"src/scss/**/*.+(scss|css)\" --fix",
         "preview": "npm run build && http-server dist",
-        "deploy_hosting": "firebase deploy --only hosting",
-        "deploy_functions": "firebase deploy --only functions"
+        "deploy_hosting": "firebase deploy --only hosting --project=dev",
+        "deploy_functions": "firebase deploy --only functions --project=dev",
+        "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
+        "deploy_functions:prod": "firebase deploy --only functions --project=prod"
     },
     "repository": {
         "type": "git",
@@ -45,6 +48,7 @@
         "normalize.css": "^8.0.1"
     },
     "devDependencies": {
+        "@nodeart/stylelint-config-nodeart": "^0.0.4",
         "ajv": "^6.3.0",
         "autoprefixer": "^9.8.6",
         "babel-core": "^6.26.3",
@@ -72,10 +76,23 @@
         "sass-loader": "^6.0.7",
         "source-map-loader": "^0.2.3",
         "style-loader": "^0.20.3",
+        "stylelint": "^13.7.2",
+        "svg-url-loader": "^6.0.0",
         "url-loader": "^1.0.1",
         "webpack": "^4.44.2",
         "webpack-cli": "^3.3.12",
         "webpack-dev-server": "^3.1.1"
+    },
+    "stylelint": {
+        "extends": "@nodeart/stylelint-config-nodeart",
+        "ignoreFiles": [
+            "src/scss/libs/*.+(scss|css)"
+        ],
+        "rules": {
+            "no-descending-specificity": null,
+            "plugin/no-low-performance-animation-properties": null,
+            "sh-waqar/declaration-use-variable": null
+        }
     },
     "browserslist": [
         "defaults"
