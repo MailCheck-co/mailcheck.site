@@ -39,7 +39,7 @@ RUN --mount=type=bind,source=.firebaserc,target=.firebaserc \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
     --mount=type=bind,source=/opt/app/node_modules,target=node_modules,from=landing_dependencies \
     --mount=type=bind,source=/opt/app/dist,target=dist,from=build_hosting \
-    npm run deploy_hosting
+    npm run deploy_hosting:prod
 
 FROM credentials AS deploy_functions
 WORKDIR /opt/app/functions
@@ -48,8 +48,10 @@ RUN --mount=type=bind,source=.firebaserc,target=/opt/app/.firebaserc \
     --mount=type=bind,source=functions/index.js,target=index.js \
     --mount=type=bind,source=functions/package.json,target=package.json \
     --mount=type=bind,source=functions/package-lock.json,target=package-lock.json \
+    --mount=type=bind,source=functions/checkmail.js,target=checkmail.js \
+    --mount=type=bind,source=functions/sendmail.js,target=sendmail.js \
     --mount=type=bind,source=/opt/app/functions/node_modules,target=node_modules,from=functions_dependencies \
-    npm run deploy_functions
+    npm run deploy_functions:prod
 
 FROM base_stage AS bind_stages
 RUN --mount=target=.,from=deploy_functions \
