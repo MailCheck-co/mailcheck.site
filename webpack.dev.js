@@ -312,6 +312,12 @@ module.exports = {
       inject: true
     }),
     new HtmlWebpackPlugin({
+      template: './src/html/blog/howBootstrapYourSaaSStartup.hbs',
+      filename: 'how-Bootstrap-Your-SaaS-Startup.html',
+      chunks: ['howBootstrapYourSaaSStartup'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
       template: './src/html/404.hbs',
       filename: '404.html',
       chunks: ['terms'],
