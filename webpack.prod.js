@@ -44,6 +44,7 @@ module.exports = {
         whatIsEmailAPI: './src/blog.js',
         tenTipsToWarmUpColdEmails: './src/blog.js',
         emailValidationsAPIIncreaseECommerceConversion: './src/blog.js',
+        howBootstrapYourSaaSStartup: './src/blog.js',
         refer: './src/js/refer.js',
         404: './src/404.js',
         faq: './src/faq.js',
@@ -437,6 +438,12 @@ module.exports = {
             template: './src/html/blog/emailValidationsAPIIncreaseECommerceConversion.hbs',
             filename: 'emails-validation-API-increase-E-Commerce-conversion.html',
             chunks: ['emailValidationsAPIIncreaseECommerceConversion'],
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/blog/howBootstrapYourSaaSStartup.hbs',
+            filename: 'how-Bootstrap-Your-SaaS-Startup.html',
+            chunks: ['howBootstrapYourSaaSStartup'],
             inject: true
         }),
         new HtmlWebpackPlugin({
