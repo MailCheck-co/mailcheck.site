@@ -45,6 +45,8 @@
     },
     "homepage": "https://github.com/lifenautjoe/webpack-starter-basic#readme",
     "dependencies": {
+        "firebase-admin": "^9.4.1",
+        "firebase-functions": "^3.11.0",
         "normalize.css": "^8.0.1"
     },
     "devDependencies": {

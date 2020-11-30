@@ -94,6 +94,10 @@
   border-radius: 5px;
   transition: 0.35s;
 
+  img {
+    width: auto;
+  }
+
   &:hover {
     transform: translateX(3px);
   }
@@ -110,6 +114,95 @@
   color: $primary-white;
   background-color: $dark-02;
   border-radius: 4px;
+  span {
+    text-transform: none;
+    &.error {
+      color: $color-important;
+    }
+    &.warning {
+      color: $color-warning;
+    }
+    &.success {
+      color: $color-success;
+    }
+  }
+  .results-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0 0;
+    .social-link {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      background: 50% no-repeat;
+      background-size: contain;
+      opacity: .2;
+      filter: grayscale(1);
+      pointer-events: none;
+
+      &.gravatar {
+        background-image: url('../assets/img/icons/gravatar.svg');
+      }
+
+      &.blogger {
+        background-image: url('../assets/img/icons/blogger.svg');
+      }
+
+      &.facebook {
+        background-image: url('../assets/img/icon-facebook.svg');
+      }
+
+      &.foursquare {
+        background-image: url('../assets/img/icons/foursquare.svg');
+      }
+
+      &.google {
+        background-image: url('../assets/img/icons/google.svg');
+      }
+
+      &.linkedin {
+        background-image: url('../assets/img/icons/linkedin.svg');
+      }
+
+      &.tripit {
+        background-image: url('../assets/img/icons/tripit.svg');
+      }
+
+      &.tumblr {
+        background-image: url('../assets/img/icons/tumblr.svg');
+      }
+
+      &.twitter {
+        background-image: url('../assets/img/icons/twitter.svg');
+      }
+
+      &.vimeo {
+        background-image: url('../assets/img/icons/vimeo.svg');
+      }
+
+      &.wordpress {
+        background-image: url('../assets/img/icons/wordpress.svg');
+      }
+
+      &.youtube {
+        background-image: url('../assets/img/icons/youtube.svg');
+      }
+
+      &.github {
+        background-image: url('../assets/img/icons/github.svg');
+      }
+
+      &.active {
+        filter: none;
+        opacity: 1;
+        cursor: pointer;
+        pointer-events: all;
+      }
+    }
+  }
 }
 
 .results-title {
