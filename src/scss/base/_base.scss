@@ -21,7 +21,7 @@ html {
 
 body {
   min-height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -35,7 +35,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
