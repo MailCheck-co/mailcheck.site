@@ -8,6 +8,7 @@ import './js/scroll';
 (function () {
   const contactForm = document.getElementById('contact-us');
   const verifyEmailForm = document.getElementById('verify-email');
+  const emailResults = verifyEmailForm.querySelector('.email-results');
   const popUpSuccess = document.getElementById('popup-success');
   const popUpError = document.getElementById('popup-error');
   const popUpBlock = document.getElementById('popup-block');
@@ -17,8 +18,11 @@ import './js/scroll';
     const socialLinks = document.querySelectorAll('.social-link');
     const validity = document.getElementById('email-risk');
     const closeBtn = document.getElementById('close-btn');
+    const formPreloader = emailResults.querySelector('.form-preloader');
 
     e.preventDefault();
+
+    emailResults.style.display = 'block';
 
     fetch('/checkMail', {
       method: 'POST',
@@ -35,7 +39,6 @@ import './js/scroll';
           const smpt = data.smtpExists ? '+' : '-';
           const disposable = data.isNotDisposable ? '+' : '-';
           const catchAll = data.isNotSmtpCatchAll ? '+' : '-';
-          document.querySelector('.email-results').style.display = 'block';
           document.getElementById('email-result').innerHTML = data.email;
           document.getElementById('exists-result').innerHTML = exist;
           document.getElementById('smtp-result').innerHTML = smpt;
@@ -72,6 +75,8 @@ import './js/scroll';
       })
       .then(() => verifyEmailForm.reset())
       .catch(e => console.error(e));
+
+    formPreloader.style.display = 'none';
 
     closeBtn.addEventListener('click', () => {
       document.querySelector('.email-results').style.display = 'none';
