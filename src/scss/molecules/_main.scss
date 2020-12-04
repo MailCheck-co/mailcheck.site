@@ -114,6 +114,33 @@
   color: $primary-white;
   background-color: $dark-02;
   border-radius: 4px;
+
+  .form-preloader {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $testimonials-dark-bg;
+      opacity: .98;
+      z-index: 1;
+
+      &::after {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 50%;
+          width: 100px;
+          height: 100px;
+          transform: translate(-50%, -50%);
+          background-image: url('../assets/img/preloader-bars.svg');
+          background-repeat: no-repeat;
+          background-position: center center;
+          z-index: 1;
+      }
+  }
+
   span {
     text-transform: none;
     &.error {
