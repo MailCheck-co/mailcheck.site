@@ -10,13 +10,28 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import * as matter from 'gray-matter';
+import { readdirSync } from 'fs';
+import { join, extname } from 'path';
 import { mdsvex } from "mdsvex";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
+
+function get_routes() {
+    const  blog_path = join(process.cwd(), 'src', 'routes', 'blog');
+    console.log(blog_path+readdirSync(blog_path).filter(p => extname(p) === ".svx"));
+    const  posts = readdirSync(blog_path).filter(p => extname(p) === ".svx").map(post=>{
+        return matter.read(join(blog_path,post))
+    });
+    console.log(posts);
+    return posts;
+}
+
 const replaceConstants = {
     'process.env.NODE_ENV': JSON.stringify(mode),
+    '__ROUTES__': JSON.stringify(get_routes()),
     'process.env.site': JSON.stringify(process.env['site'] || 'https://www.mailcheck.co')
 };
 

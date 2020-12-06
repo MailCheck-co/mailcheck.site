@@ -1,6 +1,7 @@
 ---
 layout: blog
 slug: test
+title: test
 ---
 
 # Some h1
