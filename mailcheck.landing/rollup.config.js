@@ -8,13 +8,14 @@ import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import { mdsvex } from "mdsvex";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 const replaceConstants = {
     'process.env.NODE_ENV': JSON.stringify(mode),
-    'process.env.site': JSON.stringify('https://www.mailcheck.co')
+    'process.env.site': JSON.stringify(process.env['site'] || 'https://www.mailcheck.co')
 };
 
 const onwarn = (warning, onwarn) =>
@@ -34,7 +35,12 @@ export default {
 			svelte({
 				dev,
 				hydratable: true,
-				emitCss: true
+				emitCss: true,
+                extensions: [
+                    '.svelte',
+                    '.svx'
+                ],
+                preprocess: mdsvex()
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -83,7 +89,12 @@ export default {
 			svelte({
 				generate: 'ssr',
 				hydratable: true,
-				dev
+				dev,
+                extensions: [
+                    '.svelte',
+                    '.svx'
+                ],
+                preprocess: mdsvex()
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
