@@ -22,7 +22,7 @@ export function get(req, res, next) {
 		});
 
 		res.end(JSON.stringify({
-			message: `Not found`
+			message: 'Not found'
 		}));
 	}
 }
