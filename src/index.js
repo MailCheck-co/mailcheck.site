@@ -62,7 +62,7 @@ import './js/scroll';
           if (data.trustRate <= 49) {
             validity.innerHTML = 'invalid';
             validity.className = 'error';
-          } else if (data.trustRate >= 50 && data.trustRate <= 80) {
+          } else if (data.trustRate >= 50 && data.trustRate < 80) {
             validity.innerHTML = 'risky';
             validity.className = 'warning';
           } else {
