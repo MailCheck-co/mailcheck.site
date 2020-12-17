@@ -23,7 +23,11 @@
   display: none;
 
   &:checked ~ .tab-content {
-    max-height: 200px;
+    height: auto;
+    padding: 10px 0;
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
   }
 
   &:checked ~ .tab-label::after {
@@ -41,8 +45,10 @@
 }
 
 .tab-content {
-  max-height: 0;
-  overflow: auto;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
   transition: 0.35s ease-in-out;
 
   &::-webkit-scrollbar {
