@@ -1,12 +1,12 @@
 .team-members {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-top: 70px;
 }
 
 .team-member {
   display: flex;
+  flex-basis: 33.33%;
   flex-direction: column;
   align-items: center;
 }
