@@ -1,34 +1,35 @@
 <script context="module" lang="ts">
 	export function preload() {
-		return this.fetch(`blog.json`).then((r: { json: () => any; }) => r.json()).then((posts: { slug: string; title: string, html: any }[]) => {
+		return this.fetch(`blog.json`).then((r: { json: () => any; }) => r.json()).then((posts: { slug: string; title: string, html: any, date: string, readingTime: string, snippet: any }[]) => {
 			return { posts };
 		});
 	}
 </script>
 
 <script lang="ts">
-	export let posts: { slug: string; title: string, html: any }[];
+    import ContactUs from "../../components/ContactUs.svelte";
+	export let posts: { slug: string; title: string, html: any, date: string, readingTime: string, snippet: any }[];
 </script>
 
-<style>
-	ul {
-		margin: 0 0 1em 0;
-		line-height: 1.5;
-	}
-</style>
-
 <svelte:head>
-	<title>Blog</title>
+	<title>Mailcheck | Blog</title>
 </svelte:head>
 
-<h1>Recent posts</h1>
+<main class="terms" id="blog">
+    <div class="container">
+        <div class="content-block">
+            <h1 class="title">BLOG</h1>
 
-<ul>
-	{#each posts as post}
-		<!-- we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
-		<li><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></li>
-	{/each}
-</ul>
+            {#each posts as post}
+                <a rel="prefetch" class="article-title" href="blog/{post.slug}">{post.title}</a>
+                <p class="article-date">Date: {post.date}</p>
+                <p class="article-snippet">{post.snippet}
+                    <a class="text-thin text-thin-link" href="blog/{post.slug}">[Read more...]</a>
+                </p>
+            {/each}
+
+        </div>
+    </div>
+</main>
+
+<ContactUs/>

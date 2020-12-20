@@ -1,15 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js gt-ie9 ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js gt-ie9"> <!--<![endif]-->
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta name="theme-color" content="#333333">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
 	%sapper.base%
 
 	<link rel="stylesheet" href="global.css">
 	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-	<link rel="icon" type="image/png" href="favicon.png">
+	<meta name="description" content="An application to clean your subscription list from bounces, and enrich data about customers">
+    <meta name="robots" content="all">
+
+    <link rel="icon" type="image/ico" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="canonical" href="https://www.mailcheck.co/">
+
+    <!--Fonts-->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet"
+          media="all" onload="if(media!='all')media='all'">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KXLTC2Z');</script>
+    <!-- End Google Tag Manager -->
 
 	<!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
@@ -26,8 +54,37 @@
 	%sapper.head%
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXLTC2Z"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
 	<div id="sapper">%sapper.html%</div>
+
+    <!--scripts-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.5/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+    <!--TAWK.to script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5c090455fd65052a5c9408b1/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+
+    <script src="js/refer.js"></script>
+    <script src="js/mob-menu.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

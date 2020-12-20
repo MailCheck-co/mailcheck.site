@@ -1,50 +1,53 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+    import EmailsVerify from "../components/EmailsVerify.svelte";
+    import Partners from "../components/Partners.svelte";
+    import Features from "../components/Features.svelte";
+    import Choose from "../components/Choose.svelte";
+    import Pricing from "../components/Pricing.svelte";
+    import Reviews from "../components/Reviews.svelte";
+    import Team from "../components/Team.svelte";
+    import Testimonials from "../components/Testimonials.svelte";
+    import Faq from "../components/Faq.svelte";
+    import ContactUs from "../components/ContactUs.svelte";
+    import Cta from "../components/Cta.svelte";
+
 </script>
 
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Mailcheck | Verify your real customers in one way</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<main class="manage-customers" role="main" id="main">
+    <!-- EMAILS VERIFY -->
+    <EmailsVerify/>
 
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
+    <!-- PARTNERS SECTION -->
+    <Partners/>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+    <!--Welcome to the featuress-->
+    <Features/>
+
+    <!--Choose your audience-->
+    <Choose/>
+
+    <!--Pricing plans-->
+    <Pricing/>
+
+    <!-- SECTION REVIEWS -->
+    <Reviews/>
+
+    <!-- SECTION TEAM -->
+    <Team/>
+
+    <!-- SECTION TESTIMONIALS -->
+    <Testimonials/>
+
+    <!--Questions-->
+    <Faq/>
+
+    <!--Contact Us-->
+    <ContactUs/>
+
+    <!-- SECTION CTA -->
+    <Cta/>
+</main>

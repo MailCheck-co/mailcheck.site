@@ -1,0 +1,29 @@
+.cta {
+  padding-bottom: 200px;
+  text-align: center;
+
+  &-info {
+    position: relative;
+    z-index: 1;
+    color: $primary-white;
+  }
+
+  &-text {
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .cta {
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .cta {
+    padding-bottom: 100px;
+  }
+}

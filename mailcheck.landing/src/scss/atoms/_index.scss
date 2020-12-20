@@ -1,0 +1,416 @@
+// Atoms
+//
+// If atoms are the basic building blocks of matter, then the atoms of
+// our interfaces serve as the foundational building blocks that
+// comprise all our user interfaces. Therefore these atoms would include
+// basic HTML tags like form labels, inputs, buttons, and other elements
+// that can’t be broken down any further without ceasing to be functional.
+//
+// @source - http://atomicdesign.bradfrost.com/chapter-2/
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  color: $primary-white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  outline: none;
+  transition: transform 0.25s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.container {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.section-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 880px;
+  margin: auto;
+}
+
+.fixed {
+  overflow: hidden;
+}
+
+.input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 300px;
+  max-height: 52px;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: $primary-white;
+  font-size: 16px;
+  background-color: $dark-04;
+  border: 1px solid $dark-04;
+  border-radius: 5px;
+
+  &.input-verify {
+    position: relative;
+    margin-bottom: 8px;
+    padding: 20px 45px 18px 15px;
+    background-color: $dark-01;
+    border-color: transparent;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: $dark-02;
+      font-size: 16px;
+      font-style: italic;
+      letter-spacing: 0.8px;
+    }
+
+    &:focus {
+      font-weight: 500;
+      background-color: $dark-05;
+      box-shadow: 0 0 0 1px $primary-white inset;
+    }
+  }
+
+  &::placeholder {
+    color: $primary-white;
+  }
+
+  &:focus {
+    font-weight: 500;
+    background-color: $dark-05;
+    box-shadow: 0 0 0 1px $primary-white inset;
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  color: $primary-white;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+
+  &::after {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    height: 1px;
+    background: $primary-white;
+    transition: 0.3s;
+    content: '';
+  }
+
+  &:hover::after {
+    right: 1px;
+    left: 1px;
+  }
+}
+
+.text-thin {
+  color: $primary-white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  text-align: center;
+
+  &-link {
+    text-decoration: underline;
+    word-wrap: break-word;
+  }
+
+  &-link-blue {
+    color: $light-blue-link;
+  }
+
+  &-small {
+    margin: 0 auto 15px;
+    font-size: 12px;
+    text-align: initial;
+  }
+}
+
+.terms-text {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.no-intent {
+  text-indent: 0;
+}
+
+.terms-text > li {
+  list-style-position: inside;
+}
+
+.numbered-list {
+  padding-inline-start: 20px;
+
+  li {
+    text-indent: 0;
+  }
+}
+
+.section-heading {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.section-title-lg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  margin: 0;
+  color: $section-titles-color;
+  font-weight: 900;
+  font-size: clamp(44px, 14vw, 255px);
+  line-height: 0.2;
+  letter-spacing: 0.05px;
+  text-align: center;
+}
+
+.section-subtitle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: $primary-white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 5px auto;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &-left {
+    margin: 5px 0 20px;
+    text-align: left;
+    text-transform: none;
+  }
+
+  &-lowercase {
+    max-width: 450px;
+    margin-bottom: 20px;
+    text-transform: none;
+  }
+}
+
+.text-center {
+  max-width: 450px;
+  margin: 5px auto;
+  text-indent: 20px;
+
+  &-bold {
+    margin: 30px auto;
+    font-weight: bold;
+  }
+}
+
+.text-with-image {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  .terms-text,
+  .article-image {
+    flex-basis: 48%;
+    width: 48%;
+  }
+
+  .article-image {
+    margin: 0 0 0 10px;
+  }
+}
+
+.terms {
+  margin: 0;
+  color: $primary-white;
+  font-weight: 700;
+  font-size: 46px;
+  text-align: center;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  color: $primary-white;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1.6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.article {
+  &-title {
+    width: 100%;
+    height: auto;
+    margin: 20px auto 0;
+    color: $primary-white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1.6px;
+    text-align: left;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-date,
+  &-time {
+    width: 100%;
+    margin: 0 0 10px;
+    color: $primary-white;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    opacity: 0.5;
+  }
+
+  &-time {
+    margin: -15px 0 25px 20px;
+    font-style: italic;
+  }
+
+  &-image {
+    margin: 15px auto;
+  }
+
+  &-image-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &-image-description {
+    margin: 0 0 15px 20px;
+  }
+
+  &-snippet {
+    margin: 0 0 15px;
+    color: $primary-white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+
+  &-quote {
+    margin: 0 0 15px 20px;
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    border-left: 1px solid $primary-white;
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .text-with-image {
+    flex-direction: column;
+
+    .terms-text,
+    .article-image {
+      flex-basis: 100%;
+      width: 100%;
+    }
+
+    .article-image {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .article-quote {
+    margin-left: 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .terms-text {
+    text-align: left;
+    text-indent: 0;
+  }
+
+  .numbered-list {
+    padding-inline-start: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn {
+    padding: 20px 20px;
+  }
+
+  .section-heading {
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+
+  .section-subtitle {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section-heading {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

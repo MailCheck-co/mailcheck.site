@@ -5,35 +5,21 @@
 	const dev = process.env.NODE_ENV === 'development';
 </script>
 
-<style>
-	h1, p {
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
 <svelte:head>
-	<title>{status}</title>
+	<title>Mailcheck | {status}</title>
 </svelte:head>
 
-<h1>{status}</h1>
-
-<p>{error.message}</p>
+<main class="terms" id="terms">
+    <div class="container">
+        <div class="wrapper-choose">
+            <h1 class="title">{status}</h1>
+            <input class="read-more-checkbox" type="checkbox" id="read-more">
+            <p class="text-thin art">{error.message}</p>
+            <p class="text-thin art">You will be redirected to main site in 10 seconds</p>
+            <label class="read-more-label" for="read-more"></label>
+        </div>
+    </div>
+</main>
 
 {#if dev && error.stack}
 	<pre>{error.stack}</pre>
