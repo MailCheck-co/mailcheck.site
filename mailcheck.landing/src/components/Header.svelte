@@ -1,7 +1,19 @@
-<!--Header-->
+<style lang="scss">
+    @import "../scss/utilities/index";
+    @import "../scss/molecules/header";
+    @import "../scss/molecules/mobile-menu";
+</style>
+
+<svelte:head>
+    <script src="js/mob-menu.js">
+    </script>
+</svelte:head>
+
 <header role="banner">
     <div class="wrapper-header">
-        <a class="logo" href="/"><img src="assets/img/mailcheck-logo.svg" alt="mail"></a>
+        <a class="logo" href="/"><img
+                src="assets/img/mailcheck-logo.svg"
+                alt="mail" /></a>
         <nav class="header-nav" role="navigation">
             <a class="nav-link" href="/#features">Features</a>
             <a class="nav-link" href="/#pricing">Pricing</a>
@@ -14,13 +26,11 @@
 </header>
 
 <a href="#top" class="btn-top">
-    <img src="assets/img/arrow-slide-nav.svg" alt="">
+    <img src="assets/img/arrow-slide-nav.svg" alt="" />
 </a>
 
 <!--Mobile menu-->
-<button class="burger-wrapper" id="burger">
-    <span class="burger"></span>
-</button>
+<button class="burger-wrapper" id="burger"> <span class="burger" /> </button>
 <nav class="mobile-menu" role="navigation" id="mobile-menu">
     <a class="nav-link mobile-menu-links" href="/#features">Features</a>
     <a class="nav-link mobile-menu-links" href="/#pricing">Pricing</a>
@@ -29,4 +39,3 @@
     <a class="nav-link mobile-menu-links" href="/faq">FAQ</a>
     <a href="//app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
 </nav>
-

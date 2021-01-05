@@ -1,3 +1,8 @@
+<style lang="scss">
+    @import "../scss/utilities/index";
+    @import "../scss/molecules/cta";
+</style>
+
 <section class="cta">
     <div class="container">
         <div class="cta-info">
