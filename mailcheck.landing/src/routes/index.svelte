@@ -15,6 +15,13 @@
 
 <svelte:head>
 	<title>Mailcheck | Verify your real customers in one way</title>
+    <!--style-->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
+    <!--scripts-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.5/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 </svelte:head>
 
 <main class="manage-customers" role="main" id="main">

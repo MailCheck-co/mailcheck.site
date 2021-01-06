@@ -1,13 +1,12 @@
+<script>
+    let open = false;
+</script>
+
 <style lang="scss">
     @import "../scss/utilities/index";
     @import "../scss/molecules/header";
     @import "../scss/molecules/mobile-menu";
 </style>
-
-<svelte:head>
-    <script src="js/mob-menu.js">
-    </script>
-</svelte:head>
 
 <header role="banner">
     <div class="wrapper-header">
@@ -30,8 +29,17 @@
 </a>
 
 <!--Mobile menu-->
-<button class="burger-wrapper" id="burger"> <span class="burger" /> </button>
-<nav class="mobile-menu" role="navigation" id="mobile-menu">
+<button class="burger-wrapper"
+        class:open="{open}"
+        on:click="{() => open = !open}"
+        id="burger">
+    <span class="burger" />
+</button>
+<nav class="mobile-menu"
+     class:open="{open}"
+     on:click="{() => open = !open}"
+     role="navigation"
+     id="mobile-menu">
     <a class="nav-link mobile-menu-links" href="/#features">Features</a>
     <a class="nav-link mobile-menu-links" href="/#pricing">Pricing</a>
     <a class="nav-link mobile-menu-links" href="/#contact-us">Contact Us</a>
