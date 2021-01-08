@@ -3,6 +3,101 @@
     @import "../scss/molecules/main";
 </style>
 
+<script>
+    import { onMount } from "svelte";
+    
+    onMount(() => {
+        const verifyEmailForm = document.getElementById("verify-email");
+        const emailResults = verifyEmailForm.querySelector(".email-results");
+
+        verifyEmailForm.addEventListener("submit", (e) => {
+            const emailValue = verifyEmailForm.querySelector(
+                "input[type=email]"
+            ).value;
+            const socialLinks = document.querySelectorAll(".social-link");
+            const validity = document.getElementById("email-risk");
+            const closeBtn = document.getElementById("close-btn");
+            const formPreloader = emailResults.querySelector(".form-preloader");
+
+            e.preventDefault();
+
+            emailResults.style.display = "block";
+
+            fetch("/checkMail", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: emailValue,
+                }),
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    const exist = data.mxExists ? "+" : "-";
+                    const smpt = data.smtpExists ? "+" : "-";
+                    const disposable = data.isNotDisposable ? "+" : "-";
+                    const catchAll = data.isNotSmtpCatchAll ? "+" : "-";
+                    document.getElementById("email-result").innerHTML =
+                        data.email;
+                    document.getElementById("exists-result").innerHTML = exist;
+                    document.getElementById("smtp-result").innerHTML = smpt;
+                    document.getElementById("rate-result").innerHTML =
+                        data.trustRate;
+                    document.getElementById(
+                        "disposable-result"
+                    ).innerHTML = disposable;
+                    document.getElementById(
+                        "catch-result"
+                    ).innerHTML = catchAll;
+                    const gravatar =
+                        data.gravatar &&
+                        data.gravatar.entry &&
+                        data.gravatar.entry[0];
+                    const links = (
+                        (gravatar && gravatar.accounts) ||
+                        []
+                    ).reduce(
+                        (acc, el) => {
+                            acc[el.shortname] = el.url;
+                            return acc;
+                        },
+                        { gravatar: (gravatar && gravatar.profileUrl) || "" }
+                    );
+
+                    socialLinks.forEach((link) => {
+                        const id = link.title.toLowerCase();
+                        if (links[id]) {
+                            link.href = links[id];
+                            link.classList.add("active");
+                        } else {
+                            link.href = "#";
+                            link.classList.remove("active");
+                        }
+                    });
+                    if (data.trustRate <= 49) {
+                        validity.innerHTML = "invalid";
+                        validity.className = "error";
+                    } else if (data.trustRate >= 50 && data.trustRate <= 80) {
+                        validity.innerHTML = "risky";
+                        validity.className = "warning";
+                    } else {
+                        validity.innerHTML = "valid";
+                        validity.className = "success";
+                    }
+                })
+                .then(() => verifyEmailForm.reset())
+                .catch((e) => console.error(e));
+
+            formPreloader.style.display = "none";
+
+            closeBtn.addEventListener("click", () => {
+                document.querySelector(".email-results").style.display = "none";
+            });
+        });
+    });
+</script>
+
 <div class="container">
     <div class="wrapper-main sm-left">
         <h1 class="title">Validate your mailing list in one click</h1>

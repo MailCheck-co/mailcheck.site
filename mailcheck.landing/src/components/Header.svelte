@@ -1,5 +1,20 @@
 <script>
+    import { onMount } from "svelte";
+    
     let open = false;
+    let show = false;
+
+    onMount(() => {
+        const windowHeight = window.innerHeight;
+
+        window.addEventListener("scroll", function () {
+            if (window.pageYOffset > windowHeight) {
+                show = true;
+            } else {
+                show = false;
+            }
+        });
+    });
 </script>
 
 <style lang="scss">
@@ -24,22 +39,24 @@
     </div>
 </header>
 
-<a href="#top" class="btn-top">
+<a href="#top" class="btn-top" class:show>
     <img src="assets/img/arrow-slide-nav.svg" alt="" />
 </a>
 
 <!--Mobile menu-->
-<button class="burger-wrapper"
-        class:open="{open}"
-        on:click="{() => open = !open}"
-        id="burger">
+<button
+    class="burger-wrapper"
+    class:open
+    on:click={() => (open = !open)}
+    id="burger">
     <span class="burger" />
 </button>
-<nav class="mobile-menu"
-     class:open="{open}"
-     on:click="{() => open = !open}"
-     role="navigation"
-     id="mobile-menu">
+<nav
+    class="mobile-menu"
+    class:open
+    on:click={() => (open = !open)}
+    role="navigation"
+    id="mobile-menu">
     <a class="nav-link mobile-menu-links" href="/#features">Features</a>
     <a class="nav-link mobile-menu-links" href="/#pricing">Pricing</a>
     <a class="nav-link mobile-menu-links" href="/#contact-us">Contact Us</a>

@@ -12,7 +12,10 @@
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "next",
-    "sirv": "^1.0.0"
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4",
+    "sirv": "^1.0.0",
+    "swiper": "^6.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

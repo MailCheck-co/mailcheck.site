@@ -14,6 +14,21 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
+
+  .btn-start {
+    background-color: $primary-accent;
+    border: none;
+  
+    &:hover {
+      color: $primary-accent;
+      background-color: $primary-white;
+    }
+  
+    &:active {
+      color: $primary-white;
+      background-color: $primary-accent;
+    }
+  }
 }
 
 @media all and (max-width: 360px) {
