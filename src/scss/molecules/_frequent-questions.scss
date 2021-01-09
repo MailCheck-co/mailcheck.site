@@ -148,6 +148,21 @@
   max-width: 1280px;
   margin: 0 auto 50px;
   padding: 50px 20px 0;
+
+  .btn-start {
+    background-color: $primary-accent;
+    border: none;
+  
+    &:hover {
+      color: $primary-accent;
+      background-color: $primary-white;
+    }
+  
+    &:active {
+      color: $primary-white;
+      background-color: $primary-accent;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {

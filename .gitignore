@@ -203,3 +203,10 @@ $RECYCLE.BIN/
 
 .firebase
 dist
+
+# sapper
+.DS_Store
+/node_modules/
+/src/node_modules/@sapper/
+yarn-error.log
+/__sapper__/

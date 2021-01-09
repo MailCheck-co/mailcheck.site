@@ -1,253 +1,152 @@
-<img alt="Webpack Starter Basic Loo" src="https://github.com/lifenautjoe/webpack-starter-basic/blob/master/src/assets/logo-on-dark-bg.png?raw=true" width="250">
+# sapper-template
 
-# webpack-starter-basic
-[![forthebadge](http://forthebadge.com/images/badges/fo-real.svg)](http://forthebadge.com)[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+The default template for setting up a [Sapper](https://github.com/sveltejs/sapper) project. Can use either Rollup or webpack as bundler.
 
-[![dependencies](https://david-dm.org/lifenautjoe/webpack-starter-basic.svg)](https://david-dm.org/lifenautjoe/webpack-starter-basic)
 
-A simple **webpack 4 starter project** for your basic web development needs.
+## Getting started
 
-Read more on the [demo website](https://lifenautjoe.github.io/webpack-starter-basic/) or continue reading below.
 
-## Table of Contents
+### Using `degit`
 
-- [Motivation](#motivation)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Usage](#usage)
-- [FAQ](#faq)
-  * [When should I use this starter?](#when-should-i-use-this-starter)
-  * [Where's the common webpack config?](#wheres-the-common-webpack-config)
-  * [How to load fonts](#how-to-load-fonts)
-  * [How to load images](#how-to-load-images)
-    + [In JavaScript](#in-javascript)
-    + [In `index.html`](#in-indexhtml)
-- [Websites using this starter kit on the wild](#websites-using-this-starter-kit-on-the-wild)
+To create a new Sapper project based on Rollup locally, run
 
-## Motivation
-
-I needed to make a plain ol' "drop your mail to stay updated of ongoing developments" page.
-
-I did not need anything fancy, no frontend framework, no unit testing, simply a **starter project that would let me use sass, ES6, load assets, add vendor prefixes, start a dev server, generate sourcemaps and optimize everything for production.**
-
-I looked around and all I found were heavily specialized and complicated webpack starter projects (`webpack-angular-starter`, `webpack-react-starter`, etc) that are so intertwined with plugins that stripping undesired functionality is almost impossible. 
-
-So I did this.
-
-## Features
-
-* Separated development and production webpack settings you can understand
-* Sass
-* ES6
-* Asset loading
-* CSS Vendor prefixing
-* Development server
-* Sourcemaps
-* Favicons generation
-* Production optimizations
-* Mobile browser header color
-
-## Requirements
-
-* [Node](https://nodejs.org) > 7.6
-
-## Usage
-
-Substitute `PROJECT-NAME` for your project name.
-
-Clone the repository
-
-```sh
- git clone https://github.com/lifenautjoe/webpack-starter-basic PROJECT-NAME
- cd PROJECT-NAME
+```bash
+npx degit "sveltejs/sapper-template#rollup" my-app
 ```
 
-Install npm dependencies
+For a webpack-based project, instead run
 
-```sh
- npm install 
+```bash
+npx degit "sveltejs/sapper-template#webpack" my-app
 ```
 
-Run the kickstart command
-```sh
-npm run kickstart
+[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository.
+
+Replace `my-app` with the path where you wish to create the project.
+
+
+### Using GitHub templates
+
+Alternatively, you can create the new project as a GitHub repository using GitHub's template feature.
+
+Go to either [sapper-template-rollup](https://github.com/sveltejs/sapper-template-rollup) or [sapper-template-webpack](https://github.com/sveltejs/sapper-template-webpack) and click on "Use this template" to create a new project repository initialized by the template.
+
+
+### Running the project
+
+Once you have created the project, install dependencies and run the project in development mode:
+
+```bash
+cd my-app
+npm install # or yarn
+npm run dev
 ```
 
-**After the project has been kickstarted**
+This will start the development server on [localhost:3000](http://localhost:3000). Open it and click around.
 
-To start the development server
+You now have a fully functional Sapper project! To get started developing, consult [sapper.svelte.dev](https://sapper.svelte.dev).
 
-```sh
-npm start
+### Using TypeScript
+
+By default, the template uses plain JavaScript. If you wish to use TypeScript instead, you need some changes to the project:
+
+ * Add `typescript` as well as typings as dependences in `package.json`
+ * Configure the bundler to use [`svelte-preprocess`](https://github.com/sveltejs/svelte-preprocess) and transpile the TypeScript code.
+ * Add a `tsconfig.json` file
+ * Update the project code to TypeScript
+
+The template comes with a script that will perform these changes for you by running
+
+```bash
+node scripts/setupTypeScript.js
 ```
 
-To build for production
+`@sapper` dependencies are resolved through `src/node_modules/@sapper`, which is created during the build. You therefore need to run or build the project once to avoid warnings about missing dependencies.
 
-```sh
-npm run build
-```
+The script does not support webpack at the moment.
 
-To preview the production build
-```sh
-npm run preview
-```
+## Directory structure
 
-## FAQ
+Sapper expects to find two directories in the root of your project —  `src` and `static`.
 
-### When should I use this starter?
 
-You should use this starter if any of the following are true:
+### src
 
-* You want to make a static page. e.g. splash screen, onboarding screen, phaser game, threejs visualization, countdown.
-* You found no good starter kit for whatever you want to do and need a solid place to start from.
+The [src](src) directory contains the entry points for your app — `client.js`, `server.js` and (optionally) a `service-worker.js` — along with a `template.html` file and a `routes` directory.
 
-**Please note**: If you are going to use a frontend framework like angular or react, you can of course add the required plugins and 
-configuration but it's normally complicated and quirky enough that it's highly recommended to use one of the existing 
-starter projects such as [react-webpack-babel](https://github.com/alicoding/react-webpack-babel) or for angular projects the [angular-cli](https://github.com/angular/angular-cli).
 
-### Where's the common webpack config?
+#### src/routes
 
-**There is none and that is good thing.**
+This is the heart of your Sapper app. There are two kinds of routes — *pages*, and *server routes*.
 
-The pattern creates unnecessary confusion over the setup, at the end the config will always be different across environments.
-People just put booleans everywhere on the common config to switch between these differing configuration options which is just awful to see and confusing for someone who's just starting on webpack.
+**Pages** are Svelte components written in `.svelte` files. When a user first visits the application, they will be served a server-rendered version of the route in question, plus some JavaScript that 'hydrates' the page and initialises a client-side router. From that point forward, navigating to other pages is handled entirely on the client for a fast, app-like feel. (Sapper will preload and cache the code for these subsequent pages, so that navigation is instantaneous.)
 
-The only truly shared config between these files are the entry js point and the main html template.
+**Server routes** are modules written in `.js` files, that export functions corresponding to HTTP methods. Each function receives Express `request` and `response` objects as arguments, plus a `next` function. This is useful for creating a JSON API, for example.
 
-### How to load fonts
+There are three simple rules for naming the files that define your routes:
 
-If you don't support Opera Mini, browsers support the .woff format. Its newer version .woff2, is widely supported by modern browsers and can be a good alternative.
+* A file called `src/routes/about.svelte` corresponds to the `/about` route. A file called `src/routes/blog/[slug].svelte` corresponds to the `/blog/:slug` route, in which case `params.slug` is available to the route
+* The file `src/routes/index.svelte` (or `src/routes/index.js`) corresponds to the root of your app. `src/routes/about/index.svelte` is treated the same as `src/routes/about.svelte`.
+* Files and directories with a leading underscore do *not* create routes. This allows you to colocate helper modules and components with the routes that depend on them — for example you could have a file called `src/routes/_helpers/datetime.js` and it would *not* create a `/_helpers/datetime` route.
 
-If you decide to use only this format you can load the fonts in a similar manner to images.
 
-In your `webpack.dev.js` and `webpack.prod.js` add the following
+#### src/node_modules/images
+
+Images added to `src/node_modules/images` can be imported into your code using `import 'images/<filename>'`. They will be given a dynamically generated filename containing a hash, allowing for efficient caching and serving the images on a CDN.
+
+See [`index.svelte`](src/routes/index.svelte) for an example.
+
+
+#### src/node_modules/@sapper
+
+This directory is managed by Sapper and generated when building. It contains all the code you import from `@sapper` modules.
+
+
+### static
+
+The [static](static) directory contains static assets that should be served publicly. Files in this directory will be available directly under the root URL, e.g. an `image.jpg` will be available as `/image.jpg`.
+
+The default [service-worker.js](src/service-worker.js) will preload and cache these files, by retrieving a list of `files` from the generated manifest:
 
 ```js
-module.exports = {
-    // ..
-    module: {
-        rules: [
-            // ..
-            {
-                test: /\.woff$/,
-                loader: 'url-loader',
-                options: {
-                    // Limit at 50k. Above that it emits separate files
-                    limit: 50000,
-                    // url-loader sets mimetype if it's passed.
-                    // Without this it derives it from the file extension
-                    mimetype: 'application/font-woff',
-                    // Output below fonts directory
-                    name: './fonts/[name].[ext]',
-                },
-            }
-            // ..
-        ]
-    }
-    // ..
-};
+import { files } from '@sapper/service-worker';
 ```
 
-And let's say your font is in the folder `assets` with the name `pixel.woff`
+If you have static files you do not want to cache, you should exclude them from this list after importing it (and before passing it to `cache.addAll`).
 
-You can add it and use it in `index.scss` as
-```scss
-@font-face {
-    font-family: "Pixel";
-    src: url('./../assets/pixel.woff') format('woff');
-}
+Static files are served using [sirv](https://github.com/lukeed/sirv).
 
-.body{
-    font-family: 'Pixel', sans-serif;
-}
+
+## Bundler configuration
+
+Sapper uses Rollup or webpack to provide code-splitting and dynamic imports, as well as compiling your Svelte components. With webpack, it also provides hot module reloading. As long as you don't do anything daft, you can edit the configuration files to add whatever plugins you'd like.
+
+
+## Production mode and deployment
+
+To start a production version of your app, run `npm run build && npm start`. This will disable live reloading, and activate the appropriate bundler plugins.
+
+You can deploy your application to any environment that supports Node 10 or above. As an example, to deploy to [Vercel Now](https://vercel.com) when using `sapper export`, run these commands:
+
+```bash
+npm install -g vercel
+vercel
 ```
 
-If you would like to support all kinds of font types, remove the woff rule we previously added to `webpack.dev.js` and `webpack.prod.js` and add the following
+If your app can't be exported to a static site, you can use the [now-sapper](https://github.com/thgh/now-sapper) builder. You can find instructions on how to do so in its [README](https://github.com/thgh/now-sapper#basic-usage).
 
-```js
-module.exports = {
-    // ..
-    module: {
-        rules: [
-            // ..
-            {
-                test: /\.(ttf|eot|woff|woff2)$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'fonts/[name].[ext]',
-                },
-            }
-            // ..
-        ]
-    }
-    // ..
-};
+
+## Using external components
+
+When using Svelte components installed from npm, such as [@sveltejs/svelte-virtual-list](https://github.com/sveltejs/svelte-virtual-list), Svelte needs the original component source (rather than any precompiled JavaScript that ships with the component). This allows the component to be rendered server-side, and also keeps your client-side app smaller.
+
+Because of that, it's essential that the bundler doesn't treat the package as an *external dependency*. You can either modify the `external` option under `server` in [rollup.config.js](rollup.config.js) or the `externals` option in [webpack.config.js](webpack.config.js), or simply install the package to `devDependencies` rather than `dependencies`, which will cause it to get bundled (and therefore compiled) with your app:
+
+```bash
+npm install -D @sveltejs/svelte-virtual-list
 ```
 
-And assuming you have your fonts in the directory `assets` with names `pixel.woff`, `pixel.ttf`, `pixel.eot` , etc.
 
-You can add it and use it in `index.scss` as
-```scss
-@font-face {
-    font-family: 'Pixel';
-    src: url('./../assets/pixel.woff2') format('woff2'),
-    url('./../assets/pixel.woff') format('woff'),
-    url('./../assets/pixel.eot') format('embedded-opentype'),
-    url('./../assets/pixel.ttf') format('truetype');
-    /* Add other formats as you see fit */
-}
-```
+## Bugs and feedback
 
-### How to load images
-
-#### In JavaScript
-
-You can require an image from JavaScript like
-```js
-const myImage = require('./assets/icon.png');
-```
-
-If the image size in bytes is smaller than `8192`you, `myImage` will be a string with the encoded image path such as 
-```
-data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJhc3NldHMvaW1hZ2VzL3RpY2stQ3lydkhSdi5zdmciOw==
-```
-If the image size is larger than `8192` it will be a string with the url to the image such as 
-```
-src/assets/icon.png?hash=5b1f36bc41ab31f5b801
-```
-
-This limit is set so images like icons are not loaded through a request but you can force the loader to give you image urls always by doing the following but should not be necessary. The limit works 90% of the time.
-```js
-const myImage = require('!!url!/assets/icon.png');
-```
-
-#### In `index.html`
-
-If you would like to include an image on your `index.html` file, place the path of the image in a webpack require statement`<%= require(imagePath) %>`.
-
-```html
-  <img class="splash-title__img"
-                     src="<%= require('./src/assets/logo-on-dark-bg.png') %>"
-                     alt="webpack logo"></a>
-```
-
-## Websites using this starter kit on the wild
-
-* [Droppable library](https://github.com/lifenautjoe/droppable)
-* [Noel Event Emitter](https://github.com/lifenautjoe/noel)
-* [ChooseIT Wishbot](http://voeux2018.choosit.com/)
-* [Webpack Starter Basic](https://lifenautjoe.github.io/webpack-starter-basic/)
-* [Openbook Org](https://www.open-book.org/)
-
-Have a website online built with this starter kit and would like to add it to the list? Open an issue!
-
-
-___
-Author [Joel Hernandez](www.lifenautjoe.com)
-
-
-
-
-===================
-https://github.com/pngwn/https://github.com/pngwn/MDsveX
-https://github.com/mhatvan/markushatvan.com
+Sapper is in early development, and may have the odd rough edge here and there. Please be vocal over on the [Sapper issue tracker](https://github.com/sveltejs/sapper/issues).

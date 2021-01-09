@@ -20,7 +20,7 @@
                 ]
             }
         ],
-        "public": "dist",
+        "public": "__sapper__/export",
         "ignore": [
             "firebase.json",
             "**/.*",
