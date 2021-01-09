@@ -67,7 +67,7 @@
 
       <h2 class="text-thin subtitle">Accessing or Deleting Personal Information</h2>
       <p class="text-thin terms-text">Users may access or change your personally identifiable information at any time by
-        logging into your account and clicking Settings -> Update profile or Set Billing Card.</p>
+        logging into your account and clicking Settings &rarr; Update profile or Set Billing Card.</p>
       <p class="text-thin terms-text">For as long as a user holds an account, all account data including Personal
         Identifiable Information will be securely stored in our database. Users may choose to close their account upon
         request by emailing <a class="text-thin text-thin-link"
