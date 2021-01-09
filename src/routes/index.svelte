@@ -21,7 +21,7 @@
     <title>Mailcheck | Verify your real customers in one way</title>
     <!--style-->
     <link
-        href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css"
+        href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
         rel="stylesheet" />
     <!--scripts-->
     <script
