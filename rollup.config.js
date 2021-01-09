@@ -1,19 +1,18 @@
-import path from 'path';
+import path, {extname, join} from 'path';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import commonjs from '@rollup/plugin-commonjs';
 import url from '@rollup/plugin-url';
 import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
-import { terser } from 'rollup-plugin-terser';
+import {terser} from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import * as matter from 'gray-matter';
-import { readdirSync } from 'fs';
-import { join, extname } from 'path';
-import { mdsvex } from "mdsvex";
+import {readdirSync} from 'fs';
+import {mdsvex} from "mdsvex";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -21,12 +20,9 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 function get_routes() {
     const  blog_path = join(process.cwd(), 'src', 'routes', 'blog');
-    console.log(blog_path+readdirSync(blog_path).filter(p => extname(p) === ".svx"));
-    const  posts = readdirSync(blog_path).filter(p => extname(p) === ".svx").map(post=>{
-        return matter.read(join(blog_path,post))
+    return readdirSync(blog_path).filter(p => extname(p) === ".svx").map(post => {
+        return matter.read(join(blog_path, post))
     });
-    console.log(posts);
-    return posts;
 }
 
 const replaceConstants = {
