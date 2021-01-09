@@ -1,7 +1,7 @@
 {
   "name": "mailcheck",
   "short_name": "mailcheck",
-  "description": null,
+  "description": "email verification service with contact enrichment possibilities",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
