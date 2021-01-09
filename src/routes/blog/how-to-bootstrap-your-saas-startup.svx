@@ -4,7 +4,7 @@ slug: how-to-bootstrap-your-saas-startup
 title: How to Bootstrap Your SaaS Startup
 date: 12.11.2020
 readingTime: 3 min read
-snippet: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API. Click [here](/what-is-email-API-and-why-do-I-need-one) to find out more.
+snippet: Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to successful project implementation.
 ---
 
 # {title}
@@ -13,7 +13,7 @@ snippet: In the previous article, we discussed what email API is, reviewed the e
 
 In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples
 of email API application as well as discussed the benefits of using email API.
-Click [here](/blog/howBootstrapYourSaaSStartup) to find out more.
+Click [here](/blog/what-is-email-API-and-why-do-I-need-one) to find out more.
 
 Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to
 successful project implementation. In a software product development, an idea constitutes just a minor part and the
