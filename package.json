@@ -8,6 +8,7 @@
         "export": "sapper export --legacy --ext '.svelte .svx .md'",
         "start": "node __sapper__/build",
         "validate": "svelte-check --ignore src/node_modules/@sapper",
+        "optimize-svg": "find ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo --disable=cleanupIDs",
         "lint": "eslint . *.js",
         "lint-css": "stylelint \"src/scss/**/*.+(scss|css)\" --fix",
         "deploy_hosting": "firebase deploy --only hosting --project=dev",
@@ -56,6 +57,7 @@
         "svelte": "^3.17.3",
         "svelte-check": "^1.0.46",
         "svelte-preprocess": "^4.6.1",
+        "svgo": "^1.3.2",
         "tslib": "^2.0.1",
         "typescript": "^4.0.3"
     },
