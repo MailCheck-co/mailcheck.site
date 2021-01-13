@@ -3,10 +3,11 @@
     
     let open = false;
     let show = false;
+    let url = '';
 
     onMount(() => {
         const windowHeight = window.innerHeight;
-
+        url = `${window.location.pathname}/#top`;
         window.addEventListener("scroll", function () {
             if (window.pageYOffset > windowHeight) {
                 show = true;
@@ -39,8 +40,8 @@
     </div>
 </header>
 
-<a href="#top" class="btn-top" class:show>
-    <img src="assets/img/arrow-slide-nav.svg" alt="" />
+<a href={url} class="btn-top" class:show>
+    <img src="assets/img/arrow-slide-nav.svg" alt="to top" />
 </a>
 
 <!--Mobile menu-->
