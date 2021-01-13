@@ -1,3 +1,87 @@
+<script>
+    import { onMount } from "svelte";
+
+    let shifted = false;
+    onMount(() => {
+        const items = document.getElementById("wrapper");
+        const prev = document.getElementById("prev");
+        const next = document.getElementById("next");
+        let posX1 = 0;
+        let posX2 = 0;
+        let posInitial, posFinal;
+        let threshold = 100;
+        let index = 0;
+        const slides = items.getElementsByClassName("testimonial-slide");
+        const slideSize = slides[0].offsetWidth;
+
+        function dragStart(e) {
+            e = e || window.event;
+            e.preventDefault();
+            posInitial = items.offsetLeft;
+            if (e.type == "touchstart") {
+                posX1 = e.touches[0].clientX;
+            } else {
+                posX1 = e.clientX;
+                document.onmouseup = dragEnd;
+                document.onmousemove = dragAction;
+            }
+        }
+
+        function dragAction(e) {
+            e = e || window.event;
+            if ((index != -1 && posX1 < e.clientX) || (index != 1 && posX1 > e.clientX)) {
+                if (e.type == "touchmove") {
+                    posX2 = posX1 - e.touches[0].clientX;
+                    posX1 = e.touches[0].clientX;
+                } else {
+                    posX2 = posX1 - e.clientX;
+                    posX1 = e.clientX;
+                }
+                items.style.left = `${items.offsetLeft - posX2}px`;
+            }
+        }
+
+        function dragEnd(e) {
+            posFinal = items.offsetLeft;
+            if (posFinal - posInitial < -threshold) {
+                shiftSlide(1, "drag");
+            } else if (posFinal - posInitial > threshold) {
+                shiftSlide(-1, "drag");
+            } else {
+                items.style.left = `${posInitial}px`;
+            }
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+
+        function shiftSlide(dir, action) {
+            shifted = true;
+            if (!action) {
+                posInitial = items.offsetLeft;
+            }
+            if (dir === 1 && index !== 1) { // next
+                items.style.left = `${posInitial - slideSize - 20}px`;
+                index++;
+            } else if (dir === -1 && index !== -1) { // prev
+                items.style.left = `${posInitial + slideSize + 20}px`;
+                index--;
+            }
+        }
+
+        function clearing() {
+            shifted = false;
+        }
+
+        items.onmousedown = dragStart;
+        items.addEventListener("touchstart", dragStart);
+        items.addEventListener("touchend", dragEnd);
+        items.addEventListener("touchmove", dragAction);
+        prev.addEventListener("click", () => shiftSlide(-1));
+        next.addEventListener("click", () => shiftSlide(1));
+        items.addEventListener("transitionend", clearing);
+    });
+</script>
+
 <style lang="scss">
     @import "../scss/utilities/index";
     @import "../scss/molecules/testimonials";
@@ -10,8 +94,8 @@
     </div>
     <div class="section-wrapper">
         <!-- TESTIMONIALS -->
-        <div class="testimonials-container">
-            <div class="testimonials-wrapper">
+        <div class="testimonials-container" id="slider">
+            <div class="testimonials-wrapper" id="wrapper" class:shifted={shifted}>
                 <div class="testimonial-slide">
                     <div class="slider-item">
                         <div class="slide-logo-wrapper">
@@ -88,11 +172,14 @@
             </div>
         </div>
         <!-- Add Arrows -->
-        <div class="testimonials-button testimonials-button-next">
-            <img src="assets/img/arrow-slide-nav.svg" alt="left" />
-        </div>
-        <div class="testimonials-button testimonials-button-prev">
+        <div class="testimonials-button testimonials-button-next" id="next">
             <img src="assets/img/arrow-slide-nav.svg" alt="right" />
+        </div>
+        <div class="testimonials-button testimonials-button-prev" id="prev">
+            <img src="assets/img/arrow-slide-nav.svg" alt="left" />
         </div>
     </div>
 </section>
+
+<!-- on:click={onPrev}  -->
+<!-- on:click={onNext} -->
