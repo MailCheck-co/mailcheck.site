@@ -4,10 +4,25 @@
     let open = false;
     let show = false;
     let url = '';
+    let lang = 'en';
 
     onMount(() => {
         const windowHeight = window.innerHeight;
         url = `${window.location.pathname}/#top`;
+        const langSelect = document && document.getElementById('lang');
+        langSelect.addEventListener('change', (e) => {
+            const current = e.target.options.selectedIndex;
+            switch (+current) {
+                case 0: lang = 'en';
+                    break;
+                case 1: lang = 'es';
+                    break;
+                case 2: lang = 'ru';
+                    break;
+                default: lang = 'en';
+                    break;
+            }
+        });
         window.addEventListener("scroll", function () {
             if (window.pageYOffset > windowHeight) {
                 show = true;
@@ -36,7 +51,17 @@
             <a class="nav-link" href="/blog">Blog</a>
             <a class="nav-link" href="/faq">FAQ</a>
         </nav>
-        <a href="//app.mailcheck.co/" class="btn btn-sign-in">sign in</a>
+        <div>
+            <select id="lang" class="select">
+                <option value="en">en</option>
+                <option value="es">es</option>
+                <option value="ru">ru</option>
+            </select>
+            <a href="//app.mailcheck.co/" class="btn btn-sign-in">
+                sign in
+            </a>
+        </div>
+        
     </div>
 </header>
 

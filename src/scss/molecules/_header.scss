@@ -22,6 +22,27 @@
   justify-content: space-between;
 }
 
+.select {
+  margin-right: 25px;
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+
+  option {
+    &:checked {
+      background-color: transparent;
+    }
+
+    &:not(:checked) {
+      background-color: transparent;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
 .wrapper-header {
   display: flex;
   align-items: center;
