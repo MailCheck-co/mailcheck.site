@@ -49,13 +49,16 @@ export default {
 			svelte({
 				dev,
 				hydratable: true,
-				preprocess: [sveltePreprocess(),mdsvex({
+				preprocess: [
+					sveltePreprocess(),
+					mdsvex({
                     layout: {
                         blog: "./src/layouts/blog.svelte",
                         article: "./path/to/article/layout.svelte",
                         _: "./src/routes/_layout.svelte"
-
-                    })],
+						}
+					})
+				],
 				emitCss: true,
                 extensions: [
                     '.svelte',
