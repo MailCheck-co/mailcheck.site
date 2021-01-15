@@ -31,14 +31,18 @@
   }
 }
 
-@media all and (max-width: 360px) {
-  .cta {
-    text-align: left;
-  }
-}
-
 @media all and (max-width: 768px) {
   .cta {
     padding-bottom: 100px;
+
+    &-info {
+      text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 360px) {
+  .cta {
+    text-align: left;
   }
 }
