@@ -29,6 +29,9 @@
   color: #fff;
 
   option {
+    color: $black;
+    background-color: transparent;
+    
     &:checked {
       background-color: transparent;
     }

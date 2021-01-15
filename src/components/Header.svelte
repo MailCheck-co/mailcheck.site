@@ -6,23 +6,23 @@
     let url = '';
     let lang = 'en';
 
+    const onLangSelect = (e) => {
+        const current = e.target.options.selectedIndex;
+        switch (+current) {
+            case 0: lang = 'en';
+                break;
+            case 1: lang = 'es';
+                break;
+            case 2: lang = 'ru';
+                break;
+            default: lang = 'en';
+                break;
+        }
+    };
+
     onMount(() => {
         const windowHeight = window.innerHeight;
         url = `${window.location.pathname}/#top`;
-        const langSelect = document && document.getElementById('lang');
-        langSelect.addEventListener('change', (e) => {
-            const current = e.target.options.selectedIndex;
-            switch (+current) {
-                case 0: lang = 'en';
-                    break;
-                case 1: lang = 'es';
-                    break;
-                case 2: lang = 'ru';
-                    break;
-                default: lang = 'en';
-                    break;
-            }
-        });
         window.addEventListener("scroll", function () {
             if (window.pageYOffset > windowHeight) {
                 show = true;
@@ -52,7 +52,7 @@
             <a class="nav-link" href="/faq">FAQ</a>
         </nav>
         <div>
-            <select id="lang" class="select">
+            <select class="select" on:change={onLangSelect}>
                 <option value="en">en</option>
                 <option value="es">es</option>
                 <option value="ru">ru</option>
