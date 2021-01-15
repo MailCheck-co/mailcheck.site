@@ -1,11 +1,11 @@
 <script>
-    import Popup from "./Popup.svelte";
     import { onMount } from "svelte";
+
+    let isOpen = false;
+    let isError = false;
 
     onMount(() => {
         const contactForm = document.getElementById("contact-us");
-        const popUpSuccess = document.getElementById("popup-success");
-        const popUpError = document.getElementById("popup-error");
         const popUpBlock = document.getElementById("popup-block");
 
         contactForm.addEventListener("submit", function (e) {
@@ -38,14 +38,13 @@
             })
                 .then((res) => res.text())
                 .then(() => {
-                    popUpBlock.classList.add("open");
-                    popUpSuccess.classList.add("open");
+                    isOpen = true;
                     contactForm.reset();
                 })
                 .catch((e) => {
                     document.querySelector("popup-text").textContent = e;
-                    popUpBlock.classList.add("open");
-                    popUpError.classList.add("open");
+                    isOpen = true;
+                    isError = true;
                 });
 
             document.body.classList.add("fixed");
@@ -58,20 +57,12 @@
             });
 
             popUpBlock.addEventListener("click", function (event) {
-                let target = event.target;
+                const target = event.target;
                 if (
                     target.classList.contains("popup-close") ||
                     target.classList.contains("popup-container")
                 ) {
-                    popUpBlock.classList.add("close");
-
-                    popUpSuccess.classList.add("close");
-                    popUpError.classList.add("close");
-                    setTimeout(function () {
-                        popUpBlock.classList.remove("open", "close");
-                        popUpSuccess.classList.remove("open", "close");
-                        popUpError.classList.remove("open", "close");
-                    }, 200);
+                    isOpen = false;
                     document.body.classList.remove("fixed");
                 }
             });
@@ -82,6 +73,7 @@
 <style lang="scss">
     @import "../scss/utilities/index";
     @import "../scss/molecules/contact-us";
+    @import "../scss/molecules/popup";
 </style>
 
 <section id="contact-us-section" class="contact-us">
@@ -99,4 +91,18 @@
     </div>
 </section>
 
-<Popup />
+<div class="popup-container" id="popup-block" class:open={isOpen}>
+    <div class="popup" id="popup-success" class:open={isOpen}>
+        <span class="popup-close success" id="close-success" />
+        <span class="popup-thanks">Thanks for filling out our form!</span>
+        <p class="popup-text">
+            We will look over your message and get back to you by tomorrow. Your
+            friends at MailCheck!
+        </p>
+    </div>
+    <div class="popup" id="popup-error" class:open={isError && isOpen}>
+        <span class="popup-close error" id="close-error" />
+        <span class="popup-thanks">Something went wrong!</span>
+        <p class="popup-text">Please try again later</p>
+    </div>
+</div>
