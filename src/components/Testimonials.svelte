@@ -1,70 +1,32 @@
 <script>
-    let shifted = false;
-    let posX1 = 0;
-    let posX2 = 0;
-    let index = 0;
-    let items, posInitial, posFinal;
-    const threshold = 100;
-    const slideSize = 420;
+    let slider;
+    let active = false;
+    let startX;
+    let scrollLeft;
 
-    function clearing() {
-        shifted = false;
+
+    function handleMouseDown(event) {
+        console.log('Down');
+        active = true;
+        startX = event.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
     }
 
-    function dragStart(e) {
-        e = e || window.event;
-        e.preventDefault();
-        posInitial = items.offsetLeft;
-        if (e.type == "touchstart") {
-            posX1 = e.touches[0].clientX;
-        } else {
-            posX1 = e.clientX;
-            document.onmouseup = dragEnd;
-            document.onmousemove = dragAction;
-        }
+    function handleMouseUp(event) {
+        active = false;
+        console.log('up');
     }
 
-    function dragAction(e) {
-        e = e || window.event;
-        if ((index != -1 && posX1 < e.clientX) || (index != 1 && posX1 > e.clientX)) {
-            if (e.type == "touchmove") {
-                posX2 = posX1 - e.touches[0].clientX;
-                posX1 = e.touches[0].clientX;
-            } else {
-                posX2 = posX1 - e.clientX;
-                posX1 = e.clientX;
-            }
-            items.style.left = `${items.offsetLeft - posX2}px`;
-        }
+    function handleMouseMove(event) {
+        if (!active) return;
+        event.preventDefault();
+        const x = event.pageX - slider.offsetLeft;
+        const SCROLL_SPEED = 1;
+        const walk = (x - startX) * SCROLL_SPEED;
+        console.log('move','event.pageX', event.pageX,'slider.offsetLeft', slider.offsetLeft, 'startX',startX,'scrollLeft',scrollLeft,'slider.scrollLeft',slider.scrollLeft,'walk',walk);
+        slider.scrollLeft = scrollLeft - walk;
     }
 
-    function dragEnd() {
-        posFinal = items.offsetLeft;
-        if (posFinal - posInitial < -threshold) {
-            shiftSlide(1, "drag");
-        } else if (posFinal - posInitial > threshold) {
-            shiftSlide(-1, "drag");
-        } else {
-            items.style.left = `${posInitial}px`;
-        }
-        document.onmouseup = null;
-        document.onmousemove = null;
-    }
-
-    function shiftSlide(dir, action) {
-        shifted = true;
-        if (!action) {
-            posInitial = items.offsetLeft;
-        }
-        if (dir === 1 && index !== 1) { // next
-            items.style.left = `${posInitial - slideSize - 20}px`;
-            index++;
-        } else if (dir === -1 && index !== -1) { // prev
-            items.style.left = `${posInitial + slideSize + 20}px`;
-            index--;
-        }
-        setTimeout(clearing(), 500);
-    }
 </script>
 
 <style lang="scss">
@@ -78,18 +40,15 @@
         <p class="section-title-lg">TESTIMONIALS</p>
     </div>
     <div class="section-wrapper">
-        <!-- TESTIMONIALS -->
         <div class="testimonials-container">
-            <div 
-                class="testimonials-wrapper" 
-                class:shifted={shifted}
-                bind:this={items}
-                on:onmousedown={dragStart}
-                on:onmouseup={dragEnd}
-                on:onmousemove={dragAction}
-                on:dragstart={dragStart}
-                on:drag={dragAction}
-                on:dragend={dragEnd}
+            <div
+                class="testimonials-wrapper"
+                class:active={active}
+                bind:this={slider}
+                on:mousedown={handleMouseDown}
+                on:mouseup={handleMouseUp}
+                on:mouseleave={handleMouseUp}
+                on:mousemove={handleMouseMove}
             >
                 <div class="testimonial-slide">
                     <div class="slider-item">
@@ -97,7 +56,7 @@
                             <img
                                 class="slide-logo"
                                 src="assets/img/testimonials/bagllet.svg"
-                                alt="Bagllet" />
+                                alt="Bagllet"/>
                         </div>
                         <p class="slide-text">
                             Been using Mailcheck for about 6 months now. Tried
@@ -119,7 +78,7 @@
                             <img
                                 class="slide-logo"
                                 src="assets/img/testimonials/sammy-logo.svg"
-                                alt="Sammy Icon" />
+                                alt="Sammy Icon"/>
                         </div>
                         <p class="slide-text">
                             "Probably one of the most comfortable validation
@@ -134,7 +93,7 @@
                             <img
                                 class="slide-logo"
                                 src="assets/img/testimonials/5k-logo.svg"
-                                alt="5000 miles" />
+                                alt="5000 miles"/>
                         </div>
                         <p class="slide-text">
                             Name of the brand popped my attention, I decided to
@@ -154,7 +113,7 @@
                             <img
                                 class="slide-logo"
                                 src="assets/img/testimonials/zitkani.svg"
-                                alt="Zitkani" />
+                                alt="Zitkani"/>
                         </div>
                         <p class="slide-text">
                             The file I have checked have been accepted by
@@ -167,20 +126,16 @@
             </div>
         </div>
         <!-- Add Arrows -->
-        <div 
-            class="testimonials-button testimonials-button-next" 
-            on:click={shiftSlide(1)}
+        <div
+            class="testimonials-button testimonials-button-next"
         >
-            <img src="assets/img/arrow-slide-nav.svg" alt="right" />
+            <img src="assets/img/arrow-slide-nav.svg" alt="right"/>
         </div>
-        <div 
+        <div
             class="testimonials-button testimonials-button-prev"
-            on:click={shiftSlide(-1)}
         >
-            <img src="assets/img/arrow-slide-nav.svg" alt="left" />
+            <img src="assets/img/arrow-slide-nav.svg" alt="left"/>
         </div>
     </div>
 </section>
 
-<!-- on:click={onPrev}  -->
-<!-- on:click={onNext} -->
