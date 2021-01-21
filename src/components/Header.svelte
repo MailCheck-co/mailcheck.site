@@ -1,5 +1,5 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount, beforeUpdate } from "svelte";
     
     let open = false;
     let show = false;
@@ -20,9 +20,17 @@
         }
     };
 
+    beforeUpdate(() => {
+        const pathname = window.location.pathname;
+		if (url !== pathname) {
+            url = pathname !== '/' ? `${pathname}#top` : '#top';
+        }
+	});
+
     onMount(() => {
         const windowHeight = window.innerHeight;
-        url = `${window.location.pathname}/#top`;
+        const pathname = window.location.pathname;
+        url = pathname !== '/' ? `${pathname}#top` : '#top';
         window.addEventListener("scroll", function () {
             if (window.pageYOffset > windowHeight) {
                 show = true;
@@ -65,7 +73,7 @@
     </div>
 </header>
 
-<a href={url} class="btn-top" class:show>
+<a href={url} class="btn-top" class:show target="_self">
     <img src="assets/img/arrow-slide-nav.svg" alt="to top" />
 </a>
 

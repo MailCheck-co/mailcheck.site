@@ -1,16 +1,16 @@
-<style lang="scss">
-    @import "../scss/utilities/index";
-    @import "../scss/molecules/main";
-</style>
-
 <script>
     import { onMount } from "svelte";
-    
+    import Progress from "./Progress.svelte";
+
+    export let isChecking = false;
+    export let isChecked = false;
+
     onMount(() => {
         const verifyEmailForm = document.getElementById("verify-email");
         const emailResults = verifyEmailForm.querySelector(".email-results");
 
         verifyEmailForm.addEventListener("submit", (e) => {
+            isChecking = true;
             const emailValue = verifyEmailForm.querySelector(
                 "input[type=email]"
             ).value;
@@ -85,6 +85,7 @@
                         validity.innerHTML = "valid";
                         validity.className = "success";
                     }
+                    isChecked = true;
                 })
                 .then(() => verifyEmailForm.reset())
                 .catch((e) => console.error(e));
@@ -97,6 +98,11 @@
         });
     });
 </script>
+
+<style lang="scss">
+    @import "../scss/utilities/index";
+    @import "../scss/molecules/main";
+</style>
 
 <div class="container">
     <div class="wrapper-main sm-left">
@@ -123,11 +129,18 @@
                             name="email"
                             id="email"
                             placeholder="Email to verify" />
-                        <button type="submit" class="btn-verify-email">
-                            <img
-                                src="assets/img/icon-arrow-right.svg"
-                                alt="Verify email" />
-                        </button>
+
+                        {#if isChecking && !isChecked}
+                            <div class="progress-wrapper">
+                                <Progress />
+                            </div>
+                        {:else}
+                            <button type="submit" class="btn-verify-email">
+                                <img
+                                    src="assets/img/icon-arrow-right.svg"
+                                    alt="Verify email" />
+                            </button>
+                        {/if}
                     </div>
                     <div class="email-results">
                         <div class="form-preloader" />

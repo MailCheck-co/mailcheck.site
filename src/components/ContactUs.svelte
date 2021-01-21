@@ -58,7 +58,7 @@
     @import "../scss/molecules/popup";
 </style>
 
-<section id="contact-us-section" class="contact-us">
+<section id="contact-us" class="contact-us">
     <div class="container">
         <form class="contact-form" bind:this={contactForm} on:submit={onSubmit}>
             <h2 class="title title-contact">contact us</h2>

@@ -15,6 +15,12 @@
 	<title>Mailcheck | Blog</title>
 </svelte:head>
 
+<style>
+    .article-title {
+        color: #fff;
+    }
+</style>
+
 <main class="terms" id="blog">
     <div class="container">
         <div class="content-block">

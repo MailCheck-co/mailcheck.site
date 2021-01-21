@@ -1,12 +1,25 @@
 :global(h1) {
-    font-size: 1.4em;
-    font-weight: 500;
+    font-size: 2.25em;
+    width: 100%;
+    height: auto;
     color: #fff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
 }
 
 :global(h2) {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #fff;
+}
+
+:global(h3) {
     font-size: 1.4em;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -26,6 +39,7 @@
 }
 
 :global(ul) {
+    padding: 0 0 0 25px;
     line-height: 1.5;
 }
 
@@ -36,4 +50,18 @@
 
 :global(p) {
     color: #fff;
+}
+
+:global(strong) {
+    font-weight: 700;
+    color: #fff;
+}
+
+:global(a) {
+    color: #1bced4;
+    text-decoration: underline;
+}
+
+:global(a:visited) {
+    color:#55baff;
 }

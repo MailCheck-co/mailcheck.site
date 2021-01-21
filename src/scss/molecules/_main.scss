@@ -2,6 +2,7 @@
   z-index: 1;
   width: 100%;
   margin-right: 20px;
+  color: $primary-white;
   background: transparent;
   border: 1px solid $dark-05;
 
@@ -16,6 +17,7 @@
 
 .btn-start {
   z-index: 1;
+  color: $primary-white;
   background-color: $primary-accent;
   border: none;
 
@@ -105,6 +107,12 @@
 
 .email-block {
   position: relative;
+
+  .progress-wrapper {
+    position: absolute;
+    right: 7px;
+    top: 2px;
+  }
 }
 
 .email-results {

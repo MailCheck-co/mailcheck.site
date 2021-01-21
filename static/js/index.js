@@ -8,7 +8,7 @@
   let tween1 = new TweenMax.from('#choose-your', 1.5, movementParameters);
   let tween2 = new TweenMax.from('#pricing', 1.5, movementParameters);
   let tween3 = new TweenMax.from('#faq', 1.5, movementParameters);
-  let tween4 = new TweenMax.from('#contact-us-section', 1.5, movementParameters);
+  let tween4 = new TweenMax.from('#contact-us', 1.5, movementParameters);
   let tween5 = new TweenMax.from('#partners', 1.5, movementParameters);
   let tween6 = new TweenMax.from('#reviews', 1.5, movementParameters);
   let tween7 = new TweenMax.from('#team', 1.5, movementParameters);
@@ -56,7 +56,7 @@
 
   // eslint-disable-next-line no-unused-vars
   let scene4 = new ScrollMagic.Scene({
-    triggerElement: '#contact-us-section',
+    triggerElement: '#contact-us',
     duration: 0,
     offset: -200,
     reverse: false,
