@@ -3,30 +3,46 @@
     let active = false;
     let startX;
     let scrollLeft;
+    const SCROLL_SPEED = 4;
+    const TIMEOUT = SCROLL_SPEED * 100;
 
+    function deactivate() {
+        setTimeout(() => {
+            active = false;
+        }, TIMEOUT);
+    }
 
-    function handleMouseDown(event) {
-        console.log('Down');
+    function onPrev() {
         active = true;
-        startX = event.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        slider.scrollLeft = scrollLeft - 880;
+        deactivate();
+    }
+
+    function onNext() {
+        active = true;
+        scrollLeft = slider.scrollLeft;
+        slider.scrollLeft = scrollLeft + 880;
+        deactivate();
+    }
+    
+    function onMouseDown(e) {
+        active = true;
+        startX = e.pageX - slider.offsetLeft;
         scrollLeft = slider.scrollLeft;
     }
 
-    function handleMouseUp(event) {
+    function onMouseUp() {
         active = false;
-        console.log('up');
     }
 
-    function handleMouseMove(event) {
+    function onMouseMove(e) {
         if (!active) return;
-        event.preventDefault();
-        const x = event.pageX - slider.offsetLeft;
-        const SCROLL_SPEED = 1;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
         const walk = (x - startX) * SCROLL_SPEED;
-        console.log('move','event.pageX', event.pageX,'slider.offsetLeft', slider.offsetLeft, 'startX',startX,'scrollLeft',scrollLeft,'slider.scrollLeft',slider.scrollLeft,'walk',walk);
         slider.scrollLeft = scrollLeft - walk;
     }
-
 </script>
 
 <style lang="scss">
@@ -41,16 +57,16 @@
     </div>
     <div class="section-wrapper">
         <div class="testimonials-container">
-            <div
+            <ul
                 class="testimonials-wrapper"
                 class:active={active}
                 bind:this={slider}
-                on:mousedown={handleMouseDown}
-                on:mouseup={handleMouseUp}
-                on:mouseleave={handleMouseUp}
-                on:mousemove={handleMouseMove}
+                on:mousedown={onMouseDown}
+                on:mouseup={onMouseUp}
+                on:mouseleave={onMouseUp}
+                on:mousemove={onMouseMove}
             >
-                <div class="testimonial-slide">
+                <li class="testimonial-slide">
                     <div class="slider-item">
                         <div class="slide-logo-wrapper">
                             <img
@@ -71,8 +87,8 @@
                         </p>
                         <p class="slide-name">Timofei G.</p>
                     </div>
-                </div>
-                <div class="testimonial-slide">
+                </li>
+                <li class="testimonial-slide">
                     <div class="slider-item">
                         <div class="slide-logo-wrapper">
                             <img
@@ -86,8 +102,8 @@
                         </p>
                         <p class="slide-name">Nick A.</p>
                     </div>
-                </div>
-                <div class="testimonial-slide">
+                </li>
+                <li class="testimonial-slide">
                     <div class="slider-item">
                         <div class="slide-logo-wrapper">
                             <img
@@ -106,8 +122,8 @@
                         </p>
                         <p class="slide-name">Vadim С.</p>
                     </div>
-                </div>
-                <div class="testimonial-slide">
+                </li>
+                <li class="testimonial-slide">
                     <div class="slider-item">
                         <div class="slide-logo-wrapper">
                             <img
@@ -122,20 +138,20 @@
                         </p>
                         <p class="slide-name">Claude I.</p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
-        <!-- Add Arrows -->
         <div
             class="testimonials-button testimonials-button-next"
+            on:click={onNext}
         >
             <img src="assets/img/arrow-slide-nav.svg" alt="right"/>
         </div>
         <div
             class="testimonials-button testimonials-button-prev"
+            on:click={onPrev}
         >
             <img src="assets/img/arrow-slide-nav.svg" alt="left"/>
         </div>
     </div>
 </section>
-
