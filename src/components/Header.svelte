@@ -60,7 +60,7 @@
             <a class="nav-link" href="/faq">FAQ</a>
         </nav>
         <div>
-            <select class="select" on:change={onLangSelect}>
+            <select class="select" on:blur={onLangSelect}>
                 <option value="en">en</option>
                 <option value="es">es</option>
                 <option value="ru">ru</option>
@@ -97,4 +97,9 @@
     <a class="nav-link mobile-menu-links" href="/blog">Blog</a>
     <a class="nav-link mobile-menu-links" href="/faq">FAQ</a>
     <a href="//app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
+    <select class="select-mobile mobile-menu-links" on:blur={onLangSelect}>
+        <option value="en">en</option>
+        <option value="es">es</option>
+        <option value="ru">ru</option>
+    </select>
 </nav>

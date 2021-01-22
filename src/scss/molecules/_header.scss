@@ -23,13 +23,13 @@
   justify-content: space-between;
 }
 
-.select {
+%select {
   margin-right: 25px;
   background-color: transparent;
-  border-color: transparent;
+  border: 1px solid transparent;
   color: #fff;
 
-  option {
+  & > option {
     color: $black;
     background-color: transparent;
     
@@ -45,6 +45,15 @@
       background-color: transparent;
     }
   }
+}
+
+.select {
+  @extend %select;
+}
+
+.select-mobile {
+  @extend %select;
+  display: none;
 }
 
 .wrapper-header {
@@ -97,5 +106,13 @@
 
   .wrapper-header {
     justify-content: space-between;
+  }
+
+  .select-mobile {
+    display: inline-block;
+  }
+
+  .select {
+    display: none;
   }
 }
