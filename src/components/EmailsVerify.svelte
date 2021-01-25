@@ -9,18 +9,19 @@
     onMount(() => {
         const verifyEmailForm = document.getElementById("verify-email");
         const emailResults = verifyEmailForm.querySelector(".email-results");
-
+        const emailInput = verifyEmailForm.querySelector("#email");
         const reset = () => {
             verifyEmailForm.reset();
             isChecking = false;
             isChecked = false;
         }
 
+        emailInput.addEventListener("keyup", (e) => {
+            if (e.target.value === '') reset();
+        });
+
         verifyEmailForm.addEventListener("submit", (e) => {
             isChecking = true;
-            const emailValue = verifyEmailForm.querySelector(
-                "input[type=email]"
-            ).value;
             const socialLinks = document.querySelectorAll(".social-link");
             const validity = document.getElementById("email-risk");
             const closeBtn = document.getElementById("close-btn");
@@ -36,7 +37,7 @@
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    email: emailValue,
+                    email: emailInput.value,
                 }),
             })
                 .then((res) => res.json())
@@ -128,7 +129,7 @@
                 <p class="verify-email-title">
                     Verify email address in real-time!
                 </p>
-                <form action="#" class="verify-email-form" id="verify-email">
+                <form class="verify-email-form" id="verify-email">
                     <div class="email-block">
                         <input
                             class="input input-verify"
