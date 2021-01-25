@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
-	export function preload() {
-		return this.fetch(`blog.json`).then((r: { json: () => any; }) => r.json()).then((posts: { slug: string; title: string, html: any, date: string, readingTime: string, snippet: any }[]) => {
-			return { posts };
+    export function preload() {
+		return this.fetch(`blog.json`).then((r: { json: () => any; }) => r.json()).then((posts:  { slug: string; title: string, html: any, date: string, readingTime: string, snippet: any }[]) => {
+			return {posts: posts.sort( (a, b) => {return new Date(a.date.split('.').reverse().toString())<new Date(b.date.split('.').reverse().toString())? 1 : -1} )}
 		});
 	}
 </script>
