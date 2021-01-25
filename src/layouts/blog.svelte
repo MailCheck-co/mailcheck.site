@@ -1,3 +1,8 @@
+<script>
+    export let title;
+    export let slug;
+</script>
+
 <style>
     .container {
         display: block;
@@ -16,6 +21,11 @@
         margin: 0 auto 100px;
     }
 </style>
+
+<svelte:head>
+    <title>Mailcheck | Blog | {title}</title>
+    <link rel="canonical" href={`https://www.mailcheck.co/blog/${slug}`} >
+</svelte:head>
 
 <div class="container">
     <div class="content-block">
