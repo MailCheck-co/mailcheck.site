@@ -14,7 +14,6 @@
             verifyEmailForm.reset();
             isChecking = false;
             isChecked = false;
-            validityClass = '';
         }
 
         verifyEmailForm.addEventListener("submit", (e) => {
