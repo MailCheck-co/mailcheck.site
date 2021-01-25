@@ -149,22 +149,6 @@
     }
   }
 
-  span {
-    text-transform: none;
-
-    &.error {
-      color: $color-important;
-    }
-
-    &.warning {
-      color: $color-warning;
-    }
-
-    &.success {
-      color: $color-success;
-    }
-  }
-
   .results-icons {
     display: flex;
     flex-wrap: wrap;
@@ -252,6 +236,22 @@
   line-height: 1.2;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  span {
+    text-transform: none;
+
+    &.error {
+      color: $color-important;
+    }
+
+    &.warning {
+      color: $color-warning;
+    }
+
+    &.success {
+      color: $color-success;
+    }
+  }
 }
 
 .results-list {
