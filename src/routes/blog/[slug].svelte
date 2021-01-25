@@ -14,7 +14,7 @@
 </script>
 
 <script lang="ts">
-	export let post: { slug: string; title: string, html: any };
+	export let post: { title: string, html: any };
 </script>
 
 <style>
@@ -28,12 +28,8 @@
 	*/
 </style>
 
-<svelte:head>
-	<title>Mailcheck | Blog | {post.title}</title>
-</svelte:head>
-
 <h1>{post.title}</h1>
 
-<div class="container">
+<div>
 	{@html post.html}
 </div>
