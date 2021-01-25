@@ -4,6 +4,7 @@
 
     export let isChecking = false;
     export let isChecked = false;
+    export let validityClass = '';
 
     onMount(() => {
         const verifyEmailForm = document.getElementById("verify-email");
@@ -13,6 +14,7 @@
             verifyEmailForm.reset();
             isChecking = false;
             isChecked = false;
+            validityClass = '';
         }
 
         verifyEmailForm.addEventListener("submit", (e) => {
@@ -83,13 +85,13 @@
                     });
                     if (data.trustRate <= 49) {
                         validity.innerHTML = "invalid";
-                        validity.className = "error";
+                        validityClass = "error";
                     } else if (data.trustRate > 49 && data.trustRate < 80) {
                         validity.innerHTML = "risky";
-                        validity.className = "warning";
+                        validityClass = "warning";
                     } else {
                         validity.innerHTML = "valid";
-                        validity.className = "success";
+                        validityClass = "success";
                     }
                     isChecked = true;
                 })
@@ -152,7 +154,7 @@
                         <div class="form-preloader" />
                         <p class="results-title">
                             Validation RESULTS -
-                            <span id="email-risk" />
+                            <span id="email-risk" class={validityClass} />
                         </p>
                         <ul class="results-list">
                             <ul class="list-left">
