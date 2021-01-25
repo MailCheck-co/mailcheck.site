@@ -238,8 +238,6 @@
   text-transform: uppercase;
 
   span {
-    text-transform: none;
-
     &.error {
       color: $color-important;
     }

@@ -154,7 +154,7 @@
                         <div class="form-preloader" />
                         <p class="results-title">
                             Validation RESULTS -
-                            <span id="email-risk" class={validityClass} />
+                            <span id="email-risk" class:validityClass />
                         </p>
                         <ul class="results-list">
                             <ul class="list-left">
