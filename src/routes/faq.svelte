@@ -5,6 +5,7 @@
 
 <svelte:head>
     <title>Mailcheck | FAQ</title>
+    <link rel="canonical" href="https://www.mailcheck.co/faq">
 </svelte:head>
 <!--Questions-->
 <section id="faq" class="frequent-questions">

@@ -12,7 +12,8 @@
 </script>
 
 <svelte:head>
-	<title>Mailcheck | Blog</title>
+    <title>Mailcheck | Blog</title>
+    <link rel="canonical" href="https://www.mailcheck.co/blog">
 </svelte:head>
 
 <style>

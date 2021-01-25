@@ -19,15 +19,7 @@
 
 <svelte:head>
     <title>Mailcheck | Verify your real customers in one way</title>
-    <!--scripts-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.5/TweenMax.min.js">
-    </script>
-    <script
-        src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js">
-    </script>
-    <script
-        src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js">
-    </script>
+    <link rel="canonical" href="https://www.mailcheck.co/">
 </svelte:head>
 
 <main class="manage-customers" role="main" id="main">

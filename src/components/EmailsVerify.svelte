@@ -9,6 +9,12 @@
         const verifyEmailForm = document.getElementById("verify-email");
         const emailResults = verifyEmailForm.querySelector(".email-results");
 
+        const reset = () => {
+            verifyEmailForm.reset();
+            isChecking = false;
+            isChecked = false;
+        }
+
         verifyEmailForm.addEventListener("submit", (e) => {
             isChecking = true;
             const emailValue = verifyEmailForm.querySelector(
@@ -87,7 +93,7 @@
                     }
                     isChecked = true;
                 })
-                .then(() => verifyEmailForm.reset())
+                .then(() => reset())
                 .catch((e) => console.error(e));
 
             formPreloader.style.display = "none";

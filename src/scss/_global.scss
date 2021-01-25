@@ -50,6 +50,11 @@
 
 :global(p) {
     color: #fff;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: .8px;
+    text-align: justify;
+    text-indent: 20px;
 }
 
 :global(strong) {
@@ -63,4 +68,9 @@
 
 :global(a:visited) {
     color:#55baff;
+}
+
+:global(img) {
+    width: 100%;
+    height: auto;
 }
