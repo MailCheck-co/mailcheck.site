@@ -32,7 +32,7 @@
   & > option {
     color: $black;
     background-color: transparent;
-    
+
     &:checked {
       background-color: transparent;
     }
@@ -63,31 +63,6 @@
   max-width: 1280px;
   height: 90px;
   margin: 0 auto;
-}
-
-.btn-top {
-  position: fixed;
-  right: 3%;
-  bottom: 15%;
-  z-index: 5;
-  display: none;
-  background-color: $midnight-blue;
-  border-radius: 20px;
-  opacity: 0.7;
-  transition: opacity 0.35s ease-in-out;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  & > img {
-    width: 50px;
-    transform: rotate(-90deg) translateX(-8%);
-  }
-
-  &.show {
-    display: block;
-  }
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,44 +1,25 @@
 <script>
-    import { onMount, beforeUpdate } from "svelte";
-    
-    let open = false;
-    let show = false;
-    let url = '';
-    let lang = 'en';
+    import ToTop from "./ToTop.svelte";
 
+    let open = false;
+    let lang = "en";
     const onLangSelect = (e) => {
         const current = e.target.options.selectedIndex;
         switch (+current) {
-            case 0: lang = 'en';
+            case 0:
+                lang = "en";
                 break;
-            case 1: lang = 'es';
+            case 1:
+                lang = "es";
                 break;
-            case 2: lang = 'ru';
+            case 2:
+                lang = "ru";
                 break;
-            default: lang = 'en';
+            default:
+                lang = "en";
                 break;
         }
     };
-
-    beforeUpdate(() => {
-        const pathname = window.location.pathname;
-		if (url !== pathname) {
-            url = pathname !== '/' ? `${pathname}#top` : '#top';
-        }
-	});
-
-    onMount(() => {
-        const windowHeight = window.innerHeight;
-        const pathname = window.location.pathname;
-        url = pathname !== '/' ? `${pathname}#top` : '#top';
-        window.addEventListener("scroll", function () {
-            if (window.pageYOffset > windowHeight) {
-                show = true;
-            } else {
-                show = false;
-            }
-        });
-    });
 </script>
 
 <style lang="scss">
@@ -47,11 +28,13 @@
     @import "../scss/molecules/mobile-menu";
 </style>
 
+<ToTop />
+
 <header role="banner">
     <div class="wrapper-header">
-        <a class="logo" href="/"><img
-                src="assets/img/mailcheck-logo.svg"
-                alt="mail" /></a>
+        <a class="logo" href="/">
+            <img src="assets/img/mailcheck-logo.svg" alt="mail" />
+        </a>
         <nav class="header-nav" role="navigation">
             <a class="nav-link" href="/#features">Features</a>
             <a class="nav-link" href="/#pricing">Pricing</a>
@@ -65,17 +48,10 @@
                 <option value="es">es</option>
                 <option value="ru">ru</option>
             </select>
-            <a href="//app.mailcheck.co/" class="btn btn-sign-in">
-                sign in
-            </a>
+            <a href="//app.mailcheck.co/" class="btn btn-sign-in"> sign in </a>
         </div>
-        
     </div>
 </header>
-
-<a href={url} class="btn-top" class:show target="_self">
-    <img src="assets/img/arrow-slide-nav.svg" alt="to top" />
-</a>
 
 <!--Mobile menu-->
 <button
