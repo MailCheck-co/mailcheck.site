@@ -1,6 +1,6 @@
 <svelte:head>
   <title>{title} | {siteName}</title>
-  <link rel="canonical" href={siteUrl} />
+  <link rel="canonical" href={siteUrl}{$page.path} />
   <meta name="description" content={desc} />
 
   <!-- Open Graph / Facebook -->
