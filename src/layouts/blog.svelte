@@ -1,16 +1,10 @@
 <script>
-    import { onMount } from "svelte";
     import Seo from '../components/seo.svelte';
-    import placeholder from '../../static/android-chrome-36x36.png';
 
     export let title;
     export let snippet;
-    let img;
-
-    onMount(() => {
-        const blog = document.getElementById('blog');
-        img = blog.querySelector('img');
-    });
+    export let desc;
+    export let thumbnail;
 </script>
 
 <style>
@@ -32,7 +26,7 @@
     }
 </style>
 
-<Seo {title} {snippet} thumbnail={img || placeholder} isPost="true"/>
+<Seo title={`Blog | ${title}`} {snippet} {desc} {thumbnail} isPost="true"/>
 
 <div class="container" id="blog">
     <div class="content-block">

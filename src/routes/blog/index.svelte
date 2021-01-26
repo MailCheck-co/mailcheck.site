@@ -13,7 +13,7 @@
 	export let posts: { slug: string; title: string, html: any, date: string, readingTime: string, snippet: any }[];
 </script>
 
-<Seo title="Mailcheck | Blog"/>
+<Seo title="Blog"/>
 
 <style>
     .article-title {

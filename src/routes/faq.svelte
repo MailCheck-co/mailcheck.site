@@ -6,7 +6,7 @@
     import Seo from "../components/seo.svelte";
 </script>
 
-<Seo title="Mailcheck | FAQ" />
+<Seo title="FAQ" canonical="/" />
 
 <!--Questions-->
 <section id="faq" class="frequent-questions">

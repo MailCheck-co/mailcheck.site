@@ -3,7 +3,7 @@
     import Seo from "../components/seo.svelte";
 </script>
 
-<Seo title="Mailcheck | Terms and Conditions" />
+<Seo title="Terms and Conditions" noindex="true"/>
 
 <main class="terms" id="terms">
   <div class="container">

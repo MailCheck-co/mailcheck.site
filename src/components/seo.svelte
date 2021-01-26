@@ -1,7 +1,11 @@
 <svelte:head>
-    <title>{title} | {siteName}</title>
-    <link rel="canonical" href={siteUrl}{$page.path}/>
+    <title>{siteName} | {title}</title>
+    <link rel="canonical" href={canonical? siteUrl + canonical : siteUrl+$page.path}/>
     <meta name="description" content={desc}/>
+
+    {#if noindex}
+        <meta name="robots" content="noindex">
+    {/if}
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={isPost ? 'blog' : 'website'}/>
@@ -34,8 +38,10 @@
 
     const {page} = stores()
 
+    export let canonical = ""
     export let title
     export let isPost = false
     export let thumbnail = false
     export let desc = data.desc
+    export let noindex = false
 </script>

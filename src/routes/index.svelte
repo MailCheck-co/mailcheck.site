@@ -18,7 +18,7 @@
     @import "../scss/molecules/main";
 </style>
 
-<Seo title="Mailcheck | Verify your real customers in one way" />
+<Seo title="Verify your real customers in one way" />
 
 <main class="manage-customers" role="main" id="main">
     <!-- EMAILS VERIFY -->
