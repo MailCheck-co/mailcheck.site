@@ -49,6 +49,7 @@
   line-height: 27px;
   letter-spacing: 0.9px;
   text-align: center;
+  text-indent: initial;
 }
 
 .manage-customers {
@@ -80,6 +81,7 @@
   line-height: 27px;
   letter-spacing: 0.9px;
   text-align: center;
+  text-indent: initial;
 }
 
 .btn-verify-email {
@@ -236,6 +238,7 @@
   line-height: 1.2;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-indent: initial;
 
   span {
     &.error {
@@ -258,10 +261,12 @@
   align-items: center;
   justify-content: space-between;
   margin: 0;
+  padding: 0;
   list-style: none;
 
   & > ul {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -275,6 +280,7 @@
   min-width: 85px;
   margin-bottom: 0;
   padding-right: 10px;
+  text-indent: initial;
 }
 
 .list-item-result {

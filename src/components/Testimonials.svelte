@@ -5,6 +5,7 @@
     let scrollLeft;
     const SCROLL_SPEED = 4;
     const ITEMS_TO_SCROLL = 1;
+    const SCROLL = ITEMS_TO_SCROLL * 420;
     const TIMEOUT = SCROLL_SPEED * 100;
 
     function deactivate() {
@@ -16,14 +17,14 @@
     function onPrev() {
         active = true;
         scrollLeft = slider.scrollLeft;
-        slider.scrollLeft = scrollLeft - 880;
+        slider.scrollLeft = scrollLeft - SCROLL;
         deactivate();
     }
 
     function onNext() {
         active = true;
         scrollLeft = slider.scrollLeft;
-        slider.scrollLeft = scrollLeft + 880;
+        slider.scrollLeft = scrollLeft + SCROLL;
         deactivate();
     }
     
