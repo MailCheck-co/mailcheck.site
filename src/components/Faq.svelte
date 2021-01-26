@@ -2,8 +2,15 @@
     @import "../scss/utilities/index";
     @import "../scss/molecules/frequent-questions";
 </style>
+<script lang="ts">
+    import IntersectionObserver from "svelte-intersection-observer";
 
-<section id="faq" class="frequent-questions">
+    let element;
+    let intersecting;
+</script>
+
+<IntersectionObserver {element} bind:intersecting>
+<section id="faq" class="frequent-questions" bind:this={element} class:intersecting>
 
         <div class="wrapper-questions">
             <h3 class="title-small">FAQ</h3>
@@ -89,3 +96,4 @@
         </div>
 
     </section>
+</IntersectionObserver>
