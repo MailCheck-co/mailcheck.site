@@ -143,3 +143,15 @@
 // @usage - `@include invisible`
 
 @mixin invisible { visibility: hidden; }
+
+@mixin intersection {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 50);
+  
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+
+  &.intersecting {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}

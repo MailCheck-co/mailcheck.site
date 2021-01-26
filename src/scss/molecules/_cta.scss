@@ -1,4 +1,6 @@
 .cta {
+  @include intersection;
+  
   padding-bottom: 200px;
   text-align: center;
 

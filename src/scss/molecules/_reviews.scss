@@ -1,3 +1,7 @@
+.reviews {
+  @include intersection;
+}
+
 .reviews-list {
   display: flex;
   align-items: center;

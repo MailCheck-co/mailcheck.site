@@ -1,3 +1,7 @@
+.welcome {
+  @include intersection;
+}
+
 .digits {
   color: $primary-accent;
   font-weight: 900;

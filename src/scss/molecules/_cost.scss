@@ -1,4 +1,6 @@
 .cost-effective {
+  @include intersection;
+  
   &::before {
     position: absolute;
     top: 10%;

@@ -1,4 +1,6 @@
 .choose-your {
+  @include intersection;
+  
   &::before {
     position: absolute;
     top: -185%;

@@ -3,6 +3,8 @@
 }
 
 .testimonials {
+    @include intersection;
+    
     padding-top: 120px;
     color: $primary-white;
 }

@@ -1,3 +1,7 @@
+.team {
+  @include intersection;
+}
+
 .team-members {
   display: flex;
   justify-content: space-between;

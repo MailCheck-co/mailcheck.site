@@ -1,4 +1,8 @@
 <script>
+    import IntersectionObserver from "svelte-intersection-observer";
+
+    let element;
+    let intersecting;
     let isOpen = false;
     let isError = false;
     let contactForm, popUpBlock;
@@ -6,8 +10,8 @@
         isOpen = false;
         isError = false;
         document.body.classList.remove("fixed");
-    }
-    const onSubmit = e => {
+    };
+    const onSubmit = (e) => {
         e.preventDefault();
         const nameValue = contactForm.querySelector("input[type=text]").value;
         const mailValue = contactForm.querySelector("input[type=email]").value;
@@ -49,7 +53,7 @@
             eventValue: "",
             event: "gaEvent",
         });
-    }
+    };
 </script>
 
 <style lang="scss">
@@ -58,27 +62,35 @@
     @import "../scss/molecules/popup";
 </style>
 
-<section id="contact-us" class="contact-us">
-    <div class="container">
-        <form class="contact-form" bind:this={contactForm} on:submit={onSubmit}>
-            <h2 class="title title-contact">contact us</h2>
-            <input class="input" type="text" placeholder="Name" required />
-            <input class="input" type="email" placeholder="Email" required />
-            <textarea
-                class="input input-message"
-                placeholder="Message"
-                required />
-            <button class="btn btn-submit" type="submit">submit</button>
-        </form>
-    </div>
-</section>
+<IntersectionObserver {element} bind:intersecting>
+    <section bind:this={element} class:intersecting class="contact-us">
+        <div class="container">
+            <form
+                class="contact-form"
+                bind:this={contactForm}
+                on:submit={onSubmit}>
+                <h2 class="title title-contact">contact us</h2>
+                <input class="input" type="text" placeholder="Name" required />
+                <input
+                    class="input"
+                    type="email"
+                    placeholder="Email"
+                    required />
+                <textarea
+                    class="input input-message"
+                    placeholder="Message"
+                    required />
+                <button class="btn btn-submit" type="submit">submit</button>
+            </form>
+        </div>
+    </section>
+</IntersectionObserver>
 
 <div
     class="popup-container"
     class:open={isOpen}
     on:click={onClose}
-    bind:this={popUpBlock}
->
+    bind:this={popUpBlock}>
     <div class="popup" class:open={isOpen}>
         <span class="popup-close success" />
         <span class="popup-thanks">Thanks for filling out our form!</span>
