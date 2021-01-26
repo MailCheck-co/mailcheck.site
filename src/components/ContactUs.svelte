@@ -63,7 +63,7 @@
 </style>
 
 <IntersectionObserver {element} bind:intersecting>
-    <section bind:this={element} class:intersecting class="contact-us">
+    <section bind:this={element} class:intersecting class="contact-us" id="contact-us">
         <div class="container">
             <form
                 class="contact-form"

@@ -11,7 +11,7 @@
 </style>
 
 <IntersectionObserver {element} bind:intersecting>
-    <section bind:this={element} class:intersecting class="cost-effective">
+    <section bind:this={element} class:intersecting class="cost-effective" id="pricing">
         <div class="section-heading sm-left">
             <h2 class="title">Cost-effective pricing plans</h2>
             <p class="section-title-lg">PRICING</p>
