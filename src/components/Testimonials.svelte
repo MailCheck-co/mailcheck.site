@@ -4,6 +4,7 @@
     let startX;
     let scrollLeft;
     const SCROLL_SPEED = 4;
+    const ITEMS_TO_SCROLL = 1;
     const TIMEOUT = SCROLL_SPEED * 100;
 
     function deactivate() {

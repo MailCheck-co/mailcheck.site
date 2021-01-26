@@ -1,6 +1,16 @@
 <script>
+    import { onMount } from "svelte";
+    import SEO from '../components/SEO.svelte';
+    import placeholder from '../../static/android-chrome-36x36.png';
+
     export let title;
-    export let slug;
+    export let snippet;
+    let img;
+
+    onMount(() => {
+        const blog = document.getElementById('blog');
+        img = blog.querySelector('img');
+    });
 </script>
 
 <style>
@@ -22,12 +32,9 @@
     }
 </style>
 
-<svelte:head>
-    <title>Mailcheck | Blog | {title}</title>
-    <link rel="canonical" href={`https://www.mailcheck.co/blog/${slug}`} >
-</svelte:head>
+<SEO {title} {snippet} thumbnail={img || placeholder} />
 
-<div class="container">
+<div class="container" id="blog">
     <div class="content-block">
         <slot />
     </div>
