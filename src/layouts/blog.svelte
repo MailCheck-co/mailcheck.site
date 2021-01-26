@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import seo from '../components/seo.svelte';
+    import Seo from '../components/seo.svelte';
     import placeholder from '../../static/android-chrome-36x36.png';
 
     export let title;
@@ -32,7 +32,7 @@
     }
 </style>
 
-<seo {title} {snippet} thumbnail={img || placeholder} isPost="true"/>
+<Seo {title} {snippet} thumbnail={img || placeholder} isPost="true"/>
 
 <div class="container" id="blog">
     <div class="content-block">

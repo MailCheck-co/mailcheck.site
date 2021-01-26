@@ -1,10 +1,9 @@
-<script>
+<script lang="typescript">
     import ContactUs from "../components/ContactUs.svelte";
+    import Seo from "../components/seo.svelte";
 </script>
 
-<svelte:head>
-    <title>Mailcheck | Terms and Conditions</title>
-</svelte:head>
+<Seo title="Mailcheck | Terms and Conditions" />
 
 <main class="terms" id="terms">
   <div class="container">

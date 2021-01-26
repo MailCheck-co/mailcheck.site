@@ -1,10 +1,9 @@
-<script>
+<script lang="typescript">
     import ContactUs from "../components/ContactUs.svelte";
-    import seo from "../components/seo.svelte";
-
+    import Seo from "../components/seo.svelte";
 </script>
 
-<seo title="Mailcheck | PRIVACY" />
+<Seo title="Mailcheck | PRIVACY" />
 
 <main class="terms" id="privacy">
   <div class="container">

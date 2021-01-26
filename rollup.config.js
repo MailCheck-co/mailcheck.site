@@ -19,7 +19,7 @@ const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 function get_routes() {
-    const  blog_path = join(process.cwd(), 'src', 'routes', 'blog');
+    const blog_path = join(process.cwd(), 'src', 'routes', 'blog');
     return readdirSync(blog_path).filter(p => extname(p) === ".svx").map(post => {
         return matter.read(join(blog_path, post))
     });
@@ -32,135 +32,126 @@ const replaceConstants = {
 };
 
 const onwarn = (warning, onwarn) =>
-	(warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
-	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
-	(warning.code === 'THIS_IS_UNDEFINED') ||
-	onwarn(warning);
+    (warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
+    (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
+    (warning.code === 'THIS_IS_UNDEFINED') ||
+    onwarn(warning);
+
+const svelteOptions = {
+    extensions: [
+        '.svelte',
+        '.svx'
+    ],
+    preprocess: [
+        sveltePreprocess(),
+        mdsvex({
+            layout: {
+                blog: "./src/layouts/blog.svelte",
+                article: "./src/routes/_layout.svelte",
+                _: "./src/routes/_layout.svelte"
+            }
+        })
+    ],
+}
 
 export default {
-	client: {
-		input: config.client.input().replace(/\.js$/, '.ts'),
-		output: config.client.output(),
-		plugins: [
-			replace({
+    client: {
+        input: config.client.input().replace(/\.js$/, '.ts'),
+        output: config.client.output(),
+        plugins: [
+            replace({
                 ...replaceConstants,
-				'process.browser': true
-			}),
-			svelte({
-				dev,
-				hydratable: true,
-				preprocess: [
-					sveltePreprocess(),
-					mdsvex({
-                    layout: {
-                        blog: "./src/layouts/blog.svelte",
-                        article: "./src/routes/_layout.svelte",
-                        _: "./src/routes/_layout.svelte"
-						}
-					})
-				],
-				emitCss: true,
-                extensions: [
-                    '.svelte',
-                    '.svx'
-                ],
-			}),
-			url({
-				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
-				publicPath: '/client/'
-			}),
-			resolve({
-				browser: true,
-				dedupe: ['svelte']
-			}),
-			commonjs(),
-			typescript({ sourceMap: dev }),
-
-			legacy && babel({
-				extensions: ['.js', '.mjs', '.html', '.svelte'],
-				babelHelpers: 'runtime',
-				exclude: ['node_modules/@babel/**'],
-				presets: [
-					['@babel/preset-env', {
-						targets: '> 0.25%, not dead'
-					}]
-				],
-				plugins: [
-					'@babel/plugin-syntax-dynamic-import',
-					['@babel/plugin-transform-runtime', {
-						useESModules: true
-					}]
-				]
-			}),
-
-			!dev && terser({
-				module: true
-			})
-		],
-
-		preserveEntrySignatures: false,
-		onwarn,
-	},
-
-	server: {
-		input: { server: config.server.input().server.replace(/\.js$/, ".ts") },
-		output: config.server.output(),
-		plugins: [
-			replace({
-                ...replaceConstants,
-				'process.browser': false,
-			}),
-			svelte({
-				generate: 'ssr',
-				hydratable: true,
-                preprocess: [
-                    sveltePreprocess(),
-                    mdsvex({
-                        layout: {
-                            blog: "./src/layouts/blog.svelte",
-                            article: "./src/routes/_layout.svelte",
-                            _: "./src/routes/_layout.svelte"
-                        }
-                    })
-                ],
+                'process.browser': true
+            }),
+            svelte({
+                ...svelteOptions,
                 dev,
-                extensions: [
-                    '.svelte',
-                    '.svx'
+                hydratable: true,
+                emitCss: true,
+            }),
+            url({
+                sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
+                publicPath: '/client/'
+            }),
+            resolve({
+                browser: true,
+                dedupe: ['svelte']
+            }),
+            commonjs(),
+            typescript({sourceMap: dev}),
+
+            legacy && babel({
+                extensions: ['.js', '.mjs', '.html', '.svelte'],
+                babelHelpers: 'runtime',
+                exclude: ['node_modules/@babel/**'],
+                presets: [
+                    ['@babel/preset-env', {
+                        targets: '> 0.25%, not dead'
+                    }]
+                ],
+                plugins: [
+                    '@babel/plugin-syntax-dynamic-import',
+                    ['@babel/plugin-transform-runtime', {
+                        useESModules: true
+                    }]
                 ]
-			}),
-			url({
-				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
-				publicPath: '/client/',
-				emitFiles: false // already emitted by client build
-			}),
-			resolve({
-				dedupe: ['svelte']
-			}),
-			commonjs(),
-			typescript({ sourceMap: dev })
-		],
-		external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
+            }),
 
-		preserveEntrySignatures: 'strict',
-		onwarn,
-	},
+            !dev && terser({
+                module: true
+            })
+        ],
 
-	serviceworker: {
-		input: config.serviceworker.input().replace(/\.js$/, '.ts'),
-		output: config.serviceworker.output(),
-		plugins: [
-			resolve(),
-			replace({
+        preserveEntrySignatures: false,
+        onwarn,
+    },
+
+    server: {
+        input: {server: config.server.input().server.replace(/\.js$/, ".ts")},
+        output: config.server.output(),
+        plugins: [
+            replace({
                 ...replaceConstants,
-				'process.browser': true,
-			}),
-			commonjs(),
-			typescript({ sourceMap: dev }),
-			!dev && terser()
-		],
+                'process.browser': false,
+            }),
+            svelte({
+                ...svelteOptions,
+                generate: 'ssr',
+                hydratable: true,
+                dev,
+            }),
+            url({
+                sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
+                publicPath: '/client/',
+                emitFiles: false // already emitted by client build
+            }),
+            resolve({
+                dedupe: ['svelte']
+            }),
+            commonjs(),
+            typescript({sourceMap: dev})
+        ],
+        external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
 
-		preserveEntrySignatures: false,
-		onwarn,
-	}
+        preserveEntrySignatures: 'strict',
+        onwarn,
+    },
+
+    serviceworker: {
+        input: config.serviceworker.input().replace(/\.js$/, '.ts'),
+        output: config.serviceworker.output(),
+        plugins: [
+            resolve(),
+            replace({
+                ...replaceConstants,
+                'process.browser': true,
+            }),
+            commonjs(),
+            typescript({sourceMap: dev}),
+            !dev && terser()
+        ],
+
+        preserveEntrySignatures: false,
+        onwarn,
+    }
 };

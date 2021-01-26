@@ -2,11 +2,11 @@
     @import "../scss/utilities/index";
     @import "../scss/molecules/frequent-questions";
 </style>
-<script>
-    import seo from "../components/seo.svelte";
+<script lang="typescript">
+    import Seo from "../components/seo.svelte";
 </script>
 
-<seo title="Mailcheck | FAQ" />
+<Seo title="Mailcheck | FAQ" />
 
 <!--Questions-->
 <section id="faq" class="frequent-questions">

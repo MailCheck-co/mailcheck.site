@@ -8,13 +8,12 @@
 
 <script lang="ts">
     import ContactUs from "../../components/ContactUs.svelte";
+
+    import Seo from "../../components/seo.svelte";
 	export let posts: { slug: string; title: string, html: any, date: string, readingTime: string, snippet: any }[];
 </script>
 
-<svelte:head>
-    <title>Mailcheck | Blog</title>
-    <link rel="canonical" href="https://www.mailcheck.co/blog">
-</svelte:head>
+<Seo title="Mailcheck | Blog"/>
 
 <style>
     .article-title {
