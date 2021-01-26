@@ -5,6 +5,7 @@ title: The Right Approach to Email Address Validation
 date: 10.04.2019
 readingTime: 3 min read
 snippet: Email address validation has been the matter of concern for webmasters, email marketers and online services for years. There are many companies offering email validation services developing various tools and approaches to provide advanced solutions for this problem. Since this problem and the ways to solve it exist for years we finally can make a right approach to email address verfification once and for all.
+desc: Email address validation has been the matter of concern for webmasters, email marketers and online services for years. There are many companies offering email validation services developing various tools and approaches to provide advanced solutions for this problem. Since this problem and the ways to solve it exist for years we finally can make a right approach to email address verfification once and for all.
 ---
 
 # {title}
@@ -67,7 +68,7 @@ On the moment of subscription confirmation you can say that user really doesn’
 
 ### How to Comply This Requirement?
 
-Actually, when it comes to the technical moments it is enough for you to follow the tips listed above and read our articles about [the catch-all email servers](/catchAllServers) and inbox and delivery improvement.
+Actually, when it comes to the technical moments it is enough for you to follow the tips listed above and read our articles about [the catch-all email servers](/blog/catch-all-email-servers) and inbox and delivery improvement.
 
 Most of the work that can be done here is about the content and the way you make your newsletters:
 

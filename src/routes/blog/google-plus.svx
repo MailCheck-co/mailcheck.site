@@ -5,6 +5,7 @@ title: Google+ is shutting down. So what?
 date: 15.03.2019
 readingTime: 3 min read
 snippet: Google announced shutting down social media platform Google+. It is hard to find some technical article that hasn’t mentioned the end of Google’s social network era. But, a high level of consistency in connectivity within services of the company had received scant attention. In this article I would like to share my thoughts on the internal way of Google services consistency and what does it mean for Google API users when it comes to a Google+ shutdown.
+desc: Google announced shutting down social media platform Google+. It is hard to find some technical article that hasn’t mentioned the end of Google’s social network era. But, a high level of consistency in connectivity within services of the company had received scant attention. In this article I would like to share my thoughts on the internal way of Google services consistency and what does it mean for Google API users when it comes to a Google+ shutdown.
 ---
 
 # {title}

@@ -1,4 +1,5 @@
 <script>
+    import seo from "../components/seo.svelte"
     import EmailsVerify from "../components/EmailsVerify.svelte";
     import Partners from "../components/Partners.svelte";
     import Features from "../components/Features.svelte";
@@ -17,10 +18,7 @@
     @import "../scss/molecules/main";
 </style>
 
-<svelte:head>
-    <title>Mailcheck | Verify your real customers in one way</title>
-    <link rel="canonical" href="https://www.mailcheck.co/">
-</svelte:head>
+<seo title="Mailcheck | Verify your real customers in one way" />
 
 <main class="manage-customers" role="main" id="main">
     <!-- EMAILS VERIFY -->

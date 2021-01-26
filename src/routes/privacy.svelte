@@ -1,10 +1,10 @@
 <script>
     import ContactUs from "../components/ContactUs.svelte";
+    import seo from "../components/seo.svelte";
+
 </script>
 
-<svelte:head>
-    <title>Mailcheck | PRIVACY</title>
-</svelte:head>
+<seo title="Mailcheck | PRIVACY" />
 
 <main class="terms" id="privacy">
   <div class="container">

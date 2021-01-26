@@ -5,6 +5,7 @@ title: What Do You Need to Know About Catch-All Email Servers?
 date: 23.03.2019
 readingTime: 3 min read
 snippet: In this article we are going to explain catch-all email servers, why do they exist, why it is a problem for you and how you can find them in your mailing list and build a proper email strategy.
+desc: In this article we are going to explain catch-all email servers, why do they exist, why it is a problem for you and how you can find them in your mailing list and build a proper email strategy.
 ---
 
 # {title}

@@ -113,8 +113,17 @@ export default {
 			svelte({
 				generate: 'ssr',
 				hydratable: true,
-                preprocess: [sveltePreprocess(),mdsvex()],
-				dev,
+                preprocess: [
+                    sveltePreprocess(),
+                    mdsvex({
+                        layout: {
+                            blog: "./src/layouts/blog.svelte",
+                            article: "./src/routes/_layout.svelte",
+                            _: "./src/routes/_layout.svelte"
+                        }
+                    })
+                ],
+                dev,
                 extensions: [
                     '.svelte',
                     '.svx'

@@ -2,11 +2,12 @@
     @import "../scss/utilities/index";
     @import "../scss/molecules/frequent-questions";
 </style>
+<script>
+    import seo from "../components/seo.svelte";
+</script>
 
-<svelte:head>
-    <title>Mailcheck | FAQ</title>
-    <link rel="canonical" href="https://www.mailcheck.co/faq">
-</svelte:head>
+<seo title="Mailcheck | FAQ" />
+
 <!--Questions-->
 <section id="faq" class="frequent-questions">
     <div class="wrapper-questions">

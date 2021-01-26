@@ -5,6 +5,7 @@ title: Explaining Email Bounce Rate and Ways to Reduce It
 date: 30.03.2019
 readingTime: 3 min read
 snippet: Bounce rate shows the percentage of letters that have not been delivered. There can be numerous reasons for bouncing - starting from entering wrong recipient in the "To" field and ending by the blockade from the recipient's server. Let’s disclose possible types of bounces.
+desc: Bounce rate shows the percentage of letters that have not been delivered. There can be numerous reasons for bouncing - starting from entering wrong recipient in the "To" field and ending by the blockade from the recipient's server. Let’s disclose possible types of bounces.
 ---
 
 # {title}
@@ -39,7 +40,7 @@ Soft bounce:
 
 In such a situation the service will make several attempts to deliver your letter. It can take days for the server. However, if you see that there are 3 or more soft bounces per address, it is better to delete it from your mailing list.
 
-One of the general reasons for high bounce rate is that in your base there are emails that belong [to catch-all email servers](/catchAllServers).
+One of the general reasons for high bounce rate is that in your base there are emails that belong [to catch-all email servers](/blog/catch-all-email-servers).
 
 Why Do I Have to Concern About My Email Bounce Rate?
 ----------------------------------------------------
