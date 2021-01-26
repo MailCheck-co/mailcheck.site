@@ -46,7 +46,7 @@
                         alt="Facebook" />
                 </a>
                 <a
-                    href="https://www.linkedin.com/company/53483451/"
+                    href="https://www.linkedin.com/company/mailcheck/"
                     class="footer-social-link">
                     <img
                         class="footer-social-icon"
@@ -107,7 +107,7 @@
                             alt="Facebook" />
                     </a>
                     <a
-                        href="https://www.linkedin.com/company/53483451/"
+                        href="https://www.linkedin.com/company/mailcheck//"
                         target="_blank"
                         class="footer-social-link">
                         <img
