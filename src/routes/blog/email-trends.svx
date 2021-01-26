@@ -32,7 +32,7 @@ Mailing services have powerful tools to segmentate and personalize newsletters. 
 Deep Segmentation and Personalization
 -------------------------------------
 
-It always has been a good idea to conduct deep segmentation and personalization for your newsletter. However, it is more than a good idea - it is also possible thanks to the majority of the online tools provided by the email marketing automation tools. We have reviewed personalization in details in [our previous article](/personalizeYourNewsletter). Still here we will disclose the basic points to consider.
+It always has been a good idea to conduct deep segmentation and personalization for your newsletter. However, it is more than a good idea - it is also possible thanks to the majority of the online tools provided by the email marketing automation tools. We have reviewed personalization in details in [our previous article](/blog/emails-personalization). Still here we will disclose the basic points to consider.
 
 *   personalization can only be successful if you analyse the behaviour and preferences of your users
 *   you also need to consider basic metrics like geo, sex, and age
@@ -46,7 +46,7 @@ The more time is passing the more it takes from the content creators to think ov
 
 For now you need to bring even more efforts to get rid of spam in your mailings.
 
-Email marketers already know that it is a bad idea to subscribe on a mailing someone who is not willing to as there are high chances the email will go the spam box which has a negative effect on [the sender’s reputation](/sendersReputation). Thus, you need to make sure the user has made a clear confirm on subscription and profile the content you send to make it remain relevant and engaging.
+Email marketers already know that it is a bad idea to subscribe on a mailing someone who is not willing to as there are high chances the email will go the spam box which has a negative effect on [the sender’s reputation](/blog/senders-reputation). Thus, you need to make sure the user has made a clear confirm on subscription and profile the content you send to make it remain relevant and engaging.
 
 ![Email Marketing Trends 2019 for Small Business](../../assets/img/email-marketing-trends-img-2.jpg)
 

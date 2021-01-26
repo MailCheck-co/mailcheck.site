@@ -37,7 +37,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.mailcheck.co/guide</loc>
+    <loc>https://www.mailcheck.co/faq</loc>
     <lastmod>2019-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -55,7 +55,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.mailcheck.co/increaseEmailsDeliverability</loc>
+    <loc>https://www.mailcheck.co/emails-deliverability</loc>
     <lastmod>2019-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -91,13 +91,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.mailcheck.co/personalizeYourNewsletter</loc>
+    <loc>https://www.mailcheck.co//blog/emails-personalization</loc>
     <lastmod>2019-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.mailcheck.co/emailMarketingMetrics</loc>
+    <loc>https://www.mailcheck.co//blog/email-marketing-metrics</loc>
     <lastmod>2019-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

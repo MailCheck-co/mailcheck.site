@@ -20,7 +20,7 @@ Marketers mostly know about that. However, not all webmasters know the truly use
 Make Sure Subscriber Is Fond of Getting Your Mails
 --------------------------------------------------
 
-Use the double opt-in subscription forms to assure that user is willing to subscribe to your newsletter. This is more the technical moment of leading an email marketing campaign developed to [improve your deliverability rate](/increaseEmailsDeliverability) , however, it remains important.
+Use the double opt-in subscription forms to assure that user is willing to subscribe to your newsletter. This is more the technical moment of leading an email marketing campaign developed to [improve your deliverability rate](/blog/emails-deliverability) , however, it remains important.
 
 Develop SMART Goals
 -------------------
@@ -80,4 +80,4 @@ Each letter should have one specified goal, thus there shouldn’t be more than 
 Conclusion
 ----------
 
-Use these tips to improve your email marketing results. However, note that all your content improvement efforts are useless if you send your [letters to the wrong email addresses.](/guide)
+Use these tips to improve your email marketing results. However, note that all your content improvement efforts are useless if you send your [letters to the wrong email addresses.](/faq)

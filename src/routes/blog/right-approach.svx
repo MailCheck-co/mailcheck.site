@@ -83,10 +83,10 @@ Considering you have followed the requirements listed above it is almost hard to
 The Right Approach to The Email Address Validation
 --------------------------------------------------
 
-There are too much things to do if you want to get assured the addresses you have in your mailing list are valid. Especially if you did not follow the tips pointed out above from the start. In such a case you need to verify the email addresses you already have in your base. For this reason you need to use the automated [email verification services](/guide). However, automatic check can be not enough and you may need services of the company that provides a [manual verification](https://www.mailcheck.co).
+There are too much things to do if you want to get assured the addresses you have in your mailing list are valid. Especially if you did not follow the tips pointed out above from the start. In such a case you need to verify the email addresses you already have in your base. For this reason you need to use the automated [email verification services](/faq). However, automatic check can be not enough and you may need services of the company that provides a [manual verification](https://www.mailcheck.co).
 
 So here is the right approach:
 
-*   follow the tips mentioned above and [listed here](/increaseEmailsDeliverability)
+*   follow the tips mentioned above and [listed here](/blog/emails-deliverability)
 *   use the manual verification services to validate mails from the list
 *   do not worry if the bounce rate doesn’t exceed 2.5-4%.
