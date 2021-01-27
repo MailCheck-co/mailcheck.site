@@ -145,6 +145,10 @@
   &-link {
     text-decoration: underline;
     white-space: nowrap;
+
+    &:visited {
+      color: $primary-white;
+    }
   }
 
   &-link-blue {

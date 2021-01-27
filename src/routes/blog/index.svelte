@@ -20,6 +20,10 @@
     .article-title {
         color: #fff;
     }
+
+    .article-snippet {
+        text-indent: initial;
+    }
 </style>
 
 <main class="terms" id="blog">
