@@ -1,9 +1,11 @@
 <script lang="typescript">
     import ContactUs from "../components/ContactUs.svelte";
     import Seo from "../components/seo.svelte";
+
+    const desc = "Privacy Policy";
 </script>
 
-<Seo title="PRIVACY" noindex="true"/>
+<Seo desc={desc} title="PRIVACY" noindex="true"/>
 
 <main class="terms" id="privacy">
   <div class="container">

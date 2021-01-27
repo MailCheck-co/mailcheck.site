@@ -2,8 +2,6 @@
     import Seo from '../components/seo.svelte';
 
     export let title;
-    export let snippet;
-    export let desc;
     export let thumbnail;
 </script>
 
@@ -26,7 +24,7 @@
     }
 </style>
 
-<Seo title={`Blog | ${title}`} {snippet} {desc} {thumbnail} isPost="true"/>
+<Seo title={`Blog | ${title}`} desc={title} thumbnail={thumbnail} isPost="true"/>
 
 <div class="container" id="blog">
     <div class="content-block">

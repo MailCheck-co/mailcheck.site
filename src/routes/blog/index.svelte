@@ -11,9 +11,10 @@
 
     import Seo from "../../components/seo.svelte";
 	export let posts: { slug: string; title: string, html: any, date: string, readingTime: string, snippet: any }[];
+    export let desc = "Blog";
 </script>
 
-<Seo title="Blog"/>
+<Seo desc={desc} title="Blog"/>
 
 <style>
     .article-title {
