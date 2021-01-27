@@ -25,11 +25,11 @@
                             alt=""
                             class="reviews-item-logo" />
                         <div class="reviews-item-rating">
-                            <img src="assets/img/icon-star-rating.svg" />
-                            <img src="assets/img/icon-star-rating.svg" />
-                            <img src="assets/img/icon-star-rating.svg" />
-                            <img src="assets/img/icon-star-rating.svg" />
-                            <img src="assets/img/icon-star-rating.svg" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 1 star" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 2 stars" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 3 stars" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 4 stars" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 5 stars" />
                         </div>
                         <a
                             href="https://www.producthunt.com/posts/mailcheck"
@@ -61,11 +61,11 @@
                             alt=""
                             class="reviews-item-logo" />
                         <div class="reviews-item-rating">
-                            <img src="assets/img/icon-star-rating.svg" />
-                            <img src="assets/img/icon-star-rating.svg" />
-                            <img src="assets/img/icon-star-rating.svg" />
-                            <img src="assets/img/icon-star-rating.svg" />
-                            <img src="assets/img/icon-star-rating.svg" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 1 star" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 2 stars" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 3 stars" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 4 stars" />
+                            <img src="assets/img/icon-star-rating.svg" alt="rating 5 stars" />
                         </div>
                         <a
                             href="https://www.capterra.com/p/195397/Mailcheck/"
