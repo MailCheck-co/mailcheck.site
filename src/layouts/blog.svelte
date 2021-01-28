@@ -1,5 +1,6 @@
 <script>
     import Seo from '../components/seo.svelte';
+    import ContactUs from "../components/ContactUs.svelte";
 
     export let title;
     export let thumbnail;
@@ -31,3 +32,5 @@
         <slot />
     </div>
 </div>
+
+<ContactUs />

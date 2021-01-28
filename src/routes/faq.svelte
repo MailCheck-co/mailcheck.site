@@ -9,7 +9,7 @@
 <Seo title="FAQ" canonical="/" />
 
 <!--Questions-->
-<section id="faq" class="frequent-questions">
+<section id="faq" class="frequent-questions faq-page">
     <div class="wrapper-questions">
         <h3 class="title-small">FAQ</h3>
 

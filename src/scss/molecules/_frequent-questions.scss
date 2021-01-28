@@ -1,5 +1,7 @@
 .frequent-questions {
-  @include intersection;
+  &:not(.faq-page) {
+    @include intersection;
+  }
 }
 
 .accordion {

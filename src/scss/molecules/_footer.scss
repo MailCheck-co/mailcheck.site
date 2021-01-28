@@ -38,6 +38,10 @@
   flex-basis: 50%;
   flex-direction: column;
   align-content: center;
+
+  img {
+    max-width: fit-content;
+  }
 }
 
 .footer-top {

@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="footer-info right">
-                <span class="copyright2">&#x24B8; 2017-{new Date().getUTCFullYear()} MailCheck</span>
+                <span class="copyright2">&#x24B8; 2017-{new Date().getUTCFullYear()} Mailcheck</span>
                 <div class="footer-social">
                     <a
                         href="https://www.facebook.com/mailcheck.co/"
