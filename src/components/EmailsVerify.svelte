@@ -151,10 +151,10 @@
                         {/if}
                     </div>
                     <div class="email-results">
-                        <div class="form-preloader" />
+                        <div class="form-preloader"></div>
                         <p class="results-title">
                             Validation RESULTS -
-                            <span id="email-risk" class={validityClass} />
+                            <span id="email-risk" class={validityClass}></span>
                         </p>
                         <ul class="results-list">
                             <ul class="list-left">
@@ -164,19 +164,19 @@
                                     </p>
                                     <p
                                         id="email-result"
-                                        class="list-item-result" />
+                                        class="list-item-result"></p>
                                 </li>
                                 <li class="list-item exists">
                                     <p class="list-item-title">Exists:</p>
                                     <p
                                         id="exists-result"
-                                        class="list-item-result" />
+                                        class="list-item-result"></p>
                                 </li>
                                 <li class="list-item smtp">
                                     <p class="list-item-title">SMTP:</p>
                                     <p
                                         id="smtp-result"
-                                        class="list-item-result" />
+                                        class="list-item-result"></p>
                                 </li>
                             </ul>
                             <ul class="list-right">
@@ -184,7 +184,7 @@
                                     <p class="list-item-title">Trust rate:</p>
                                     <p
                                         id="rate-result"
-                                        class="list-item-result" />
+                                        class="list-item-result"></p>
                                 </li>
                                 <li class="list-item disposable">
                                     <p class="list-item-title">
@@ -192,7 +192,7 @@
                                     </p>
                                     <p
                                         id="disposable-result"
-                                        class="list-item-result" />
+                                        class="list-item-result"></p>
                                 </li>
                                 <li class="list-item smpt-ca">
                                     <p class="list-item-title">
@@ -200,68 +200,55 @@
                                     </p>
                                     <p
                                         id="catch-result"
-                                        class="list-item-result" />
+                                        class="list-item-result"></p>
                                 </li>
                             </ul>
                         </ul>
                         <div class="results-icons">
-                            <a
-                                href="#"
+                            <a href="#"
                                 class="social-link gravatar"
-                                title="Gravatar" />
-                            <a
-                                href="#"
+                                title="Gravatar">&nbsp;</a>
+                            <a href="#"
                                 class="social-link blogger"
-                                title="Blogger" />
-                            <a
-                                href="#"
+                                title="Blogger" >&nbsp;</a>
+                            <a href="#"
                                 class="social-link facebook"
-                                title="Facebook" />
-                            <a
-                                href="#"
+                                title="Facebook">&nbsp;</a>
+                            <a href="#"
                                 class="social-link foursquare"
-                                title="Foursquare" />
-                            <a
-                                href="#"
+                                title="Foursquare">&nbsp;</a>
+                            <a href="#"
                                 class="social-link google"
-                                title="Google" />
-                            <a
-                                href="#"
+                                title="Google">&nbsp;</a>
+                            <a href="#"
                                 class="social-link github"
-                                title="Github" />
-                            <a
-                                href="#"
+                                title="Github">&nbsp;</a>
+                            <a href="#"
                                 class="social-link linkedin"
-                                title="Linkedin" />
-                            <a
-                                href="#"
+                                title="Linkedin">&nbsp;</a>
+                            <a href="#"
                                 class="social-link tripit"
-                                title="Tripit" />
-                            <a
-                                href="#"
+                                title="Tripit" >&nbsp;</a>
+                            <a href="#"
                                 class="social-link tumblr"
-                                title="Tumblr" />
-                            <a
-                                href="#"
+                                title="Tumblr">&nbsp;</a>
+                            <a href="#"
                                 class="social-link twitter"
-                                title="Twitter" />
-                            <a
-                                href="#"
+                                title="Twitter">&nbsp;</a>
+                            <a href="#"
                                 class="social-link vimeo"
-                                title="Vimeo" />
-                            <a
-                                href="#"
+                                title="Vimeo">&nbsp;</a>
+                            <a href="#"
                                 class="social-link wordpress"
-                                title="Wordpress" />
-                            <a
-                                href="#"
+                                title="Wordpress">&nbsp;</a>
+                            <a href="#"
                                 class="social-link youtube"
-                                title="Youtube" />
+                                title="Youtube">&nbsp;</a>
                         </div>
                         <button
                             type="button"
                             id="close-btn"
-                            class="close-results" />
+                            class="close-results"></button>
                     </div>
                 </form>
             </div>
