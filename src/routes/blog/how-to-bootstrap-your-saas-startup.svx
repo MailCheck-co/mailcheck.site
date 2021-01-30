@@ -14,7 +14,7 @@ desc: Every project starts with an idea, and every idea eventually converts into
 
 In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples
 of email API application as well as discussed the benefits of using email API.
-Click [here](/blog/emails-validation-api) to find out more.
+Click [here](/blog/emails-validation-api-increase-ecommerce-conversion) to find out more.
 
 Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to
 successful project implementation. In a software product development, an idea constitutes just a minor part and the

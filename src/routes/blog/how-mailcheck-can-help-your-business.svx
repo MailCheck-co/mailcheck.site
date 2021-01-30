@@ -1,6 +1,6 @@
 ---
 layout: blog
-slug: mailcheck-can-help
+slug: how-mailcheck-can-help-your-business
 title: How Mailcheck can help your business
 date: 15.05.2020
 readingTime: 3 min read

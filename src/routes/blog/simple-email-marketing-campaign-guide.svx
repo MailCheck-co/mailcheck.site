@@ -1,6 +1,6 @@
 ---
 layout: blog
-slug: simple-email-marketing
+slug: simple-email-marketing-campaign-guide
 title: Simple Email Marketing Campaign Guide for Small Business
 date: 15.05.2020
 readingTime: 3 min read
@@ -56,7 +56,7 @@ Poor Mailing List
 
 It is better to have small mailing list containing the addresses of users that really want to get your newsletters than a huge base of barely real subscribers that did not confirm getting emails from you.
 
-You can read about the way to keep your mailing list clean [in our article](/blog/emails-deliverability). The main thing you need to know - immediately delete the user if you got the hard bounce for him and the user which has caused a soft bounce more than 3 time a month.
+You can read about the way to keep your mailing list clean [in our article](/blog/x-ways-increase-emails-deliverability). The main thing you need to know - immediately delete the user if you got the hard bounce for him and the user which has caused a soft bounce more than 3 time a month.
 
 Poor Content
 ------------

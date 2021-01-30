@@ -1,6 +1,6 @@
 ---
 layout: blog
-slug: right-approach
+slug: right-approach-to-email-address-validation
 title: The Right Approach to Email Address Validation
 date: 10.04.2019
 readingTime: 3 min read
@@ -87,6 +87,6 @@ There are too much things to do if you want to get assured the addresses you hav
 
 So here is the right approach:
 
-*   follow the tips mentioned above and [listed here](/blog/emails-deliverability)
+*   follow the tips mentioned above and [listed here](/blog/x-ways-increase-emails-deliverability)
 *   use the manual verification services to validate mails from the list
 *   do not worry if the bounce rate doesn’t exceed 2.5-4%.

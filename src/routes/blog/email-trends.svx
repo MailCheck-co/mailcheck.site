@@ -1,6 +1,6 @@
 ---
 layout: blog
-slug: email-trends
+slug: email-marketing-trends
 title: Email Marketing Trends 2019 for Small Business
 date: 26.04.2019
 readingTime: 3 min read
@@ -32,7 +32,7 @@ Mailing services have powerful tools to segmentate and personalize newsletters. 
 Deep Segmentation and Personalization
 -------------------------------------
 
-It always has been a good idea to conduct deep segmentation and personalization for your newsletter. However, it is more than a good idea - it is also possible thanks to the majority of the online tools provided by the email marketing automation tools. We have reviewed personalization in details in [our previous article](/blog/emails-personalization). Still here we will disclose the basic points to consider.
+It always has been a good idea to conduct deep segmentation and personalization for your newsletter. However, it is more than a good idea - it is also possible thanks to the majority of the online tools provided by the email marketing automation tools. We have reviewed personalization in details in [our previous article](/blog/personalize-your-newsletter-and-increase-sales). Still here we will disclose the basic points to consider.
 
 *   personalization can only be successful if you analyse the behaviour and preferences of your users
 *   you also need to consider basic metrics like geo, sex, and age
