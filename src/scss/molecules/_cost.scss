@@ -117,7 +117,7 @@
     touch-action: pan-x;
     scroll-snap-type: x mandatory;
     scroll-padding: 1rem;
-    
+
     &.active {
         scroll-snap-type: unset;
         scroll-behavior: revert;
@@ -200,10 +200,6 @@
     color: $pricing-plan-custom;
 }
 
-.swiper-container {
-    display: none;
-}
-
 .wrapper-cost {
     display: flex;
     flex-wrap: wrap;
@@ -264,33 +260,6 @@
 
     .title-cost::before {
         display: none;
-    }
-
-    .swiper-container {
-        position: relative;
-        display: flex;
-
-        &::before,
-        &::after {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            z-index: 9;
-            display: block;
-            width: 20%;
-            height: 100%;
-            content: "";
-        }
-
-        &::before {
-            left: 0;
-            background-image: $slider-overlay-gradient-left;
-        }
-
-        &::after {
-            right: 0;
-            background-image: $slider-overlay-gradient-right;
-        }
     }
 }
 
