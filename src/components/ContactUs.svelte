@@ -12,7 +12,6 @@
         document.body.classList.remove("fixed");
     };
     const onSubmit = (e) => {
-        e.preventDefault();
         const nameValue = contactForm.querySelector("input[type=text]").value;
         const mailValue = contactForm.querySelector("input[type=email]").value;
         const textareaValue = contactForm.querySelector(".input-message").value;
@@ -62,13 +61,13 @@
     @import "../scss/molecules/popup";
 </style>
 
-<IntersectionObserver {element} bind:intersecting>
+<IntersectionObserver {element} bind:intersecting rootMargin="-100px">
     <section bind:this={element} class:intersecting class="contact-us" id="contact-us">
         <div class="container">
             <form
                 class="contact-form"
                 bind:this={contactForm}
-                on:submit={onSubmit}>
+                on:submit|preventDefault={onSubmit}>
                 <h2 class="title title-contact">contact us</h2>
                 <input class="input" type="text" placeholder="Name" required />
                 <input
@@ -100,7 +99,7 @@
         </p>
     </div>
     <div class="popup" class:open={isError && isOpen}>
-        <span class="popup-close error" />
+        <span class="popup-close error"></span>
         <span class="popup-thanks">Something went wrong!</span>
         <p class="popup-text">Please try again later</p>
     </div>
