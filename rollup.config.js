@@ -137,6 +137,7 @@ export default {
         onwarn,
     },
 
+    /* //todo: service worker disabled, because it fails on blog sometimes
     serviceworker: {
         input: config.serviceworker.input().replace(/\.js$/, '.ts'),
         output: config.serviceworker.output(),
@@ -153,5 +154,5 @@ export default {
 
         preserveEntrySignatures: false,
         onwarn,
-    }
+    }*/
 };
