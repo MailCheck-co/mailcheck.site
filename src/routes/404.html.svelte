@@ -1,26 +1,18 @@
 <script lang="ts">
-	export let status: number;
-	export let error: Error;
     import Seo from "../components/seo.svelte";
-
-	const dev = process.env.NODE_ENV === 'development';
 </script>
 
-
-<Seo title="{status}" />
+<Seo title="Not Found" noindex="true"/>
 <svelte:head>
     <meta http-equiv="refresh" content="5;https://mailcheck.co/">
 </svelte:head>
 <main class="terms" id="terms">
     <div class="container">
         <div class="wrapper-choose">
-            <h1 class="title">Error: {status}</h1>
-            <p class="text-thin art">{error.message}</p>
+            <h1 class="title">Page not found</h1>
+            <p class="text-thin art">Requested page wasn't found</p>
             <p class="text-thin art">You will be redirected to main site in 10 seconds</p>
         </div>
     </div>
 </main>
 
-{#if dev && error.stack}
-	<pre>{error.stack}</pre>
-{/if}
