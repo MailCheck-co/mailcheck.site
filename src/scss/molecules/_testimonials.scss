@@ -4,7 +4,7 @@
 
 .testimonials {
     @include intersection;
-    
+
     padding-top: 120px;
     color: $primary-white;
 }
@@ -33,7 +33,7 @@
 
     &.active {
         scroll-snap-type: unset;
-        scroll-behavior: revert;
+        scroll-behavior: smooth;
     }
 
     &::-webkit-scrollbar {
