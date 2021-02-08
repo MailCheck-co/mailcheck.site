@@ -1,3 +1,11 @@
+<script context="module">
+    export function preload({ params, query }) {
+        return this.fetch(`feed.xml`).then(() => {
+            return this.fetch('sitemap.xml')
+        });
+    }
+</script>
+
 <script lang="typescript">
     import Seo from "../components/seo.svelte"
     import EmailsVerify from "../components/EmailsVerify.svelte";
