@@ -25,6 +25,7 @@
                 <a class="nav-link footer-nav-link" href="/#contact-us">Contact
                     Us</a>
                 <a class="nav-link footer-nav-link" href="/blog">Blog</a>
+                <a class="nav-link footer-nav-link" href="/faq-appsumo">FAQ Appsumo</a>
                 <a class="nav-link footer-nav-link" href="/privacy">Privacy
                     policy</a>
                 <a class="nav-link footer-nav-link" href="/terms">Terms and
