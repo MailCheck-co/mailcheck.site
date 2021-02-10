@@ -6,12 +6,12 @@
     import Seo from "../components/seo.svelte";
 </script>
 
-<Seo title="FAQ Appsumo" canonical="/" />
+<Seo title="FAQ AppSumo" canonical="/faq" />
 
 <!--Questions-->
 <section id="faq-appsumo" class="frequent-questions faq-page">
     <div class="wrapper-questions">
-        <h3 class="title-small">FAQ Appsumo</h3>
+        <h3 class="title-small">FAQ AppSumo</h3>
 
         <div class="accordion">
             <div class="accordion-column">
@@ -41,7 +41,7 @@
                         <p class="tab-text">
                             We have several solutions,
 
-                            <br /><br />1) If you are using WordPress, you can install our plugin https://wordpress.org/plugins/mailcheck-co/ and set it up on your website, we're constantly updating our code, so you can fully rely on us. 
+                            <br /><br />1) If you are using WordPress, you can install our plugin https://wordpress.org/plugins/mailcheck-co/ and set it up on your website, we're constantly updating our code, so you can fully rely on us.
 
                             <br /><br />2)Use our API to simply copy and paste within the website https://app.mailcheck.co/docs#tag--email
                         </p>
@@ -100,7 +100,7 @@
                     <label class="tab-label" for="radio6">I've chosen mistakenly one of your active plans, can you switch me back to AppSumo promo?</label>
                     <div class="tab-content">
                         <p class="tab-text">
-                            Please note, in order to proceed through the additional security checks and switch back to the previous plan you need to contact security@mailcheck.co 
+                            Please note, in order to proceed through the additional security checks and switch back to the previous plan you need to contact security@mailcheck.co
                         </p>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <label class="tab-label" for="radio7">I want my monthly limits to be increased, what should I do?</label>
                     <div class="tab-content">
                         <p class="tab-text">
-                            Unfortunately, during the campaign we are not able to increase the limits, as the solution we suggest increasing the limits in 2 weeks as the AppSumo campaign ends, 
+                            Unfortunately, during the campaign we are not able to increase the limits, as the solution we suggest increasing the limits in 2 weeks as the AppSumo campaign ends,
                         </p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                     <label class="tab-label" for="radio8">Can I verify all 1 200 000 emails at once?</label>
                     <div class="tab-content">
                         <p class="tab-text">
-                            Unfortunately, during the campaign we are not able to increase the limits, as the solution we suggest increasing the limits in 2 weeks as the AppSumo campaign ends, 
+                            Unfortunately, during the campaign we are not able to increase the limits, as the solution we suggest increasing the limits in 2 weeks as the AppSumo campaign ends,
                         </p>
                     </div>
                 </div>

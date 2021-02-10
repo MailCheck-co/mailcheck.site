@@ -7,7 +7,7 @@
     let active = false;
     let startX;
     let scrollLeft;
-    const SCROLL_SPEED = 2;
+    const SCROLL_SPEED = 1;
 
     function onMouseDown(e) {
         active = true;
