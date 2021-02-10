@@ -13,9 +13,6 @@ desc: Now days it's pretty simple task to launch mail server at home. Tools like
 {readingTime}
 
 
-Why hosting email at home isn't good idea
-=========================================
-
 Now days it's pretty simple task to launch mail server at home. Tools like docker and virtualization can help us to run MTA in a few minutes. But you shouldn't. SMTP wasn't designed in secure manner and SPAM is q global problem for that old standard.
 
 In times of old web there was lots of small mail providers, but with evolution of web most of the mails concentrated at big email providers, like Gmail, Hotmail etc.
