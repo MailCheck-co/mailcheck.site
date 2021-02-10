@@ -14,7 +14,7 @@ desc: Cold emailing is in a way an analog of cold calling - you have one generic
 
 Cold emailing is in a way an analog of cold calling - you have one generic message composed and you want to deliver it to a large audience, and, ideally, get a warm response to it. Cold emailing has some cons making it a type of message no one wants to either send or receive. Nonetheless, it is not something you as a business should stay away from. Cold emailing is one of the oldest marketing tools and if crafter and used correctly cold emails can generate new leads and revenues. Let’s dive deeper and see why cold emailing shouldn’t be avoided and how to make it work.
 
-![cold emails](../../assets/img/cold-emails.png)
+![cold emails](../../assets/img/cold-emails.jpg)
 
 Source: WordStream
 
@@ -33,7 +33,7 @@ Templates are super convenient, no doubt. However, this is just the simplest of 
 
 The goal of a cold email is to reach a broad audience with one single message - a complete opposite of a personalized email. But this does not mean that cold emails cannot be personalized. No one is forbidding you to research several templates, pick a phrase from here and there. But make sure you make it personal. Show your customers that you’ve made a research on what they like, that you put some effort into getting to know them. By adding things like your customer’s name or their interest you will make your customer feel like you are sending a one-off email rather than sending them a generic message from a big blast. With personalized emails, you can double your replies. According to Woodpecker, personalized emails garnered a 17% reply rate, more than double the 7% reply rate for impersonal emails. Yes, it’s a little extra work, but the return is absolutely worth it.
 
-![lighthouse for email marketing](../../assets/img/lighthouse.png)
+![lighthouse for email marketing](../../assets/img/lighthouse.jpg)
 
 Source: LeadFuse
 
