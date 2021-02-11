@@ -25,16 +25,17 @@
                 <a class="nav-link footer-nav-link" href="/#contact-us">Contact
                     Us</a>
                 <a class="nav-link footer-nav-link" href="/blog">Blog</a>
-                <a class="nav-link footer-nav-link" href="/privacy">Privacy
-                    policy</a>
-                <a class="nav-link footer-nav-link" href="/terms">Terms and
-                    conditions</a>
-                <a class="nav-link footer-nav-link" href="//nodeart.io">Product
-                    of NodeArt</a>
                 <a
                     class="nav-link footer-nav-link"
                     href="https://app.mailcheck.co/docs#tag--email"
                     target="_blank">API</a>
+                <a class="nav-link footer-nav-link" href="/privacy">Privacy
+                    policy</a>
+                <a class="nav-link footer-nav-link" href="/terms">Terms and
+                    conditions</a>
+                <a class="nav-link footer-nav-link" href="/cookies">Cookie policy</a>
+                <a class="nav-link footer-nav-link" href="//nodeart.io">Product
+                    of NodeArt</a>
             </nav>
             <div class="footer-social-mobile">
                 <a

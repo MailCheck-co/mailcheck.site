@@ -5,265 +5,604 @@
     const desc = "Privacy Policy";
 </script>
 
-<Seo desc={desc} title="PRIVACY" noindex="true"/>
+<Seo {desc} title="PRIVACY" noindex="true" />
 
 <main class="terms" id="privacy">
-  <div class="container">
-    <div class="content-block">
+    <div class="container">
+        <div class="content-block">
+            <h1 class="title">Privacy Policy</h1>
 
-      <h1 class="title">Privacy Policy</h1>
-      <p class="text-thin terms-text">Mailcheck ensures that your data is completely protected, never sold, shared or
-        marketed to. As part of being transparent, you have complete control over your data and what is publicly
-        available. Your privacy matters to Mailcheck. Whether you are new to Mailcheck or a long-time user, please
-        take the time to get to know our practices.</p>
+            <p class="text-thin terms-text">
+                Thank you for choosing to be part of our community at OSA
+                Management LLP, doing business as Mailcheck (“Mailcheck”, “we”,
+                “us”, or “our”). We are committed to protecting your personal
+                information and your right to privacy. If you have any questions
+                or concerns about our policy, or our practices with regards to
+                your personal information, please contact us at s@mailcheck.co.
+                When you visit our website
+                <a
+                    class="text-thin text-thin-link"
+                    href="https://www.mailcheck.co/">mailcheck.co</a>, and use
+                our services, you trust us with your personal information. We
+                take your privacy very seriously. In this privacy notice, we
+                describe our privacy policy. We seek to explain to you in the
+                clearest way possible what information we collect, how we use it
+                and what rights you have in relation to it. We hope you take
+                some time to read through it carefully, as it is important. If
+                there are any terms in this privacy policy that you do not agree
+                with, please discontinue use of our Sites and our services.
+            </p>
+            <p class="text-thin terms-text">
+                This privacy policy applies to all information collected through
+                our website (such as
+                <a
+                    class="text-thin text-thin-link"
+                    href="https://www.mailcheck.co/">mailcheck.co</a>), and/or
+                any related services, sales, marketing or events (we refer to
+                them collectively in this privacy policy as the "Sites"). Please
+                read this privacy policy carefully as it will help you make
+                informed decisions about sharing your personal information with
+                us.
+            </p>
+            <h2 class="text-thin subtitle">TABLE OF CONTENTS</h2>
+            1. WHAT INFORMATION DO WE COLLECT? 2. HOW DO WE USE YOUR
+            INFORMATION? 3. WILL YOUR INFORMATION BE SHARED WITH ANYONE? 4. WHO
+            WILL YOUR INFORMATION BE SHARED WITH? 5. DO WE USE COOKIES AND OTHER
+            TRACKING TECHNOLOGIES? 6. HOW DO WE HANDLE YOUR SOCIAL LOGINS? 7.
+            WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES? 8. HOW LONG DO WE KEEP
+            YOUR INFORMATION? 9. HOW DO WE KEEP YOUR INFORMATION SAFE? 10. DO WE
+            COLLECT INFORMATION FROM MINORS? 11. WHAT ARE YOUR PRIVACY RIGHTS?
+            12. CONTROLS FOR DO-NOT-TRACK FEATURES 13. DO CALIFORNIA RESIDENTS
+            HAVE SPECIFIC PRIVACY RIGHTS? 14. DO WE MAKE UPDATES TO THIS POLICY?
+            15. HOW CAN YOU CONTACT US ABOUT THIS POLICY?
 
-      <h2 class="text-thin subtitle">Definitions</h2>
-      <p class="text-thin terms-text">Mailcheck (“Mailcheck”, the “Service”, “We”, or “Us”) is an email verification
-        service offered through the URL <a class="text-thin text-thin-link" href="https://www.mailcheck.co">www.mailcheck.co</a>
-        (or the “Website”), or any of its related apps, APIs, or partners. Mailcheck is owned and operated by OSA
-        Management LLP. The “Customer” means “you”, as a customer of the Service, or a representative of an entity that
-        is a customer of the Service.</p>
+            <h2 class="text-thin subtitle">
+                1. WHAT INFORMATION DO WE COLLECT?
+            </h2>
 
-      <h2 class="text-thin subtitle">Changes</h2>
-      <p class="text-thin terms-text">Mailcheck reserves the right to update our Privacy Policy from time to time and as
-        needed. Any changes to this Privacy Policy will be effective upon delivery to the last email address provided
-        by the Customer or posted on our Website, whichever date is later.</p>
-      <p class="text-thin terms-text">If you object to our Privacy Policy or the changes made hereafter, we require
-        written notification stating so, and your account will be terminated upon such date as we receive this
-        notification.</p>
+            <p class="text-thin terms-text">
+                Personal information you disclose to us In Short: We collect
+                personal information that you provide to us such as name,
+                address, contact information, passwords and security data,
+                payment information, and social media login data. We collect
+                personal information that you voluntarily provide to us when
+                registering at the Sites expressing an interest in obtaining
+                information about us or our products and services, when
+                participating in activities on the Sites or otherwise contacting
+                us. The personal information that we collect depends on the
+                context of your interactions with us and the Sites, the choices
+                you make and the products and features you use. The personal
+                information we collect can include the following: Name and
+                Contact Data. We collect your first and last name, email
+                address, postal address, phone number, and other similar contact
+                data. Credentials. We collect passwords, password hints, and
+                similar security information used for authentication and account
+                access. Payment Data. We collect data necessary to process your
+                payment if you make purchases, such as your payment instrument
+                number (such as a credit card number), and the security code
+                associated with your payment instrument. All payment data is
+                stored by our payment processor Stripe and you should review its
+                privacy policies and contact the payment processor directly to
+                respond to your questions
+                <a
+                    class="text-thin text-thin-link"
+                    href="https://stripe.com/privacy">stripe.com/privacy</a>.
+                Social Media Login Data. We provide you with the option to
+                register using social media account details, like your Facebook,
+                Google. If you choose to register in this way, we will collect
+                the Information described in the section called "HOW DO WE
+                HANDLE YOUR SOCIAL LOGINS" below. All personal information that
+                you provide to us must be true, complete and accurate, and you
+                must notify us of any changes to such personal information.
+            </p>
+            <p class="text-thin terms-text">
+                Information automatically collected
+            </p>
+            <p class="text-thin terms-text">
+                In Short: Some information – such as IP address and/or browser
+                and device characteristics – is collected automatically when you
+                visit our Sites.
+            </p>
+            <p class="text-thin terms-text">
+                We automatically collect certain information when you visit, use
+                or navigate the Sites. This information does not reveal your
+                specific identity (like your name or contact information) but
+                may include device and usage information, such as your IP
+                address, browser and device characteristics, operating system,
+                language preferences, referring URLs, device name, country,
+                location, information about how and when you use our Sites and
+                other technical information. This information is primarily
+                needed to maintain the security and operation of our Sites, and
+                for our internal analytics and reporting purposes.
+            </p>
+            <p class="text-thin terms-text">
+                Like many businesses, we also collect information through
+                cookies and similar technologies.
+            </p>
+            <p class="text-thin terms-text">
+                Information collected from other sources
+            </p>
+            <p class="text-thin terms-text">
+                In Short: We may collect limited data from public databases,
+                marketing partners, social media platforms, and other outside
+                sources.
+            </p>
+            <p class="text-thin terms-text">
+                We may obtain information about you from other sources, such as
+                public databases, joint marketing partners, social media
+                platforms (such as Facebook, Google), as well as from other
+                third parties. Examples of the information we receive from other
+                sources include: social media profile information (your name,
+                gender, birthday, email, current city, state and country, user
+                identification numbers for your contacts, profile picture URL
+                and any other information that you choose to make public);
+                marketing leads and search results and links, including paid
+                listings (such as sponsored links).
+            </p>
+            <h2 class="text-thin subtitle">
+                2. HOW DO WE USE YOUR INFORMATION?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: We process your information for purposes based on
+                legitimate business interests, the fulfillment of our contract
+                with you, compliance with our legal obligations, and/or your
+                consent.
+            </p>
+            <p class="text-thin terms-text">
+                We use personal information collected via our Sites for a
+                variety of business purposes described below. We process your
+                personal information for these purposes in reliance on our
+                legitimate business interests ("Business Purposes"), in order to
+                enter into or perform a contract with you ("Contractual"), with
+                your consent ("Consent"), and/or for compliance with our legal
+                obligations ("Legal Reasons"). We indicate the specific
+                processing grounds we rely on next to each purpose listed below.
+            </p>
+            <p class="text-thin terms-text">
+                We use the information we collect or receive:
+            </p>
+            <p class="text-thin terms-text">
+                To facilitate account creation and login process. If you choose
+                to link your account with us to a third party account *(such as
+                your Google or Facebook account), we use the information you
+                allowed us to collect from those third parties to facilitate
+                account creation and login process. See the section below headed
+                "HOW DO WE HANDLE YOUR SOCIAL LOGINS" for further information.
+            </p>
+            <p class="text-thin terms-text">
+                To send administrative information to you. We may use your
+                personal information to provide you with service and new feature
+                information and/or information about changes to our terms,
+                conditions, and policies.
+            </p>
 
-      <h2 class="text-thin subtitle">Effective Date</h2>
-      <p class="text-thin terms-text">This Privacy Policy is effective with respect to any data collected by Mailcheck
-        in the past, present, and future about and/or for you, according to our Terms of Service.</p>
+            <p class="text-thin terms-text">
+                Fulfill and manage your orders. We may use your information to
+                fulfill and manage your orders, payments, returns, and exchanges
+                made through the Site.
+            </p>
 
-      <h2 class="text-thin subtitle">Transfers</h2>
-      <p class="text-thin terms-text">If we are involved in a merger, acquisition, sale of all or a substantial portion
-        of our assets, or other similar transaction, your information may be transferred as part of that transaction.
-        You will be notified by email and/or a prominent notice display on our Website of any such transaction and the
-        choices you may have regarding your information.</p>
+            <p class="text-thin terms-text">
+                To protect our Site. We may use your information as part of our
+                efforts to keep our Site safe and secure (for example, for fraud
+                monitoring and prevention).
+            </p>
 
-      <h2 class="text-thin subtitle">Questions and Notifications</h2>
-      <p class="text-thin terms-text">If you have any questions, comments, concerns, or advice, we can be contacted at:
-        <br><a class="text-thin text-thin-link" href="mailto:support@mailcheck.co">support@mailcheck.co</a>, or by mail
-        <br>
-        <br><a class="text-thin text-thin-link" href="https://www.mailcheck.co">mailcheck.co</a> / OSA Management LLP.
-        <br>SUITE 7059,
-        <br>10 GREAT RUSSELL STREET, LONDON
-        <br>ENGLAND, WC1B 3BQ</p>
+            <p class="text-thin terms-text">
+                To enforce our terms, conditions and policies.
+            </p>
 
-      <h2 class="text-thin subtitle">Personal Information</h2>
-      <p class="text-thin terms-text">In the course of using the Services, we ask you to provide us with certain
-        personally identifiable information that can be used to contact or identify you and administer your account
-        (“Personally Identifiable Information”). This may include, but is not limited to, your name, phone number,
-        credit card or other billing information, email address and postal address.</p>
-      <p class="text-thin terms-text">If you elect to link an email service provider (ESP) account, we may also collect
-        information about that account, including username and password, campaign history, and any other information or
-        credentials necessary to provide the Mailcheck Service.</p>
+            <p class="text-thin terms-text">
+                To respond to legal requests and prevent harm. If we receive a
+                subpoena or other legal request, we may need to inspect the data
+                we hold to determine how to respond.
+            </p>
 
-      <h2 class="text-thin subtitle">Non-Personal Information from your Use of the Service</h2>
-      <p class="text-thin terms-text">In the course of using the Services, we may collect non-personal information
-        relating to how and when you use the Services. This information may include your IP address, user-ID, time,
-        date, browser used, actions taken by you within the application, and the web page you were previously visiting
-        before traveling to our Website and our use of cookies and web beacons.</p>
+            <p class="text-thin terms-text">
+                For other Business Purposes. We may use your information for
+                other Business Purposes, such as data analysis, identifying
+                usage trends, determining the effectiveness of our promotional
+                campaigns and to evaluate and improve our Site, product,
+                services, marketing and your experience.
+            </p>
+            <h2 class="text-thin subtitle">
+                3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: We only share information with your consent, to comply
+                with laws, to protect your rights, or to fulfill business
+                obligations.
+            </p>
+            <p class="text-thin terms-text">
+                We may process or share data based on the following legal basis:
+            </p>
+            <p class="text-thin terms-text">
+                Consent: We may process your data if you have given us specific
+                consent to use your personal information in a specific purpose.
+            </p>
 
-      <h2 class="text-thin subtitle">Accessing or Deleting Personal Information</h2>
-      <p class="text-thin terms-text">Users may access or change your personally identifiable information at any time by
-        logging into your account and clicking Settings &rarr; Update profile or Set Billing Card.</p>
-      <p class="text-thin terms-text">For as long as a user holds an account, all account data including Personal
-        Identifiable Information will be securely stored in our database. Users may choose to close their account upon
-        request by emailing <a class="text-thin text-thin-link"
-                               href="mailto:support@mailcheck.co">support@mailcheck.co</a>. We will disable your account
-        within 48 hours of the request, but will not fully delete your personal information until we have collected any
-        overdue payments, solved disputes, or taken any actions as required by law within 1 year. We partner with a
-        third party to process payments. Payment information cannot be deleted upon deactivation.</p>
+            <p class="text-thin terms-text">
+                Legitimate Interests: We may process your data when it is
+                reasonably necessary to achieve our legitimate business
+                interests.
+            </p>
 
-      <h2 class="text-thin subtitle">Public Information</h2>
-      <p class="text-thin terms-text">Mailcheck also collects information that is publicly accessible (“Publicly
-        Identifiable Information”). Publicly Identifiable Information (e.g. information available to search engines),
-        may include social network profiles not set to ‘private’ or information on a social networking page visible to
-        users who are not logged in. If you do not want to be searched or indexed by search engines or services like
-        Mailcheck, we recommend that you set appropriate privacy controls within social networks and third-party
-        applications such as Facebook, Twitter and LinkedIn. You can learn how to do this by visiting these sites
-        directly.</p>
+            <p class="text-thin terms-text">
+                Performance of a Contract: Where we have entered into a contract
+                with you, we may process your personal information to fulfill
+                the terms of our contract.
+            </p>
 
-      <h2 class="text-thin subtitle">List and Email Information</h2>
-      <p class="text-thin terms-text">When you upload an email list or link an ESP account on our Website or any of our
-        affiliated Services, we have access to the data on your lists, such as email addresses and contact names.</p>
+            <p class="text-thin terms-text">
+                Legal Obligations: We may disclose your information where we are
+                legally required to do so in order to comply with applicable
+                law, governmental requests, a judicial proceeding, court order,
+                or legal process, such as in response to a court order or a
+                subpoena (including in response to public authorities to meet
+                national security or law enforcement requirements).
+            </p>
 
-      <h2 class="text-thin subtitle">Cookies</h2>
-      <p class="text-thin terms-text">Mailcheck uses cookies, which are strings of code that we transfer to your
-        computer’s hard disk for record-keeping purposes, such as saving your username and login password for future
-        logins or to monitor web traffic routing to our Website and aggregate usage of the Services. You may turn off
-        cookies that have been placed on your computer by following the instructions for your browser. Please be aware
-        that by not accepting cookies, you may not be able to use all portions of the Sites or all functionality of the
-        Services. Our cookies are tied to Personally Identifiable Information.</p>
+            <p class="text-thin terms-text">
+                Vital Interests: We may disclose your information where we
+                believe it is necessary to investigate, prevent, or take action
+                regarding potential violations of our policies, suspected fraud,
+                situations involving potential threats to the safety of any
+                person and illegal activities, or as evidence in litigation in
+                which we are involved.
+            </p>
+            <p class="text-thin terms-text">
+                More specifically, we may need to process your data or share
+                your personal information in the following situations:
+            </p>
+            <p class="text-thin terms-text">
+                Vendors, Consultants and Other Third-Party Service Providers. We
+                may share your data with third party vendors, service providers,
+                contractors or agents who perform services for us or on our
+                behalf and require access to such information to do that work.
+                Examples include: payment processing, data analysis, email
+                delivery, hosting services, customer service and marketing
+                efforts. We may allow selected third parties to use tracking
+                technology on the Sites, which will enable them to collect data
+                about how you interact with the Sites over time. This
+                information may be used to, among other things, analyze and
+                track data, determine the popularity of certain content and
+                better understand online activity. Unless described in this
+                Policy, we do not share, sell, rent or trade any of your
+                information with third parties for their promotional purposes.
+            </p>
 
-      <h2 class="text-thin subtitle">Third Party Tracking</h2>
-      <p class="text-thin terms-text">The use of cookies or web beacons by our partners, affiliates, tracking utility
-        companies, or service providers is not covered by our privacy policy. We have no access or control over these
-        third-party tracking technologies.</p>
+            <p class="text-thin terms-text">
+                Business Transfers. We may share or transfer your information in
+                connection with, or during negotiations of, any merger, sale of
+                company assets, financing, or acquisition of all or a portion of
+                our business to another company.
+            </p>
+            <h2 class="text-thin subtitle">
+                4. WHO WILL YOUR INFORMATION BE SHARED WITH?
+            </h2>
 
-      <h2 class="text-thin subtitle">Behavioral Targeting / Re-Targeting</h2>
-      <p class="text-thin terms-text">Mailcheck partners with a third party ad network to either display advertising on
-        our Website or to manage our advertising on other sites. Our ad network partner uses Cookies and Web Beacons to
-        collect non-personally identifiable information about your activities on this and other Websites to provide you
-        targeted advertising based upon your interests. If you do not wish to have this information used for the purpose
-        of serving you targeted ads, you may opt-out by disabling cookies located on your computer by following the
-        instructions in your browser. Please note this does not opt you out of being served to advertise. You will
-        continue to receive generic ads.</p>
+            <p class="text-thin terms-text">
+                In Short: We only share information with the following third
+                parties.
+            </p>
+            <p class="text-thin terms-text">
+                We only share and disclose your information with the following
+                third parties. We have categorized each party so that you may be
+                easily understand the purpose of our data collection and
+                processing practices. If we have processed your data based on
+                your consent and you wish to revoke your consent, please contact
+                us s@mailcheck.co.
+            </p>
+            <p class="text-thin terms-text">
+                Allow Users to Connect to their Third-Party Accounts:
+            </p>
+            <p class="text-thin terms-text">
+                Facebook account and Google account
+            </p>
+            <p class="text-thin terms-text">Communicate and Chat with Users:</p>
+            <p class="text-thin terms-text">Tawk.to</p>
+            <p class="text-thin terms-text">Content Optimization:</p>
+            <p class="text-thin terms-text">
+                Gravatar, MailChimp widget plugin, Reply.io, and YouTube video
+                embed
+            </p>
+            <p class="text-thin terms-text">
+                Functionality and Infrastructure Optimization:
+            </p>
+            <p class="text-thin terms-text">Google Cloud Storage</p>
+            <p class="text-thin terms-text">Invoice and Billing:</p>
+            <p class="text-thin terms-text">Stripe</p>
+            <p class="text-thin terms-text">Web and Mobile Analytics:</p>
+            <p class="text-thin terms-text">Yandex Metrica</p>
+            <p class="text-thin terms-text">Registration/login:</p>
+            <p class="text-thin terms-text">Google Oauth, Facebook Oauth</p>
+            <p class="text-thin terms-text">Advertising:</p>
+            <p class="text-thin terms-text">
+                Use of Facebook Pixels, Google Ad
+            </p>
 
-      <h2 class="text-thin subtitle">Children</h2>
-      <p class="text-thin terms-text">Mailcheck does not knowingly collect Personally Identifiable Information from
-        children under 13. If a parent or guardian becomes aware that his or her child has provided us with Personally
-        Identifiable Information without their consent, please contact us at
-        <a class="text-thin text-thin-link" href="mailto:support@mailcheck.co">support@mailcheck.co</a>.
-        If we become aware that a child under 13 has provided us with Personal Information, we will delete such
-        information from our files.</p>
-
-      <h2 class="text-thin subtitle">Mailcheck will never sell or share the Personal Identifiable Information you
-        provide us with to other organizations for their marketing or promotional uses without your express consent.
-        Mailcheck will only ever use and disclose your Personal Information for the following purposes:</h2>
-
-      <ol class="text-thin terms-text numbered-list">
-        <li>To bill and collect money owed to us. This includes sending you emails, invoices, receipts, alerting you to
-          expired credit cards and requesting new billing information. We use third parties for secure credit card
-          transaction processing, and we send billing information to those third parties to process your orders and
-          credit card payments.
-        </li>
-        <li>To send you service announcements. For example, we may notify you of changes to our Privacy Policy, or
-          changes to our Service, such as planned outages, maintenance, new features, releases, or updates.
-        </li>
-        <li>To provide customer support.</li>
-        <li>To support and improve the Services we offer. This includes features and content.</li>
-        <li>To communicate with you about your account - for informational, and not promotional, reasons. This includes
-          responses to any potential requests you may make.
-        </li>
-        <li>To send you informational and promotional content that you may choose (or "opt in") to receive. You can stop
-          receiving our promotional emails by following the unsubscribe instructions included in every email.
-        </li>
-        <li>To transfer your information in the case of a sale, merger, consolidation, or acquisition. In such an event,
-          any acquirer will be subject to our obligation under this Privacy Policy.
-        </li>
-        <li>To enforce compliance with our Terms of Service and applicable law. This may include developing tools and
-          algorithms that help us prevent violations.
-        </li>
-        <li>To protect the rights and safety of our Customers and third parties, as well as our own.</li>
-        <li>To meet legal requirements, such as complying with court orders.</li>
-        <li>To provide information to representatives and advisors, such as attorneys and accountants, to help us comply
-          with legal, accounting, or security requirements.
-        </li>
-        <li>To prosecute and defend a court, arbitration, or similar proceeding.</li>
-      </ol>
-      <p class="text-thin terms-text">If you decide at any time that you no longer wish to receive such communications,
-        please follow the unsubscribe instructions provided in any of the communications, or contact us at <a
-            class="text-thin text-thin-link" href="mailto:support@mailcheck.co">support@mailcheck.co</a> to remove your
-        information from our database.</p>
-
-      <h2 class="text-thin subtitle">Testimonials</h2>
-      <p class="text-thin terms-text">We display personal testimonials of satisfied customers on our site in addition to
-        other endorsements. With your consent, we may post your testimonial along with your name. If you wish to update
-        or delete your testimonial, you can contact us at <a class="text-thin text-thin-link"
-                                                             href="mailto:support@mailcheck.co">support@mailcheck.co</a>.
-        If you provide us with comments or feedback we may collect your name and email address, as well as any other
-        content included in the email to send you a reply and improve our Service.</p>
-      <p class="text-thin terms-text">Mailcheck may copy, modify, create derivative works, display, disclose,
-        distribute, and use these testimonials and any feedback provided by Customers regarding the APIs or the Services
-        without any obligation to compensation.</p>
-
-      <h2 class="text-thin subtitle">Social Media Widgets</h2>
-      <p class="text-thin terms-text">Our Website includes Social Media Features, such as the Facebook or LinkedIn
-        ‘Share’ buttons. These Features may collect your IP address, which page you are visiting on our site, and may
-        set a cookie to enable the feature to function properly. Social Media Features and Widgets are either hosted by
-        a third party or hosted directly on our site. Your interactions with these features are governed by the privacy
-        policies of the companies that provide them.</p>
-
-      <h2 class="text-thin subtitle">Links to Other Sites</h2>
-      <p class="text-thin terms-text">Mailcheck and its Services contain links to other websites. If you choose to click
-        on these third-party links, you will be directed to that third party’s website. The fact that we link to a
-        website is not an endorsement, authorization or representation of affiliation, nor is it an endorsement of a
-        third party’s privacy or information security policies or practices. We do not exercise control over third party
-        websites. These other websites may place their own cookies or other files on your computer, collect data or
-        solicit personal information from you. Other websites and services follow different rules regarding the use or
-        disclosure of the personal information you submit to them. We encourage you to read the privacy policies or
-        statements of the other websites you visit.</p>
-
-      <h2 class="text-thin subtitle">Aggregate Information and Non-Identifying Information</h2>
-      <p class="text-thin terms-text">We may share aggregated information that includes non-identifying information,
-        Publicly Identifiable Information and information derived from the use of third-party tracking technologies with
-        third parties for analysis and profiling. Any aggregated information shared in these contexts will not contain
-        your Personally Identifiable Information.</p>
-
-      <h2 class="text-thin subtitle">Service Providers</h2>
-      <p class="text-thin terms-text">We may employ third party companies and individuals to facilitate the Services, to
-        provide the Services on our behalf, to perform services related to administration of the Services (including,
-        without limitation, bill and credit card payment processing, chat support, maintenance, hosting and database
-        management services, Site and Services support, web analytics and administration). These third parties may have
-        access to your Personally Identifiable Information only to perform these tasks on our behalf and are obligated
-        not to disclose or use it for any other purpose. Transfers to subsequent third parties are covered by the
-        provisions in this Policy regarding notification.</p>
-
-      <h2 class="text-thin subtitle">Your Email Lists</h2>
-      <p class="text-thin terms-text">When you upload an email list, whether manually or via one of our Partner
-        services, Mailcheck has access to information in your list, including but not limited to email addresses, IP
-        addresses, and/or first and last names, for the purpose of delivering verification results related to this
-        data.</p>
-      <p class="text-thin terms-text">Your subscriber lists are stored on secure Mailcheck servers. We have not, nor
-        will we ever, under any circumstances, contact people on your lists, market to people on your lists, or sell,
-        steal, rent, or share your lists with any other party, except if required by law. Only authorized employees have
-        access to view your lists.</p>
-
-      <h2 class="text-thin subtitle">Safeguarding Your Information</h2>
-      <p class="text-thin terms-text">We use encryption, access controls, and data security policies to protect your
-        passwords, credit card numbers and email lists. When you enter sensitive information (such as login credentials
-        or credit card information) we encrypt the transmission of that information using Secure Socket Layer technology
-        (SSL). Your Credit Card Data is protected using controls compliant with Payment Card Industry (or PCI) security
-        standards.</p>
-      <p class="text-thin terms-text">While we strive to use commercially acceptable means to protect sensitive
-        information, we cannot guarantee its absolute security. With this in mind, you must keep access to your account
-        secure and undisclosed. Mailcheck does not store plaintext passwords, and cannot see yours. We cannot send a
-        forgotten password, but we will reset it and notify you of the change to your account.</p>
-
-      <h2 class="text-thin subtitle">Notice of Security Breach</h2>
-      <p class="text-thin terms-text">Should an unauthorized intrusion to our system occur which affects you or people
-        on your Email Lists, Mailcheck will notify you as soon as reasonably possible, consistent with the legitimate
-        needs of law enforcement or with any measures necessary to determine the scope of the breach and restore the
-        reasonable integrity, security, and confidentiality of the Service and your data. The Customer will be notified
-        with documentation of such an event and the actions we took in response.</p>
-
-      <h2 class="text-thin subtitle">GDPR</h2>
-      <p class="text-thin terms-text">Our primary goal from the beginning has always been to not only offer the highest
-        quality verification processes but also assure you that your data is always securely protected in the process.
-        Mailcheck complies with General Data Protection Regulation (GDPR) which is designed to protect data and privacy
-        for all individuals in the European Union. Mailcheck is fully in compliance with GDPR and strives to always
-        provide you with the ease of knowing your data is strictly secured in our highly secured encrypted servers.</p>
-
-      <h2 class="text-thin subtitle">Accuracy</h2>
-      <p class="text-thin terms-text">Mailcheck takes pride in delivering information that is accurate to the best of
-        our knowledge. The Customer is responsible for keeping both their personal data and email list data accurate and
-        up to date. Any changes to the Customer’s Personally Identifiable Information should be promptly updated by the
-        Customer through their account profile on the Website or by notifying Mailcheck. Changes to the Customer’s email
-        list data should be promptly updated by the Customer through their own means.</p>
-
-      <h2 class="text-thin subtitle">Retention</h2>
-      <p class="text-thin terms-text">Mailcheck will retain and use Personal Identifiable Information for as long as
-        necessary to comply with our financial and legal obligations, resolve disputes, and enforce our agreements.</p>
-      <p class="text-thin terms-text">Mailcheck will retain email list data processed on behalf of our Customers for as
-        long as reasonably required to provide the Services under which we were initially provided this information,
-        subject to this Privacy Policy and the Terms of Service. The Customer has 30 days to download data results
-        provided as a result of use of the Service, after which this data may no longer be available for download.</p>
-      <p class="text-thin terms-text">Mailcheck may also keep some non-personally identifiable data indefinitely,
-        relating to when and where emails were sent, which bounced, which resulted in a complaint, and similar
-        information, for reasons explained in this policy.</p>
-
-      <h2 class="text-thin subtitle">Enforcement</h2>
-      <p class="text-thin terms-text">Mailcheck cooperates with government and law enforcement officials and private
-        parties to enforce and comply with the law. We will disclose any information about you to government or law
-        enforcement officials as we, in our sole discretion, believe necessary or appropriate to respond to claims and
-        legal process (including but not limited to subpoenas), to protect the property and rights of Mailcheck or a
-        third party, to protect the safety of the public or any person, or to prevent or stop any activity we may
-        consider to be, or to pose a risk of being, illegal, unethical, inappropriate or legally actionable.</p>
+            <h2 class="text-thin subtitle">
+                5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: We may use cookies and other tracking technologies to
+                collect and store your information.
+            </p>
+            <p class="text-thin terms-text">
+                We may use cookies and similar tracking technologies (like web
+                beacons and pixels) to access or store information. Specific
+                information about how we use such technologies and how you can
+                refuse certain cookies is set out in our Cookie Policy.
+            </p>
+            <h2 class="text-thin subtitle">
+                6. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: If you choose to register or log in to our websites
+                using a social media account, we may have access to certain
+                information about you.
+            </p>
+            <p class="text-thin terms-text">
+                Our Sites offer you the ability to register and login using your
+                third party social media account details (like your Facebook or
+                Google logins). Where you choose to do this, we will receive
+                certain profile information about you from your social media
+                provider. The profile Information we receive may vary depending
+                on the social media provider concerned, but will often include
+                Your name, email address, profile picture, language preference,
+                gender, birthday, location, other info published on Facebook,
+                Google.
+            </p>
+            <p class="text-thin terms-text">
+                We will use the information we receive only for the purposes
+                that are described in this privacy policy or that are otherwise
+                made clear to you on the
+                <a
+                    class="text-thin text-thin-link"
+                    href="https://www.mailcheck.co/">mailcheck.co</a>. Please
+                note that we do not control, and are not responsible for, other
+                uses of your personal information by your third party social
+                media provider. We recommend that you review their privacy
+                policy to understand how they collect, use and share your
+                personal information, and how you can set your privacy
+                preferences on their sites and apps.
+            </p>
+            <h2 class="text-thin subtitle">
+                7. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: We are not responsible for the safety of any
+                information that you share with third-party providers who
+                advertise, but are not affiliated with, our websites.
+            </p>
+            <p class="text-thin terms-text">
+                The Sites may contain advertisements from third parties that are
+                not affiliated with us and which may link to other websites,
+                online services or mobile applications. We cannot guarantee the
+                safety and privacy of data you provide to any third parties. Any
+                data collected by third parties is not covered by this privacy
+                policy. We are not responsible for the content or privacy and
+                security practices and policies of any third parties, including
+                other websites, services or applications that may be linked to
+                or from the Sites. You should review the policies of such third
+                parties and contact them directly to respond to your questions.
+            </p>
+            <h2 class="text-thin subtitle">
+                8. HOW LONG DO WE KEEP YOUR INFORMATION?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: We keep your information for as long as necessary to
+                fulfill the purposes outlined in this privacy policy unless
+                otherwise required by law.
+            </p>
+            <p class="text-thin terms-text">
+                We will only keep your personal information for as long as it is
+                necessary for the purposes set out in this privacy policy,
+                unless a longer retention period is required or permitted by law
+                (such as tax, accounting or other legal requirements). No
+                purpose in this policy will require us keeping your personal
+                information for longer than 2 years past the termination of the
+                user's account.
+            </p>
+            <p class="text-thin terms-text">
+                When we have no ongoing legitimate business need to process your
+                personal information, we will either delete or anonymize it, or,
+                if this is not possible (for example, because your personal
+                information has been stored in backup archives), then we will
+                securely store your personal information and isolate it from any
+                further processing until deletion is possible.
+            </p>
+            <h2 class="text-thin subtitle">
+                9. HOW DO WE KEEP YOUR INFORMATION SAFE?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: We aim to protect your personal information through a
+                system of organisational and technical security measures.
+            </p>
+            <p class="text-thin terms-text">
+                We have implemented appropriate technical and organisational
+                security measures designed to protect the security of any
+                personal information we process. However, please also remember
+                that we cannot guarantee that the internet itself is 100%
+                secure. Although we will do our best to protect your personal
+                information, transmission of personal information to and from
+                our Sites is at your own risk. You should only access the
+                services within a secure environment.
+            </p>
+            <h2 class="text-thin subtitle">
+                10. DO WE COLLECT INFORMATION FROM MINORS?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: We do not knowingly collect data from or market to
+                children under 18 years of age.
+            </p>
+            <p class="text-thin terms-text">
+                We do not knowingly solicit data from or market to children
+                under 18 years of age. By using the Sites, you represent that
+                you are at least 18 or that you are the parent or guardian of
+                such a minor and consent to such minor dependent’s use of the
+                Sites. If we learn that personal information from users less
+                than 18 years of age has been collected, we will deactivate the
+                account and take reasonable measures to promptly delete such
+                data from our records. If you become aware of any data we have
+                collected from children under age 18, please contact us at
+                s@mailcheck.co.
+            </p>
+            <h2 class="text-thin subtitle">
+                11. WHAT ARE YOUR PRIVACY RIGHTS?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: In some regions, such as the European Economic Area,
+                you have rights that allow you greater access to and control
+                over your personal information. You may review, change, or
+                terminate your account at any time.
+            </p>
+            <p class="text-thin terms-text">
+                In some regions (like the European Economic Area), you have
+                certain rights under applicable data protection laws. These may
+                include the right (i) to request access and obtain a copy of
+                your personal information, (ii) to request rectification or
+                erasure; (iii) to restrict the processing of your personal
+                information; and (iv) if applicable, to data portability. In
+                certain circumstances, you may also have the right to object to
+                the processing of your personal information. To make such a
+                request, please use the contact details provided below. We will
+                consider and act upon any request in accordance with applicable
+                data protection laws.
+            </p>
+            <p class="text-thin terms-text">
+                If we are relying on your consent to process your personal
+                information, you have the right to withdraw your consent at any
+                time. Please note however that this will not affect the
+                lawfulness of the processing before its withdrawal.
+            </p>
+            <p class="text-thin terms-text">
+                If you are resident in the European Economic Area and you
+                believe we are unlawfully processing your personal information,
+                you also have the right to complain to your local data
+                protection supervisory authority. You can find their contact
+                details here:
+                <a
+                    class="text-thin text-thin-link"
+                    href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">europa.eu</a>
+            </p>
+            <p class="text-thin terms-text">Account Information</p>
+            <p class="text-thin terms-text">
+                If you would at any time like to review or change the
+                information in your account or terminate your account, you can:
+            </p>
+            <ul class="text-thin terms-text">
+                <li>
+                    Log into your account settings and update your user account.
+                </li>
+                <li>Contact us using the contact information provided.</li>
+                <li>
+                    User can contact support team in order to delete an account
+                </li>
+            </ul>
+            <p class="text-thin terms-text">
+                Upon your request to terminate your account, we will deactivate
+                or delete your account and information from our active
+                databases. However, some information may be retained in our
+                files to prevent fraud, troubleshoot problems, assist with any
+                investigations, enforce our Terms of Use and/or comply with
+                legal requirements. Cookies and similar technologies: Most Web
+                browsers are set to accept cookies by default. If you prefer,
+                you can usually choose to set your browser to remove cookies and
+                to reject cookies. If you choose to remove cookies or reject
+                cookies, this could affect certain features or services of our
+                Sites. To opt-out of interest-based advertising by advertisers
+                on our Sites visit
+                <a
+                    class="text-thin text-thin-link"
+                    href="http://www.aboutads.info/choices/">aboutads.info/choices</a>.
+                Opting out of email marketing: You can unsubscribe from our
+                marketing email list at any time by clicking on the unsubscribe
+                link in the emails that we send or by contacting us using the
+                details provided below. You will then be removed from the
+                marketing email list – however, we will still need to send you
+                service-related emails that are necessary for the administration
+                and use of your account. To otherwise opt-out, you may:
+            </p>
+            <ul class="text-thin terms-text">
+                <li>Contact us using the contact information provided.</li>
+                <li>Access your account settings and update preferences.</li>
+                <li>
+                    Note your preferences when you register an account with the
+                    site.
+                </li>
+            </ul>
+            <h2 class="text-thin subtitle">
+                12. CONTROLS FOR DO-NOT-TRACK FEATURES
+            </h2>
+            <p class="text-thin terms-text">
+                Most web browsers and some mobile operating systems and mobile
+                applications include a Do-Not-Track (“DNT”) feature or setting
+                you can activate to signal your privacy preference not to have
+                data about your online browsing activities monitored and
+                collected. No uniform technology standard for recognizing and
+                implementing DNT signals has been finalized. As such, we do not
+                currently respond to DNT browser signals or any other mechanism
+                that automatically communicates your choice not to be tracked
+                online. If a standard for online tracking is adopted that we
+                must follow in the future, we will inform you about that
+                practice in a revised version of this Privacy Policy.
+            </p>
+            <h2 class="text-thin subtitle">
+                13. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: Yes, if you are a resident of California, you are
+                granted specific rights regarding access to your personal
+                information. California Civil Code Section 1798.83, also known
+                as the “Shine The Light” law, permits our users who are
+                California residents to request and obtain from us, once a year
+                and free of charge, information about categories of personal
+                information (if any) we disclosed to third parties for direct
+                marketing purposes and the names and addresses of all third
+                parties with which we shared personal information in the
+                immediately preceding calendar year. If you are a California
+                resident and would like to make such a request, please submit
+                your request in writing to us using the contact information
+                provided below. If you are under 18 years of age, reside in
+                California, and have a registered account with the Sites, you
+                have the right to request removal of unwanted data that you
+                publicly post on the Sites. To request removal of such data,
+                please contact us using the contact information provided below,
+                and include the email address associated with your account and a
+                statement that you reside in California. We will make sure the
+                data is not publicly displayed on the Sites, but please be aware
+                that the data may not be completely or comprehensively removed
+                from our systems.
+            </p>
+            <h2 class="text-thin subtitle">
+                14. DO WE MAKE UPDATES TO THIS POLICY?
+            </h2>
+            <p class="text-thin terms-text">
+                In Short: Yes, we will update this policy as necessary to stay
+                compliant with relevant laws. We may update this privacy policy
+                from time to time. The updated version will be indicated by an
+                updated “Revised” date and the updated version will be effective
+                as soon as it is accessible. If we make material changes to this
+                privacy policy, we may notify you either by prominently posting
+                a notice of such changes or by directly sending you a
+                notification. We encourage you to review this privacy policy
+                frequently to be informed of how we are protecting your
+                information.
+            </p>
+            <h2 class="text-thin subtitle">
+                15. HOW CAN YOU CONTACT US ABOUT THIS POLICY?
+            </h2>
+            <p class="text-thin terms-text">
+                If you have questions or comments about this policy, you may
+                email us at s@mailcheck.co or by post to:
+            </p>
+            <p class="text-thin terms-text">OSA Management LLP</p>
+            <p class="text-thin terms-text">Suite 4005 43 Bedford Street</p>
+            <p class="text-thin terms-text">London, England WC2E 9HA</p>
+            <p class="text-thin terms-text">United Kingdom</p>
+        </div>
     </div>
-  </div>
 </main>
 
-<ContactUs/>
+<ContactUs />
