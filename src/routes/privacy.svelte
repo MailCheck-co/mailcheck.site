@@ -45,16 +45,21 @@
                 us.
             </p>
             <h2 class="text-thin subtitle">TABLE OF CONTENTS</h2>
-            1. WHAT INFORMATION DO WE COLLECT? 2. HOW DO WE USE YOUR
-            INFORMATION? 3. WILL YOUR INFORMATION BE SHARED WITH ANYONE? 4. WHO
-            WILL YOUR INFORMATION BE SHARED WITH? 5. DO WE USE COOKIES AND OTHER
-            TRACKING TECHNOLOGIES? 6. HOW DO WE HANDLE YOUR SOCIAL LOGINS? 7.
-            WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES? 8. HOW LONG DO WE KEEP
-            YOUR INFORMATION? 9. HOW DO WE KEEP YOUR INFORMATION SAFE? 10. DO WE
-            COLLECT INFORMATION FROM MINORS? 11. WHAT ARE YOUR PRIVACY RIGHTS?
-            12. CONTROLS FOR DO-NOT-TRACK FEATURES 13. DO CALIFORNIA RESIDENTS
-            HAVE SPECIFIC PRIVACY RIGHTS? 14. DO WE MAKE UPDATES TO THIS POLICY?
-            15. HOW CAN YOU CONTACT US ABOUT THIS POLICY?
+            <p class="text-thin terms-text">1. WHAT INFORMATION DO WE COLLECT? </p>
+            <p class="text-thin terms-text">2. HOW DO WE USE YOUR INFORMATION? </p>
+            <p class="text-thin terms-text">3. WILL YOUR INFORMATION BE SHARED WITH ANYONE? </p>
+            <p class="text-thin terms-text">4. WHO WILL YOUR INFORMATION BE SHARED WITH? </p>
+            <p class="text-thin terms-text">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES? </p>
+            <p class="text-thin terms-text">6. HOW DO WE HANDLE YOUR SOCIAL LOGINS? </p>
+            <p class="text-thin terms-text">7. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES? </p>
+            <p class="text-thin terms-text">8. HOW LONG DO WE KEEP YOUR INFORMATION? </p>
+            <p class="text-thin terms-text">9. HOW DO WE KEEP YOUR INFORMATION SAFE? </p>
+            <p class="text-thin terms-text">10. DO WE COLLECT INFORMATION FROM MINORS? </p>
+            <p class="text-thin terms-text">11. WHAT ARE YOUR PRIVACY RIGHTS?</p>
+            <p class="text-thin terms-text">12. CONTROLS FOR DO-NOT-TRACK FEATURES </p>
+            <p class="text-thin terms-text">13. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS? </p>
+            <p class="text-thin terms-text">14. DO WE MAKE UPDATES TO THIS POLICY?</p>
+            <p class="text-thin terms-text">15. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</p>
 
             <h2 class="text-thin subtitle">
                 1. WHAT INFORMATION DO WE COLLECT?
