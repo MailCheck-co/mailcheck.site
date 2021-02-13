@@ -1,18 +1,14 @@
 import {routes} from '@sapper/internal/manifest-client.mjs';
 
 const render = (pages, categories, posts) => `<?xml version="1.0" encoding="UTF-8" ?>
-        <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-        ${pages.map(page => `
-        <url><loc>https://www.mailcheck.co/${page}</loc></url>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        ${pages.map(page => `<url><loc>https://www.mailcheck.co/${page}</loc></url>
         `).join('')}
-        ${categories.map(cat => `
-        <url><loc>https://www.mailcheck.co/blog/c/${cat}/</loc></url>
+        ${categories.map(cat => `<url><loc>https://www.mailcheck.co/blog/c/${cat}/</loc></url>
         `).join('')}
-        ${posts.map(post => `
-        <url><loc>https://www.mailcheck.co/${post}</loc></url>
+        ${posts.map(post => `<url><loc>https://www.mailcheck.co/${post}</loc></url>
         `).join('')}
-        </urlset>
-        `;
+</urlset>`;
 
 export function get(req, res, next) {
 
