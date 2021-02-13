@@ -9,7 +9,7 @@ const render = (pages, categories, posts) => `<?xml version="1.0" encoding="UTF-
         <url><loc>https://www.mailcheck.co/blog/c/${cat}/</loc></url>
         `).join('')}
         ${posts.map(post => `
-        <url><loc>https://www.mailcheck.co/${post}/</loc></url>
+        <url><loc>https://www.mailcheck.co/${post}</loc></url>
         `).join('')}
         </urlset>
         `;
@@ -21,7 +21,13 @@ export function get(req, res, next) {
 
     let data = []
     routes.forEach(el => {
-        data.push( el.pattern.source.toString().replace(/\\/g, '').split('/').filter(el => /[a-zA-Z-]/.exec(el)).join('/'))
+        data.push( el.pattern.source.toString()
+            .replace(/\\/g, '')
+            .split('/')
+            .filter(el => /[a-zA-Z-]/.exec(el))
+            .join('/')
+            // .replace(/\/\s*$/, "") //remove trailing "/"
+        )
     })
     data = [...new Set(data)]
 
