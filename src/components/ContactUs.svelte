@@ -1,6 +1,76 @@
 <script>
+    import { writable } from "svelte/store";
     import IntersectionObserver from "svelte-intersection-observer";
 
+    function buildValidator(validators) {
+        return function validate(value, dirty) {
+            if (!validators || validators.length === 0) {
+                return { dirty, valid: true };
+            }
+
+            const failing = validators.find((v) => v(value) !== true);
+
+            return {
+                dirty,
+                valid: !failing,
+                message: failing && failing(value),
+            };
+        };
+    }
+
+    function createFieldValidator(...validators) {
+        const { subscribe, set } = writable({
+            dirty: false,
+            valid: false,
+            message: null,
+        });
+        const validator = buildValidator(validators);
+
+        function action(node, binding) {
+            function validate(value, dirty) {
+                const result = validator(value, dirty);
+                set(result);
+            }
+
+            validate(binding, false);
+
+            return {
+                update(value) {
+                    validate(value, true);
+                },
+            };
+        }
+
+        return [{ subscribe }, action];
+    }
+
+    function emailValidator() {
+        return function email(value) {
+            return (
+                (value &&
+                    !!value.match(
+                        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                    )) ||
+                "Please enter a valid email"
+            );
+        };
+    }
+
+    function requiredValidator() {
+        return function required(value) {
+            return (
+                (value !== undefined && value !== null && value !== "") ||
+                "This field is required"
+            );
+        };
+    }
+
+    const [validity, validate] = createFieldValidator(
+        requiredValidator(),
+        emailValidator()
+    );
+
+    let email = null;
     let element;
     let intersecting;
     let isOpen = false;
@@ -12,8 +82,8 @@
         document.body.classList.remove("fixed");
     };
     const onSubmit = (e) => {
-        const nameValue = contactForm.querySelector("input[type=text]").value;
-        const mailValue = contactForm.querySelector("input[type=email]").value;
+        const nameValue = contactForm.querySelector(".input-name").value;
+        const mailValue = contactForm.querySelector(".input-email").value;
         const textareaValue = contactForm.querySelector(".input-message").value;
         const referrerValue = document.referrer;
         const data = {
@@ -61,25 +131,39 @@
     @import "../scss/molecules/popup";
 </style>
 
-<IntersectionObserver {element} bind:intersecting rootMargin="-100px">
-    <section bind:this={element} class:intersecting class="contact-us" id="contact-us">
+<IntersectionObserver threshold={0.2} {element} bind:intersecting>
+    <section
+        bind:this={element}
+        class:intersecting
+        class="contact-us"
+        id="contact-us">
         <div class="container">
             <form
                 class="contact-form"
                 bind:this={contactForm}
                 on:submit|preventDefault={onSubmit}>
                 <h2 class="title title-contact">contact us</h2>
-                <input class="input" type="text" placeholder="Name" required />
                 <input
-                    class="input"
-                    type="email"
-                    placeholder="Email"
+                    class="input input-name"
+                    type="text"
+                    placeholder="Name"
                     required />
+                <input
+                    class="input input-email"
+                    type="text"
+                    bind:value={email}
+                    placeholder="Email"
+                    class:invalid={!$validity.valid}
+                    use:validate={email} />
+
                 <textarea
                     class="input input-message"
                     placeholder="Message"
                     required />
-                <button class="btn btn-submit" type="submit">submit</button>
+                <button
+                    disabled={!$validity.valid || !$validity.dirty}
+                    class="btn btn-submit"
+                    type="submit">submit</button>
             </form>
         </div>
     </section>
@@ -99,7 +183,7 @@
         </p>
     </div>
     <div class="popup" class:open={isError && isOpen}>
-        <span class="popup-close error"></span>
+        <span class="popup-close error" />
         <span class="popup-thanks">Something went wrong!</span>
         <p class="popup-text">Please try again later</p>
     </div>

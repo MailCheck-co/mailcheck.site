@@ -33,7 +33,7 @@
     @import "../scss/molecules/cost";
 </style>
 
-<IntersectionObserver {element} bind:intersecting>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting>
     <section
         bind:this={element}
         class:intersecting

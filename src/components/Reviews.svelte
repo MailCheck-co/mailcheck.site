@@ -10,7 +10,7 @@
     @import "../scss/molecules/reviews";
 </style>
 
-<IntersectionObserver {element} bind:intersecting>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting>
     <section class="reviews" bind:this={element} class:intersecting>
         <div class="section-heading">
             <h2 class="title">Our customer's reviews</h2>

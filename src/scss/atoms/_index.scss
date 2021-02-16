@@ -29,6 +29,18 @@
   &:active {
     transform: translateY(1px);
   }
+
+  &:disabled {
+    color: $primary-white;
+    background-color: $pricing-plan-enterprise !important;
+    border-color: $pricing-plan-enterprise !important;
+
+    &:hover {
+      color: $primary-white !important;
+      background-color: $pale-sky !important;
+      border-color: $pale-sky !important;
+    }
+  }
 }
 
 .container {

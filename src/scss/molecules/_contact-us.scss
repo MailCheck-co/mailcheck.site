@@ -25,6 +25,12 @@
   z-index: 100;
   padding: 75px 0 117px;
 
+  .input-email {
+    &.invalid {
+      color: $pricing-plan-custom;
+    }
+  }
+
   textarea.input {
     overflow: auto;
 

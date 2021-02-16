@@ -10,7 +10,7 @@
     @import "../scss/molecules/team";
 </style>
 
-<IntersectionObserver {element} bind:intersecting>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting>
     <section class="team" bind:this={element} class:intersecting>
         <div class="container">
             <div class="section-wrapper">

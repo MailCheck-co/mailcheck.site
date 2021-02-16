@@ -10,7 +10,7 @@
     @import "../scss/molecules/partners";
 </style>
 
-<IntersectionObserver {element} bind:intersecting>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting>
     <section class="partners" bind:this={element} class:intersecting>
         <div class="section-heading sm-left">
             <h2 class="title">YOU’RE IN GOOD COMPANY</h2>
