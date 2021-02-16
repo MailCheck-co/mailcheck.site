@@ -6,15 +6,21 @@
 <script lang="ts">
     import IntersectionObserver from "svelte-intersection-observer";
 
+    let once: boolean = false;
     let element: any;
     let intersecting: boolean;
+    const onIntersect: () => void = () => {
+        if (!once) {
+            once = true;
+        }
+    };
 </script>
 
-<IntersectionObserver threshold={0.2} {element} bind:intersecting>
+<IntersectionObserver threshold={0.2} {element} bind:intersecting on:observe={onIntersect}>
     <section
         bind:this={element}
         class="frequent-questions"
-        class:intersecting>
+        class:intersecting={() => !once}>
         <div class="wrapper-questions">
             <h3 class="title-small">FAQ</h3>
 
