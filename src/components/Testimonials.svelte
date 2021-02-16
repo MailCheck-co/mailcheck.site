@@ -7,7 +7,7 @@
     let active = false;
     let startX;
     let scrollLeft;
-    const SCROLL_SPEED = 1;
+    const SCROLL_SPEED = 4; // DON'T CHANGE!!!
     const ITEMS_TO_SCROLL = 1;
     const SCROLL = ITEMS_TO_SCROLL * 420;
     const TIMEOUT = SCROLL_SPEED * 100;
