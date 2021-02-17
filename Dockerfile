@@ -26,8 +26,8 @@ FROM credentials AS build_hosting
 RUN --mount=type=bind,source=src,target=src \
     --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
-    --mount=type=bind,source=postcss.config.js,target=postcss.config.js \
-    --mount=type=bind,source=webpack.prod.js,target=webpack.prod.js \
+    --mount=type=bind,source=rollup.config.js,target=rollup.config.js \
+    --mount=type=bind,source=tsconfig.json,target=tsconfig.json \
     --mount=type=bind,source=/opt/app/node_modules,target=./node_modules,from=landing_dependencies \
     --mount=type=cache,target=/root/.npm,id=npm_cache \
     npm run build
