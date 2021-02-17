@@ -1,3 +1,7 @@
+.welcome {
+  @include intersection;
+}
+
 .digits {
   color: $primary-accent;
   font-weight: 900;
@@ -91,7 +95,7 @@
 
   .welcome-items {
     flex-flow: row wrap;
-    width: 100%;
+    max-width: 90%;
     margin-left: 0;
 
     li {

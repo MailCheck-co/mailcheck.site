@@ -2,6 +2,7 @@
   z-index: 1;
   width: 100%;
   margin-right: 20px;
+  color: $primary-white;
   background: transparent;
   border: 1px solid $dark-05;
 
@@ -16,6 +17,7 @@
 
 .btn-start {
   z-index: 1;
+  color: $primary-white;
   background-color: $primary-accent;
   border: none;
 
@@ -47,6 +49,7 @@
   line-height: 27px;
   letter-spacing: 0.9px;
   text-align: center;
+  text-indent: initial;
 }
 
 .manage-customers {
@@ -78,6 +81,7 @@
   line-height: 27px;
   letter-spacing: 0.9px;
   text-align: center;
+  text-indent: initial;
 }
 
 .btn-verify-email {
@@ -105,6 +109,12 @@
 
 .email-block {
   position: relative;
+
+  .progress-wrapper {
+    position: absolute;
+    right: 7px;
+    top: 2px;
+  }
 }
 
 .email-results {
@@ -138,22 +148,6 @@
       background-position: center center;
       transform: translate(-50%, -50%);
       content: "";
-    }
-  }
-
-  span {
-    text-transform: none;
-
-    &.error {
-      color: $color-important;
-    }
-
-    &.warning {
-      color: $color-warning;
-    }
-
-    &.success {
-      color: $color-success;
     }
   }
 
@@ -244,6 +238,21 @@
   line-height: 1.2;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-indent: initial;
+
+  span {
+    &.error {
+      color: $color-important;
+    }
+
+    &.warning {
+      color: $color-warning;
+    }
+
+    &.success {
+      color: $color-success;
+    }
+  }
 }
 
 .results-list {
@@ -252,10 +261,12 @@
   align-items: center;
   justify-content: space-between;
   margin: 0;
+  padding: 0;
   list-style: none;
 
   & > ul {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -269,10 +280,12 @@
   min-width: 85px;
   margin-bottom: 0;
   padding-right: 10px;
+  text-indent: initial;
 }
 
 .list-item-result {
   margin-bottom: 0;
+  text-indent: initial;
 }
 
 .close-results {

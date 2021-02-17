@@ -1,4 +1,6 @@
 .cta {
+  @include intersection;
+  
   padding-bottom: 200px;
   text-align: center;
 
@@ -14,16 +16,36 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
-}
 
-@media all and (max-width: 360px) {
-  .cta {
-    text-align: left;
+  .btn-start {
+    color: $primary-white;
+    background-color: $primary-accent;
+    border: none;
+  
+    &:hover {
+      color: $primary-accent;
+      background-color: $primary-white;
+    }
+  
+    &:active {
+      color: $primary-white;
+      background-color: $primary-accent;
+    }
   }
 }
 
 @media all and (max-width: 768px) {
   .cta {
     padding-bottom: 100px;
+
+    &-info {
+      text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 360px) {
+  .cta {
+    text-align: left;
   }
 }

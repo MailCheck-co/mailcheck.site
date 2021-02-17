@@ -20,10 +20,16 @@
 }
 
 .contact-us {
+  @include intersection;
+
   z-index: 100;
   padding: 75px 0 117px;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  opacity: 1;
+
+  .input-email {
+    &.invalid {
+      color: $pricing-plan-custom;
+    }
+  }
 
   textarea.input {
     overflow: auto;

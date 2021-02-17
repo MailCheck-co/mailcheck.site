@@ -1,3 +1,9 @@
+.frequent-questions {
+  &:not(.faq-page) {
+    @include intersection;
+  }
+}
+
 .accordion {
   display: flex;
   flex-direction: row;
@@ -14,6 +20,8 @@
   position: absolute;
   top: 10%;
   right: 0;
+  width: 444px;
+  height: auto;
   z-index: -1;
   opacity: 0.1;
   pointer-events: none;
@@ -69,12 +77,10 @@
 .tab-text {
   margin-top: 0;
   padding: 0 10px;
-  color: $primary-white;
-  font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.8px;
   word-break: break-word;
+  text-align: initial;
+  text-indent: initial;
 
   & > a {
     color: $primary-accent;
@@ -127,7 +133,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     display: block;
     width: 1024px;
     height: 170px;
@@ -148,6 +154,22 @@
   max-width: 1280px;
   margin: 0 auto 50px;
   padding: 50px 20px 0;
+
+  .btn-start {
+    color: $primary-white;
+    background-color: $primary-accent;
+    border: none;
+  
+    &:hover {
+      color: $primary-accent;
+      background-color: $primary-white;
+    }
+  
+    &:active {
+      color: $primary-white;
+      background-color: $primary-accent;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {

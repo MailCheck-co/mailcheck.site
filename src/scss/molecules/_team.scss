@@ -1,3 +1,7 @@
+.team {
+  @include intersection;
+}
+
 .team-members {
   display: flex;
   justify-content: space-between;
@@ -61,6 +65,7 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 1.2;
+  text-indent: initial;
 }
 
 .team-member-description {
@@ -68,6 +73,7 @@
   color: $primary-white;
   font-size: 16px;
   line-height: 1.5;
+  text-indent: initial;
 }
 
 @media all and (max-width: 600px) {

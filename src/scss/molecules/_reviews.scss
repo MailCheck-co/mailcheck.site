@@ -1,3 +1,7 @@
+.reviews {
+  @include intersection;
+}
+
 .reviews-list {
   display: flex;
   align-items: center;
@@ -13,6 +17,7 @@
 }
 
 .reviews-item-logo {
+  width: auto;
   margin-bottom: 20px;
 }
 
@@ -31,6 +36,7 @@
 .reviews-item-rating,
 .reviews-like-icon {
   max-height: 25px;
+  width: auto;
   margin-bottom: 40px;
 }
 
@@ -52,6 +58,10 @@
 .reviews-item-link {
   white-space: nowrap;
   border: 1px solid $primary-white;
+
+  &:visited {
+    color: $primary-white;
+  }
 }
 
 @media only screen and (max-width: 768px) {

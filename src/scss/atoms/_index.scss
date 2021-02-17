@@ -29,6 +29,18 @@
   &:active {
     transform: translateY(1px);
   }
+
+  &:disabled {
+    color: $primary-white;
+    background-color: $pricing-plan-enterprise !important;
+    border-color: $pricing-plan-enterprise !important;
+
+    &:hover {
+      color: $primary-white !important;
+      background-color: $pale-sky !important;
+      border-color: $pale-sky !important;
+    }
+  }
 }
 
 .container {
@@ -110,7 +122,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  color: $primary-white;
+  color: $primary-white !important;
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 0.8px;
@@ -140,10 +152,15 @@
   line-height: 24px;
   letter-spacing: 0.8px;
   text-align: center;
+  text-indent: initial;
 
   &-link {
     text-decoration: underline;
-    word-wrap: break-word;
+    white-space: nowrap;
+
+    &:visited {
+      color: $primary-white;
+    }
   }
 
   &-link-blue {
@@ -193,6 +210,7 @@
   right: 0;
   left: 0;
   z-index: -1;
+  pointer-events: none;
   width: 100%;
   margin: 0;
   color: $section-titles-color;
@@ -216,6 +234,7 @@
   line-height: 1.5;
   letter-spacing: 0.5px;
   text-align: center;
+  text-indent: initial;
 }
 
 .subtitle {

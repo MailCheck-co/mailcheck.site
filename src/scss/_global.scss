@@ -1,0 +1,86 @@
+:global(h1) {
+    font-size: 2.25em;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+
+:global(h2) {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #fff;
+}
+
+:global(h3) {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #fff;
+}
+
+:global(pre) {
+    background-color: #f9f9f9;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
+    padding: 0.5em;
+    border-radius: 2px;
+    overflow-x: auto;
+    color: #fff;
+}
+
+:global(pre) :global(code) {
+    background-color: transparent;
+    padding: 0;
+    color: #fff;
+}
+
+:global(ul) {
+    padding: 0 0 0 25px;
+    line-height: 1.5;
+}
+
+:global(li) {
+    margin: 0 0 0.5em 0;
+    color: #fff;
+}
+
+:global(p) {
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: .8px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+:global(p) {
+    img {
+      margin-left: -20px;
+    }
+}
+
+:global(strong) {
+    font-weight: 700;
+    color: #fff;
+}
+
+:global(a) {
+    color: #1bced4;
+}
+
+:global(a:visited) {
+    color:#55baff;
+}
+
+:global(img) {
+    max-width: 100%;
+    height: auto;
+}
+
+[id] {
+    scroll-margin-top: 10ex;
+}
