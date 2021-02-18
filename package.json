@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "sapper dev --ext '.svelte .svx'",
         "build": "sapper build --legacy --ext '.svelte .svx .md'",
-        "export": "sapper export --legacy --ext '.svelte .svx .md' --entry '/ /404.html /faq-appsumo' && npm run static:404:cp && npm run static:404:rmdir",
+        "export": "sapper export --output ./node_modules/@sapper --legacy --ext '.svelte .svx .md' --entry '/ /404.html /faq-appsumo' && npm run static:404:cp && npm run static:404:rmdir",
         "static:404:cp": "cp __sapper__/export/404/index.html __sapper__/export/404.html",
         "static:404:rmdir": "rimraf - __sapper__/export/404",
         "start": "node __sapper__/build",
