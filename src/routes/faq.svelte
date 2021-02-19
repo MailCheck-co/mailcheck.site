@@ -6,7 +6,7 @@
     import Seo from "../components/seo.svelte";
 </script>
 
-<Seo title="FAQ"  />
+<Seo title="FAQ"/>
 
 <!--Questions-->
 <section id="faq" class="frequent-questions faq-page">
@@ -20,7 +20,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio1"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio1">Where do you get the
                         data for verification?</label>
                     <div class="tab-content">
@@ -37,7 +37,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio2"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio2">What social networks
                         do you use for validation?</label>
                     <div class="tab-content">
@@ -52,7 +52,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio3"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio3">What is your
                         difference from the competitors?</label>
                     <div class="tab-content">
@@ -71,7 +71,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio4"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio4">What is your trial?</label>
                     <div class="tab-content">
                         <p class="tab-text">
@@ -89,7 +89,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio5"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio5">Do you check phone
                         numbers?</label>
                     <div class="tab-content">
@@ -107,38 +107,38 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio6"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio6">How to get started
                         with Mailcheck?</label>
                     <div class="tab-content">
                         <p class="tab-text">
-                            Step 1<br />
+                            Step 1<br/>
                             - Go to https://app.mailcheck.co/auth/login and
-                            create an account<br />
+                            create an account<br/>
                             - Our registration process is one of the easiest in
-                            the known systems<br />
-                            Step 2<br />
-                            - Set your email address and password<br />
-                            Step 3<br />
+                            the known systems<br/>
+                            Step 2<br/>
+                            - Set your email address and password<br/>
+                            Step 3<br/>
                             - Fill in your profile information or Skip if you
-                            don't have time<br />
-                            Step 4<br />
+                            don't have time<br/>
+                            Step 4<br/>
                             - Choose the plan you want to go with or skip if you
-                            don't have time<br />
-                            Step 5<br />
+                            don't have time<br/>
+                            Step 5<br/>
                             - Set your billing information ( in case you didn't
                             choose a plan, you can still go with ""Free Tier""
-                            100 emails for free)<br />
-                            - We have two scenarios if you want a free tier<br />
-                            1) 10 emails if you didn't set your card<br />
+                            100 emails for free)<br/>
+                            - We have two scenarios if you want a free tier<br/>
+                            1) 10 emails if you didn't set your card<br/>
                             2) 100 emails if your card details were provided (we
                             don't charge you anything unless you previously has
-                            chosen a plan)<br />
-                            Step 6<br />
-                            - Ta da! You are in<br />
-                            Step 7<br />
+                            chosen a plan)<br/>
+                            Step 6<br/>
+                            - Ta da! You are in<br/>
+                            Step 7<br/>
                             - If you have any questions, always ping our support
-                            team<br />
+                            team<br/>
                         </p>
                     </div>
                 </div>
@@ -148,27 +148,27 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio7"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio7">How to get verified
                         your first list?</label>
                     <div class="tab-content">
                         <p class="tab-text">
-                            Step 1<br />
+                            Step 1<br/>
                             - If you have data collected in .csv, .tsv formats,
-                            feel free to click ""Upload""<br />
-                            Step 2<br />
+                            feel free to click ""Upload""<br/>
+                            Step 2<br/>
                             - Drag and drop your file or choose from your
-                            computer<br />
-                            Step 3<br />
+                            computer<br/>
+                            Step 3<br/>
                             - specify a delimiter (choose one column with emails
-                            only)<br />
-                            Step 4<br />
-                            - send a file for the validation<br />
-                            Step 5<br />
-                            - go to the uploaded files and click ""Process""<br />
-                            Step 6<br />
+                            only)<br/>
+                            Step 4<br/>
+                            - send a file for the validation<br/>
+                            Step 5<br/>
+                            - go to the uploaded files and click ""Process""<br/>
+                            Step 6<br/>
                             - When the file processed, you will receive results
-                            as the download button inside the site or via email<br />
+                            as the download button inside the site or via email<br/>
                         </p>
                     </div>
                 </div>
@@ -178,15 +178,15 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio8"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio8">How to interpret a
                         trust rate?</label>
                     <div class="tab-content">
                         <p class="tab-text">
                             * Emails with a trust rate of 0-49% are Risky and
-                            most likely INVALID, we don't recommend using them<br />
+                            most likely INVALID, we don't recommend using them<br/>
                             * Emails with a trust rate of 50-100% are VALID,
-                            feel free to use them<br />
+                            feel free to use them<br/>
                         </p>
                     </div>
                 </div>
@@ -196,17 +196,17 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio9"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio9">How can I sign up?</label>
                     <div class="tab-content">
                         <p class="tab-text">
-                            Step 1<br />
+                            Step 1<br/>
                             - We made our service so easy, that no extra
                             confirmation required, simply set your email and
-                            password to register<br />
-                            Step 2<br />
+                            password to register<br/>
+                            Step 2<br/>
                             - Use your Google, facebook account to register with
-                            us<br />
+                            us<br/>
                         </p>
                     </div>
                 </div>
@@ -216,12 +216,12 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio10"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio10">How can I login?</label>
                     <div class="tab-content">
                         <p class="tab-text">
-                            - Fill in email/password<br />
-                            - Log in using Google or Facebook<br />
+                            - Fill in email/password<br/>
+                            - Log in using Google or Facebook<br/>
                         </p>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio11"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio11">How to delete an
                         account at Mailcheck?</label>
                     <div class="tab-content">
@@ -249,7 +249,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio12"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio12">What is the delimiter
                         and how to use it?</label>
                     <div class="tab-content">
@@ -267,7 +267,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio13"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio13">How to prepare a list
                         to get it verified?</label>
                     <div class="tab-content">
@@ -285,7 +285,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio14"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio14">Is my data protected?</label>
                     <div class="tab-content">
                         <p class="tab-text">
@@ -302,16 +302,16 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio15"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio15">How many free email
                         verifications do you offer?</label>
                     <div class="tab-content">
                         <p class="tab-text">
                             We allow 100 free email validations if the billing
                             information was verified, and 10 free email
-                            validations if the payment details weren't provided<br />
-                            - with card 100 emails<br />
-                            - without card 10 emails<br />
+                            validations if the payment details weren't provided<br/>
+                            - with card 100 emails<br/>
+                            - without card 10 emails<br/>
                         </p>
                     </div>
                 </div>
@@ -321,7 +321,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio16"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio16">What is a quick
                         validation?</label>
                     <div class="tab-content">
@@ -342,7 +342,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio17"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio17">Downloading Verified
                         Lists</label>
                     <div class="tab-content">
@@ -362,7 +362,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio18"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio18">Integrations</label>
                     <div class="tab-content">
                         <p class="tab-text">
@@ -376,7 +376,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio19"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio19">How does Mailcheck
                         work?</label>
                     <div class="tab-content">
@@ -403,7 +403,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio20"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio20">What is the overuse
                         charge?</label>
                     <div class="tab-content">
@@ -425,7 +425,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio21"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio21">Can I delete my
                         files?</label>
                     <div class="tab-content">
@@ -444,7 +444,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio22"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio22">How can I cancel my
                         subscription?</label>
                     <div class="tab-content">
@@ -460,7 +460,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio23"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio23">I was charged more
                         than my plan costs</label>
                     <div class="tab-content">
@@ -480,7 +480,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio24"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio24">Why I can't see a
                         dark mode option on my account?</label>
                     <div class="tab-content">
@@ -497,7 +497,7 @@
                         class="input-radio"
                         type="checkbox"
                         id="radio25"
-                        name="acc-tabs" />
+                        name="acc-tabs"/>
                     <label class="tab-label" for="radio25">How long does usually
                         take to verify 1M files?</label>
                     <div class="tab-content">
@@ -510,6 +510,20 @@
                         </p>
                     </div>
                 </div>
+                <div class="tab">
+                    <input
+                        class="input-radio"
+                        type="checkbox"
+                        id="radio26"
+                        name="acc-tabs"/>
+                    <label class="tab-label" for="radio26">How to connect with Mailchimp</label>
+                    <div class="tab-content">
+                        <p class="tab-text">
+                            <a sapper:prefetch href="/zapier-integration"> We have special instruction regarding
+                                zapier integration. Check it here</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <img
@@ -517,6 +531,6 @@
             src="../assets/img/filter.png"
             width="444"
             height="568"
-            alt="filter" />
+            alt="filter"/>
     </div>
 </section>
