@@ -38,7 +38,7 @@ RUN --mount=type=bind,source=.firebaserc,target=.firebaserc \
     --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
     --mount=type=bind,source=/opt/app/node_modules,target=node_modules,from=landing_dependencies \
-    --mount=type=bind,source=/opt/app/  dist,target=dist,from=build_hosting \
+    --mount=type=bind,source=/opt/app/dist,target=dist,from=build_hosting \
     npm run deploy_hosting:prod
 
 FROM credentials AS deploy_functions
