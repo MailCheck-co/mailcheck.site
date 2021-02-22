@@ -6,7 +6,6 @@ date: 18.02.2021
 readingTime: 3 min read
 snippet: A step-by-step guide to integrate Mailcheck with daily services using Zapier
 desc: Zapier helps to configure several services to work in conjunction with Mailcheck. With the help of Zapier around 2000 apps can get their emails validated.
-
 ---
 
 # **Zapier Integration instructions**

@@ -6,7 +6,6 @@ date: 18.02.2021
 readingTime: 3 min read
 snippet: Step by step guide on how to use Mailcheck
 desc: Lots of emails sent every day via Mailchimp, however, the majority of the emails got bounced. In order to prevent it, we’ve created Mailcheck.
-
 ---
 
 # **{title}**
@@ -86,5 +85,5 @@ But how to filter the data?
 
 ![](/assets/img/mailcheck/step9-2.png)
 
-That’s it &#128077;  
+That’s it &#128077;
 If you still have questions please contact our team via LiveChat or [integration@mailcheck.co](mailto:integration@mailcheck.co)
