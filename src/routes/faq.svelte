@@ -516,11 +516,36 @@
                         type="checkbox"
                         id="radio26"
                         name="acc-tabs"/>
-                    <label class="tab-label" for="radio26">How to connect with Mailchimp</label>
+                    <label class="tab-label" for="radio26">Mailchimp Integration instructions</label>
                     <div class="tab-content">
                         <p class="tab-text">
-                            <a sapper:prefetch href="/zapier-integration"> We have special instruction regarding
-                                zapier integration. Check it here</a>
+                            Step by step guide on how to use
+                            <a 
+                                target="_blank" 
+                                title="Mailchimp Integration instructions"
+                                rel="noreferrer nofollow" 
+                                href="https://hackmd.io/@E6zgoFvYTZ-F0NXJpIky1A/Hy8spN6-u">
+                                Mailchimp
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input
+                        class="input-radio"
+                        type="checkbox"
+                        id="radio27"
+                        name="acc-tabs"/>
+                    <label class="tab-label" for="radio27">Zapier Integration instructions</label>
+                    <div class="tab-content">
+                        <p class="tab-text">
+                            A step-by-step guide to integrate  Mailcheck with daily services using
+                            <a 
+                                sapper:prefetch 
+                                title="Zapier Integration instructions"
+                                href="/zapier-integration">
+                                Zapier
+                            </a>
                         </p>
                     </div>
                 </div>
