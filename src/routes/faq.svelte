@@ -524,7 +524,7 @@
                                 sapper:prefetch
                                 target="_blank" 
                                 title="Mailchimp Integration instructions"
-                                href="/mailchimp-integration">
+                                href="https://mailcheckco.tawk.help/article/mailchimp-integration-instructions">
                                 Mailchimp
                             </a>
                         </p>
