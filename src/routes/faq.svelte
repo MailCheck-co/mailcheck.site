@@ -521,10 +521,10 @@
                         <p class="tab-text">
                             Step by step guide on how to use
                             <a 
+                                sapper:prefetch
                                 target="_blank" 
                                 title="Mailchimp Integration instructions"
-                                rel="noreferrer nofollow" 
-                                href="https://hackmd.io/@E6zgoFvYTZ-F0NXJpIky1A/Hy8spN6-u">
+                                href="/mailchimp-integration">
                                 Mailchimp
                             </a>
                         </p>
@@ -542,6 +542,7 @@
                             A step-by-step guide to integrate  Mailcheck with daily services using
                             <a 
                                 sapper:prefetch 
+                                target="_blank"
                                 title="Zapier Integration instructions"
                                 href="/zapier-integration">
                                 Zapier
