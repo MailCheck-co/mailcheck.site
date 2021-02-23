@@ -1,6 +1,7 @@
 {
   "projects": {
     "prod": "mailcheck-landing",
-    "dev": "mailcheck-landing-test"
+    "dev": "mailcheck-landing-test",
+    "default": "mailcheck-landing"
   }
 }
