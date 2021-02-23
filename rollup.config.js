@@ -6,11 +6,13 @@ import url from '@rollup/plugin-url';
 import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
 import {terser} from 'rollup-plugin-terser';
+import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import * as matter from 'gray-matter';
 import {readdirSync} from 'fs';
+import {mdsvex} from "mdsvex";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -35,7 +37,22 @@ const onwarn = (warning, onwarn) =>
     (warning.code === 'THIS_IS_UNDEFINED') ||
     onwarn(warning);
 
-const svelteOptions = require("./svelte.config");
+const svelteOptions = {
+    extensions: [
+        '.svelte',
+        '.svx'
+    ],
+    preprocess: [
+        sveltePreprocess(),
+        mdsvex({
+            layout: {
+                blog: "./src/layouts/blog.svelte",
+                article: "./src/routes/_layout.svelte",
+                _: "./src/routes/_layout.svelte"
+            }
+        })
+    ],
+}
 
 export default {
     client: {
@@ -134,7 +151,6 @@ export default {
             typescript({sourceMap: dev}),
             !dev && terser()
         ],
-
         preserveEntrySignatures: false,
         onwarn,
     }*/

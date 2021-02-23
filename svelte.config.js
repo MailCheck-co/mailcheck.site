@@ -1,15 +1,12 @@
 /* eslint-env node */
-const sveltePreprocess = require("svelte-preprocess");
-const { mdsvex } = require("mdsvex");
+import  sveltePreprocess from "svelte-preprocess";
+import  { mdsvex } from "mdsvex";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 
 const svelteOptions = {
   extensions: [".svelte", ".svx"],
-  compilerOptions: {
-    immutable: true,
-  },
   preprocess: [
     sveltePreprocess({
       scss: {
@@ -33,4 +30,4 @@ const svelteOptions = {
   ],
 };
 
-module.exports = svelteOptions;
+export default svelteOptions;
