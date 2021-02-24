@@ -32,7 +32,6 @@
         isChecking = true;
         const verifyEmailForm = document.getElementById("verify-email");
         const emailResults = verifyEmailForm.querySelector(".email-results");
-        const socialLinks = document.querySelectorAll(".social-link");
         const formPreloader = emailResults.querySelector(".form-preloader");
         (<HTMLElement>emailResults).style.display = "block";
         try {
@@ -60,27 +59,6 @@
             rateResult = data.trustRate;
             disposableResult = disposable;
             catchResult = catchAll;
-            const gravatar =
-                data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
-            const links = ((gravatar && gravatar.accounts) || []).reduce(
-                (acc, el) => {
-                    acc[el.shortname] = el.url;
-                    return acc;
-                },
-                { gravatar: (gravatar && gravatar.profileUrl) || "" }
-            );
-
-            socialLinks.forEach((link: any) => {
-                const id = link.title.toLowerCase();
-                if (links[id]) {
-                    link.href = links[id];
-                    link.classList.add("active");
-                } else {
-                    link.href = "#";
-                    link.classList.remove("active");
-                }
-            });
-            
             if (data.trustRate <= 49 || data.code >= 400) {
                 validatyEmailRisk = "invalid";
                 validityClass = "error";
