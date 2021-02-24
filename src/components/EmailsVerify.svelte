@@ -102,7 +102,7 @@
 
         (<HTMLElement>emailResults).style.display = "block";
         try {
-            const response = await fetch("/checkMail", {
+            const response = await fetch("/api/checkMail", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
