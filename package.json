@@ -27,6 +27,7 @@
         "-": "0.0.1",
         "compression": "^1.7.1",
         "d": "^1.0.1",
+        "node-sass": "^5.0.0",
         "polka": "next",
         "sirv": "^1.0.0"
     },
@@ -59,7 +60,6 @@
         "gray-matter": "^4.0.2",
         "http-proxy-middleware": "^1.0.6",
         "mdsvex": "^0.8.9",
-        "node-sass": "^5.0.0",
         "postcss": "^8.2.6",
         "postcss-load-config": "^3.0.1",
         "prettier": "^2.2.1",

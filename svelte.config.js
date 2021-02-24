@@ -1,28 +1,25 @@
 import  sveltePreprocess from "svelte-preprocess";
 import  { mdsvex } from "mdsvex";
 
-// const mode = process.env.NODE_ENV;
-// const dev = mode === "development";
+const mode = process.env.NODE_ENV;
+const dev = mode === "development";
 
 const svelteOptions = {
   extensions: [".svelte", ".svx"],
   preprocess: [
     sveltePreprocess(
       {
+        scss: {
+          includePaths: ["src"],
+        },
         postcss: {
           plugins: [require("autoprefixer")()],
         },
+        sourceMap: dev,
+        defaults: {
+          style: "scss",
+        },
       }
-      /* todo
-      {
-      scss: {
-        includePaths: ["src"],
-      },
-      sourceMap: dev,
-      defaults: {
-        style: "scss",
-      },
-    } */
     ),
     mdsvex({
       layout: {
