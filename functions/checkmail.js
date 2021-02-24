@@ -44,7 +44,8 @@ exports.checkMail = functions.https.onRequest((req, res) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'authorization': 'Bearer ' + apiKey
+      'authorization': 'Bearer ' + apiKey,
+      'user-agent': 'mailcheck landing',
     },
     body: JSON.stringify({email: req.body.email})
   })
