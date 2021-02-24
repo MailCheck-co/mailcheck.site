@@ -4,7 +4,7 @@
 </style>
 
 <script lang="ts">
-    import { onMount } from "svelte";
+    
     import Progress from "./Progress.svelte";
 
     export let isChecking = false;
@@ -28,6 +28,7 @@
         if (e.target.value === "") reset();
     };
     const verifyEmailFormSubmit = async () => {
+        
         isChecking = true;
         const verifyEmailForm = document.getElementById("verify-email");
         const emailResults = verifyEmailForm.querySelector(".email-results");
@@ -35,6 +36,8 @@
         const formPreloader = emailResults.querySelector(".form-preloader");
         (<HTMLElement>emailResults).style.display = "block";
         try {
+            
+
             const response = await fetch("/checkMail", {
                 method: "POST",
                 headers: {
@@ -45,6 +48,8 @@
                 }),
             });
             const data = await response.json();
+            console.log(data, "data");
+            
             const exist = data.mxExists ? "+" : "-";
             const smpt = data.smtpExists ? "+" : "-";
             const disposable = data.isNotDisposable ? "+" : "-";
@@ -75,7 +80,8 @@
                     link.classList.remove("active");
                 }
             });
-            if (data.trustRate <= 49) {
+            
+            if (data.trustRate <= 49 || data.code >= 400) {
                 validatyEmailRisk = "invalid";
                 validityClass = "error";
             } else if (data.trustRate > 49 && data.trustRate < 80) {
@@ -126,7 +132,7 @@
                             name="email"
                             id="email"
                             placeholder="Email to verify"
-                            value="{emailInput}"
+                            bind:value="{emailInput}"
                             on:keyup="{keyup}" />
                         {#if isChecking && !isChecked}
                             <div class="progress-wrapper">
