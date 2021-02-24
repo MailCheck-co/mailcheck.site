@@ -4,7 +4,6 @@
 </style>
 
 <script lang="ts">
-    
     import Progress from "./Progress.svelte";
 
     export let isChecking = false;
@@ -27,16 +26,82 @@
     const keyup = (e) => {
         if (e.target.value === "") reset();
     };
+    let links;
+    let socialLinks = [
+        {
+            href: null,
+            title: "gravatar",
+            className: "gravatar",
+        },
+        {
+            href: null,
+            title: "blogger",
+            className: "blogger",
+        },
+        {
+            href: null,
+            title: "facebook",
+            className: "facebook",
+        },
+        {
+            href: null,
+            title: "foursquare",
+            className: "foursquare",
+        },
+        {
+            href: null,
+            title: "google",
+            className: "google",
+        },
+        {
+            href: null,
+            title: "github",
+            className: "github",
+        },
+        {
+            href: null,
+            title: "linkedin",
+            className: "linkedin",
+        },
+        {
+            href: null,
+            title: "tripit",
+            className: "tripit",
+        },
+        {
+            href: null,
+            title: "tumblr",
+            className: "tumblr",
+        },
+        {
+            href: null,
+            title: "twitter",
+            className: "twitter",
+        },
+        {
+            href: null,
+            title: "vimeo",
+            className: "vimeo",
+        },
+        {
+            href: null,
+            title: "wordpress",
+            className: "wordpress",
+        },
+        {
+            href: null,
+            title: "youtube",
+            className: "youtube",
+        }
+    ];
     const verifyEmailFormSubmit = async () => {
-        
         isChecking = true;
         const verifyEmailForm = document.getElementById("verify-email");
         const emailResults = verifyEmailForm.querySelector(".email-results");
         const formPreloader = emailResults.querySelector(".form-preloader");
+
         (<HTMLElement>emailResults).style.display = "block";
         try {
-            
-
             const response = await fetch("/checkMail", {
                 method: "POST",
                 headers: {
@@ -47,8 +112,6 @@
                 }),
             });
             const data = await response.json();
-            console.log(data, "data");
-            
             const exist = data.mxExists ? "+" : "-";
             const smpt = data.smtpExists ? "+" : "-";
             const disposable = data.isNotDisposable ? "+" : "-";
@@ -59,7 +122,31 @@
             rateResult = data.trustRate;
             disposableResult = disposable;
             catchResult = catchAll;
-            
+
+            const gravatar =
+                data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
+
+            links = ((gravatar && gravatar.accounts) || []).reduce(
+                (acc, el) => {
+                    acc[el.shortname] = el.url;
+                    return acc;
+                },
+                { gravatar: (gravatar && gravatar.profileUrl) || "" }
+            );
+
+            socialLinks = socialLinks.map((link: any) => {
+                const id = link.title.toLowerCase();
+                if (links[id]) {
+                    link.href = links[id];
+                    link.className = `${link.className}`;
+                    return link;
+                    
+                } else {
+                    link.href = null;
+                    return link;
+                }
+            });
+
             if (data.trustRate <= 49 || data.code >= 400) {
                 validatyEmailRisk = "invalid";
                 validityClass = "error";
@@ -194,56 +281,18 @@
                             </ul>
                         </ul>
                         <div class="results-icons">
-                            <a
-                                href="#"
-                                class="social-link gravatar"
-                                title="Gravatar">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link blogger"
-                                title="Blogger">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link facebook"
-                                title="Facebook">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link foursquare"
-                                title="Foursquare">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link google"
-                                title="Google">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link github"
-                                title="Github">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link linkedin"
-                                title="Linkedin">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link tripit"
-                                title="Tripit">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link tumblr"
-                                title="Tumblr">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link twitter"
-                                title="Twitter">&nbsp;</a>
-                            <a href="#" class="social-link vimeo" title="Vimeo"
-                                >&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link wordpress"
-                                title="Wordpress">&nbsp;</a>
-                            <a
-                                href="#"
-                                class="social-link youtube"
-                                title="Youtube">&nbsp;</a>
+                            {#each socialLinks as link}
+                                {#if typeof link.href === "string"}
+                                    <a
+                                        href="{link.href}"
+                                        class="{`social-link active ${link.className}`}"
+                                        title="{link.title}">&nbsp;</a>
+                                {:else}
+                                    <span
+                                        class="{`social-link ${link.className}`}"
+                                        title="{link.title}">&nbsp;</span>
+                                {/if}
+                            {/each}
                         </div>
                         <button
                             type="button"
