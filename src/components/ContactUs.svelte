@@ -105,7 +105,7 @@
             formData.append(name, data[name]);
         }
 
-        fetch("/sendMail", {
+        fetch("/api/sendMail", {
             method: "POST",
             body: JSON.stringify(data),
         })

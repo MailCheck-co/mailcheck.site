@@ -36,6 +36,14 @@
                 "function": "checkMail"
             },
             {
+                "source": "/api/sendMail",
+                "function": "sendMail"
+            },
+            {
+                "source": "/api/checkMail",
+                "function": "checkMail"
+            },
+            {
                 "source": "/10-tips-to-warm-up-your-cold-emails",
                 "destination": "/blog/10-tips-to-warm-up-your-cold-emails",
                 "type": 301

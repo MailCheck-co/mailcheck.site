@@ -11,7 +11,7 @@ import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import * as matter from 'gray-matter';
 import {readdirSync} from 'fs';
-
+import svelteOptions from "./svelte.config.js";
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
@@ -34,8 +34,6 @@ const onwarn = (warning, onwarn) =>
     (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
     (warning.code === 'THIS_IS_UNDEFINED') ||
     onwarn(warning);
-
-const svelteOptions = require("./svelte.config");
 
 export default {
     client: {
@@ -134,7 +132,6 @@ export default {
             typescript({sourceMap: dev}),
             !dev && terser()
         ],
-
         preserveEntrySignatures: false,
         onwarn,
     }*/

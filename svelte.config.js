@@ -1,28 +1,26 @@
-/* eslint-env node */
-const sveltePreprocess = require("svelte-preprocess");
-const { mdsvex } = require("mdsvex");
+import  sveltePreprocess from "svelte-preprocess";
+import  { mdsvex } from "mdsvex";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 
 const svelteOptions = {
   extensions: [".svelte", ".svx"],
-  compilerOptions: {
-    immutable: true,
-  },
   preprocess: [
-    sveltePreprocess({
-      scss: {
-        includePaths: ["src"],
-      },
-      sourceMap: dev,
-      postcss: {
-        plugins: [require("autoprefixer")()],
-      },
-      defaults: {
-        style: "scss",
-      },
-    }),
+    sveltePreprocess(
+      {
+        scss: {
+          includePaths: ["src"],
+        },
+        postcss: {
+          plugins: [require("autoprefixer")()],
+        },
+        sourceMap: dev,
+        defaults: {
+          style: "scss",
+        },
+      }
+    ),
     mdsvex({
       layout: {
           blog: "./src/layouts/blog.svelte",
@@ -33,4 +31,4 @@ const svelteOptions = {
   ],
 };
 
-module.exports = svelteOptions;
+export default svelteOptions;
