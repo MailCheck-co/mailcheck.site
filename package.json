@@ -36,7 +36,7 @@
         "@babel/plugin-syntax-dynamic-import": "^7.0.0",
         "@babel/plugin-transform-runtime": "^7.0.0",
         "@babel/preset-env": "^7.0.0",
-        "@babel/runtime": "^7.0.0",
+        "@babel/runtime": "^7.13.7",
         "@nodeart/stylelint-config-nodeart": "^0.0.4",
         "@rollup/plugin-babel": "^5.0.0",
         "@rollup/plugin-commonjs": "^14.0.0",
