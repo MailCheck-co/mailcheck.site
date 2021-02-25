@@ -29,7 +29,7 @@
                     <div class="team-member cto">
                         <div class="team-member-avatar cto" />
                         <div class="team-member-info">
-                            <p class="team-member-name">Constantin Nosov</p>
+                            <p class="team-member-name">Konstantin Nosov</p>
                             <p class="team-member-description">CTO / Founder</p>
                         </div>
                     </div>

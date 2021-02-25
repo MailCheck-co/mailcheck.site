@@ -4,7 +4,7 @@
 </script>
 
 <style lang="scss" global>
-    @import "../scss/styles";
+  @import "../scss/styles";
 </style>
 
 <Header />

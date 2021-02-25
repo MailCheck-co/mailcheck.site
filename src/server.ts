@@ -18,7 +18,7 @@ const ifDev = () => {
 		.listen(PORT, err => {
 			if (err) console.log('error', err);
 		});
-	 return false;
+		return false;
 	}
 	
 	polka() // You can also use Express
