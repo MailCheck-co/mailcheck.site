@@ -34,7 +34,6 @@ module.exports = {
     "import/no-mutable-exports": 0,
     "import/no-unresolved": 0,
     "@typescript-eslint/no-var-requires": 0, // fix on require method
-    "indent": ["error", 2]
   },
   settings: {
     "svelte3/preprocess": eslintSveltePreprocess(svelteConfigPath),
