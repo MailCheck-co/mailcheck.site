@@ -1,5 +1,5 @@
-import  sveltePreprocess from "svelte-preprocess";
-import  { mdsvex } from "mdsvex";
+import sveltePreprocess from "svelte-preprocess";
+import { mdsvex } from "mdsvex";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
@@ -23,11 +23,11 @@ const svelteOptions = {
     ),
     mdsvex({
       layout: {
-          blog: "./src/layouts/blog.svelte",
-          article: "./src/routes/_layout.svelte",
-          _: "./src/routes/_layout.svelte"
+        blog: "./src/layouts/blog.svelte",
+        article: "./src/routes/_layout.svelte",
+        _: "./src/routes/_layout.svelte"
       }
-  })
+    })
   ],
 };
 
