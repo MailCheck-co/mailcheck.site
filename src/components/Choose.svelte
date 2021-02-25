@@ -7,11 +7,23 @@
     import IntersectionObserver from "svelte-intersection-observer";
 
     let element: any;
+    let intersected: boolean = false;
     let intersecting: boolean;
+    const onIntersect = event => {
+        const id = event.detail.target.id;
+        if (!!intersecting && !intersected && id === element.id) {
+            intersected = true;
+        }
+    };
 </script>
 
-<IntersectionObserver threshold={0.1} {element} bind:intersecting>
-    <section bind:this={element} class:intersecting class="choose-your">
+<IntersectionObserver threshold={0.1} {element} bind:intersecting on:observe|once={onIntersect}>
+    <section 
+        bind:this={element} 
+        class:intersecting
+        class:intersected 
+        class="choose-your"
+        id="choose">
         <div class="container">
             <div class="section-heading sm-left">
                 <h2 class="title">WHY DO YOU CHOOSE MAILCHECK?</h2>

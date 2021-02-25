@@ -71,9 +71,9 @@
     );
 
     let email = null;
-    let once = false;
     let element;
     let intersecting;
+    let intersected = false;
     let isOpen = false;
     let isError = false;
     let contactForm, popUpBlock;
@@ -82,9 +82,10 @@
         isError = false;
         document.body.classList.remove("fixed");
     };
-    const onIntersect = () => {
-        if (!once) {
-            once = true;
+    const onIntersect = event => {
+        const id = event.detail.target.id;
+        if (!!intersecting && !!intersecting && !intersected && id === element.id) {
+            intersected = true;
         }
     };
     const onSubmit = (e) => {
@@ -137,10 +138,11 @@
     @import "../scss/molecules/popup";
 </style>
 
-<IntersectionObserver threshold={0.2} {element} bind:intersecting on:observe={onIntersect}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting on:observe|once={onIntersect}>
     <section
         bind:this={element}
-        class:intersecting={() => !once}
+        class:intersecting
+        class:intersected
         class="contact-us"
         id="contact-us">
         <div class="container">

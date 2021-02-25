@@ -10,7 +10,7 @@
     .button {
         position: fixed;
         right: 3%;
-        bottom: 15%;
+        bottom: 7rem;
         background-color:  #036;
         border-radius: 20px;
         z-index: 5;

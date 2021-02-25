@@ -88,22 +88,36 @@
 
     &.csm,
     &.own {
-      padding-left: 18%;
+      padding-left: 10%;
+    }
+
+    &.csm {
+      margin-bottom: 2.2rem;
+    }
+    &.own {
+      margin-top: 2.2rem;
     }
   }
 
-  .cto .team-member-info {
-    margin-left: 100px;
+  .cto {
+    &.team-member {
+      padding-left: 3.5rem;
+    }
+
+    .team-member-info {
+      margin-left: .5rem;
+    }
   }
 
   .team-member-info {
-    margin-left: 40px;
+    margin-left: 1rem;
     text-align: left;
   }
 
   .team-member-avatar {
     min-width: 110px;
     min-height: 110px;
+    left: -2rem;
   }
 
   .team-member-name {

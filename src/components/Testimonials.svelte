@@ -2,6 +2,7 @@
     import IntersectionObserver from "svelte-intersection-observer";
 
     let element;
+    let intersected = false;
     let intersecting;
     let slider;
     let active = false;
@@ -11,6 +12,13 @@
     const ITEMS_TO_SCROLL = 1;
     const SCROLL = ITEMS_TO_SCROLL * 420;
     const TIMEOUT = SCROLL_SPEED * 100;
+
+    const onIntersect = event => {
+        const id = event.detail.target.id;
+        if (!!intersecting && !intersected && id === element.id) {
+            intersected = true;
+        }
+    };
 
     function deactivate() {
         setTimeout(() => {
@@ -56,8 +64,13 @@
     @import "../scss/molecules/testimonials";
 </style>
 
-<IntersectionObserver threshold={0.1} {element} bind:intersecting>
-    <section class="testimonials" bind:this={element} class:intersecting>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting on:observe|once={onIntersect}>
+    <section 
+        class="testimonials" 
+        bind:this={element} 
+        class:intersecting 
+        class:intersected
+        id="testimonials">
         <div class="section-heading sm-left">
             <h2 class="title">TESTIMONIALS</h2>
             <p class="section-title-lg">TESTIMONIALS</p>
