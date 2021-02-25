@@ -24,10 +24,7 @@
         "url": "ssh://git@git.nodeart.app/mch/mailcheck.landing.git"
     },
     "dependencies": {
-        "-": "0.0.1",
         "compression": "^1.7.1",
-        "d": "^1.0.1",
-        "node-sass": "^5.0.0",
         "polka": "next",
         "sirv": "^1.0.0"
     },
@@ -59,6 +56,7 @@
         "firebase-tools": "^9.1.2",
         "gray-matter": "^4.0.2",
         "http-proxy-middleware": "^1.0.6",
+        "node-sass": "^5.0.0",
         "mdsvex": "^0.8.9",
         "postcss": "^8.2.6",
         "postcss-load-config": "^3.0.1",
