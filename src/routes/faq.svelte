@@ -522,7 +522,6 @@
                             Step by step guide on how to use
                             <a 
                                 sapper:prefetch
-                                target="_blank" 
                                 title="Mailchimp Integration instructions"
                                 href="/mailchimp-integration">
                                 Mailchimp
@@ -541,8 +540,7 @@
                         <p class="tab-text">
                             A step-by-step guide to integrate  Mailcheck with daily services using
                             <a 
-                                sapper:prefetch 
-                                target="_blank"
+                                sapper:prefetch
                                 title="Zapier Integration instructions"
                                 href="/zapier-integration">
                                 Zapier
