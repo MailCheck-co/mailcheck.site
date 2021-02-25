@@ -46,9 +46,10 @@ export default {
       }),
       svelte({
         ...svelteOptions,
-        dev,
-        hydratable: true,
-        emitCss: true,
+        compilerOptions: {
+          dev,
+          hydratable: true,
+        }
       }),
       url({
         sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -97,9 +98,11 @@ export default {
       }),
       svelte({
         ...svelteOptions,
-        generate: 'ssr',
-        hydratable: true,
-        dev,
+        compilerOptions: {
+          generate: 'ssr',
+          hydratable: true,
+          dev,
+        }
       }),
       url({
         sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
