@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { writable } from "svelte/store";
     import IntersectionObserver from "svelte-intersection-observer";
 
@@ -89,7 +89,7 @@
             once = true;
         }
     };
-    const onSubmit = async(e) => {
+    const onSubmit = async() => {
         const referrerValue = document.referrer;
         const data = {
             name: nameValue,
@@ -114,11 +114,10 @@
             isOpen = true;
             isError = true;
             console.error(e);
-
         }
 
         document.body.classList.add("fixed");
-        window.dataLayer.push({
+        (window as any).dataLayer.push({
             eventCategory: "site",
             eventAction: "contactform",
             eventLabel: "submit",
@@ -129,9 +128,9 @@
 </script>
 
 <style lang="scss">
-    @import "../scss/utilities/index";
-    @import "../scss/molecules/contact-us";
-    @import "../scss/molecules/popup";
+  @import "../scss/utilities/index";
+  @import "../scss/molecules/contact-us";
+  @import "../scss/molecules/popup";
 </style>
 
 <IntersectionObserver threshold={0.2} {element} bind:intersecting on:observe={onIntersect}>
@@ -158,14 +157,16 @@
                     bind:value={email}
                     placeholder="Email"
                     class:invalid={!$validity.valid}
-                    use:validate={email} />
+                    use:validate={email}
+                    required
+                    />
                 <textarea
                     class="input input-message"
                     bind:value="{textareaValue}"
                     placeholder="Message"
                     required />
                 <button
-                    disabled={!$validity.valid || !$validity.dirty}
+                    disabled={!$validity.valid|| !$validity.dirty}
                     class="btn btn-submit"
                     type="submit">submit</button>
             </form>
