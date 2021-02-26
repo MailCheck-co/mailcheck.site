@@ -1,6 +1,6 @@
 <style lang="scss">
-    @import "../scss/utilities/index";
-    @import "../scss/molecules/main";
+  @import "../scss/utilities/index";
+  @import "../scss/molecules/main";
 </style>
 
 <script lang="ts">
@@ -132,7 +132,7 @@
                 { gravatar: (gravatar && gravatar.profileUrl) || "" }
             );
 
-            socialLinks = socialLinks.map((link: any) => {
+            socialLinks = socialLinks.map((link) => {
                 const id = link.title.toLowerCase();
                 if (links[id]) {
                     link.href = links[id];
