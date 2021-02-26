@@ -2,13 +2,13 @@
     import { writable } from "svelte/store";
     import IntersectionObserver from "svelte-intersection-observer";
 
-    function buildValidator(validators) {
-        return function validate(value, dirty) {
+    function buildValidator(validators: any) {
+        return function validate(value: string, dirty: boolean) {
             if (!validators || validators.length === 0) {
                 return { dirty, valid: true };
             }
 
-            const failing = validators.find((v) => v(value) !== true);
+            const failing = validators.find((v: any) => v(value) !== true);
 
             return {
                 dirty,
@@ -18,7 +18,7 @@
         };
     }
 
-    function createFieldValidator(...validators) {
+    function createFieldValidator(...validators: any[]) {
         const { subscribe, set } = writable({
             dirty: false,
             valid: false,
@@ -26,16 +26,16 @@
         });
         const validator = buildValidator(validators);
 
-        function action(node, binding) {
-            function validate(value, dirty) {
+        function action(node: any, binding: any) {
+            function validate(value: any, dirty: any) {
                 const result = validator(value, dirty);
-                set(result);
+                set(result as any);
             }
 
             validate(binding, false);
 
             return {
-                update(value) {
+                update(value: any) {
                     validate(value, true);
                 },
             };
@@ -45,7 +45,7 @@
     }
 
     function emailValidator() {
-        return function email(value) {
+        return function email(value: string) {
             return (
                 (value &&
                     !!value.match(
@@ -57,7 +57,7 @@
     }
 
     function requiredValidator() {
-        return function required(value) {
+        return function required(value: string) {
             return (
                 (value !== undefined && value !== null && value !== "") ||
                 "This field is required"
@@ -70,13 +70,13 @@
         emailValidator()
     );
 
-    let email = null;
+    let email: string = "";
     let once = false;
-    let element;
-    let intersecting;
+    let element: any;
+    let intersecting: any;
     let isOpen = false;
     let isError = false;
-    let contactForm, popUpBlock;
+    let contactForm: { reset: () => void; }, popUpBlock: any;
     let nameValue = '';
     let textareaValue = '';
     const onClose = () => {
@@ -98,11 +98,6 @@
             referrer: referrerValue,
         };
 
-        const formData = new FormData();
-
-        for (let name in data) {
-            formData.append(name, data[name]);
-        }
         try {
             await fetch("/api/sendMail", {
             method: "POST",
@@ -117,7 +112,7 @@
         }
 
         document.body.classList.add("fixed");
-        (window as any).dataLayer.push({
+        window.dataLayer.push({
             eventCategory: "site",
             eventAction: "contactform",
             eventLabel: "submit",
