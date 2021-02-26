@@ -2,7 +2,7 @@
     import { writable } from "svelte/store";
     import IntersectionObserver from "svelte-intersection-observer";
 
-    function buildValidator(validators: any) {
+    function buildValidator(validators: any[]) {
         return function validate(value: string, dirty: boolean) {
             if (!validators || validators.length === 0) {
                 return { dirty, valid: true };
@@ -151,7 +151,7 @@
                     type="text"
                     bind:value={email}
                     placeholder="Email"
-                    class:invalid={!$validity.valid}
+                    class:invalid={(!$validity.valid)}
                     use:validate={email}
                     required
                     />
