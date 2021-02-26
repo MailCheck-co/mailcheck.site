@@ -60,8 +60,7 @@
     <section 
         class="testimonials" 
         bind:this={element} 
-        class:intersecting 
-        id="testimonials">
+        class:intersecting>
         <div class="section-heading sm-left">
             <h2 class="title">TESTIMONIALS</h2>
             <p class="section-title-lg">TESTIMONIALS</p>

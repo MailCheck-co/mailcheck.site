@@ -14,8 +14,7 @@
     <section 
         class="reviews" 
         bind:this={element} 
-        class:intersecting 
-        id="reviews">
+        class:intersecting>
         <div class="section-heading">
             <h2 class="title">Our customer's reviews</h2>
             <p class="section-title-lg">REVIEWS</p>

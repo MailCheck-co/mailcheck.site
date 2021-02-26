@@ -14,8 +14,7 @@
     <section 
         bind:this={element} 
         class:intersecting
-        class="choose-your"
-        id="choose">
+        class="choose-your">
         <div class="container">
             <div class="section-heading sm-left">
                 <h2 class="title">WHY DO YOU CHOOSE MAILCHECK?</h2>

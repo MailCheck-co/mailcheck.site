@@ -14,8 +14,7 @@
     <section 
         class="partners" 
         bind:this={element} 
-        class:intersecting 
-        id="partners">
+        class:intersecting>
         <div class="section-heading sm-left">
             <h2 class="title">YOU’RE IN GOOD COMPANY</h2>
             <p class="section-title-lg">PARTNERS</p>

@@ -14,8 +14,7 @@
     <section 
         class="team" 
         bind:this={element} 
-        class:intersecting 
-        id="team">
+        class:intersecting>
         <div class="container">
             <div class="section-wrapper">
                 <div class="section-heading sm-left">

@@ -135,8 +135,7 @@
     <section
         bind:this={element}
         class:intersecting
-        class="contact-us"
-        id="contact-us">
+        class="contact-us">
         <div class="container">
             <form
                 class="contact-form"

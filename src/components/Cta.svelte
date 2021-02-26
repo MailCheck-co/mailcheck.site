@@ -14,8 +14,7 @@
     <section
         bind:this={element}
         class:intersecting
-        class="cta"
-        id="cta">
+        class="cta">
         <div class="container">
             <div class="cta-info">
                 <h2 class="cta-text">Verify 10-100 emails for free!</h2>
