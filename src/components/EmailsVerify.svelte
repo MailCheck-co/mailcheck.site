@@ -18,8 +18,9 @@
     let validatyEmailRisk = "";
     let emailInput = "";
     let rateResult = "";
+    let loader = false;
+    let result = false;
     const reset = () => {
-        // verifyEmailForm.reset();
         isChecking = false;
         isChecked = false;
     };
@@ -96,11 +97,8 @@
     ];
     const verifyEmailFormSubmit = async () => {
         isChecking = true;
-        const verifyEmailForm = document.getElementById("verify-email");
-        const emailResults = verifyEmailForm.querySelector(".email-results");
-        const formPreloader = emailResults.querySelector(".form-preloader");
-
-        (<HTMLElement>emailResults).style.display = "block";
+        result = true;
+        loader = true;
         try {
             const response = await fetch("/api/checkMail", {
                 method: "POST",
@@ -157,16 +155,17 @@
                 validatyEmailRisk = "valid";
                 validityClass = "success";
             }
+            loader = false;
             isChecked = true;
             reset();
         } catch (e) {
+            loader = false;
             (e) => console.error(e);
         }
-        (<HTMLElement>formPreloader).style.display = "none";
     };
     const closeBtn = () => {
-        (<HTMLElement>document.querySelector(".email-results")).style.display =
-            "none";
+        result = false;
+        loader = false;
     };
 </script>
 
@@ -212,8 +211,10 @@
                             </button>
                         {/if}
                     </div>
-                    <div class="email-results">
-                        <div class="form-preloader"></div>
+                    <div class="email-results" class:result>
+                        {#if loader }
+                        <div class="form-preloader" ></div>
+                        {/if}
                         <p class="results-title">
                             Validation RESULTS -
                             <span id="email-risk" class="{validityClass}">
