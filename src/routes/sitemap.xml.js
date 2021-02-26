@@ -20,7 +20,7 @@ export function get(req, res, next) {
         data.push( el.pattern.source.toString()
             .replace(/\\/g, '')
             .split('/')
-            .filter(el => /[a-zA-Z-]/.exec(el))
+            .filter(element => /[a-zA-Z-]/.exec(element))
             .join('/')
             // .replace(/\/\s*$/, "") //remove trailing "/"
         )
