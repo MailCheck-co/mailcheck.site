@@ -2,20 +2,12 @@
     import IntersectionObserver from "svelte-intersection-observer";
 
     let element;
-    let intersected = false;
     let intersecting;
     let slider;
     let active = false;
     let startX;
     let scrollLeft;
     const SCROLL_SPEED = 1;
-
-    const onIntersect = event => {
-        const id = event.detail.target.id;
-        if (!!intersecting && !intersected && id === element.id) {
-            intersected = true;
-        }
-    };
 
     function onMouseDown(e) {
         active = true;
@@ -41,11 +33,10 @@
     @import "../scss/molecules/cost";
 </style>
 
-<IntersectionObserver threshold={0.1} {element} bind:intersecting on:observe|once={onIntersect}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once>
     <section
         bind:this={element}
         class:intersecting
-        class:intersected
         class="cost-effective"
         id="pricing">
         <div class="section-heading sm-left">

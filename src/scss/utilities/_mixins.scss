@@ -154,9 +154,4 @@
     opacity: 1;
     transform: matrix(1, 0, 0, 1, 0, 0);
   }
-
-  &.intersected {
-    opacity: 1 !important;
-    transform: matrix(1, 0, 0, 1, 0, 0) !important;
-  }
 }

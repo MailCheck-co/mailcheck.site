@@ -3,13 +3,6 @@
 
     let element: any;
     let intersecting: boolean;
-    let intersected: boolean = false;
-    const onIntersect = event => {
-        const id = event.detail.target.id;
-        if (!!intersecting && !intersected && id === element.id) {
-            intersected = true;
-        }
-    };
 </script>
 
 <style lang="scss">
@@ -17,11 +10,10 @@
     @import "../scss/molecules/cta";
 </style>
 
-<IntersectionObserver threshold={0.1} {element} bind:intersecting on:observe|once={onIntersect}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once>
     <section
         bind:this={element}
         class:intersecting
-        class:intersected
         class="cta"
         id="cta">
         <div class="container">

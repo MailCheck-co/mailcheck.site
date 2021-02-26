@@ -2,14 +2,7 @@
     import IntersectionObserver from "svelte-intersection-observer";
 
     let element: any;
-    let intersected: boolean = false;
     let intersecting: boolean;
-    const onIntersect = event => {
-        const id = event.detail.target.id;
-        if (!!intersecting && !intersected && id === element.id) {
-            intersected = true;
-        }
-    };
 </script>
 
 <style lang="scss">
@@ -17,12 +10,11 @@
     @import "../scss/molecules/team";
 </style>
 
-<IntersectionObserver threshold={0.1} {element} bind:intersecting on:observe|once={onIntersect}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once>
     <section 
         class="team" 
         bind:this={element} 
         class:intersecting 
-        class:intersected
         id="team">
         <div class="container">
             <div class="section-wrapper">
