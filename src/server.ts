@@ -9,7 +9,7 @@ const dev = NODE_ENV === 'development';
 const ifDev = () => {
 	if (dev) {
 		polka() // You can also use Express
-		.use('/checkMail', createProxyMiddleware({ target: "https://www.mailcheck.co", changeOrigin: true }))
+		.use('/api', createProxyMiddleware({ target: "https://www.mailcheck.co", changeOrigin: true }))
 		.use(
 			compression({ threshold: 0 }),
 			sirv('static', { dev }),
