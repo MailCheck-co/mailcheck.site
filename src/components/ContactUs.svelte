@@ -77,6 +77,8 @@
     let isOpen = false;
     let isError = false;
     let contactForm, popUpBlock;
+    let nameValue = '';
+    let textareaValue = '';
     const onClose = () => {
         isOpen = false;
         isError = false;
@@ -87,14 +89,11 @@
             once = true;
         }
     };
-    const onSubmit = (e) => {
-        const nameValue = contactForm.querySelector(".input-name").value;
-        const mailValue = contactForm.querySelector(".input-email").value;
-        const textareaValue = contactForm.querySelector(".input-message").value;
+    const onSubmit = async(e) => {
         const referrerValue = document.referrer;
         const data = {
             name: nameValue,
-            email: mailValue,
+            email,
             subject: textareaValue,
             referrer: referrerValue,
         };
@@ -104,21 +103,19 @@
         for (let name in data) {
             formData.append(name, data[name]);
         }
-
-        fetch("/api/sendMail", {
+        try {
+            await fetch("/api/sendMail", {
             method: "POST",
             body: JSON.stringify(data),
-        })
-            .then((res) => res.text())
-            .then(() => {
-                isOpen = true;
-                contactForm.reset();
-            })
-            .catch((e) => {
-                document.querySelector("popup-text").textContent = e;
-                isOpen = true;
-                isError = true;
             });
+            isOpen = true;
+            contactForm.reset();
+        } catch (e) {
+            isOpen = true;
+            isError = true;
+            console.error(e);
+
+        }
 
         document.body.classList.add("fixed");
         window.dataLayer.push({
@@ -153,6 +150,7 @@
                     class="input input-name"
                     type="text"
                     placeholder="Name"
+                    bind:value={nameValue}
                     required />
                 <input
                     class="input input-email"
@@ -161,9 +159,9 @@
                     placeholder="Email"
                     class:invalid={!$validity.valid}
                     use:validate={email} />
-
                 <textarea
                     class="input input-message"
+                    bind:value="{textareaValue}"
                     placeholder="Message"
                     required />
                 <button
