@@ -112,7 +112,7 @@
         }
 
         document.body.classList.add("fixed");
-        window.dataLayer.push({
+        window.dataLayer?.push({
             eventCategory: "site",
             eventAction: "contactform",
             eventLabel: "submit",
