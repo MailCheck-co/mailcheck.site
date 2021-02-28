@@ -10,7 +10,9 @@ html {
   outline: none;
 
   &::before,
-  &::after { box-sizing: inherit; }
+  &::after {
+    box-sizing: inherit;
+  }
 
   &:focus {
     outline: none;
@@ -20,7 +22,7 @@ html {
 body {
   min-height: 100%;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }

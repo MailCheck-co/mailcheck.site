@@ -20,9 +20,9 @@
   position: absolute;
   top: 10%;
   right: 0;
+  z-index: -1;
   width: 444px;
   height: auto;
-  z-index: -1;
   opacity: 0.1;
   pointer-events: none;
 }
@@ -78,9 +78,9 @@
   margin-top: 0;
   padding: 0 10px;
   font-size: 16px;
-  word-break: break-word;
   text-align: initial;
   text-indent: initial;
+  word-break: break-word;
 
   & > a {
     color: $primary-accent;
@@ -115,7 +115,7 @@
     border-left: 1px solid $primary-accent;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
-    content: '';
+    content: "";
   }
 }
 
@@ -142,7 +142,7 @@
     font-weight: 900;
     font-size: 160px;
     text-transform: uppercase;
-    content: 'faq';
+    content: "faq";
   }
 }
 
@@ -159,12 +159,12 @@
     color: $primary-white;
     background-color: $primary-accent;
     border: none;
-  
+
     &:hover {
       color: $primary-accent;
       background-color: $primary-white;
     }
-  
+
     &:active {
       color: $primary-white;
       background-color: $primary-accent;

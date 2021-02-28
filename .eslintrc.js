@@ -23,9 +23,7 @@ module.exports = {
     },
     {
       files: ["*.ts", "*.json"],
-      extends: [
-        "plugin:@typescript-eslint/recommended",
-      ],
+      extends: ["plugin:@typescript-eslint/recommended"],
     },
   ],
   rules: {
@@ -38,6 +36,6 @@ module.exports = {
   settings: {
     "svelte3/preprocess": eslintSveltePreprocess(svelteConfigPath),
     //"svelte3/preprocess": eslintSveltePreprocess(),
-    'svelte3/ignore-styles': false
+    "svelte3/ignore-styles": false,
   },
 };

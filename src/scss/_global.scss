@@ -1,86 +1,86 @@
 :global(h1) {
-    font-size: 2.25em;
-    width: 100%;
-    height: auto;
-    color: #fff;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-    font-weight: 600;
-    line-height: 40px;
-    text-align: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.25em;
+  line-height: 40px;
+  letter-spacing: 1.6px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 :global(h2) {
-    font-size: 1.8em;
-    font-weight: 600;
-    color: #fff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8em;
 }
 
 :global(h3) {
-    font-size: 1.4em;
-    font-weight: 600;
-    color: #fff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4em;
 }
 
 :global(pre) {
-    background-color: #f9f9f9;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-    padding: 0.5em;
-    border-radius: 2px;
-    overflow-x: auto;
-    color: #fff;
+  padding: 0.5em;
+  overflow-x: auto;
+  color: #fff;
+  background-color: #f9f9f9;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
 }
 
 :global(pre) :global(code) {
-    background-color: transparent;
-    padding: 0;
-    color: #fff;
+  padding: 0;
+  color: #fff;
+  background-color: transparent;
 }
 
 :global(ul) {
-    padding: 0 0 0 25px;
-    line-height: 1.5;
+  padding: 0 0 0 25px;
+  line-height: 1.5;
 }
 
 :global(li) {
-    margin: 0 0 0.5em 0;
-    color: #fff;
+  margin: 0 0 0.5em 0;
+  color: #fff;
 }
 
 :global(p) {
-    color: #fff;
-    line-height: 1.5;
-    font-weight: 300;
-    letter-spacing: .8px;
-    text-align: justify;
-    text-indent: 20px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  text-align: justify;
+  text-indent: 20px;
 }
 
 :global(p) {
-    img {
-      margin-left: -20px;
-    }
+  img {
+    margin-left: -20px;
+  }
 }
 
 :global(strong) {
-    font-weight: 700;
-    color: #fff;
+  color: #fff;
+  font-weight: 700;
 }
 
 :global(a) {
-    color: #1bced4;
+  color: #1bced4;
 }
 
 :global(a:visited) {
-    color:#55baff;
+  color: #55baff;
 }
 
 :global(img) {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 [id] {
-    scroll-margin-top: 10ex;
+  scroll-margin-top: 10ex;
 }

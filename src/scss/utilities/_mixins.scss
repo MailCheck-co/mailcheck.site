@@ -25,7 +25,9 @@
 @mixin hover {
   &:hover,
   &:active,
-  &:focus { @content; }
+  &:focus {
+    @content;
+  }
 }
 
 // Feature Detection
@@ -55,13 +57,15 @@
 // $query - Defaults to `min-width`.
 // $type - Defaults to `screen`.
 
-@mixin mq($breakpoint, $query: 'min-width', $type: 'screen') {
+@mixin mq($breakpoint, $query: "min-width", $type: "screen") {
   @if $fix-mqs {
-    @if $fix-mqs >= $breakpoint { @content; }
-  }
-
-  @else {
-    @media #{$type} and (#{$query}: #{$breakpoint}) { @content; }
+    @if $fix-mqs >= $breakpoint {
+      @content;
+    }
+  } @else {
+    @media #{$type} and (#{$query}: #{$breakpoint}) {
+      @content;
+    }
   }
 }
 
@@ -77,10 +81,12 @@
   &::before,
   &::after {
     display: table;
-    content: '';
+    content: "";
   }
 
-  &::after { clear: both; }
+  &::after {
+    clear: both;
+  }
 }
 
 // Hide Text
@@ -142,16 +148,17 @@
 //
 // @usage - `@include invisible`
 
-@mixin invisible { visibility: hidden; }
+@mixin invisible {
+  visibility: hidden;
+}
 
 @mixin intersection {
-  opacity: 0;
   transform: matrix(1, 0, 0, 1, 0, 50);
-  
+  opacity: 0;
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 
   &.intersecting {
-    opacity: 1;
     transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
   }
 }

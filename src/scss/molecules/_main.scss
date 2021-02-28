@@ -62,7 +62,7 @@
     height: 730px;
     background: url("../assets/img/lines.svg") no-repeat 0 0;
     background-size: 100% 66%, 654px 740px;
-    content: '';
+    content: "";
     pointer-events: none;
   }
 
@@ -112,8 +112,8 @@
 
   .progress-wrapper {
     position: absolute;
-    right: 7px;
     top: 2px;
+    right: 7px;
   }
 }
 
@@ -143,7 +143,7 @@
       z-index: 1;
       width: 100px;
       height: 100px;
-      background-image: url('../assets/img/preloader-bars.svg');
+      background-image: url("../assets/img/preloader-bars.svg");
       background-repeat: no-repeat;
       background-position: center center;
       transform: translate(-50%, -50%);
@@ -170,55 +170,55 @@
       pointer-events: none;
 
       &.gravatar {
-        background-image: url('../assets/img/icons/gravatar.svg');
+        background-image: url("../assets/img/icons/gravatar.svg");
       }
 
       &.blogger {
-        background-image: url('../assets/img/icons/blogger.svg');
+        background-image: url("../assets/img/icons/blogger.svg");
       }
 
       &.facebook {
-        background-image: url('../assets/img/icon-facebook.svg');
+        background-image: url("../assets/img/icon-facebook.svg");
       }
 
       &.foursquare {
-        background-image: url('../assets/img/icons/foursquare.svg');
+        background-image: url("../assets/img/icons/foursquare.svg");
       }
 
       &.google {
-        background-image: url('../assets/img/icons/google.svg');
+        background-image: url("../assets/img/icons/google.svg");
       }
 
       &.linkedin {
-        background-image: url('../assets/img/icons/linkedin.svg');
+        background-image: url("../assets/img/icons/linkedin.svg");
       }
 
       &.tripit {
-        background-image: url('../assets/img/icons/tripit.svg');
+        background-image: url("../assets/img/icons/tripit.svg");
       }
 
       &.tumblr {
-        background-image: url('../assets/img/icons/tumblr.svg');
+        background-image: url("../assets/img/icons/tumblr.svg");
       }
 
       &.twitter {
-        background-image: url('../assets/img/icons/twitter.svg');
+        background-image: url("../assets/img/icons/twitter.svg");
       }
 
       &.vimeo {
-        background-image: url('../assets/img/icons/vimeo.svg');
+        background-image: url("../assets/img/icons/vimeo.svg");
       }
 
       &.wordpress {
-        background-image: url('../assets/img/icons/wordpress.svg');
+        background-image: url("../assets/img/icons/wordpress.svg");
       }
 
       &.youtube {
-        background-image: url('../assets/img/icons/youtube.svg');
+        background-image: url("../assets/img/icons/youtube.svg");
       }
 
       &.github {
-        background-image: url('../assets/img/icons/github.svg');
+        background-image: url("../assets/img/icons/github.svg");
       }
 
       &.active {
@@ -311,7 +311,7 @@
     height: 2px;
     background-color: $primary-white;
     transform: rotate(45deg);
-    content: '';
+    content: "";
   }
 
   &::after {
@@ -322,7 +322,7 @@
     height: 2px;
     background-color: $primary-white;
     transform: rotate(-45deg);
-    content: '';
+    content: "";
   }
 }
 
@@ -365,7 +365,7 @@
       font-weight: 900;
       font-size: 150px;
       text-transform: uppercase;
-      content: 'mailcheck';
+      content: "mailcheck";
     }
   }
 }

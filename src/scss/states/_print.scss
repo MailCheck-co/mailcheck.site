@@ -44,12 +44,18 @@
   // Printing Tables:
   // http://css-discuss.incutio.com/wiki/Printing_Tables
 
-  thead { display: table-header-group; }
+  thead {
+    display: table-header-group;
+  }
 
   tr,
-  img { page-break-inside: avoid; }
+  img {
+    page-break-inside: avoid;
+  }
 
-  img { max-width: 100% !important; }
+  img {
+    max-width: 100% !important;
+  }
 
   p,
   h2,
