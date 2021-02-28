@@ -24,66 +24,66 @@ What you need:
 * Go to [Integration page](https://app.mailcheck.co/dashboard/integration)
 * Click on “Connect” button
 
-![](/assets/img/mailcheck/step1.png)
+![MailChimp integration step 1: Connect](/assets/img/mailcheck/step1.png)
 
 ### Step 2:
 * Log in your Mailchimp account
 
-![](/assets/img/mailcheck/step2.png)
+![MailChimp integration step 2.1: Log in your Mailchimp account](/assets/img/mailcheck/step2.png)
 
 * Allow Mailcheck to view Mailchimp data
 
-![](/assets/img/mailcheck/step2-1.png)
+![MailChimp integration step 2.1: Allow Mailcheck to view Mailchimp data](/assets/img/mailcheck/step2-1.png)
 
 ### Step 3:
 * Once the account connected enter Integration to start the validation process:
 
-![](/assets/img/mailcheck/step3.png)
+![MailChimp integration step 3: Once the account connected enter Integration to start the validation process](/assets/img/mailcheck/step3.png)
 
 ### Step 4:
 * You can also see the number of emails on the Mailchimp
 * Click “Process” to start the validation operation
 
-![](/assets/img/mailcheck/step4.png)
+![MailChimp integration step 4: Click “Process” to start the validation operation](/assets/img/mailcheck/step4.png)
 
 ### Step 5:
 * If the process has started you’ll be prompted to “History” tab where you can see the progress of the validation, once it’s done, the information will be sent to Mailchimp
 
-![](/assets/img/mailcheck/step5.png)
+![MailChimp integration step 5: see the progress of the validation](/assets/img/mailcheck/step5.png)
 
 ### Step 6:
 * Let’s go to Mailchimp to see the results:
 * Go to audience section
 * Choose all contacts
 
-![](/assets/img/mailcheck/step6.png)
+![MailChimp integration step 6: Choose all contacts](/assets/img/mailcheck/step6.png)
 
 ### Step 7:
 * In order to see Mailcheck results you have to activate the appropriate columns
 * Click “Toggle columns” and choose from the dropdown menu **“Mailcheck Score”**, **“Mailcheck Status”**, **"Mailcheck Date"**
 
-![](/assets/img/mailcheck/step7.png)
+![MailChimp integration step 7: Click “Toggle columns” and choose from the dropdown menu “Mailcheck Score”, “Mailcheck Status”, "Mailcheck Date"](/assets/img/mailcheck/step7.png)
 
 ### Step 8:
 * *Now you can see the results*
 
-![](/assets/img/mailcheck/step8.png)
+![MailChimp integration step 8: see the results](/assets/img/mailcheck/step8.png)
 
 But how to filter the data?
 
 ### Step 9:
 * In order to filter your data in Mailchimp please click on “Edit segment”
 
-![](/assets/img/mailcheck/step9.png)
+![MailChimp integration step 9: filter your data in Mailchimp](/assets/img/mailcheck/step9.png)
 
 * Choose “Mailcheck Status” “is” “invalid” you can actually type any of the existing statuses
 * We have 3 options “Valid”, “Invalid”, “Risky”
 
-![](/assets/img/mailcheck/step9-1.png)
+![MailChimp integration step 9.1: Mailcheck Statuses Valid/Invalid/Risky](/assets/img/mailcheck/step9-1.png)
 
 * I’ve decided to choose “invalid” so I could unsubscribe them from emailing list
 
-![](/assets/img/mailcheck/step9-2.png)
+![MailChimp integration step 9.2: unsubscribe “invalid” emails](/assets/img/mailcheck/step9-2.png)
 
 That’s it &#128077;
 If you still have questions please contact our team via LiveChat or [integration@mailcheck.co](mailto:integration@mailcheck.co)
