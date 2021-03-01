@@ -25,9 +25,9 @@
 
 %select {
   margin-right: 25px;
+  color: #fff;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #fff;
 
   & > option {
     color: $black;
@@ -53,6 +53,7 @@
 
 .select-mobile {
   @extend %select;
+
   display: none;
 }
 

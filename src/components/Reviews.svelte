@@ -1,80 +1,80 @@
-<script lang="ts">
-    import IntersectionObserver from "svelte-intersection-observer";
-
-    let element: any;
-    let intersecting: boolean;
-</script>
-
 <style lang="scss">
-    @import "../scss/utilities/index";
-    @import "../scss/molecules/reviews";
+  @import "../scss/utilities/index";
+  @import "../scss/molecules/reviews";
 </style>
 
-<IntersectionObserver threshold={0.1} {element} bind:intersecting>
-    <section class="reviews" bind:this={element} class:intersecting>
-        <div class="section-heading">
-            <h2 class="title">Our customer's reviews</h2>
-            <p class="section-title-lg">REVIEWS</p>
-        </div>
-        <div class="container">
-            <div class="section-wrapper sm-left">
-                <div class="reviews-list">
-                    <div class="reviews-item">
-                        <img
-                            src="assets/img/logo-product-hunt.png"
-                            alt=""
-                            class="reviews-item-logo" />
-                        <div class="reviews-item-rating">
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 1 star" />
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 2 stars" />
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 3 stars" />
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 4 stars" />
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 5 stars" />
-                        </div>
-                        <a
-                            href="https://www.producthunt.com/posts/mailcheck"
-                            target="_blank"
-                            rel="noopener"
-                            class="reviews-item-link btn">READ REVIEWS</a>
-                    </div>
-                    <div class="reviews-item">
-                        <img
-                            src="assets/img/logo-beta-list.png"
-                            alt=""
-                            class="reviews-item-logo" />
-                        <div class="reviews-item-likes">
-                            <span class="rating-counter">11</span>
-                            <img
-                                src="assets/img/icon-like-heart.svg"
-                                alt=""
-                                class="reviews-like-icon" />
-                        </div>
-                        <a
-                            href="https://betalist.com/startups/mailcheck"
-                            target="_blank"
-                            rel="noopener"
-                            class="reviews-item-link btn">READ REVIEWS</a>
-                    </div>
-                    <div class="reviews-item">
-                        <img
-                            src="assets/img/logo-capterra.png"
-                            alt=""
-                            class="reviews-item-logo" />
-                        <div class="reviews-item-rating">
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 1 star" />
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 2 stars" />
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 3 stars" />
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 4 stars" />
-                            <img src="assets/img/icon-star-rating.svg" alt="rating 5 stars" />
-                        </div>
-                        <a
-                            href="https://www.capterra.com/p/195397/Mailcheck/"
-                            target="_blank"
-                            rel="noopener"
-                            class="reviews-item-link btn">READ REVIEWS</a>
-                    </div>
-                </div>
+<script lang="ts">
+  import IntersectionObserver from "svelte-intersection-observer";
+
+  let element: any;
+  let intersecting: boolean;
+</script>
+
+<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting>
+  <section class="reviews" bind:this="{element}" class:intersecting>
+    <div class="section-heading">
+      <h2 class="title">Our customer's reviews</h2>
+      <p class="section-title-lg">REVIEWS</p>
+    </div>
+    <div class="container">
+      <div class="section-wrapper sm-left">
+        <div class="reviews-list">
+          <div class="reviews-item">
+            <img
+              src="assets/img/logo-product-hunt.png"
+              alt=""
+              class="reviews-item-logo" />
+            <div class="reviews-item-rating">
+              <img src="assets/img/icon-star-rating.svg" alt="rating 1 star" />
+              <img src="assets/img/icon-star-rating.svg" alt="rating 2 stars" />
+              <img src="assets/img/icon-star-rating.svg" alt="rating 3 stars" />
+              <img src="assets/img/icon-star-rating.svg" alt="rating 4 stars" />
+              <img src="assets/img/icon-star-rating.svg" alt="rating 5 stars" />
             </div>
+            <a
+              href="https://www.producthunt.com/posts/mailcheck"
+              target="_blank"
+              rel="noopener nofollow"
+              class="reviews-item-link btn">READ REVIEWS</a>
+          </div>
+          <div class="reviews-item">
+            <img
+              src="assets/img/logo-beta-list.png"
+              alt=""
+              class="reviews-item-logo" />
+            <div class="reviews-item-likes">
+              <span class="rating-counter">11</span>
+              <img
+                src="assets/img/icon-like-heart.svg"
+                alt=""
+                class="reviews-like-icon" />
+            </div>
+            <a
+              href="https://betalist.com/startups/mailcheck"
+              target="_blank"
+              rel="noopener nofollow"
+              class="reviews-item-link btn">READ REVIEWS</a>
+          </div>
+          <div class="reviews-item">
+            <img
+              src="assets/img/logo-capterra.png"
+              alt=""
+              class="reviews-item-logo" />
+            <div class="reviews-item-rating">
+              <img src="assets/img/icon-star-rating.svg" alt="rating 1 star" />
+              <img src="assets/img/icon-star-rating.svg" alt="rating 2 stars" />
+              <img src="assets/img/icon-star-rating.svg" alt="rating 3 stars" />
+              <img src="assets/img/icon-star-rating.svg" alt="rating 4 stars" />
+              <img src="assets/img/icon-star-rating.svg" alt="rating 5 stars" />
+            </div>
+            <a
+              href="https://www.capterra.com/p/195397/Mailcheck/"
+              target="_blank"
+              rel="noopener nofollow"
+              class="reviews-item-link btn">READ REVIEWS</a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </IntersectionObserver>

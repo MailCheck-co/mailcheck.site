@@ -27,9 +27,9 @@ const svelteOptions = {
       layout: {
         blog: "./src/layouts/blog.svelte",
         article: "./src/routes/_layout.svelte",
-        _: "./src/routes/_layout.svelte"
-      }
-    })
+        _: "./src/routes/_layout.svelte",
+      },
+    }),
   ],
 };
 

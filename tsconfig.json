@@ -1,21 +1,8 @@
 {
-		"extends": "@tsconfig/svelte/tsconfig.json",
-		"compilerOptions": {
-    "types": ["svelte"],
-    "rootDir": "./src",
-    "esModuleInterop": true,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noImplicitReturns": true,
-    "strict": true,
-    "downlevelIteration": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "noEmit": true,
-    "importsNotUsedAsValues": "error",
-    "isolatedModules": true,
-      "lib": ["DOM", "ES2020", "WebWorker"]
-		},
-		"include": ["src/**/*", "src/node_modules/**/*"],
-		"exclude": ["node_modules/*", "__sapper__/*", "static/*"]
-	}
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["DOM", "ES2020", "WebWorker"]
+  },
+  "include": ["src/**/*", "src/node_modules/**/*"],
+  "exclude": ["node_modules/*", "__sapper__/*", "static/*"]
+}
