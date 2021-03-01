@@ -6,7 +6,7 @@
 <script lang="ts">
   import IntersectionObserver from "svelte-intersection-observer";
 
-  let element: any;
+  let element: HTMLElement;
   let intersecting: boolean;
 </script>
 
