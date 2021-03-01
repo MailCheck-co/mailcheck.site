@@ -17,7 +17,7 @@
   }
 </style>
 
-<script>
+<script lang="ts">
   import Seo from "../components/seo.svelte";
   import ContactUs from "../components/ContactUs.svelte";
 
