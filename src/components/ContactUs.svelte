@@ -1,3 +1,8 @@
+<style lang="scss">
+  @import "../scss/utilities/index";
+  @import "../scss/molecules/contact-us";
+  @import "../scss/molecules/popup";
+</style>
 <script>
   import { writable } from "svelte/store";
   import IntersectionObserver from "svelte-intersection-observer";
@@ -122,12 +127,6 @@
       });
   };
 </script>
-
-<style lang="scss">
-@import "../scss/utilities/index";
-@import "../scss/molecules/contact-us";
-@import "../scss/molecules/popup";
-</style>
 
 <IntersectionObserver threshold={0.2} {element} bind:intersecting on:observe={onIntersect}>
   <section
