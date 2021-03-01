@@ -21,10 +21,10 @@
   }
 </style>
 
-<script>
+<script lang="ts">
   import { fade } from "svelte/transition";
 
-  let currentPosition;
+  let currentPosition: number;
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 </script>

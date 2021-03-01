@@ -5,7 +5,7 @@
   const desc = "Terms and Conditions";
 </script>
 
-<Seo desc="{desc}" title="Terms and Conditions" noindex="true" />
+<Seo desc="{desc}" title="Terms and Conditions" noindex=true />
 
 <main class="terms" id="terms">
   <div class="container">

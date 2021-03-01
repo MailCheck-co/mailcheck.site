@@ -53,10 +53,9 @@
   function emailValidator() {
     return function email(value) {
       return (
-        (value &&
-          !!value.match(
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-          )) ||
+        (value?.match(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        )) ||
         "Please enter a valid email"
       );
     };
@@ -77,12 +76,12 @@
   );
 
   let email = "";
-  let element;
-  let intersecting;
+  let element: HTMLElement;
+  let intersecting = false;
   let isOpen = false;
   let isError = false;
   let contactForm = { reset: () => {} };
-  let popUpBlock;
+  let popUpBlock: HTMLElement;
   let nameValue = "";
   let textareaValue = "";
   const onClose = () => {
