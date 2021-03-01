@@ -13,6 +13,7 @@
     "validate": "svelte-check --ignore src/node_modules/@sapper",
     "optimize-svg": "find ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo --disable=cleanupIDs",
     "lint": "eslint --ext .ts,.svelte .",
+    "lint-fix": "eslint --ext .ts,.svelte . --fix",
     "lint-css": "stylelint \"src/scss/**/*.+(scss|css)\" --fix",
     "deploy_hosting": "firebase deploy --only hosting --project=dev",
     "deploy_functions": "firebase deploy --only functions --project=dev",

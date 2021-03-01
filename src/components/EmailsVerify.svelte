@@ -21,151 +21,151 @@
     let loader = false;
     let result = false;
     const reset = () => {
-        isChecking = false;
-        isChecked = false;
+      isChecking = false;
+      isChecked = false;
     };
     const keyup = (e) => {
-        if (e.target.value === "") reset();
+      if (e.target.value === "") reset();
     };
     let links;
     let socialLinks = [
-        {
-            href: null,
-            title: "gravatar",
-            className: "gravatar",
-        },
-        {
-            href: null,
-            title: "blogger",
-            className: "blogger",
-        },
-        {
-            href: null,
-            title: "facebook",
-            className: "facebook",
-        },
-        {
-            href: null,
-            title: "foursquare",
-            className: "foursquare",
-        },
-        {
-            href: null,
-            title: "google",
-            className: "google",
-        },
-        {
-            href: null,
-            title: "github",
-            className: "github",
-        },
-        {
-            href: null,
-            title: "linkedin",
-            className: "linkedin",
-        },
-        {
-            href: null,
-            title: "tripit",
-            className: "tripit",
-        },
-        {
-            href: null,
-            title: "tumblr",
-            className: "tumblr",
-        },
-        {
-            href: null,
-            title: "twitter",
-            className: "twitter",
-        },
-        {
-            href: null,
-            title: "vimeo",
-            className: "vimeo",
-        },
-        {
-            href: null,
-            title: "wordpress",
-            className: "wordpress",
-        },
-        {
-            href: null,
-            title: "youtube",
-            className: "youtube",
-        }
+      {
+        href: null,
+        title: "gravatar",
+        className: "gravatar",
+      },
+      {
+        href: null,
+        title: "blogger",
+        className: "blogger",
+      },
+      {
+        href: null,
+        title: "facebook",
+        className: "facebook",
+      },
+      {
+        href: null,
+        title: "foursquare",
+        className: "foursquare",
+      },
+      {
+        href: null,
+        title: "google",
+        className: "google",
+      },
+      {
+        href: null,
+        title: "github",
+        className: "github",
+      },
+      {
+        href: null,
+        title: "linkedin",
+        className: "linkedin",
+      },
+      {
+        href: null,
+        title: "tripit",
+        className: "tripit",
+      },
+      {
+        href: null,
+        title: "tumblr",
+        className: "tumblr",
+      },
+      {
+        href: null,
+        title: "twitter",
+        className: "twitter",
+      },
+      {
+        href: null,
+        title: "vimeo",
+        className: "vimeo",
+      },
+      {
+        href: null,
+        title: "wordpress",
+        className: "wordpress",
+      },
+      {
+        href: null,
+        title: "youtube",
+        className: "youtube",
+      }
     ];
     const verifyEmailFormSubmit = async () => {
-        isChecking = true;
-        result = true;
-        loader = true;
-        try {
-            const response = await fetch("/api/checkMail", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    email: emailInput,
-                }),
-            });
-            const data = await response.json();
-            const exist = data.mxExists ? "+" : "-";
-            const smpt = data.smtpExists ? "+" : "-";
-            const disposable = data.isNotDisposable ? "+" : "-";
-            const catchAll = data.isNotSmtpCatchAll ? "+" : "-";
-            emailResult = data.email;
-            existsResult = exist;
-            smtpResult = smpt;
-            rateResult = data.trustRate;
-            disposableResult = disposable;
-            catchResult = catchAll;
+      isChecking = true;
+      result = true;
+      loader = true;
+      try {
+        const response = await fetch("/api/checkMail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: emailInput,
+          }),
+        });
+        const data = await response.json();
+        const exist = data.mxExists ? "+" : "-";
+        const smpt = data.smtpExists ? "+" : "-";
+        const disposable = data.isNotDisposable ? "+" : "-";
+        const catchAll = data.isNotSmtpCatchAll ? "+" : "-";
+        emailResult = data.email;
+        existsResult = exist;
+        smtpResult = smpt;
+        rateResult = data.trustRate;
+        disposableResult = disposable;
+        catchResult = catchAll;
 
-            const gravatar =
+        const gravatar =
                 data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
 
-            links = ((gravatar && gravatar.accounts) || []).reduce(
-                (acc, el) => {
-                    acc[el.shortname] = el.url;
-                    return acc;
-                },
-                { gravatar: (gravatar && gravatar.profileUrl) || "" }
-            );
+        links = ((gravatar && gravatar.accounts) || []).reduce(
+          (acc, el) => {
+            acc[el.shortname] = el.url;
+            return acc;
+          },
+          { gravatar: (gravatar && gravatar.profileUrl) || "" }
+        );
 
-            socialLinks = socialLinks.map((link) => {
-                const id = link.title.toLowerCase();
-                if (links[id]) {
-                    link.href = links[id];
-                    link.className = `${link.className}`;
-                    return link;
+        socialLinks = socialLinks.map((link) => {
+          const id = link.title.toLowerCase();
+          if (links[id]) {
+            link.href = links[id];
+            link.className = `${link.className}`;
+            return link;
                     
-                } else {
-                    link.href = null;
-                    return link;
-                }
-            });
+          } else {
+            link.href = null;
+            return link;
+          }
+        });
 
-            if (data.trustRate <= 49 || data.code >= 400) {
-                validatyEmailRisk = "invalid";
-                validityClass = "error";
-            } else if (data.trustRate > 49 && data.trustRate < 80) {
-                validatyEmailRisk = "risky";
-                validityClass = "warning";
-            } else {
-                validatyEmailRisk = "valid";
-                validityClass = "success";
-            }
-            loader = false;
-            isChecked = true;
-            reset();
-        } catch (e) {
-            loader = false;
-            (e) => console.error(e);
+        if (data.trustRate <= 49 || data.code >= 400) {
+          validatyEmailRisk = "invalid";
+          validityClass = "error";
+        } else if (data.trustRate > 49 && data.trustRate < 80) {
+          validatyEmailRisk = "risky";
+          validityClass = "warning";
+        } else {
+          validatyEmailRisk = "valid";
+          validityClass = "success";
         }
+        loader = false;
+        isChecked = true;
+        reset();
+      } catch (e) {
+        loader = false;
+        (e) => console.error(e);
+      }
     };
     const closeBtn = () => {
-        result = false;
-        loader = false;
+      result = false;
+      loader = false;
     };
 </script>
 

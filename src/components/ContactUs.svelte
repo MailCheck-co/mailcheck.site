@@ -105,18 +105,18 @@
       referrer: referrerValue,
     };
 
-        try {
-            await fetch("/api/sendMail", {
-            method: "POST",
-            body: JSON.stringify(data),
-            });
-            isOpen = true;
-            contactForm.reset();
-        } catch (e) {
-            isOpen = true;
-            isError = true;
-            console.error(e);
-        }
+    try {
+      await fetch("/api/sendMail", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+      isOpen = true;
+      contactForm.reset();
+    } catch (e) {
+      isOpen = true;
+      isError = true;
+      console.error(e);
+    }
 
     document.body.classList.add("fixed");
     window.dataLayer.push({
