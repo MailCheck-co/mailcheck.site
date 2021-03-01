@@ -44,7 +44,6 @@ module.exports = {
   settings: {
     "svelte3/typescript": require("typescript"), // pass the TypeScript package to the Svelte plugin
     "svelte3/preprocess": eslintSveltePreprocess(svelteConfigPath),
-    //"svelte3/preprocess": eslintSveltePreprocess(),
     "svelte3/ignore-styles": false,
   },
 };
