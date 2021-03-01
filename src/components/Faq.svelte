@@ -130,7 +130,7 @@
 
       <img
         class="filter-img"
-        src="../assets/img/filter.png"
+        src="/assets/img/filter.png"
         width="444"
         height="568"
         alt="filter" />
