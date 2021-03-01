@@ -93,7 +93,7 @@
       once = true;
     }
   };
-  const onSubmit = (e) => {
+  const onSubmit = async() => {
     const nameValue = contactForm.querySelector(".input-name").value;
     const mailValue = contactForm.querySelector(".input-email").value;
     const textareaValue = contactForm.querySelector(".input-message").value;

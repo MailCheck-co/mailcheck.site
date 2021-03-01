@@ -4,147 +4,146 @@
 </style>
 
 <script lang="ts">
-  import Progress from "./Progress.svelte";
+    import Progress from "./Progress.svelte";
 
-  export let isChecking = false;
-  export let isChecked = false;
-  export let validityClass = "";
+    export let isChecking = false;
+    export let isChecked = false;
+    export let validityClass = "";
 
-  let emailResult = "";
-  let existsResult = "";
-  let smtpResult = "";
-  let disposableResult = "";
-  let catchResult = "";
-  let validatyEmailRisk = "";
-  let emailInput = "";
-  let rateResult = "";
-  const reset = () => {
-    // verifyEmailForm.reset();
-    isChecking = false;
-    isChecked = false;
-  };
-  const keyup = (e) => {
-    if (e.target.value === "") reset();
-  };
-  let links;
-  let socialLinks = [
-    {
-      href: null,
-      title: "gravatar",
-      className: "gravatar",
-    },
-    {
-      href: null,
-      title: "blogger",
-      className: "blogger",
-    },
-    {
-      href: null,
-      title: "facebook",
-      className: "facebook",
-    },
-    {
-      href: null,
-      title: "foursquare",
-      className: "foursquare",
-    },
-    {
-      href: null,
-      title: "google",
-      className: "google",
-    },
-    {
-      href: null,
-      title: "github",
-      className: "github",
-    },
-    {
-      href: null,
-      title: "linkedin",
-      className: "linkedin",
-    },
-    {
-      href: null,
-      title: "tripit",
-      className: "tripit",
-    },
-    {
-      href: null,
-      title: "tumblr",
-      className: "tumblr",
-    },
-    {
-      href: null,
-      title: "twitter",
-      className: "twitter",
-    },
-    {
-      href: null,
-      title: "vimeo",
-      className: "vimeo",
-    },
-    {
-      href: null,
-      title: "wordpress",
-      className: "wordpress",
-    },
-    {
-      href: null,
-      title: "youtube",
-      className: "youtube",
-    },
-  ];
-  const verifyEmailFormSubmit = async () => {
-    isChecking = true;
-    const verifyEmailForm = document.getElementById("verify-email");
-    const emailResults = verifyEmailForm.querySelector(".email-results");
-    const formPreloader = emailResults.querySelector(".form-preloader");
-
-    (<HTMLElement>emailResults).style.display = "block";
-    try {
-      const response = await fetch("/api/checkMail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    let emailResult = "";
+    let existsResult = "";
+    let smtpResult = "";
+    let disposableResult = "";
+    let catchResult = "";
+    let validatyEmailRisk = "";
+    let emailInput = "";
+    let rateResult = "";
+    let loader = false;
+    let result = false;
+    const reset = () => {
+        isChecking = false;
+        isChecked = false;
+    };
+    const keyup = (e) => {
+        if (e.target.value === "") reset();
+    };
+    let links;
+    let socialLinks = [
+        {
+            href: null,
+            title: "gravatar",
+            className: "gravatar",
         },
-        body: JSON.stringify({
-          email: emailInput,
-        }),
-      });
-      const data = await response.json();
-      const exist = data.mxExists ? "+" : "-";
-      const smpt = data.smtpExists ? "+" : "-";
-      const disposable = data.isNotDisposable ? "+" : "-";
-      const catchAll = data.isNotSmtpCatchAll ? "+" : "-";
-      emailResult = data.email;
-      existsResult = exist;
-      smtpResult = smpt;
-      rateResult = data.trustRate;
-      disposableResult = disposable;
-      catchResult = catchAll;
-
-      const gravatar =
-        data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
-
-      links = ((gravatar && gravatar.accounts) || []).reduce(
-        (acc, el) => {
-          acc[el.shortname] = el.url;
-          return acc;
+        {
+            href: null,
+            title: "blogger",
+            className: "blogger",
         },
-        { gravatar: (gravatar && gravatar.profileUrl) || "" }
-      );
-
-      socialLinks = socialLinks.map((link: any) => {
-        const id = link.title.toLowerCase();
-        if (links[id]) {
-          link.href = links[id];
-          link.className = `${link.className}`;
-          return link;
-        } else {
-          link.href = null;
-          return link;
+        {
+            href: null,
+            title: "facebook",
+            className: "facebook",
+        },
+        {
+            href: null,
+            title: "foursquare",
+            className: "foursquare",
+        },
+        {
+            href: null,
+            title: "google",
+            className: "google",
+        },
+        {
+            href: null,
+            title: "github",
+            className: "github",
+        },
+        {
+            href: null,
+            title: "linkedin",
+            className: "linkedin",
+        },
+        {
+            href: null,
+            title: "tripit",
+            className: "tripit",
+        },
+        {
+            href: null,
+            title: "tumblr",
+            className: "tumblr",
+        },
+        {
+            href: null,
+            title: "twitter",
+            className: "twitter",
+        },
+        {
+            href: null,
+            title: "vimeo",
+            className: "vimeo",
+        },
+        {
+            href: null,
+            title: "wordpress",
+            className: "wordpress",
+        },
+        {
+            href: null,
+            title: "youtube",
+            className: "youtube",
         }
-      });
+    ];
+    const verifyEmailFormSubmit = async () => {
+        isChecking = true;
+        result = true;
+        loader = true;
+        try {
+            const response = await fetch("/api/checkMail", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: emailInput,
+                }),
+            });
+            const data = await response.json();
+            const exist = data.mxExists ? "+" : "-";
+            const smpt = data.smtpExists ? "+" : "-";
+            const disposable = data.isNotDisposable ? "+" : "-";
+            const catchAll = data.isNotSmtpCatchAll ? "+" : "-";
+            emailResult = data.email;
+            existsResult = exist;
+            smtpResult = smpt;
+            rateResult = data.trustRate;
+            disposableResult = disposable;
+            catchResult = catchAll;
+
+            const gravatar =
+                data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
+
+            links = ((gravatar && gravatar.accounts) || []).reduce(
+                (acc, el) => {
+                    acc[el.shortname] = el.url;
+                    return acc;
+                },
+                { gravatar: (gravatar && gravatar.profileUrl) || "" }
+            );
+
+            socialLinks = socialLinks.map((link) => {
+                const id = link.title.toLowerCase();
+                if (links[id]) {
+                    link.href = links[id];
+                    link.className = `${link.className}`;
+                    return link;
+                    
+                } else {
+                    link.href = null;
+                    return link;
+                }
+            });
 
             if (data.trustRate <= 49 || data.code >= 400) {
                 validatyEmailRisk = "invalid";
