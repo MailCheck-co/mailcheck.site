@@ -10,7 +10,7 @@ const ifDev = () => {
   if (dev) {
     polka() // You can also use Express
       .use(
-        "/checkMail",
+        "/api",
         createProxyMiddleware({
           target: "https://www.mailcheck.co",
           changeOrigin: true,
