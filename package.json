@@ -84,7 +84,13 @@
     "rules": {
       "no-descending-specificity": null,
       "plugin/no-low-performance-animation-properties": null,
-      "sh-waqar/declaration-use-variable": null
+      "sh-waqar/declaration-use-variable": null,
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": ["global"]
+        }
+      ]
     }
   }
 }
