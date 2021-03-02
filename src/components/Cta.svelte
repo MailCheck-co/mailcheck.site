@@ -10,7 +10,11 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting>
+<IntersectionObserver
+  threshold="{0.1}"
+  element="{element}"
+  bind:intersecting
+  once="{true}">
   <section class="cta" bind:this="{element}" class:intersecting>
     <div class="container">
       <div class="cta-info">

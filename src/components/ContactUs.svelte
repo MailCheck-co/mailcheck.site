@@ -76,7 +76,6 @@
   );
 
   let email = "";
-  let once = false;
   let element;
   let intersecting;
   let isOpen = false;
@@ -89,11 +88,6 @@
       isOpen = false;
       isError = false;
       document.body.classList.remove("fixed");
-  };
-  const onIntersect = () => {
-      if (!once) {
-          once = true;
-      }
   };
   const onSubmit = async() => {
       const referrerValue = document.referrer;
@@ -128,11 +122,14 @@
   };
 </script>
 
-<IntersectionObserver threshold={0.2} {element} bind:intersecting on:observe={onIntersect}>
+<IntersectionObserver
+  threshold="{0.1}"
+  element="{element}"
+  bind:intersecting
+  once="{true}">
   <section
       bind:this={element}
-      class:intersecting={() => !once}
-      class="contact-us"
+      class:intersecting
       id="contact-us">
       <div class="container">
           <form
