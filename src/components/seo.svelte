@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { stores } from "@sapper/app";
   import data from "../site-data";
 
@@ -7,10 +7,10 @@
   const { page } = stores();
 
   export let canonical = "";
-  export let title;
+  export let title: string;
   export let isPost = false;
   export let thumbnail = false;
-  export let desc;
+  export let desc: string;
   export let noindex = false;
 </script>
 

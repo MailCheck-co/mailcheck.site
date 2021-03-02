@@ -5,7 +5,7 @@
   const desc = "Privacy Policy";
 </script>
 
-<Seo desc="{desc}" title="PRIVACY" noindex="true" />
+<Seo desc="{desc}" title="PRIVACY" noindex=true />
 
 <main class="terms" id="privacy">
   <div class="container">

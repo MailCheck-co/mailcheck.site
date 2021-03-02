@@ -3,15 +3,15 @@
   @import "../scss/molecules/testimonials";
 </style>
 
-<script>
+<script type="ts">
   import IntersectionObserver from "svelte-intersection-observer";
 
-  let element;
-  let intersecting;
-  let slider;
+  let element: HTMLElement;
+  let intersecting: boolean;
+  let slider: HTMLElement;
   let active = false;
-  let startX;
-  let scrollLeft;
+  let startX: number;
+  let scrollLeft: number;
   const SCROLL_SPEED = 4; // DON'T CHANGE!!!
   const ITEMS_TO_SCROLL = 1;
   const SCROLL = ITEMS_TO_SCROLL * 420;
@@ -37,7 +37,7 @@
     deactivate();
   }
 
-  function onMouseDown(e) {
+  function onMouseDown(e: MouseEvent) {
     active = true;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
@@ -47,7 +47,7 @@
     active = false;
   }
 
-  function onMouseMove(e) {
+  function onMouseMove(e: MouseEvent) {
     if (!active) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
@@ -56,7 +56,7 @@
   }
 </script>
 
-<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting>
+<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
   <section class="testimonials" bind:this="{element}" class:intersecting>
     <div class="section-heading sm-left">
       <h2 class="title">TESTIMONIALS</h2>

@@ -21,6 +21,7 @@ const svelteOptions = {
       },
       defaults: {
         style: "scss",
+        script: "typescript",
       },
     }),
     mdsvex({
