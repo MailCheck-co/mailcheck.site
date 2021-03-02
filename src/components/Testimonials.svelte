@@ -56,7 +56,7 @@
   }
 </script>
 
-<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting>
+<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
   <section class="testimonials" bind:this="{element}" class:intersecting>
     <div class="section-heading sm-left">
       <h2 class="title">TESTIMONIALS</h2>

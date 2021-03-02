@@ -10,8 +10,8 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver threshold="{0.2}" element="{element}" bind:intersecting>
-  <section bind:this="{element}" class="frequent-questions">
+<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
+  <section bind:this="{element}" class="frequent-questions" class:intersecting>
     <div class="wrapper-questions">
       <h3 class="title-small">FAQ</h3>
 

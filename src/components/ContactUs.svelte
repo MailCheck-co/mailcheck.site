@@ -122,8 +122,8 @@
   };
 </script>
 
-<IntersectionObserver threshold="{0.2}" element="{element}" bind:intersecting>
-  <section bind:this="{element}" class="contact-us" id="contact-us">
+<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
+  <section bind:this="{element}" id="contact-us" class:intersecting>
     <div class="container">
       <form
         class="contact-form"

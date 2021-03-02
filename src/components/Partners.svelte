@@ -10,7 +10,7 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting>
+<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
   <section class="partners" bind:this="{element}" class:intersecting>
     <div class="section-heading sm-left">
       <h2 class="title">YOU’RE IN GOOD COMPANY</h2>
