@@ -26,7 +26,7 @@ These days, the internet is flooded with online shops, all of them are direct an
 
 Have you ever tried to buy something online, went through most of the checkout steps, and then abandoned it because you found the checkout to be too tedious? If you ever found yourself in a similar situation, your customers have too. Easy and smooth checkout, easy signup, and order placing process as well as many other aspects are a part of pleasant user experience, and email validation API has a part to play in it.
 
-![email dashboard](../../assets/img/email-dashboard.png)
+![email dashboard](../../assets/img/email-dashboard.jpg)
 
 Source: weDevs
 
