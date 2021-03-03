@@ -20,11 +20,9 @@
           <input
             class="input-radio"
             type="checkbox"
-            id="radio1"
             name="acc-tabs" />
-          <label class="tab-label" for="radio1"
-            >What's the difference between the Mailcheck and previous competitor
-            offers?</label>
+          <span class="tab-label">What's the difference between the Mailcheck and previous competitor
+            offers?</span>
           <div class="tab-content">
             <p class="tab-text">
               Mailcheck provides the highest amount of the email validations
@@ -38,10 +36,8 @@
           <input
             class="input-radio"
             type="checkbox"
-            id="radio2"
             name="acc-tabs" />
-          <label class="tab-label" for="radio2"
-            >I got a CMS built website is there a way to use your service?</label>
+          <span class="tab-label">I got a CMS built website is there a way to use your service?</span>
           <div class="tab-content">
             <p class="tab-text">
               We have several solutions,
@@ -72,10 +68,8 @@
           <input
             class="input-radio"
             type="checkbox"
-            id="radio3"
             name="acc-tabs" />
-          <label class="tab-label" for="radio3"
-            >I've bought several codes, how can I use them at a time?</label>
+          <span class="tab-label">I've bought several codes, how can I use them at a time?</span>
           <div class="tab-content">
             <p class="tab-text">
               In case you have more than 1 code, please go to settings -> <a
@@ -91,10 +85,8 @@
           <input
             class="input-radio"
             type="checkbox"
-            id="radio4"
             name="acc-tabs" />
-          <label class="tab-label" for="radio4"
-            >Can I activate two and more codes for one account?</label>
+          <span class="tab-label">Can I activate two and more codes for one account?</span>
           <div class="tab-content">
             <p class="tab-text">
               Yes, you can! We allow the first code to be activated by the
@@ -109,11 +101,9 @@
           <input
             class="input-radio"
             type="checkbox"
-            id="radio6"
             name="acc-tabs" />
-          <label class="tab-label" for="radio6"
-            >I've chosen mistakenly one of your active plans, can you switch me
-            back to AppSumo promo?</label>
+          <span class="tab-label">I've chosen mistakenly one of your active plans, can you switch me
+            back to AppSumo promo?</span>
           <div class="tab-content">
             <p class="tab-text">
               Please note, in order to proceed through the additional security
@@ -127,10 +117,8 @@
           <input
             class="input-radio"
             type="checkbox"
-            id="radio7"
             name="acc-tabs" />
-          <label class="tab-label" for="radio7"
-            >I want my monthly limits to be increased, what should I do?</label>
+          <span class="tab-label">I want my monthly limits to be increased, what should I do?</span>
           <div class="tab-content">
             <p class="tab-text">
               Unfortunately, during the campaign we are not able to increase the
@@ -144,10 +132,8 @@
           <input
             class="input-radio"
             type="checkbox"
-            id="radio8"
             name="acc-tabs" />
-          <label class="tab-label" for="radio8"
-            >Can I verify all 1 200 000 emails at once?</label>
+          <span class="tab-label">Can I verify all 1 200 000 emails at once?</span>
           <div class="tab-content">
             <p class="tab-text">
               Unfortunately, during the campaign we are not able to increase the
