@@ -55,7 +55,7 @@ Remember that your clients don’t read long subject lines. They are more likely
 7\. Chose the right time to send your email
 -------------------------------------------
 
-![lighthouse for email marketing](../../assets/img/optimalSendTime.png)
+![lighthouse for email marketing](../../assets/img/optimalSendTime.jpg)
 
 Some marketers underestimate this aspect, but you shouldn’t. What’s the point of sending an email to your prospects at the times when they are the least engaged with their phones or laptops? There are multiple pieces of research on when is the best time to send emails or make social media posts, but you can also use your common sense to predict that. According to MailChimp, the best time of day to send an email is 10 am in the recipients’ own time zones. The majority of your prospects are likely to check their emails in the morning while drinking coffee or commuting (what else to do on a bus or when you are in traffic?) so why not use this information and schedule your email campaigns accordingly. Be clear, specific, and be on time.
 
