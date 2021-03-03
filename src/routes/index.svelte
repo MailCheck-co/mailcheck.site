@@ -1,8 +1,3 @@
-<style lang="scss">
-  @import "../scss/utilities/index";
-  @import "../scss/molecules/main";
-</style>
-
 <script context="module">
   export function preload({ params, query }) {
     return this.fetch(`feed.xml`).then(() => {

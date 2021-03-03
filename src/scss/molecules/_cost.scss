@@ -180,12 +180,6 @@
   }
 }
 
-.margin {
-  max-width: 600px;
-  margin: 0 20px 36px 30px;
-  font-weight: 300;
-}
-
 .lowercase {
   margin-bottom: 15px;
   font-weight: 500;
@@ -202,26 +196,6 @@
   letter-spacing: 1.2px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.title-cost {
-  margin-bottom: 25px;
-
-  &::before {
-    position: absolute;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    width: auto;
-    height: 170px;
-    margin: 0 auto;
-    color: $section-titles-color;
-    font-weight: 900;
-    font-size: 160px;
-    text-transform: uppercase;
-    content: "pricing";
-  }
 }
 
 .cyan {
@@ -254,10 +228,6 @@
     padding: 20px;
   }
 
-  .title-cost::before {
-    display: none;
-  }
-
   .cards {
     grid-template-columns: repeat(4, 45%);
 
@@ -279,10 +249,6 @@
 
   .wrapper-cost {
     padding: 20px;
-
-    .container {
-      padding: 0;
-    }
   }
 
   .cards {
@@ -293,10 +259,6 @@
       width: 100%;
       min-width: 150px;
     }
-  }
-
-  .title-cost::before {
-    display: none;
   }
 }
 

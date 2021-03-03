@@ -48,12 +48,6 @@
     animation-fill-mode: forwards;
   }
 
-  &.close {
-    animation-name: fade-out;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-
   &::before {
     position: absolute;
     top: 0;

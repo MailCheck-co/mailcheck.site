@@ -1,9 +1,3 @@
-.frequent-questions {
-  &:not(.faq-page) {
-    @include intersection;
-  }
-}
-
 .accordion {
   display: flex;
   flex-direction: row;
@@ -81,14 +75,6 @@
   text-align: initial;
   text-indent: initial;
   word-break: break-word;
-
-  & > a {
-    color: $primary-accent;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .tab-label {
@@ -154,22 +140,6 @@
   max-width: 1280px;
   margin: 0 auto 50px;
   padding: 50px 20px 0;
-
-  .btn-start {
-    color: $primary-white;
-    background-color: $primary-accent;
-    border: none;
-
-    &:hover {
-      color: $primary-accent;
-      background-color: $primary-white;
-    }
-
-    &:active {
-      color: $primary-white;
-      background-color: $primary-accent;
-    }
-  }
 }
 
 @media only screen and (max-width: 1024px) {
