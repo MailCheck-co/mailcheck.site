@@ -45,6 +45,8 @@
           href="https://www.facebook.com/mailcheck.co/"
           class="footer-social-link">
           <img
+            width="18"
+            height="18"
             class="footer-social-icon"
             src="/assets/img/icon-facebook.svg"
             alt="Facebook" />
@@ -53,18 +55,24 @@
           href="https://www.linkedin.com/company/mailcheck/"
           class="footer-social-link">
           <img
+            width="18"
+            height="18"
             class="footer-social-icon"
             src="/assets/img/icon-linkedin.svg"
             alt="LinkedIn" />
         </a>
         <a href="https://twitter.com/mailcheckco" class="footer-social-link">
           <img
+            width="18"
+            height="18"
             class="footer-social-icon"
             src="/assets/img/icon-twitter.svg"
             alt="Twitter" />
         </a>
         <a href="https://github.com/MailCheck-co" class="footer-social-link">
           <img
+            width="18"
+            height="18"
             class="footer-social-icon"
             src="/assets/img/icon-github.svg"
             alt="GitHub" />
@@ -100,6 +108,8 @@
             target="_blank"
             class="footer-social-link">
             <img
+              width="18"
+              height="18"
               class="footer-social-icon"
               src="/assets/img/icon-facebook.svg"
               alt="Facebook" />
@@ -109,6 +119,8 @@
             target="_blank"
             class="footer-social-link">
             <img
+              width="18"
+              height="18"
               class="footer-social-icon"
               src="/assets/img/icon-linkedin.svg"
               alt="LinkedIn" />
@@ -118,6 +130,8 @@
             target="_blank"
             class="footer-social-link">
             <img
+              width="18"
+              height="18"
               class="footer-social-icon"
               src="/assets/img/icon-twitter.svg"
               alt="Twitter" />
@@ -127,6 +141,8 @@
             target="_blank"
             class="footer-social-link">
             <img
+              width="18"
+              height="18"
               class="footer-social-icon"
               src="/assets/img/icon-github.svg"
               alt="GitHub" />

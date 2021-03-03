@@ -76,6 +76,8 @@
             <div class="slider-item">
               <div class="slide-logo-wrapper">
                 <img
+                  width="119"
+                  height="94"
                   class="slide-logo"
                   src="assets/img/testimonials/bagllet.svg"
                   alt="Bagllet" />
@@ -97,6 +99,8 @@
             <div class="slider-item">
               <div class="slide-logo-wrapper">
                 <img
+                  width="94"
+                  height="94"
                   class="slide-logo"
                   src="assets/img/testimonials/sammy-logo.svg"
                   alt="Sammy Icon" />
@@ -112,6 +116,8 @@
             <div class="slider-item">
               <div class="slide-logo-wrapper">
                 <img
+                  width="94"
+                  height="94"
                   class="slide-logo"
                   src="assets/img/testimonials/5k-logo.svg"
                   alt="5000 miles" />
@@ -131,6 +137,8 @@
             <div class="slider-item">
               <div class="slide-logo-wrapper">
                 <img
+                  width="150"
+                  height="88"
                   class="slide-logo"
                   src="assets/img/testimonials/zitkani.svg"
                   alt="Zitkani" />
@@ -148,12 +156,12 @@
       <div
         class="testimonials-button testimonials-button-next"
         on:click="{onNext}">
-        <img src="assets/img/arrow-slide-nav.svg" alt="right" />
+        <img src="assets/img/arrow-slide-nav.svg" width="20" height="20" alt="right" />
       </div>
       <div
         class="testimonials-button testimonials-button-prev"
         on:click="{onPrev}">
-        <img src="assets/img/arrow-slide-nav.svg" alt="left" />
+        <img src="assets/img/arrow-slide-nav.svg" width="20" height="20" alt="left" />
       </div>
     </div>
   </section>
