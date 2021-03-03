@@ -1,0 +1,15 @@
+.btn-start {
+  color: $primary-white;
+  background-color: $primary-accent;
+  border: none;
+
+  &:hover {
+    color: $primary-accent;
+    background-color: $primary-white;
+  }
+
+  &:active {
+    color: $primary-white;
+    background-color: $primary-accent;
+  }
+}

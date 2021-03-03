@@ -20,16 +20,6 @@
   text-align: left;
 }
 
-.read-more {
-  &-checkbox {
-    display: none;
-  }
-
-  &-label {
-    display: none;
-  }
-}
-
 .wrapper-choose {
   position: relative;
   display: flex;
@@ -45,38 +35,6 @@
     max-width: 700px;
     margin: 0 0 25px 0;
     overflow: hidden;
-  }
-
-  .read-more-label {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    display: block;
-
-    &::after {
-      position: absolute;
-      top: 5px;
-      left: 100px;
-      display: block;
-      width: 5px;
-      height: 5px;
-      border-bottom: 2px solid $primary-accent;
-      border-left: 2px solid $primary-accent;
-      transform: rotate(-45deg);
-      content: "";
-    }
-
-    &::before {
-      position: absolute;
-      display: block;
-      width: 100px;
-      color: $primary-accent;
-      font-weight: 700;
-      font-size: 16px;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      content: "read more";
-    }
   }
 
   .wrapper-choose {

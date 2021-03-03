@@ -21,7 +21,7 @@
       <p class="section-subtitle">We improve our service everyday</p>
     </div>
     <div class="welcome-flex">
-      <img class="mail" src="assets/img/mail-float.png" alt="mail" />
+      <img class="mail" src="assets/img/mail-float.png" width="765" height="575" alt="mail" />
       <ul class="welcome-items">
         <li>
           <span class="digits">01</span>

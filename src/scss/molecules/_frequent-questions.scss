@@ -1,9 +1,3 @@
-.frequent-questions {
-  &:not(.faq-page) {
-    @include intersection;
-  }
-}
-
 .accordion {
   display: flex;
   flex-direction: row;
@@ -28,7 +22,16 @@
 }
 
 .input-radio {
-  display: none;
+  width: 100%;
+  height: 40px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  cursor: pointer;
 
   &:checked ~ .tab-content {
     height: auto;
@@ -48,6 +51,7 @@
 }
 
 .tab {
+  position: relative;
   margin-bottom: 14px;
   border-bottom: 1px solid $dark-02;
 }
@@ -81,14 +85,6 @@
   text-align: initial;
   text-indent: initial;
   word-break: break-word;
-
-  & > a {
-    color: $primary-accent;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .tab-label {
@@ -102,7 +98,6 @@
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.9px;
-  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -154,22 +149,6 @@
   max-width: 1280px;
   margin: 0 auto 50px;
   padding: 50px 20px 0;
-
-  .btn-start {
-    color: $primary-white;
-    background-color: $primary-accent;
-    border: none;
-
-    &:hover {
-      color: $primary-accent;
-      background-color: $primary-white;
-    }
-
-    &:active {
-      color: $primary-white;
-      background-color: $primary-accent;
-    }
-  }
 }
 
 @media only screen and (max-width: 1024px) {
