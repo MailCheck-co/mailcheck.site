@@ -39,7 +39,7 @@
 <script lang="ts">
   import ContactUs from "../../components/ContactUs.svelte";
 
-  import Seo from "../../components/seo.svelte";
+  import Seo from "../../components/Seo.svelte";
   export let posts: {
     slug: string;
     title: string;

@@ -4,7 +4,7 @@
 </style>
 
 <script lang="typescript">
-  import Seo from "../components/seo.svelte";
+  import Seo from "../components/Seo.svelte";
 </script>
 
 <Seo title="FAQ" />
@@ -485,7 +485,7 @@
     </div>
     <img
       class="filter-img"
-      src="../assets/img/filter.png"
+      src="/assets/img/filter.png"
       width="444"
       height="568"
       alt="filter" />

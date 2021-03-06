@@ -153,19 +153,19 @@
       emailResult = data.email;
       existsResult = exist;
       smtpResult = smpt;
-      rateResult = data.trustRate;
+      rateResult = data?.trustRate.toString() ?? '0';
       disposableResult = disposable;
       catchResult = catchAll;
 
       const gravatar =
         data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
 
-      links = ((gravatar && gravatar.accounts) || []).reduce(
+      links = ((gravatar?.accounts) ?? []).reduce(
         (acc, el) => {
           acc[el.shortname] = el.url;
           return acc;
         },
-        { gravatar: (gravatar && gravatar.profileUrl) || "" }
+        { gravatar: (gravatar?.profileUrl) ?? "" }
       );
 
       socialLinks = socialLinks.map((link) => {

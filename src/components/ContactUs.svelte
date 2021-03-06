@@ -4,7 +4,7 @@
   @import "../scss/molecules/popup";
 </style>
 
-<script>
+<script lang="ts">
   import { writable } from "svelte/store";
   import IntersectionObserver from "svelte-intersection-observer";
 

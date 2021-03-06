@@ -1,11 +1,11 @@
 <script lang="typescript">
   import ContactUs from "../components/ContactUs.svelte";
-  import Seo from "../components/seo.svelte";
+  import Seo from "../components/Seo.svelte";
 
   const desc = "Cookie Policy";
 </script>
 
-<Seo desc="{desc}" title="Cookie Policy" noindex=true />
+<Seo desc="{desc}" title="Cookie Policy" noindex={true} />
 
 <main class="cookies">
   <div class="container">
