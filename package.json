@@ -47,7 +47,7 @@
     "@types/compression": "^1.7.0",
     "@types/node": "^14.14.32",
     "@types/polka": "^0.5.2",
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
     "autoprefixer": "^10.2.5",
     "eslint": "^7.21.0",
