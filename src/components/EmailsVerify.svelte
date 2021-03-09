@@ -238,7 +238,7 @@
               </div>
             {:else}
               <button type="submit" class="btn-verify-email">
-                <img src="assets/img/icon-arrow-right.svg" alt="Verify email" />
+                <img src="assets/img/icon-arrow-right.svg" width="20" height="16" alt="Verify email" />
               </button>
             {/if}
           </div>
