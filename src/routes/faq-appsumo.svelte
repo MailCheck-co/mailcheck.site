@@ -17,11 +17,9 @@
     <div class="accordion">
       <div class="accordion-column">
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">What's the difference between the Mailcheck and previous competitor
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >What's the difference between the Mailcheck and previous competitor
             offers?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -33,11 +31,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">I got a CMS built website is there a way to use your service?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >I got a CMS built website is there a way to use your service?</span>
           <div class="tab-content">
             <p class="tab-text">
               We have several solutions,
@@ -65,11 +61,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">I've bought several codes, how can I use them at a time?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >I've bought several codes, how can I use them at a time?</span>
           <div class="tab-content">
             <p class="tab-text">
               In case you have more than 1 code, please go to settings -> <a
@@ -82,11 +76,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">Can I activate two and more codes for one account?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >Can I activate two and more codes for one account?</span>
           <div class="tab-content">
             <p class="tab-text">
               Yes, you can! We allow the first code to be activated by the
@@ -98,11 +90,9 @@
       </div>
       <div class="accordion-column">
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">I've chosen mistakenly one of your active plans, can you switch me
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >I've chosen mistakenly one of your active plans, can you switch me
             back to AppSumo promo?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -114,11 +104,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">I want my monthly limits to be increased, what should I do?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >I want my monthly limits to be increased, what should I do?</span>
           <div class="tab-content">
             <p class="tab-text">
               Unfortunately, during the campaign we are not able to increase the
@@ -129,11 +117,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">Can I verify all 1 200 000 emails at once?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >Can I verify all 1 200 000 emails at once?</span>
           <div class="tab-content">
             <p class="tab-text">
               Unfortunately, during the campaign we are not able to increase the

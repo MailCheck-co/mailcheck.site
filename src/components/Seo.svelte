@@ -37,7 +37,7 @@
   <meta property="twitter:url" content="{siteUrl}{$page.path}" />
   <meta property="twitter:title" content="{title || siteName}" />
   <meta property="twitter:description" content="{desc || defaultDesc}" />
-  {#if thumbnail!==""}
+  {#if thumbnail !== ""}
     <meta property="twitter:image" content="{thumbnail}" />
   {/if}
 </svelte:head>

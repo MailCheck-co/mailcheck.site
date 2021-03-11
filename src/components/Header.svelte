@@ -55,7 +55,11 @@
 <header role="banner">
   <div class="wrapper-header">
     <a sapper:prefetch class="logo" href="/">
-      <img src="assets/img/mailcheck-logo.svg" width="138" height="26" alt="mailcheck logo" />
+      <img
+        src="assets/img/mailcheck-logo.svg"
+        width="138"
+        height="26"
+        alt="mailcheck logo" />
     </a>
     <nav class="header-nav" role="navigation">
       <a sapper:prefetch class="nav-link" href="/#features">Features</a>

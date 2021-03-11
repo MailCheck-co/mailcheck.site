@@ -10,7 +10,11 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
+<IntersectionObserver
+  threshold="{0.1}"
+  element="{element}"
+  bind:intersecting
+  once="{true}">
   <section class="reviews" bind:this="{element}" class:intersecting>
     <div class="section-heading">
       <h2 class="title">Our customer's reviews</h2>
@@ -27,11 +31,31 @@
               alt=""
               class="reviews-item-logo" />
             <div class="reviews-item-rating">
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 1 star" />
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 2 stars" />
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 3 stars" />
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 4 stars" />
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 5 stars" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 1 star" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 2 stars" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 3 stars" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 4 stars" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 5 stars" />
             </div>
             <a
               href="https://www.producthunt.com/posts/mailcheck"
@@ -69,11 +93,31 @@
               alt=""
               class="reviews-item-logo" />
             <div class="reviews-item-rating">
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 1 star" />
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 2 stars" />
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 3 stars" />
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 4 stars" />
-              <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 5 stars" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 1 star" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 2 stars" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 3 stars" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 4 stars" />
+              <img
+                src="assets/img/icon-star-rating.svg"
+                width="25"
+                height="25"
+                alt="rating 5 stars" />
             </div>
             <a
               href="https://www.capterra.com/p/195397/Mailcheck/"

@@ -36,6 +36,10 @@
     class="button"
     on:click="{scrollToTop}"
     transition:fade="{{ duration: 100 }}">
-    <img src="assets/img/arrow-slide-nav.svg" width="50" height="50" alt="to top" />
+    <img
+      src="assets/img/arrow-slide-nav.svg"
+      width="50"
+      height="50"
+      alt="to top" />
   </div>
 {/if}

@@ -4,7 +4,6 @@ The default template for setting up a [Sapper](https://github.com/sveltejs/sappe
 
 ## Getting started
 
-
 ### Running the project
 
 Once you have created the project, install dependencies and run the project in development mode:

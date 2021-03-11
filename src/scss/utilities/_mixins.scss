@@ -62,9 +62,7 @@
     @if $fix-mqs >= $breakpoint {
       @content;
     }
-  }
-
-  @else {
+  } @else {
     @media #{$type} and (#{$query}: #{$breakpoint}) {
       @content;
     }

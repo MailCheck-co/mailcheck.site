@@ -5,7 +5,7 @@
   const desc = "Cookie Policy";
 </script>
 
-<Seo desc="{desc}" title="Cookie Policy" noindex={true} />
+<Seo desc="{desc}" title="Cookie Policy" noindex="{true}" />
 
 <main class="cookies">
   <div class="container">

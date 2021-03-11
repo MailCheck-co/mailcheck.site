@@ -11,7 +11,11 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
+<IntersectionObserver
+  threshold="{0.1}"
+  element="{element}"
+  bind:intersecting
+  once="{true}">
   <section bind:this="{element}" class="frequent-questions" class:intersecting>
     <div class="wrapper-questions">
       <h3 class="title-small">FAQ</h3>
@@ -19,11 +23,9 @@
       <div class="accordion">
         <div class="accordion-column">
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              name="acc-tabs" />
-            <span class="tab-label">Where do you get the data for verification?</span>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label"
+              >Where do you get the data for verification?</span>
             <div class="tab-content">
               <p class="tab-text">
                 We take the data from public sources, system search, social
@@ -33,10 +35,7 @@
           </div>
 
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              name="acc-tabs" />
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
             <span class="tab-label">How to interpret a trust rate?</span>
             <div class="tab-content">
               <p class="tab-text">
@@ -49,11 +48,9 @@
           </div>
 
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              name="acc-tabs" />
-            <span class="tab-label">What is the delimiter and how to use it?</span>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label"
+              >What is the delimiter and how to use it?</span>
             <div class="tab-content">
               <p class="tab-text">
                 A delimiter is the comma character, which acts as a field
@@ -66,10 +63,7 @@
 
         <div class="accordion-column">
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              name="acc-tabs" />
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
             <span class="tab-label">Is my data protected?</span>
             <div class="tab-content">
               <p class="tab-text">
@@ -81,11 +75,9 @@
           </div>
 
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              name="acc-tabs" />
-            <span class="tab-label">How many free email verifications do you offer?</span>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label"
+              >How many free email verifications do you offer?</span>
             <div class="tab-content">
               <p class="tab-text">
                 We allow 100 free email validations if the billing information
@@ -98,10 +90,7 @@
           </div>
 
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              name="acc-tabs" />
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
             <span class="tab-label">I was charged more than my plan costs</span>
             <div class="tab-content">
               <p class="tab-text">

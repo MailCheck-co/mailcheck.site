@@ -53,10 +53,9 @@
   function emailValidator() {
     return function email(value) {
       return (
-        (value?.match(
+        value?.match(
           /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        )) ||
-        "Please enter a valid email"
+        ) || "Please enter a valid email"
       );
     };
   }
@@ -122,7 +121,11 @@
   };
 </script>
 
-<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
+<IntersectionObserver
+  threshold="{0.1}"
+  element="{element}"
+  bind:intersecting
+  once="{true}">
   <section bind:this="{element}" id="contact-us" class:intersecting>
     <div class="container">
       <form

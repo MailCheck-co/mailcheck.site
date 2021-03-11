@@ -33,11 +33,12 @@
   }
 </script>
 
-<IntersectionObserver threshold="{0.1}" element="{element}" bind:intersecting once="{true}">
-  <section
-    bind:this="{element}"
-    class:intersecting
-    id="pricing">
+<IntersectionObserver
+  threshold="{0.1}"
+  element="{element}"
+  bind:intersecting
+  once="{true}">
+  <section bind:this="{element}" class:intersecting id="pricing">
     <div class="section-heading sm-left">
       <h2 class="title">Cost-effective pricing plans</h2>
       <p class="section-title-lg">PRICING</p>

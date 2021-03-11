@@ -17,10 +17,7 @@
     <div class="accordion">
       <div class="accordion-column">
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label"
             >Where do you get the data for verification?</span>
           <div class="tab-content">
@@ -32,10 +29,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label"
             >What social networks do you use for validation?</span>
           <div class="tab-content">
@@ -46,10 +40,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label"
             >What is your difference from the competitors?</span>
           <div class="tab-content">
@@ -63,11 +54,8 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label" >What is your trial?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label">What is your trial?</span>
           <div class="tab-content">
             <p class="tab-text">
               We let our customers potentially feel the difference by verifying
@@ -79,12 +67,8 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label"
-            >Do you check phone numbers?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label">Do you check phone numbers?</span>
           <div class="tab-content">
             <p class="tab-text">
               We are currently testing a beta version of our phone base
@@ -95,12 +79,8 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label"
-            >How to get started with Mailcheck?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label">How to get started with Mailcheck?</span>
           <div class="tab-content">
             <p class="tab-text">
               Step 1<br />
@@ -128,12 +108,8 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label"
-            >How to get verified your first list?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label">How to get verified your first list?</span>
           <div class="tab-content">
             <p class="tab-text">
               Step 1<br />
@@ -155,12 +131,8 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label"
-            >How to interpret a trust rate?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label">How to interpret a trust rate?</span>
           <div class="tab-content">
             <p class="tab-text">
               * Emails with a trust rate of 0-49% are Risky and most likely
@@ -171,10 +143,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">How can I sign up?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -188,10 +157,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">How can I login?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -202,10 +168,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">How to delete an account at Mailcheck?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -217,11 +180,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">What is the delimiter and how to use it?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >What is the delimiter and how to use it?</span>
           <div class="tab-content">
             <p class="tab-text">
               A delimiter is the comma character, which acts as a field
@@ -232,11 +193,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">How to prepare a list to get it verified?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >How to prepare a list to get it verified?</span>
           <div class="tab-content">
             <p class="tab-text">
               If you data in Google Sheets or Excel you can export them to .csv
@@ -248,10 +207,7 @@
 
       <div class="accordion-column">
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">Is my data protected?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -263,11 +219,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">How many free email verifications do you offer?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >How many free email verifications do you offer?</span>
           <div class="tab-content">
             <p class="tab-text">
               We allow 100 free email validations if the billing information was
@@ -280,10 +234,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">What is a quick validation?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -298,10 +249,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">Downloading Verified Lists</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -315,10 +263,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">Integrations</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -328,10 +273,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">How does Mailcheck work?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -351,10 +293,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">What is the overuse charge?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -369,10 +308,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">Can I delete my files?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -386,10 +322,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">How can I cancel my subscription?</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -400,10 +333,7 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">I was charged more than my plan costs</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -416,11 +346,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">Why I can't see a dark mode option on my account?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >Why I can't see a dark mode option on my account?</span>
           <div class="tab-content">
             <p class="tab-text">
               We apply Dark Mode only for those users who have purchased paid
@@ -430,11 +358,9 @@
         </div>
 
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label">How long does usually take to verify 1M files?</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >How long does usually take to verify 1M files?</span>
           <div class="tab-content">
             <p class="tab-text">
               It depends but usually takes around 20min-60min just because our
@@ -445,10 +371,7 @@
           </div>
         </div>
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">Mailchimp Integration instructions</span>
           <div class="tab-content">
             <p class="tab-text">
@@ -463,11 +386,8 @@
           </div>
         </div>
         <div class="tab">
-          <input
-            class="input-radio"
-            type="checkbox"
-            name="acc-tabs" />
-          <span class="tab-label"  >Zapier Integration instructions</span>
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label">Zapier Integration instructions</span>
           <div class="tab-content">
             <p class="tab-text">
               A step-by-step guide to integrate Mailcheck with daily services

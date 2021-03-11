@@ -153,19 +153,19 @@
       emailResult = data.email;
       existsResult = exist;
       smtpResult = smpt;
-      rateResult = data?.trustRate.toString() ?? '0';
+      rateResult = data?.trustRate.toString() ?? "0";
       disposableResult = disposable;
       catchResult = catchAll;
 
       const gravatar =
         data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
 
-      links = ((gravatar?.accounts) ?? []).reduce(
+      links = (gravatar?.accounts ?? []).reduce(
         (acc, el) => {
           acc[el.shortname] = el.url;
           return acc;
         },
-        { gravatar: (gravatar?.profileUrl) ?? "" }
+        { gravatar: gravatar?.profileUrl ?? "" }
       );
 
       socialLinks = socialLinks.map((link) => {
@@ -238,7 +238,11 @@
               </div>
             {:else}
               <button type="submit" class="btn-verify-email">
-                <img src="assets/img/icon-arrow-right.svg" width="20" height="16" alt="Verify email" />
+                <img
+                  src="assets/img/icon-arrow-right.svg"
+                  width="20"
+                  height="16"
+                  alt="Verify email" />
               </button>
             {/if}
           </div>
