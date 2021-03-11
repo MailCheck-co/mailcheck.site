@@ -1,5 +1,7 @@
 .footer {
+  padding-top: 200px;
   position: relative;
+  background: linear-gradient(to top, #000 50%, #03091400 100%);
 }
 
 .footer-address {
@@ -101,6 +103,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .footer {
+    padding-top: 100px;
+  }
   .footer-top,
   .footer-bottom {
     flex-direction: column;
