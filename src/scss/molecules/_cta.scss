@@ -1,6 +1,7 @@
 .cta {
   @include intersection;
 
+  padding-bottom: 100px;
   text-align: center;
 
   &-info {
@@ -35,6 +36,7 @@
 
 @media all and (max-width: 768px) {
   .cta {
+    padding-bottom: 50px;
 
     &-info {
       text-align: center;
