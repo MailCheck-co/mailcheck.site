@@ -1,8 +1,3 @@
-<style lang="scss">
-  @import "../scss/utilities/index";
-  @import "../scss/molecules/main";
-</style>
-
 <script context="module">
   export function preload({ params, query }) {
     return this.fetch(`feed.xml`).then(() => {
@@ -11,8 +6,8 @@
   }
 </script>
 
-<script lang="typescript">
-  import Seo from "../components/seo.svelte";
+<script lang="ts">
+  import Seo from "../components/Seo.svelte";
   import EmailsVerify from "../components/EmailsVerify.svelte";
   import Partners from "../components/Partners.svelte";
   import Features from "../components/Features.svelte";

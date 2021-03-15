@@ -50,7 +50,7 @@ How to Provide Email Verification for Catch-All Email Servers?
 
 There is no silver bullet to do this safely. All you can do when dealing with the catch-all domains is to get rid of the non-existing or non-actively used emails in your mailing list and build a strategy that decreases the risks of getting a spammer marker for your email domain.
 
-![Catch-All Email Servers](../../assets/img/catch-all-servers-img2.png)
+![Catch-All Email Servers](../../assets/img/catch-all-servers-img2.jpg)
 
 How to Build a Proper Strategy of Dealing with Catch-All Email Servers?
 -----------------------------------------------------------------------

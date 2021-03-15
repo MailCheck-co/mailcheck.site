@@ -3,18 +3,18 @@
   @import "../scss/molecules/cost";
 </style>
 
-<script>
+<script lang="ts">
   import IntersectionObserver from "svelte-intersection-observer";
 
-  let element;
-  let intersecting;
-  let slider;
+  let element: HTMLElement;
+  let intersecting: boolean;
+  let slider: HTMLElement;
   let active = false;
-  let startX;
-  let scrollLeft;
+  let startX: number;
+  let scrollLeft: number;
   const SCROLL_SPEED = 1;
 
-  function onMouseDown(e) {
+  function onMouseDown(e: MouseEvent) {
     active = true;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
@@ -24,7 +24,7 @@
     active = false;
   }
 
-  function onMouseMove(e) {
+  function onMouseMove(e: MouseEvent) {
     if (!active) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
@@ -38,10 +38,7 @@
   element="{element}"
   bind:intersecting
   once="{true}">
-  <section
-    bind:this="{element}"
-    class:intersecting
-    id="pricing">
+  <section bind:this="{element}" class:intersecting id="pricing">
     <div class="section-heading sm-left">
       <h2 class="title">Cost-effective pricing plans</h2>
       <p class="section-title-lg">PRICING</p>

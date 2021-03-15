@@ -33,7 +33,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: url(../assets/img/team/konstantin-nosov.png) no-repeat center
+    background: url(/assets/img/team/konstantin-nosov.png) no-repeat center
       center;
     background-size: cover;
     transform: rotate(-45deg) scale(1.42);
@@ -43,7 +43,7 @@
   &.csm::before {
     @extend .team-member-avatar.cto::before;
 
-    background: url(../assets/img/team/serega-karetnik.png) no-repeat center
+    background: url(/assets/img/team/serega-karetnik.png) no-repeat center
       center;
     background-size: cover;
   }
@@ -51,7 +51,7 @@
   &.own::before {
     @extend .team-member-avatar.cto::before;
 
-    background: url(../assets/img/team/fara-muhammadiev.png) no-repeat center
+    background: url(/assets/img/team/fara-muhammadiev.png) no-repeat center
       center;
     background-size: cover;
   }
@@ -91,22 +91,36 @@
 
     &.csm,
     &.own {
-      padding-left: 18%;
+      padding-left: 10%;
+    }
+
+    &.csm {
+      margin-bottom: 2.2rem;
+    }
+    &.own {
+      margin-top: 2.2rem;
     }
   }
 
-  .cto .team-member-info {
-    margin-left: 100px;
+  .cto {
+    &.team-member {
+      padding-left: 3.5rem;
+    }
+
+    .team-member-info {
+      margin-left: .5rem;
+    }
   }
 
   .team-member-info {
-    margin-left: 40px;
+    margin-left: 1rem;
     text-align: left;
   }
 
   .team-member-avatar {
     min-width: 110px;
     min-height: 110px;
+    left: -2rem;
   }
 
   .team-member-name {

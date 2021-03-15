@@ -3,15 +3,15 @@
   @import "../scss/molecules/testimonials";
 </style>
 
-<script>
+<script type="ts">
   import IntersectionObserver from "svelte-intersection-observer";
 
-  let element;
-  let intersecting;
-  let slider;
+  let element: HTMLElement;
+  let intersecting: boolean;
+  let slider: HTMLElement;
   let active = false;
-  let startX;
-  let scrollLeft;
+  let startX: number;
+  let scrollLeft: number;
   const SCROLL_SPEED = 4; // DON'T CHANGE!!!
   const ITEMS_TO_SCROLL = 1;
   const SCROLL = ITEMS_TO_SCROLL * 420;
@@ -37,7 +37,7 @@
     deactivate();
   }
 
-  function onMouseDown(e) {
+  function onMouseDown(e: MouseEvent) {
     active = true;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
@@ -47,7 +47,7 @@
     active = false;
   }
 
-  function onMouseMove(e) {
+  function onMouseMove(e: MouseEvent) {
     if (!active) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
@@ -80,6 +80,8 @@
             <div class="slider-item">
               <div class="slide-logo-wrapper">
                 <img
+                  width="119"
+                  height="94"
                   class="slide-logo"
                   src="assets/img/testimonials/bagllet.svg"
                   alt="Bagllet" />
@@ -101,6 +103,8 @@
             <div class="slider-item">
               <div class="slide-logo-wrapper">
                 <img
+                  width="94"
+                  height="94"
                   class="slide-logo"
                   src="assets/img/testimonials/sammy-logo.svg"
                   alt="Sammy Icon" />
@@ -116,6 +120,8 @@
             <div class="slider-item">
               <div class="slide-logo-wrapper">
                 <img
+                  width="94"
+                  height="94"
                   class="slide-logo"
                   src="assets/img/testimonials/5k-logo.svg"
                   alt="5000 miles" />
@@ -135,6 +141,8 @@
             <div class="slider-item">
               <div class="slide-logo-wrapper">
                 <img
+                  width="150"
+                  height="88"
                   class="slide-logo"
                   src="assets/img/testimonials/zitkani.svg"
                   alt="Zitkani" />
@@ -152,12 +160,20 @@
       <div
         class="testimonials-button testimonials-button-next"
         on:click="{onNext}">
-        <img src="assets/img/arrow-slide-nav.svg" alt="right" />
+        <img
+          src="assets/img/arrow-slide-nav.svg"
+          width="20"
+          height="20"
+          alt="right" />
       </div>
       <div
         class="testimonials-button testimonials-button-prev"
         on:click="{onPrev}">
-        <img src="assets/img/arrow-slide-nav.svg" alt="left" />
+        <img
+          src="assets/img/arrow-slide-nav.svg"
+          width="20"
+          height="20"
+          alt="left" />
       </div>
     </div>
   </section>

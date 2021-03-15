@@ -17,19 +17,19 @@
   }
 </style>
 
-<script>
-  import Seo from "../components/seo.svelte";
+<script lang="ts">
+  import Seo from "../components/Seo.svelte";
   import ContactUs from "../components/ContactUs.svelte";
 
-  export let title;
-  export let thumbnail;
+  export let title = "";
+  export let thumbnail = "";
 </script>
 
 <Seo
   title="{`Blog | ${title}`}"
   desc="{title}"
   thumbnail="{thumbnail}"
-  isPost="true" />
+  isPost="{true}" />
 
 <div class="container" id="blog">
   <div class="content-block">

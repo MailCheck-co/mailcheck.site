@@ -1,12 +1,13 @@
 <style lang="scss">
   @import "../scss/utilities/index";
+  @import "../scss/utilities/button";
   @import "../scss/molecules/frequent-questions";
 </style>
 
 <script lang="ts">
   import IntersectionObserver from "svelte-intersection-observer";
 
-  let element: any;
+  let element: HTMLElement;
   let intersecting: boolean;
 </script>
 
@@ -15,23 +16,16 @@
   element="{element}"
   bind:intersecting
   once="{true}">
-  <section
-    bind:this="{element}"
-    class="frequent-questions"
-    class:intersecting>
+  <section bind:this="{element}" class="frequent-questions" class:intersecting>
     <div class="wrapper-questions">
       <h3 class="title-small">FAQ</h3>
 
       <div class="accordion">
         <div class="accordion-column">
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              id="radio1"
-              name="acc-tabs" />
-            <label class="tab-label" for="radio1"
-              >Where do you get the data for verification?</label>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label"
+              >Where do you get the data for verification?</span>
             <div class="tab-content">
               <p class="tab-text">
                 We take the data from public sources, system search, social
@@ -41,13 +35,8 @@
           </div>
 
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              id="radio8"
-              name="acc-tabs" />
-            <label class="tab-label" for="radio8"
-              >How to interpret a trust rate?</label>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label">How to interpret a trust rate?</span>
             <div class="tab-content">
               <p class="tab-text">
                 * Emails with a trust rate of 0-49% are Risky and most likely
@@ -59,13 +48,9 @@
           </div>
 
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              id="radio12"
-              name="acc-tabs" />
-            <label class="tab-label" for="radio12"
-              >What is the delimiter and how to use it?</label>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label"
+              >What is the delimiter and how to use it?</span>
             <div class="tab-content">
               <p class="tab-text">
                 A delimiter is the comma character, which acts as a field
@@ -78,12 +63,8 @@
 
         <div class="accordion-column">
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              id="radio14"
-              name="acc-tabs" />
-            <label class="tab-label" for="radio14">Is my data protected?</label>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label">Is my data protected?</span>
             <div class="tab-content">
               <p class="tab-text">
                 All information about our users is protected by Google systems,
@@ -94,13 +75,9 @@
           </div>
 
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              id="radio15"
-              name="acc-tabs" />
-            <label class="tab-label" for="radio15"
-              >How many free email verifications do you offer?</label>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label"
+              >How many free email verifications do you offer?</span>
             <div class="tab-content">
               <p class="tab-text">
                 We allow 100 free email validations if the billing information
@@ -113,13 +90,8 @@
           </div>
 
           <div class="tab">
-            <input
-              class="input-radio"
-              type="checkbox"
-              id="radio23"
-              name="acc-tabs" />
-            <label class="tab-label" for="radio23"
-              >I was charged more than my plan costs</label>
+            <input class="input-radio" type="checkbox" name="acc-tabs" />
+            <span class="tab-label">I was charged more than my plan costs</span>
             <div class="tab-content">
               <p class="tab-text">
                 Mailcheck works on a subscription basis and if you have any of
@@ -137,7 +109,7 @@
 
       <img
         class="filter-img"
-        src="../assets/img/filter.png"
+        src="/assets/img/filter.png"
         width="444"
         height="568"
         alt="filter" />

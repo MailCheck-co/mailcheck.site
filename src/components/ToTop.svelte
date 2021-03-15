@@ -2,7 +2,7 @@
   .button {
     position: fixed;
     right: 3%;
-    bottom: 15%;
+    bottom: 7rem;
     background-color: #036;
     border-radius: 20px;
     z-index: 5;
@@ -21,10 +21,10 @@
   }
 </style>
 
-<script>
+<script lang="ts">
   import { fade } from "svelte/transition";
 
-  let currentPosition;
+  let currentPosition: number;
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 </script>
@@ -36,6 +36,10 @@
     class="button"
     on:click="{scrollToTop}"
     transition:fade="{{ duration: 100 }}">
-    <img src="assets/img/arrow-slide-nav.svg" alt="to top" />
+    <img
+      src="assets/img/arrow-slide-nav.svg"
+      width="50"
+      height="50"
+      alt="to top" />
   </div>
 {/if}

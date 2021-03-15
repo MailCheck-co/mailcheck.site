@@ -6,7 +6,7 @@
 <script lang="ts">
   import IntersectionObserver from "svelte-intersection-observer";
 
-  let element: any;
+  let element: HTMLElement;
   let intersecting: boolean;
 </script>
 
@@ -15,17 +15,19 @@
   element="{element}"
   bind:intersecting
   once="{true}">
-  <section
-    bind:this="{element}"
-    class:intersecting
-    id="features">
+  <section bind:this="{element}" class:intersecting id="features">
     <div class="section-heading sm-left">
       <h2 class="title">THE FEATURES</h2>
       <p class="section-title-lg">FEATURES</p>
       <p class="section-subtitle">We improve our service everyday</p>
     </div>
     <div class="welcome-flex">
-      <img class="mail" src="assets/img/mail-float.png" alt="mail" />
+      <img
+        class="mail"
+        src="assets/img/mail-float.png"
+        width="765"
+        height="575"
+        alt="mail" />
       <ul class="welcome-items">
         <li>
           <span class="digits">01</span>
