@@ -76,7 +76,7 @@
 
   let email = "";
   let element: HTMLElement;
-  let intersecting = false;
+  let intersecting: boolean;
   let isOpen = false;
   let isError = false;
   let contactForm = { reset: () => {} };
