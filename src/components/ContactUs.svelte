@@ -5,75 +5,9 @@
 </style>
 
 <script lang="ts">
-  import { writable } from "svelte/store";
   import IntersectionObserver from "svelte-intersection-observer";
 
-  function buildValidator(validators) {
-    return function validate(value, dirty) {
-      if (validators?.length === 0) {
-        return { dirty, valid: true };
-      }
-
-      const failing = validators.find((v) => v(value) !== true);
-
-      return {
-        dirty,
-        valid: !failing,
-        message: failing && failing(value),
-      };
-    };
-  }
-
-  function createFieldValidator(...validators) {
-    const { subscribe, set } = writable({
-      dirty: false,
-      valid: false,
-      message: null,
-    });
-    const validator = buildValidator(validators);
-
-    function action(node, binding) {
-      function validate(value, dirty) {
-        const result = validator(value, dirty);
-        set(result);
-      }
-
-      validate(binding, false);
-
-      return {
-        update(value) {
-          validate(value, true);
-        },
-      };
-    }
-
-    return [{ subscribe }, action];
-  }
-
-  function emailValidator() {
-    return function email(value) {
-      return (
-        value?.match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        ) || "Please enter a valid email"
-      );
-    };
-  }
-
-  function requiredValidator() {
-    return function required(value) {
-      return (
-        (value !== undefined && value !== null && value !== "") ||
-        "This field is required"
-      );
-    };
-  }
-
-  const [validity, validate] = createFieldValidator(
-    requiredValidator(),
-    emailValidator()
-  );
-
+  let isValid: boolean;
   let email = "";
   let element: HTMLElement;
   let intersecting: boolean;
@@ -83,6 +17,14 @@
   let popUpBlock: HTMLElement;
   let nameValue = "";
   let textareaValue = "";
+  function validate(node: HTMLElement, value: string) { 
+    return {
+      update() {
+        const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        return isValid = reg.test(String(email).toLowerCase());
+      }
+    }
+  }
   const onClose = () => {
     isOpen = false;
     isError = false;
@@ -144,18 +86,15 @@
           type="text"
           bind:value="{email}"
           placeholder="Email"
-          class:invalid="{!$validity.valid}"
           use:validate="{email}"
+          class:invalid="{!isValid}"
           required />
         <textarea
           class="input input-message"
           bind:value="{textareaValue}"
           placeholder="Message"
           required></textarea>
-        <button
-          disabled="{!$validity.valid || !$validity.dirty}"
-          class="btn btn-submit"
-          type="submit">submit</button>
+        <button disabled="{!isValid}" class="btn btn-submit" type="submit">submit</button>
       </form>
     </div>
   </section>
