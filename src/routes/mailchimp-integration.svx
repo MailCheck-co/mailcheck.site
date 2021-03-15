@@ -77,7 +77,7 @@ But how to filter the data?
 ![MailChimp integration step 9: filter your data in Mailchimp](/assets/img/mailcheck/step9.jpg)
 
 * Choose “Mailcheck Status” “is” “invalid” you can actually type any of the existing statuses
-* We have 3 options “Valid”, “Invalid”, “Risky”
+* We have 3 options “Valid”, “Invalid”, "Risky but deliverable"
 
 ![MailChimp integration step 9.1: Mailcheck Statuses Valid/Invalid/Risky](/assets/img/mailcheck/step9-1.jpg)
 

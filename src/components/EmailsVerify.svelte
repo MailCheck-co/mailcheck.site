@@ -184,7 +184,7 @@
         validityEmailRisk = "invalid";
         validityClass = "error";
       } else if (data.trustRate > 49 && data.trustRate < 80) {
-        validityEmailRisk = "risky";
+        validityEmailRisk = "risky but deliverable";
         validityClass = "warning";
       } else {
         validityEmailRisk = "valid";
