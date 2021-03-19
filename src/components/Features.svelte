@@ -11,11 +11,11 @@
 </script>
 
 <IntersectionObserver
-  threshold="{0.1}"
-  element="{element}"
+  threshold={0.1}
+  {element}
   bind:intersecting
-  once="{true}">
-  <section bind:this="{element}" class:intersecting id="features">
+  once={true}>
+  <section bind:this={element} class:intersecting id="features">
     <div class="section-heading sm-left">
       <h2 class="title">THE FEATURES</h2>
       <p class="section-title-lg">FEATURES</p>
