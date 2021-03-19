@@ -64,11 +64,11 @@
 </script>
 
 <IntersectionObserver
-  threshold="{0.1}"
-  element="{element}"
+  threshold={0.1}
+  {element}
   bind:intersecting
-  once="{true}">
-  <section bind:this="{element}" id="contact-us" class:intersecting>
+  once={true}>
+  <section bind:this={element} id="contact-us" class:intersecting>
     <div class="container">
       <form
         class="contact-form"

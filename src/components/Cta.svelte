@@ -11,11 +11,11 @@
 </script>
 
 <IntersectionObserver
-  threshold="{0.1}"
-  element="{element}"
+  threshold={0.1}
+  {element}
   bind:intersecting
-  once="{true}">
-  <section class="cta" bind:this="{element}" class:intersecting>
+  once={true}>
+  <section class="cta" bind:this={element} class:intersecting>
     <div class="container">
       <div class="cta-info">
         <h2 class="cta-text">Verify 10-100 emails for free!</h2>

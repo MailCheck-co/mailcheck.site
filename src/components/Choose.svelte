@@ -11,11 +11,11 @@
 </script>
 
 <IntersectionObserver
-  threshold="{0.1}"
-  element="{element}"
+  threshold={0.1}
+  {element}
   bind:intersecting
-  once="{true}">
-  <section bind:this="{element}" class:intersecting class="choose-your">
+  once={true}>
+  <section bind:this={element} class:intersecting class="choose-your">
     <div class="container">
       <div class="section-heading sm-left">
         <h2 class="title">WHY DO YOU CHOOSE MAILCHECK?</h2>

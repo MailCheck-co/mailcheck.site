@@ -11,11 +11,11 @@
 </script>
 
 <IntersectionObserver
-  threshold="{0.1}"
-  element="{element}"
+  threshold={0.1}
+  {element}
   bind:intersecting
-  once="{true}">
-  <section class="team" bind:this="{element}" class:intersecting>
+  once={true}>
+  <section class="team" bind:this={element} class:intersecting>
     <div class="container">
       <div class="section-wrapper">
         <div class="section-heading sm-left">
