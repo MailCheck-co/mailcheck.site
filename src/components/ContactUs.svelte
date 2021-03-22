@@ -17,13 +17,13 @@
   let popUpBlock: HTMLElement;
   let nameValue = "";
   let textareaValue = "";
-  function validate(node: HTMLElement, value: string) { 
+  function validate(node: HTMLElement, value: string) {
     return {
       update() {
         const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        return isValid = reg.test(String(email).toLowerCase());
-      }
-    }
+        return (isValid = reg.test(String(email).toLowerCase()));
+      },
+    };
   }
   const onClose = () => {
     isOpen = false;
@@ -63,38 +63,35 @@
   };
 </script>
 
-<IntersectionObserver
-  threshold={0.1}
-  {element}
-  bind:intersecting
-  once={true}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once={true}>
   <section bind:this={element} id="contact-us" class:intersecting>
     <div class="container">
       <form
         class="contact-form"
-        bind:this="{contactForm}"
-        on:submit|preventDefault="{onSubmit}">
+        bind:this={contactForm}
+        on:submit|preventDefault={onSubmit}>
         <h2 class="title title-contact">contact us</h2>
         <input
           class="input input-name"
           type="text"
           placeholder="Name"
-          bind:value="{nameValue}"
+          bind:value={nameValue}
           required />
         <input
           class="input input-email"
           type="text"
-          bind:value="{email}"
+          bind:value={email}
           placeholder="Email"
-          use:validate="{email}"
-          class:invalid="{!isValid}"
+          use:validate={email}
+          class:invalid={!isValid}
           required />
         <textarea
           class="input input-message"
-          bind:value="{textareaValue}"
+          bind:value={textareaValue}
           placeholder="Message"
-          required></textarea>
-        <button disabled="{!isValid}" class="btn btn-submit" type="submit">submit</button>
+          required />
+        <button disabled={!isValid} class="btn btn-submit" type="submit"
+          >submit</button>
       </form>
     </div>
   </section>
@@ -102,19 +99,19 @@
 
 <div
   class="popup-container"
-  class:open="{isOpen}"
-  on:click="{onClose}"
-  bind:this="{popUpBlock}">
-  <div class="popup" class:open="{isOpen}">
-    <span class="popup-close success"></span>
+  class:open={isOpen}
+  on:click={onClose}
+  bind:this={popUpBlock}>
+  <div class="popup" class:open={isOpen}>
+    <span class="popup-close success" />
     <span class="popup-thanks">Thanks for filling out our form!</span>
     <p class="popup-text">
       We will look over your message and get back to you by tomorrow. Your
       friends at MailCheck!
     </p>
   </div>
-  <div class="popup" class:open="{isError && isOpen}">
-    <span class="popup-close error"></span>
+  <div class="popup" class:open={isError && isOpen}>
+    <span class="popup-close error" />
     <span class="popup-thanks">Something went wrong!</span>
     <p class="popup-text">Please try again later</p>
   </div>

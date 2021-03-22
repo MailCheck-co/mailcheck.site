@@ -33,11 +33,7 @@
   }
 </script>
 
-<IntersectionObserver
-  threshold={0.1}
-  {element}
-  bind:intersecting
-  once={true}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once={true}>
   <section bind:this={element} class:intersecting id="pricing">
     <div class="section-heading sm-left">
       <h2 class="title">Cost-effective pricing plans</h2>
@@ -48,11 +44,11 @@
       <ul
         class="cards"
         class:active
-        bind:this="{slider}"
-        on:mousedown="{onMouseDown}"
-        on:mouseup="{onMouseUp}"
-        on:mouseleave="{onMouseUp}"
-        on:mousemove="{onMouseMove}">
+        bind:this={slider}
+        on:mousedown={onMouseDown}
+        on:mouseup={onMouseUp}
+        on:mouseleave={onMouseUp}
+        on:mousemove={onMouseMove}>
         <li class="card" id="pro">
           <h3 class="title-colored">pro</h3>
           <span class="title lowercase">$10/mo</span>

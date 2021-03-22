@@ -10,11 +10,7 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver
-  threshold={0.1}
-  {element}
-  bind:intersecting
-  once={true}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once={true}>
   <section bind:this={element} class:intersecting class="choose-your">
     <div class="container">
       <div class="section-heading sm-left">

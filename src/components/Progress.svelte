@@ -122,4 +122,4 @@
   }
 </style>
 
-<progress class="progress"></progress>
+<progress class="progress" />

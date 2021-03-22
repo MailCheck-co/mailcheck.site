@@ -56,11 +56,7 @@
   }
 </script>
 
-<IntersectionObserver
-  threshold={0.1}
-  {element}
-  bind:intersecting
-  once={true}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once={true}>
   <section class="testimonials" bind:this={element} class:intersecting>
     <div class="section-heading sm-left">
       <h2 class="title">TESTIMONIALS</h2>
@@ -71,11 +67,11 @@
         <ul
           class="testimonials-wrapper"
           class:active
-          bind:this="{slider}"
-          on:mousedown="{onMouseDown}"
-          on:mouseup="{onMouseUp}"
-          on:mouseleave="{onMouseUp}"
-          on:mousemove="{onMouseMove}">
+          bind:this={slider}
+          on:mousedown={onMouseDown}
+          on:mouseup={onMouseUp}
+          on:mouseleave={onMouseUp}
+          on:mousemove={onMouseMove}>
           <li class="testimonial-slide">
             <div class="slider-item">
               <div class="slide-logo-wrapper">
@@ -159,7 +155,7 @@
       </div>
       <div
         class="testimonials-button testimonials-button-next"
-        on:click="{onNext}">
+        on:click={onNext}>
         <img
           src="assets/img/arrow-slide-nav.svg"
           width="20"
@@ -168,7 +164,7 @@
       </div>
       <div
         class="testimonials-button testimonials-button-prev"
-        on:click="{onPrev}">
+        on:click={onPrev}>
         <img
           src="assets/img/arrow-slide-nav.svg"
           width="20"

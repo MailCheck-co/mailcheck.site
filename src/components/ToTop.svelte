@@ -29,13 +29,13 @@
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 </script>
 
-<svelte:window bind:scrollY="{currentPosition}" />
+<svelte:window bind:scrollY={currentPosition} />
 
 {#if currentPosition > 50}
   <div
     class="button"
-    on:click="{scrollToTop}"
-    transition:fade="{{ duration: 100 }}">
+    on:click={scrollToTop}
+    transition:fade={{ duration: 100 }}>
     <img
       src="assets/img/arrow-slide-nav.svg"
       width="50"

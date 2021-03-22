@@ -10,11 +10,7 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver
-  threshold={0.1}
-  {element}
-  bind:intersecting
-  once={true}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once={true}>
   <section class="reviews" bind:this={element} class:intersecting>
     <div class="section-heading">
       <h2 class="title">Our customer's reviews</h2>
