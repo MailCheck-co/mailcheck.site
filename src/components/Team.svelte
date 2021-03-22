@@ -24,21 +24,27 @@
         </div>
         <div class="team-members">
           <div class="team-member csm">
-            <div class="team-member-avatar csm"></div>
+            <div class="team-member-avatar">
+              <img src="/assets/img/team/serega-karetnik.png" alt="csm" class="avatar">
+            </div>
             <div class="team-member-info">
               <p class="team-member-name">Serhii Karetnyk</p>
               <p class="team-member-description">CSM</p>
             </div>
           </div>
           <div class="team-member cto">
-            <div class="team-member-avatar cto"></div>
+            <div class="team-member-avatar">
+              <img src="/assets/img/team/konstantin-nosov.png" alt="cto" class="avatar">
+            </div>
             <div class="team-member-info">
               <p class="team-member-name">Konstantin Nosov</p>
               <p class="team-member-description">CTO / Founder</p>
             </div>
           </div>
           <div class="team-member own">
-            <div class="team-member-avatar own"></div>
+            <div class="team-member-avatar">
+              <img src="/assets/img/team/fara-muhammadiev.png" alt="own" class="avatar">
+            </div>
             <div class="team-member-info">
               <p class="team-member-name">Fara Muhammadiev</p>
               <p class="team-member-description">Product Owner</p>
