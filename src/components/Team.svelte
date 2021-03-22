@@ -10,11 +10,7 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver
-  threshold={0.1}
-  {element}
-  bind:intersecting
-  once={true}>
+<IntersectionObserver threshold={0.1} {element} bind:intersecting once={true}>
   <section class="team" bind:this={element} class:intersecting>
     <div class="container">
       <div class="section-wrapper">
@@ -25,7 +21,10 @@
         <div class="team-members">
           <div class="team-member csm">
             <div class="team-member-avatar">
-              <img src="/assets/img/team/serega-karetnik.png" alt="csm" class="avatar">
+              <img
+                src="/assets/img/team/serega-karetnik.png"
+                alt="csm"
+                class="avatar" />
             </div>
             <div class="team-member-info">
               <p class="team-member-name">Serhii Karetnyk</p>
@@ -34,7 +33,10 @@
           </div>
           <div class="team-member cto">
             <div class="team-member-avatar">
-              <img src="/assets/img/team/konstantin-nosov.png" alt="cto" class="avatar">
+              <img
+                src="/assets/img/team/konstantin-nosov.png"
+                alt="cto"
+                class="avatar" />
             </div>
             <div class="team-member-info">
               <p class="team-member-name">Konstantin Nosov</p>
@@ -43,7 +45,10 @@
           </div>
           <div class="team-member own">
             <div class="team-member-avatar">
-              <img src="/assets/img/team/fara-muhammadiev.png" alt="own" class="avatar">
+              <img
+                src="/assets/img/team/fara-muhammadiev.png"
+                alt="own"
+                class="avatar" />
             </div>
             <div class="team-member-info">
               <p class="team-member-name">Fara Muhammadiev</p>
