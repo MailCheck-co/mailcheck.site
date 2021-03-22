@@ -5,6 +5,7 @@
 
 <script lang="typescript">
   import Seo from "../components/Seo.svelte";
+  import ContactUs from "../components/ContactUs.svelte";
 </script>
 
 <Seo title="FAQ AppSumo" canonical="/faq" />
@@ -138,3 +139,5 @@
       alt="filter" />
   </div>
 </section>
+
+<ContactUs />
