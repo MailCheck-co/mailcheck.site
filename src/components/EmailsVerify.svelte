@@ -222,7 +222,7 @@
         <form
           class="verify-email-form"
           id="verify-email"
-          on:submit|preventDefault="{verifyEmailFormSubmit}">
+          on:submit|preventDefault={verifyEmailFormSubmit}>
           <div class="email-block">
             <input
               class="input input-verify"
@@ -230,8 +230,8 @@
               name="email"
               id="email"
               placeholder="Email to verify"
-              bind:value="{emailInput}"
-              on:keyup="{keyup}" />
+              bind:value={emailInput}
+              on:keyup={keyup} />
             {#if isChecking && !isChecked}
               <div class="progress-wrapper">
                 <Progress />
@@ -248,11 +248,11 @@
           </div>
           <div class="email-results" class:result>
             {#if loader}
-              <div class="form-preloader"></div>
+              <div class="form-preloader" />
             {/if}
             <p class="results-title">
               Validation RESULTS -
-              <span id="email-risk" class="{validityClass}">
+              <span id="email-risk" class={validityClass}>
                 {validityEmailRisk}
               </span>
             </p>
@@ -302,13 +302,13 @@
               {#each socialLinks as link}
                 {#if typeof link.href === "string"}
                   <a
-                    href="{link.href}"
-                    class="{`social-link active ${link.className}`}"
-                    title="{link.title}">&nbsp;</a>
+                    href={link.href}
+                    class={`social-link active ${link.className}`}
+                    title={link.title}>&nbsp;</a>
                 {:else}
                   <span
-                    class="{`social-link ${link.className}`}"
-                    title="{link.title}">&nbsp;</span>
+                    class={`social-link ${link.className}`}
+                    title={link.title}>&nbsp;</span>
                 {/if}
               {/each}
             </div>
@@ -316,7 +316,7 @@
               type="button"
               id="close-btn"
               class="close-results"
-              on:click="{closeBtn}"></button>
+              on:click={closeBtn} />
           </div>
         </form>
       </div>

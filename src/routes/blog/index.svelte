@@ -51,7 +51,7 @@
   export let desc = "Blog";
 </script>
 
-<Seo desc="{desc}" title="Blog" />
+<Seo {desc} title="Blog" />
 
 <main class="terms" id="blog">
   <div class="container">
