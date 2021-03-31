@@ -3,6 +3,11 @@ const nodemailer = require("nodemailer");
 const gmailEmail = functions.config().gmail.email || "email";
 const gmailPassword = functions.config().gmail.password || "password";
 
+const { EmailValidator } = require("./email-validator");
+const emailValidator = new EmailValidator();
+
+const MIN_ALLOWED_EMAIL_TRUST_RATE = 40;
+
 const mailTransport = nodemailer.createTransport({
   service: "gmail",
   secure: true,
@@ -12,7 +17,7 @@ const mailTransport = nodemailer.createTransport({
   },
 });
 
-exports.sendMail = functions.https.onRequest((req, res) => {
+exports.sendMail = functions.https.onRequest(async (req, res) => {
   let pb;
   try {
     pb = JSON.parse(req.body);
@@ -20,6 +25,19 @@ exports.sendMail = functions.https.onRequest((req, res) => {
     res.send(JSON.stringify({ error: "wrong input params (json expected)" }));
     return res.status(400).end();
   }
+
+  const userEmail = pb.email;
+  const reqIp = req.headers["fastly-client-ip"];
+  const { code, data } = await emailValidator.validate(userEmail, reqIp);
+
+  if (
+    code !== 200 ||
+    !data.trustRate ||
+    data.trustRate < MIN_ALLOWED_EMAIL_TRUST_RATE
+  ) {
+    return res.status(412).send(JSON.stringify(data));
+  }
+
   let keys = Object.keys(pb);
 
   let template = "<h2>Contact form from mailcheck.co</h2>";
