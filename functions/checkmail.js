@@ -1,9 +1,9 @@
 const functions = require("firebase-functions");
-const { EmailValidator } = require('./email-validator');
+const { EmailValidator } = require("./email-validator");
 
 const emailValidator = new EmailValidator();
 
-exports.checkMail = functions.https.onRequest(async(req, res) => {
+exports.checkMail = functions.https.onRequest(async (req, res) => {
   if (!req.body.email)
     return res.status(400).send(
       JSON.stringify({
@@ -19,7 +19,7 @@ exports.checkMail = functions.https.onRequest(async(req, res) => {
   console.log("key functions", functions.config().mailcheck.key);
 
   const email = req.body.email;
-  const reqIp = req.headers['fastly-client-ip'];
+  const reqIp = req.headers["fastly-client-ip"];
   const { code, data } = await emailValidator.validate(email, reqIp);
 
   return res.status(code).send(JSON.stringify(data));

@@ -11,7 +11,7 @@ class EmailValidator {
   constructor() {
     this.callLimitForOneIp = 7;
     this.ipCache = new Map();
-    this.mailCache = new Map(); 
+    this.mailCache = new Map();
   }
 
   async validate(email, reqIp) {
@@ -33,7 +33,7 @@ class EmailValidator {
           code: "429",
           message: "rate limit reached for ip " + reqIp,
         },
-      }
+      };
     }
     console.log(reqIp + ": reqCount:", reqCount);
 
@@ -47,7 +47,7 @@ class EmailValidator {
         },
         body: JSON.stringify({ email }),
       });
-  
+
       const json = await apires.json();
       this.mailCache.set(email, json);
 
