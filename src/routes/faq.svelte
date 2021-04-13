@@ -213,7 +213,7 @@
               <a
                 sapper:prefetch
                 title="API key creation"
-                href="/how-to-create-an-API-key-instructions">
+                href="/create-api-key">
                 API key creation
               </a>
             </p>
