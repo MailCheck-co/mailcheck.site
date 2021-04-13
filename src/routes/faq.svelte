@@ -372,6 +372,21 @@
         </div>
         <div class="tab">
           <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label">How can I get my API key</span>
+          <div class="tab-content">
+            <p class="tab-text">
+              A step-by-step guide to API key creation
+              <a
+                sapper:prefetch
+                title="API key creation"
+                href="/how-to-create-an-API-key-instructions">
+                Zapier
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="tab">
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label">Mailchimp Integration instructions</span>
           <div class="tab-content">
             <p class="tab-text">
