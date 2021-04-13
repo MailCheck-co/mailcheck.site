@@ -15,18 +15,18 @@
   const onLangSelect = (e) => {
     const current = e.target.options.selectedIndex;
     switch (+current) {
-      case 0:
-        lang = "en";
-        break;
-      case 1:
-        lang = "es";
-        break;
-      case 2:
-        lang = "ru";
-        break;
-      default:
-        lang = "en";
-        break;
+    case 0:
+      lang = "en";
+      break;
+    case 1:
+      lang = "es";
+      break;
+    case 2:
+      lang = "ru";
+      break;
+    default:
+      lang = "en";
+      break;
     }
   };
 
