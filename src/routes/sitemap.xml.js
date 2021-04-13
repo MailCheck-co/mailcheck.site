@@ -49,6 +49,6 @@ export function get(req, res, next) {
   const pages = data.filter((url) => url.search("/") === -1);
   const posts = data.filter((url) => url.search("/") > 0);
 
-  const feed = render(pages, [], posts);
-  res.end(feed);
+  const sitemap = render(pages, [], posts);
+  res.end(sitemap);
 }
