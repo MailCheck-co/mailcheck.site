@@ -73,7 +73,9 @@
             <p class="tab-text">
               We are currently testing a beta version of our phone base
               validations. But it is available in manual mode. In order to check
-              the phone base, please contact our support team.
+              the phone base, please <a href="mailto:support+faq@mailcheck.co"
+                >contact our support team</a
+              >.
             </p>
           </div>
         </div>
@@ -83,26 +85,28 @@
           <span class="tab-label">How to get started with Mailcheck?</span>
           <div class="tab-content">
             <p class="tab-text">
-              Step 1<br />
+              <b>Step 1</b><br />
               - Go to https://app.mailcheck.co/auth/login and create an account<br />
               - Our registration process is one of the easiest in the known systems<br />
-              Step 2<br />
+              <b>Step 2</b>
               - Set your email address and password<br />
-              Step 3<br />
+              <b>Step 3</b>
               - Fill in your profile information or Skip if you don't have time<br />
-              Step 4<br />
+              <b>Step 4</b>
               - Choose the plan you want to go with or skip if you don't have time<br />
-              Step 5<br />
+              <b>Step 5</b><br />
               - Set your billing information ( in case you didn't choose a plan,
-              you can still go with ""Free Tier"" 100 emails for free)<br />
+              you can still go with "Free Tier" 100 emails for free)<br />
               - We have two scenarios if you want a free tier<br />
               1) 10 emails if you didn't set your card<br />
               2) 100 emails if your card details were provided (we don't charge you
               anything unless you previously has chosen a plan)<br />
-              Step 6<br />
+              <b>Step 6</b>
               - Ta da! You are in<br />
-              Step 7<br />
-              - If you have any questions, always ping our support team<br />
+              <b>Step 7</b>
+              - If you have any questions, always
+              <a href="mailto:support+faq@mailcheck.co">ping our support team</a
+              ><br />
             </p>
           </div>
         </div>
@@ -112,18 +116,18 @@
           <span class="tab-label">How to get verified your first list?</span>
           <div class="tab-content">
             <p class="tab-text">
-              Step 1<br />
+              <b>Step 1</b>
               - If you have data collected in .csv, .tsv formats, feel free to click
-              ""Upload""<br />
-              Step 2<br />
+              "Upload"<br />
+              <b>Step 2</b>
               - Drag and drop your file or choose from your computer<br />
-              Step 3<br />
+              <b>Step 3</b>
               - specify a delimiter (choose one column with emails only)<br />
-              Step 4<br />
+              <b>Step 4</b>
               - send a file for the validation<br />
-              Step 5<br />
-              - go to the uploaded files and click ""Process""<br />
-              Step 6<br />
+              <b>Step 5</b>
+              - go to the uploaded files and click "Process"<br />
+              <b>Step 6</b>
               - When the file processed, you will receive results as the download
               button inside the site or via email<br />
             </p>
@@ -147,10 +151,10 @@
           <span class="tab-label">How can I sign up?</span>
           <div class="tab-content">
             <p class="tab-text">
-              Step 1<br />
+              <b>Step 1</b>
               - We made our service so easy, that no extra confirmation required,
               simply set your email and password to register<br />
-              Step 2<br />
+              <b>Step 2</b>
               - Use your Google, facebook account to register with us<br />
             </p>
           </div>
@@ -173,7 +177,8 @@
           <div class="tab-content">
             <p class="tab-text">
               If you want to delete account because of the uploaded database,
-              you can simply hide all of the info or contact support so your
+              you can simply hide all of the info or <a
+                href="mailto:support+faq@mailcheck.co">contact support</a> so your
               account can be deactivated
             </p>
           </div>
@@ -296,14 +301,16 @@
               Mailcheck is one place where you can validate all of your emails.
               Besides the plans we offer, we also don't set the limits for email
               validations on paid plans, while processing an overcharge. Imagine
-              you have a list of 1200 emails and currently purchased a ""PRO""
+              you have a list of 1200 emails and currently purchased a "PRO"
               plan. Since the PRO plan includes 1000 emails, we will do 200
               email validation and at the end of the billing cycle will inform
               about the overcharge. Overuse charge: $0.005 for the PRO plan For
               more please visit
               <a href="https://app.mailcheck.co/dashboard/payment_plans"
                 >https://app.mailcheck.co/dashboard/payment_plans</a>
-              or contact our support team
+              or
+              <a href="mailto:support+faq@mailcheck.co">
+                contact our support team</a>
             </p>
           </div>
         </div>
@@ -342,8 +349,10 @@
           <span class="tab-label">How can I cancel my subscription?</span>
           <div class="tab-content">
             <p class="tab-text">
-              In order to cancel a subscription, please contact our support
-              team.
+              In order to cancel a subscription, please <a
+                href="mailto:support+faq@mailcheck.co"
+                >contact our support team</a
+              >.
             </p>
           </div>
         </div>
@@ -356,7 +365,9 @@
               Mailcheck works on a subscription basis and if you have any of the
               paid plans (PRO, AGENCY, ENTERPRISE, LEGENDARY) so you are able to
               verify more emails than you have according to your plan, to
-              receive more detailed information, please contact our support team
+              receive more detailed information, please <a
+                href="mailto:support+faq@mailcheck.co"
+                >contact our support team</a>
             </p>
           </div>
         </div>
@@ -419,7 +430,6 @@
             </p>
           </div>
         </div>
-
       </div>
     </div>
     <img
