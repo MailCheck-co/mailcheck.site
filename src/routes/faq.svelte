@@ -430,6 +430,22 @@
             </p>
           </div>
         </div>
+        <div class="tab">
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label">Integromat Integration instructions</span>
+          <div class="tab-content">
+            <p class="tab-text">
+              A step-by-step guide to integrate Mailcheck with daily services
+              using
+              <a
+                sapper:prefetch
+                title="Integromat Integration instructions"
+                href="/integromat-integration">
+                Integromat
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <img
