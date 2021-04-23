@@ -16,61 +16,61 @@ desc: Step by step guide on how to use Mailcheck with Integromat.
 - Open Mailcheck Integrations - [https://app.mailcheck.co/dashboard/integration](https://app.mailcheck.co/dashboard/integration)
 and click "Connect" you will be redirected into "Integromat"
 
-![](/assets/img/integromat-integration/integromat-1.png)
+![integromat email verifiaction integration](/assets/img/integromat-integration/integromat-1.png)
 
 ### Step 2
 - Click "Add to my inventory" and follow the instructions to "Sign up".
 - Once signed up you can "Add to my inventory" our app and click "Start using Mailcheck".
 
-![](/assets/img/integromat-integration/integromat-2.png)
+![integromat enable email verification](/assets/img/integromat-integration/integromat-2.png)
 
 ### Step 3
 - Choose the service you want to integrate with (Mailchimp, Google Sheet, ActiveCampaign, etc.)
 
-![](/assets/img/integromat-integration/integromat-3.png)
+![integromat integration options](/assets/img/integromat-integration/integromat-3.png)
 
 - Once chosen click "Continue".
 
 I am going to use "Mailchimp" as an example, however, you can use any of the existing apps based on your preferences.
 
-![](/assets/img/integromat-integration/integromat-4.png)
+![integromat mailchimp integration](/assets/img/integromat-integration/integromat-4.png)
 
 ### Step 4
 - Click on the sign of Mailchimp or any other app you are using, and find "Get a list"
 - Now, set you your Mailchimp account
 
-![](/assets/img/integromat-integration/integromat-5.png)
+![connect mailchimp to Integromat](/assets/img/integromat-integration/integromat-5.png)
 
 - Follow the next steps to authorize your Mailchimp account
 
 ### Step 5
 - Once authorized, deactivate "Map"
 
-![](/assets/img/integromat-integration/integromat-6.png)
+![email list choose in Integromat](/assets/img/integromat-integration/integromat-6.png)
 
 - Select your List (usually named under the name of the audience)
 
 ### Step 6
 - Add another module
 
-![](/assets/img/integromat-integration/integromat-7.png)
+![connect Mailcheck to Integromat](/assets/img/integromat-integration/integromat-7.png)
 
 - Find Mailcheck to connect with the previous module
 
-![](/assets/img/integromat-integration/integromat-8.png)
+!choose api method in Integromat](/assets/img/integromat-integration/integromat-8.png)
 
 - Click on "+" and type "Mailcheck"
 - Choose "Single Email check"
 
-![](/assets/img/integromat-integration/integromat-9.png)
+![validate email in Integromat](/assets/img/integromat-integration/integromat-9.png)
 
 ### Step 7
 - Click on "Add"
 - Go to your Mailcheck account and click "API" from the Top menu
 
-![](/assets/img/integromat-integration/integromat-10.png)
+![api key for email validation](/assets/img/integromat-integration/integromat-10.png)
 
-![](/assets/img/integromat-integration/integromat-11.png)
+![validate email in integromat](/assets/img/integromat-integration/integromat-11.png)
 
 - Copy your API KEY and get back to Integromat to paste it
 
@@ -88,7 +88,7 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 
 - Adding another Mailchimp Module
 
-![](/assets/img/integromat-integration/integromat-14.png)
+![connect Mailchimp to Integromat](/assets/img/integromat-integration/integromat-14.png)
 
 - We need to choose "Mailchimp" again
 - And from the Modal window "Add/Update subscriber"
@@ -105,13 +105,13 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 - Set tag
 - Choose "trust rate" from the modal window option
 
-![](/assets/img/integromat-integration/integromat-16.png)
+![email trust rate in Integromat](/assets/img/integromat-integration/integromat-16.png)
 
 ### Step 12
 
 - Run once
 
-![](/assets/img/integromat-integration/integromat-17.png)
+![run email validation in Integromat](/assets/img/integromat-integration/integromat-17.png)
 
 And your integration is fully working now.
 If you can't make it work, please reach out at [integromat@mailcheck.co](mailto:integromat@mailcheck.co)
