@@ -10,8 +10,6 @@ desc: Step by step guide on how to use Mailcheck with Integromat.
 
 # **{title}**
 
-## {snippet}
-
 ## Step by step guide
 
 ### Step 1
