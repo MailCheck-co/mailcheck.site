@@ -103,4 +103,4 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 ![](/assets/img/integromat-integration/integromat-17.png)
 
 And your integration is fully working now.
-If you can't make it work, please reach out at [mailto:integromat@mailcheck.co](integromat@mailcheck.co)
+If you can't make it work, please reach out at [integromat@mailcheck.co](mailto:integromat@mailcheck.co)
