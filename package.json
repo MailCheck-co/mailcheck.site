@@ -69,7 +69,7 @@
     "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "sapper": "^0.29.1",
-    "stylelint": "^13.12.0",
+    "stylelint": "^13.13.0",
     "svelte": "^3.37.0",
     "svelte-check": "^1.5.1",
     "svelte-intersection-observer": "^0.6.1",
