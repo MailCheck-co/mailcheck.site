@@ -71,7 +71,7 @@
     "sapper": "^0.29.1",
     "stylelint": "^13.13.0",
     "svelte": "^3.37.0",
-    "svelte-check": "^1.5.1",
+    "svelte-check": "^1.5.2",
     "svelte-intersection-observer": "^0.7.0",
     "svelte-preprocess": "^4.7.2",
     "tslib": "^2.2.0",
