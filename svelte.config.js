@@ -1,5 +1,6 @@
 /* eslint-env node */
 const sveltePreprocess = require("svelte-preprocess");
+const adapter = require('@sveltejs/adapter-static');
 const { mdsvex } = require("mdsvex");
 
 const mode = process.env.NODE_ENV;
@@ -10,6 +11,13 @@ const svelteOptions = {
   compilerOptions: {
     immutable: true,
   },
+  kit: {
+    adapter: adapter({
+      pages: 'build',
+			assets: 'build',
+			fallback: null,
+		})
+  }, 
   preprocess: [
     sveltePreprocess({
       scss: {
