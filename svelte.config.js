@@ -10,6 +10,15 @@ const svelteOptions = {
   compilerOptions: {
     immutable: true,
   },
+  kit: {
+    adapter: adapter({
+			out: 'build',
+      pages: 'build',
+			assets: 'build',
+			fallback: null,
+      target: '#svelte'
+		})
+  }, 
   preprocess: [
     sveltePreprocess({
       scss: {
