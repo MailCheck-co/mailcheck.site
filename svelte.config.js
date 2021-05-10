@@ -1,7 +1,9 @@
 /* eslint-env node */
-const sveltePreprocess = require("svelte-preprocess");
-const adapter = require('@sveltejs/adapter-static');
-const { mdsvex } = require("mdsvex");
+import sveltePreprocess from "svelte-preprocess";
+import adapter from '@sveltejs/adapter-static';
+import { mdsvex } from "mdsvex";
+import { mdsvexConfig } from "./mdsvex.config.js";
+import autoprefixer from "autoprefixer";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
@@ -19,27 +21,21 @@ const svelteOptions = {
 		})
   }, 
   preprocess: [
-    sveltePreprocess({
+		mdsvex(mdsvexConfig),
+		sveltePreprocess({
       scss: {
         includePaths: ["src"],
       },
       sourceMap: dev,
       postcss: {
-        plugins: [require("autoprefixer")()],
+        plugins: [autoprefixer],
       },
       defaults: {
         style: "scss",
         script: "typescript",
       },
     }),
-    mdsvex({
-      layout: {
-        blog: "./src/layouts/blog.svelte",
-        article: "./src/routes/_layout.svelte",
-        _: "./src/routes/_layout.svelte",
-      },
-    }),
   ],
 };
 
-module.exports = svelteOptions;
+export default svelteOptions;

@@ -56,4 +56,5 @@
 
   <!-- SECTION CTA -->
   <Cta />
+	<p>Visit <a href="/example-markdown">the /example-markdown page</a> to see some markdown rendered by mdsvex.</p>
 </main>
