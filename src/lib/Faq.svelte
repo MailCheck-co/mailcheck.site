@@ -101,7 +101,7 @@
         </div>
       </div>
 
-      <a sapper:prefetch href="/faq" class="btn btn-start">LEARN MORE</a>
+      <a sveltekit:prefetch href="/faq" class="btn btn-start">LEARN MORE</a>
 
       <img
         class="filter-img"

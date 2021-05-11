@@ -1,6 +1,6 @@
 <script lang="typescript">
-  import ContactUs from "../components/ContactUs.svelte";
-  import Seo from "../components/Seo.svelte";
+  import ContactUs from "$lib/ContactUs.svelte";
+  import Seo from "$lib/Seo.svelte";
 
   const desc = "Cookie Policy";
 </script>
@@ -15,7 +15,7 @@
         This Cookie Policy explains how OSA Management LLP ("Company", "we",
         "us", and "our") uses cookies and similar technologies to recognize you
         when you visit our websites at
-        <a sapper:prefetch class="text-thin text-thin-link" href="/"
+        <a sveltekit:prefetch class="text-thin text-thin-link" href="/"
           >mailcheck.co</a
         >, ("Websites"). It explains what these technologies are and why we use
         them, as well as your rights to control our use of them. In some cases

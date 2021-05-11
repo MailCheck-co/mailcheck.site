@@ -1,6 +1,6 @@
 <script lang="typescript">
-  import ContactUs from "../components/ContactUs.svelte";
-  import Seo from "../components/Seo.svelte";
+  import ContactUs from "$lib/ContactUs.svelte";
+  import Seo from "$lib/Seo.svelte";
 
   const desc = "Terms and Conditions";
 </script>
@@ -19,7 +19,7 @@
         you, whether personally or on behalf of an entity (“you”) and OSA
         MANAGEMENT LLP, doing business as Mailcheck ("Mailcheck", “we”, “us”, or
         “our”), concerning your access to and use of the <a
-          sapper:prefetch
+          sveltekit:prefetch
           class="text-thin text-thin-link"
           href="/">mailcheck.co</a> website as well as any other media form, media
         channel, mobile website or mobile application related, linked, or otherwise
@@ -499,7 +499,7 @@
       <p class="text-thin terms-text">
         We care about data privacy and security. Please review our Privacy
         Policy: <a
-          sapper:prefetch
+          sveltekit:prefetch
           class="text-thin text-thin-link"
           href="/privacy">mailcheck.co/privacy</a
         >. By using the Site, you agree to be bound by our Privacy Policy, which

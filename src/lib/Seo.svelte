@@ -1,10 +1,9 @@
 <script lang="ts">
-  import { stores } from "@sapper/app";
   import data from "../site-data";
 
   const { siteName, siteUrl } = data;
   const defaultDesc = data.desc;
-  const { page } = stores();
+  import { page } from "$app/stores";
 
   export let canonical = "";
   export let title: string;

@@ -7,7 +7,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-logo-copyright">
-        <a sapper:prefetch class="logo2" href="/"
+        <a sveltekit:prefetch class="logo2" href="/"
           ><img
             src="assets/img/mailcheck-logo.svg"
             width="162"
@@ -19,23 +19,23 @@
         </address>
       </div>
       <nav class="footer-nav" role="navigation">
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/#features"
+        <a sveltekit:prefetch class="nav-link footer-nav-link" href="/#features"
           >Features</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/#pricing"
+        <a sveltekit:prefetch class="nav-link footer-nav-link" href="/#pricing"
           >Pricing</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/#contact-us"
+        <a sveltekit:prefetch class="nav-link footer-nav-link" href="/#contact-us"
           >Contact Us</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/blog"
+        <a sveltekit:prefetch class="nav-link footer-nav-link" href="/blog"
           >Blog</a>
         <a
           class="nav-link footer-nav-link"
           href="https://app.mailcheck.co/docs#tag--email"
           target="_blank">API</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/privacy"
+        <a sveltekit:prefetch class="nav-link footer-nav-link" href="/privacy"
           >Privacy policy</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/terms"
+        <a sveltekit:prefetch class="nav-link footer-nav-link" href="/terms"
           >Terms and conditions</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/cookies"
+        <a sveltekit:prefetch class="nav-link footer-nav-link" href="/cookies"
           >Cookie policy</a>
         <a target="_blank" class="nav-link footer-nav-link" href="//nodeart.io"
           >Product of NodeArt</a>

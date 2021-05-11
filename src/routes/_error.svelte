@@ -1,7 +1,7 @@
 <script lang="ts">
   export let status: number;
   export let error: Error;
-  import Seo from "../components/Seo.svelte";
+  import Seo from "$lib/Seo.svelte";
 
   const dev = process.env.NODE_ENV === "development";
 </script>

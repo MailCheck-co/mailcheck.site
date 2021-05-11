@@ -1,7 +1,10 @@
 import posts from "./_posts.js";
+import { RequestHandler } from '@sveltejs/kit';
+import { Locals } from '$lib/types';
 
 const contents = JSON.stringify(
   posts.map((post) => {
+    console.log(post)
     return {
       title: post.data.title,
       slug: post.data.slug,
@@ -12,10 +15,10 @@ const contents = JSON.stringify(
   })
 );
 
-export function get(req, res) {
-  res.writeHead(200, {
-    "Content-Type": "application/json",
-  });
 
-  res.end(contents);
-}
+export const get: RequestHandler<Locals> = async (request) => {
+  console.log('get',posts);
+
+
+  return {status: 200, body: contents};
+};

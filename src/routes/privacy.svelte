@@ -1,6 +1,6 @@
 <script lang="typescript">
-  import ContactUs from "../components/ContactUs.svelte";
-  import Seo from "../components/Seo.svelte";
+  import ContactUs from "$lib/ContactUs.svelte";
+  import Seo from "$lib/Seo.svelte";
 
   const desc = "Privacy Policy";
 </script>
@@ -19,7 +19,7 @@
         privacy. If you have any questions or concerns about our policy, or our
         practices with regards to your personal information, please contact us
         at s@mailcheck.co. When you visit our website
-        <a sapper:prefetch class="text-thin text-thin-link" href="/"
+        <a sveltekit:prefetch class="text-thin text-thin-link" href="/"
           >mailcheck.co</a
         >, and use our services, you trust us with your personal information. We
         take your privacy very seriously. In this privacy notice, we describe
@@ -33,7 +33,7 @@
       <p class="text-thin terms-text">
         This privacy policy applies to all information collected through our
         website (such as
-        <a sapper:prefetch class="text-thin text-thin-link" href="/"
+        <a sveltekit:prefetch class="text-thin text-thin-link" href="/"
           >mailcheck.co</a
         >), and/or any related services, sales, marketing or events (we refer to
         them collectively in this privacy policy as the "Sites"). Please read
@@ -351,7 +351,7 @@
         We will use the information we receive only for the purposes that are
         described in this privacy policy or that are otherwise made clear to you
         on the
-        <a sapper:prefetch class="text-thin text-thin-link" href="/"
+        <a sveltekit:prefetch class="text-thin text-thin-link" href="/"
           >mailcheck.co</a
         >. Please note that we do not control, and are not responsible for,
         other uses of your personal information by your third party social media

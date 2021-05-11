@@ -1,26 +1,20 @@
 <script lang="ts">
-  import Seo from "../components/Seo.svelte";
-  import EmailsVerify from "../components/EmailsVerify.svelte";
-  import Partners from "../components/Partners.svelte";
-  import Features from "../components/Features.svelte";
-  import Choose from "../components/Choose.svelte";
-  import Pricing from "../components/Pricing.svelte";
-  import Reviews from "../components/Reviews.svelte";
-  import Team from "../components/Team.svelte";
-  import Testimonials from "../components/Testimonials.svelte";
-  import Faq from "../components/Faq.svelte";
-  import ContactUs from "../components/ContactUs.svelte";
-  import Cta from "../components/Cta.svelte";
+  import Seo from "$lib/Seo.svelte";
+  import EmailsVerify from "$lib/EmailsVerify.svelte";
+  import Partners from "$lib/Partners.svelte";
+  import Features from "$lib/Features.svelte";
+  import Choose from "$lib/Choose.svelte";
+  import Pricing from "$lib/Pricing.svelte";
+  import Reviews from "$lib/Reviews.svelte";
+  import Team from "$lib/Team.svelte";
+  import Testimonials from "$lib/Testimonials.svelte";
+  import Faq from "$lib/Faq.svelte";
+  import ContactUs from "$lib/ContactUs.svelte";
+  import Cta from "$lib/Cta.svelte";
 </script>
 
 <Seo title="Verify your real customers in one way" />
 <svelte:head>
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="RSS Feed for mailcheck.co"
-    href="/feed.xml" />
 </svelte:head>
 
 <main class="manage-customers" role="main" id="main">
