@@ -56,7 +56,7 @@
             1,000 emails to validate included</span>
           <span class="card-features-text"> $0.005/1 mail overage charge</span>
           <a
-            href="//app.mailcheck.co/dashboard/payment_plans"
+            href="https://app.mailcheck.co/dashboard/payment_plans"
             class="btn btn-choose">choose</a>
         </li>
         <li class="card" id="agency">
@@ -66,7 +66,7 @@
             5,000 emails to validate included</span>
           <span class="card-features-text"> $0.004/1 mail overage charge</span>
           <a
-            href="//app.mailcheck.co/dashboard/payment_plans"
+            href="https://app.mailcheck.co/dashboard/payment_plans"
             class="btn btn-choose btn-cyan">choose</a>
         </li>
         <li class="card" id="enterprise">
@@ -76,7 +76,7 @@
             20,000 emails to validate included</span>
           <span class="card-features-text"> $0.003/1 mail overage charge</span>
           <a
-            href="//app.mailcheck.co/dashboard/payment_plans"
+            href="https://app.mailcheck.co/dashboard/payment_plans"
             class="btn btn-choose btn-grey">choose</a>
         </li>
         <li class="card" id="custom">
@@ -88,7 +88,7 @@
             <span class="bold">LEGENDARY</span>
             1,000,000,000+ emails to validate included</span>
           <a
-            href="//app.mailcheck.co/dashboard/payment_plans"
+            href="https://app.mailcheck.co/dashboard/payment_plans"
             class="btn btn-choose btn-red">choose</a>
         </li>
       </ul>

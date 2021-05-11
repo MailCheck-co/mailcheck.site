@@ -54,7 +54,7 @@
 
 <header role="banner">
   <div class="wrapper-header">
-    <a sapper:prefetch class="logo" href="/">
+    <a sveltekit:prefetch class="logo" href="/">
       <img
         src="assets/img/mailcheck-logo.svg"
         width="138"
@@ -62,11 +62,11 @@
         alt="mailcheck logo" />
     </a>
     <nav class="header-nav" role="navigation">
-      <a sapper:prefetch class="nav-link" href="/#features">Features</a>
-      <a sapper:prefetch class="nav-link" href="/#pricing">Pricing</a>
-      <a sapper:prefetch class="nav-link" href="/#contact-us">Contact Us</a>
-      <a sapper:prefetch class="nav-link" href="/blog">Blog</a>
-      <a sapper:prefetch class="nav-link" href="/faq">FAQ</a>
+      <a sveltekit:prefetch class="nav-link" href="/#features">Features</a>
+      <a sveltekit:prefetch class="nav-link" href="/#pricing">Pricing</a>
+      <a sveltekit:prefetch class="nav-link" href="/#contact-us">Contact Us</a>
+      <a sveltekit:prefetch class="nav-link" href="/blog">Blog</a>
+      <a sveltekit:prefetch class="nav-link" href="/faq">FAQ</a>
     </nav>
     <div>
       <select class="select" on:blur={onLangSelect}>
@@ -74,7 +74,7 @@
         <option value="es">es</option>
         <option value="ru">ru</option>
       </select>
-      <a href="//app.mailcheck.co/" class="btn btn-sign-in"> sign in </a>
+      <a href="https://app.mailcheck.co/" class="btn btn-sign-in"> sign in </a>
     </div>
   </div>
 </header>
@@ -93,15 +93,15 @@
   on:click={() => (open = !open)}
   role="navigation"
   id="mobile-menu">
-  <a sapper:prefetch class="nav-link mobile-menu-links" href="/#features"
+  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#features"
     >Features</a>
-  <a sapper:prefetch class="nav-link mobile-menu-links" href="/#pricing"
+  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#pricing"
     >Pricing</a>
-  <a sapper:prefetch class="nav-link mobile-menu-links" href="/#contact-us"
+  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#contact-us"
     >Contact Us</a>
-  <a sapper:prefetch class="nav-link mobile-menu-links" href="/blog">Blog</a>
-  <a sapper:prefetch class="nav-link mobile-menu-links" href="/faq">FAQ</a>
-  <a href="//app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
+  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/blog">Blog</a>
+  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/faq">FAQ</a>
+  <a href="https://app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
   <select class="select-mobile mobile-menu-links" on:blur={onLangSelect}>
     <option value="en">en</option>
     <option value="es">es</option>

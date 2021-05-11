@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Seo from "../components/Seo.svelte";
+  import Seo from "$lib/Seo.svelte";
 </script>
 
 <Seo title="Not Found" noindex={true} />

@@ -213,9 +213,9 @@
     </p>
     <div class="emails-block">
       <div class="main-buttons">
-        <a href="//app.mailcheck.co/" class="btn btn-live-demo"
+        <a href="https://app.mailcheck.co/" class="btn btn-live-demo"
           >GET FREE EMAILS NOW</a>
-        <a href="//app.mailcheck.co/" class="btn btn-start">Start</a>
+        <a href="https://app.mailcheck.co/" class="btn btn-start">Start</a>
       </div>
       <div class="verify-email">
         <p class="verify-email-title">Verify email address in real-time!</p>

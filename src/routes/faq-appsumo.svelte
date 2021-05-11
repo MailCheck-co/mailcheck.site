@@ -4,8 +4,8 @@
 </style>
 
 <script lang="typescript">
-  import Seo from "../components/Seo.svelte";
-  import ContactUs from "../components/ContactUs.svelte";
+  import Seo from "$lib/Seo.svelte";
+  import ContactUs from "$lib/ContactUs.svelte";
 </script>
 
 <Seo title="FAQ AppSumo" canonical="/faq" />

@@ -9,37 +9,39 @@
 </style>
 
 <script context="module" lang="ts">
-  export function preload() {
-    return this.fetch(`blog.json`)
-      .then((r: { json: () => any }) => r.json())
-      .then(
-        (
-          posts: {
-            slug: string;
-            title: string;
-            html: any;
-            date: string;
-            readingTime: string;
-            snippet: any;
-          }[]
-        ) => {
-          return {
-            posts: posts.sort((a, b) => {
-              return new Date(a.date.split(".").reverse().toString()) <
-                new Date(b.date.split(".").reverse().toString())
-                ? 1
-                : -1;
-            }),
-          };
+  import type { Load } from '@sveltejs/kit';
+
+  // see https://kit.svelte.dev/docs#loading
+  export const load: Load = async ({ fetch }) => {
+    const res = await fetch('/blog.json');
+
+    if (res.ok) {
+      const posts = await res.json();
+
+      return {
+        props: { posts
+          // .sort((a, b) => {
+          //   return new Date(a.date.split(".").reverse().toString()) <
+          //   new Date(b.date.split(".").reverse().toString())
+          //     ? 1
+          //     : -1;
+          // })
         }
-      );
-  }
+      };
+    }
+
+    const { message } = await res.json();
+
+    return {
+      error: new Error(message)
+    };
+  };
 </script>
 
 <script lang="ts">
-  import ContactUs from "../../components/ContactUs.svelte";
+  import ContactUs from "$lib/ContactUs.svelte";
 
-  import Seo from "../../components/Seo.svelte";
+  import Seo from "$lib/Seo.svelte";
   export let posts: {
     slug: string;
     title: string;
@@ -59,15 +61,15 @@
       <h1 class="title">BLOG</h1>
 
       {#each posts as post}
-        <a sapper:prefetch class="article-title" href="blog/{post.slug}"
+        <a sveltekit:prefetch class="article-title" href="/blog/{post.slug}"
           >{post.title}</a>
         <p class="article-date">Date: {post.date}</p>
         <p class="article-snippet">
           {post.snippet}
           <a
-            sapper:prefetch
+            sveltekit:prefetch
             class="text-thin text-thin-link"
-            href="blog/{post.slug}">[Read more...]</a>
+            href="/blog/{post.slug}">[Read more...]</a>
         </p>
       {/each}
     </div>

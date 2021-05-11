@@ -4,7 +4,7 @@
 </style>
 
 <script lang="typescript">
-  import Seo from "../components/Seo.svelte";
+  import Seo from "$lib/Seo.svelte";
 </script>
 
 <Seo title="FAQ" />
@@ -73,7 +73,7 @@
             <p class="tab-text">
               We are currently testing a beta version of our phone base
               validations. But it is available in manual mode. In order to check
-              the phone base, please <a href="mailto:support+faq@mailcheck.co"
+              the phone base, please <a rel="external" href="mailto:support+faq@mailcheck.co"
                 >contact our support team</a
               >.
             </p>
@@ -105,7 +105,7 @@
               - Ta da! You are in<br />
               <b>Step 7</b>
               - If you have any questions, always
-              <a href="mailto:support+faq@mailcheck.co">ping our support team</a
+              <a rel="external" href="mailto:support+faq@mailcheck.co">ping our support team</a
               ><br />
             </p>
           </div>
@@ -178,7 +178,7 @@
             <p class="tab-text">
               If you want to delete account because of the uploaded database,
               you can simply hide all of the info or <a
-                href="mailto:support+faq@mailcheck.co">contact support</a> so your
+              rel="external" href="mailto:support+faq@mailcheck.co">contact support</a> so your
               account can be deactivated
             </p>
           </div>
@@ -216,7 +216,7 @@
             <p class="tab-text">
               A step-by-step guide to
               <a
-                sapper:prefetch
+                sveltekit:prefetch
                 title="API key creation"
                 href="/create-api-key">
                 API key creation
@@ -263,7 +263,7 @@
               email without loading the complete .csv file, it helps to save
               time and get the result right away. You can quickly validate your
               email here -
-              <a href="https://app.mailcheck.co/dashboard/"
+              <a rel="external" href="https://app.mailcheck.co/dashboard/"
                 >https://app.mailcheck.co/dashboard/</a>
             </p>
           </div>
@@ -275,7 +275,7 @@
           <div class="tab-content">
             <p class="tab-text">
               We send the results via dashboard
-              <a href="https://app.mailcheck.co/dashboard/my_files"
+              <a rel="external" href="https://app.mailcheck.co/dashboard/my_files"
                 >https://app.mailcheck.co/dashboard/my_files</a>
               as well as an email notification, all you need to do is to click on
               "Download" sign or button and save on your Computer to preview
@@ -306,10 +306,10 @@
               email validation and at the end of the billing cycle will inform
               about the overcharge. Overuse charge: $0.005 for the PRO plan For
               more please visit
-              <a href="https://app.mailcheck.co/dashboard/payment_plans"
+              <a rel="external" href="https://app.mailcheck.co/dashboard/payment_plans"
                 >https://app.mailcheck.co/dashboard/payment_plans</a>
               or
-              <a href="mailto:support+faq@mailcheck.co">
+              <a rel="external" href="mailto:support+faq@mailcheck.co">
                 contact our support team</a>
             </p>
           </div>
@@ -337,7 +337,7 @@
             <p class="tab-text">
               In the Mailcheck we allow our clients to hide their data, just
               follow the link
-              <a href="https://app.mailcheck.co/dashboard/my_files"
+              <a rel="external" href="https://app.mailcheck.co/dashboard/my_files"
                 >https://app.mailcheck.co/dashboard/my_files</a>
               and choose "X" sign next to each file
             </p>
@@ -350,7 +350,7 @@
           <div class="tab-content">
             <p class="tab-text">
               In order to cancel a subscription, please <a
-                href="mailto:support+faq@mailcheck.co"
+              rel="external" href="mailto:support+faq@mailcheck.co"
                 >contact our support team</a
               >.
             </p>
@@ -366,7 +366,7 @@
               paid plans (PRO, AGENCY, ENTERPRISE, LEGENDARY) so you are able to
               verify more emails than you have according to your plan, to
               receive more detailed information, please <a
-                href="mailto:support+faq@mailcheck.co"
+              rel="external" href="mailto:support+faq@mailcheck.co"
                 >contact our support team</a>
             </p>
           </div>
@@ -405,7 +405,7 @@
             <p class="tab-text">
               Step by step guide on how to use
               <a
-                sapper:prefetch
+                sveltekit:prefetch
                 title="Mailchimp Integration instructions"
                 href="/mailchimp-integration">
                 Mailchimp
@@ -422,7 +422,7 @@
               A step-by-step guide to integrate Mailcheck with daily services
               using
               <a
-                sapper:prefetch
+                sveltekit:prefetch
                 title="Zapier Integration instructions"
                 href="/zapier-integration">
                 Zapier
@@ -438,7 +438,7 @@
               A step-by-step guide to integrate Mailcheck with daily services
               using
               <a
-                sapper:prefetch
+                sveltekit:prefetch
                 title="Integromat Integration instructions"
                 href="/integromat-integration">
                 Integromat
