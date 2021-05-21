@@ -61,7 +61,7 @@
     "http-proxy-middleware": "^2.0.0",
     "mdsvex": "^0.9.6",
     "node-sass": "^6.0.0",
-    "postcss": "^8.2.15",
+    "postcss": "^8.3.0",
     "postcss-load-config": "^3.0.1",
     "prettier": "^2.3.0",
     "prettier-plugin-svelte": "^2.3.0",
