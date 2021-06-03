@@ -2,7 +2,7 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-"on":
+'on':
   push:
     branches:
       - master
@@ -14,8 +14,8 @@ jobs:
       - run: npm ci && npm run export
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_MAILCHECK_LANDING }}"
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MAILCHECK_LANDING }}'
           channelId: live
           projectId: mailcheck-landing
         env:
@@ -23,5 +23,5 @@ jobs:
       - name: Cloudflare Purge Cache
         uses: jakejarvis/cloudflare-purge-action@v0.3.0
         env:
-          CLOUDFLARE_ZONE: "${{ secrets.CLOUDFLARE_ZONE }}"
-          CLOUDFLARE_TOKEN: "${{ secrets.CLOUDFLARE_TOKEN }}"
+          CLOUDFLARE_ZONE: '${{ secrets.CLOUDFLARE_ZONE }}'
+          CLOUDFLARE_TOKEN: '${{ secrets.CLOUDFLARE_TOKEN }}'

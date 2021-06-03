@@ -57,9 +57,12 @@
     }
   }
 
+  /* stylelint-disable*/
+  :-ms-lang(x),
   .progress:indeterminate {
     animation: none;
   }
+  /* stylelint-enable */
 
   .progress:indeterminate::-ms-fill {
     animation-name: -ms-ring;
@@ -100,7 +103,6 @@
   }
 
   @keyframes pure-material-progress-circular-pseudo {
-    
     0% {
       transform: rotate(-30deg);
     }

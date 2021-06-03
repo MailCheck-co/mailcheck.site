@@ -88,7 +88,7 @@
     margin-bottom: 8px;
     padding: 20px 45px 18px 15px;
     background-color: $dark-01;
-    border-color: transparent;
+    border-color: var(--transparent);
     border-radius: 4px;
 
     &::placeholder {
@@ -99,7 +99,7 @@
     }
 
     &:focus {
-      font-weight: 500;
+      font-weight: var(--font-weight-500);
       background-color: $dark-05;
       box-shadow: 0 0 0 1px $primary-white inset;
     }
@@ -110,7 +110,7 @@
   }
 
   &:focus {
-    font-weight: 500;
+    font-weight: var(--font-weight-500);
     background-color: $dark-05;
     box-shadow: 0 0 0 1px $primary-white inset;
   }
@@ -239,7 +239,7 @@
 
 .subtitle {
   margin: 5px auto;
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   text-transform: uppercase;
 
   &-left {
@@ -262,7 +262,7 @@
 
   &-bold {
     margin: 30px auto;
-    font-weight: bold;
+    font-weight: var(--font-bold);
   }
 }
 
@@ -285,8 +285,8 @@
 .terms {
   margin: 0;
   color: $primary-white;
-  font-weight: 700;
-  font-size: 46px;
+  font-weight: var(--font-weight-700);
+  font-size: var(--size-46);
   text-align: center;
 }
 
@@ -295,8 +295,8 @@
   height: auto;
   margin-bottom: 25px;
   color: $primary-white;
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: var(--font-weight-600);
+  font-size: var(--size-32);
   line-height: 40px;
   letter-spacing: 1.6px;
   text-align: center;
@@ -309,8 +309,8 @@
     height: auto;
     margin: 20px auto 0;
     color: $primary-white;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: var(--font-weight-500);
+    font-size: var(--size-24);
     line-height: 30px;
     letter-spacing: 1.6px;
     text-align: left;
@@ -366,7 +366,7 @@
   &-quote {
     margin: 0 0 15px 20px;
     padding: 5px 15px;
-    font-weight: 400;
+    font-weight: var(--font-weight-400);
     font-size: var(--size-16);
     line-height: 26px;
     text-align: left;

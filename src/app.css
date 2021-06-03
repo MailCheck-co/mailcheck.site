@@ -19,10 +19,14 @@
   --background-without-opacity: rgba(255, 255, 255, 0.7);
   --column-width: 42rem;
   --column-margin-top: 4rem;
-  --transparent: rgba(0,0,0,0);
+  --transparent: rgba(0, 0, 0, 0);
   --color-pre-bg: rgba(255, 255, 255, 0.45);
+  --color-pre-global-bg: #f9f9f9;
   --color-pre-shadow: rgb(255 255 255 / 25%);
+  --color-pre-global-shadow: rgba(0, 0, 0, 0.05);
   --color-progress: #5fcbd2;
+  --color-link: #1bced4;
+  --color-visited: #55baff;
   --inherit: inherit;
   --font-weight-100: 100;
   --font-weight-200: 200;
@@ -48,6 +52,7 @@
   --size-32: 2rem;
   --size-36: 2.25rem;
   --size-38: 2.375rem;
+  --size-46: 2.875;
   --size-64: 4rem;
   --size-150: 9.375rem;
   --size-160: 10rem;
@@ -73,11 +78,7 @@ body::before {
   z-index: -1;
   width: 80vw;
   height: 100vh;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    var(--pure-white) 0%,
-    var(--transparent) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, var(--pure-white) 0%, var(--transparent) 100%);
   opacity: 0.05;
   content: '';
 }

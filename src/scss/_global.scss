@@ -2,9 +2,9 @@
   width: 100%;
   height: auto;
   margin-bottom: 25px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 2.25em;
+  color: var(--pure-white);
+  font-weight: var(--font-weight-600);
+  font-size: var(--size-36);
   line-height: 40px;
   letter-spacing: 1.6px;
   text-align: center;
@@ -12,30 +12,30 @@
 }
 
 :global(h2) {
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.8em;
+  color: var(--pure-white);
+  font-weight: var(--font-weight-600);
+  font-size: var(--size-30);
 }
 
 :global(h3) {
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.4em;
+  color: var(--pure-white);
+  font-weight: var(--font-weight-600);
+  font-size: var(--size-24);
 }
 
 :global(pre) {
   padding: 0.5em;
   overflow-x: auto;
-  color: #fff;
-  background-color: #f9f9f9;
+  color: var(--pure-white);
+  background-color: var(--color-pre-global-bg);
   border-radius: 2px;
-  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 1px 1px 5px var(--color-pre-global-shadow);
 }
 
 :global(pre) :global(code) {
   padding: 0;
-  color: #fff;
-  background-color: transparent;
+  color: var(--pure-white);
+  background-color: var(--transparent);
 }
 
 :global(ul) {
@@ -45,12 +45,12 @@
 
 :global(li) {
   margin: 0 0 0.5em 0;
-  color: #fff;
+  color: var(--pure-white);
 }
 
 :global(p) {
-  color: #fff;
-  font-weight: 300;
+  color: var(--pure-white);
+  font-weight: var(--font-weight-300);
   line-height: 1.5;
   letter-spacing: 0.8px;
   text-align: justify;
@@ -63,16 +63,16 @@
 }
 
 :global(strong) {
-  color: #fff;
-  font-weight: 700;
+  color: var(--pure-white);
+  font-weight: var(--font-weight-700);
 }
 
 :global(a) {
-  color: #1bced4;
+  color: var(--color-link);
 }
 
 :global(a:visited) {
-  color: #55baff;
+  color: var(--color-visited);
 }
 
 :global(img) {
