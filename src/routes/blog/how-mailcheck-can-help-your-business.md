@@ -16,8 +16,8 @@ It’s been 49 years since Ray Tomlinson has sent the very first email. Since th
 
 Research Experian (USA) found:
 
-*   over the past year, 61% of email marketing companies have faced the threat of their reputation as the sender of newsletters;
-*   35% of these companies' mailings were spam.
+- over the past year, 61% of email marketing companies have faced the threat of their reputation as the sender of newsletters;
+- 35% of these companies' mailings were spam.
 
 There can be two reasons for this to happen. The first one is when you purchase a database of email addresses and start sending newsletters to it straight away. With a high degree of probability, some of these addresses will be inactive, abandoned or non-existent. The second reason is when you built a database of contacts yourself, perhaps for many years, but never once checked its correctness. It may result in having duplicate addresses, outdated emails, incorrectly specified names, etc.
 
@@ -51,9 +51,9 @@ Let's talk numbers. Which metrics can be improved with Mailcheck in your email m
 
 **Email Marketing ROI**. Return On Investment is a key metric that allows you to measure the effectiveness of your marketing.
 
-*   Marketers surveyed said their average ROI was 119%.
-*   Among B2B marketers, return on investment is the highest: 127%.
-*   Marketers of companies that send less than 100,000 letters per month rank ROI at 139%, while marketers of companies that send more than 100,000 letters give a low ROI of 94%.
+- Marketers surveyed said their average ROI was 119%.
+- Among B2B marketers, return on investment is the highest: 127%.
+- Marketers of companies that send less than 100,000 letters per month rank ROI at 139%, while marketers of companies that send more than 100,000 letters give a low ROI of 94%.
 
 The purity of your email list is the best way to pump up those ROI numbers since you are not wasting your budget on leads that will never see what you have to offer.
 

@@ -1,10 +1,5 @@
-<style lang="scss">
-  @import "../scss/utilities/index";
-  @import "../scss/molecules/team";
-</style>
-
 <script lang="ts">
-  import IntersectionObserver from "svelte-intersection-observer";
+  import IntersectionObserver from 'svelte-intersection-observer';
 
   let element: HTMLElement;
   let intersecting: boolean;
@@ -21,10 +16,7 @@
         <div class="team-members">
           <div class="team-member csm">
             <div class="team-member-avatar">
-              <img
-                src="/assets/img/team/serega-karetnik.png"
-                alt="csm"
-                class="avatar" />
+              <img src="/assets/img/team/serega-karetnik.png" alt="csm" class="avatar" />
             </div>
             <div class="team-member-info">
               <p class="team-member-name">Serhii Karetnyk</p>
@@ -33,10 +25,7 @@
           </div>
           <div class="team-member cto">
             <div class="team-member-avatar">
-              <img
-                src="/assets/img/team/konstantin-nosov.png"
-                alt="cto"
-                class="avatar" />
+              <img src="/assets/img/team/konstantin-nosov.png" alt="cto" class="avatar" />
             </div>
             <div class="team-member-info">
               <p class="team-member-name">Konstantin Nosov</p>
@@ -45,10 +34,7 @@
           </div>
           <div class="team-member own">
             <div class="team-member-avatar">
-              <img
-                src="/assets/img/team/fara-muhammadiev.png"
-                alt="own"
-                class="avatar" />
+              <img src="/assets/img/team/fara-muhammadiev.png" alt="own" class="avatar" />
             </div>
             <div class="team-member-info">
               <p class="team-member-name">Fara Muhammadiev</p>
@@ -60,3 +46,8 @@
     </div>
   </section>
 </IntersectionObserver>
+
+<style lang="scss">
+  @import '../scss/utilities/index';
+  @import '../scss/molecules/team';
+</style>

@@ -1,10 +1,5 @@
-<style lang="scss">
-  @import "../scss/utilities/index";
-  @import "../scss/molecules/reviews";
-</style>
-
 <script lang="ts">
-  import IntersectionObserver from "svelte-intersection-observer";
+  import IntersectionObserver from 'svelte-intersection-observer';
 
   let element: HTMLElement;
   let intersecting: boolean;
@@ -126,3 +121,8 @@
     </div>
   </section>
 </IntersectionObserver>
+
+<style lang="scss">
+  @import '../scss/utilities/index';
+  @import '../scss/molecules/reviews';
+</style>

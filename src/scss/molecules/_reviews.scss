@@ -48,8 +48,8 @@
 .rating-counter {
   margin-right: 5px;
   color: $primary-accent;
-  font-weight: 900;
-  font-size: 32px;
+  font-weight: var(--font-weight-900);
+  font-size: var(--size-32);
   line-height: 25px;
   text-align: center;
   text-transform: uppercase;
@@ -100,7 +100,7 @@
   }
 
   .rating-counter {
-    font-size: 14px;
+    font-size: var(--size-14);
   }
 
   .reviews-item-link {

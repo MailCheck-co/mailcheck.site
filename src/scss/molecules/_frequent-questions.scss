@@ -22,16 +22,16 @@
 }
 
 .input-radio {
-  width: 100%;
-  height: 40px;
-  opacity: 0;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   z-index: 9;
+  width: 100%;
+  height: 40px;
   cursor: pointer;
+  opacity: 0;
 
   &:checked ~ .tab-content {
     height: auto;
@@ -68,7 +68,7 @@
   }
 
   &::-webkit-scrollbar-track {
-    background-color: rgba(17, 50, 78, 0.2);
+    background-color: $section-titles-color;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -79,23 +79,28 @@
 }
 
 .tab-text {
+  --size-16: 16px;
+
   margin-top: 0;
   padding: 0 10px;
-  font-size: 16px;
+  font-size: var(--size-16);
   text-align: initial;
   text-indent: initial;
   word-break: break-word;
 }
 
 .tab-label {
+  --font-weight-500: 500;
+  --size-18: 18px;
+
   position: relative;
   display: block;
   box-sizing: border-box;
   width: 100%;
   padding: 0 13px 13px 10px;
   color: $primary-white;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: var(--font-weight-500);
+  font-size: var(--size-18);
   line-height: 27px;
   letter-spacing: 0.9px;
 
@@ -110,15 +115,15 @@
     border-left: 1px solid $primary-accent;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
-    content: "";
+    content: '';
   }
 }
 
 .title-small {
   width: 100%;
   color: $primary-white;
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: var(--font-weight-600);
+  font-size: var(--size-32);
   line-height: 48px;
   letter-spacing: 1.6px;
   text-align: center;
@@ -134,10 +139,10 @@
     height: 170px;
     margin: 0 auto;
     color: $section-titles-color;
-    font-weight: 900;
-    font-size: 160px;
+    font-weight: var(--font-weight-900);
+    font-size: var(--size-160);
     text-transform: uppercase;
-    content: "faq";
+    content: 'faq';
   }
 }
 

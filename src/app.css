@@ -1,108 +1,146 @@
 @import '@fontsource/fira-mono';
 
 :root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
-	--tertiary-color: #edf0f8;
-	--accent-color: #ff3e00;
-	--heading-color: rgba(0, 0, 0, 0.7);
-	--text-color: #444444;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+  --defoult-font: arial, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
+    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+
+  font-family: var(--defoult-font);
+
+  --font-mono: 'Fira Mono', monospace;
+  --pure-white: #fff;
+  --pure-black: #000;
+  --primary-color: #b9c6d2;
+  --secondary-color: #d0dde9;
+  --tertiary-color: #edf0f8;
+  --accent-color: #ff3e00;
+  --heading-color: rgba(0, 0, 0, 0.7);
+  --text-color: #444;
+  --background-without-opacity: rgba(255, 255, 255, 0.7);
+  --column-width: 42rem;
+  --column-margin-top: 4rem;
+  --transparent: rgba(0,0,0,0);
+  --color-pre-bg: rgba(255, 255, 255, 0.45);
+  --color-pre-shadow: rgb(255 255 255 / 25%);
+  --color-progress: #5fcbd2;
+  --inherit: inherit;
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+  --font-bold: bold;
+  --font-normal: normal;
+  --size-8: 0.5rem;
+  --size-10: 0.625rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-22: 1.375rem;
+  --size-24: 1.5rem;
+  --size-30: 1.875rem;
+  --size-32: 2rem;
+  --size-36: 2.25rem;
+  --size-38: 2.375rem;
+  --size-64: 4rem;
+  --size-150: 9.375rem;
+  --size-160: 10rem;
+  --size-clamped: clamp(44px, 14vw, 255px);
 }
 
 body {
-	min-height: 100vh;
-	margin: 0;
-	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 10.45%,
+    var(--tertiary-color) 41.35%
+  );
+  background-color: var(--primary-color);
 }
 
 body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	opacity: 0.05;
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  z-index: -1;
+  width: 80vw;
+  height: 100vh;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    var(--pure-white) 0%,
+    var(--transparent) 100%
+  );
+  opacity: 0.05;
+  content: '';
 }
 
 #svelte {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
 h2,
 p {
-	font-weight: 400;
-	color: var(--heading-color);
+  color: var(--heading-color);
+  font-weight: var(--font-weight-400);
 }
 
 p {
-	line-height: 1.5;
+  line-height: 1.5;
 }
 
 a {
-	color: var(--accent-color);
-	text-decoration: none;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 h1 {
-	font-size: 2rem;
-	margin-bottom: 0 0 1em 0;
-	text-align: center;
+  margin-bottom: 0 0 1em 0;
+  font-size: var(--size-32);
+  text-align: center;
 }
 
 h2 {
-	font-size: 1rem;
+  font-size: var(--size-16);
 }
 
 pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--text-color);
+  padding: 0.5em;
+  overflow-x: auto;
+  color: var(--text-color);
+  font-size: var(--size-16);
+  font-family: var(--font-mono);
+  background-color: var(--color-pre-bg);
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px var(--color-pre-shadow);
 }
 
 input,
 button {
-	font-size: inherit;
-	font-family: inherit;
+  font-size: var(--inherit);
+  font-family: var(--inherit);
 }
 
 button:focus:not(:focus-visible) {
-	outline: none;
+  outline: none;
 }
 
 @media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
+  h1 {
+    font-size: var(--size-38);
+  }
 }

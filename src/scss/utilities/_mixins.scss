@@ -57,7 +57,7 @@
 // $query - Defaults to `min-width`.
 // $type - Defaults to `screen`.
 
-@mixin mq($breakpoint, $query: "min-width", $type: "screen") {
+@mixin mq($breakpoint, $query: 'min-width', $type: 'screen') {
   @if $fix-mqs {
     @if $fix-mqs >= $breakpoint {
       @content;
@@ -81,7 +81,7 @@
   &::before,
   &::after {
     display: table;
-    content: "";
+    content: '';
   }
 
   &::after {

@@ -1,63 +1,64 @@
-<style>
+<progress class="progress" />
+
+<style lang="scss">
   .progress {
-    appearance: none;
     box-sizing: border-box;
-    border: none;
-    border-radius: 50%;
-    padding: 0.25em;
     width: 3em;
     height: 3em;
-    color: #5fcbd2;
-    background-color: transparent;
-    font-size: 16px;
+    padding: 0.25em;
     overflow: hidden;
+    color: var(--color-progress);
+    font-size: var(--size-16);
+    background: var(--transparent);
+    border: none;
+    border-radius: 50%;
+    appearance: none;
+
+    &::-webkit-progress-bar {
+      background-color: var(--transparent);
+    }
+
+    &:indeterminate {
+      -webkit-mask-image: linear-gradient(var(--transparent) 50%, var(--pure-black) 50%),
+        linear-gradient(to right, var(--transparent) 50%, var(--pure-black) 50%);
+      mask-image: linear-gradient(var(--transparent) 50%, var(--pure-black) 50%),
+        linear-gradient(to right, var(--transparent) 50%, var(--pure-black) 50%);
+      animation: pure-material-progress-circular 6s infinite cubic-bezier(0.3, 0.6, 1, 1);
+
+      &::before,
+      &::-webkit-progress-value {
+        display: block;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: 100%;
+        margin-bottom: 0.25em;
+        background-color: var(--transparent);
+        border: solid 0.25em var(--transparent);
+        /* stylelint-disable*/
+        border-top-color: currentColor;
+        /* stylelint-enable */
+        border-radius: 50%;
+        animation: pure-material-progress-circular-pseudo 0.75s infinite linear alternate;
+        content: '';
+      }
+
+      &::-moz-progress-bar {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background-color: var(--transparent);
+        border: solid 0.25em var(--transparent);
+        /* stylelint-disable*/
+        border-top-color: currentColor;
+        /* stylelint-enable */
+        border-radius: 50%;
+        animation: pure-material-progress-circular-pseudo 0.75s infinite linear alternate;
+      }
+    }
   }
 
-  .progress::-webkit-progress-bar {
-    background-color: transparent;
-  }
-
-  /* Indeterminate */
-  .progress:indeterminate {
-    -webkit-mask-image: linear-gradient(transparent 50%, black 50%),
-      linear-gradient(to right, transparent 50%, black 50%);
-    mask-image: linear-gradient(transparent 50%, black 50%),
-      linear-gradient(to right, transparent 50%, black 50%);
-    animation: pure-material-progress-circular 6s infinite
-      cubic-bezier(0.3, 0.6, 1, 1);
-  }
-
-  :-ms-lang(x),
   .progress:indeterminate {
     animation: none;
-  }
-
-  .progress:indeterminate::before,
-  .progress:indeterminate::-webkit-progress-value {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 0.25em;
-    border: solid 0.25em transparent;
-    border-top-color: currentColor;
-    border-radius: 50%;
-    width: 100% !important;
-    height: 100%;
-    background-color: transparent;
-    animation: pure-material-progress-circular-pseudo 0.75s infinite linear
-      alternate;
-  }
-
-  .progress:indeterminate::-moz-progress-bar {
-    box-sizing: border-box;
-    border: solid 0.25em transparent;
-    border-top-color: currentColor;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    animation: pure-material-progress-circular-pseudo 0.75s infinite linear
-      alternate;
   }
 
   .progress:indeterminate::-ms-fill {
@@ -99,27 +100,32 @@
   }
 
   @keyframes pure-material-progress-circular-pseudo {
+    
     0% {
       transform: rotate(-30deg);
     }
     29.4% {
-      border-left-color: transparent;
+      border-left-color: var(--transparent);
     }
     29.41% {
+      /* stylelint-disable*/
       border-left-color: currentColor;
+      /* stylelint-enable */
     }
     64.7% {
-      border-bottom-color: transparent;
+      border-bottom-color: var(--transparent);
     }
     64.71% {
+      /* stylelint-disable*/
       border-bottom-color: currentColor;
+      /* stylelint-enable */
     }
     100% {
-      border-left-color: currentColor;
+      /* stylelint-disable*/
       border-bottom-color: currentColor;
+      border-left-color: currentColor;
+      /* stylelint-enable */
       transform: rotate(225deg);
     }
   }
 </style>
-
-<progress class="progress" />

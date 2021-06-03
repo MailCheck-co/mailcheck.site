@@ -5,7 +5,7 @@
 
 .btn-sign-in {
   color: $primary-white;
-  background: transparent;
+  background: var(--transparent);
   border: 1px solid $dark-05;
   outline: none;
 
@@ -25,24 +25,24 @@
 
 %select {
   margin-right: 25px;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid transparent;
+  color: var(--pure-white);
+  background-color: var(--transparent);
+  border: 1px solid var(--transparent);
 
   & > option {
     color: $black;
-    background-color: transparent;
+    background-color: var(--transparent);
 
     &:checked {
-      background-color: transparent;
+      background-color: var(--transparent);
     }
 
     &:not(:checked) {
-      background-color: transparent;
+      background-color: var(--transparent);
     }
 
     &:hover {
-      background-color: transparent;
+      background-color: var(--transparent);
     }
   }
 }

@@ -1,21 +1,20 @@
 <script lang="ts">
-  import Seo from "$lib/Seo.svelte";
-  import EmailsVerify from "$lib/EmailsVerify.svelte";
-  import Partners from "$lib/Partners.svelte";
-  import Features from "$lib/Features.svelte";
-  import Choose from "$lib/Choose.svelte";
-  import Pricing from "$lib/Pricing.svelte";
-  import Reviews from "$lib/Reviews.svelte";
-  import Team from "$lib/Team.svelte";
-  import Testimonials from "$lib/Testimonials.svelte";
-  import Faq from "$lib/Faq.svelte";
-  import ContactUs from "$lib/ContactUs.svelte";
-  import Cta from "$lib/Cta.svelte";
+  import Seo from '$lib/Seo.svelte';
+  import EmailsVerify from '$lib/EmailsVerify.svelte';
+  import Partners from '$lib/Partners.svelte';
+  import Features from '$lib/Features.svelte';
+  import Choose from '$lib/Choose.svelte';
+  import Pricing from '$lib/Pricing.svelte';
+  import Reviews from '$lib/Reviews.svelte';
+  import Team from '$lib/Team.svelte';
+  import Testimonials from '$lib/Testimonials.svelte';
+  import Faq from '$lib/Faq.svelte';
+  import ContactUs from '$lib/ContactUs.svelte';
+  import Cta from '$lib/Cta.svelte';
 </script>
 
 <Seo title="Verify your real customers in one way" />
-<svelte:head>
-</svelte:head>
+<svelte:head />
 
 <main class="manage-customers" role="main" id="main">
   <!-- EMAILS VERIFY -->

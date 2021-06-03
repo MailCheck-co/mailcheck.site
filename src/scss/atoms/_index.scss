@@ -14,8 +14,8 @@
   justify-content: center;
   padding: 20px 40px;
   color: $primary-white;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: var(--font-weight-700);
+  font-size: var(--size-16);
   letter-spacing: 0.8px;
   text-transform: uppercase;
   border-radius: 5px;
@@ -78,7 +78,7 @@
   margin-bottom: 20px;
   padding: 20px;
   color: $primary-white;
-  font-size: 16px;
+  font-size: var(--size-16);
   background-color: $dark-04;
   border: 1px solid $dark-04;
   border-radius: 5px;
@@ -93,7 +93,7 @@
 
     &::placeholder {
       color: $dark-02;
-      font-size: 16px;
+      font-size: var(--size-16);
       font-style: italic;
       letter-spacing: 0.8px;
     }
@@ -123,8 +123,8 @@
   justify-content: center;
   margin-right: 20px;
   color: $primary-white !important;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: var(--font-weight-300);
+  font-size: var(--size-14);
   letter-spacing: 0.8px;
 
   &::after {
@@ -136,7 +136,7 @@
     height: 1px;
     background: $primary-white;
     transition: 0.3s;
-    content: "";
+    content: '';
   }
 
   &:hover::after {
@@ -147,8 +147,8 @@
 
 .text-thin {
   color: $primary-white;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: var(--font-weight-300);
+  font-size: var(--size-16);
   line-height: 24px;
   letter-spacing: 0.8px;
   text-align: center;
@@ -169,7 +169,7 @@
 
   &-small {
     margin: 0 auto 15px;
-    font-size: 12px;
+    font-size: var(--size-12);
     text-align: initial;
   }
 }
@@ -213,8 +213,8 @@
   width: 100%;
   margin: 0;
   color: $section-titles-color;
-  font-weight: 900;
-  font-size: clamp(44px, 14vw, 255px);
+  font-weight: var(--font-weight-900);
+  font-size: var(--size-clamped);
   line-height: 0.2;
   letter-spacing: 0.05px;
   text-align: center;
@@ -229,8 +229,8 @@
   width: 100%;
   margin: 0;
   color: $primary-white;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: var(--font-weight-300);
+  font-size: var(--size-16);
   line-height: 1.5;
   letter-spacing: 0.5px;
   text-align: center;
@@ -326,8 +326,8 @@
     width: 100%;
     margin: 0 0 10px;
     color: $primary-white;
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: var(--font-weight-300);
+    font-size: var(--size-14);
     line-height: 20px;
     letter-spacing: 1px;
     text-align: left;
@@ -356,8 +356,8 @@
   &-snippet {
     margin: 0 0 15px;
     color: $primary-white;
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: var(--font-weight-300);
+    font-size: var(--size-16);
     line-height: 24px;
     letter-spacing: 1px;
     text-align: left;
@@ -367,7 +367,7 @@
     margin: 0 0 15px 20px;
     padding: 5px 15px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--size-16);
     line-height: 26px;
     text-align: left;
     border-left: 1px solid $primary-white;

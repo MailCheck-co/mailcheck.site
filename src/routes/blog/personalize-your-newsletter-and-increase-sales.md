@@ -26,8 +26,7 @@ So how can you collect information about clients and use it for you good afterwa
 
 Let’s see which user data you can acquire using analytical tools and how to exploit this data.
 
-Behaviour-Based Personalization
--------------------------------
+## Behaviour-Based Personalization
 
 This is one of the most efficient ways of personalization in marketing. After you study the pages someone has visited, the time he sent on the website, how many sections he has looked through, whether he has used the search and what he was searching for, you can develop an efficient personalized letter.
 
@@ -37,15 +36,14 @@ Most of the email marketers use Google Analytics tool to study behaviour of thei
 
 So you need to find out:
 
-*   How long did the client’s session on your website lasted?
-*   How many pages did he look through?
-*   What did he buy?
-*   What is the share of new visitors?
-*   What is the bounce rate?
-*   How much did you earn on each single client who has came from the mailing?
+- How long did the client’s session on your website lasted?
+- How many pages did he look through?
+- What did he buy?
+- What is the share of new visitors?
+- What is the bounce rate?
+- How much did you earn on each single client who has came from the mailing?
 
-ROI Calculation
----------------
+## ROI Calculation
 
 ROIis an indicator you can use to define the efficiency of your newsletter in scope of income/expenditures. In order to get a proper coefficient one has to consider sales data from each letter sent.
 
@@ -55,29 +53,24 @@ You can consider newsletter to be successful if the ROI is 2 or more. This indic
 
 ![How to Personalize Your Newsletter and Increase Sales?](../../assets/img/how-to-personalize-your-newsletter.jpg)
 
-Click and Opening Based Personalization
----------------------------------------
+## Click and Opening Based Personalization
 
 Click statistics shows the followed links and the number of clicks made by your subscribers. This allows to estimate clients’ activity and figure out their needs. For example, if you have sent newsletter to the women under 30 and there were 2 links in it (one leading to the category with family goods and another to the beauty products) you will find out what interests them the most from the click statistics.
 
-Click Heat Map
---------------
+## Click Heat Map
 
 Click heat map helps you to analyze statistics on page scrolling. It looks like a weather map, however, instead of the highest and lowest temperature you see the colour marking for the clicks distribution.
 
 This technology allows email marketer to define which elements of the mailing have attracted subscribers the most.
 
-Opening Statistics
-------------------
+## Opening Statistics
 
 Opening statistics also helps personalizing newsletters. Each time you send letters to your clients it is vital to know whether they open letters or not. If not, that means the subject line is not catchy enough. In such a case you need to analyze the statistics and personalize a letter for the customer.
 
-Personalization by Device
--------------------------
+## Personalization by Device
 
 You also should consider making personalization by device used. Monitoring the gadgets used by customers to read your letters can be a good way to make a more personalized offer and segmentate customers by device - for example, Android and Apple users.
 
-Conclusion
-----------
+## Conclusion
 
 Personalization demands vast efforts you, however, if done properly it can increase your conversion dramatically.

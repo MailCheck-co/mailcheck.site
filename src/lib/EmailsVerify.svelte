@@ -1,23 +1,18 @@
-<style lang="scss">
-  @import "../scss/utilities/index";
-  @import "../scss/molecules/main";
-</style>
-
 <script lang="ts">
-  import Progress from "./Progress.svelte";
+  import Progress from './Progress.svelte';
 
   export let isChecking = false;
   export let isChecked = false;
-  export let validityClass = "";
+  export let validityClass = '';
 
-  let emailResult = "";
-  let existsResult = "";
-  let smtpResult = "";
-  let disposableResult = "";
-  let catchResult = "";
-  let validityEmailRisk = "";
-  let emailInput = "";
-  let rateResult = "";
+  let emailResult = '';
+  let existsResult = '';
+  let smtpResult = '';
+  let disposableResult = '';
+  let catchResult = '';
+  let validityEmailRisk = '';
+  let emailInput = '';
+  let rateResult = '';
   let loader = false;
   let result = false;
   const reset = () => {
@@ -25,75 +20,75 @@
     isChecked = false;
   };
   const keyup = (e: KeyboardEvent) => {
-    if (e.target.value === "") reset();
+    if (e.target.value === '') reset();
   };
   let links;
   let socialLinks = [
     {
       href: null,
-      title: "gravatar",
-      className: "gravatar",
+      title: 'gravatar',
+      className: 'gravatar'
     },
     {
       href: null,
-      title: "blogger",
-      className: "blogger",
+      title: 'blogger',
+      className: 'blogger'
     },
     {
       href: null,
-      title: "facebook",
-      className: "facebook",
+      title: 'facebook',
+      className: 'facebook'
     },
     {
       href: null,
-      title: "foursquare",
-      className: "foursquare",
+      title: 'foursquare',
+      className: 'foursquare'
     },
     {
       href: null,
-      title: "google",
-      className: "google",
+      title: 'google',
+      className: 'google'
     },
     {
       href: null,
-      title: "github",
-      className: "github",
+      title: 'github',
+      className: 'github'
     },
     {
       href: null,
-      title: "linkedin",
-      className: "linkedin",
+      title: 'linkedin',
+      className: 'linkedin'
     },
     {
       href: null,
-      title: "tripit",
-      className: "tripit",
+      title: 'tripit',
+      className: 'tripit'
     },
     {
       href: null,
-      title: "tumblr",
-      className: "tumblr",
+      title: 'tumblr',
+      className: 'tumblr'
     },
     {
       href: null,
-      title: "twitter",
-      className: "twitter",
+      title: 'twitter',
+      className: 'twitter'
     },
     {
       href: null,
-      title: "vimeo",
-      className: "vimeo",
+      title: 'vimeo',
+      className: 'vimeo'
     },
     {
       href: null,
-      title: "wordpress",
-      className: "wordpress",
+      title: 'wordpress',
+      className: 'wordpress'
     },
     {
       href: null,
-      title: "youtube",
-      className: "youtube",
-    },
+      title: 'youtube',
+      className: 'youtube'
+    }
   ];
 
   type fetchData = {
@@ -112,13 +107,13 @@
             {
               domain: string;
               shortname:
-                | "facebook"
-                | "wordpress"
-                | "vimeo"
-                | "foursquare"
-                | "tripit"
-                | "tumblr"
-                | "twitter";
+                | 'facebook'
+                | 'wordpress'
+                | 'vimeo'
+                | 'foursquare'
+                | 'tripit'
+                | 'tumblr'
+                | 'twitter';
               username: string;
               userid: string;
               url: string;
@@ -136,36 +131,35 @@
     result = true;
     loader = true;
     try {
-      const response = await fetch("/api/checkMail", {
-        method: "POST",
+      const response = await fetch('/api/checkMail', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          email: emailInput,
-        }),
+          email: emailInput
+        })
       });
       const data: fetchData = await response.json();
-      const exist = data.mxExists ? "+" : "-";
-      const smpt = data.smtpExists ? "+" : "-";
-      const disposable = data.isNotDisposable ? "+" : "-";
-      const catchAll = data.isNotSmtpCatchAll ? "+" : "-";
+      const exist = data.mxExists ? '+' : '-';
+      const smpt = data.smtpExists ? '+' : '-';
+      const disposable = data.isNotDisposable ? '+' : '-';
+      const catchAll = data.isNotSmtpCatchAll ? '+' : '-';
       emailResult = data.email;
       existsResult = exist;
       smtpResult = smpt;
-      rateResult = data?.trustRate.toString() ?? "0";
+      rateResult = data?.trustRate.toString() ?? '0';
       disposableResult = disposable;
       catchResult = catchAll;
 
-      const gravatar =
-        data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
+      const gravatar = data.gravatar && data.gravatar.entry && data.gravatar.entry[0];
 
       links = (gravatar?.accounts ?? []).reduce(
         (acc, el) => {
           acc[el.shortname] = el.url;
           return acc;
         },
-        { gravatar: gravatar?.profileUrl ?? "" }
+        { gravatar: gravatar?.profileUrl ?? '' }
       );
 
       socialLinks = socialLinks.map((link) => {
@@ -181,14 +175,14 @@
       });
 
       if (data.trustRate <= 49 || response.status >= 400) {
-        validityEmailRisk = "invalid";
-        validityClass = "error";
+        validityEmailRisk = 'invalid';
+        validityClass = 'error';
       } else if (data.trustRate > 49 && data.trustRate < 80) {
-        validityEmailRisk = "risky but deliverable";
-        validityClass = "warning";
+        validityEmailRisk = 'risky but deliverable';
+        validityClass = 'warning';
       } else {
-        validityEmailRisk = "valid";
-        validityClass = "success";
+        validityEmailRisk = 'valid';
+        validityClass = 'success';
       }
       loader = false;
       isChecked = true;
@@ -208,13 +202,12 @@
   <div class="wrapper-main sm-left">
     <h1 class="title">Validate your mailing list in one click</h1>
     <p class="main-text">
-      Get assured your mailing list contains only real emails addresses, get rid
-      of bots and inactive users
+      Get assured your mailing list contains only real emails addresses, get rid of bots and
+      inactive users
     </p>
     <div class="emails-block">
       <div class="main-buttons">
-        <a href="https://app.mailcheck.co/" class="btn btn-live-demo"
-          >GET FREE EMAILS NOW</a>
+        <a href="https://app.mailcheck.co/" class="btn btn-live-demo">GET FREE EMAILS NOW</a>
         <a href="https://app.mailcheck.co/" class="btn btn-start">Start</a>
       </div>
       <div class="verify-email">
@@ -300,26 +293,25 @@
             </ul>
             <div class="results-icons">
               {#each socialLinks as link}
-                {#if typeof link.href === "string"}
+                {#if typeof link.href === 'string'}
                   <a
                     href={link.href}
                     class={`social-link active ${link.className}`}
                     title={link.title}>&nbsp;</a>
                 {:else}
-                  <span
-                    class={`social-link ${link.className}`}
-                    title={link.title}>&nbsp;</span>
+                  <span class={`social-link ${link.className}`} title={link.title}>&nbsp;</span>
                 {/if}
               {/each}
             </div>
-            <button
-              type="button"
-              id="close-btn"
-              class="close-results"
-              on:click={closeBtn} />
+            <button type="button" id="close-btn" class="close-results" on:click={closeBtn} />
           </div>
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<style lang="scss">
+  @import '../scss/utilities/index';
+  @import '../scss/molecules/main';
+</style>

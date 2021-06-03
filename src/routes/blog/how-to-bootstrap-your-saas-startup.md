@@ -22,15 +22,16 @@ success of your product launch is allocated to other no less important things su
 properly conducted market research, meticulously selected development team, and the budget available to launch the
 product. In the article below we will have a closer look at what exactly constitutes a successful SaaS product launch.
 
-*   Analyze your idea
-*   Create a lean business plan
-*   Determine your strategy
-*   Define how you will market your SaaS product
-*   Select the right development team
+- Analyze your idea
+- Create a lean business plan
+- Determine your strategy
+- Define how you will market your SaaS product
+- Select the right development team
 
 ![Successful SaaS Startup Components](../../assets/img/successfulSaaSStartupComponents.jpg)
 
 ### Analyze your idea
+
 When you are in the early stages of developing your future SaaS product the first question you must ask yourself is
 “What is the problem I need to solve and how will my product solve it?” Think of any problems you can address by
 creating a product that can solve it, or study the current software products offered on the market, see what solutions
@@ -41,6 +42,7 @@ is useless. As Russell L. Ackoff noted, “We fail more often because we solve t
 the wrong solution to the right problem.”
 
 ### Create a lean business plan
+
 As outdated as it may sound, business plans are necessary, and they do work. No need to go nuts and create a 50 pages
 business plan. A simple one-page outline of your strategy will do. You can always go back to it if you need to make
 adjustments and it will be much easier to change a simple plan rather than changing an already thought-through business
@@ -48,23 +50,26 @@ plan. You can create a bullet-point plan or break it down in a table format, or 
 software like [Enloop](https://enloop.com/) to help you with building your lean business plan.
 
 ### Determine your strategy
+
 This is where you define your unique value proposition (UVP). Your UVP is what separates your business from your competitors. It also explains how your product solves your customers’ problem, what benefits it brings, and why your target customers should choose you over the competition. This is also where you define your target market and analyze your competition.
 
 ### Define how you will market your SaaS product
+
 Marketing something that has no physical presence, like a SaaS product, has its own set of rules. It takes a person a couple of days or even hours to consider and purchase a SaaS product (be it a project management tool or a CRM software subscription). So the efforts needed to market a SaaS product are quite manageable compared to marketing a new car make. Tactics to consider first and foremost:
 
-*   Offer a free trial of your product
-*   Share data-driven content (case studies, statistics)
-*   Demonstrate your social proof by posting reviews and testimonials about your product
-*   Offer attractive deals
-*   Reward customers for referrals
-*   Employ content marketing and SEO to attract more customers
+- Offer a free trial of your product
+- Share data-driven content (case studies, statistics)
+- Demonstrate your social proof by posting reviews and testimonials about your product
+- Offer attractive deals
+- Reward customers for referrals
+- Employ content marketing and SEO to attract more customers
 
 For SEO, you can use Google Analytics or any other free SEO tools, like [CanIRank](https://www.canirank.com/) or
 [Seobility](https://www.seobility.net/en/). However, note that most of the other data tools simply
 piggyback on Google’s data.
 
 ### Select the right development team
+
 While the SaaS product development steps discussed above involve a lot of thinking and analyzes, the design and development of the actual product or at least its prototype is the task that requires the application of hand and brain labor. It is not necessary for you as the CEO of your business to also be a CTO of your product. Outsourcing the technical part of the product development is what most SaaS startups would resort to these days, and so can you. The question then is “Where to get a good development team to bring my idea into life?”
 
 ![Right Development Team](../../assets/img/rightDevelopmentTeam.jpg)
@@ -73,11 +78,11 @@ Source: Medium
 A typical development team usually consists of a project manager, business analyst, front-end and back-end developers,
 UX/UI designer, and a QA engineer. The benefits of hiring a dedicated development team over an in-house team are huge:
 
-*   Hiring a dedicated development team can be scaled according to your needs and requirements. Depending on the task, you can select the number of experts and their seniority levels.
-*   An outsourced development team usually has extensive experience working with complicated projects. They are focused solely on your project and are set on reaching your goals with no distractions.
-*   When hiring a dedicated development team you don't need to worry about adding extra workspace in your office. All the recruitment and administration hassle is diminished too. This is much simpler and cheaper than hiring an in-house specialist.
-*   You can assume direct control over the management of your dedicated development team within the project they work on.
-*   When you are hiring a team you are hiring an already solid group of people who have previously worked on other projects together, so you are eliminating the need for team building.
+- Hiring a dedicated development team can be scaled according to your needs and requirements. Depending on the task, you can select the number of experts and their seniority levels.
+- An outsourced development team usually has extensive experience working with complicated projects. They are focused solely on your project and are set on reaching your goals with no distractions.
+- When hiring a dedicated development team you don't need to worry about adding extra workspace in your office. All the recruitment and administration hassle is diminished too. This is much simpler and cheaper than hiring an in-house specialist.
+- You can assume direct control over the management of your dedicated development team within the project they work on.
+- When you are hiring a team you are hiring an already solid group of people who have previously worked on other projects together, so you are eliminating the need for team building.
 
 Yes, it may cost you a penny to hire a remote dedicated development team, but again, this is something you shouldn’t try
 to save on as this is where your future product is born. Be sure that the benefits you will receive from hiring a

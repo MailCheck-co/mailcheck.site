@@ -14,43 +14,40 @@ desc: Bounce rate shows the percentage of letters that have not been delivered. 
 
 Bounce rate shows the percentage of letters that have not been delivered. There can be numerous reasons for bouncing - starting from entering wrong recipient in the "To" field and ending by the blockade from the recipient's server. Let’s disclose possible types of bounces.
 
-Type of Bounces in Email Marketing
-----------------------------------
+## Type of Bounces in Email Marketing
 
 There are two major types to explore:
 
-*   hard bounces
-*   soft bounces
+- hard bounces
+- soft bounces
 
 “Hard bounce” means that the reason for the delivery failure is permanent. While “soft bounce” means that bouncing is temporary. Below you can see the list of reasons for both “hard bounces” and “soft bounces”.
 
 Hard bounces:
 
-*   Wrong address
-*   Non Existing domain
-*   Recipient’s server doesn’t accept the mail
+- Wrong address
+- Non Existing domain
+- Recipient’s server doesn’t accept the mail
 
 There also can be other reasons. It is vital to delete or fix the emails you got the hard bounces from immediately.
 
 Soft bounce:
 
-*   No space left for your mail in the recipient’s inbox
-*   Your letter takes too much space (more than the limit set by the server)
-*   Service is temporarily unavailable
+- No space left for your mail in the recipient’s inbox
+- Your letter takes too much space (more than the limit set by the server)
+- Service is temporarily unavailable
 
 In such a situation the service will make several attempts to deliver your letter. It can take days for the server. However, if you see that there are 3 or more soft bounces per address, it is better to delete it from your mailing list.
 
 One of the general reasons for high bounce rate is that in your base there are emails that belong [to catch-all email servers](/blog/catch-all-email-servers).
 
-Why Do I Have to Concern About My Email Bounce Rate?
-----------------------------------------------------
+## Why Do I Have to Concern About My Email Bounce Rate?
 
 In the eyes of the email service providers, high bounce rate makes you look like a spammer. This can lead to the delivery failure for all of your letters on the side of ESP and even cause the ban of your IP.
 
 As a result, your reputation will suffer and your email can be included in the blacklist so you won’t be able to conduct effective email marketing campaigns.
 
-How Can I Reduce Bounce Rate in My Email Marketing Campaign?
-------------------------------------------------------------
+## How Can I Reduce Bounce Rate in My Email Marketing Campaign?
 
 Below we have prepared a set of recommendations that can help you to reduce the email bounce rate:
 
@@ -63,10 +60,9 @@ Below we have prepared a set of recommendations that can help you to reduce the 
 7.  Test your letters. Do not test them on your mailing list. Make tests with the email addresses of your friends and colleagues and check whether the letters are delivered properly.
 8.  Check the email bounce rate per domain. For example, compare the bounce rate for gmail and yahoo domains. The figures have to be almost the same, however, if for the yahoo it is much higher, then probably you do not comply with some of their requirements. You can solve this issue by checking the blacklists or contacting ESP support.
 9.  Check out the delivery error reports. Sometimes different servers have a different attitude to the same reasons for email bounce rate increase. Try to figure out how the specified ESP classifies your delivery failure reason.
-10.  Check the blacklists. To keep your mailing list actual, you should regularly compare email addresses in your mailing list with the ones that are pointed out in blacklists.
+10. Check the blacklists. To keep your mailing list actual, you should regularly compare email addresses in your mailing list with the ones that are pointed out in blacklists.
 
-Conclusion
-----------
+## Conclusion
 
 Bounce rate is a critical metric for your email marketing campaign. It is more about technical reasons than the pros and cons of your marketing strategy, so here you have the simple rules to avoid being downgraded in the eyes of ESPs and your clients.
 

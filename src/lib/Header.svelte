@@ -1,31 +1,25 @@
-<style lang="scss">
-  @import "../scss/utilities/index";
-  @import "../scss/molecules/header";
-  @import "../scss/molecules/mobile-menu";
-</style>
-
 <script lang="ts">
   export let status: number;
 
-  import { onMount } from "svelte";
-  import ToTop from "./ToTop.svelte";
+  import { onMount } from 'svelte';
+  import ToTop from './ToTop.svelte';
 
   let open = false;
-  let lang = "en";
+  let lang = 'en';
   const onLangSelect = (e) => {
     const current = e.target.options.selectedIndex;
     switch (+current) {
       case 0:
-        lang = "en";
+        lang = 'en';
         break;
       case 1:
-        lang = "es";
+        lang = 'es';
         break;
       case 2:
-        lang = "ru";
+        lang = 'ru';
         break;
       default:
-        lang = "en";
+        lang = 'en';
         break;
     }
   };
@@ -37,13 +31,9 @@
    * But we don't want to get stuck in a loop, so we only do it once
    */
   onMount(() => {
-    if (
-      typeof window !== "undefined" &&
-      "sessionStorage" in window &&
-      status !== 404
-    ) {
-      if (!window.sessionStorage.getItem("sapper-has-refreshed")) {
-        window.sessionStorage.setItem("sapper-has-refreshed", "1");
+    if (typeof window !== 'undefined' && 'sessionStorage' in window && status !== 404) {
+      if (!window.sessionStorage.getItem('sapper-has-refreshed')) {
+        window.sessionStorage.setItem('sapper-has-refreshed', '1');
         window.location.reload();
       }
     }
@@ -55,11 +45,7 @@
 <header role="banner">
   <div class="wrapper-header">
     <a sveltekit:prefetch class="logo" href="/">
-      <img
-        src="assets/img/mailcheck-logo.svg"
-        width="138"
-        height="26"
-        alt="mailcheck logo" />
+      <img src="assets/img/mailcheck-logo.svg" width="138" height="26" alt="mailcheck logo" />
     </a>
     <nav class="header-nav" role="navigation">
       <a sveltekit:prefetch class="nav-link" href="/#features">Features</a>
@@ -80,11 +66,7 @@
 </header>
 
 <!--Mobile menu-->
-<button
-  class="burger-wrapper"
-  class:open
-  on:click={() => (open = !open)}
-  id="burger">
+<button class="burger-wrapper" class:open on:click={() => (open = !open)} id="burger">
   <span class="burger" />
 </button>
 <nav
@@ -93,12 +75,9 @@
   on:click={() => (open = !open)}
   role="navigation"
   id="mobile-menu">
-  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#features"
-    >Features</a>
-  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#pricing"
-    >Pricing</a>
-  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#contact-us"
-    >Contact Us</a>
+  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#features">Features</a>
+  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#pricing">Pricing</a>
+  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#contact-us">Contact Us</a>
   <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/blog">Blog</a>
   <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/faq">FAQ</a>
   <a href="https://app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
@@ -108,3 +87,9 @@
     <option value="ru">ru</option>
   </select>
 </nav>
+
+<style lang="scss">
+  @import '../scss/utilities/index';
+  @import '../scss/molecules/header';
+  @import '../scss/molecules/mobile-menu';
+</style>

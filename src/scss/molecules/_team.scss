@@ -45,8 +45,8 @@
   margin-bottom: 0;
   padding-top: 50px;
   color: $primary-white;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: var(--font-bold);
+  font-size: var(--size-20);
   line-height: 1.2;
   text-indent: initial;
 }
@@ -54,7 +54,7 @@
 .team-member-description {
   margin-top: 10px;
   color: $primary-white;
-  font-size: 16px;
+  font-size: var(--size-16);
   line-height: 1.5;
   text-indent: initial;
 }
@@ -98,9 +98,9 @@
   }
 
   .team-member-avatar {
+    left: -2rem;
     min-width: 110px;
     min-height: 110px;
-    left: -2rem;
   }
 
   .team-member-name {

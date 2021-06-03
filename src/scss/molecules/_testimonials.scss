@@ -41,10 +41,12 @@
   }
 
   .testimonial-slide {
+    --size-0: 0;
+
     display: inline-block;
     width: 420px;
     height: 380px;
-    font-size: 0;
+    font-size: var(--size-0);
     border-radius: 3px;
     scroll-snap-align: start;
 
@@ -54,8 +56,8 @@
       justify-content: space-between;
       height: 320px;
       padding: 30px;
-      background: url("/assets/img/testimonial-slides-img.png")
-        $testimonials-dark-bg no-repeat top 10% right 10%;
+      background: url('/assets/img/testimonial-slides-img.png') $testimonials-dark-bg no-repeat top
+        10% right 10%;
       border-radius: 5px;
     }
   }
@@ -99,8 +101,8 @@
 .slide-text,
 .slide-name {
   color: $primary-white;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: var(--font-weight-300);
+  font-size: var(--size-14);
   line-height: 1.714;
   text-align: left;
   text-indent: initial;
@@ -147,7 +149,7 @@
       display: block;
       width: 20%;
       height: 100%;
-      content: "";
+      content: '';
       pointer-events: none;
     }
 

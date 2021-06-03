@@ -1,34 +1,29 @@
-<style lang="scss">
-  @import "../scss/utilities/index";
-  @import "../scss/molecules/contact-us";
-  @import "../scss/molecules/popup";
-</style>
-
 <script lang="ts">
-  import IntersectionObserver from "svelte-intersection-observer";
+  import IntersectionObserver from 'svelte-intersection-observer';
 
   let isValid: boolean;
-  let email = "";
+  let email = '';
   let element: HTMLElement;
   let intersecting: boolean;
   let isOpen = false;
   let isError = false;
   let contactForm = { reset: () => {} };
   let popUpBlock: HTMLElement;
-  let nameValue = "";
-  let textareaValue = "";
+  let nameValue = '';
+  let textareaValue = '';
   function validate(node: HTMLElement, value: string) {
     return {
       update() {
-        const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const reg =
+          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         return (isValid = reg.test(String(email).toLowerCase()));
-      },
+      }
     };
   }
   const onClose = () => {
     isOpen = false;
     isError = false;
-    document.body.classList.remove("fixed");
+    document.body.classList.remove('fixed');
   };
   const onSubmit = async () => {
     const referrerValue = document.referrer;
@@ -36,13 +31,13 @@
       name: nameValue,
       email,
       subject: textareaValue,
-      referrer: referrerValue,
+      referrer: referrerValue
     };
 
     try {
-      await fetch("/api/sendMail", {
-        method: "POST",
-        body: JSON.stringify(data),
+      await fetch('/api/sendMail', {
+        method: 'POST',
+        body: JSON.stringify(data)
       });
       isOpen = true;
       contactForm.reset();
@@ -52,13 +47,13 @@
       console.error(e);
     }
 
-    document.body.classList.add("fixed");
+    document.body.classList.add('fixed');
     window.dataLayer?.push({
-      eventCategory: "site",
-      eventAction: "contactform",
-      eventLabel: "submit",
-      eventValue: "",
-      event: "gaEvent",
+      eventCategory: 'site',
+      eventAction: 'contactform',
+      eventLabel: 'submit',
+      eventValue: '',
+      event: 'gaEvent'
     });
   };
 </script>
@@ -66,10 +61,7 @@
 <IntersectionObserver threshold={0.1} {element} bind:intersecting once={true}>
   <section bind:this={element} id="contact-us" class:intersecting>
     <div class="container">
-      <form
-        class="contact-form"
-        bind:this={contactForm}
-        on:submit|preventDefault={onSubmit}>
+      <form class="contact-form" bind:this={contactForm} on:submit|preventDefault={onSubmit}>
         <h2 class="title title-contact">contact us</h2>
         <input
           class="input input-name"
@@ -90,24 +82,18 @@
           bind:value={textareaValue}
           placeholder="Message"
           required />
-        <button disabled={!isValid} class="btn btn-submit" type="submit"
-          >submit</button>
+        <button disabled={!isValid} class="btn btn-submit" type="submit">submit</button>
       </form>
     </div>
   </section>
 </IntersectionObserver>
 
-<div
-  class="popup-container"
-  class:open={isOpen}
-  on:click={onClose}
-  bind:this={popUpBlock}>
+<div class="popup-container" class:open={isOpen} on:click={onClose} bind:this={popUpBlock}>
   <div class="popup" class:open={isOpen}>
     <span class="popup-close success" />
     <span class="popup-thanks">Thanks for filling out our form!</span>
     <p class="popup-text">
-      We will look over your message and get back to you by tomorrow. Your
-      friends at MailCheck!
+      We will look over your message and get back to you by tomorrow. Your friends at MailCheck!
     </p>
   </div>
   <div class="popup" class:open={isError && isOpen}>
@@ -116,3 +102,9 @@
     <p class="popup-text">Please try again later</p>
   </div>
 </div>
+
+<style lang="scss">
+  @import '../scss/utilities/index';
+  @import '../scss/molecules/contact-us';
+  @import '../scss/molecules/popup';
+</style>

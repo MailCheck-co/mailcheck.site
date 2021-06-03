@@ -38,7 +38,7 @@
   display: none;
   width: 100%;
   height: 100%;
-  background: url("../assets/img/city.png") no-repeat center 50%;
+  background: url('../assets/img/city.png') no-repeat center 50%;
   background-size: 150% 150%;
 
   &.open {
@@ -56,7 +56,7 @@
     left: 0;
     background: inherit;
     filter: blur(20px);
-    content: "";
+    content: '';
   }
 
   .popup {
@@ -99,7 +99,7 @@
         height: 3px;
         background: $primary-white;
         transform: rotate(-45deg);
-        content: "";
+        content: '';
       }
 
       &::after {
@@ -111,14 +111,14 @@
         height: 3px;
         background-color: $primary-white;
         transform: rotate(45deg);
-        content: "";
+        content: '';
       }
     }
 
     .popup-thanks {
       color: $primary-white;
-      font-weight: 800;
-      font-size: 36px;
+      font-weight: var(--font-weight-800);
+      font-size: var(--size-36);
       line-height: 40px;
       letter-spacing: 1.8px;
       text-align: center;
@@ -128,8 +128,8 @@
     .popup-text {
       max-width: 520px;
       color: $primary-white;
-      font-weight: 300;
-      font-size: 16px;
+      font-weight: var(--font-weight-300);
+      font-size: var(--size-16);
       letter-spacing: 0.8px;
       text-align: center;
     }
@@ -152,13 +152,13 @@
 
     .popup-thanks {
       max-width: 95%;
-      font-size: 24px;
+      font-size: var(--size-24);
       line-height: 28px;
     }
 
     .popup-text {
       max-width: 80%;
-      font-size: 16px;
+      font-size: var(--size-16);
     }
   }
 }

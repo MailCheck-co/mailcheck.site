@@ -1,10 +1,5 @@
-<style lang="scss">
-  @import "../scss/utilities/index";
-  @import "../scss/molecules/welcome";
-</style>
-
 <script lang="ts">
-  import IntersectionObserver from "svelte-intersection-observer";
+  import IntersectionObserver from 'svelte-intersection-observer';
 
   let element: HTMLElement;
   let intersecting: boolean;
@@ -18,12 +13,7 @@
       <p class="section-subtitle">We improve our service everyday</p>
     </div>
     <div class="welcome-flex">
-      <img
-        class="mail"
-        src="assets/img/mail-float.png"
-        width="765"
-        height="575"
-        alt="mail" />
+      <img class="mail" src="assets/img/mail-float.png" width="765" height="575" alt="mail" />
       <ul class="welcome-items">
         <li>
           <span class="digits">01</span>
@@ -36,8 +26,7 @@
         <li>
           <span class="digits">03</span>
           <p class="text-thin item">
-            Increase your delivery rate up to 5 times with our validation
-            algorithm
+            Increase your delivery rate up to 5 times with our validation algorithm
           </p>
         </li>
         <li>
@@ -52,3 +41,8 @@
     </div>
   </section>
 </IntersectionObserver>
+
+<style lang="scss">
+  @import '../scss/utilities/index';
+  @import '../scss/molecules/welcome';
+</style>

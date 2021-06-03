@@ -1,4 +1,4 @@
-import posts from "./_posts.js";
+import posts from './_posts.js';
 
 const lookup = new Map();
 posts.forEach((post) => {
@@ -12,18 +12,18 @@ export function get(req, res, next) {
 
   if (lookup.has(slug)) {
     res.writeHead(200, {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json'
     });
 
     res.end(lookup.get(slug));
   } else {
     res.writeHead(404, {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json'
     });
 
     res.end(
       JSON.stringify({
-        message: "Not found",
+        message: 'Not found'
       })
     );
   }

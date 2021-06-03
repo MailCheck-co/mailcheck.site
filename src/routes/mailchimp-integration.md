@@ -9,6 +9,7 @@ desc: Lots of emails sent every day via Mailchimp, however, the majority of the 
 ---
 
 # **{title}**
+
 ## {snippet}
 
 {desc}
@@ -21,67 +22,76 @@ What you need:
 2. And be a Mailchimp User
 
 ### Step 1:
-* Go to [Integration page](https://app.mailcheck.co/dashboard/integration)
-* Click on “Connect” button
+
+- Go to [Integration page](https://app.mailcheck.co/dashboard/integration)
+- Click on “Connect” button
 
 ![MailChimp integration step 1: Connect](/assets/img/mailchimp-integration/step1.jpg)
 
 ### Step 2:
-* Log in your Mailchimp account
+
+- Log in your Mailchimp account
 
 ![MailChimp integration step 2.1: Log in your Mailchimp account](/assets/img/mailchimp-integration/step2.jpg)
 
-* Allow Mailcheck to view Mailchimp data
+- Allow Mailcheck to view Mailchimp data
 
 ![MailChimp integration step 2.1: Allow Mailcheck to view Mailchimp data](/assets/img/mailchimp-integration/step2-1.jpg)
 
 ### Step 3:
-* Once the account connected enter Integration to start the validation process:
+
+- Once the account connected enter Integration to start the validation process:
 
 ![MailChimp integration step 3: Once the account connected enter Integration to start the validation process](/assets/img/mailchimp-integration/step3.jpg)
 
 ### Step 4:
-* You can also see the number of emails on the Mailchimp
-* Click “Process” to start the validation operation
+
+- You can also see the number of emails on the Mailchimp
+- Click “Process” to start the validation operation
 
 ![MailChimp integration step 4: Click “Process” to start the validation operation](/assets/img/mailchimp-integration/step4.jpg)
 
 ### Step 5:
-* If the process has started you’ll be prompted to “History” tab where you can see the progress of the validation, once it’s done, the information will be sent to Mailchimp
+
+- If the process has started you’ll be prompted to “History” tab where you can see the progress of the validation, once it’s done, the information will be sent to Mailchimp
 
 ![MailChimp integration step 5: see the progress of the validation](/assets/img/mailchimp-integration/step5.jpg)
 
 ### Step 6:
-* Let’s go to Mailchimp to see the results:
-* Go to audience section
-* Choose all contacts
+
+- Let’s go to Mailchimp to see the results:
+- Go to audience section
+- Choose all contacts
 
 ![MailChimp integration step 6: Choose all contacts](/assets/img/mailchimp-integration/step6.jpg)
 
 ### Step 7:
-* In order to see Mailcheck results you have to activate the appropriate columns
-* Click “Toggle columns” and choose from the dropdown menu **“Mailcheck Score”**, **“Mailcheck Status”**, **"Mailcheck Date"**
+
+- In order to see Mailcheck results you have to activate the appropriate columns
+- Click “Toggle columns” and choose from the dropdown menu **“Mailcheck Score”**, **“Mailcheck Status”**, **"Mailcheck Date"**
 
 ![MailChimp integration step 7: Click 'Toggle columns' and choose from the dropdown menu 'Mailcheck Score', 'Mailcheck Status', 'Mailcheck Date'](/assets/img/mailchimp-integration/step7.jpg)
 
 ### Step 8:
-* *Now you can see the results*
+
+- _Now you can see the results_
 
 ![MailChimp integration step 8: see the results](/assets/img/mailchimp-integration/step8.jpg)
 
 But how to filter the data?
 
 ### Step 9:
-* In order to filter your data in Mailchimp please click on “Edit segment”
+
+- In order to filter your data in Mailchimp please click on “Edit segment”
 
 ![MailChimp integration step 9: filter your data in Mailchimp](/assets/img/mailchimp-integration/step9.jpg)
 
-* Choose “Mailcheck Status” “is” “invalid” you can actually type any of the existing statuses
-* We have 3 options “Valid”, “Invalid”, "Risky but deliverable"
+- Choose “Mailcheck Status” “is” “invalid” you can actually type any of the existing statuses
+- We have 3 options “Valid”, “Invalid”, "Risky but deliverable"
 
 ![MailChimp integration step 9.1: Mailcheck Statuses Valid/Invalid/Risky](/assets/img/mailchimp-integration/step9-1.jpg)
 
-* I’ve decided to choose “invalid” so I could unsubscribe them from emailing list
+- I’ve decided to choose “invalid” so I could unsubscribe them from emailing list
 
 ![MailChimp integration step 9.2: unsubscribe 'invalid' emails](/assets/img/mailchimp-integration/step9-2.jpg)
 

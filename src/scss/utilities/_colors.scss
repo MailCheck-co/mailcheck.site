@@ -97,11 +97,7 @@ $bg-gradient-mob: linear-gradient(
   #030914 100%
 );
 $card-bg-gradient: linear-gradient(to top, #030914 0%, #030914 100%);
-$slider-overlay-gradient-left: linear-gradient(
-  90deg,
-  rgb(10, 23, 46) 0%,
-  rgba(10, 23, 46, 0) 100%
-);
+$slider-overlay-gradient-left: linear-gradient(90deg, rgb(10, 23, 46) 0%, rgba(10, 23, 46, 0) 100%);
 $slider-overlay-gradient-right: linear-gradient(
   -90deg,
   rgb(10, 23, 46) 0%,

@@ -1,0 +1,16 @@
+*
+!configs
+!functions
+!src
+!static
+!.firebaserc
+!.prettierignore
+!.prettierrc
+!*.json
+!*.js
+!*.cjs
+!*.hcl
+
+# TODO: drop
+!.gitignore
+!.git

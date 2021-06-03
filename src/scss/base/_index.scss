@@ -10,20 +10,4 @@
 // ==========================================================================
 // $Base
 // ==========================================================================
-@import "base";
-
-body {
-  width: 100%;
-  background: $bg-gradient-desc;
-}
-
-ul {
-  margin-left: 20px;
-  padding: 0;
-}
-
-@media all and (max-width: 768px) {
-  body {
-    background: $bg-gradient-mob;
-  }
-}
+@import 'base';

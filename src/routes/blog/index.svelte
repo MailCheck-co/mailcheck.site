@@ -1,13 +1,3 @@
-<style>
-  .article-title {
-    color: #fff;
-  }
-
-  .article-snippet {
-    text-indent: initial;
-  }
-</style>
-
 <script context="module" lang="ts">
   import type { Load } from '@sveltejs/kit';
 
@@ -19,7 +9,8 @@
       const posts = await res.json();
 
       return {
-        props: { posts
+        props: {
+          posts
           // .sort((a, b) => {
           //   return new Date(a.date.split(".").reverse().toString()) <
           //   new Date(b.date.split(".").reverse().toString())
@@ -39,9 +30,9 @@
 </script>
 
 <script lang="ts">
-  import ContactUs from "$lib/ContactUs.svelte";
+  import ContactUs from '$lib/ContactUs.svelte';
 
-  import Seo from "$lib/Seo.svelte";
+  import Seo from '$lib/Seo.svelte';
   export let posts: {
     slug: string;
     title: string;
@@ -50,7 +41,7 @@
     readingTime: string;
     snippet: any;
   }[];
-  export let desc = "Blog";
+  export let desc = 'Blog';
 </script>
 
 <Seo {desc} title="Blog" />
@@ -61,15 +52,12 @@
       <h1 class="title">BLOG</h1>
 
       {#each posts as post}
-        <a sveltekit:prefetch class="article-title" href="/blog/{post.slug}"
-          >{post.title}</a>
+        <a sveltekit:prefetch class="article-title" href="/blog/{post.slug}">{post.title}</a>
         <p class="article-date">Date: {post.date}</p>
         <p class="article-snippet">
           {post.snippet}
-          <a
-            sveltekit:prefetch
-            class="text-thin text-thin-link"
-            href="/blog/{post.slug}">[Read more...]</a>
+          <a sveltekit:prefetch class="text-thin text-thin-link" href="/blog/{post.slug}"
+            >[Read more...]</a>
         </p>
       {/each}
     </div>
@@ -77,3 +65,13 @@
 </main>
 
 <ContactUs />
+
+<style>
+  .article-title {
+    color: var(--pure-white);
+  }
+
+  .article-snippet {
+    text-indent: initial;
+  }
+</style>

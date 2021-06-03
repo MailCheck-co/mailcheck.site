@@ -1,14 +1,30 @@
+<script lang="ts">
+  import { fade } from 'svelte/transition';
+
+  let currentPosition: number;
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+</script>
+
+<svelte:window bind:scrollY={currentPosition} />
+
+{#if currentPosition > 50}
+  <div class="button" on:click={scrollToTop} transition:fade={{ duration: 100 }}>
+    <img src="assets/img/arrow-slide-nav.svg" width="50" height="50" alt="to top" />
+  </div>
+{/if}
+
 <style>
   .button {
     position: fixed;
     right: 3%;
     bottom: 7rem;
-    background-color: #036;
-    border-radius: 20px;
     z-index: 5;
+    background-color: $midnight-blue;
+    border-radius: 20px;
     cursor: pointer;
-    transition: all ease-out 0.2s;
     opacity: 0.7;
+    transition: all ease-out 0.2s;
   }
 
   .button:hover {
@@ -20,26 +36,3 @@
     transform: rotate(-90deg) translateX(-8%);
   }
 </style>
-
-<script lang="ts">
-  import { fade } from "svelte/transition";
-
-  let currentPosition: number;
-
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
-</script>
-
-<svelte:window bind:scrollY={currentPosition} />
-
-{#if currentPosition > 50}
-  <div
-    class="button"
-    on:click={scrollToTop}
-    transition:fade={{ duration: 100 }}>
-    <img
-      src="assets/img/arrow-slide-nav.svg"
-      width="50"
-      height="50"
-      alt="to top" />
-  </div>
-{/if}

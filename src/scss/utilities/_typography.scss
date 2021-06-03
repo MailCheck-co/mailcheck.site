@@ -41,7 +41,7 @@ $base-line-height: 24;
 //
 // $font-family-sans-fallback - {list}
 
-$font-family-sans-fallback: "Arial", sans-serif;
+$font-family-sans-fallback: 'Arial', sans-serif;
 
 // $font-family-sans
 //
@@ -50,7 +50,7 @@ $font-family-sans-fallback: "Arial", sans-serif;
 // $font-family-sans - {list}
 // @requires - `$font-family-sans-fallback`
 
-$font-family-sans: "Helvetica Neue", "Helvetica", $font-family-sans-fallback;
+$font-family-sans: 'Helvetica Neue', 'Helvetica', $font-family-sans-fallback;
 
 // $font-family-serif
 //
@@ -58,7 +58,7 @@ $font-family-sans: "Helvetica Neue", "Helvetica", $font-family-sans-fallback;
 //
 // $font-family-serif - {list}
 
-$font-family-serif: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+$font-family-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
 
 // $font-family-monospace
 //
@@ -66,8 +66,8 @@ $font-family-serif: "Georgia", "Cambria", "Times New Roman", "Times", serif;
 //
 // $font-family-monospace - {list}
 
-$font-family-monospace: "Inconsolata", "Menlo", "Consolas",
-  "Bitstream Vera Sans Mono", "Courier", monospace;
+$font-family-monospace: 'Inconsolata', 'Menlo', 'Consolas', 'Bitstream Vera Sans Mono', 'Courier',
+  monospace;
 
 // $font-family-display
 //

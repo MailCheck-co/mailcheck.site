@@ -1,6 +1,6 @@
 button.burger-wrapper {
   padding: 0;
-  background-color: transparent;
+  background-color: var(--transparent);
   border: none;
   outline: none;
 
@@ -40,10 +40,10 @@ button.burger-wrapper {
 
     &.open {
       position: fixed;
-      background: transparent;
+      background: var(--transparent);
 
       .burger {
-        background-color: transparent;
+        background-color: var(--transparent);
 
         &::after {
           top: 0;
@@ -75,7 +75,7 @@ button.burger-wrapper {
       height: 4px;
       background: $primary-white;
       transition: all 0.5s ease;
-      content: "";
+      content: '';
     }
 
     &::before {
@@ -97,9 +97,12 @@ button.burger-wrapper {
     }
 
     &-links {
+      --size-16: 16px;
+      --font-weight-400: 400;
+
       margin: 0 50px 35px;
-      font-weight: 400;
-      font-size: 16px;
+      font-weight: var(--font-weight-400);
+      font-size: var(--size-16);
       letter-spacing: 0.8px;
       text-align: left;
 

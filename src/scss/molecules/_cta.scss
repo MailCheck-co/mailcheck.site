@@ -11,8 +11,8 @@
   }
 
   &-text {
-    font-weight: 900;
-    font-size: 32px;
+    font-weight: var(--font-weight-900);
+    font-size: var(--size-32);
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }

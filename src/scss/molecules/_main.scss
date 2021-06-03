@@ -3,7 +3,7 @@
   width: 100%;
   margin-right: 20px;
   color: $primary-white;
-  background: transparent;
+  background: var(--transparent);
   border: 1px solid $dark-05;
 
   &:hover {
@@ -39,13 +39,16 @@
 }
 
 .main-text {
+  --font-weight-300: 300;
+  --size-18: 18px;
+
   z-index: 1;
   max-width: 540px;
   min-height: 68px;
   margin: 0 0 40px;
   color: $white;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: var(--font-weight-300);
+  font-size: var(--size-18);
   line-height: 27px;
   letter-spacing: 0.9px;
   text-align: center;
@@ -60,31 +63,34 @@
     display: block;
     width: 100%;
     height: 730px;
-    background: url("../assets/img/lines.svg") no-repeat 0 0;
+    background: url('../assets/img/lines.svg') no-repeat 0 0;
     background-size: 100% 66%, 654px 740px;
-    content: "";
+    content: '';
     pointer-events: none;
   }
 
   &::after {
     position: absolute;
+    top: 30%;
     left: 0;
     display: block;
     width: 100%;
     height: 730px;
-    background: url("../assets/img/lines.svg") no-repeat 0 0;
+    background: url('../assets/img/lines.svg') no-repeat 0 0;
     background-size: 100% 66%, 654px 740px;
-    content: "";
-    pointer-events: none;
-    top: 30%;
     transform: scaleX(-1);
+    content: '';
+    pointer-events: none;
   }
 }
 
 .verify-email-title {
+  --font-weight-400: 400;
+  --size-18: 18px;
+
   color: $white;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: var(--font-weight-400);
+  font-size: var(--size-18);
   line-height: 27px;
   letter-spacing: 0.9px;
   text-align: center;
@@ -145,7 +151,7 @@
     z-index: 1;
     background-color: $testimonials-dark-bg;
     opacity: 0.98;
-    content: "";
+    content: '';
 
     &::after {
       position: absolute;
@@ -154,11 +160,11 @@
       z-index: 1;
       width: 100px;
       height: 100px;
-      background-image: url("../assets/img/preloader-bars.svg");
+      background-image: url('../assets/img/preloader-bars.svg');
       background-repeat: no-repeat;
       background-position: center center;
       transform: translate(-50%, -50%);
-      content: "";
+      content: '';
     }
   }
 
@@ -181,55 +187,55 @@
       pointer-events: none;
 
       &.gravatar {
-        background-image: url("../assets/img/icons/gravatar.svg");
+        background-image: url('../assets/img/icons/gravatar.svg');
       }
 
       &.blogger {
-        background-image: url("../assets/img/icons/blogger.svg");
+        background-image: url('../assets/img/icons/blogger.svg');
       }
 
       &.facebook {
-        background-image: url("../assets/img/icon-facebook.svg");
+        background-image: url('../assets/img/icon-facebook.svg');
       }
 
       &.foursquare {
-        background-image: url("../assets/img/icons/foursquare.svg");
+        background-image: url('../assets/img/icons/foursquare.svg');
       }
 
       &.google {
-        background-image: url("../assets/img/icons/google.svg");
+        background-image: url('../assets/img/icons/google.svg');
       }
 
       &.linkedin {
-        background-image: url("../assets/img/icons/linkedin.svg");
+        background-image: url('../assets/img/icons/linkedin.svg');
       }
 
       &.tripit {
-        background-image: url("../assets/img/icons/tripit.svg");
+        background-image: url('../assets/img/icons/tripit.svg');
       }
 
       &.tumblr {
-        background-image: url("../assets/img/icons/tumblr.svg");
+        background-image: url('../assets/img/icons/tumblr.svg');
       }
 
       &.twitter {
-        background-image: url("../assets/img/icons/twitter.svg");
+        background-image: url('../assets/img/icons/twitter.svg');
       }
 
       &.vimeo {
-        background-image: url("../assets/img/icons/vimeo.svg");
+        background-image: url('../assets/img/icons/vimeo.svg');
       }
 
       &.wordpress {
-        background-image: url("../assets/img/icons/wordpress.svg");
+        background-image: url('../assets/img/icons/wordpress.svg');
       }
 
       &.youtube {
-        background-image: url("../assets/img/icons/youtube.svg");
+        background-image: url('../assets/img/icons/youtube.svg');
       }
 
       &.github {
-        background-image: url("../assets/img/icons/github.svg");
+        background-image: url('../assets/img/icons/github.svg');
       }
 
       &.active {
@@ -243,9 +249,12 @@
 }
 
 .results-title {
+  --font-weight-bold: bold;
+  --size-16: 16px;
+
   margin-top: 0;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--size-16);
   line-height: 1.2;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -284,7 +293,7 @@
 .list-item {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: var(--size-12);
 }
 
 .list-item-title {
@@ -305,7 +314,7 @@
   right: 15px;
   width: 12px;
   height: 12px;
-  background-color: transparent;
+  background-color: var(--transparent);
   border: none;
   outline: none;
 
@@ -322,7 +331,7 @@
     height: 2px;
     background-color: $primary-white;
     transform: rotate(45deg);
-    content: "";
+    content: '';
   }
 
   &::after {
@@ -333,7 +342,7 @@
     height: 2px;
     background-color: $primary-white;
     transform: rotate(-45deg);
-    content: "";
+    content: '';
   }
 }
 
@@ -373,10 +382,10 @@
       height: 165px;
       margin: 0 auto;
       color: $section-titles-color;
-      font-weight: 900;
-      font-size: 150px;
+      font-weight: var(--font-weight-900);
+      font-size: var(--size-150);
       text-transform: uppercase;
-      content: "mailcheck";
+      content: 'mailcheck';
     }
   }
 }
@@ -428,7 +437,7 @@
     }
 
     .main-text {
-      font-size: 14px;
+      font-size: var(--size-14);
       line-height: 22px;
       text-align: left;
     }
@@ -446,7 +455,7 @@
   }
 
   .main-buttons .btn {
-    font-size: 15px;
+    font-size: var(--size-14);
   }
 }
 

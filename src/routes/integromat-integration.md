@@ -13,18 +13,21 @@ desc: Step by step guide on how to use Mailcheck with Integromat.
 ## Step by step guide
 
 ### Step 1
+
 - Open Mailcheck Integrations - [https://app.mailcheck.co/dashboard/integration](https://app.mailcheck.co/dashboard/integration)
-and click "Connect" you will be redirected into "Integromat"
+  and click "Connect" you will be redirected into "Integromat"
 
 ![integromat email verifiaction integration](/assets/img/integromat-integration/integromat-1.png)
 
 ### Step 2
+
 - Click "Add to my inventory" and follow the instructions to "Sign up".
 - Once signed up you can "Add to my inventory" our app and click "Start using Mailcheck".
 
 ![integromat enable email verification](/assets/img/integromat-integration/integromat-2.png)
 
 ### Step 3
+
 - Choose the service you want to integrate with (Mailchimp, Google Sheet, ActiveCampaign, etc.)
 
 ![integromat integration options](/assets/img/integromat-integration/integromat-3.png)
@@ -36,6 +39,7 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 ![integromat mailchimp integration](/assets/img/integromat-integration/integromat-4.png)
 
 ### Step 4
+
 - Click on the sign of Mailchimp or any other app you are using, and find "Get a list"
 - Now, set you your Mailchimp account
 
@@ -44,6 +48,7 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 - Follow the next steps to authorize your Mailchimp account
 
 ### Step 5
+
 - Once authorized, deactivate "Map"
 
 ![email list choose in Integromat](/assets/img/integromat-integration/integromat-6.png)
@@ -51,6 +56,7 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 - Select your List (usually named under the name of the audience)
 
 ### Step 6
+
 - Add another module
 
 ![connect Mailcheck to Integromat](/assets/img/integromat-integration/integromat-7.png)
@@ -65,6 +71,7 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 ![validate email in Integromat](/assets/img/integromat-integration/integromat-9.png)
 
 ### Step 7
+
 - Click on "Add"
 - Go to your Mailcheck account and click "API" from the Top menu
 
