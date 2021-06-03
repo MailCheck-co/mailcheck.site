@@ -1,6 +1,4 @@
 <script lang="ts">
-  import IntersectionObserver from 'svelte-intersection-observer';
-
   let isValid: boolean;
   let email = '';
   let element: HTMLElement;
@@ -58,35 +56,33 @@
   };
 </script>
 
-<IntersectionObserver threshold={0.1} {element} bind:intersecting once={true}>
-  <section bind:this={element} id="contact-us" class:intersecting>
-    <div class="container">
-      <form class="contact-form" bind:this={contactForm} on:submit|preventDefault={onSubmit}>
-        <h2 class="title title-contact">contact us</h2>
-        <input
-          class="input input-name"
-          type="text"
-          placeholder="Name"
-          bind:value={nameValue}
-          required />
-        <input
-          class="input input-email"
-          type="text"
-          bind:value={email}
-          placeholder="Email"
-          use:validate={email}
-          class:invalid={!isValid}
-          required />
-        <textarea
-          class="input input-message"
-          bind:value={textareaValue}
-          placeholder="Message"
-          required />
-        <button disabled={!isValid} class="btn btn-submit" type="submit">submit</button>
-      </form>
-    </div>
-  </section>
-</IntersectionObserver>
+<section bind:this={element} id="contact-us" class:intersecting>
+  <div class="container">
+    <form class="contact-form" bind:this={contactForm} on:submit|preventDefault={onSubmit}>
+      <h2 class="title title-contact">contact us</h2>
+      <input
+        class="input input-name"
+        type="text"
+        placeholder="Name"
+        bind:value={nameValue}
+        required />
+      <input
+        class="input input-email"
+        type="text"
+        bind:value={email}
+        placeholder="Email"
+        use:validate={email}
+        class:invalid={!isValid}
+        required />
+      <textarea
+        class="input input-message"
+        bind:value={textareaValue}
+        placeholder="Message"
+        required />
+      <button disabled={!isValid} class="btn btn-submit" type="submit">submit</button>
+    </form>
+  </div>
+</section>
 
 <div class="popup-container" class:open={isOpen} on:click={onClose} bind:this={popUpBlock}>
   <div class="popup" class:open={isOpen}>

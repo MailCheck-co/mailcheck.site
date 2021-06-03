@@ -14,7 +14,7 @@
   </div>
 {/if}
 
-<style>
+<style lang="scss">
   .button {
     position: fixed;
     right: 3%;

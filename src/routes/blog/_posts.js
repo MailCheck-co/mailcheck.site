@@ -9,24 +9,28 @@
 
 // const posts = __ROUTES__;
 
-import * as matter from 'gray-matter';
-import { extname, join } from 'path';
-import { readdirSync } from 'fs';
+// todo: that was the broken thing!
 
-function get_routes() {
-  const blog_path = join(process.cwd(), 'src', 'routes', 'blog');
-  console.log('blog_path', blog_path);
-  return readdirSync(blog_path)
-    .filter((p) => extname(p) === '.md')
-    .map((post) => {
-      console.log('post', post);
-      return matter.read(join(blog_path, post));
-    });
-}
+// import * as matter from 'gray-matter';
+// import { extname, join } from 'path';
+// import { readdirSync } from 'fs';
+//
+// function get_routes() {
+//   const blog_path = join(process.cwd(), 'src', 'routes', 'blog');
+//   console.log('blog_path', blog_path);
+//   return readdirSync(blog_path)
+//     .filter((p) => extname(p) === '.md')
+//     .map((post) => {
+//       console.log('post', post);
+//       return matter.read(join(blog_path, post));
+//     });
+// }
 
-const posts = get_routes();
+// const posts = get_routes();
 // posts.forEach(post => {
 // 	post.html = post.html.replace(/^\t{3}/gm, '');
 // });
 
+// todo: just no posts for now
+const posts = [];
 export default posts;

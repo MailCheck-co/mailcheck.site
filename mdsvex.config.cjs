@@ -1,6 +1,6 @@
 module.exports = {
   layout: {
-    blog: './src/routes/blog/index.svelte'
+    // blog: './src/routes/blog/index.svelte'
   },
   extensions: ['.svelte.md', '.md', '.svx'],
   smartypants: {
