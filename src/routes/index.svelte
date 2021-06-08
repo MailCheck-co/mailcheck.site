@@ -11,6 +11,7 @@
   import Faq from "../components/Faq.svelte";
   import ContactUs from "../components/ContactUs.svelte";
   import Cta from "../components/Cta.svelte";
+  import Affiliate from "../components/Affiliate.svelte";
 </script>
 
 <Seo title="Verify your real customers in one way" />
@@ -47,6 +48,9 @@
 
   <!-- SECTION TESTIMONIALS -->
   <Testimonials />
+
+  <!-- SECTION AFFILIATES -->
+  <Affiliate />
 
   <!--Questions-->
   <Faq />
