@@ -3,33 +3,42 @@
 
   .affiliate {
     padding: 120px 0 60px;
-    max-width: 880px;
-    margin: 0 auto;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
 
-    .title-small {
-      width: 100%;
-      color: $primary-white;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 48px;
-      letter-spacing: 1.6px;
-      text-align: center;
-      text-transform: uppercase;
+    .section-heading {
+      position: relative;
+      padding-bottom: 50px;
 
-      &::before {
+      .title-small {
+        width: 100%;
+        color: $primary-white;
+        height: auto;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 1.6px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .section-title-lg {
         position: absolute;
+        top: 0;
         right: 0;
         left: 0;
-        z-index: 0;
-        display: block;
-        width: 1024px;
-        height: 170px;
-        margin: 0 auto;
-        color: $section-titles-color;
+        z-index: -1;
+        width: 100%;
+        margin: 0;
+        color: rgba(17, 50, 78, 0.2);
         font-weight: 900;
-        font-size: 160px;
+        font-size: clamp(44px, 14vw, 255px);
+        line-height: 0.2;
+        letter-spacing: 0.05px;
+        text-align: center;
+        pointer-events: none;
         text-transform: uppercase;
-        content: "affiliate";
       }
     }
 
@@ -38,7 +47,8 @@
       align-items: center;
       justify-content: space-evenly;
       flex-direction: column;
-      margin-top: 8rem;
+      max-width: 880px;
+      margin: 4rem auto 0;
 
       a {
         height: 60px;
@@ -81,11 +91,12 @@
   }
 </style>
 
-<script lang="ts">
-</script>
-
 <section class="affiliate">
-  <h3 class="title-small">Affiliate Program</h3>
+  <div class="section-heading sm-left">
+    <h3 class="title-small">affiliate Program</h3>
+    <p class="section-title-lg">affiliate</p>
+  </div>
+
   <div class="flex">
     <a href="/" title="Become an affiliate"> Become an affiliate</a>
     <a
