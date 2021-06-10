@@ -1,0 +1,86 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 10.45%,
+    var(--tertiary-color) 41.35%
+  );
+  background-color: var(--primary-color);
+}
+
+body::before {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  z-index: -1;
+  width: 80vw;
+  height: 100vh;
+  background: radial-gradient(50% 50% at 50% 50%, var(--pure-white) 0%, var(--transparent) 100%);
+  opacity: 0.05;
+  content: '';
+}
+
+#svelte {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+  color: var(--heading-color);
+  font-weight: var(--weight-400);
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin-bottom: 0 0 1em 0;
+  font-size: var(--size-32);
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--size-16);
+}
+
+pre {
+  padding: 0.5em;
+  overflow-x: auto;
+  color: var(--text-color);
+  font-size: var(--size-16);
+  font-family: var(--font-mono);
+  background-color: var(--color-pre-bg);
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px var(--color-pre-shadow);
+}
+
+input,
+button {
+  font-size: var(--inherit);
+  font-family: var(--inherit);
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (min-width: 720px) {
+  h1 {
+    font-size: var(--size-38);
+  }
+}

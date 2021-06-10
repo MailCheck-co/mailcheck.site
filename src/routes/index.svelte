@@ -1,63 +1,59 @@
-<script lang="ts">
-  import Seo from "../components/Seo.svelte";
-  import EmailsVerify from "../components/EmailsVerify.svelte";
-  import Partners from "../components/Partners.svelte";
-  import Features from "../components/Features.svelte";
-  import Choose from "../components/Choose.svelte";
-  import Pricing from "../components/Pricing.svelte";
-  import Reviews from "../components/Reviews.svelte";
-  import Team from "../components/Team.svelte";
-  import Testimonials from "../components/Testimonials.svelte";
-  import Faq from "../components/Faq.svelte";
-  import ContactUs from "../components/ContactUs.svelte";
-  import Cta from "../components/Cta.svelte";
-  import Affiliate from "../components/Affiliate.svelte";
+<script context="module" lang="ts">
+	export const prerender = true;
 </script>
 
-<Seo title="Verify your real customers in one way" />
+<script lang="ts">
+	import Counter from '$lib/Counter/index.svelte';
+</script>
+
 <svelte:head>
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="RSS Feed for mailcheck.co"
-    href="/feed.xml" />
+	<title>Home</title>
 </svelte:head>
 
-<main class="manage-customers" role="main" id="main">
-  <!-- EMAILS VERIFY -->
-  <EmailsVerify />
+<section>
+	<h1>
+		<div class="welcome">
+			<picture>
+				<source srcset="svelte-welcome.webp" type="image/webp" />
+				<img src="svelte-welcome.png" alt="Welcome" />
+			</picture>
+		</div>
 
-  <!-- PARTNERS SECTION -->
-  <Partners />
+		to your new<br />SvelteKit app
+	</h1>
 
-  <!--Welcome to the featuress-->
-  <Features />
+	<h2>
+		try editing <strong>src/routes/index.svelte</strong>
+	</h2>
 
-  <!--Choose your audience-->
-  <Choose />
+	<Counter />
+</section>
 
-  <!--Pricing plans-->
-  <Pricing />
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
 
-  <!-- SECTION REVIEWS -->
-  <Reviews />
+	h1 {
+		width: 100%;
+	}
 
-  <!-- SECTION TEAM -->
-  <Team />
+	.welcome {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding: 0 0 calc(100% * 495 / 2048) 0;
+	}
 
-  <!-- SECTION TESTIMONIALS -->
-  <Testimonials />
-
-  <!-- SECTION AFFILIATES -->
-  <Affiliate />
-
-  <!--Questions-->
-  <Faq />
-
-  <!--Contact Us-->
-  <ContactUs />
-
-  <!-- SECTION CTA -->
-  <Cta />
-</main>
+	.welcome img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		display: block;
+	}
+</style>
