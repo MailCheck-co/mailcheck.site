@@ -76,7 +76,7 @@
 <style lang="scss">
 	%select {
 		margin-right: 1.56rem;
-		color: var(--pure-white);
+		color: var(--primary-white);
 		background-color: var(--transparent);
 		border: 0.08rem solid var(--transparent);
 

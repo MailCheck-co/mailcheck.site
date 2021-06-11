@@ -20,7 +20,7 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 1024px;
+		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -30,16 +30,16 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 40px;
+		padding: var(--size-40);
 	}
 
 	footer a {
-		font-weight: bold;
+		font-weight: var(--weight-700);
 	}
 
 	@media (min-width: 480px) {
 		footer {
-			padding: 40px 0;
+			padding: var(--size-40) 0;
 		}
 	}
 </style>

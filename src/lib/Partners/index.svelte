@@ -1,0 +1,84 @@
+<script lang="ts">
+  let element: HTMLElement;
+</script>
+
+<section class="partners" bind:this={element}>
+  <div class="section-heading sm-left">
+    <h2 class="title">YOU’RE IN GOOD COMPANY</h2>
+    <p class="section-title-lg">PARTNERS</p>
+  </div>
+  <div class="partners-list">
+    <div class="partners-list-item">
+      <img
+        width="150"
+        height="60"
+        src="assets/img/testimonials/5k-logo.svg"
+        alt="5000 miles"
+        class="partners-logo" />
+    </div>
+    <div class="partners-list-item">
+      <img
+        width="150"
+        height="60"
+        src="assets/img/testimonials/bagllet.svg"
+        alt="Bagllet"
+        class="partners-logo" />
+    </div>
+    <div class="partners-list-item">
+      <img
+        width="150"
+        height="19"
+        src="assets/img/testimonials/acell-mail.svg"
+        alt="Acell Mail"
+        class="partners-logo" />
+    </div>
+    <div class="partners-list-item">
+      <img
+        width="150"
+        height="60"
+        src="assets/img/testimonials/sammy-logo.svg"
+        alt="Sammy-logo"
+        class="partners-logo" />
+    </div>
+    <div class="partners-list-item">
+      <img
+        width="150"
+        height="60"
+        src="assets/img/testimonials/zitkani.svg"
+        alt="Zitkani"
+        class="partners-logo" />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .partners {
+    margin-bottom: var(--size-160);
+  }
+
+  .partners-list {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partners-list-item {
+    width: var(--size-150);
+    margin: var(--size-20);
+    padding: var(--size-6);
+    text-align: center;
+
+    & > img {
+      max-height: var(--size-60);
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .partners-list-item {
+      flex: 1 1 6.25rem;
+      margin: var(--size-10);
+    }
+  }
+</style>

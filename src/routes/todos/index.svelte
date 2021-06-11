@@ -139,12 +139,12 @@
 	}
 
 	.new input {
-		font-size: 28px;
+		font-size: var(--size-28);
 		width: 100%;
 		padding: 0.5em 1em 0.3em 1em;
 		box-sizing: border-box;
 		background: rgba(255, 255, 255, 0.05);
-		border-radius: 8px;
+		border-radius: var(--size-8);
 		text-align: center;
 	}
 
@@ -156,16 +156,16 @@
 		margin: 0 0 0.5rem 0;
 		padding: 0.5rem;
 		background-color: white;
-		border-radius: 8px;
-		filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
-		transform: translate(-1px, -1px);
+		border-radius: var(--size-8);
+		filter: drop-shadow(var(--size-2) 0.25rem var(--size-6) rgba(0, 0, 0, 0.1));
+		transform: translate(-0.08rem, -0.08rem);
 		transition: filter 0.2s, transform 0.2s;
 	}
 
 	.done {
 		transform: none;
 		opacity: 0.4;
-		filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.1));
+		filter: drop-shadow(0 0 0.08rem rgba(0, 0, 0, 0.1));
 	}
 
 	form.text {
@@ -178,7 +178,7 @@
 	.todo input {
 		flex: 1;
 		padding: 0.5em 2em 0.5em 0.8em;
-		border-radius: 3px;
+		border-radius: var(--size-2);
 	}
 
 	.todo button {

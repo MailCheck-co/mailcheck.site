@@ -11,6 +11,7 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@babel/preset-env": "^7.14.4",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.4.0",
