@@ -37,7 +37,11 @@ body {
     z-index: -1;
     width: 80vw;
     height: 100vh;
-    background: radial-gradient(50% 50% at 50% 50%, var(--primary-white) 0%, var(--transparent) 100%);
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      var(--primary-white) 0%,
+      var(--transparent) 100%
+    );
     opacity: 0.05;
     content: '';
   }
@@ -77,7 +81,8 @@ body {
     }
   }
 
-  strong, .strong {
+  strong,
+  .strong {
     font-weight: var(--weight-700);
   }
 

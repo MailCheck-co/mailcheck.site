@@ -11,7 +11,8 @@
   function validate(node: HTMLElement, value: string) {
     return {
       update() {
-        const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const reg =
+          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         return (isValid = reg.test(String(email).toLowerCase()));
       }
     };
@@ -131,7 +132,7 @@
       width: 100%;
       height: 34.375rem;
       padding: 7.3125rem 0;
-      background: url('../assets/img/city.png') no-repeat top 15% center;
+      background: url('/assets/img/city.png') no-repeat top 15% center;
       background-size: cover;
       opacity: 0.4;
       content: '';
@@ -259,7 +260,7 @@
     display: none;
     width: 100%;
     height: 100%;
-    background: url('../assets/img/city.png') no-repeat center 50%;
+    background: url('/assets/img/city.png') no-repeat center 50%;
     background-size: 150% 150%;
 
     &.open {

@@ -203,8 +203,8 @@
         justify-content: space-between;
         height: 320px;
         padding: var(--size-30);
-        background: url('/assets/img/testimonial-slides-img.png') var(--gradient-4) no-repeat
-          top 10% right 10%;
+        background: url('/assets/img/testimonial-slides-img.png') var(--gradient-4) no-repeat top
+          10% right 10%;
         border-radius: var(--size-6);
       }
     }

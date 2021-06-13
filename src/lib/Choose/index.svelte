@@ -30,7 +30,7 @@
       top: -185%;
       width: 100%;
       height: 28.25rem;
-      background: url('assets/img/lines.svg') no-repeat center;
+      background: url('/assets/img/lines.svg') no-repeat center;
       background-size: cover;
       content: '';
       pointer-events: none;

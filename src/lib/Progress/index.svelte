@@ -1,3 +1,5 @@
+<progress class="progress" />
+
 <style>
   .progress {
     appearance: none;
@@ -23,8 +25,7 @@
       linear-gradient(to right, transparent 50%, black 50%);
     mask-image: linear-gradient(transparent 50%, black 50%),
       linear-gradient(to right, transparent 50%, black 50%);
-    animation: pure-material-progress-circular 6s infinite
-      cubic-bezier(0.3, 0.6, 1, 1);
+    animation: pure-material-progress-circular 6s infinite cubic-bezier(0.3, 0.6, 1, 1);
   }
 
   :-ms-lang(x),
@@ -34,7 +35,7 @@
 
   .progress:indeterminate::before,
   .progress:indeterminate::-webkit-progress-value {
-    content: "";
+    content: '';
     display: block;
     box-sizing: border-box;
     margin-bottom: 0.25em;
@@ -44,8 +45,7 @@
     width: 100% !important;
     height: 100%;
     background-color: transparent;
-    animation: pure-material-progress-circular-pseudo 0.75s infinite linear
-      alternate;
+    animation: pure-material-progress-circular-pseudo 0.75s infinite linear alternate;
   }
 
   .progress:indeterminate::-moz-progress-bar {
@@ -56,8 +56,7 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    animation: pure-material-progress-circular-pseudo 0.75s infinite linear
-      alternate;
+    animation: pure-material-progress-circular-pseudo 0.75s infinite linear alternate;
   }
 
   .progress:indeterminate::-ms-fill {
@@ -121,5 +120,3 @@
     }
   }
 </style>
-
-<progress class="progress" />

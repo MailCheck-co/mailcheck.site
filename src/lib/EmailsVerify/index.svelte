@@ -207,8 +207,9 @@
     </p>
     <div class="emails-block">
       <div class="main-buttons">
-        <a href="//app.mailcheck.co/" class="btn btn-live-demo">GET FREE EMAILS NOW</a>
-        <a href="//app.mailcheck.co/" class="btn btn-start">Start</a>
+        <a rel="external" href="https://app.mailcheck.co/" class="btn btn-live-demo"
+          >GET FREE EMAILS NOW</a>
+        <a rel="external" href="https://app.mailcheck.co/" class="btn btn-start">Start</a>
       </div>
       <div class="verify-email">
         <p class="verify-email-title">Verify email address in real-time!</p>
@@ -362,7 +363,7 @@
     z-index: 1;
     max-width: 33.75rem;
     min-height: 4.25rem;
-    margin: 0 0var(--size-40);
+    margin: 0 0var (--size-40);
     color: var(--primary-white);
     font-weight: var(--weight-400);
     font-size: var(--size-18);
@@ -389,7 +390,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width:  var(--size-38);
+    width: var(--size-38);
     height: var(--size-36);
     background-color: var(--color-progress);
     border: none;
@@ -401,7 +402,7 @@
     }
 
     &:hover {
-      transform: translateX( var(--size-2));
+      transform: translateX(var(--size-2));
     }
   }
 
@@ -410,7 +411,7 @@
 
     .progress-wrapper {
       position: absolute;
-      top:  var(--size-2);
+      top: var(--size-2);
       right: var(--size-6);
     }
   }
@@ -418,7 +419,7 @@
   .email-results {
     position: relative;
     display: none;
-    padding: var(--size-18)var(--size-16);
+    padding: var(--size-18) var(--size-16);
     color: var(--primary-white);
     background-color: var(--dark-02);
     border-radius: 0.25rem;
@@ -445,7 +446,7 @@
         z-index: 1;
         width: 6.25rem;
         height: 6.25rem;
-        background-image: url('../assets/img/preloader-bars.svg');
+        background-image: url('/assets/img/preloader-bars.svg');
         background-repeat: no-repeat;
         background-position: center center;
         transform: translate(-50%, -50%);
@@ -472,55 +473,55 @@
         pointer-events: none;
 
         &.gravatar {
-          background-image: url('../assets/img/icons/gravatar.svg');
+          background-image: url('/assets/img/icons/gravatar.svg');
         }
 
         &.blogger {
-          background-image: url('../assets/img/icons/blogger.svg');
+          background-image: url('/assets/img/icons/blogger.svg');
         }
 
         &.facebook {
-          background-image: url('../assets/img/icon-facebook.svg');
+          background-image: url('/assets/img/icon-facebook.svg');
         }
 
         &.foursquare {
-          background-image: url('../assets/img/icons/foursquare.svg');
+          background-image: url('/assets/img/icons/foursquare.svg');
         }
 
         &.google {
-          background-image: url('../assets/img/icons/google.svg');
+          background-image: url('/assets/img/icons/google.svg');
         }
 
         &.linkedin {
-          background-image: url('../assets/img/icons/linkedin.svg');
+          background-image: url('/assets/img/icons/linkedin.svg');
         }
 
         &.tripit {
-          background-image: url('../assets/img/icons/tripit.svg');
+          background-image: url('/assets/img/icons/tripit.svg');
         }
 
         &.tumblr {
-          background-image: url('../assets/img/icons/tumblr.svg');
+          background-image: url('/assets/img/icons/tumblr.svg');
         }
 
         &.twitter {
-          background-image: url('../assets/img/icons/twitter.svg');
+          background-image: url('/assets/img/icons/twitter.svg');
         }
 
         &.vimeo {
-          background-image: url('../assets/img/icons/vimeo.svg');
+          background-image: url('/assets/img/icons/vimeo.svg');
         }
 
         &.wordpress {
-          background-image: url('../assets/img/icons/wordpress.svg');
+          background-image: url('/assets/img/icons/wordpress.svg');
         }
 
         &.youtube {
-          background-image: url('../assets/img/icons/youtube.svg');
+          background-image: url('/assets/img/icons/youtube.svg');
         }
 
         &.github {
-          background-image: url('../assets/img/icons/github.svg');
+          background-image: url('/assets/img/icons/github.svg');
         }
 
         &.active {

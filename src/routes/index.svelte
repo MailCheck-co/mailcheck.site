@@ -67,73 +67,69 @@
 </main>
 
 <style lang="scss">
-.manage-customers {
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 730px;
-    background: url('assets/img/lines.svg') no-repeat 0 0;
-    background-size: 100% 66%, 654px 740px;
-    content: '';
-    pointer-events: none;
+  .manage-customers {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 730px;
+      background: url('/assets/img/lines.svg') no-repeat 0 0;
+      background-size: 100% 66%, 654px 740px;
+      content: '';
+      pointer-events: none;
+    }
+
+    &::after {
+      @extend .manage-customers, ::before;
+
+      top: 30%;
+      transform: scaleX(-1);
+    }
   }
 
-  &::after {
-    @extend .manage-customers,
-    ::before;
-
-    top: 30%;
-    transform: scaleX(-1);
-  }
-}
-
-
-@media only screen and (min-width: 1920px) {
-  .manage-customers::before {
-    background-position: 0 35%, 1135px 0;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1440px) {
-  .manage-customers::before {
-    background-position: 0 35%, 780px -var(--size-20);
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .manage-customers::before {
-    background-position: 0 35%, 715px -15px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .manage-customers::before {
-    margin-top: -100px;
-    padding-top: 100px;
-    background-position: top 35% left 30%;
-    background-size: auto;
+  @media only screen and (min-width: 1920px) {
+    .manage-customers::before {
+      background-position: 0 35%, 1135px 0;
+    }
   }
 
-  .manage-customers::after {
-    display: none;
+  @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .manage-customers::before {
+      background-position: 0 35%, 780px -var(--size-20);
+    }
   }
-}
 
-@media only screen and (max-width: 480px) {
-  .manage-customers::before {
-    background-position: center left 35%;
+  @media only screen and (max-width: 1024px) {
+    .manage-customers::before {
+      background-position: 0 35%, 715px -15px;
+    }
   }
-}
 
-@media only screen and (max-width: 320px) {
-  .manage-customers::before {
-    background-position: 100px -65px;
-    background-size: 0, 654px 740px;
+  @media only screen and (max-width: 768px) {
+    .manage-customers::before {
+      margin-top: -100px;
+      padding-top: 100px;
+      background-position: top 35% left 30%;
+      background-size: auto;
+    }
+
+    .manage-customers::after {
+      display: none;
+    }
   }
-}
 
-  
+  @media only screen and (max-width: 480px) {
+    .manage-customers::before {
+      background-position: center left 35%;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .manage-customers::before {
+      background-position: 100px -65px;
+      background-size: 0, 654px 740px;
+    }
+  }
 </style>

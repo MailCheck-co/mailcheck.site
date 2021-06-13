@@ -158,7 +158,7 @@
   }
 
   .footer-nav-link {
-    margin: 0 0var(--size-16) 0;
+    margin: 0 0var (--size-16) 0;
   }
 
   .footer-logo-copyright {
