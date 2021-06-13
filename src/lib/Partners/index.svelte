@@ -12,7 +12,7 @@
       <img
         width="150"
         height="60"
-        src="assets/img/testimonials/5k-logo.svg"
+        src="/assets/img/testimonials/5k-logo.svg"
         alt="5000 miles"
         class="partners-logo" />
     </div>
@@ -20,7 +20,7 @@
       <img
         width="150"
         height="60"
-        src="assets/img/testimonials/bagllet.svg"
+        src="/assets/img/testimonials/bagllet.svg"
         alt="Bagllet"
         class="partners-logo" />
     </div>
@@ -28,7 +28,7 @@
       <img
         width="150"
         height="19"
-        src="assets/img/testimonials/acell-mail.svg"
+        src="/assets/img/testimonials/acell-mail.svg"
         alt="Acell Mail"
         class="partners-logo" />
     </div>
@@ -36,7 +36,7 @@
       <img
         width="150"
         height="60"
-        src="assets/img/testimonials/sammy-logo.svg"
+        src="/assets/img/testimonials/sammy-logo.svg"
         alt="Sammy-logo"
         class="partners-logo" />
     </div>
@@ -44,7 +44,7 @@
       <img
         width="150"
         height="60"
-        src="assets/img/testimonials/zitkani.svg"
+        src="/assets/img/testimonials/zitkani.svg"
         alt="Zitkani"
         class="partners-logo" />
     </div>

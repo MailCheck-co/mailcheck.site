@@ -3,7 +3,7 @@
     <div class="footer-top">
       <div class="footer-logo-copyright">
         <a sapper:prefetch class="logo2" href="/"
-          ><img src="assets/img/mailcheck-logo.svg" width="162" height="27" alt="logo2" /></a>
+          ><img src="/assets/img/mailcheck-logo.svg" width="162" height="27" alt="logo2" /></a>
         <address class="footer-address">
           Suite 4005 43 Bedford Street,<br />
           London, England, WC2E 9HA

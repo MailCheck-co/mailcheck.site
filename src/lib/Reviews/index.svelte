@@ -14,28 +14,28 @@
           <img
             width="170"
             height="40"
-            src="assets/img/logo-product-hunt.png"
+            src="/assets/img/logo-product-hunt.png"
             alt=""
             class="reviews-item-logo" />
           <div class="reviews-item-rating">
-            <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 1 star" />
+            <img src="/assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 1 star" />
             <img
-              src="assets/img/icon-star-rating.svg"
+              src="/assets/img/icon-star-rating.svg"
               width="25"
               height="25"
               alt="rating 2 stars" />
             <img
-              src="assets/img/icon-star-rating.svg"
+              src="/assets/img/icon-star-rating.svg"
               width="25"
               height="25"
               alt="rating 3 stars" />
             <img
-              src="assets/img/icon-star-rating.svg"
+              src="/assets/img/icon-star-rating.svg"
               width="25"
               height="25"
               alt="rating 4 stars" />
             <img
-              src="assets/img/icon-star-rating.svg"
+              src="/assets/img/icon-star-rating.svg"
               width="25"
               height="25"
               alt="rating 5 stars" />
@@ -50,7 +50,7 @@
           <img
             width="120"
             height="40"
-            src="assets/img/logo-beta-list.png"
+            src="/assets/img/logo-beta-list.png"
             alt=""
             class="reviews-item-logo" />
           <div class="reviews-item-likes">
@@ -58,7 +58,7 @@
             <img
               width="25"
               height="25"
-              src="assets/img/icon-like-heart.svg"
+              src="/assets/img/icon-like-heart.svg"
               alt=""
               class="reviews-like-icon" />
           </div>
@@ -72,28 +72,28 @@
           <img
             width="145"
             height="32"
-            src="assets/img/logo-capterra.png"
+            src="/assets/img/logo-capterra.png"
             alt=""
             class="reviews-item-logo" />
           <div class="reviews-item-rating">
-            <img src="assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 1 star" />
+            <img src="/assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 1 star" />
             <img
-              src="assets/img/icon-star-rating.svg"
+              src="/assets/img/icon-star-rating.svg"
               width="25"
               height="25"
               alt="rating 2 stars" />
             <img
-              src="assets/img/icon-star-rating.svg"
+              src="/assets/img/icon-star-rating.svg"
               width="25"
               height="25"
               alt="rating 3 stars" />
             <img
-              src="assets/img/icon-star-rating.svg"
+              src="/assets/img/icon-star-rating.svg"
               width="25"
               height="25"
               alt="rating 4 stars" />
             <img
-              src="assets/img/icon-star-rating.svg"
+              src="/assets/img/icon-star-rating.svg"
               width="25"
               height="25"
               alt="rating 5 stars" />
