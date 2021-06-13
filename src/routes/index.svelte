@@ -1,7 +1,3 @@
-<script context="module" lang="ts">
-  export const prerender = true;
-</script>
-
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
   import EmailsVerify from '$lib/EmailsVerify/index.svelte';
