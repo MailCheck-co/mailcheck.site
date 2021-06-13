@@ -1,6 +1,6 @@
 <script lang="ts">
   import { getStores } from '$app/stores';
-  import data from '../../site-data';
+  import data from '$lib/site-data';
 
   const { siteName, siteUrl } = data;
   const defaultDesc = data.desc;
