@@ -8,7 +8,15 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "format": "prettier --write --plugin-search-dir=. ."
+    "format": "prettier --write --plugin-search-dir=. .",
+    "cp:404": "cp build/404/index.html build/404.html",
+    "rm:404": "rimraf - build/404",
+    "postbuild": "npm run cp:404 && npm run rm:404",
+    "deploy_hosting": "firebase deploy --only hosting --project=dev",
+    "deploy_functions": "firebase deploy --only functions --project=dev",
+    "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
+    "deploy:prod": "firebase deploy --project=prod",
+    "deploy_functions:prod": "firebase deploy --only functions --project=prod"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.4",
