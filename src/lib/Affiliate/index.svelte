@@ -6,7 +6,11 @@
 
   <div class="flex">
     <a href="/" title="Become an affiliate"> Become an affiliate</a>
-    <a rel="external" href="https://app.mailcheck.co/auth/login" title="Refer a friend" target="_blank">
+    <a
+      rel="external"
+      href="https://app.mailcheck.co/auth/login"
+      title="Refer a friend"
+      target="_blank">
       Refer a friend
     </a>
   </div>

@@ -17,13 +17,13 @@
 <!-- // todo: seo component broken now in kit-->
 <!--<Seo title="Verify your real customers in one way" />-->
 <svelte:head>
-<!--    // todo: sitemap and rss are broken now in kit -->
-<!--  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />-->
-<!--  <link-->
-<!--    rel="alternate"-->
-<!--    type="application/rss+xml"-->
-<!--    title="RSS Feed for mailcheck.co"-->
-<!--    href="/feed.xml" />-->
+  <!--    // todo: sitemap and rss are broken now in kit -->
+  <!--  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />-->
+  <!--  <link-->
+  <!--    rel="alternate"-->
+  <!--    type="application/rss+xml"-->
+  <!--    title="RSS Feed for mailcheck.co"-->
+  <!--    href="/feed.xml" />-->
 </svelte:head>
 
 <main class="manage-customers" role="main" id="main">

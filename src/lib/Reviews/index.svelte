@@ -18,7 +18,11 @@
             alt=""
             class="reviews-item-logo" />
           <div class="reviews-item-rating">
-            <img src="/assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 1 star" />
+            <img
+              src="/assets/img/icon-star-rating.svg"
+              width="25"
+              height="25"
+              alt="rating 1 star" />
             <img
               src="/assets/img/icon-star-rating.svg"
               width="25"
@@ -76,7 +80,11 @@
             alt=""
             class="reviews-item-logo" />
           <div class="reviews-item-rating">
-            <img src="/assets/img/icon-star-rating.svg" width="25" height="25" alt="rating 1 star" />
+            <img
+              src="/assets/img/icon-star-rating.svg"
+              width="25"
+              height="25"
+              alt="rating 1 star" />
             <img
               src="/assets/img/icon-star-rating.svg"
               width="25"
