@@ -119,7 +119,7 @@
       margin: 0 auto;
 
       .logo {
-        width: 138px;
+        width: 8.625rem;
         height: 1.69rem;
       }
 

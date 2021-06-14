@@ -161,19 +161,19 @@
 
 <style lang="scss">
   .footer {
-    padding-top: 100px;
+    padding-top: 6.25rem;
     position: relative;
     background: linear-gradient(to top, #000 10%, #03091400 100%);
   }
 
   .footer-address {
-    max-width: 245px;
-    margin-top: 35px;
+    max-width: 15.3rem;
+    margin-top: var(--size-36);
     color: var(--primary-white);
     font-weight: var(--weight-400);
     font-size: var(--size-14);
     font-style: normal;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.08rem;
     opacity: 0.5;
   }
 
@@ -181,7 +181,7 @@
     color: var(--primary-white);
     font-weight: var(--weight-400);
     font-size: var(--size-14);
-    letter-spacing: 0.8px;
+    letter-spacing: 0.08rem;
     opacity: 0.5;
   }
 
@@ -190,11 +190,11 @@
     flex-basis: 50%;
     flex-flow: column wrap;
     align-items: flex-start;
-    max-height: 170px;
+    max-height: 10.625rem;
   }
 
   .footer-nav-link {
-    margin: 0 0var (--size-16) 0;
+    margin: 0 0 var(--size-16) 0;
   }
 
   .footer-logo-copyright {
@@ -211,7 +211,7 @@
   .footer-top {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 35px;
+    padding-bottom: var(--size-36);
   }
 
   .footer-bottom {
@@ -219,7 +219,7 @@
     align-items: center;
     justify-content: space-between;
     padding: var(--size-30) 0 var(--size-50);
-    border-top: 2px solid $footer-divider-border;
+    border-top: var(--size-2) solid var(--footer-divider-border);
   }
 
   .footer-info,
@@ -234,7 +234,7 @@
     align-items: center;
 
     & + & {
-      margin-left: 45px;
+      margin-left: var(----size-46);
     }
   }
 
@@ -245,7 +245,7 @@
   }
 
   .footer-info-text {
-    color: $white;
+    color: var(--white);
     font-size: var(--size-14);
     text-align-last: left;
     text-indent: initial;
@@ -275,18 +275,18 @@
 
     .footer-nav {
       width: 100%;
-      height: 410px;
-      margin: 0 0 25px 0;
+      height: 25.625rem;
+      margin: 0 0 var(--size-24) 0;
       padding-top: var(--size-40);
     }
 
     .footer-nav-link {
-      margin-right: 25px;
+      margin-right: var(--size-24);
     }
 
     .footer-logo-copyright {
       padding-bottom: var(--size-30);
-      border-bottom: 2px solid $footer-divider-border;
+      border-bottom: var(--size-2) solid $footer-divider-border;
     }
 
     .footer-bottom {

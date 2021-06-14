@@ -96,7 +96,7 @@
 
     .welcome-items {
       width: 100%;
-      max-width: 1020px;
+      max-width: 63.75rem;
       padding: 0;
     }
 

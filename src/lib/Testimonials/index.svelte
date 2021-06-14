@@ -154,7 +154,7 @@
   }
 
   .testimonials {
-    padding-top: 120px;
+    padding-top: 7.5rem;
     color: var(--primary-white);
   }
 
@@ -170,7 +170,7 @@
     grid-row-gap: 1rem;
     grid-column-gap: 1rem;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 420px);
+    grid-template-columns: repeat(4, 26.25rem);
     height: 23.75rem;
     margin-left: var(--size-10);
     padding: 0;
@@ -191,17 +191,17 @@
 
     .testimonial-slide {
       display: inline-block;
-      width: 420px;
+      width: 26.25rem;
       height: 23.75rem;
       font-size: var(--size-0);
-      border-radius: 3px;
+      border-radius: var(--br-3);
       scroll-snap-align: start;
 
       .slider-item {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
-        height: 320px;
+        height: 20rem;
         padding: var(--size-30);
         background: url('/assets/img/testimonial-slides-img.png') var(--gradient-4) no-repeat top
           10% right 10%;
@@ -213,7 +213,7 @@
   .slide-logo-wrapper {
     display: flex;
     align-items: center;
-    height: 94px;
+    height: 5.875rem;
     overflow: hidden;
   }
 
@@ -225,7 +225,7 @@
   }
 
   .slide-text {
-    max-height: 130px;
+    max-height: 8.125rem;
     margin-bottom: auto;
     padding-right: var(--size-16);
     overflow-y: auto;
@@ -283,7 +283,7 @@
 
   @media all and (max-width: 768px) {
     .testimonials {
-      padding-top: 90px;
+      padding-top: 5.625rem;
     }
 
     .testimonials-container {
@@ -315,7 +315,7 @@
 
         .testimonial-slide {
           .slider-item {
-            padding: var(--size-30) 100px;
+            padding: var(--size-30) 6.25rem;
           }
         }
       }

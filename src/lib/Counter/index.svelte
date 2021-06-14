@@ -37,8 +37,8 @@
 <style>
   .counter {
     display: flex;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 0.08rem solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.08rem solid rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
   }
 
@@ -51,7 +51,7 @@
     border: 0;
     background-color: transparent;
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: var(--size-32);
   }
 
   .counter button:hover {
@@ -65,7 +65,7 @@
 
   path {
     vector-effect: non-scaling-stroke;
-    stroke-width: 2px;
+    stroke-width: var(--size-2);
     stroke: var(--text-color);
   }
 
@@ -82,9 +82,9 @@
     display: block;
     width: 100%;
     height: 100%;
-    font-weight: 400;
+    font-weight: var(--weight-400);
     color: var(--accent-color);
-    font-size: 4rem;
+    font-size: var(--size-64);
     display: flex;
     align-items: center;
     justify-content: center;

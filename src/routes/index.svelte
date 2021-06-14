@@ -72,9 +72,9 @@
       left: 0;
       display: block;
       width: 100%;
-      height: 730px;
+      height: 45.625rem;
       background: url('/assets/img/lines.svg') no-repeat 0 0;
-      background-size: 100% 66%, 654px 740px;
+      background-size: 100% 66%, 40.875rem 46.25rem;
       content: '';
       pointer-events: none;
     }
@@ -89,26 +89,26 @@
 
   @media only screen and (min-width: 1920px) {
     .manage-customers::before {
-      background-position: 0 35%, 1135px 0;
+      background-position: 0 35%, 70.9375rem 0;
     }
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1440px) {
     .manage-customers::before {
-      background-position: 0 35%, 780px -var(--size-20);
+      background-position: 0 35%, 48.75rem -var(--size-20);
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .manage-customers::before {
-      background-position: 0 35%, 715px -15px;
+      background-position: 0 35%, 44.6875rem -0.9375rem;
     }
   }
 
   @media only screen and (max-width: 768px) {
     .manage-customers::before {
-      margin-top: -100px;
-      padding-top: 100px;
+      margin-top: -6.25rem;
+      padding-top: 6.25rem;
       background-position: top 35% left 30%;
       background-size: auto;
     }
@@ -126,8 +126,8 @@
 
   @media only screen and (max-width: 320px) {
     .manage-customers::before {
-      background-position: 100px -65px;
-      background-size: 0, 654px 740px;
+      background-position: 6.25rem -3.5rem;
+      background-size: 0, 40.875rem 46.25rem;
     }
   }
 </style>

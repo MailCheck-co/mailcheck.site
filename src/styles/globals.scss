@@ -98,8 +98,8 @@ body {
     font-size: var(--size-16);
     font-family: var(--font-mono);
     background-color: var(--color-pre-bg);
-    border-radius: 3px;
-    box-shadow: 2px 2px 6px var(--color-pre-shadow);
+    border-radius: var(--br-3);
+    box-shadow: var(--size-2) var(--size-2) var(--size-6) var(--color-pre-shadow);
   }
 
   input,

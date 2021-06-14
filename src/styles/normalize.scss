@@ -370,9 +370,9 @@ figure {
 // Define consistent border, margin, and padding
 
 fieldset {
-  margin: 0 2px;
+  margin: 0 var(--size-2);
   padding: 0.35em 0.625em 0.75em;
-  border: 1px solid #c0c0c0;
+  border: 0.08rem solid #c0c0c0;
 }
 
 // 1. Corrects color not being inherited in IE6/7/8/9
@@ -386,7 +386,7 @@ legend {
   border: 0; // 1
 
   @if $legacy_support_for_ie {
-    *margin-left: -7px; // 4
+    *margin-left: -0.4375; // 4
   }
 }
 
@@ -510,8 +510,8 @@ input {
     padding: 0; // 2
 
     @if $legacy_support_for_ie {
-      *height: 13px; // 3
-      *width: 13px; // 3
+      *height: 0.8125rem; // 3
+      *width: 0.8125rem; // 3
     }
   }
 }

@@ -209,7 +209,7 @@
 
     &::after {
       position: absolute;
-      top: 10px;
+      top: var(--size-10);
       right: 0;
       display: block;
       width: var(--size-6);
