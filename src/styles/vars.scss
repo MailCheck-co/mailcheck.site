@@ -15,7 +15,6 @@
   --primary-color: #b9c6d2;
   --secondary-color: #d0dde9;
   --tertiary-color: #edf0f8;
-  // --accent-color: #ff3e00;
   --heading-color: rgba(0, 0, 0, 0.7);
   --text-color: #444;
   --background-without-opacity: rgba(255, 255, 255, 0.7);
@@ -30,7 +29,7 @@
   --venus: #998099;
   --patina: #699;
   --nebula: #d2e1dd;
-  --white: #fff;
+  --primary-white: #fff;
   --dawn-pink: #f2ece4;
   --wafer: #e1d7d2;
   --iron: #dadbdf;
@@ -46,14 +45,14 @@
   --color-note: #666;
 
   // Common colors
-  --color-background: var(--white);
+  --color-background: var(--primary-white);
   --color-background-shade: var(--iron);
   --color-background-invert: var(--hopbush);
   --color-text: darken(var(--pale-sky), 15);
   --color-text-weak: var(--regent-grey);
   --color-text-strong: var(--midnight-blue);
   --color-text-heading: var(--regent-grey);
-  --color-text-invert: rgba(var(--color-background), 0.75);
+  --color-text-invert: rgba(255, 255, 255, 0.75);
   --color-text-strong-invert: var(--color-background);
 
   // Links
@@ -78,7 +77,6 @@
   --color-notice: #66b;
 
   // Mailcheck Landing colors
-  --primary-white: #fff;
   --primary-accent: #1bced4;
   --dark-01: rgba(255, 255, 255, 0.1);
   --dark-02: rgba(255, 255, 255, 0.2);
@@ -95,6 +93,8 @@
   --pricing-plan-border-enterprise: rgba(85, 187, 255, 0.5);
   --pricing-plan-border-custom: rgba(85, 187, 255, 0.5);
   --footer-divider-border: #333;
+  --footer-bg: #03091400;
+  --footer-gradient: linear-gradient(to top, var(--black) 10%, var(--footer-bg) 100%);
   --light-accent-btn: var(--color-progress);
 
   // Gradients

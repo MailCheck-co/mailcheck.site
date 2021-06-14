@@ -1,8 +1,4 @@
-<script lang="ts">
-  let element: HTMLElement;
-</script>
-
-<section class="cta" bind:this={element}>
+<section class="cta" class:intersecting={true}>
   <div class="container">
     <div class="cta-info">
       <h2 class="cta-text">Verify 10-100 emails for free!</h2>
@@ -13,6 +9,8 @@
 
 <style lang="scss">
   .cta {
+    @include intersection;
+
     padding-bottom: 6.25rem;
     text-align: center;
 

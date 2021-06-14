@@ -73,7 +73,7 @@
       display: block;
       width: 100%;
       height: 45.625rem;
-      background: url('/assets/img/lines.svg') no-repeat 0 0;
+      background: url('/assets/img/lines.svg') no-repeat center;
       background-size: 100% 66%, 40.875rem 46.25rem;
       content: '';
       pointer-events: none;
@@ -95,7 +95,7 @@
 
   @media only screen and (min-width: 1200px) and (max-width: 1440px) {
     .manage-customers::before {
-      background-position: 0 35%, 48.75rem -var(--size-20);
+      background-position: 0 35%, 48.75rem calc(#{var(--size-20)} * -1);
     }
   }
 

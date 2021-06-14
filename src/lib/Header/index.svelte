@@ -1,5 +1,4 @@
 <script lang="ts">
-  export let status: number;
   import ToTop from '$lib/ToTop/index.svelte';
   import logo from './mailcheck-logo.svg';
 

@@ -1,4 +1,4 @@
-<section class="affiliate">
+<section class="affiliate" class:intersecting={true}>
   <div class="section-heading sm-left">
     <h3 class="title-small">affiliate Program</h3>
     <p class="section-title-lg">affiliate</p>
@@ -18,7 +18,8 @@
 
 <style lang="scss">
   .affiliate {
-    padding: 7.5rem 0var (--size-60);
+    @include intersection;
+    padding: 7.5rem 0 var(--size-60);
     transform: matrix(1, 0, 0, 1, 0, 0);
     opacity: 1;
 
@@ -68,23 +69,24 @@
 
       a {
         height: var(--size-60);
-        padding: var(--size-40);
-        color: var(--white);
+        padding: 0 var(--size-40);
+        color: var(--primary-white);
         background-color: transparent;
         font-weight: var(--weight-700);
         font-size: var(--size-16);
         letter-spacing: 0.08rem;
         text-transform: uppercase;
         line-height: var(--size-60);
-        border: 0.08rem solid var(--white);
+        border: 0.08rem solid var(--primary-white);
         border-radius: var(--size-6);
         outline: none;
         transition: transform 0.25s ease;
 
         &:hover {
           color: var(--primary-accent);
-          background-color: var(--white);
+          background-color: var(--primary-white);
           transform: translateY(-0.08rem);
+          text-decoration: none;
         }
 
         &:first-child {

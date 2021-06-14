@@ -20,11 +20,17 @@
           rel="external"
           title="API"
           target="_blank">API</a>
-        <a class="nav-link footer-nav-link" title="Privacy policy" href="/privacy">Privacy policy</a>
-        <a class="nav-link footer-nav-link" title="Terms and conditions" href="/terms">Terms and conditions</a>
+        <a class="nav-link footer-nav-link" title="Privacy policy" href="/privacy"
+          >Privacy policy</a>
+        <a class="nav-link footer-nav-link" title="Terms and conditions" href="/terms"
+          >Terms and conditions</a>
         <a class="nav-link footer-nav-link" title="Cookie policy" href="/cookies">Cookie policy</a>
-        <a rel="external" target="_blank" title="Product of NodeArt" class="nav-link footer-nav-link" href="https://nodeart.io"
-          >Product of NodeArt</a>
+        <a
+          rel="external"
+          target="_blank"
+          title="Product of NodeArt"
+          class="nav-link footer-nav-link"
+          href="https://nodeart.io">Product of NodeArt</a>
       </nav>
       <div class="footer-social-mobile">
         <a
@@ -163,105 +169,114 @@
   .footer {
     padding-top: 6.25rem;
     position: relative;
-    background: linear-gradient(to top, #000 10%, #03091400 100%);
-  }
+    background: var(--footer-gradient);
 
-  .footer-address {
-    max-width: 15.3rem;
-    margin-top: var(--size-36);
-    color: var(--primary-white);
-    font-weight: var(--weight-400);
-    font-size: var(--size-14);
-    font-style: normal;
-    letter-spacing: 0.08rem;
-    opacity: 0.5;
-  }
+    .container {
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: var(--size-36);
 
-  .copyright2 {
-    color: var(--primary-white);
-    font-weight: var(--weight-400);
-    font-size: var(--size-14);
-    letter-spacing: 0.08rem;
-    opacity: 0.5;
-  }
+        .footer-logo-copyright {
+          display: flex;
+          flex-basis: 50%;
+          flex-direction: column;
+          align-content: center;
 
-  .footer-nav {
-    display: flex;
-    flex-basis: 50%;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    max-height: 10.625rem;
-  }
+          .footer-address {
+            max-width: 15.3rem;
+            margin-top: var(--size-36);
+            color: var(--primary-white);
+            font-weight: var(--weight-400);
+            font-size: var(--size-14);
+            font-style: normal;
+            letter-spacing: 0.08rem;
+            opacity: 0.5;
+          }
 
-  .footer-nav-link {
-    margin: 0 0 var(--size-16) 0;
-  }
+          img {
+            max-width: fit-content;
+          }
+        }
 
-  .footer-logo-copyright {
-    display: flex;
-    flex-basis: 50%;
-    flex-direction: column;
-    align-content: center;
+        .footer-nav {
+          display: flex;
+          flex-basis: 50%;
+          flex-flow: column wrap;
+          align-items: flex-start;
+          max-height: 10.625rem;
 
-    img {
-      max-width: fit-content;
+          .footer-nav-link {
+            margin: 0 0 var(--size-16) 0;
+          }
+        }
+
+        .footer-social-mobile {
+          display: none;
+
+          .footer-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            display: inline-block;
+            margin-left: var(--size-16);
+          }
+        }
+      }
+
+      .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--size-30) 0 var(--size-50);
+        border-top: var(--size-2) solid var(--footer-divider-border);
+
+        .footer-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .footer-info-item {
+            display: flex;
+            align-items: center;
+
+            & + & {
+              margin-left: var(--size-46);
+            }
+
+            .footer-info-logo {
+              width: var(--size-36);
+              height: var(--size-36);
+              margin-right: var(--size-16);
+            }
+          }
+
+          .footer-info-text {
+            color: var(--primary-white);
+            font-size: var(--size-14);
+            text-align-last: left;
+            text-indent: initial;
+          }
+
+          .footer-social {
+            display: block;
+
+            .footer-social-link {
+              display: inline-block;
+              margin-left: var(--size-16);
+            }
+          }
+
+          .copyright2 {
+            color: var(--primary-white);
+            font-weight: var(--weight-400);
+            font-size: var(--size-14);
+            letter-spacing: 0.08rem;
+            opacity: 0.5;
+          }
+        }
+      }
     }
-  }
-
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: var(--size-36);
-  }
-
-  .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--size-30) 0 var(--size-50);
-    border-top: var(--size-2) solid var(--footer-divider-border);
-  }
-
-  .footer-info,
-  .footer-social-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-info-item {
-    display: flex;
-    align-items: center;
-
-    & + & {
-      margin-left: var(----size-46);
-    }
-  }
-
-  .footer-info-logo {
-    width: var(--size-36);
-    height: var(--size-36);
-    margin-right: var(--size-16);
-  }
-
-  .footer-info-text {
-    color: var(--white);
-    font-size: var(--size-14);
-    text-align-last: left;
-    text-indent: initial;
-  }
-
-  .footer-social {
-    display: block;
-  }
-
-  .footer-social-mobile {
-    display: none;
-  }
-
-  .footer-social-link {
-    display: inline-block;
-    margin-left: var(--size-16);
   }
 
   @media only screen and (max-width: 768px) {
@@ -286,7 +301,7 @@
 
     .footer-logo-copyright {
       padding-bottom: var(--size-30);
-      border-bottom: var(--size-2) solid $footer-divider-border;
+      border-bottom: var(--size-2) solid var(--footer-divider-border);
     }
 
     .footer-bottom {

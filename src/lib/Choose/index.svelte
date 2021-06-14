@@ -1,8 +1,4 @@
-<script lang="ts">
-  let element: HTMLElement;
-</script>
-
-<section bind:this={element} class="choose-your">
+<section class:intersecting={true} class="choose-your">
   <div class="container">
     <div class="section-heading sm-left">
       <h2 class="title">WHY DO YOU CHOOSE MAILCHECK?</h2>
@@ -25,16 +21,7 @@
 
 <style lang="scss">
   .choose-your {
-    &::before {
-      position: absolute;
-      top: -185%;
-      width: 100%;
-      height: 28.25rem;
-      background: url('/assets/img/lines.svg') no-repeat center;
-      background-size: cover;
-      content: '';
-      pointer-events: none;
-    }
+    @include intersection;
   }
 
   .art {

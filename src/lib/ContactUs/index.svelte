@@ -1,7 +1,6 @@
 <script lang="ts">
   let isValid: boolean;
   let email = '';
-  let element: HTMLElement;
   let isOpen = false;
   let isError = false;
   let contactForm = { reset: () => {} };
@@ -11,8 +10,7 @@
   function validate(node: HTMLElement, value: string) {
     return {
       update() {
-        const reg =
-          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         return (isValid = reg.test(String(email).toLowerCase()));
       }
     };
@@ -22,7 +20,8 @@
     isError = false;
     document.body.classList.remove('fixed');
   };
-  const onSubmit = async () => {
+  const onSubmit = async (e: Event) => {
+    e.preventDefault();
     const referrerValue = document.referrer;
     const data = {
       name: nameValue,
@@ -55,9 +54,9 @@
   };
 </script>
 
-<section bind:this={element} id="contact-us">
+<section class:intersecting={true} id="contact-us">
   <div class="container">
-    <form class="contact-form" bind:this={contactForm} on:submit|preventDefault={onSubmit}>
+    <form class="contact-form" bind:this={contactForm} on:submit={onSubmit}>
       <h2 class="title title-contact">contact us</h2>
       <input
         class="input input-name"
@@ -99,29 +98,9 @@
 </div>
 
 <style lang="scss">
-  // contact-us
-  .btn-submit {
-    background-color: var(--primary-accent);
-    border: none;
-
-    &:hover {
-      color: var(--primary-accent);
-      background-color: var(--primary-white);
-    }
-
-    &:active {
-      color: var(--primary-white);
-      background-color: var(--primary-accent);
-    }
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   #contact-us {
+    @include intersection;
+
     z-index: 100;
     padding: 4.6875rem 0 7.3125rem;
 
@@ -130,8 +109,8 @@
       z-index: -1;
       display: block;
       width: 100%;
-      height: 34.375rem;
-      padding: 7.3125rem 0;
+      height: 550px;
+      padding: 7.3rem 0;
       background: url('/assets/img/city.png') no-repeat top 15% center;
       background-size: cover;
       opacity: 0.4;
@@ -139,58 +118,79 @@
       pointer-events: none;
     }
 
-    .input-email {
-      &.invalid {
-        color: var(--pricing-plan-custom);
-      }
-    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    textarea.input {
-      overflow: auto;
-
-      &::-webkit-scrollbar {
-        width: 0.3em;
+      .input-email {
+        &.invalid {
+          color: var(--pricing-plan-custom);
+        }
       }
 
-      &::-webkit-scrollbar-track {
-        background-color: rgba(17, 50, 78, 0.2);
+      textarea.input {
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+          width: 0.3em;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: rgba(17, 50, 78, 0.2);
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: var(--primary-accent);
+          border: var(--size-2) solid var(--primary-accent);
+          border-radius: var(--size-6);
+        }
       }
 
-      &::-webkit-scrollbar-thumb {
+      .input-message {
+        max-height: 7.5rem;
+        margin-bottom: var(--size-30);
+        resize: none;
+
+        &::placeholder {
+          color: var(--primary-white);
+        }
+      }
+
+      .title-contact {
+        margin-bottom: var(--size-50);
+
+        &::before {
+          position: absolute;
+          right: 0;
+          left: 0;
+          z-index: -1;
+          display: block;
+          width: 64rem;
+          height: 10.625rem;
+          margin: 0 auto;
+          color: var(--section-titles-color);
+          font-weight: var(--weight-900);
+          font-size: var(--size-160);
+          text-transform: uppercase;
+          content: 'contact';
+        }
+      }
+
+      .btn-submit {
         background-color: var(--primary-accent);
-        border: var(--size-2) solid var(--primary-accent);
-        border-radius: var(--size-6);
+        border: none;
+
+        &:hover {
+          color: var(--primary-accent);
+          background-color: var(--primary-white);
+        }
+
+        &:active {
+          color: var(--primary-white);
+          background-color: var(--primary-accent);
+        }
       }
-    }
-  }
-
-  .input-message {
-    max-height: 7.5rem;
-    margin-bottom: var(--size-30);
-    resize: none;
-
-    &::placeholder {
-      color: var(--primary-white);
-    }
-  }
-
-  .title-contact {
-    margin-bottom: var(--size-50);
-
-    &::before {
-      position: absolute;
-      right: 0;
-      left: 0;
-      z-index: -1;
-      display: block;
-      width: 64rem;
-      height: 10.625rem;
-      margin: 0 auto;
-      color: var(--section-titles-color);
-      font-weight: var(--weight-900);
-      font-size: var(--size-160);
-      text-transform: uppercase;
-      content: 'contact';
     }
   }
 
@@ -213,8 +213,10 @@
   }
 
   @media only screen and (max-width: 1024px) {
-    .title-contact::before {
-      display: none;
+    #contact-us {
+      .title-contact::before {
+        display: none;
+      }
     }
   }
 

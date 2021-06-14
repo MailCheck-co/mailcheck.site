@@ -1,5 +1,4 @@
 <script lang="ts">
-  let element: HTMLElement;
   let slider: HTMLElement;
   let active = false;
   let startX: number;
@@ -25,7 +24,7 @@
   }
 </script>
 
-<section bind:this={element} id="pricing">
+<section class:intersecting={true} id="pricing">
   <div class="section-heading sm-left">
     <h2 class="title">Cost-effective pricing plans</h2>
     <p class="section-title-lg">PRICING</p>
@@ -97,6 +96,8 @@
 
 <style lang="scss">
   #pricing {
+    @include intersection;
+
     &::before {
       position: absolute;
       top: 10%;

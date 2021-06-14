@@ -1,8 +1,4 @@
-<script lang="ts">
-  let element: HTMLElement;
-</script>
-
-<section class="partners" bind:this={element}>
+<section class="partners" class:intersecting={true}>
   <div class="section-heading sm-left">
     <h2 class="title">YOU’RE IN GOOD COMPANY</h2>
     <p class="section-title-lg">PARTNERS</p>
@@ -53,6 +49,7 @@
 
 <style lang="scss">
   .partners {
+    @include intersection;
     margin-bottom: var(--size-160);
   }
 

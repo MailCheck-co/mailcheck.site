@@ -1,8 +1,4 @@
-<script lang="ts">
-  let element: HTMLElement;
-</script>
-
-<section bind:this={element} class="frequent-questions">
+<section class:intersecting={true} class="frequent-questions">
   <div class="wrapper-questions">
     <h3 class="title-small">FAQ</h3>
 
@@ -90,214 +86,222 @@
 </section>
 
 <style lang="scss">
-  .btn-start {
-    color: var(--primary-white);
-    background-color: var(--primary-accent);
-    border: none;
+  .frequent-questions {
+    @include intersection;
 
-    &:hover {
-      color: var(--primary-accent);
-      background-color: var(--primary-white);
-    }
-
-    &:active {
+    .btn-start {
       color: var(--primary-white);
       background-color: var(--primary-accent);
-    }
-  }
+      border: none;
 
-  .accordion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin: var(--size-50) var(--size-20) var(--size-50);
-  }
+      &:hover {
+        color: var(--primary-accent);
+        background-color: var(--primary-white);
+      }
 
-  .accordion-column {
-    width: 48%;
-  }
-
-  .filter-img {
-    position: absolute;
-    top: 10%;
-    right: 0;
-    z-index: -1;
-    width: 27.75rem;
-    height: auto;
-    opacity: 0.1;
-    pointer-events: none;
-  }
-
-  .input-radio {
-    width: 100%;
-    height: var(--size-40);
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9;
-    cursor: pointer;
-
-    &:checked ~ .tab-content {
-      height: auto;
-      padding: var(--size-10) 0;
-      overflow: hidden;
-      visibility: visible;
-      opacity: 1;
+      &:active {
+        color: var(--primary-white);
+        background-color: var(--primary-accent);
+      }
     }
 
-    &:checked ~ .tab-label::after {
-      transform: rotate(135deg);
-    }
-
-    &:checked ~ .tab-label {
-      padding-bottom: var(--size-6);
-    }
-  }
-
-  .tab {
-    position: relative;
-    margin-bottom: var(--size-14);
-    border-bottom: 0.08rem solid var(--dark-02);
-  }
-
-  .tab-content {
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.35s ease-in-out;
-
-    &::-webkit-scrollbar {
-      width: 0.3em;
-    }
-
-    &::-webkit-scrollbar-track {
-      background-color: rgba(17, 50, 78, 0.2);
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--primary-accent);
-      border: var(--size-2) solid var(--primary-accent);
-      border-radius: var(--size-6);
-    }
-  }
-
-  .tab-text {
-    margin-top: 0;
-    padding: 0 var(--size-10);
-    font-size: var(--size-16);
-    text-align: initial;
-    text-indent: initial;
-    word-break: break-word;
-  }
-
-  .tab-label {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 var(--size-14) var(--size-14) var(--size-10);
-    color: var(--primary-white);
-    font-weight: var(--weight-400);
-    font-size: var(--size-18);
-    line-height: var(--size-24);
-    letter-spacing: 0.08rem;
-
-    &::after {
-      position: absolute;
-      top: var(--size-10);
-      right: 0;
-      display: block;
-      width: var(--size-6);
-      height: var(--size-6);
-      border-bottom: 0.08rem solid var(--primary-accent);
-      border-left: 0.08rem solid var(--primary-accent);
-      transform: rotate(-45deg);
-      transition: all 0.5s ease;
-      content: '';
-    }
-  }
-
-  .title-small {
-    width: 100%;
-    color: var(--primary-white);
-    font-weight: var(--weight-700);
-    font-size: var(--size-32);
-    line-height: var(--size-50);
-    letter-spacing: var(--size-2);
-    text-align: center;
-    text-transform: uppercase;
-
-    &::before {
-      position: absolute;
-      right: 0;
-      left: 0;
-      z-index: 0;
-      display: block;
-      width: 64rem;
-      height: 10.625rem;
-      margin: 0 auto;
-      color: var(--section-titles-color);
-      font-weight: var(--weight-900);
-      font-size: var(--size-160);
-      text-transform: uppercase;
-      content: 'faq';
-    }
-  }
-
-  .wrapper-questions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 80rem;
-    margin: 0 auto var(--size-50);
-    padding: var(--size-50) var(--size-20) 0;
-  }
-
-  @media only screen and (max-width: 1024px) {
     .accordion {
-      margin: 0 0 var(--size-50) 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin: var(--size-50) var(--size-20) var(--size-50);
+    }
+
+    .accordion-column {
+      width: 48%;
     }
 
     .filter-img {
-      transform: none;
+      position: absolute;
+      top: 10%;
+      right: 0;
+      z-index: -1;
+      width: 27.75rem;
+      height: auto;
+      opacity: 0.1;
+      pointer-events: none;
     }
 
-    .title-small::before {
-      display: none;
+    .input-radio {
+      width: 100%;
+      height: var(--size-40);
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9;
+      cursor: pointer;
+
+      &:checked ~ .tab-content {
+        height: auto;
+        padding: var(--size-10) 0;
+        overflow: hidden;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &:checked ~ .tab-label::after {
+        transform: rotate(135deg);
+      }
+
+      &:checked ~ .tab-label {
+        padding-bottom: var(--size-6);
+      }
+    }
+
+    .tab {
+      position: relative;
+      margin-bottom: var(--size-14);
+      border-bottom: 0.08rem solid var(--dark-02);
+    }
+
+    .tab-content {
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.35s ease-in-out;
+
+      &::-webkit-scrollbar {
+        width: 0.3em;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: rgba(17, 50, 78, 0.2);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--primary-accent);
+        border: var(--size-2) solid var(--primary-accent);
+        border-radius: var(--size-6);
+      }
+    }
+
+    .tab-text {
+      margin-top: 0;
+      padding: 0 var(--size-10);
+      font-size: var(--size-16);
+      text-align: initial;
+      text-indent: initial;
+      word-break: break-word;
+    }
+
+    .tab-label {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 var(--size-14) var(--size-14) var(--size-10);
+      color: var(--primary-white);
+      font-weight: var(--weight-400);
+      font-size: var(--size-18);
+      line-height: var(--size-24);
+      letter-spacing: 0.08rem;
+
+      &::after {
+        position: absolute;
+        top: var(--size-10);
+        right: 0;
+        display: block;
+        width: var(--size-6);
+        height: var(--size-6);
+        border-bottom: 0.08rem solid var(--primary-accent);
+        border-left: 0.08rem solid var(--primary-accent);
+        transform: rotate(-45deg);
+        transition: all 0.5s ease;
+        content: '';
+      }
+    }
+
+    .title-small {
+      width: 100%;
+      color: var(--primary-white);
+      font-weight: var(--weight-700);
+      font-size: var(--size-32);
+      line-height: var(--size-50);
+      letter-spacing: var(--size-2);
+      text-align: center;
+      text-transform: uppercase;
+
+      &::before {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 0;
+        display: block;
+        width: 64rem;
+        height: 10.625rem;
+        margin: 0 auto;
+        color: var(--section-titles-color);
+        font-weight: var(--weight-900);
+        font-size: var(--size-160);
+        text-transform: uppercase;
+        content: 'faq';
+      }
+    }
+
+    .wrapper-questions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 80rem;
+      margin: 0 auto var(--size-50);
+      padding: var(--size-50) var(--size-20) 0;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .frequent-questions {
+      .accordion {
+        margin: 0 0 var(--size-50) 0;
+      }
+
+      .filter-img {
+        transform: none;
+      }
+
+      .title-small::before {
+        display: none;
+      }
     }
   }
 
   @media only screen and (max-width: 768px) {
-    .accordion {
-      flex-direction: column;
-      justify-content: start;
-      max-width: 80%;
-      margin: 0 0 var(--size-30) 0;
-      padding: 0 var(--size-10);
-    }
+    .frequent-questions {
+      .accordion {
+        flex-direction: column;
+        justify-content: start;
+        max-width: 80%;
+        margin: 0 0 var(--size-30) 0;
+        padding: 0 var(--size-10);
+      }
 
-    .accordion-column {
-      width: 100%;
-    }
+      .accordion-column {
+        width: 100%;
+      }
 
-    .filter-img {
-      order: -1;
-      width: 50%;
-      min-width: 10%;
-      max-width: 70%;
-      margin-bottom: var(--size-24);
-      transform: translateY(var(--size-50));
-    }
+      .filter-img {
+        order: -1;
+        width: 50%;
+        min-width: 10%;
+        max-width: 70%;
+        margin-bottom: var(--size-24);
+        transform: translateY(var(--size-50));
+      }
 
-    .wrapper-questions {
-      justify-content: center;
-      padding: var(--size-50) var(--size-20) 0;
+      .wrapper-questions {
+        justify-content: center;
+        padding: var(--size-50) var(--size-20) 0;
+      }
     }
   }
 </style>

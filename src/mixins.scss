@@ -49,3 +49,14 @@ $min-width-x-large: 1600px;
   font-style: normal;
   letter-spacing: normal;
 }
+
+@mixin intersection {
+  transform: matrix(1, 0, 0, 1, 0, 50);
+  opacity: 0;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+
+  &.intersecting {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
+  }
+}
