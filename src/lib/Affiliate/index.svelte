@@ -5,7 +5,7 @@
   </div>
 
   <div class="flex">
-    <a href="/" title="Become an affiliate"> Become an affiliate</a>
+    <a rel="external" target="_blank" href="/" title="Become an affiliate"> Become an affiliate</a>
     <a
       rel="external"
       href="https://app.mailcheck.co/auth/login"

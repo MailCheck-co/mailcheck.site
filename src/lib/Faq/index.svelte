@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <a sapper:prefetch href="/faq" class="btn btn-start">LEARN MORE</a>
+    <a href="/faq" title="faq" class="btn btn-start">LEARN MORE</a>
 
     <img class="filter-img" src="/assets/img/filter.png" width="444" height="568" alt="filter" />
   </div>

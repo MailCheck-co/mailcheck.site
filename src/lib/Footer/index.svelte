@@ -2,30 +2,37 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-logo-copyright">
-        <a sapper:prefetch class="logo2" href="/"
-          ><img src="/assets/img/mailcheck-logo.svg" width="162" height="27" alt="logo2" /></a>
+        <a class="logo2" href="/" title="logo">
+          <img src="/assets/img/mailcheck-logo.svg" width="162" height="27" alt="logo2" /></a>
         <address class="footer-address">
           Suite 4005 43 Bedford Street,<br />
           London, England, WC2E 9HA
         </address>
       </div>
       <nav class="footer-nav" role="navigation">
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/#features">Features</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/#pricing">Pricing</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/#contact-us">Contact Us</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/blog">Blog</a>
+        <a class="nav-link footer-nav-link" title="features" href="/#features">Features</a>
+        <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
+        <a class="nav-link footer-nav-link" title="contact us" href="/#contact-us">Contact Us</a>
+        <a class="nav-link footer-nav-link" title="blog" href="/blog">Blog</a>
         <a
           class="nav-link footer-nav-link"
           href="https://app.mailcheck.co/docs#tag--email"
+          rel="external"
+          title="API"
           target="_blank">API</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/privacy">Privacy policy</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/terms">Terms and conditions</a>
-        <a sapper:prefetch class="nav-link footer-nav-link" href="/cookies">Cookie policy</a>
-        <a rel="external" target="_blank" class="nav-link footer-nav-link" href="//nodeart.io"
+        <a class="nav-link footer-nav-link" title="Privacy policy" href="/privacy">Privacy policy</a>
+        <a class="nav-link footer-nav-link" title="Terms and conditions" href="/terms">Terms and conditions</a>
+        <a class="nav-link footer-nav-link" title="Cookie policy" href="/cookies">Cookie policy</a>
+        <a rel="external" target="_blank" title="Product of NodeArt" class="nav-link footer-nav-link" href="https://nodeart.io"
           >Product of NodeArt</a>
       </nav>
       <div class="footer-social-mobile">
-        <a href="https://www.facebook.com/mailcheck.co/" class="footer-social-link">
+        <a
+          href="https://www.facebook.com/mailcheck.co/"
+          target="_blank"
+          rel="external"
+          title="Facebook page"
+          class="footer-social-link">
           <img
             width="18"
             height="18"
@@ -33,7 +40,12 @@
             src="/assets/img/icon-facebook.svg"
             alt="Facebook" />
         </a>
-        <a href="https://www.linkedin.com/company/mailcheck/" class="footer-social-link">
+        <a
+          href="https://www.linkedin.com/company/mailcheck/"
+          target="_blank"
+          rel="external"
+          title="LinkedIn page"
+          class="footer-social-link">
           <img
             width="18"
             height="18"
@@ -41,7 +53,12 @@
             src="/assets/img/icon-linkedin.svg"
             alt="LinkedIn" />
         </a>
-        <a href="https://twitter.com/mailcheckco" class="footer-social-link">
+        <a
+          href="https://twitter.com/mailcheckco"
+          target="_blank"
+          rel="external"
+          title="Twitter page"
+          class="footer-social-link">
           <img
             width="18"
             height="18"
@@ -49,7 +66,12 @@
             src="/assets/img/icon-twitter.svg"
             alt="Twitter" />
         </a>
-        <a href="https://github.com/MailCheck-co" class="footer-social-link">
+        <a
+          href="https://github.com/MailCheck-co"
+          target="_blank"
+          rel="external"
+          title="GitHub page"
+          class="footer-social-link">
           <img
             width="18"
             height="18"
@@ -62,7 +84,7 @@
     <div class="footer-bottom">
       <div class="footer-info left">
         <div class="footer-info-item">
-          <img class="footer-info-logo" src="/assets/img/es-logo.svg" alt="" />
+          <img class="footer-info-logo" src="/assets/img/es-logo.svg" alt="logo" />
           <p class="footer-info-text">
             GDPR Compliant<br />
             We will never share your data.
@@ -82,6 +104,8 @@
           <a
             href="https://www.facebook.com/mailcheck.co/"
             target="_blank"
+            rel="external"
+            title="Facebook page"
             class="footer-social-link">
             <img
               width="18"
@@ -93,6 +117,8 @@
           <a
             href="https://www.linkedin.com/company/mailcheck//"
             target="_blank"
+            rel="external"
+            title="LinkedIn page"
             class="footer-social-link">
             <img
               width="18"
@@ -101,7 +127,12 @@
               src="/assets/img/icon-linkedin.svg"
               alt="LinkedIn" />
           </a>
-          <a href="https://twitter.com/mailcheckco" target="_blank" class="footer-social-link">
+          <a
+            href="https://twitter.com/mailcheckco"
+            target="_blank"
+            rel="external"
+            title="Twitter page"
+            class="footer-social-link">
             <img
               width="18"
               height="18"
@@ -109,7 +140,12 @@
               src="/assets/img/icon-twitter.svg"
               alt="Twitter" />
           </a>
-          <a href="https://github.com/MailCheck-co" target="_blank" class="footer-social-link">
+          <a
+            href="https://github.com/MailCheck-co"
+            target="_blank"
+            rel="external"
+            title="GitHub page"
+            class="footer-social-link">
             <img
               width="18"
               height="18"

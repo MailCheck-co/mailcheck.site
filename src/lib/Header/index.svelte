@@ -28,15 +28,15 @@
 
 <header role="banner">
   <div class="wrapper-header">
-    <a sveltekit:prefetch class="logo" href="/">
+    <a class="logo" href="/" title="logo">
       <img src={logo} width="138" height="26" alt="mailcheck logo" />
     </a>
     <nav class="header-nav" role="navigation">
-      <a sveltekit:prefetch class="nav-link" href="/#features">Features</a>
-      <a sveltekit:prefetch class="nav-link" href="/#pricing">Pricing</a>
-      <a sveltekit:prefetch class="nav-link" href="/#contact-us">Contact Us</a>
-      <a sveltekit:prefetch class="nav-link" href="/blog">Blog</a>
-      <a sveltekit:prefetch class="nav-link" href="/faq">FAQ</a>
+      <a class="nav-link" title="features" href="/#features">Features</a>
+      <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
+      <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
+      <a class="nav-link" title="blog" href="/blog">Blog</a>
+      <a class="nav-link" title="faq" href="/faq">FAQ</a>
     </nav>
     <div>
       <select class="select" on:blur={onLangSelect}>
@@ -44,7 +44,14 @@
         <option value="es">es</option>
         <option value="ru">ru</option>
       </select>
-      <a rel="external" href="https://app.mailcheck.co/" class="btn btn-sign-in"> sign in </a>
+      <a
+        rel="external"
+        target="_blank"
+        href="https://app.mailcheck.co/"
+        class="btn btn-sign-in"
+        title="sign in">
+        sign in
+      </a>
     </div>
   </div>
 </header>
@@ -59,12 +66,17 @@
   on:click={() => (open = !open)}
   role="navigation"
   id="mobile-menu">
-  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#features">Features</a>
-  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#pricing">Pricing</a>
-  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#contact-us">Contact Us</a>
-  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/blog">Blog</a>
-  <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/faq">FAQ</a>
-  <a rel="external" href="https://app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
+  <a class="nav-link mobile-menu-links" title="features" href="/#features">Features</a>
+  <a class="nav-link mobile-menu-links" title="pricing" href="/#pricing">Pricing</a>
+  <a class="nav-link mobile-menu-links" title="contact us" href="/#contact-us">Contact Us</a>
+  <a class="nav-link mobile-menu-links" title="blog" href="/blog">Blog</a>
+  <a class="nav-link mobile-menu-links" title="faq" href="/faq">FAQ</a>
+  <a
+    rel="external"
+    href="https://app.mailcheck.co/"
+    target="_blank"
+    title="sign in"
+    class="btn btn-sign-in mobile-btn">sign in</a>
   <select class="select-mobile mobile-menu-links" on:blur={onLangSelect}>
     <option value="en">en</option>
     <option value="es">es</option>

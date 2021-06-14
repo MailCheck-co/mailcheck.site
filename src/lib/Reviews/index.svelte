@@ -47,7 +47,8 @@
           <a
             href="https://www.producthunt.com/posts/mailcheck"
             target="_blank"
-            rel="noopener nofollow"
+            rel="external"
+            title="Read Reviews"
             class="reviews-item-link btn">READ REVIEWS</a>
         </div>
         <div class="reviews-item">
@@ -69,7 +70,8 @@
           <a
             href="https://betalist.com/startups/mailcheck"
             target="_blank"
-            rel="noopener nofollow"
+            rel="external"
+            title="Read Reviews"
             class="reviews-item-link btn">READ REVIEWS</a>
         </div>
         <div class="reviews-item">
@@ -109,7 +111,8 @@
           <a
             href="https://www.capterra.com/p/195397/Mailcheck/"
             target="_blank"
-            rel="noopener nofollow"
+            rel="external"
+            title="Read Reviews"
             class="reviews-item-link btn">READ REVIEWS</a>
         </div>
       </div>

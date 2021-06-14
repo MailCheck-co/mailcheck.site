@@ -207,9 +207,9 @@
     </p>
     <div class="emails-block">
       <div class="main-buttons">
-        <a rel="external" href="https://app.mailcheck.co/" class="btn btn-live-demo"
+        <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-live-demo"
           >GET FREE EMAILS NOW</a>
-        <a rel="external" href="https://app.mailcheck.co/" class="btn btn-start">Start</a>
+        <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-start">Start</a>
       </div>
       <div class="verify-email">
         <p class="verify-email-title">Verify email address in real-time!</p>
@@ -297,6 +297,8 @@
                 {#if typeof link.href === 'string'}
                   <a
                     href={link.href}
+                    target="_blank"
+                    rel="external"
                     class={`social-link active ${link.className}`}
                     title={link.title}>&nbsp;</a>
                 {:else}
