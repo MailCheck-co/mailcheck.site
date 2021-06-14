@@ -106,7 +106,7 @@
     .team {
       .team-members {
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         padding-top: var(--size-16);
       }
 

@@ -290,13 +290,13 @@
     }
 
     .footer-bottom {
-      align-items: start;
+      align-items: flex-start;
       padding-bottom: var(--size-30);
     }
 
     .footer-info {
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
     }
 
     .footer-info-item {

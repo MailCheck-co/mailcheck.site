@@ -1,8 +1,4 @@
-<script lang="ts">
-  let element: HTMLElement;
-</script>
-
-<section bind:this={element} id="features">
+<section>
   <div class="section-heading sm-left">
     <h2 class="title">THE FEATURES</h2>
     <p class="section-title-lg">FEATURES</p>
@@ -38,46 +34,48 @@
 </section>
 
 <style lang="scss">
-  .digits {
-    color: var(--primary-accent);
-    font-weight: var(--weight-900);
-    font-size: 30.375rem;
-    line-height: var(--size-42);
-    letter-spacing: var(--size-2);
-    opacity: 0.91;
-  }
-
-  .mail {
-    min-width: 10%;
-    margin: var(--size-20) 0;
-  }
-
-  .item {
-    max-width: 21.56rem;
-    margin: var(--size-6) 0 0 0;
-    text-align: left;
-  }
-
-  .welcome-items {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    max-width: 25rem;
-    list-style: none;
-
-    li {
+  section {
+    .welcome-flex {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
       width: 100%;
-      margin-bottom: var(--size-16);
-    }
-  }
+      max-width: 80rem;
+      margin: 4.69rem auto 0;
 
-  .welcome-flex {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: start;
-    width: 100%;
-    max-width: 80rem;
-    margin: 4.69rem auto 0;
+      .mail {
+        min-width: 10%;
+        margin: var(--size-20) 0;
+      }
+
+      .welcome-items {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        max-width: 25rem;
+        list-style: none;
+
+        li {
+          width: 100%;
+          margin-bottom: var(--size-16);
+
+          .digits {
+            color: var(--primary-accent);
+            font-weight: var(--weight-900);
+            font-size: 30.375rem;
+            line-height: var(--size-42);
+            letter-spacing: var(--size-2);
+            opacity: 0.91;
+          }
+
+          .item {
+            max-width: 21.56rem;
+            margin: var(--size-6) 0 0 0;
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 1024px) {
