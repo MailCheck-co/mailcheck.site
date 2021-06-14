@@ -44,7 +44,7 @@
         <option value="es">es</option>
         <option value="ru">ru</option>
       </select>
-      <a href="https://app.mailcheck.co/" class="btn btn-sign-in"> sign in </a>
+      <a rel="external" href="https://app.mailcheck.co/" class="btn btn-sign-in"> sign in </a>
     </div>
   </div>
 </header>
@@ -64,7 +64,7 @@
   <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/#contact-us">Contact Us</a>
   <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/blog">Blog</a>
   <a sveltekit:prefetch class="nav-link mobile-menu-links" href="/faq">FAQ</a>
-  <a href="https://app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
+  <a rel="external" href="https://app.mailcheck.co/" class="btn btn-sign-in mobile-btn">sign in</a>
   <select class="select-mobile mobile-menu-links" on:blur={onLangSelect}>
     <option value="en">en</option>
     <option value="es">es</option>

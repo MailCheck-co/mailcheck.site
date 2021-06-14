@@ -3,5 +3,5 @@
   import '../app.scss';
 </script>
 
-<Header />k
+<Header />
 <slot />

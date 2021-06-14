@@ -21,7 +21,7 @@
         <a sapper:prefetch class="nav-link footer-nav-link" href="/privacy">Privacy policy</a>
         <a sapper:prefetch class="nav-link footer-nav-link" href="/terms">Terms and conditions</a>
         <a sapper:prefetch class="nav-link footer-nav-link" href="/cookies">Cookie policy</a>
-        <a target="_blank" class="nav-link footer-nav-link" href="//nodeart.io"
+        <a rel="external" target="_blank" class="nav-link footer-nav-link" href="//nodeart.io"
           >Product of NodeArt</a>
       </nav>
       <div class="footer-social-mobile">
