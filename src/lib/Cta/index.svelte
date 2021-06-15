@@ -5,18 +5,13 @@
   let intersecting: boolean;
 </script>
 
-<section 
-  class="cta" 
+<section
+  class="cta"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="container">
     <div class="cta-info">

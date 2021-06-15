@@ -18,8 +18,7 @@ However, sending such a gigantic amount of emails manually is time-consuming and
 
 Email APIs are the most efficient way to send and manage email notifications as well as transactional email messages.
 
-What is an email API?
----------------------
+## What is an email API?
 
 An email API allows applications to access functions offered by the email service providers’ platforms, such as Gmail, Outlook, etc., including generating and sending transactional emails, manipulating templates, moving or editing folders, building drafts, and more. Besides, APIs allow powerful analytics of this data - something you wouldn’t get if integrating with email service providers directly. Email API providers handle protocol matters such as message assembly, message sending, and reporting that would otherwise need to be managed by the application software development team.
 
@@ -43,16 +42,15 @@ Source: Author’s own
 
 Clearly, using an email API having five customers on your list would make no sense. But when you have a whole database of customers, email API is almost inevitable.
 
-The mechanism behind email APIs
--------------------------------
+## The mechanism behind email APIs
 
 This is what generating or sending a notification or transactional email with an email API would look like:
 
-*   A user makes an online purchase or sends a password reset request through a web-based service or a mobile app.
-*   The service or app communicates with an API on the cloud email delivery service and provides such information as the customer email address, the details of the purchase or password reset, and other details.
-*   The email service generates a message with those details, using a template that has already been established for that specific purpose. (Depending on customer's request, your purchase email will probably look and read differently from a password reset email).
-*   The email service transmits the message, taking into account various technical processes required to ensure the email is delivered into the customer’s inbox.
-*   The email service records specific details about the delivery of the message, such as whether it was delivered or failed and why, if it was opened, if the recipient clicked any of the links in the email, etc. Those details are available on a dashboard.
+- A user makes an online purchase or sends a password reset request through a web-based service or a mobile app.
+- The service or app communicates with an API on the cloud email delivery service and provides such information as the customer email address, the details of the purchase or password reset, and other details.
+- The email service generates a message with those details, using a template that has already been established for that specific purpose. (Depending on customer's request, your purchase email will probably look and read differently from a password reset email).
+- The email service transmits the message, taking into account various technical processes required to ensure the email is delivered into the customer’s inbox.
+- The email service records specific details about the delivery of the message, such as whether it was delivered or failed and why, if it was opened, if the recipient clicked any of the links in the email, etc. Those details are available on a dashboard.
 
 With integrated email API applications do not need to transmit fully constructed email messages with header information. They can simply send key:value pairs related directly to the content of the message: subject, body, recipients.
 
@@ -60,8 +58,7 @@ In addition to the above, email API is widely used in email validation processes
 
 ![Mailcheck](../../assets/img/mailcheck.jpg)
 
-Benefits of using email API
----------------------------
+## Benefits of using email API
 
 One of the primary purposes of an email API is to act as an intermediary level between your web service or app and your customers. It assists in tracking metrics such as how many messages were successfully delivered, how many messages were rejected by an internet service provider, reasons for messages not being delivered, how many recipients opened a message, or how many links were clicked. So email API plays an important role in providing a meaningful assessment of your email campaigns.
 

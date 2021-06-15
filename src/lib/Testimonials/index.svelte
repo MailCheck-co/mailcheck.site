@@ -7,7 +7,6 @@
   import zitkaniLogo from '$lib/Testimonials/zitkani.svg';
   import arrowNav from '$lib/Testimonials/arrow-slide-nav.svg';
 
-
   let intersecting: boolean;
   let slider: HTMLElement;
   let active = false;
@@ -64,11 +63,6 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="section-heading sm-left">
     <h2 class="title">TESTIMONIALS</h2>
@@ -87,12 +81,7 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img
-                width="119"
-                height="94"
-                class="slide-logo"
-                src={baglletLogo}
-                alt="Bagllet" />
+              <img width="119" height="94" class="slide-logo" src={baglletLogo} alt="Bagllet" />
             </div>
             <p class="slide-text">
               Been using Mailcheck for about 6 months now. Tried other services before but decided
@@ -108,12 +97,7 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img
-                width="94"
-                height="94"
-                class="slide-logo"
-                src={sammyLogo}
-                alt="Sammy Icon" />
+              <img width="94" height="94" class="slide-logo" src={sammyLogo} alt="Sammy Icon" />
             </div>
             <p class="slide-text">
               "Probably one of the most comfortable validation services, simple in use.
@@ -124,12 +108,7 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img
-                width="94"
-                height="94"
-                class="slide-logo"
-                src={k5Logo}
-                alt="5000 miles" />
+              <img width="94" height="94" class="slide-logo" src={k5Logo} alt="5000 miles" />
             </div>
             <p class="slide-text">
               Name of the brand popped my attention, I decided to try because was planning to launch
@@ -144,12 +123,7 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img
-                width="150"
-                height="88"
-                class="slide-logo"
-                src={zitkaniLogo}
-                alt="Zitkani" />
+              <img width="150" height="88" class="slide-logo" src={zitkaniLogo} alt="Zitkani" />
             </div>
             <p class="slide-text">
               The file I have checked have been accepted by MailerLite, thank you! Your service did
@@ -223,8 +197,8 @@
               justify-content: space-between;
               height: 20rem;
               padding: var(--size-30);
-              background: url('./testimonial-slides-img.png') var(--gradient-4) no-repeat
-                top 10% right 10%;
+              background: url('./testimonial-slides-img.png') var(--gradient-4) no-repeat top 10%
+                right 10%;
               border-radius: var(--size-6);
             }
           }

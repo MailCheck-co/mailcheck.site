@@ -16,8 +16,7 @@ Email marketing trends in 2019 have changed dramatically. However, some things r
 
 In the article we are going to disclose the trends that will take over in 2019. We also are going to define the techniques that do not work anymore. Get rid of them in future so that you can get more trust and reputability from your subscribers.
 
-Full Newsletter Automation
---------------------------
+## Full Newsletter Automation
 
 It usually takes too much time from email marketers to prepare the newsletter. It also happens that email marketing campaigns are being held not regularly but occasionally. Automate the process using the newsletter service and you are going to cut your working hours dramatically.
 
@@ -29,18 +28,16 @@ Mailing services have powerful tools to segmentate and personalize newsletters. 
 
 ![Email Marketing Trends 2019 for Small Business](../../assets/img/email-marketing-trends-img-1.jpg)
 
-Deep Segmentation and Personalization
--------------------------------------
+## Deep Segmentation and Personalization
 
 It always has been a good idea to conduct deep segmentation and personalization for your newsletter. However, it is more than a good idea - it is also possible thanks to the majority of the online tools provided by the email marketing automation tools. We have reviewed personalization in details in [our previous article](/blog/personalize-your-newsletter-and-increase-sales). Still here we will disclose the basic points to consider.
 
-*   personalization can only be successful if you analyse the behaviour and preferences of your users
-*   you also need to consider basic metrics like geo, sex, and age
+- personalization can only be successful if you analyse the behaviour and preferences of your users
+- you also need to consider basic metrics like geo, sex, and age
 
 For example, the Stitch Fix company has figured a good way to increase the open rate and engage users - they are publishing a short test to define the client’s opinion on the future fashion trends. Thus, clients are engaged and afterwards they get the relevant content.
 
-Enforced Spam Control
----------------------
+## Enforced Spam Control
 
 The more time is passing the more it takes from the content creators to think over their strategies and approaches to content. Today the newsletters are much more valuable than the days before when we got tons of irrelevant content even from the good companies which just did not know how to make us engaged.
 
@@ -50,8 +47,7 @@ Email marketers already know that it is a bad idea to subscribe on a mailing som
 
 ![Email Marketing Trends 2019 for Small Business](../../assets/img/email-marketing-trends-img-2.jpg)
 
-Interaction and Gamification
-----------------------------
+## Interaction and Gamification
 
 Gamification is a fresh trend that can bring you outstanding results. Instead of the standard letters with the text content you can do something more, something that is not really spread out among the email marketers but surely will become soon - make your letters interactive and implement a couple of gamification features. Animation, games, and quizzes should become the part of your content marketing strategy.
 

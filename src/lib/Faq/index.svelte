@@ -6,18 +6,13 @@
   let intersecting: boolean;
 </script>
 
-<section 
+<section
   class="frequent-questions"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="wrapper-questions">
     <h3 class="title-small">FAQ</h3>

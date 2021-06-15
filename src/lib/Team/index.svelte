@@ -4,22 +4,17 @@
   import SeregaAva from '$lib/Team/serega-karetnik.png';
   import KonstantinAva from '$lib/Team/konstantin-nosov.png';
   import FaraAva from '$lib/Team/fara-muhammadiev.png';
-  
+
   let intersecting: boolean;
 </script>
 
-<section 
+<section
   class="team"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="container">
     <div class="section-wrapper">
@@ -63,7 +58,7 @@
 <style lang="scss">
   .team {
     @include intersection;
-    
+
     .team-members {
       display: flex;
       justify-content: space-between;

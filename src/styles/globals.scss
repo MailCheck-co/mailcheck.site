@@ -256,7 +256,7 @@ body {
     height: 0.08rem;
     background: var(--primary-white);
     transition: 0.3s;
-    content: "";
+    content: '';
   }
 
   &:hover::after {

@@ -1,16 +1,6 @@
-<style lang="scss">
-  // .article-title {
-  //   color: var(--primary-white);
-  // }
-
-  // .article-snippet {
-  //   text-indent: initial;
-  // }
-</style>
-
 <script lang="ts">
-  import ContactUs from "$lib/ContactUs/index.svelte";
-  import Seo from "$lib/Seo/index.svelte";
+  import ContactUs from '$lib/ContactUs/index.svelte';
+  import Seo from '$lib/Seo/index.svelte';
 
   // export let posts: {
   //   slug: string;
@@ -20,7 +10,7 @@
   //   readingTime: string;
   //   snippet: any;
   // }[];
-  export let desc = "Blog";
+  export let desc = 'Blog';
 </script>
 
 <Seo {desc} title="Blog" />
@@ -47,3 +37,13 @@
 </main>
 
 <ContactUs />
+
+<style lang="scss">
+  // .article-title {
+  //   color: var(--primary-white);
+  // }
+
+  // .article-snippet {
+  //   text-indent: initial;
+  // }
+</style>

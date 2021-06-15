@@ -6,18 +6,13 @@
   let intersecting: boolean;
 </script>
 
-<section 
+<section
   id="features"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="section-heading sm-left">
     <h2 class="title">THE FEATURES</h2>

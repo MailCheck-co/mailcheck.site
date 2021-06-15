@@ -5,18 +5,13 @@
   let intersecting: boolean;
 </script>
 
-<section 
+<section
   class="affiliate"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="section-heading sm-left">
     <h3 class="title-small">affiliate Program</h3>

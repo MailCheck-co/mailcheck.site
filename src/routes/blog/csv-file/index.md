@@ -20,8 +20,7 @@ The CSV files are responsible for ensuring the liaison with various systems, fac
 
 You should also note, that each line in a CSV file is a separate spreadsheet line. The value of the chosen column is a value that is delimited with a comma. If these values are contain reserved symbols, than we should use double quotes as a separator. Nonetheless, a similar data format is used by various software, some of which, use semicolon as a separator.
 
-CSV's file structure
---------------------
+## CSV's file structure
 
 The structure of a CSV file is quite simple. As was mentioned above, the content of a file is a data delimited by commas. So, the structure, for example, can be the following:
 
@@ -35,8 +34,7 @@ Each CSV file can contain a various number of lines and rows as well as be more 
 
 The key feature of Comma Separated Values File is simplicity that can be used for further work with the given file.
 
-How to create a CSV file
-------------------------
+## How to create a CSV file
 
 A CSV file can be processed by a text editor. The list of software is pretty significant in size, among those are: Microsoft Office, Microsoft Works, Corel WordPerfect Office X6, OpenOffice Calc, Google Sheets, and Notepad.
 
@@ -49,8 +47,7 @@ To create a CSV file (with spreadsheet software) please follow the instructions:
 
 The process of creating a CSV file with a Notepad is similar.
 
-How to open a CSV file
-----------------------
+## How to open a CSV file
 
 Firstly, you need to open a file with a CSV format with a double click. When file association has been configured properly without any errors or warnings, you can open a file with a software mentioned above, and set one of these applications as a default option.
 
@@ -58,8 +55,7 @@ Also, there are some spreadsheet programs that allow the user to open such files
 
 All you need is right-click the CSV file and choose Open With > \[Select a desirable option\].
 
-How to convert a file to CSV and from CSV format
-------------------------------------------------
+## How to convert a file to CSV and from CSV format
 
 Be careful when converting a file to a CSV format. You should remember that you can't rename a text file with a .TXT file format to a .CSV file. This action is unable to change a file type. In this case, you should use specific software for this purpose. There is a significant number of software including online services as well as Microsoft Office, Microsoft Works, Corel WordPerfect Office X6, OpenOffice Calc, Google Sheets or others.
 

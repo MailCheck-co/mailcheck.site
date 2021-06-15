@@ -1,16 +1,17 @@
 **Note that despite this file having an md extension, it can support all Svelte language features (like scripting). Do not import untrusted or user-created markdown files.**
 
-*This markdown sample was taken from [here](https://gist.github.com/rt2zz/e0a1d6ab2682d2c47746950b84c0b6ee).*
+_This markdown sample was taken from [here](https://gist.github.com/rt2zz/e0a1d6ab2682d2c47746950b84c0b6ee)._
 
 # An h1 header
 
 Paragraphs are separated by a blank line.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
 look like:
-  * this one
-  * that one
-  * the other one
+
+- this one
+- that one
+- the other one
 
 Note that --- not considering the asterisk --- the actual text
 content starts at 4-columns in.
@@ -25,20 +26,22 @@ Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
 Unicode is supported. ☺
 
-
 ## An h2 header
 
 Here's a numbered list:
- 1. first item
- 2. second item
- 3. third item
+
+1.  first item
+2.  second item
+3.  third item
 
 By the way, you can write code in delimited blocks:
+
 ```
 define foobar() {
     print "Welcome to flavor country!";
 }
 ```
+
 (which makes copying & pasting easier). You can optionally mark the
 delimited block for syntax highlighting when you include the CSS for a Prism theme:
 
@@ -54,12 +57,13 @@ for i in range(10):
 ### An h3 header
 
 Now, a nested list:
- 1. First, get these ingredients:
-      * carrots
-      * celery
-      * lentils
- 2. Boil some water.
- 3. Dump everything in the pot and follow
+
+1.  First, get these ingredients:
+    - carrots
+    - celery
+    - lentils
+2.  Boil some water.
+3.  Dump everything in the pot and follow
     this algorithm:
     ```
     find wooden spoon

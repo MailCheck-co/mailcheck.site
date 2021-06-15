@@ -202,18 +202,13 @@
   };
 </script>
 
-<div 
-  class="container" 
+<div
+  class="container"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="wrapper-main sm-left">
     <h1 class="title">Validate your mailing list in one click</h1>
@@ -249,11 +244,7 @@
               </div>
             {:else}
               <button type="submit" class="btn-verify-email">
-                <img
-                  src={arrowIcon}
-                  width="20"
-                  height="16"
-                  alt="Verify email" />
+                <img src={arrowIcon} width="20" height="16" alt="Verify email" />
               </button>
             {/if}
           </div>

@@ -24,8 +24,7 @@ As a vivid example, many food stores have implemented online ordering as well as
 
 It is not a secret, that online marketing is probably the most utilized tool when trying to get the message across to the consumer. But during the post-pandemic times business owners may consider pushing for it even harder.
 
-So why is it so important to focus on email marketing during and after the coronavirus days and what is it that will change in the way we run our email marketing campaigns in the post-pandemic times?
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## So why is it so important to focus on email marketing during and after the coronavirus days and what is it that will change in the way we run our email marketing campaigns in the post-pandemic times?
 
 Here’s some statistics to digest: according to Statista 2020, in 2019, global email users constituted the number of [3.9 billion](//www.statista.com/statistics/255080/number-of-e-mail-users-worldwide/). This figure is set to grow to [4.3 billion users](//www.statista.com/statistics/255080/number-of-e-mail-users-worldwide/) in 2023 ([Oberlo](//www.oberlo.com/blog/email-marketing-statistics)). This is almost half of the world population! And with the world in lockdown that number could grow even more. This statistics undoubtedly proves that email marketing is an opportunity not to be underrated.
 

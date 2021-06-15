@@ -10,18 +10,13 @@
   let intersecting: boolean;
 </script>
 
-<section 
+<section
   class="reviews"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="section-heading">
     <h2 class="title">Our customer's reviews</h2>
@@ -31,38 +26,13 @@
     <div class="section-wrapper sm-left">
       <div class="reviews-list">
         <div class="reviews-item">
-          <img
-            width="170"
-            height="40"
-            src={iconProductHunt}
-            alt=""
-            class="reviews-item-logo" />
+          <img width="170" height="40" src={iconProductHunt} alt="" class="reviews-item-logo" />
           <div class="reviews-item-rating">
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 1 star" />
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 2 stars" />
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 3 stars" />
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 4 stars" />
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 5 stars" />
+            <img src={iconStar} width="25" height="25" alt="rating 1 star" />
+            <img src={iconStar} width="25" height="25" alt="rating 2 stars" />
+            <img src={iconStar} width="25" height="25" alt="rating 3 stars" />
+            <img src={iconStar} width="25" height="25" alt="rating 4 stars" />
+            <img src={iconStar} width="25" height="25" alt="rating 5 stars" />
           </div>
           <a
             href="https://www.producthunt.com/posts/mailcheck"
@@ -72,20 +42,10 @@
             class="reviews-item-link btn">READ REVIEWS</a>
         </div>
         <div class="reviews-item">
-          <img
-            width="120"
-            height="40"
-            src={iconBeta}
-            alt=""
-            class="reviews-item-logo" />
+          <img width="120" height="40" src={iconBeta} alt="" class="reviews-item-logo" />
           <div class="reviews-item-likes">
             <span class="rating-counter">11</span>
-            <img
-              width="25"
-              height="25"
-              src={iconLike}
-              alt=""
-              class="reviews-like-icon" />
+            <img width="25" height="25" src={iconLike} alt="" class="reviews-like-icon" />
           </div>
           <a
             href="https://betalist.com/startups/mailcheck"
@@ -95,38 +55,13 @@
             class="reviews-item-link btn">READ REVIEWS</a>
         </div>
         <div class="reviews-item">
-          <img
-            width="145"
-            height="32"
-            src={iconCapterra}
-            alt=""
-            class="reviews-item-logo" />
+          <img width="145" height="32" src={iconCapterra} alt="" class="reviews-item-logo" />
           <div class="reviews-item-rating">
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 1 star" />
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 2 stars" />
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 3 stars" />
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 4 stars" />
-            <img
-              src={iconStar}
-              width="25"
-              height="25"
-              alt="rating 5 stars" />
+            <img src={iconStar} width="25" height="25" alt="rating 1 star" />
+            <img src={iconStar} width="25" height="25" alt="rating 2 stars" />
+            <img src={iconStar} width="25" height="25" alt="rating 3 stars" />
+            <img src={iconStar} width="25" height="25" alt="rating 4 stars" />
+            <img src={iconStar} width="25" height="25" alt="rating 5 stars" />
           </div>
           <a
             href="https://www.capterra.com/p/195397/Mailcheck/"
@@ -143,7 +78,7 @@
 <style lang="scss">
   .reviews {
     @include intersection;
-    
+
     .reviews-list {
       display: flex;
       align-items: center;

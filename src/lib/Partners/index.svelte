@@ -10,18 +10,13 @@
   let intersecting: boolean;
 </script>
 
-<section 
-  class="partners" 
+<section
+  class="partners"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
-  on:leave={(event) => {
-    const { inView, unobserve } = event.detail;
-    intersecting = inView;
-    unobserve();
   }}>
   <div class="section-heading sm-left">
     <h2 class="title">YOU’RE IN GOOD COMPANY</h2>
@@ -29,44 +24,19 @@
   </div>
   <div class="partners-list">
     <div class="partners-list-item">
-      <img
-        width="150"
-        height="60"
-        src={k5Logo}
-        alt="5000 miles"
-        class="partners-logo" />
+      <img width="150" height="60" src={k5Logo} alt="5000 miles" class="partners-logo" />
     </div>
     <div class="partners-list-item">
-      <img
-        width="150"
-        height="60"
-        src={baglletLogo}
-        alt="Bagllet"
-        class="partners-logo" />
+      <img width="150" height="60" src={baglletLogo} alt="Bagllet" class="partners-logo" />
     </div>
     <div class="partners-list-item">
-      <img
-        width="150"
-        height="19"
-        src={acellLogo}
-        alt="Acell Mail"
-        class="partners-logo" />
+      <img width="150" height="19" src={acellLogo} alt="Acell Mail" class="partners-logo" />
     </div>
     <div class="partners-list-item">
-      <img
-        width="150"
-        height="60"
-        src={sammyLogo}
-        alt="Sammy-logo"
-        class="partners-logo" />
+      <img width="150" height="60" src={sammyLogo} alt="Sammy-logo" class="partners-logo" />
     </div>
     <div class="partners-list-item">
-      <img
-        width="150"
-        height="60"
-        src={zitkaniLogo}
-        alt="Zitkani"
-        class="partners-logo" />
+      <img width="150" height="60" src={zitkaniLogo} alt="Zitkani" class="partners-logo" />
     </div>
   </div>
 </section>

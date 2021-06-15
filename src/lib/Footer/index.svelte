@@ -6,8 +6,6 @@
   import iconLinkedin from '$lib/Footer/icon-linkedin.svg';
   import iconGitHub from '$lib/Footer/icon-github.svg';
   import iconMoneyBack from '$lib/Footer/icon-money-back.svg';
-
-
 </script>
 
 <footer class="footer">
@@ -77,12 +75,7 @@
           rel="external"
           title="Twitter page"
           class="footer-social-link">
-          <img
-            width="18"
-            height="18"
-            class="footer-social-icon"
-            src={iconTwitter}
-            alt="Twitter" />
+          <img width="18" height="18" class="footer-social-icon" src={iconTwitter} alt="Twitter" />
         </a>
         <a
           href="https://github.com/MailCheck-co"
@@ -90,12 +83,7 @@
           rel="external"
           title="GitHub page"
           class="footer-social-link">
-          <img
-            width="18"
-            height="18"
-            class="footer-social-icon"
-            src={iconGitHub}
-            alt="GitHub" />
+          <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
         </a>
       </div>
     </div>
@@ -164,12 +152,7 @@
             rel="external"
             title="GitHub page"
             class="footer-social-link">
-            <img
-              width="18"
-              height="18"
-              class="footer-social-icon"
-              src={iconGitHub}
-              alt="GitHub" />
+            <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
           </a>
         </div>
       </div>
