@@ -1,8 +1,22 @@
 <script lang="ts">
-  let element: HTMLElement;
+  import { inview } from 'svelte-inview';
+
+  let intersecting: boolean;
 </script>
 
-<section class="team" bind:this={element}>
+<section 
+  class="team"
+  class:intersecting
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="container">
     <div class="section-wrapper">
       <div class="section-heading sm-left">
@@ -44,6 +58,8 @@
 
 <style lang="scss">
   .team {
+    @include intersection;
+    
     .team-members {
       display: flex;
       justify-content: space-between;

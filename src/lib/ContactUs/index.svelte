@@ -1,4 +1,10 @@
 <script lang="ts">
+  import { inview } from 'svelte-inview';
+
+  let intersecting: boolean;
+  // const inviewOptions = {
+  //   unobserveOnEnter: true,
+  // };
   let isValid: boolean;
   let email = '';
   let isOpen = false;
@@ -54,7 +60,19 @@
   };
 </script>
 
-<section class:intersecting={true} id="contact-us">
+<section 
+  class:intersecting 
+  id="contact-us" 
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="container">
     <form class="contact-form" bind:this={contactForm} on:submit={onSubmit}>
       <h2 class="title title-contact">contact us</h2>

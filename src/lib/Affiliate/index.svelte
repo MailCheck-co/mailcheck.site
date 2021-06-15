@@ -1,4 +1,22 @@
-<section class="affiliate" class:intersecting={true}>
+<script lang="ts">
+  import { inview } from 'svelte-inview';
+
+  let intersecting: boolean;
+</script>
+
+<section 
+  class="affiliate"
+  class:intersecting
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="section-heading sm-left">
     <h3 class="title-small">affiliate Program</h3>
     <p class="section-title-lg">affiliate</p>
@@ -19,10 +37,9 @@
 <style lang="scss">
   .affiliate {
     @include intersection;
-    padding: 7.5rem 0 var(--size-60);
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    opacity: 1;
 
+    padding: 7.5rem 0 var(--size-60);
+    
     .section-heading {
       position: relative;
       padding-bottom: var(--size-50);

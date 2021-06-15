@@ -1,4 +1,22 @@
-<section id="features" class:intersecting={true}>
+<script lang="ts">
+  import { inview } from 'svelte-inview';
+
+  let intersecting: boolean;
+</script>
+
+<section 
+  id="features"
+  class:intersecting
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="section-heading sm-left">
     <h2 class="title">THE FEATURES</h2>
     <p class="section-title-lg">FEATURES</p>

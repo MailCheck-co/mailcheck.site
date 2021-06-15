@@ -1,5 +1,7 @@
 <script type="ts">
-  let element: HTMLElement;
+  import { inview } from 'svelte-inview';
+
+  let intersecting: boolean;
   let slider: HTMLElement;
   let active = false;
   let startX: number;
@@ -48,7 +50,19 @@
   }
 </script>
 
-<section class="testimonials" bind:this={element}>
+<section
+  class="testimonials"
+  class:intersecting
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="section-heading sm-left">
     <h2 class="title">TESTIMONIALS</h2>
     <p class="section-title-lg">TESTIMONIALS</p>
@@ -149,63 +163,65 @@
 </section>
 
 <style lang="scss">
-  .section-wrapper {
-    position: relative;
-  }
-
   .testimonials {
+    @include intersection;
+
     padding-top: 7.5rem;
     color: var(--primary-white);
-  }
 
-  .testimonials-container {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    overflow: hidden;
-  }
+    .section-wrapper {
+      position: relative;
 
-  .testimonials-wrapper {
-    display: grid;
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 26.25rem);
-    height: 23.75rem;
-    margin-left: var(--size-10);
-    padding: 0;
-    overflow-x: scroll;
-    touch-action: manipulation;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 1rem;
+      .testimonials-container {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        overflow: hidden;
 
-    &.active {
-      scroll-snap-type: unset;
-      scroll-behavior: smooth;
-    }
+        .testimonials-wrapper {
+          display: grid;
+          grid-row-gap: 1rem;
+          grid-column-gap: 1rem;
+          grid-template-rows: 1fr;
+          grid-template-columns: repeat(4, 26.25rem);
+          height: 23.75rem;
+          margin-left: var(--size-10);
+          padding: 0;
+          overflow-x: scroll;
+          touch-action: manipulation;
+          scroll-behavior: smooth;
+          scroll-snap-type: x mandatory;
+          scroll-padding: 1rem;
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+          &.active {
+            scroll-snap-type: unset;
+            scroll-behavior: smooth;
+          }
 
-    .testimonial-slide {
-      display: inline-block;
-      width: 26.25rem;
-      height: 23.75rem;
-      font-size: var(--size-0);
-      border-radius: var(--br-3);
-      scroll-snap-align: start;
+          &::-webkit-scrollbar {
+            display: none;
+          }
 
-      .slider-item {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        height: 20rem;
-        padding: var(--size-30);
-        background: url('/assets/img/testimonial-slides-img.png') var(--gradient-4) no-repeat top
-          10% right 10%;
-        border-radius: var(--size-6);
+          .testimonial-slide {
+            display: inline-block;
+            width: 26.25rem;
+            height: 23.75rem;
+            font-size: var(--size-0);
+            border-radius: var(--br-3);
+            scroll-snap-align: start;
+
+            .slider-item {
+              display: flex;
+              flex-flow: column nowrap;
+              justify-content: space-between;
+              height: 20rem;
+              padding: var(--size-30);
+              background: url('/assets/img/testimonial-slides-img.png') var(--gradient-4) no-repeat
+                top 10% right 10%;
+              border-radius: var(--size-6);
+            }
+          }
+        }
       }
     }
   }
@@ -284,38 +300,38 @@
   @media all and (max-width: 768px) {
     .testimonials {
       padding-top: 5.625rem;
-    }
 
-    .testimonials-container {
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: 9;
-        display: block;
-        width: 20%;
-        height: 100%;
-        content: '';
-        pointer-events: none;
-      }
+      .testimonials-container {
+        &::before,
+        &::after {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          z-index: 9;
+          display: block;
+          width: 20%;
+          height: 100%;
+          content: '';
+          pointer-events: none;
+        }
 
-      &::before {
-        left: 0;
-        background-image: var(--slider-overlay-gradient-left);
-      }
+        &::before {
+          left: 0;
+          background-image: var(--slider-overlay-gradient-left);
+        }
 
-      &::after {
-        right: 0;
-        background-image: var(--slider-overlay-gradient-right);
-      }
+        &::after {
+          right: 0;
+          background-image: var(--slider-overlay-gradient-right);
+        }
 
-      .testimonials-wrapper {
-        padding: 0;
+        .testimonials-wrapper {
+          padding: 0;
 
-        .testimonial-slide {
-          .slider-item {
-            padding: var(--size-30) 6.25rem;
+          .testimonial-slide {
+            .slider-item {
+              padding: var(--size-30) 6.25rem;
+            }
           }
         }
       }

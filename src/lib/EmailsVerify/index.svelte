@@ -1,10 +1,12 @@
 <script lang="ts">
   import Progress from '$lib/Progress/index.svelte';
+  import { inview } from 'svelte-inview';
 
   export let isChecking = false;
   export let isChecked = false;
   export let validityClass = '';
 
+  let intersecting: boolean;
   let emailResult = '';
   let existsResult = '';
   let smtpResult = '';
@@ -198,7 +200,19 @@
   };
 </script>
 
-<div class="container" class:intersecting={true}>
+<div 
+  class="container" 
+  class:intersecting
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="wrapper-main sm-left">
     <h1 class="title">Validate your mailing list in one click</h1>
     <p class="main-text">

@@ -1,8 +1,27 @@
-<section class="cta" class:intersecting={true}>
+<script lang="ts">
+  import { inview } from 'svelte-inview';
+
+  let intersecting: boolean;
+</script>
+
+<section 
+  class="cta" 
+  class:intersecting
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="container">
     <div class="cta-info">
       <h2 class="cta-text">Verify 10-100 emails for free!</h2>
-      <a rel="external" target="_blank" href="https://app.mailcheck.co" class="btn btn-start">GET STARTED</a>
+      <a rel="external" target="_blank" href="https://app.mailcheck.co" class="btn btn-start"
+        >GET STARTED</a>
     </div>
   </div>
 </section>

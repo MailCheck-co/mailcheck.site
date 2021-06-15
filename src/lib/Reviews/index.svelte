@@ -1,8 +1,22 @@
 <script lang="ts">
-  let element: HTMLElement;
+  import { inview } from 'svelte-inview';
+
+  let intersecting: boolean;
 </script>
 
-<section class="reviews" bind:this={element}>
+<section 
+  class="reviews"
+  class:intersecting
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="section-heading">
     <h2 class="title">Our customer's reviews</h2>
     <p class="section-title-lg">REVIEWS</p>
@@ -122,6 +136,8 @@
 
 <style lang="scss">
   .reviews {
+    @include intersection;
+    
     .reviews-list {
       display: flex;
       align-items: center;

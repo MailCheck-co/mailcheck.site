@@ -1,4 +1,22 @@
-<section class:intersecting={true} class="choose-your">
+<script lang="ts">
+  import { inview } from 'svelte-inview';
+
+  let intersecting: boolean;
+</script>
+
+<section 
+  class="choose-your"
+  class:intersecting
+  use:inview
+  on:enter={(event) => {
+    const { inView } = event.detail;
+    intersecting = inView;
+  }}
+  on:leave={(event) => {
+    const { inView, unobserve } = event.detail;
+    intersecting = inView;
+    unobserve();
+  }}>
   <div class="container">
     <div class="section-heading sm-left">
       <h2 class="title">WHY DO YOU CHOOSE MAILCHECK?</h2>
