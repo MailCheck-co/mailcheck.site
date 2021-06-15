@@ -1,5 +1,6 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
+  import { inviewOptions } from '$lib/site-data';
 
   let intersecting: boolean;
 </script>
@@ -7,7 +8,7 @@
 <section 
   class="cta" 
   class:intersecting
-  use:inview
+  use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
@@ -40,6 +41,7 @@
     }
 
     &-text {
+      color: var(--primary-white);
       font-weight: var(--weight-900);
       font-size: var(--size-32);
       letter-spacing: 0.05rem;

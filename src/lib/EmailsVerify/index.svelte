@@ -1,6 +1,7 @@
 <script lang="ts">
   import Progress from '$lib/Progress/index.svelte';
   import { inview } from 'svelte-inview';
+  import { inviewOptions } from '$lib/site-data';
 
   export let isChecking = false;
   export let isChecked = false;
@@ -203,7 +204,7 @@
 <div 
   class="container" 
   class:intersecting
-  use:inview
+  use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;

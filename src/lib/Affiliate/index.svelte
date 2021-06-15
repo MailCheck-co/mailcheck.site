@@ -1,5 +1,6 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
+  import { inviewOptions } from '$lib/site-data';
 
   let intersecting: boolean;
 </script>
@@ -7,7 +8,7 @@
 <section 
   class="affiliate"
   class:intersecting
-  use:inview
+  use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
@@ -39,7 +40,7 @@
     @include intersection;
 
     padding: 7.5rem 0 var(--size-60);
-    
+
     .section-heading {
       position: relative;
       padding-bottom: var(--size-50);

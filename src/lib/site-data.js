@@ -6,3 +6,7 @@ export default {
   email: 'support@mailcheck.co',
   desc: 'An application to clean your subscription list from bounces, and enrich data with customers'
 };
+
+export const inviewOptions = {
+  unobserveOnEnter: true,
+};

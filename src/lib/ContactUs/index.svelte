@@ -1,10 +1,8 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
+  import { inviewOptions } from '$lib/site-data';
 
   let intersecting: boolean;
-  // const inviewOptions = {
-  //   unobserveOnEnter: true,
-  // };
   let isValid: boolean;
   let email = '';
   let isOpen = false;
@@ -63,7 +61,7 @@
 <section 
   class:intersecting 
   id="contact-us" 
-  use:inview
+  use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
@@ -127,7 +125,7 @@
       z-index: -1;
       display: block;
       width: 100%;
-      height: 550px;
+      height: 35rem;
       padding: 7.3rem 0;
       background: url('/assets/img/city.png') no-repeat top 15% center;
       background-size: cover;
