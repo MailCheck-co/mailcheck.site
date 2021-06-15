@@ -1,8 +1,8 @@
 <script lang="ts">
-  // import Seo from "../components/Seo.svelte";
+  import Seo from "$lib/Seo/index.svelte";
 </script>
 
-<!--<Seo title="Not Found" noindex={true} />-->
+<Seo desc="Requested page wasn't found" title="Not Found" noindex={true} />
 <svelte:head>
   <meta http-equiv="refresh" content="5;https://mailcheck.co/" />
 </svelte:head>

@@ -1,9 +1,21 @@
+<script lang="ts">
+  import esLogo from '$lib/Footer/es-logo.svg';
+  import mailcheckLogo from '$lib/Footer/mailcheck-logo.svg';
+  import iconTwitter from '$lib/Footer/icon-twitter.svg';
+  import iconFacebook from '$lib/Footer/icon-facebook.svg';
+  import iconLinkedin from '$lib/Footer/icon-linkedin.svg';
+  import iconGitHub from '$lib/Footer/icon-github.svg';
+  import iconMoneyBack from '$lib/Footer/icon-money-back.svg';
+
+
+</script>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-logo-copyright">
         <a class="logo2" href="/" title="logo">
-          <img src="/assets/img/mailcheck-logo.svg" width="162" height="27" alt="logo2" /></a>
+          <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a>
         <address class="footer-address">
           Suite 4005 43 Bedford Street,<br />
           London, England, WC2E 9HA
@@ -43,7 +55,7 @@
             width="18"
             height="18"
             class="footer-social-icon"
-            src="/assets/img/icon-facebook.svg"
+            src={iconFacebook}
             alt="Facebook" />
         </a>
         <a
@@ -56,7 +68,7 @@
             width="18"
             height="18"
             class="footer-social-icon"
-            src="/assets/img/icon-linkedin.svg"
+            src={iconLinkedin}
             alt="LinkedIn" />
         </a>
         <a
@@ -69,7 +81,7 @@
             width="18"
             height="18"
             class="footer-social-icon"
-            src="/assets/img/icon-twitter.svg"
+            src={iconTwitter}
             alt="Twitter" />
         </a>
         <a
@@ -82,7 +94,7 @@
             width="18"
             height="18"
             class="footer-social-icon"
-            src="/assets/img/icon-github.svg"
+            src={iconGitHub}
             alt="GitHub" />
         </a>
       </div>
@@ -90,14 +102,14 @@
     <div class="footer-bottom">
       <div class="footer-info left">
         <div class="footer-info-item">
-          <img class="footer-info-logo" src="/assets/img/es-logo.svg" alt="logo" />
+          <img class="footer-info-logo" src={esLogo} alt="logo" />
           <p class="footer-info-text">
             GDPR Compliant<br />
             We will never share your data.
           </p>
         </div>
         <div class="footer-info-item">
-          <img class="footer-info-logo" src="/assets/img/icon-money-back.svg" alt="" />
+          <img class="footer-info-logo" src={iconMoneyBack} alt="40 days money-back guarantee" />
           <p class="footer-info-text">
             40 days<br />
             money-back guarantee
@@ -117,7 +129,7 @@
               width="18"
               height="18"
               class="footer-social-icon"
-              src="/assets/img/icon-facebook.svg"
+              src={iconFacebook}
               alt="Facebook" />
           </a>
           <a
@@ -130,7 +142,7 @@
               width="18"
               height="18"
               class="footer-social-icon"
-              src="/assets/img/icon-linkedin.svg"
+              src={iconLinkedin}
               alt="LinkedIn" />
           </a>
           <a
@@ -143,7 +155,7 @@
               width="18"
               height="18"
               class="footer-social-icon"
-              src="/assets/img/icon-twitter.svg"
+              src={iconTwitter}
               alt="Twitter" />
           </a>
           <a
@@ -156,7 +168,7 @@
               width="18"
               height="18"
               class="footer-social-icon"
-              src="/assets/img/icon-github.svg"
+              src={iconGitHub}
               alt="GitHub" />
           </a>
         </div>

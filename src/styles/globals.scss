@@ -45,6 +45,10 @@ body {
     content: '';
   }
 
+  [id] {
+    scroll-margin-top: 10ex;
+  }
+
   h1,
   h2,
   h3,
@@ -63,7 +67,7 @@ body {
   }
 
   h1 {
-    margin-bottom: 0 0 1em 0;
+    margin: 0 0 1em 0;
     font-size: var(--size-32);
     text-align: center;
   }

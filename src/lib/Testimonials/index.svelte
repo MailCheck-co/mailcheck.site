@@ -1,6 +1,12 @@
 <script type="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$lib/site-data';
+  import k5Logo from '$lib/Testimonials/5k-logo.svg';
+  import baglletLogo from '$lib/Testimonials/bagllet.svg';
+  import sammyLogo from '$lib/Testimonials/sammy-logo.svg';
+  import zitkaniLogo from '$lib/Testimonials/zitkani.svg';
+  import arrowNav from '$lib/Testimonials/arrow-slide-nav.svg';
+
 
   let intersecting: boolean;
   let slider: HTMLElement;
@@ -85,7 +91,7 @@
                 width="119"
                 height="94"
                 class="slide-logo"
-                src="/assets/img/testimonials/bagllet.svg"
+                src={baglletLogo}
                 alt="Bagllet" />
             </div>
             <p class="slide-text">
@@ -106,7 +112,7 @@
                 width="94"
                 height="94"
                 class="slide-logo"
-                src="/assets/img/testimonials/sammy-logo.svg"
+                src={sammyLogo}
                 alt="Sammy Icon" />
             </div>
             <p class="slide-text">
@@ -122,7 +128,7 @@
                 width="94"
                 height="94"
                 class="slide-logo"
-                src="/assets/img/testimonials/5k-logo.svg"
+                src={k5Logo}
                 alt="5000 miles" />
             </div>
             <p class="slide-text">
@@ -142,7 +148,7 @@
                 width="150"
                 height="88"
                 class="slide-logo"
-                src="/assets/img/testimonials/zitkani.svg"
+                src={zitkaniLogo}
                 alt="Zitkani" />
             </div>
             <p class="slide-text">
@@ -155,10 +161,10 @@
       </ul>
     </div>
     <div class="testimonials-button testimonials-button-next" on:click={onNext}>
-      <img src="/assets/img/arrow-slide-nav.svg" width="20" height="20" alt="right" />
+      <img src={arrowNav} width="20" height="20" alt="right" />
     </div>
     <div class="testimonials-button testimonials-button-prev" on:click={onPrev}>
-      <img src="/assets/img/arrow-slide-nav.svg" width="20" height="20" alt="left" />
+      <img src={arrowNav} width="20" height="20" alt="left" />
     </div>
   </div>
 </section>
@@ -217,7 +223,7 @@
               justify-content: space-between;
               height: 20rem;
               padding: var(--size-30);
-              background: url('/assets/img/testimonial-slides-img.png') var(--gradient-4) no-repeat
+              background: url('./testimonial-slides-img.png') var(--gradient-4) no-repeat
                 top 10% right 10%;
               border-radius: var(--size-6);
             }

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$lib/site-data';
+  import mailFloat from '$lib/Features/mail-float.png';
 
   let intersecting: boolean;
 </script>
@@ -24,7 +25,7 @@
     <p class="section-subtitle">We improve our service everyday</p>
   </div>
   <div class="welcome-flex">
-    <img class="mail" src="/assets/img/mail-float.png" width="765" height="575" alt="mail" />
+    <img class="mail" src={mailFloat} width="765" height="575" alt="mail" />
     <ul class="welcome-items">
       <li>
         <span class="digits">01</span>

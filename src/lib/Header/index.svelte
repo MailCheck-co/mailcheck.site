@@ -1,6 +1,6 @@
 <script lang="ts">
   import ToTop from '$lib/ToTop/index.svelte';
-  import logo from './mailcheck-logo.svg';
+  import logo from '$lib/Header/mailcheck-logo.svg';
 
   let open = false;
   let lang = 'en';

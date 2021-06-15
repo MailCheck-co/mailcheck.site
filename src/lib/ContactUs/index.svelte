@@ -127,7 +127,7 @@
       width: 100%;
       height: 35rem;
       padding: 7.3rem 0;
-      background: url('/assets/img/city.png') no-repeat top 15% center;
+      background: url('city.png') no-repeat top 15% center;
       background-size: cover;
       opacity: 0.4;
       content: '';
@@ -278,7 +278,7 @@
     display: none;
     width: 100%;
     height: 100%;
-    background: url('/assets/img/city.png') no-repeat center 50%;
+    background: url('city.png') no-repeat center 50%;
     background-size: 150% 150%;
 
     &.open {

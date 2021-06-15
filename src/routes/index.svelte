@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Seo from '$lib/Seo/index.svelte';
+  // import Seo from '$lib/Seo/index.svelte';
   import EmailsVerify from '$lib/EmailsVerify/index.svelte';
   import Partners from '$lib/Partners/index.svelte';
   import Features from '$lib/Features/index.svelte';
@@ -73,7 +73,7 @@
       display: block;
       width: 100%;
       height: 45.625rem;
-      background: url('/assets/img/lines.svg') no-repeat center;
+      background: url('./lines.svg') no-repeat center;
       background-size: 100% 66%, 40.875rem 46.25rem;
       content: '';
       pointer-events: none;

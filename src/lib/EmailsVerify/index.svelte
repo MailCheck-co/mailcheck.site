@@ -2,6 +2,7 @@
   import Progress from '$lib/Progress/index.svelte';
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$lib/site-data';
+  import arrowIcon from '$lib/EmailsVerify/icon-arrow-right.svg';
 
   export let isChecking = false;
   export let isChecked = false;
@@ -249,7 +250,7 @@
             {:else}
               <button type="submit" class="btn-verify-email">
                 <img
-                  src="/assets/img/icon-arrow-right.svg"
+                  src={arrowIcon}
                   width="20"
                   height="16"
                   alt="Verify email" />
@@ -480,7 +481,7 @@
             z-index: 1;
             width: 6.25rem;
             height: 6.25rem;
-            background-image: url('/assets/img/preloader-bars.svg');
+            background-image: url('./preloader-bars.svg');
             background-repeat: no-repeat;
             background-position: center center;
             transform: translate(-50%, -50%);
@@ -507,55 +508,55 @@
             pointer-events: none;
 
             &.gravatar {
-              background-image: url('/assets/img/icons/gravatar.svg');
+              background-image: url('./icons/gravatar.svg');
             }
 
             &.blogger {
-              background-image: url('/assets/img/icons/blogger.svg');
+              background-image: url('./icons/blogger.svg');
             }
 
             &.facebook {
-              background-image: url('/assets/img/icon-facebook.svg');
+              background-image: url('./icon-facebook.svg');
             }
 
             &.foursquare {
-              background-image: url('/assets/img/icons/foursquare.svg');
+              background-image: url('./icons/foursquare.svg');
             }
 
             &.google {
-              background-image: url('/assets/img/icons/google.svg');
+              background-image: url('./icons/google.svg');
             }
 
             &.linkedin {
-              background-image: url('/assets/img/icons/linkedin.svg');
+              background-image: url('./icons/linkedin.svg');
             }
 
             &.tripit {
-              background-image: url('/assets/img/icons/tripit.svg');
+              background-image: url('./icons/tripit.svg');
             }
 
             &.tumblr {
-              background-image: url('/assets/img/icons/tumblr.svg');
+              background-image: url('./icons/tumblr.svg');
             }
 
             &.twitter {
-              background-image: url('/assets/img/icons/twitter.svg');
+              background-image: url('./icons/twitter.svg');
             }
 
             &.vimeo {
-              background-image: url('/assets/img/icons/vimeo.svg');
+              background-image: url('./icons/vimeo.svg');
             }
 
             &.wordpress {
-              background-image: url('/assets/img/icons/wordpress.svg');
+              background-image: url('./icons/wordpress.svg');
             }
 
             &.youtube {
-              background-image: url('/assets/img/icons/youtube.svg');
+              background-image: url('./icons/youtube.svg');
             }
 
             &.github {
-              background-image: url('/assets/img/icons/github.svg');
+              background-image: url('./icons/github.svg');
             }
 
             &.active {

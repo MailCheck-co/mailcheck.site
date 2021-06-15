@@ -120,7 +120,7 @@
       z-index: -1;
       width: 100%;
       height: 28.625rem;
-      background: url('/assets/img/lines.svg') no-repeat center;
+      background: url('./lines.svg') no-repeat center;
       background-size: cover;
       transform: scaleX(-1);
       content: '';

@@ -1,6 +1,11 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$lib/site-data';
+  import iconLike from '$lib/Reviews/icon-like-heart.svg';
+  import iconStar from '$lib/Reviews/icon-star-rating.svg';
+  import iconProductHunt from '$lib/Reviews/logo-product-hunt.png';
+  import iconBeta from '$lib/Reviews/logo-beta-list.png';
+  import iconCapterra from '$lib/Reviews/logo-capterra.png';
 
   let intersecting: boolean;
 </script>
@@ -29,32 +34,32 @@
           <img
             width="170"
             height="40"
-            src="/assets/img/logo-product-hunt.png"
+            src={iconProductHunt}
             alt=""
             class="reviews-item-logo" />
           <div class="reviews-item-rating">
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 1 star" />
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 2 stars" />
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 3 stars" />
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 4 stars" />
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 5 stars" />
@@ -70,7 +75,7 @@
           <img
             width="120"
             height="40"
-            src="/assets/img/logo-beta-list.png"
+            src={iconBeta}
             alt=""
             class="reviews-item-logo" />
           <div class="reviews-item-likes">
@@ -78,7 +83,7 @@
             <img
               width="25"
               height="25"
-              src="/assets/img/icon-like-heart.svg"
+              src={iconLike}
               alt=""
               class="reviews-like-icon" />
           </div>
@@ -93,32 +98,32 @@
           <img
             width="145"
             height="32"
-            src="/assets/img/logo-capterra.png"
+            src={iconCapterra}
             alt=""
             class="reviews-item-logo" />
           <div class="reviews-item-rating">
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 1 star" />
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 2 stars" />
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 3 stars" />
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 4 stars" />
             <img
-              src="/assets/img/icon-star-rating.svg"
+              src={iconStar}
               width="25"
               height="25"
               alt="rating 5 stars" />

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
+  import arrowNav from '$lib/ToTop/arrow-slide-nav.svg';
 
   let currentPosition: number;
 
@@ -10,7 +11,7 @@
 
 {#if currentPosition > 50}
   <div class="button" on:click={scrollToTop} transition:fade={{ duration: 100 }}>
-    <img src="/assets/img/arrow-slide-nav.svg" width="50" height="50" alt="to top" />
+    <img src={arrowNav} width="50" height="50" alt="to top" />
   </div>
 {/if}
 
