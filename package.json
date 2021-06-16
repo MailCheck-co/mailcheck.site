@@ -51,6 +51,8 @@
     "@fontsource/fira-mono": "^4.2.2",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
-    "svelte-inview": "^2.0.1"
+    "just-camel-case": "^4.0.2",
+    "svelte-inview": "^2.0.1",
+    "unist-util-visit": "^2.0.3"
   }
 }

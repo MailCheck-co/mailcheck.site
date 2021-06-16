@@ -1,4 +1,5 @@
 module.exports = {
+  
   layout: {
     blog: './src/lib/Blog/layout.svelte'
   },
@@ -8,6 +9,7 @@ module.exports = {
   },
   remarkPlugins: [
     [
+      require('./mdsvex-url-to-import.cjs'),
       require('remark-github'),
       {
         // Use your own repository

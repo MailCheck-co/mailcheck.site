@@ -499,11 +499,11 @@
             pointer-events: none;
 
             &.gravatar {
-              background-image: url('./icons/gravatar.svg');
+              background-image: url('./gravatar.svg');
             }
 
             &.blogger {
-              background-image: url('./icons/blogger.svg');
+              background-image: url('./blogger.svg');
             }
 
             &.facebook {
@@ -511,43 +511,43 @@
             }
 
             &.foursquare {
-              background-image: url('./icons/foursquare.svg');
+              background-image: url('./foursquare.svg');
             }
 
             &.google {
-              background-image: url('./icons/google.svg');
+              background-image: url('./google.svg');
             }
 
             &.linkedin {
-              background-image: url('./icons/linkedin.svg');
+              background-image: url('./linkedin.svg');
             }
 
             &.tripit {
-              background-image: url('./icons/tripit.svg');
+              background-image: url('./tripit.svg');
             }
 
             &.tumblr {
-              background-image: url('./icons/tumblr.svg');
+              background-image: url('./tumblr.svg');
             }
 
             &.twitter {
-              background-image: url('./icons/twitter.svg');
+              background-image: url('./twitter.svg');
             }
 
             &.vimeo {
-              background-image: url('./icons/vimeo.svg');
+              background-image: url('./vimeo.svg');
             }
 
             &.wordpress {
-              background-image: url('./icons/wordpress.svg');
+              background-image: url('./wordpress.svg');
             }
 
             &.youtube {
-              background-image: url('./icons/youtube.svg');
+              background-image: url('./youtube.svg');
             }
 
             &.github {
-              background-image: url('./icons/github.svg');
+              background-image: url('./github.svg');
             }
 
             &.active {
