@@ -32,7 +32,7 @@ There are two types of catch-all mailboxes:
 - Pure - these are the ones that were created by ESP and have never been used by the real people. Email service providers share them on websites that sell email bases to define spammers that use such websites and block them.
 - Recycled - these are the most dangerous catch-all mailboxes since they were once used by real people, but were abandoned long time ago. Email Service providers use them to detect spammers.
 
-![Catch-All Email Servers](../../assets/img/catch-all-servers-img1.png)
+![Catch-All Email Servers](/src/routes/blog/catch-all-email-servers/catch-all-servers-img1.png)
 
 ## Why Catch-All Domains Are The Problem for You?
 
@@ -46,7 +46,7 @@ If you conduct email marketing campaigns, then any catch-all email domain in you
 
 There is no silver bullet to do this safely. All you can do when dealing with the catch-all domains is to get rid of the non-existing or non-actively used emails in your mailing list and build a strategy that decreases the risks of getting a spammer marker for your email domain.
 
-![Catch-All Email Servers](../../assets/img/catch-all-servers-img2.jpg)
+![Catch-All Email Servers](/src/routes/blog/catch-all-email-servers/catch-all-servers-img2.jpg)
 
 ## How to Build a Proper Strategy of Dealing with Catch-All Email Servers?
 

@@ -45,11 +45,11 @@ Main metrics:
 
 - IP reputation rate
 
-![All You Need to Know About Sender’s Reputation](../../assets/img/senders-reputation-img-1.jpg)
+![All You Need to Know About Sender’s Reputation](/src/routes/blog/senders-reputation/senders-reputation-img-1.jpg)
 
 - Domain Reputation
 
-![All You Need to Know About Sender’s Reputation](../../assets/img/senders-reputation-img-2.jpg)
+![All You Need to Know About Sender’s Reputation](/src/routes/blog/senders-reputation/senders-reputation-img-2.jpg)
 
 It is good that Google makes different graphs for the domain and IP reputation. You can understand promptly if somewhere there are any problems by tracking the decreased indicator. However, there is one shortcoming for this tool - you only can track your statistics if you send at least 200-500 letters a day on gmail inbox mails.
 

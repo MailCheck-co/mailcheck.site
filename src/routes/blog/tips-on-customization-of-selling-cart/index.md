@@ -28,7 +28,7 @@ In order to motivate a client to make a purchase you need to make it display in 
 - Near the cart icon, there should be a list of the products put there with their prices and the overall sum
 - If there is even one product in the cart then its icon should display that, notifying the customer that cart is not empty anymore.
 
-![X Tips on Customization of Selling Cart](../../assets/img/selling-cart-customization-img-1.jpg)
+![X Tips on Customization of Selling Cart](/src/routes/blog/tips-on-customization-of-selling-cart/selling-cart-customization-img-1.jpg)
 
 ## Cart Mechanism - Basic Functions
 
@@ -59,7 +59,7 @@ In case the store accepts online coupons the visitor should be able to enter the
 - Point out the shipping cost on the cart page
 - After completing the order customer should see ‘thank you’ page.
 
-![X Tips on Customization of Selling Cart](../../assets/img/selling-cart-customization-img-2.jpg)
+![X Tips on Customization of Selling Cart](/src/routes/blog/tips-on-customization-of-selling-cart/selling-cart-customization-img-2.jpg)
 
 ## Additional Options
 

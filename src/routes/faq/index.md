@@ -149,4 +149,4 @@ Integromat Integration instructions
 
 A step-by-step guide to integrate Mailcheck with daily services using [Integromat](/integromat-integration 'Integromat Integration instructions')
 
-![filter](/assets/img/filter.png)
+![filter](/src/routes/faq/filter.png)

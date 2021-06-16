@@ -51,7 +51,7 @@ Based on ROI you can estimate efficiency of different types of newsletters. In c
 
 You can consider newsletter to be successful if the ROI is 2 or more. This indicator is a good decision-making tool allowing you to make financially grounded changes to your email marketing strategy.
 
-![How to Personalize Your Newsletter and Increase Sales?](../../assets/img/how-to-personalize-your-newsletter.jpg)
+![How to Personalize Your Newsletter and Increase Sales?](/src/routes/blog/personalize-your-newsletter-and-increase-sales/how-to-personalize-your-newsletter.jpg)
 
 ## Click and Opening Based Personalization
 

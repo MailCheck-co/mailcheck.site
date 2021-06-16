@@ -26,7 +26,7 @@ Before you launch a email marketing campaign make sure you have specified the go
 
 Make sure your goals comply SMART approach (specific, measurable, achievable, relevant, time-bound).
 
-![Tips for Email Marketing Approach](../../assets/img/email-marketing-approach-img1.jpg)
+![Tips for Email Marketing Approach](/src/routes/blog/tips-for-email-marketing-approach/email-marketing-approach-img1.jpg)
 
 ## Personalize Your Letters
 
@@ -46,7 +46,7 @@ People get more engaged when you cause the positive reactions and using humour i
 
 Just be careful with the formatting. Some of the ESPs are not fond of rich media content letters.
 
-![Tips for Email Marketing Approach](../../assets/img/email-marketing-approach-img2.jpg)
+![Tips for Email Marketing Approach](/src/routes/blog/tips-for-email-marketing-approach/email-marketing-approach-img2.jpg)
 
 ## Choose The Conversation Style
 
