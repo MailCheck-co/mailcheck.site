@@ -1,5 +1,4 @@
 module.exports = {
-  
   layout: {
     blog: './src/lib/Blog/layout.svelte'
   },
