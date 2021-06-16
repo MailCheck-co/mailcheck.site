@@ -16,7 +16,7 @@ An email list is a list of subscribers, who may or may not opted-in to receive e
 
 The first thing email marketers will hear from list providers is that email lists could save them time growing their email database. Technically, that is correct. However, there is no such thing as a free lunch. Buying email lists does have hidden drawbacks. Read on if you want to know what they are.
 
-![AppInstitute](/src/routes/blog/does-buying-email-lists-still-work/appInstitute.jpg)
+![AppInstitute](./appInstitute.jpg)
 
 Source: AppInstitute
 
@@ -28,7 +28,7 @@ When it comes to your reputation, email deliverability and user engagement is wh
 
 Sending emails to recipients who have little or if any interest in your content, can cause no less troubles than high bounce rates. Internet Service Providers (ISP) like Gmail, Hotmail, or Yahoo want to make sure their users receive relevant and high-quality content from email marketers. They track if their users open, engage with or report an email as spam. If there is high engagement, the ISP will automatically make sure similar emails will arrive at the recipient’s inbox. If there is low engagement, the ISP will make sure the email skips the recipient’s inbox and will land in their spam folder. The more sender’s emails are marked as spam or are bounced, the lower email deliverability rates will be, which will in turn damage the sender’s reputation and have his emails constantly marked as spam, even if the recipient didn’t mark them so.
 
-![Easyspace](/src/routes/blog/does-buying-email-lists-still-work/easyspace.jpg)
+![Easyspace](./easyspace.jpg)
 
 Source: Easyspace
 

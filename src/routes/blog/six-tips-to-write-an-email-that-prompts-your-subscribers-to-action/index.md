@@ -28,7 +28,7 @@ So what does it take to create a compelling email that not only helps you grow t
 
 **Choose one primary call-to-action.** It is acceptable to highlight several things in your email. However, do not let those overshadow the main message. Your message could come across unclear and customers will lose interest in reading further. Make sure your email has a core point and let the rest of the information remain secondary.
 
-![Sympli](/src/routes/blog/six-tips-to-write-an-email-that-prompts-your-subscribers-to-action/sympli.jpg)
+![Sympli](./sympli.jpg)
 
 Source: Sympli
 
@@ -36,7 +36,7 @@ Source: Sympli
 
 **Invest time into creating an eye-catching subject line.** Believe it or not, subject lines are the first step to enticing your subscribers to read more. Your email campaign may be great, but if your subject line isn’t - everything can fall through. According to [Marketo](https://blog.marketo.com/2018/02/email-subject-line-length-works-best.html), seven words or 41 characters are considered the best size for a subject line. This number yields the highest clicks to open. Surprisingly enough, eight words subject line produces half as much as that number.
 
-![Marketo](/src/routes/blog/six-tips-to-write-an-email-that-prompts-your-subscribers-to-action/marketo.jpg)
+![Marketo](./marketo.jpg)
 
 Source: Marketo
 

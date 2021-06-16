@@ -20,7 +20,7 @@ MarketingCharts agency has derived that usually we get up to 400 business emails
 
 However, it is necessary to consider that almost the half of all letters are opened on the mobile devices. Although mobile devices provide faster response, small monitors not always are fit for proper image display. Thus, if the recipient opens letter only to see the blocked image he will barely be satisfied by your letter. The more often it happens, the harder it is going to be to make a positive reputation of you as a valuable sender.
 
-![Simple Email Marketing Campaign Guide for Small Business](/src/routes/blog/simple-email-marketing-campaign-guide/email-marketing-campaign-guide-img-1.jpg)
+![Simple Email Marketing Campaign Guide for Small Business](./email-marketing-campaign-guide-img-1.jpg)
 
 Filling in ALT and TITLE tags can improve your conversion dramatically. Non-commerce organization WebAIM has pointed out that filled in ALT tag in the image provides more loyal attitude towards blocked images. Check whether the tag ALT is filled in your letters and make sure it reflects the content of the image.
 
@@ -30,7 +30,7 @@ Although you cannot know everything about your subscribers, you can definitely f
 
 Internet Retailer agency has defined that Isotoner bookmaker company has increased their income from email marketing campaign on 7000% when they have enforced analysis on the basis of the previously sent letters.
 
-![Simple Email Marketing Campaign Guide for Small Business](/src/routes/blog/simple-email-marketing-campaign-guide/email-marketing-campaign-guide-img-2.jpg)
+![Simple Email Marketing Campaign Guide for Small Business](./email-marketing-campaign-guide-img-2.jpg)
 
 ## Do not Ask too Much
 

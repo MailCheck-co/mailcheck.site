@@ -29,33 +29,33 @@ Now let’s proceed to the step-by-step instructions:
 
 Open your Zapier account and log in. Choose **“+”** or **“Make a Zap”.**
 
-![Open your Zapier account and log in](/src/routes/zapier-integration/open-your-zapier-account-and-log-in.jpg)
+![Open your Zapier account and log in](./open-your-zapier-account-and-log-in.jpg)
 
 ### Step 2:
 
 You can add a name to your zap just click on **“Name your Zap”**.
 
-![add a name to your zap](/src/routes/zapier-integration/add-a-name-to-your-zap.jpg)
+![add a name to your zap](./add-a-name-to-your-zap.jpg)
 
 ### Step 3:
 
 On the **“Choose app & event”** section click on **“Google Sheets”**.
 
-![add a name to your zap](/src/routes/zapier-integration/choose-app-google-sheets.jpg)
+![add a name to your zap](./choose-app-google-sheets.jpg)
 
 ### Step 4:
 
 The next thing is to trigger **“New or Updated Spreadsheet Row”**, then tap **“Continue”**.
 
-![trigger new or updated spreadsheet row](/src/routes/zapier-integration/trigger-new-or-updated-spreadsheet-row.jpg)
+![trigger new or updated spreadsheet row](./trigger-new-or-updated-spreadsheet-row.jpg)
 
 ### Step 5:
 
 Tap **“Choose Account”** and connect your Google account to get your Google Sheet information
 
-![choose google account](/src/routes/zapier-integration/choose-account-google.jpg)
+![choose google account](./choose-account-google.jpg)
 
-![connect your google account](/src/routes/zapier-integration/connect-your-google-account.jpg)
+![connect your google account](./connect-your-google-account.jpg)
 
 ### Step 6:
 
@@ -64,72 +64,72 @@ Choose the worksheet
 For the Trigger Column always choose **“Email”**
 Then, tap **“Continue”**.
 
-![choose a spreadsheet you require for the validation](/src/routes/zapier-integration/choose-a-spreadsheet-you-require-for-the-validation.jpg)
+![choose a spreadsheet you require for the validation](./choose-a-spreadsheet-you-require-for-the-validation.jpg)
 
 ### Step 7:
 
 Click **“Test your trigger”**. A summary of the trigger setup will be displayed. Peruse the details to see if everything is correct. Then, click **“Done Editing”**. Action section will pop up if every detail is in order. Otherwise, an error message will be displayed. In such a case, re-check the settings from the past steps, make the necessary corrections, then perform the test again. Now that the setup is correct, choose **“Continue”**.
 
-![test your zap trigger](/src/routes/zapier-integration/test-your-trigger.jpg)
+![test your zap trigger](./test-your-trigger.jpg)
 
-![check summary of the trigger setup](/src/routes/zapier-integration/summary-of-the-trigger-setup.jpg)
+![check summary of the trigger setup](./summary-of-the-trigger-setup.jpg)
 
 ### Step 8:
 
 It is time to establish the Action. Please find “Mailcheck” in the search field and select it
 
-![establish the action](/src/routes/zapier-integration/establish-the-action.jpg)
+![establish the action](./establish-the-action.jpg)
 
 ### Step 9:
 
 Here, the only actionable option will be “Verify Email Address,” which has been chosen already. Tap **“Continue”**, followed by **“Choose Account”**. This will help link your Mailcheck account. In the subsequent page, type in your API key – you can generate your API key under the API section in your mailcheck account. Next, select **“Yes, continue”**.
 
-![verify email address](/src/routes/zapier-integration/verify-email-address.jpg)
+![verify email address](./verify-email-address.jpg)
 
 ### Step 10:
 
 At this stage, you have to establish Mailcheck account, click **“Choose an account”** and click on **“connect a new account”**
 
-![establish link to mailcheck account](/src/routes/zapier-integration/establish-link-to-mailcheck-account.jpg)
+![establish link to mailcheck account](./establish-link-to-mailcheck-account.jpg)
 
-![connect a new mailcheck account](/src/routes/zapier-integration/connect-a-new-mailcheck-account.jpg)
+![connect a new mailcheck account](./connect-a-new-mailcheck-account.jpg)
 
 ### Step 11:
 
 After a successful Mailcheck API key procedure, choose the right email data from the drop-down list, click **“Continue”** proceed with **“test and review”**
 As the screenshot indicates, the test was successful, so you have the validated data in Mailcheck
 
-![choose the right email data](/src/routes/zapier-integration/choose-the-right-email-data-from-the-drop-down-list.jpg)
+![choose the right email data](./choose-the-right-email-data-from-the-drop-down-list.jpg)
 
 ### Step 12:
 
 You can turn on Zap and close or export the results back to Google Sheets
 
-![turn on Zap](/src/routes/zapier-integration/turn-on-zap.jpg)
+![turn on Zap](./turn-on-zap.jpg)
 
 ### Step 13:
 
 In order to receive back the validation results to the Google sheet we need to establish another action, for that please click **“+”** as indicated in the screenshot
 
-![receive back the validation results](/src/routes/zapier-integration/receive-back-the-validation-results-to-the-google-sheet.jpg)
+![receive back the validation results](./receive-back-the-validation-results-to-the-google-sheet.jpg)
 
 ### Step 14:
 
 You need to choose Google Sheets again
 
-![choose google sheets again](/src/routes/zapier-integration/choose-google-sheets-again.jpg)
+![choose google sheets again](./choose-google-sheets-again.jpg)
 
 ### Step 15:
 
 Action event must be the **“Update Spreadsheet Row”** because we will be updating the row with “trust rate” and **“validation status”** results.
 
-![choose app](/src/routes/zapier-integration/choose-app.jpg)
+![choose app](./choose-app.jpg)
 
 ### Step 16:
 
 Once the **“Action Event”** has been chosen, please click **“Continue”** and choose your Google Sheet account
 
-![choose account](/src/routes/zapier-integration/choose-account.jpg)
+![choose account](./choose-account.jpg)
 
 ### Step 17:
 
@@ -137,21 +137,21 @@ Same as we set for step 6, we are going to choose your Google Drive (1)
 Select the spreadsheet similar to step 6 make sure you have chosen the exactly same name of the spreadsheet file that you’ve selected above (2)
 And choose your worksheet similar to step 6 (3)
 
-![setup the action](/src/routes/zapier-integration/setup-action.jpg)
+![setup the action](./setup-action.jpg)
 
 ### Step 18:
 
 When choosing the row, please select **“Custom”** then choose **“New or Updated Spreadsheet Row in Google Sheets** -> final step choose Row ID
 
-![choosing the row](/src/routes/zapier-integration/new-row.jpg)
+![choosing the row](./new-row.jpg)
 
-![choosing the row ID](/src/routes/zapier-integration/row-id.jpg)
+![choosing the row ID](./row-id.jpg)
 
 ### Step 19:
 
 Find **“Result”** field, click on **“verify email address in Mailcheck”** choose “Status” proceed with **“Continue”**
 
-![insert data to form](/src/routes/zapier-integration/insert-data.jpg)
+![insert data to form](./insert-data.jpg)
 
 ### Step 20:
 
@@ -161,13 +161,13 @@ Just click on **“test and continue”**
 
 At this point, we can activate our Zap
 
-![update spreadsheet row](/src/routes/zapier-integration/update-spreadsheet-row.jpg)
+![update spreadsheet row](./update-spreadsheet-row.jpg)
 
 ### Step 22:
 
 Let’s perform manual tests to ensure everything is working properly.
 
-![perform manual tests](/src/routes/zapier-integration/perform-manual-tests.jpg)
+![perform manual tests](./perform-manual-tests.jpg)
 
 **Note**: The operation explained above is one of the several ways to use a Zapier in collaboration with Mailcheck.
 However, the fundamental principles remain the same. Zapier’s library contains more than 2,000 online apps, which means that they are likely to support the CRM or ESP which you are currently using.

@@ -15,7 +15,7 @@ In order to use the integrations most of them require an API key, which can be g
 ## Step 1
 
 Open your Mailcheck account and click “API” from the top menu.
-![open API tab](/src/routes/create-api-key/api-tab.png)
+![open API tab](./api-tab.png)
 
 ## Step 2
 
@@ -25,7 +25,7 @@ Type the name of your Integration and tap “Create key”.
 
 Copy your Key, now you can use it for your integrations.
 
-![copy out API key](/src/routes/create-api-key/api-key-copy.png)
+![copy out API key](./api-key-copy.png)
 
 Please note: don't share or send to anyone your API key.
 
