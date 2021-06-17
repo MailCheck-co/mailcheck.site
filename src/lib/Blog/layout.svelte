@@ -86,7 +86,7 @@
     line-height: 1.5;
   }
 
-  :global(ul) :global(li) {
+  :global(li) {
     margin: 0 0 0.5em 0;
     color: var(--primary-white);
   }
