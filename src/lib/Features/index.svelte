@@ -96,10 +96,10 @@
   }
 
   @media only screen and (max-width: 1024px) {
-    .features {
+    #features {
       .mail {
         position: absolute;
-        transform: translateY(-45%);
+        transform: translateY(-15%);
         opacity: 0.3;
       }
 
