@@ -114,6 +114,11 @@ body {
     font-size: var(--inherit);
     font-family: var(--inherit);
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #svelte {

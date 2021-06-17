@@ -3,8 +3,7 @@ const visit = require('unist-util-visit');
 const to_camel = require('just-camel-case');
 
 // forgive me
-const RE_SCRIPT_START =
-  /<script(?:\s+?[a-zA-z]+(=(?:["']){0,1}[a-zA-Z0-9]+(?:["']){0,1}){0,1})*\s*?>/;
+const RE_SCRIPT_START = /<script(?:\s+?[a-zA-z]+(=(?:["']){0,1}[a-zA-Z0-9]+(?:["']){0,1}){0,1})*\s*?>/;
 
 function fancyImages() {
   return function transformer(tree, vFile) {
