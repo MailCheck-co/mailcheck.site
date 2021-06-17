@@ -337,7 +337,7 @@ body {
   z-index: -1;
   width: 100%;
   margin: 0;
-  color: var(--section-titles-color);
+  color: var(--section-titles-color) !important;
   font-weight: var(--weight-900);
   font-size: clamp(44px, 14vw, 255px);
   line-height: 0.2;
