@@ -29,4 +29,4 @@ Copy your Key, now you can use it for your integrations.
 
 Please note: don't share or send to anyone your API key.
 
-Please reach out to us, should you have any questions [support@mailcheck.co](support+api@mailcheck.co)
+Please reach out to us, should you have any questions [support@mailcheck.co](mailto:support+api@mailcheck.co)

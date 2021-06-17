@@ -1,10 +1,7 @@
 ---
 layout: blog
-slug: faq
 title: FAQ
 date: 25.06.2020
-readingTime: 1 min read
-snippet: FAQ
 desc: FAQ
 ---
 
@@ -32,15 +29,16 @@ We are currently testing a beta version of our phone base validations. But it is
 
 How to get started with Mailcheck?
 
-**Step 1**  
-\- Go to https://app.mailcheck.co/auth/login and create an account  
-\- Our registration process is one of the easiest in the known systems  
-**Step 2** - Set your email address and password  
-**Step 3** - Fill in your profile information or Skip if you don't have time  
-**Step 4** - Choose the plan you want to go with or skip if you don't have time  
-**Step 5**  
-\- Set your billing information ( in case you didn't choose a plan, you can still go with "Free Tier" 100 emails for free)  
-\- We have two scenarios if you want a free tier
+**Step 1**
+
+- Go to [login page](https://app.mailcheck.co/auth/login) and create an account
+- Our registration process is one of the easiest in the known systems  
+  **Step 2** - Set your email address and password  
+  **Step 3** - Fill in your profile information or Skip if you don't have time  
+  **Step 4** - Choose the plan you want to go with or skip if you don't have time  
+  **Step 5**
+- Set your billing information ( in case you didn't choose a plan, you can still go with "Free Tier" 100 emails for free)
+- We have two scenarios if you want a free tier
 
 1. 10 emails if you didn't set your card
 2. 100 emails if your card details were provided (we don't charge you anything unless you previously has chosen a plan)  
@@ -58,8 +56,8 @@ How to get verified your first list?
 
 How to interpret a trust rate?
 
-\* Emails with a trust rate of 0-49% are Risky and most likely INVALID, we don't recommend using them  
-\* Emails with a trust rate of 50-100% are VALID, feel free to use them
+- Emails with a trust rate of 0-49% are Risky and most likely INVALID, we don't recommend using them
+- Emails with a trust rate of 50-100% are VALID, feel free to use them
 
 How can I sign up?
 
@@ -68,8 +66,8 @@ How can I sign up?
 
 How can I login?
 
-\- Fill in email/password  
-\- Log in using Google or Facebook
+- Fill in email/password
+- Log in using Google or Facebook
 
 How to delete an account at Mailcheck?
 
@@ -93,9 +91,10 @@ All information about our users is protected by Google systems, we do really car
 
 How many free email verifications do you offer?
 
-We allow 100 free email validations if the billing information was verified, and 10 free email validations if the payment details weren't provided  
-\- with card 100 emails  
-\- without card 10 emails
+We allow 100 free email validations if the billing information was verified, and 10 free email validations if the payment details weren't provided
+
+- with card 100 emails
+- without card 10 emails
 
 What is a quick validation?
 
