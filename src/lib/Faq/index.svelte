@@ -201,6 +201,7 @@
     }
 
     .tab-text {
+      color: var(--primary-white);
       margin-top: 0;
       padding: 0 var(--size-10);
       font-size: var(--size-16);

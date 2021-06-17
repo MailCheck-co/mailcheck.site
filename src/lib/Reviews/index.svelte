@@ -183,6 +183,7 @@
 
     .reviews-item-link {
       margin-left: auto;
+      margin: 1rem auto;
       padding: var(--size-10) var(--size-24);
     }
   }
