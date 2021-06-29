@@ -1,6 +1,6 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$lib/site-data';
+  import { inviewOptions } from '$utils/site-data';
 
   let intersecting: boolean;
   let slider: HTMLElement;

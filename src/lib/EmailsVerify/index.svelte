@@ -1,7 +1,7 @@
 <script lang="ts">
   import Progress from '$lib/Progress/index.svelte';
   import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$lib/site-data';
+  import { inviewOptions } from '$utils/site-data';
   import arrowIcon from '$lib/EmailsVerify/icon-arrow-right.svg';
 
   export let isChecking = false;

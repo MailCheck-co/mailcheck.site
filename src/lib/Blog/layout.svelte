@@ -6,7 +6,7 @@
   export let thumbnail = '';
 </script>
 
-<!--<Seo title={`Blog | ${title}`} desc={title} {thumbnail} isPost={true} />-->
+<Seo title={`Blog | ${title}`} desc={title} {thumbnail} isPost={true} />
 
 <div class="container" id="blog">
   <div class="content-block">

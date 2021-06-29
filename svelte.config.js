@@ -1,3 +1,4 @@
+import path from 'path';
 import { mdsvex } from 'mdsvex';
 import { mdsvexConfig } from './mdsvex.config.js';
 import preprocess from 'svelte-preprocess';
@@ -30,7 +31,14 @@ const config = {
       pages: 'build',
       assets: 'build',
       fallback: null
-    })
+    }),
+    vite: {
+			resolve: {
+				alias: {
+					$utils: path.resolve('./src/utils')
+				}
+			}
+		}
   }
 };
 

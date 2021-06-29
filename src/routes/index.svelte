@@ -1,5 +1,6 @@
 <script lang="ts">
-  // import Seo from '$lib/Seo/index.svelte';
+  import Seo from '$lib/Seo/index.svelte';
+  import { websiteSchema } from "$utils/json-ld";
   import EmailsVerify from '$lib/EmailsVerify/index.svelte';
   import Partners from '$lib/Partners/index.svelte';
   import Features from '$lib/Features/index.svelte';
@@ -14,9 +15,9 @@
   import Affiliate from '$lib/Affiliate/index.svelte';
 </script>
 
-<!-- // todo: seo component broken now in kit-->
-<!--<Seo title="Verify your real customers in one way" />-->
-<svelte:head>
+<Seo title="Mailcheck - Home" desc="Verify your real customers in one way" schema={websiteSchema} />
+
+<!-- <svelte:head> -->
   <!--    // todo: sitemap and rss are broken now in kit -->
   <!--  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />-->
   <!--  <link-->
@@ -24,7 +25,7 @@
   <!--    type="application/rss+xml"-->
   <!--    title="RSS Feed for mailcheck.co"-->
   <!--    href="/feed.xml" />-->
-</svelte:head>
+<!-- </svelte:head> -->
 
 <main class="manage-customers" role="main" id="main">
   <!-- EMAILS VERIFY -->

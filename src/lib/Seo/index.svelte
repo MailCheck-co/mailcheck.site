@@ -1,22 +1,24 @@
 <script lang="ts">
-  import { getStores } from '$app/stores';
-  import data from '$lib/site-data';
+  import { page } from '$app/stores';
+  import data from '$utils/site-data';
+  import { serializeSchema } from "$utils/json-ld";
+  import type { Schema } from "$utils/json-ld";
 
-  const { siteName, siteUrl } = data;
-  const defaultDesc = data.desc;
-  const { page } = getStores();
-
+  export let schema: Schema;
   export let canonical = '';
   export let title: string;
   export let isPost = false;
   export let thumbnail = '';
   export let desc: string;
   export let noindex = false;
+
+  const { siteName, siteUrl } = data;
+  const defaultDesc = data.desc;
 </script>
 
 <svelte:head>
   <title>{siteName} | {title}</title>
-  <link rel="canonical" href={canonical ? siteUrl + canonical : siteUrl + ($page?.path ?? '')} />
+  <link rel="canonical" href={canonical ? siteUrl + canonical : siteUrl + ($page.path ?? '')} />
   <meta name="description" content={desc || defaultDesc} />
 
   {#if noindex}
@@ -25,7 +27,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content={isPost ? 'blog' : 'website'} />
-  <meta property="og:url" content="{siteUrl}{$page?.path ?? ''}" />
+  <meta property="og:url" content="{siteUrl}{$page.path ?? ''}" />
   <meta property="og:title" content={title || siteName} />
   <meta property="og:description" content={desc || defaultDesc} />
   <meta property="og:image" content={thumbnail || siteUrl + '/favicon.png'} />
@@ -38,4 +40,7 @@
   {#if thumbnail !== ''}
     <meta property="twitter:image" content={thumbnail} />
   {/if}
+
+  <!-- JSON-LD Schema -->
+  {@html serializeSchema(schema)}
 </svelte:head>

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$lib/site-data';
+  import { inviewOptions } from '$utils/site-data';
   import acellLogo from '$lib/Partners/acell-mail.svg';
   import k5Logo from '$lib/Partners/5k-logo.svg';
   import baglletLogo from '$lib/Partners/bagllet.svg';

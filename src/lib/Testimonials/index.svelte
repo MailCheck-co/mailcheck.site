@@ -1,6 +1,6 @@
 <script type="ts">
   import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$lib/site-data';
+  import { inviewOptions } from '$utils/site-data';
   import k5Logo from '$lib/Testimonials/5k-logo.svg';
   import baglletLogo from '$lib/Testimonials/bagllet.svg';
   import sammyLogo from '$lib/Testimonials/sammy-logo.svg';

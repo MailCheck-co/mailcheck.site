@@ -1,6 +1,6 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$lib/site-data';
+  import { inviewOptions } from '$utils/site-data';
   import SeregaAva from '$lib/Team/serega-karetnik.png';
   import KonstantinAva from '$lib/Team/konstantin-nosov.png';
   import FaraAva from '$lib/Team/fara-muhammadiev.png';
