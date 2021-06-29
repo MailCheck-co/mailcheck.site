@@ -1,37 +1,53 @@
+<script lang="ts" context="module">
+	/**
+	 * @type {import('@sveltejs/kit').Load}
+	 */
+	export async function load({ page, fetch }) {
+		const post = await fetch(`${page.path}.json`).then(res => res.json());
+
+		if (!post || !post.published) {
+			return {
+				status: 404,
+				error: new Error('Post could not be found')
+			};
+		}
+
+		return {
+			props: {
+				post
+			}
+		};
+	}
+</script>
+
 <script lang="ts">
   import ContactUs from '$lib/ContactUs/index.svelte';
   import Seo from '$lib/Seo/index.svelte';
+  import { websiteSchema } from "$utils/json-ld";
 
-  // export let posts: {
-  //   slug: string;
-  //   title: string;
-  //   html: any;
-  //   date: string;
-  //   readingTime: string;
-  //   snippet: any;
-  // }[];
-  export let desc = 'Blog';
+  export let posts;
+  let desc: string = 'Blog';
 </script>
 
-<Seo {desc} title="Blog" />
+<Seo {desc} title={desc} schema={websiteSchema} />
 
 <main class="terms" id="blog">
   <div class="container">
     <div class="content-block">
-      <h1 class="title">BLOG</h1>
+      <h1 class="title">{desc}</h1>
 
-      <!-- {#each posts as post}
-        <a sapper:prefetch class="article-title" href="blog/{post.slug}"
-          >{post.title}</a>
-        <p class="article-date">Date: {post.date}</p>
+      {#each posts as { slug, title, snippet, date }}
+        <a class="article-title" href="blog/{slug}"
+          >{title}</a>
+        <p class="article-date">Date: {date}</p>
         <p class="article-snippet">
-          {post.snippet}
+          {snippet}
           <a
             sapper:prefetch
             class="text-thin text-thin-link"
-            href="blog/{post.slug}">[Read more...]</a>
+            href="blog/{slug}">[Read more...]</a>
         </p>
-      {/each} -->
+      {/each}
     </div>
   </div>
 </main>
@@ -39,11 +55,11 @@
 <ContactUs />
 
 <style lang="scss">
-  // .article-title {
-  //   color: var(--primary-white);
-  // }
+  .article-title {
+    color: var(--primary-white);
+  }
 
-  // .article-snippet {
-  //   text-indent: initial;
-  // }
+  .article-snippet {
+    text-indent: initial;
+  }
 </style>

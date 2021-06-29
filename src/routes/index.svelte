@@ -17,16 +17,6 @@
 
 <Seo title="Mailcheck - Home" desc="Verify your real customers in one way" schema={websiteSchema} />
 
-<!-- <svelte:head> -->
-  <!--    // todo: sitemap and rss are broken now in kit -->
-  <!--  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />-->
-  <!--  <link-->
-  <!--    rel="alternate"-->
-  <!--    type="application/rss+xml"-->
-  <!--    title="RSS Feed for mailcheck.co"-->
-  <!--    href="/feed.xml" />-->
-<!-- </svelte:head> -->
-
 <main class="manage-customers" role="main" id="main">
   <!-- EMAILS VERIFY -->
   <EmailsVerify />
@@ -66,8 +56,6 @@
 </main>
 
 <style lang="scss">
-
-  
   .manage-customers {
     &::before {
       position: absolute;

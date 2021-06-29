@@ -1,8 +1,9 @@
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
+  import { websiteSchema } from "$utils/json-ld";
 </script>
 
-<Seo desc="Requested page wasn't found" title="Not Found" noindex={true} />
+<Seo desc="Requested page wasn't found" title="Not Found" noindex={true} schema={websiteSchema} />
 <svelte:head>
   <meta http-equiv="refresh" content="5;https://mailcheck.co/" />
 </svelte:head>

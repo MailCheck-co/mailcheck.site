@@ -1,12 +1,13 @@
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
   import ContactUs from '$lib/ContactUs/index.svelte';
+  import { blogSchema } from "$utils/json-ld";
 
   export let title = '';
   export let thumbnail = '';
 </script>
 
-<Seo title={`Blog | ${title}`} desc={title} {thumbnail} isPost={true} />
+<Seo title={`Blog | ${title}`} desc={title} {thumbnail} isPost={true} schema={blogSchema} />
 
 <div class="container" id="blog">
   <div class="content-block">

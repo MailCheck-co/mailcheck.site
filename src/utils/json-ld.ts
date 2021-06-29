@@ -22,7 +22,7 @@ export const websiteSchema: WithContext<WebSite> = {
   ],
 };
 
-export const organizationSchema: WithContext<Organization> = {
+export const blogSchema: WithContext<Organization> = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": `${site.url}#organization`,

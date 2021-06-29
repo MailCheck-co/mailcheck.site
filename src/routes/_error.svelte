@@ -1,12 +1,14 @@
 <script lang="ts">
+  import Seo from '../components/Seo.svelte';
+  import { websiteSchema } from "$utils/json-ld";
+
   export let status: number;
   export let error: Error;
-  import Seo from '../components/Seo.svelte';
-
+  
   const dev = process.env.NODE_ENV === 'development';
 </script>
 
-<Seo title={status.toString()} />
+<Seo title={status.toString()} desc={`Error: ${status.toString()}`} schema={websiteSchema} />
 <svelte:head>
   <meta http-equiv="refresh" content="5;https://mailcheck.co/" />
 </svelte:head>
