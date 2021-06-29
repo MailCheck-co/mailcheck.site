@@ -11,10 +11,10 @@
   let popUpBlock: HTMLElement;
   let nameValue = '';
   let textareaValue = '';
-  function validate(node: HTMLElement, value: string) {
+  function validate() {
     return {
       update() {
-        const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const reg = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
         return (isValid = reg.test(String(email).toLowerCase()));
       }
     };
