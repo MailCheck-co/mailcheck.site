@@ -2,19 +2,14 @@
 	/**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
-	export async function load({ page, fetch }) {
-		const post = await fetch(`${page.path}.json`).then(res => res.json());
-
-		if (!post || !post.published) {
-			return {
-				status: 404,
-				error: new Error('Post could not be found')
-			};
-		}
+   export async function load({ fetch }) {
+		// Use a `limit` querystring parameter to fetch a limited number of posts
+		// e.g. fetch('posts.json?limit=5') for 5 most recent posts
+		const posts = await fetch('/blog.json').then((res) => res.json());
 
 		return {
 			props: {
-				post
+				posts
 			}
 		};
 	}

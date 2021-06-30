@@ -4,7 +4,7 @@ import slugFromPath from '$utils/slugFromPath';
  * @type {import('@sveltejs/kit').RequestHandler}
  */
 export async function get({ params }) {
-	const modules = import.meta.glob(`./*.{md,svx,svelte.md}`);
+	const modules = import.meta.glob(`/**/*.{md,svx,svelte.md}`);
 
 	let match;
 	for (const [path, resolver] of Object.entries(modules)) {
