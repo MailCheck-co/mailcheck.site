@@ -35,7 +35,7 @@
         <p class="article-snippet">
           {snippet}
           <a
-            sapper:prefetch
+            sveltekit:prefetch
             class="text-thin text-thin-link"
             href="blog/{slug}">[Read more...]</a>
         </p>
