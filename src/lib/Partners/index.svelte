@@ -6,6 +6,7 @@
   import baglletLogo from '$lib/Partners/bagllet.svg';
   import sammyLogo from '$lib/Partners/sammy-logo.svg';
   import zitkaniLogo from '$lib/Partners/zitkani.svg';
+  import echoLogo from '$lib/Partners/echo-logo.svg';
 
   let intersecting: boolean;
 </script>
@@ -37,6 +38,9 @@
     </div>
     <div class="partners-list-item">
       <img width="150" height="60" src={zitkaniLogo} alt="Zitkani" class="partners-logo" />
+    </div>
+    <div class="partners-list-item">
+      <img width="150" height="60" src={echoLogo} alt="ECHO" class="partners-logo" />
     </div>
   </div>
 </section>

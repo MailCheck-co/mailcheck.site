@@ -5,6 +5,7 @@
   import baglletLogo from '$lib/Testimonials/bagllet.svg';
   import sammyLogo from '$lib/Testimonials/sammy-logo.svg';
   import zitkaniLogo from '$lib/Testimonials/zitkani.svg';
+  import echoLogo from '$lib/Testimonials/echo-logo.svg';
   import arrowNav from '$lib/Testimonials/arrow-slide-nav.svg';
 
   let intersecting: boolean;
@@ -132,6 +133,20 @@
             <p class="slide-name">Claude I.</p>
           </div>
         </li>
+        <li class="testimonial-slide">
+          <div class="slider-item">
+            <div class="slide-logo-wrapper">
+              <img width="150" height="88" class="slide-logo" src={echoLogo} alt="ECHO" />
+            </div>
+            <p class="slide-text">
+              So far, the best mail validation service we tried. It doesn’t rely only on mx check
+              (as the majority of cleaning tool does) but it retrieve data from social networks and
+              many other sources to assign a score to a specific mail. Customer service is great.
+              Very happy with Mailcheck
+            </p>
+            <p class="slide-name">Customer</p>
+          </div>
+        </li>
       </ul>
     </div>
     <div class="testimonials-button testimonials-button-next" on:click={onNext}>
@@ -164,7 +179,7 @@
           grid-row-gap: 1rem;
           grid-column-gap: 1rem;
           grid-template-rows: 1fr;
-          grid-template-columns: repeat(4, 26.25rem);
+          grid-template-columns: repeat(5, 26.25rem);
           height: 23.75rem;
           margin-left: var(--size-10);
           padding: 0;
