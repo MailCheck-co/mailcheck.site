@@ -124,7 +124,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-    .features {
+    #features {
       .sm-left {
         .title {
           font-size: var(--size-24);
@@ -170,7 +170,7 @@
   }
 
   @media only screen and (max-width: 425px) {
-    .features {
+    #features {
       .welcome-flex {
         margin-left: var(--size-16);
       }

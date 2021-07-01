@@ -76,24 +76,6 @@
       top: 30%;
       transform: scaleX(-1);
     }
-
-    .section-title-lg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        margin: 0;
-        color: rgba(17, 50, 78, 0.2) !important;
-        font-weight: var(--weight-700);
-        font-size: clamp(2.75rem, 14vw, 16rem);
-        line-height: 0.2;
-        letter-spacing: 0.05rem;
-        text-align: center;
-        pointer-events: none;
-        text-transform: uppercase;
-      }
   }
 
   @media only screen and (min-width: 1920px) {
