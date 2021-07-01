@@ -11,7 +11,8 @@
     "format": "prettier --write --plugin-search-dir=. .",
     "cp:404": "cp build/404/index.html build/404.html",
     "rm:404": "rimraf - build/404",
-    "postbuild": "npm run cp:404 && npm run rm:404",
+    "sitemap": "node --experimental-json-modules ./generate-sitemap.js",
+    "postbuild": "npm run cp:404 && npm run rm:404 && npm run sitemap",
     "deploy_hosting": "firebase deploy --only hosting --project=dev",
     "deploy_functions": "firebase deploy --only functions --project=dev",
     "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
@@ -30,6 +31,7 @@
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-svelte3": "^3.2.0",
+    "fast-glob": "^3.2.6",
     "mdsvex": "^0.9.0",
     "postcss": "^8.2.13",
     "postcss-load-config": "^3.0.1",
@@ -44,7 +46,8 @@
     "svelte-check": "^2.0.0",
     "svelte-preprocess": "^4.7.3",
     "tslib": "^2.0.0",
-    "typescript": "^4.0.0"
+    "typescript": "^4.0.0",
+    "xmlbuilder2": "^2.4.1"
   },
   "type": "module",
   "dependencies": {
@@ -55,5 +58,6 @@
     "schema-dts": "^0.8.3",
     "svelte-inview": "^2.0.1",
     "unist-util-visit": "^2.0.3"
-  }
+  },
+  "url": "http://mailcheck.co"
 }
