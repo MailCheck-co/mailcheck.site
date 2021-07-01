@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: email-blasts
 title: Email Blasts. What they are and how to manage them right.
 date: 25.06.2020

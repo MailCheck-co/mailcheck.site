@@ -1,12 +1,38 @@
+<script context="module">
+	/**
+	 * @type {import('@sveltejs/kit').Load}
+	 */
+	export async function load({ page, fetch }) {
+		const post = await fetch(`${page.path}.json`).then(res => res.json());
+		
+    if (!post || !post.published) {
+			return {
+				status: 404,
+				error: new Error('Post could not be found')
+			};
+		}
+    
+		return {
+			props: {
+				post
+			}
+		};
+	}
+</script>
+
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
   import ContactUs from '$lib/ContactUs/index.svelte';
-  import { websiteSchema } from "$utils/json-ld";
+  import { blogSchema } from "$utils/json-ld";
 
-  export let title = '';
+  export let post;
 </script>
 
-<Seo {title} desc={title} isPost={true} schema={websiteSchema} />
+<Seo 
+  title={`Blog | ${post.title}`} 
+  desc={post.title} 
+  isPost={true} 
+  schema={blogSchema} />
 
 <div class="container" id="blog">
   <div class="content-block">

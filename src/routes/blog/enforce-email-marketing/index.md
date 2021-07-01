@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: enforce-email-marketing
 title: 7 Reasons to Enforce Email Marketing for Your Business
 date: 22.04.2019

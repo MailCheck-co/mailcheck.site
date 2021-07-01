@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: six-tips-to-write-an-email-that-prompts-your-subscribers-to-action
 title: six tips to write an email that prompts your subscribers to-action
 date: 18.06.2020

@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: google-plus
 title: Google+ is shutting down. So what?
 date: 15.03.2019

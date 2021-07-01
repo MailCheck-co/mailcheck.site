@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: senders-reputation
 title: All You Need to Know About Sender’s Reputation
 date: 18.04.2019

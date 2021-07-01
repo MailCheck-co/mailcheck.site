@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: csv-file
 title: CSV file - theoretical aspects and practical usage
 date: 18.04.2019

@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: email-marketing-during-post-covid-19-times
 title: Email marketing during post-COVID-19 times. Underrated?
 date: 03.06.2020

@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: right-approach-to-email-address-validation
 title: The Right Approach to Email Address Validation
 date: 10.04.2019

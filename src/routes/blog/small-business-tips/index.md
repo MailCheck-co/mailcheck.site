@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: small-business-tips
 title: Email Marketing for Small Business Tips
 date: 23.04.2019

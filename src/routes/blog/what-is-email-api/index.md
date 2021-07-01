@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: what-is-email-api
 title: What is email API and why do I need one?
 date: 15.07.2020

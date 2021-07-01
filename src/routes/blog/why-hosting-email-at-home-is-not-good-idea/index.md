@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: why-hosting-email-at-home-is-not-good-idea
 title: Why hosting email at home isn't good idea
 date: 20.07.2019

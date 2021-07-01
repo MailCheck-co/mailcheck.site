@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: catch-all-email-servers
 title: What Do You Need to Know About Catch-All Email Servers?
 date: 23.03.2019

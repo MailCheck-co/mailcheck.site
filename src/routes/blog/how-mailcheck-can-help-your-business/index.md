@@ -1,5 +1,5 @@
 ---
-layout: blog
+published: true
 slug: how-mailcheck-can-help-your-business
 title: How Mailcheck can help your business
 date: 15.05.2020
