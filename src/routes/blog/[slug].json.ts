@@ -8,9 +8,6 @@ export async function get({ params }) {
 
 	let match: any[];
 	for (const [path, resolver] of Object.entries(modules)) {
-		console.info('slugFromPath(path): ', slugFromBlogPath(path));
-		// console.info('params.slug: ', params.slug);
-		// console.info('path: ', path);
 		if (slugFromBlogPath(path) === params.slug) {
 			match = [path, resolver];
 			break;
