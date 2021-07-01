@@ -1,4 +1,4 @@
-import slugFromPath from '$utils/slugFromPath';
+import slugFromBlogPath from '$utils/slugFromBlogPath';
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
@@ -8,7 +8,10 @@ export async function get({ params }) {
 
 	let match: any[];
 	for (const [path, resolver] of Object.entries(modules)) {
-		if (slugFromPath(path) === params.slug) {
+		console.info('slugFromPath(path): ', slugFromBlogPath(path));
+		// console.info('params.slug: ', params.slug);
+		// console.info('path: ', path);
+		if (slugFromBlogPath(path) === params.slug) {
 			match = [path, resolver];
 			break;
 		}
