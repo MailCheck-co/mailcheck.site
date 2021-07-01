@@ -19,11 +19,6 @@ async function createSitemap() {
 		const url = sitemap.ele('url');
 		url.ele('loc').txt(getUrl(page));
 		url.ele('changefreq').txt('weekly');
-		// if (currentPage == pkg.url) {
-		// 	url.ele('priority').text(maxPriority);
-		// } else {
-		// 	url.ele('priority').text(otherPriority);
-		// }
 	});
 
 	const xml = sitemap.end({ prettyPrint: true });
