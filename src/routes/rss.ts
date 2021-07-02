@@ -1,7 +1,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 export const get: RequestHandler = async () => {
-  const data = await fetch(import.meta.env.VITE_API_ENDPOINT + '/api/v1/posts?rss=t');
+  const data = await fetch('/blog.json');
   const posts = await data.json();
   const body = render(posts.data);
 

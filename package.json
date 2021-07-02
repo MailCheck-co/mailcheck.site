@@ -9,10 +9,7 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. .",
-    "cp:404": "cp build/error/index.html build/404.html",
-    "rm:404": "rimraf - build/404",
-    "sitemap": "node --experimental-json-modules ./generate-sitemap.js",
-    "postbuild": "npm run sitemap",
+    "postbuild": "node --experimental-json-modules ./generate-sitemap.js",
     "deploy_hosting": "firebase deploy --only hosting --project=dev",
     "deploy_functions": "firebase deploy --only functions --project=dev",
     "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
@@ -59,5 +56,5 @@
     "svelte-inview": "^2.0.1",
     "unist-util-visit": "^2.0.3"
   },
-  "url": "http://www.mailcheck.co"
+  "url": "https://www.mailcheck.co/"
 }

@@ -4,16 +4,16 @@
   import { serializeSchema } from "$utils/json-ld";
   import type { Schema } from "$utils/json-ld";
 
-  export let schema: Schema;
-  export let canonical = '';
+  export let schemas: Schema[];
+  export let canonical: string = '';
   export let title: string;
-  export let isPost = false;
+  export let isPost: boolean = false;
   export let thumbnail = '';
-  export let desc: string;
-  export let noindex = false;
+  export let desc: string = '';
+  export let noindex: boolean = false;
 
   const { siteName, siteUrl } = data;
-  const defaultDesc = data.desc;
+  const defaultDesc = data.description;
 </script>
 
 <svelte:head>
@@ -42,5 +42,7 @@
   {/if}
 
   <!-- JSON-LD Schema -->
-  {@html serializeSchema(schema)}
+  {#each schemas as schema}
+    {@html serializeSchema(schema)}
+  {/each}
 </svelte:head>

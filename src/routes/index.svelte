@@ -1,6 +1,6 @@
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
-  import { websiteSchema } from "$utils/json-ld";
+  import { websiteSchema, organizationSchema } from "$utils/json-ld";
   import EmailsVerify from '$lib/EmailsVerify/index.svelte';
   import Partners from '$lib/Partners/index.svelte';
   import Features from '$lib/Features/index.svelte';
@@ -15,7 +15,7 @@
   import Affiliate from '$lib/Affiliate/index.svelte';
 </script>
 
-<Seo title="Mailcheck - Home" desc="Verify your real customers in one way" schema={websiteSchema} />
+<Seo title="Home" schemas={[websiteSchema, organizationSchema]} />
 
 <main class="manage-customers" role="main" id="main">
   <!-- EMAILS VERIFY -->

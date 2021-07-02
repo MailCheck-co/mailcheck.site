@@ -6,7 +6,7 @@
   export let title = '';
 </script>
 
-<Seo {title} desc={title} isPost={true} schema={websiteSchema} />
+<Seo {title} desc={title} isPost={true} schemas={[websiteSchema]} />
 
 <div class="container" id="blog">
   <div class="content-block">

@@ -23,7 +23,7 @@
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
   import ContactUs from '$lib/ContactUs/index.svelte';
-  import { blogSchema } from "$utils/json-ld";
+  import { websiteSchema, articleSchema } from "$utils/json-ld";
 
   export let post;
 </script>
@@ -32,7 +32,7 @@
   title={`Blog | ${post.title}`} 
   desc={post.title} 
   isPost={true} 
-  schema={blogSchema} />
+  schemas={[websiteSchema, articleSchema]} />
 
 <div class="container" id="blog">
   <div class="content-block">
