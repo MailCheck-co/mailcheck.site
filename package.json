@@ -12,7 +12,7 @@
     "cp:404": "cp build/error/index.html build/404.html",
     "rm:404": "rimraf - build/404",
     "sitemap": "node --experimental-json-modules ./generate-sitemap.js",
-    "postbuild": "npm run sitemap && npm run cp:404 && npm run rm:404",
+    "postbuild": "npm run sitemap",
     "deploy_hosting": "firebase deploy --only hosting --project=dev",
     "deploy_functions": "firebase deploy --only functions --project=dev",
     "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
