@@ -121,7 +121,7 @@
               alt="Facebook" />
           </a>
           <a
-            href="https://www.linkedin.com/company/mailcheck//"
+            href="https://www.linkedin.com/company/mailcheck/"
             target="_blank"
             rel="external"
             title="LinkedIn page"
