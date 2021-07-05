@@ -31,15 +31,15 @@ const config = {
       fallback: null
     }),
     prerender: {
-			force: true
-		},
+      force: true
+    },
     vite: {
-			resolve: {
-				alias: {
-					$utils: path.resolve('./src/utils')
-				}
-			}
-		}
+      resolve: {
+        alias: {
+          $utils: path.resolve('./src/utils')
+        }
+      }
+    }
   }
 };
 

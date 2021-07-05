@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import data from '$utils/site-data';
-  import { serializeSchema } from "$utils/json-ld";
-  import type { Schema } from "$utils/json-ld";
+  import { serializeSchema } from '$utils/json-ld';
+  import type { Schema } from '$utils/json-ld';
 
   export let schemas: Schema[];
   export let canonical: string = '';
