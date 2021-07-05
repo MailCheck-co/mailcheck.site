@@ -14,8 +14,6 @@
   </div>
 </div>
 
-<ContactUs />
-
 <style>
   .container {
     display: block;
@@ -34,19 +32,6 @@
     margin: 0 auto;
   }
 
-  :global(h1),
-  :global(h2),
-  :global(h3) {
-    color: var(--primary-white) !important;
-    font-weight: var(--weight-700);
-  }
-
-  :global(h1) :global(a),
-  :global(h2) :global(a),
-  :global(h3) :global(a) {
-    color: inherit !important;
-  }
-
   :global(h1) {
     width: 100%;
     height: auto;
@@ -56,14 +41,20 @@
     letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase;
+    color: var(--primary-white) !important;
+    font-weight: var(--weight-700);
   }
 
   :global(h2) {
     font-size: var(--size-30);
+    color: var(--primary-white) !important;
+    font-weight: var(--weight-700);
   }
 
   :global(h3) {
     font-size: var(--size-24);
+    color: var(--primary-white) !important;
+    font-weight: var(--weight-700);
   }
 
   :global(pre) {
@@ -73,6 +64,18 @@
     background-color: var(--color-pre-global-bg);
     border-radius: var(--size-2);
     box-shadow: inset 0.08rem 0.08rem var(--size-6) var(--color-pre-global-shadow);
+  }
+
+  :global(h1 a) {
+    color: inherit !important;
+  }
+
+  :global(h2 a) {
+    color: inherit !important;
+  }
+
+  :global(h3 a) {
+    color: inherit !important;
   }
 
   :global(pre) :global(code) {

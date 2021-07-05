@@ -144,7 +144,7 @@
               many other sources to assign a score to a specific mail. Customer service is great.
               Very happy with Mailcheck
             </p>
-            <p class="slide-name">Customer</p>
+            <p class="slide-name">Francesco E.</p>
           </div>
         </li>
       </ul>
