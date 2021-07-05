@@ -57,19 +57,20 @@ body {
   h6,
   p {
     color: var(--heading-color);
-    font-weight: var(--weight-400);
     font-family: var(--roboto);
     line-height: 1.5;
   }
 
   p {
     text-indent: var(--size-20);
+    font-weight: var(--weight-300);
   }
 
   h1 {
     margin: 0 0 1em 0;
-    font-size: var(--size-32);
     text-align: center;
+    font-size: var(--size-36);
+    font-weight: var(--weight-600);
   }
 
   h2 {

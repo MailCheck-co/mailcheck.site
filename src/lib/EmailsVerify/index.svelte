@@ -610,6 +610,7 @@
         margin-bottom: 0;
         padding-right: var(--size-10);
         text-indent: initial;
+        color: var(--primary-white);
       }
 
       .list-item-result {
