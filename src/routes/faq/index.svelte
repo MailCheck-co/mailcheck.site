@@ -1,6 +1,7 @@
 <script lang="typescript">
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema } from '$utils/json-ld';
+  import filter from './filter.png';
 </script>
 
 <Seo desc="FAQ" title="FAQ" schemas={[websiteSchema]} />
@@ -407,7 +408,7 @@
         </div>
       </div>
     </div>
-    <img class="filter-img" src="/assets/img/filter.png" width="444" height="568" alt="filter" />
+    <img class="filter-img" src={filter} width="444" height="568" alt="filter" />
   </div>
 </section>
 
