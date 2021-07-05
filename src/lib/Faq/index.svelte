@@ -175,7 +175,7 @@
     .tab {
       position: relative;
       margin-bottom: var(--size-14);
-      border-bottom: 0.08rem solid var(--dark-02);
+      border-bottom: var(--size-1) solid var(--dark-02);
     }
 
     .tab-content {
@@ -220,7 +220,7 @@
       font-weight: var(--weight-400);
       font-size: var(--size-18);
       line-height: var(--size-24);
-      letter-spacing: 0.08rem;
+      letter-spacing: var(--letter-spacing);
 
       &::after {
         position: absolute;
@@ -229,8 +229,8 @@
         display: block;
         width: var(--size-6);
         height: var(--size-6);
-        border-bottom: 0.08rem solid var(--primary-accent);
-        border-left: 0.08rem solid var(--primary-accent);
+        border-bottom: var(--size-1) solid var(--primary-accent);
+        border-left: var(--size-1) solid var(--primary-accent);
         transform: rotate(-45deg);
         transition: all 0.5s ease;
         content: '';
@@ -270,8 +270,8 @@
       align-items: flex-start;
       justify-content: center;
       max-width: 80rem;
-      margin: 0 auto var(--size-50);
-      padding: var(--size-50) var(--size-20) 0;
+      margin: 0 auto;
+      padding: 0 var(--size-20) 0;
     }
   }
 
@@ -316,7 +316,7 @@
 
       .wrapper-questions {
         justify-content: center;
-        padding: var(--size-50) var(--size-20) 0;
+        padding: 0 var(--size-20) var(--size-50);
       }
     }
   }

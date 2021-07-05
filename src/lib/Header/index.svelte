@@ -76,11 +76,6 @@
     target="_blank"
     title="sign in"
     class="btn btn-sign-in mobile-btn">sign in</a>
-  <select class="select-mobile mobile-menu-links" on:blur={onLangSelect}>
-    <option value="en">en</option>
-    <option value="es">es</option>
-    <option value="ru">ru</option>
-  </select>
 </nav>
 
 <style lang="scss">
@@ -88,7 +83,7 @@
     margin-right: 1.56rem;
     color: var(--primary-white);
     background-color: var(--transparent);
-    border: 0.08rem solid var(--transparent);
+    border: var(--size-1) solid var(--transparent);
 
     & > option {
       color: var(--black);
@@ -134,7 +129,7 @@
       .btn-sign-in {
         color: var(--primary-white);
         background: var(--transparent);
-        border: 0.08rem solid var(--dark-05);
+        border: var(--size-1) solid var(--dark-05);
         outline: none;
 
         &:hover {
@@ -175,12 +170,6 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
-
-    .select-mobile {
-      @extend %select;
-
-      display: none;
-    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -279,16 +268,12 @@
         margin: 0 var(--size-50) var(--size-36);
         font-weight: var(--weight-400);
         font-size: var(--size-16);
-        letter-spacing: 0.05rem;
+        letter-spacing: var(--letter-spacing);
         text-align: left;
 
         &:first-child {
           margin-top: 4.375rem;
         }
-      }
-
-      .select-mobile {
-        display: inline-block;
       }
     }
 

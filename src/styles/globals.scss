@@ -145,18 +145,18 @@ body {
   color: var(--primary-white);
   font-weight: var(--weight-700);
   font-size: 16px;
-  letter-spacing: 0.08rem;
+  letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
   border-radius: 5px;
   outline: none;
   transition: transform 0.25s ease;
 
   &:hover {
-    transform: translateY(-0.08rem);
+    transform: translateY(-var(--size-1));
   }
 
   &:active {
-    transform: translateY(0.08rem);
+    transform: translateY(var(--size-1));
   }
 
   &:disabled {
@@ -182,15 +182,25 @@ body {
   padding: 0 30px;
 }
 
+.container .content-block {
+  max-width: unset;
+}
+
+.container .content-block .container {
+  padding: 0;
+  min-width: unset;
+  max-width: unset;
+}
+
 .section-wrapper {
-  max-width: 880px;
+  max-width: var(--size-880);
   margin: 0 auto;
 }
 
 .content-block {
   display: flex;
   flex-direction: column;
-  max-width: 880px;
+  max-width: var(--size-880);
   margin: auto;
 }
 
@@ -202,37 +212,14 @@ body {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  min-width: 300px;
-  max-height: 52px;
+  max-height: 3.25rem;
   margin-bottom: var(--size-20);
   padding: var(--size-20);
   color: var(--primary-white);
-  font-size: 16px;
+  font-size: var(--size-16);
   background-color: var(--dark-04);
-  border: 0.08rem solid var(--dark-04);
-  border-radius: 5px;
-
-  &.input-verify {
-    position: relative;
-    margin-bottom: 8px;
-    padding: var(--size-20) 45px 18px 15px;
-    background-color: var(--dark-01);
-    border-color: transparent;
-    border-radius: 0.25rem;
-
-    &::placeholder {
-      color: var(--dark-02);
-      font-size: 16px;
-      font-style: italic;
-      letter-spacing: 0.08rem;
-    }
-
-    &:focus {
-      font-weight: var(--weight-500);
-      background-color: var(--dark-05);
-      box-shadow: 0 0 0 0.08rem var(--primary-white) inset;
-    }
-  }
+  border: var(--size-1) solid var(--dark-04);
+  border-radius: var(--size-6);
 
   &::placeholder {
     color: var(--primary-white);
@@ -241,7 +228,7 @@ body {
   &:focus {
     font-weight: var(--weight-500);
     background-color: var(--dark-05);
-    box-shadow: 0 0 0 0.08rem var(--primary-white) inset;
+    box-shadow: 0 0 0 var(--size-1) var(--primary-white) inset;
   }
 }
 
@@ -254,7 +241,7 @@ body {
   color: var(--primary-white) !important;
   font-weight: var(--weight-300);
   font-size: 14px;
-  letter-spacing: 0.08rem;
+  letter-spacing: var(--letter-spacing);
 
   &::after {
     position: absolute;
@@ -262,15 +249,15 @@ body {
     bottom: 0;
     left: 50%;
     display: block;
-    height: 0.08rem;
+    height: var(--size-1);
     background: var(--primary-white);
     transition: 0.3s;
     content: '';
   }
 
   &:hover::after {
-    right: 0.08rem;
-    left: 0.08rem;
+    right: var(--size-1);
+    left: var(--size-1);
   }
 }
 
@@ -279,7 +266,7 @@ body {
   font-weight: var(--weight-300);
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.08rem;
+  letter-spacing: var(--letter-spacing);
   text-align: center;
   text-indent: initial;
 
@@ -458,7 +445,7 @@ body {
     font-weight: var(--weight-300);
     font-size: 14px;
     line-height: var(--size-20);
-    letter-spacing: 0.08rem;
+    letter-spacing: var(--letter-spacing);
     text-align: left;
     opacity: 0.5;
   }
@@ -488,7 +475,7 @@ body {
     font-weight: var(--weight-300);
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.08rem;
+    letter-spacing: var(--letter-spacing);
     text-align: left;
   }
 
@@ -499,7 +486,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     text-align: left;
-    border-left: 0.08rem solid var(--primary-white);
+    border-left: var(--size-1) solid var(--primary-white);
     opacity: 0.6;
   }
 }

@@ -9,6 +9,7 @@
   font-family: var(--defoult-font);
   --roboto: 'Roboto', sans-serif;
   --font-mono: 'Fira Mono', monospace;
+  --letter-spacing: 0.05rem;
 
   // colors
   --transparent: rgba(0, 0, 0, 0);
@@ -151,6 +152,7 @@
 
   // sizes
   --size-0: 0;
+  --size-1: 0.08rem;
   --size-2: 0.125rem;
   --size-6: 0.375rem;
   --size-8: 0.5rem;
@@ -169,7 +171,7 @@
   --size-38: 2.375rem;
   --size-40: 2.5rem;
   --size-42: 2.625rem;
-  --size-46: 2.875;
+  --size-46: 2.875rem;
   --size-50: 3.125rem;
   --size-58: 3.625rem;
   --size-60: 3.75rem;

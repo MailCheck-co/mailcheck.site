@@ -107,6 +107,8 @@
 
 <style lang="scss">
   #pricing {
+    padding-bottom: var(--size-50);
+
     @include intersection;
 
     &::before {
@@ -160,7 +162,7 @@
       justify-content: center;
       max-width: var(--size-880);
       margin: 0 auto;
-      padding: var(--size-60);
+      padding: 0;
 
       .cards {
         @extend %shadows;
@@ -171,7 +173,7 @@
         grid-template-rows: 1fr;
         grid-template-columns: repeat(4, 12.5rem);
         height: 26.25rem;
-        margin: 0 0 4.375rem;
+        margin: 0 auto;
         padding: 0;
         overflow-x: scroll;
         touch-action: manipulation;
@@ -211,7 +213,7 @@
             margin-bottom: var(--size-30);
             color: var(--pricing-plan-pro);
             background: var(--transparent);
-            border: 0.08rem solid var(--pricing-plan-border-pro);
+            border: var(--size-1) solid var(--pricing-plan-border-pro);
 
             &:hover {
               color: var(--primary-white);
@@ -284,7 +286,7 @@
             font-weight: 100;
             font-size: var(--size-16);
             line-height: var(--size-20);
-            letter-spacing: 0.05rem;
+            letter-spacing: var(--letter-spacing);
             text-align: center;
 
             &:last-of-type {
@@ -328,8 +330,6 @@
 
   @media only screen and (max-width: 1024px) {
     #pricing {
-      padding-bottom: var(--size-60);
-
       .wrapper-cost {
         padding: var(--size-20);
 
@@ -347,8 +347,6 @@
 
   @media only screen and (max-width: 768px) {
     #pricing {
-      padding-bottom: var(--size-30);
-
       &::before {
         top: 100%;
       }
@@ -371,10 +369,10 @@
 
   @media only screen and (max-width: 560px) {
     #pricing {
-      padding-bottom: var(--size-40);
+      padding: 0;
 
       .wrapper-cost {
-        padding: var(--size-30) 0;
+        padding: 0;
 
         .cards {
           grid-template-columns: repeat(4, 90%);

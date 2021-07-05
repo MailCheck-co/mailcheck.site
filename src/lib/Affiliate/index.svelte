@@ -34,11 +34,10 @@
   .affiliate {
     @include intersection;
 
-    padding: 7.5rem 0 var(--size-60);
+    padding: 0 0 var(--size-50);
 
     .section-heading {
       position: relative;
-      padding-bottom: var(--size-50);
 
       .title-small {
         width: 100%;
@@ -65,7 +64,7 @@
         font-weight: var(--weight-700);
         font-size: clamp(2.75rem, 14vw, 16rem);
         line-height: 0.2;
-        letter-spacing: 0.05rem;
+        letter-spacing: var(--letter-spacing);
         text-align: center;
         pointer-events: none;
         text-transform: uppercase;
@@ -87,10 +86,10 @@
         background-color: transparent;
         font-weight: var(--weight-700);
         font-size: var(--size-16);
-        letter-spacing: 0.08rem;
+        letter-spacing: var(--letter-spacing);
         text-transform: uppercase;
         line-height: var(--size-60);
-        border: 0.08rem solid var(--primary-white);
+        border: var(--size-1) solid var(--primary-white);
         border-radius: var(--size-6);
         outline: none;
         transition: transform 0.25s ease;
@@ -98,7 +97,7 @@
         &:hover {
           color: var(--primary-accent);
           background-color: var(--primary-white);
-          transform: translateY(-0.08rem);
+          transform: translateY(-var(--size-1));
           text-decoration: none;
         }
 

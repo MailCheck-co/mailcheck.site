@@ -39,7 +39,7 @@
       color: var(--primary-white);
       font-weight: var(--weight-900);
       font-size: var(--size-32);
-      letter-spacing: 0.05rem;
+      letter-spacing: var(--letter-spacing);
       text-transform: uppercase;
     }
 

@@ -62,7 +62,7 @@
     color: var(--primary-white);
     background-color: var(--color-pre-global-bg);
     border-radius: var(--size-2);
-    box-shadow: inset 0.08rem 0.08rem var(--size-6) var(--color-pre-global-shadow);
+    box-shadow: inset var(--size-1) var(--size-1) var(--size-6) var(--color-pre-global-shadow);
   }
 
   :global(h1 a) {
@@ -97,7 +97,7 @@
     color: var(--primary-white) !important;
     font-weight: var(--weight-400);
     line-height: 1.5;
-    letter-spacing: 0.08rem;
+    letter-spacing: var(--letter-spacing);
     text-align: justify;
     text-indent: var(--size-20);
   }

@@ -185,7 +185,7 @@
             font-weight: var(--weight-400);
             font-size: var(--size-14);
             font-style: normal;
-            letter-spacing: 0.08rem;
+            letter-spacing: var(--letter-spacing);
             opacity: 0.5;
           }
 
@@ -266,7 +266,7 @@
             color: var(--primary-white);
             font-weight: var(--weight-400);
             font-size: var(--size-14);
-            letter-spacing: 0.08rem;
+            letter-spacing: var(--letter-spacing);
             opacity: 0.5;
           }
         }

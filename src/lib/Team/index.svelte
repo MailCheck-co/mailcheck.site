@@ -58,6 +58,7 @@
 <style lang="scss">
   .team {
     @include intersection;
+    padding-bottom: var(--size-50);
 
     .team-members {
       display: flex;

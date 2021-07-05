@@ -161,8 +161,6 @@
 <style lang="scss">
   .testimonials {
     @include intersection;
-
-    padding-top: 7.5rem;
     color: var(--primary-white);
 
     .section-wrapper {
@@ -295,8 +293,6 @@
 
   @media all and (max-width: 768px) {
     .testimonials {
-      padding-top: 5.625rem;
-
       .testimonials-container {
         &::before,
         &::after {

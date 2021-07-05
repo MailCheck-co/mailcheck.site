@@ -83,7 +83,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 8.125rem;
+      padding-bottom: var(--size-50);
     }
 
     .reviews-item {
@@ -134,7 +134,7 @@
 
     .reviews-item-link {
       white-space: nowrap;
-      border: 0.08rem solid var(--primary-white);
+      border: var(--size-1) solid var(--primary-white);
 
       &:visited {
         color: var(--primary-white);
@@ -145,7 +145,7 @@
   @media only screen and (max-width: 768px) {
     .reviews-list {
       flex-direction: column;
-      margin-bottom: 4.375rem;
+      margin-bottom: 0;
     }
 
     .reviews-item {

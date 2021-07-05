@@ -372,7 +372,7 @@ figure {
 fieldset {
   margin: 0 var(--size-2);
   padding: 0.35em 0.625em 0.75em;
-  border: 0.08rem solid #c0c0c0;
+  border: var(--size-1) solid #c0c0c0;
 }
 
 // 1. Corrects color not being inherited in IE6/7/8/9

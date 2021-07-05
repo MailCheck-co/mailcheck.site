@@ -215,7 +215,7 @@
 
   @media only screen and (max-width: 768px) {
     #contact-us {
-      padding: var(--size-40) 0;
+      padding: 0;
 
       &::before {
         background-position: 0% 0;
@@ -365,7 +365,7 @@
         color: var(--primary-white);
         font-weight: var(--weight-400);
         font-size: var(--size-16);
-        letter-spacing: 0.05rem;
+        letter-spacing: var(--letter-spacing);
         text-align: center;
       }
     }
