@@ -67,7 +67,7 @@ body {
   }
 
   h1 {
-    margin: 0 0 1em 0;
+    margin: var(--size-24) 0;
     text-align: center;
     font-size: var(--size-36);
     font-weight: var(--weight-600);

@@ -1,6 +1,6 @@
 <script lang="typescript">
   import Seo from '$lib/Seo/index.svelte';
-  import { websiteSchema } from "$utils/json-ld";
+  import { websiteSchema } from '$utils/json-ld';
 </script>
 
 <Seo desc="FAQ" title="FAQ" schemas={[websiteSchema]} />
@@ -197,7 +197,7 @@
           <div class="tab-content">
             <p class="tab-text">
               A step-by-step guide to
-              <a sapper:prefetch title="API key creation" href="/create-api-key">
+              <a sveltekit:prefetch title="API key creation" href="/create-api-key">
                 API key creation
               </a>
             </p>
@@ -366,7 +366,7 @@
             <p class="tab-text">
               Step by step guide on how to use
               <a
-                sapper:prefetch
+                sveltekit:prefetch
                 title="Mailchimp Integration instructions"
                 href="/mailchimp-integration">
                 Mailchimp
@@ -381,7 +381,10 @@
           <div class="tab-content">
             <p class="tab-text">
               A step-by-step guide to integrate Mailcheck with daily services using
-              <a sapper:prefetch title="Zapier Integration instructions" href="/zapier-integration">
+              <a
+                sveltekit:prefetch
+                title="Zapier Integration instructions"
+                href="/zapier-integration">
                 Zapier
               </a>
             </p>
@@ -394,7 +397,7 @@
             <p class="tab-text">
               A step-by-step guide to integrate Mailcheck with daily services using
               <a
-                sapper:prefetch
+                sveltekit:prefetch
                 title="Integromat Integration instructions"
                 href="/integromat-integration">
                 Integromat
@@ -497,7 +500,6 @@
     text-indent: initial;
     word-break: break-word;
     color: var(--primary-white);
-    
   }
 
   .tab-label {
