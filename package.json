@@ -59,7 +59,7 @@
     "firebase-tools": "^9.12.1",
     "gray-matter": "^4.0.3",
     "http-proxy-middleware": "^2.0.0",
-    "mdsvex": "^0.9.7",
+    "mdsvex": "^0.9.8",
     "node-sass": "^6.0.0",
     "postcss": "^8.3.0",
     "postcss-load-config": "^3.0.1",
