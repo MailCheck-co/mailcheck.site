@@ -24,7 +24,7 @@
   <!-- PARTNERS SECTION -->
   <Partners />
 
-  <!--Welcome to the featuress-->
+  <!--Welcome to the features-->
   <Features />
 
   <!--Choose your audience-->
@@ -57,6 +57,9 @@
 
 <style lang="scss">
   .manage-customers {
+    position: relative;
+    z-index: 1;
+
     &::before {
       position: absolute;
       top: 0;

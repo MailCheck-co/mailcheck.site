@@ -44,6 +44,11 @@
 <ContactUs />
 
 <style lang="scss">
+  .terms{
+    position: relative;
+    z-index: 1;
+  }
+
   .article-title {
     color: var(--primary-white);
   }

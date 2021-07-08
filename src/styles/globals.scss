@@ -85,7 +85,7 @@ body {
     transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 
@@ -117,7 +117,7 @@ body {
   }
 
   img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     user-select: none;
     touch-action: none;
@@ -129,6 +129,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+section.cta ~ footer {
+  margin-bottom: 235px;
 }
 
 @media all and (max-width: 768px) {

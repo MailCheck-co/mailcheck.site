@@ -370,7 +370,7 @@
 
       .emails-block {
         width: 100%;
-        max-width: 23.75rem;
+        max-width: 26.75rem;
 
         .main-buttons {
           display: flex;

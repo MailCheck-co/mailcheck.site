@@ -18,24 +18,27 @@
   const SCROLL = ITEMS_TO_SCROLL * 420;
   const TIMEOUT = SCROLL_SPEED * 100;
 
-  function deactivate() {
+  function deactivate(e) {
     setTimeout(() => {
       active = false;
+      e.target.style.pointerEvents="auto";
     }, TIMEOUT);
   }
 
-  function onPrev() {
+  function onPrev(e) {
+    e.target.style.pointerEvents="none";
     active = true;
     scrollLeft = slider.scrollLeft;
     slider.scrollLeft = scrollLeft - SCROLL;
-    deactivate();
+    deactivate(e);
   }
 
-  function onNext() {
+  function onNext(e) {
+    e.target.style.pointerEvents="none";
     active = true;
     scrollLeft = slider.scrollLeft;
     slider.scrollLeft = scrollLeft + SCROLL;
-    deactivate();
+    deactivate(e);
   }
 
   function onMouseDown(e: MouseEvent) {

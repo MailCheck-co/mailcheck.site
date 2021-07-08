@@ -115,20 +115,6 @@
     z-index: 100;
     padding: 4.6875rem 0 7.3125rem;
 
-    &::before {
-      position: absolute;
-      z-index: -1;
-      display: block;
-      width: 100%;
-      height: 35rem;
-      padding: 7.3rem 0;
-      background: url('city.png') no-repeat top 15% center;
-      background-size: cover;
-      opacity: 0.4;
-      content: '';
-      pointer-events: none;
-    }
-
     .contact-form {
       display: flex;
       flex-direction: column;
@@ -205,21 +191,9 @@
     }
   }
 
-  @media only screen and (min-width: 1440px) {
-    #contact-us {
-      &::before {
-        background-position: 50% 100%;
-      }
-    }
-  }
-
   @media only screen and (max-width: 768px) {
     #contact-us {
       padding: 0;
-
-      &::before {
-        background-position: 0% 0;
-      }
     }
   }
 

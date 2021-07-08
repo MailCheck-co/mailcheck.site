@@ -18,7 +18,7 @@
     <p class="section-title-lg">affiliate</p>
   </div>
 
-  <div class="flex">
+  <div class="grid">
     <a rel="external" target="_blank" href="/" title="Become an affiliate"> Become an affiliate</a>
     <a
       rel="external"
@@ -34,7 +34,8 @@
   .affiliate {
     @include intersection;
 
-    padding: 0 0 var(--size-50);
+    margin-top: 6rem;
+    padding: 0 30px var(--size-50);
 
     .section-heading {
       position: relative;
@@ -71,13 +72,13 @@
       }
     }
 
-    .flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-direction: column;
+    .grid {
+      display: grid;
+      column-gap: 40px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      text-align: center;
       max-width: var(--size-880);
-      margin: 4rem auto 0;
+      margin: 2rem auto 0;
 
       a {
         height: var(--size-60);

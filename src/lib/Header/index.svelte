@@ -3,7 +3,7 @@
   import logo from '$lib/Header/mailcheck-logo.svg';
 
   let open = false;
-  let lang = 'en';
+  /*let lang = 'en';
   const onLangSelect = (e) => {
     const current = e.target.options.selectedIndex;
     switch (+current) {
@@ -20,7 +20,7 @@
         lang = 'en';
         break;
     }
-  };
+  };*/
 </script>
 
 <ToTop />
@@ -38,11 +38,11 @@
       <a class="nav-link" title="faq" href="/faq">FAQ</a>
     </nav>
     <div>
-      <select class="select" on:blur={onLangSelect}>
+      <!--<select class="select" on:blur={onLangSelect}>
         <option value="en">en</option>
         <option value="es">es</option>
         <option value="ru">ru</option>
-      </select>
+      </select>-->
       <a
         rel="external"
         target="_blank"

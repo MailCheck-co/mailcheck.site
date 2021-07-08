@@ -166,6 +166,19 @@
     position: relative;
     background: var(--footer-gradient);
 
+    &::before {
+      position: absolute;
+      transform: translateY(-105%);
+      display: block;
+      width: 100%;
+      height: 64rem;
+      background: url('city.png') no-repeat center;
+      background-size: cover;
+      opacity: 0.4;
+      content: '';
+      pointer-events: none;
+    }
+
     .container {
       .footer-top {
         display: flex;

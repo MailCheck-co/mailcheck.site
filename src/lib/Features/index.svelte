@@ -51,6 +51,7 @@
 <style lang="scss">
   #features {
     @include intersection;
+    margin-top: 6rem;
 
     .welcome-flex {
       display: flex;
