@@ -60,7 +60,8 @@
     position: relative;
     z-index: 1;
 
-    &::before {
+    &::before,
+    &::after {
       position: absolute;
       top: 0;
       left: 0;
@@ -74,9 +75,6 @@
     }
 
     &::after {
-      @extend .manage-customers, ::before;
-
-      top: 30%;
       transform: scaleX(-1);
     }
   }

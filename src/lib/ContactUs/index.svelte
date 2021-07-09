@@ -247,7 +247,7 @@
     display: none;
     width: 100%;
     height: 100%;
-    background: url('city.png') no-repeat center 50%;
+    background: url('../footer/city.png') no-repeat center 50%;
     background-size: 150% 150%;
 
     &.open {
@@ -302,10 +302,10 @@
 
         &::before {
           position: relative;
-          top: var(--size-10);
+          top: 10px;
           display: block;
           width: var(--size-24);
-          height: var(--size-2);
+          height: 3px;
           background: var(--primary-white);
           transform: rotate(-45deg);
           content: '';
@@ -313,11 +313,11 @@
 
         &::after {
           position: relative;
-          top: var(--size-6);
+          top: 7px;
           right: 0;
           display: block;
           width: var(--size-24);
-          height: var(--size-2);
+          height: 3px;
           background-color: var(--primary-white);
           transform: rotate(45deg);
           content: '';

@@ -62,7 +62,7 @@
 
   @media all and (max-width: 768px) {
     .cta {
-      padding-bottom: var(--size-50);
+      padding: var(--size-50) 0;
 
       &-info {
         text-align: center;

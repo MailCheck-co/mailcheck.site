@@ -134,7 +134,7 @@
 
     .filter-img {
       position: absolute;
-      top: 10%;
+      top: 75px;
       right: 0;
       z-index: -1;
       width: 27.75rem;
@@ -306,7 +306,6 @@
       }
 
       .filter-img {
-        order: -1;
         width: 50%;
         min-width: 10%;
         max-width: 70%;

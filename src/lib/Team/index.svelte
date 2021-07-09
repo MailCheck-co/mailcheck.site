@@ -121,6 +121,8 @@
 
   @media all and (max-width: 600px) {
     .team {
+      margin-top: 0;
+
       .team-members {
         flex-direction: column;
         align-items: flex-start;

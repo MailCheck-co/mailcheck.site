@@ -62,20 +62,21 @@
     margin: 0 auto;
   }
 
-  :global(h1),
-  :global(h2),
-  :global(h3) {
+  :global(.content-block h1),
+  :global(.content-block h2),
+  :global(.content-block h3) {
     color: var(--primary-white) !important;
-    font-weight: var(--weight-700);
+    font-weight: var(--weight-600);
+    text-align: left;
   }
 
-  :global(h1) :global(a),
-  :global(h2) :global(a),
-  :global(h3) :global(a) {
+  :global(.content-block h1) :global(.content-block a),
+  :global(.content-block h2) :global(.content-block a),
+  :global(.content-block h3) :global(.content-block a) {
     color: inherit !important;
   }
 
-  :global(h1) {
+  :global(.content-block h1) {
     width: 100%;
     height: auto;
     margin-bottom: var(--size-24);
@@ -86,12 +87,12 @@
     text-transform: uppercase;
   }
 
-  :global(h2) {
-    font-size: var(--size-30);
+  :global(.content-block h2) {
+    font-size: var(--size-28);
   }
 
-  :global(h3) {
-    font-size: var(--size-24);
+  :global(.content-block h3) {
+    font-size: var(--size-22);
   }
 
   :global(pre) {
@@ -121,7 +122,7 @@
 
   :global(p) {
     color: var(--primary-white) !important;
-    font-weight: var(--weight-400);
+    font-weight: var(--weight-300);
     line-height: 1.5;
     letter-spacing: var(--letter-spacing);
     text-align: justify;
@@ -138,15 +139,15 @@
     font-weight: var(--weight-700);
   }
 
-  :global(a) {
+  :global(.content-block a) {
     color: var(--color-link);
   }
 
-  :global(a:hover) {
+  :global(.content-block a:hover) {
     color: var(--color-link-hover);
   }
 
-  :global(a:visited) {
+  :global(.content-block a:visited) {
     color: var(--color-visited);
   }
 

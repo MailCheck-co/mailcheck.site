@@ -137,7 +137,7 @@
     var(--gradient-8) 100%
   );
   --mob-menu-gradient: linear-gradient(to top, var(--gradient-5) 0%, var(--gradient-6) 100%);
-  --popup-bg-gradient: --mob-menu-gradient;
+  --popup-bg-gradient: var(--mob-menu-gradient);
 
   // font-weight
   --weight-100: 100;
