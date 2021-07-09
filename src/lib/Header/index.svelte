@@ -25,17 +25,17 @@
 
 <ToTop />
 
-<header role='banner'>
-  <div class='wrapper-header'>
-    <a class='logo' href='/' title='logo'>
-      <img src={logo} width='138' height='26' alt='mailcheck logo' />
+<header role="banner">
+  <div class="wrapper-header">
+    <a class="logo" href="/" title="logo">
+      <img src={logo} width="138" height="26" alt="mailcheck logo" />
     </a>
-    <nav class='header-nav' role='navigation'>
-      <a class='nav-link' title='features' href='/#features'>Features</a>
-      <a class='nav-link' title='pricing' href='/#pricing'>Pricing</a>
-      <a class='nav-link' title='contact us' href='/#contact-us'>Contact Us</a>
-      <a class='nav-link' title='blog' href='/blog'>Blog</a>
-      <a class='nav-link' title='faq' href='/faq'>FAQ</a>
+    <nav class="header-nav" role="navigation">
+      <a class="nav-link" title="features" href="/#features">Features</a>
+      <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
+      <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
+      <a class="nav-link" title="blog" href="/blog">Blog</a>
+      <a class="nav-link" title="faq" href="/faq">FAQ</a>
     </nav>
     <div>
       <!--<select class="select" on:blur={onLangSelect}>
@@ -44,11 +44,11 @@
         <option value="ru">ru</option>
       </select>-->
       <a
-        rel='external'
-        target='_blank'
-        href='https://app.mailcheck.co/'
-        class='btn btn-sign-in'
-        title='sign in'>
+        rel="external"
+        target="_blank"
+        href="https://app.mailcheck.co/"
+        class="btn btn-sign-in"
+        title="sign in">
         sign in
       </a>
     </div>
@@ -56,29 +56,29 @@
 </header>
 
 <!--Mobile menu-->
-<button class='burger-wrapper' class:open on:click={() => (open = !open)} id='burger'>
-  <span class='burger' />
+<button class="burger-wrapper" class:open on:click={() => (open = !open)} id="burger">
+  <span class="burger" />
 </button>
 <nav
-  class='mobile-menu'
+  class="mobile-menu"
   class:open
   on:click={() => (open = !open)}
-  role='navigation'
-  id='mobile-menu'>
-  <a class='nav-link mobile-menu-links' title='features' href='/#features'>Features</a>
-  <a class='nav-link mobile-menu-links' title='pricing' href='/#pricing'>Pricing</a>
-  <a class='nav-link mobile-menu-links' title='contact us' href='/#contact-us'>Contact Us</a>
-  <a class='nav-link mobile-menu-links' title='blog' href='/blog'>Blog</a>
-  <a class='nav-link mobile-menu-links' title='faq' href='/faq'>FAQ</a>
+  role="navigation"
+  id="mobile-menu">
+  <a class="nav-link mobile-menu-links" title="features" href="/#features">Features</a>
+  <a class="nav-link mobile-menu-links" title="pricing" href="/#pricing">Pricing</a>
+  <a class="nav-link mobile-menu-links" title="contact us" href="/#contact-us">Contact Us</a>
+  <a class="nav-link mobile-menu-links" title="blog" href="/blog">Blog</a>
+  <a class="nav-link mobile-menu-links" title="faq" href="/faq">FAQ</a>
   <a
-    rel='external'
-    href='https://app.mailcheck.co/'
-    target='_blank'
-    title='sign in'
-    class='btn btn-sign-in mobile-btn'>sign in</a>
+    rel="external"
+    href="https://app.mailcheck.co/"
+    target="_blank"
+    title="sign in"
+    class="btn btn-sign-in mobile-btn">sign in</a>
 </nav>
 
-<style lang='scss'>
+<style lang="scss">
   %select {
     margin-right: 1.56rem;
     color: var(--primary-white);
