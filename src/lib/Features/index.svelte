@@ -7,7 +7,7 @@
 </script>
 
 <section
-  id="features"
+  class="features"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
@@ -49,7 +49,7 @@
 </section>
 
 <style lang="scss">
-  #features {
+  .features {
     @include intersection;
     margin-top: 6rem;
 
