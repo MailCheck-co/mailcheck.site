@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import ToTop from '$lib/ToTop/index.svelte';
   import logo from '$lib/Header/mailcheck-logo.svg';
 
@@ -111,34 +111,34 @@
     height: 5.625rem;
     margin: 0 auto;
   }
-    .logo {
-      width: 8.625rem;
-      height: 1.69rem;
+  .logo {
+    width: 8.625rem;
+    height: 1.69rem;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .select {
+    @extend %select;
+  }
+
+  .btn-sign-in {
+    color: var(--primary-white);
+    background: var(--transparent);
+    border: var(--size-1) solid var(--dark-05);
+    outline: none;
+
+    &:hover {
+      border-color: var(--primary-white);
     }
 
-    .header-nav {
-      display: flex;
-      justify-content: space-between;
+    &:active {
+      border-color: var(--dark-05);
     }
-
-    .select {
-      @extend %select;
-    }
-
-    .btn-sign-in {
-      color: var(--primary-white);
-      background: var(--transparent);
-      border: var(--size-1) solid var(--dark-05);
-      outline: none;
-
-      &:hover {
-        border-color: var(--primary-white);
-      }
-
-      &:active {
-        border-color: var(--dark-05);
-      }
-    }
+  }
 
   .burger-wrapper {
     padding: 0;

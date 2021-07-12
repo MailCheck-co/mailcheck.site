@@ -1,4 +1,4 @@
-<script type='ts'>
+<script type="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   import k5Logo from '$lib/Testimonials/5k-logo.svg';
@@ -21,12 +21,12 @@
   function deactivate(e) {
     setTimeout(() => {
       active = false;
-      e.target.style.pointerEvents="auto";
+      e.target.style.pointerEvents = 'auto';
     }, TIMEOUT);
   }
 
   function onPrev(e) {
-    e.target.style.pointerEvents="none";
+    e.target.style.pointerEvents = 'none';
     active = true;
     scrollLeft = slider.scrollLeft;
     slider.scrollLeft = scrollLeft - SCROLL;
@@ -34,7 +34,7 @@
   }
 
   function onNext(e) {
-    e.target.style.pointerEvents="none";
+    e.target.style.pointerEvents = 'none';
     active = true;
     scrollLeft = slider.scrollLeft;
     slider.scrollLeft = scrollLeft + SCROLL;

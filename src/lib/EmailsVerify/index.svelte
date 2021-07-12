@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import Progress from '$lib/Progress/index.svelte';
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
@@ -203,111 +203,111 @@
 </script>
 
 <div
-  class='container'
+  class="container"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
   }}>
-  <div class='wrapper-main sm-left'>
-    <h1 class='title'>Validate your mailing list in one click</h1>
-    <p class='main-text'>
+  <div class="wrapper-main sm-left">
+    <h1 class="title">Validate your mailing list in one click</h1>
+    <p class="main-text">
       Get assured your mailing list contains only real emails addresses, get rid of bots and
       inactive users
     </p>
-    <div class='emails-block'>
-      <div class='main-buttons'>
-        <a rel='external' href='https://app.mailcheck.co/' target='_blank' class='btn btn-live-demo'
-        >GET FREE EMAILS NOW</a>
-        <a rel='external' href='https://app.mailcheck.co/' target='_blank' class='btn btn-start'
-        >Start</a>
+    <div class="emails-block">
+      <div class="main-buttons">
+        <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-live-demo"
+          >GET FREE EMAILS NOW</a>
+        <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-start"
+          >Start</a>
       </div>
-      <div class='verify-email'>
-        <p class='verify-email-title'>Verify email address in real-time!</p>
+      <div class="verify-email">
+        <p class="verify-email-title">Verify email address in real-time!</p>
         <form
-          class='verify-email-form'
-          id='verify-email'
+          class="verify-email-form"
+          id="verify-email"
           on:submit|preventDefault={verifyEmailFormSubmit}>
-          <div class='email-block'>
+          <div class="email-block">
             <input
-              class='input input-verify'
-              type='email'
-              name='email'
-              id='email'
-              placeholder='Email to verify'
+              class="input input-verify"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email to verify"
               bind:value={emailInput}
               on:keyup={keyup} />
             {#if isChecking && !isChecked}
-              <div class='progress-wrapper'>
+              <div class="progress-wrapper">
                 <Progress />
               </div>
             {:else}
-              <button type='submit' class='btn-verify-email'>
-                <img src={arrowIcon} width='20' height='16' alt='Verify email' />
+              <button type="submit" class="btn-verify-email">
+                <img src={arrowIcon} width="20" height="16" alt="Verify email" />
               </button>
             {/if}
           </div>
-          <div class='email-results' class:result>
+          <div class="email-results" class:result>
             {#if loader}
-              <div class='form-preloader' />
+              <div class="form-preloader" />
             {/if}
-            <p class='results-title'>
+            <p class="results-title">
               Validation RESULTS -
-              <span id='email-risk' class={validityClass}>
+              <span id="email-risk" class={validityClass}>
                 {validityEmailRisk}
               </span>
             </p>
-            <ul class='results-list'>
-              <ul class='list-left'>
-                <li class='list-item email'>
-                  <p class='list-item-title'>Checked email:</p>
-                  <p id='email-result' class='list-item-result'>
+            <ul class="results-list">
+              <ul class="list-left">
+                <li class="list-item email">
+                  <p class="list-item-title">Checked email:</p>
+                  <p id="email-result" class="list-item-result">
                     {emailResult}
                   </p>
                 </li>
-                <li class='list-item exists'>
-                  <p class='list-item-title'>Exists:</p>
-                  <p id='exists-result' class='list-item-result'>
+                <li class="list-item exists">
+                  <p class="list-item-title">Exists:</p>
+                  <p id="exists-result" class="list-item-result">
                     {existsResult}
                   </p>
                 </li>
-                <li class='list-item smtp'>
-                  <p class='list-item-title'>SMTP:</p>
-                  <p id='smtp-result' class='list-item-result'>
+                <li class="list-item smtp">
+                  <p class="list-item-title">SMTP:</p>
+                  <p id="smtp-result" class="list-item-result">
                     {smtpResult}
                   </p>
                 </li>
               </ul>
 
-              <ul class='list-right'>
-                <li class='list-item rate'>
-                  <p class='list-item-title'>Trust rate:</p>
-                  <p id='rate-result' class='list-item-result'>
+              <ul class="list-right">
+                <li class="list-item rate">
+                  <p class="list-item-title">Trust rate:</p>
+                  <p id="rate-result" class="list-item-result">
                     {rateResult}
                   </p>
                 </li>
-                <li class='list-item disposable'>
-                  <p class='list-item-title'>Is Not Disposable:</p>
-                  <p id='disposable-result' class='list-item-result'>
+                <li class="list-item disposable">
+                  <p class="list-item-title">Is Not Disposable:</p>
+                  <p id="disposable-result" class="list-item-result">
                     {disposableResult}
                   </p>
                 </li>
-                <li class='list-item smpt-ca'>
-                  <p class='list-item-title'>Is Not SMTP catch-all:</p>
-                  <p id='catch-result' class='list-item-result'>
+                <li class="list-item smpt-ca">
+                  <p class="list-item-title">Is Not SMTP catch-all:</p>
+                  <p id="catch-result" class="list-item-result">
                     {catchResult}
                   </p>
                 </li>
               </ul>
             </ul>
-            <div class='results-icons'>
+            <div class="results-icons">
               {#each socialLinks as link}
                 {#if typeof link.href === 'string'}
                   <a
                     href={link.href}
-                    target='_blank'
-                    rel='external'
+                    target="_blank"
+                    rel="external"
                     class={`social-link active ${link.className}`}
                     title={link.title}>&nbsp;</a>
                 {:else}
@@ -315,7 +315,7 @@
                 {/if}
               {/each}
             </div>
-            <button type='button' id='close-btn' class='close-results' on:click={closeBtn} />
+            <button type="button" id="close-btn" class="close-results" on:click={closeBtn} />
           </div>
         </form>
       </div>
@@ -323,7 +323,7 @@
   </div>
 </div>
 
-<style lang='scss'>
+<style lang="scss">
   @keyframes pulse-blue {
     from {
       transform: scale(0.5);

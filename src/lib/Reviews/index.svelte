@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   import iconLike from '$lib/Reviews/icon-like-heart.svg';

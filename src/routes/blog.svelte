@@ -44,7 +44,7 @@
 <ContactUs />
 
 <style lang="scss">
-  .terms{
+  .terms {
     position: relative;
     z-index: 1;
   }

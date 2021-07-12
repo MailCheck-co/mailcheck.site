@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import esLogo from '$lib/Footer/es-logo.svg';
   import mailcheckLogo from '$lib/Footer/mailcheck-logo.svg';
   import iconTwitter from '$lib/Footer/icon-twitter.svg';
