@@ -48,6 +48,7 @@
 <style lang="scss">
   .partners {
     @include intersection;
+
     padding-bottom: var(--size-50);
   }
 

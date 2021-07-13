@@ -159,7 +159,6 @@
   }
 
   .mobile-menu {
-    padding: var(--size-50) var(--size-30);
     position: fixed;
     top: 0;
     left: 100%;
@@ -168,6 +167,7 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
+    padding: var(--size-50) var(--size-30);
   }
 
   @media only screen and (max-width: 768px) {

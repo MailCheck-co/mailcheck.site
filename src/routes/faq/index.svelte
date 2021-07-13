@@ -437,16 +437,16 @@
   }
 
   .input-radio {
-    width: 100%;
-    height: 40px;
-    opacity: 0;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
     z-index: 9;
+    width: 100%;
+    height: 40px;
     cursor: pointer;
+    opacity: 0;
 
     &:checked ~ .tab-content {
       height: auto;
@@ -496,11 +496,11 @@
   .tab-text {
     margin-top: 0;
     padding: 0 10px;
+    color: var(--primary-white);
     font-size: var(--size-16);
     text-align: initial;
     text-indent: initial;
     word-break: break-word;
-    color: var(--primary-white);
   }
 
   .tab-label {

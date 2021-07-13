@@ -2,17 +2,17 @@
 
 <style>
   .progress {
-    appearance: none;
     box-sizing: border-box;
-    border: none;
-    border-radius: 50%;
-    padding: 0.25em;
     width: 3em;
     height: 3em;
-    color: #5fcbd2;
-    background-color: transparent;
-    font-size: var(--size-16);
+    padding: 0.25em;
     overflow: hidden;
+    color: #5fcbd2;
+    font-size: var(--size-16);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    appearance: none;
   }
 
   .progress::-webkit-progress-bar {
@@ -35,27 +35,27 @@
 
   .progress:indeterminate::before,
   .progress:indeterminate::-webkit-progress-value {
-    content: '';
     display: block;
     box-sizing: border-box;
+    width: 100% !important;
+    height: 100%;
     margin-bottom: 0.25em;
+    background-color: transparent;
     border: solid 0.25em transparent;
     border-top-color: currentColor;
     border-radius: 50%;
-    width: 100% !important;
-    height: 100%;
-    background-color: transparent;
     animation: pure-material-progress-circular-pseudo 0.75s infinite linear alternate;
+    content: '';
   }
 
   .progress:indeterminate::-moz-progress-bar {
     box-sizing: border-box;
-    border: solid 0.25em transparent;
-    border-top-color: currentColor;
-    border-radius: 50%;
     width: 100%;
     height: 100%;
     background-color: transparent;
+    border: solid 0.25em transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
     animation: pure-material-progress-circular-pseudo 0.75s infinite linear alternate;
   }
 
@@ -114,8 +114,8 @@
       border-bottom-color: currentColor;
     }
     100% {
-      border-left-color: currentColor;
       border-bottom-color: currentColor;
+      border-left-color: currentColor;
       transform: rotate(225deg);
     }
   }

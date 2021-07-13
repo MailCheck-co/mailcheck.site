@@ -6,7 +6,9 @@
   // fonts
   --defoult-font: arial, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
     cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   font-family: var(--defoult-font);
+
   --roboto: 'Roboto', sans-serif;
   --font-mono: 'Fira Mono', monospace;
   --letter-spacing: 0.05rem;
@@ -24,7 +26,6 @@
   --color-pre-shadow: rgb(255 255 255 / 25%);
   --color-pre-global-shadow: rgba(0, 0, 0, 0.05);
   --color-progress: #5fcbd2;
-
   --hopbush: #c69;
   --bouquet: #b37399;
   --venus: #998099;
@@ -38,7 +39,6 @@
   --pale-sky: #6b717f;
   --midnight-blue: #036;
   --black: #000;
-
   --color-primary: var(--hopbush);
   --color-secondary: var(--bouquet);
   --color-accent: var(--patina);
@@ -108,7 +108,6 @@
   --gradient-6: #5bf;
   --gradient-7: rgb(10, 23, 46);
   --gradient-8: rgba(10, 23, 46, 0);
-
   --bg-gradient-desc: linear-gradient(
     to top,
     var(--black) 1%,

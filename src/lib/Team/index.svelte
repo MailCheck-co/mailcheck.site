@@ -58,6 +58,7 @@
 <style lang="scss">
   .team {
     @include intersection;
+
     margin-top: 6rem;
     padding-bottom: var(--size-50);
 
@@ -161,9 +162,9 @@
       }
 
       .team-member-avatar {
+        left: -2rem;
         min-width: 6.875rem;
         min-height: 6.875rem;
-        left: -2rem;
       }
 
       .team-member-name {

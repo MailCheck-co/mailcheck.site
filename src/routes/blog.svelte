@@ -18,7 +18,7 @@
   import { websiteSchema, articleSchema } from '$utils/json-ld';
 
   export let posts;
-  let desc: string = 'Blog';
+  let desc = 'Blog';
 </script>
 
 <Seo {desc} title={desc} schemas={[websiteSchema, articleSchema]} />

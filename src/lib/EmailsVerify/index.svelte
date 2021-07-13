@@ -341,13 +341,13 @@
   }
 
   .wrapper-main {
-    padding: 4.375rem 0 var(--size-50);
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 4.375rem 0 var(--size-50);
   }
 
   .title {
@@ -359,14 +359,14 @@
   }
 
   .main-text {
-    max-width: 23.75rem;
-    text-align: left;
-    color: var(--primary-white);
     z-index: 1;
+    max-width: 23.75rem;
     margin: 0 0 var(--size-40);
+    color: var(--primary-white);
     font-size: var(--size-14);
     line-height: var(--size-22);
     letter-spacing: var(--letter-spacing);
+    text-align: left;
     text-indent: initial;
   }
 
@@ -390,9 +390,9 @@
     width: 100%;
     margin-right: var(--size-20);
     color: var(--primary-white);
+    text-decoration: none;
     background: var(--transparent);
     border: var(--size-1) solid var(--dark-05);
-    text-decoration: none;
 
     &:hover {
       border-color: var(--primary-white);
@@ -411,8 +411,8 @@
 
     &:hover {
       color: var(--primary-accent);
-      background-color: var(--primary-white);
       text-decoration: none;
+      background-color: var(--primary-white);
     }
 
     &:active {
@@ -570,8 +570,8 @@
     min-width: 5.3125rem;
     margin-bottom: 0;
     padding-right: var(--size-10);
-    text-indent: initial;
     color: var(--primary-white);
+    text-indent: initial;
   }
 
   .list-item-result {
@@ -594,8 +594,8 @@
     min-width: 5.3125rem;
     margin-bottom: 0;
     padding-right: var(--size-10);
-    text-indent: initial;
     color: var(--primary-white);
+    text-indent: initial;
   }
 
   .results-icons {
@@ -721,9 +721,9 @@
     }
 
     .title {
-      font-size: var(--size-38);
       z-index: 1;
       max-width: 33.125rem;
+      font-size: var(--size-38);
 
       &::before {
         position: absolute;
@@ -744,10 +744,10 @@
     }
 
     .main-text {
+      max-width: 33.75rem;
       font-size: var(--size-18);
       line-height: var(--size-28);
       text-align: center;
-      max-width: 33.75rem;
     }
   }
 

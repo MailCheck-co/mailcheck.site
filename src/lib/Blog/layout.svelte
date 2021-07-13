@@ -35,25 +35,25 @@
     width: 100%;
     height: auto;
     margin-bottom: var(--size-24);
+    color: var(--primary-white) !important;
+    font-weight: var(--weight-700);
     font-size: var(--size-36);
     line-height: var(--size-40);
     letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase;
-    color: var(--primary-white) !important;
-    font-weight: var(--weight-700);
   }
 
   :global(h2) {
-    font-size: var(--size-30);
     color: var(--primary-white) !important;
     font-weight: var(--weight-700);
+    font-size: var(--size-30);
   }
 
   :global(h3) {
-    font-size: var(--size-24);
     color: var(--primary-white) !important;
     font-weight: var(--weight-700);
+    font-size: var(--size-24);
   }
 
   :global(pre) {

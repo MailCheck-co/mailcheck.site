@@ -42,9 +42,9 @@
 
       .title-small {
         width: 100%;
-        color: var(--primary-white);
         height: auto;
         margin-bottom: var(--size-24);
+        color: var(--primary-white);
         font-weight: var(--weight-700);
         font-size: var(--size-32);
         line-height: var(--size-40);
@@ -67,29 +67,29 @@
         line-height: 0.2;
         letter-spacing: var(--letter-spacing);
         text-align: center;
-        pointer-events: none;
         text-transform: uppercase;
+        pointer-events: none;
       }
     }
 
     .grid {
       display: grid;
-      column-gap: 40px;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      text-align: center;
       max-width: var(--size-880);
       margin: 2rem auto 0;
+      text-align: center;
+      column-gap: 40px;
 
       a {
         height: var(--size-60);
         padding: 0 var(--size-40);
         color: var(--primary-white);
-        background-color: transparent;
         font-weight: var(--weight-700);
         font-size: var(--size-16);
+        line-height: var(--size-60);
         letter-spacing: var(--letter-spacing);
         text-transform: uppercase;
-        line-height: var(--size-60);
+        background-color: transparent;
         border: var(--size-1) solid var(--primary-white);
         border-radius: var(--size-6);
         outline: none;
@@ -97,9 +97,9 @@
 
         &:hover {
           color: var(--primary-accent);
+          text-decoration: none;
           background-color: var(--primary-white);
           transform: translateY(-var(--size-1));
-          text-decoration: none;
         }
 
         &:first-child {

@@ -164,6 +164,7 @@
 <style lang="scss">
   .testimonials {
     @include intersection;
+
     color: var(--primary-white);
   }
 

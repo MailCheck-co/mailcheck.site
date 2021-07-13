@@ -63,21 +63,21 @@ p {
 }
 
 p {
-  text-indent: var(--size-20);
   font-weight: var(--weight-300);
+  text-indent: var(--size-20);
 }
 
 h1 {
   margin: var(--size-24) 0;
-  text-align: center;
-  font-size: var(--size-32);
   font-weight: var(--weight-600);
+  font-size: var(--size-32);
+  text-align: center;
 }
 
 h2 {
   font-size: var(--size-16);
-  text-align: center;
   letter-spacing: 0.8px;
+  text-align: center;
 }
 
 a {
@@ -123,8 +123,8 @@ img {
   max-width: 100%;
   height: auto;
   user-select: none;
-  touch-action: none;
   pointer-events: none;
+  touch-action: none;
 }
 
 #svelte {
@@ -185,9 +185,9 @@ img {
 }
 
 .container .content-block .container {
-  padding: 0;
   min-width: unset;
   max-width: unset;
+  padding: 0;
 }
 
 .section-wrapper {
@@ -196,12 +196,12 @@ img {
 }
 
 .content-block {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   max-width: var(--size-880);
   margin: auto;
-  position: relative;
-  z-index: 1;
 }
 
 .fixed {

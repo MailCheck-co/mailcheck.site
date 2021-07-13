@@ -7,7 +7,8 @@
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore . && svelte-check",
+    "lint:style": "stylelint \"src/**/*.+(scss|css|svelte)\" --fix",
     "format": "prettier --write --plugin-search-dir=. .",
     "postbuild": "node --experimental-json-modules ./generate-sitemap.js",
     "deploy_hosting": "firebase deploy --only hosting --project=dev",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.4",
+    "@nodeart/stylelint-config-nodeart": "0.0.4",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.4.0",
@@ -39,6 +41,8 @@
     "remark-abbr": "^1.4.1",
     "remark-github": "^10.0.1",
     "sass": "^1.34.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
     "svelte": "^3.34.0",
     "svelte-check": "^2.0.0",
     "svelte-preprocess": "^4.7.3",
@@ -55,6 +59,27 @@
     "schema-dts": "^0.8.3",
     "svelte-inview": "^2.0.1",
     "unist-util-visit": "^2.0.3"
+  },
+  "stylelint": {
+    "extends": [
+      "@nodeart/stylelint-config-nodeart",
+      "stylelint-config-prettier"
+    ],
+    "ignoreFiles": [
+      "src/scss/libs/*.+(scss|css)"
+    ],
+    "rules": {
+      "no-descending-specificity": null,
+      "plugin/no-low-performance-animation-properties": null,
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ]
+    }
   },
   "url": "https://www.mailcheck.co/"
 }
