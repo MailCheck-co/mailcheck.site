@@ -437,16 +437,16 @@
   }
 
   .input-radio {
-    width: 100%;
-    height: 40px;
-    opacity: 0;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
     z-index: 9;
+    width: 100%;
+    height: 40px;
     cursor: pointer;
+    opacity: 0;
 
     &:checked ~ .tab-content {
       height: auto;
@@ -483,7 +483,7 @@
     }
 
     &::-webkit-scrollbar-track {
-      background-color: rgba(17, 50, 78, 0.2);
+      background-color: var(--section-titles-color);
     }
 
     &::-webkit-scrollbar-thumb {
@@ -496,13 +496,13 @@
   .tab-text {
     margin-top: 0;
     padding: 0 10px;
+    color: var(--primary-white);
     font-weight: var(--weight-300);
     font-size: var(--size-16);
-    color: var(--primary-white);
+    letter-spacing: var(--letter-spacing-text);
     text-align: initial;
     text-indent: initial;
     word-break: break-word;
-    letter-spacing: var(--letter-spacing-text);
   }
 
   .tab-label {
@@ -560,6 +560,8 @@
   }
 
   .wrapper-questions {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -567,8 +569,6 @@
     max-width: 1280px;
     margin: 0 auto 50px;
     padding: 50px 20px 0;
-    position: relative;
-    z-index: 1;
   }
 
   @media only screen and (max-width: 1024px) {

@@ -240,8 +240,12 @@ img {
   margin-right: var(--size-20);
   color: var(--primary-white) !important;
   font-weight: var(--weight-300);
-  font-size: 14px;
+  font-size: var(--size-14);
   letter-spacing: var(--letter-spacing);
+
+  &:hover {
+    text-decoration: none;
+  }
 
   &::after {
     position: absolute;
@@ -264,7 +268,7 @@ img {
 .text-thin {
   color: var(--primary-white);
   font-weight: var(--weight-300);
-  font-size: 16px;
+  font-size: var(--size-16);
   line-height: 24px;
   letter-spacing: var(--letter-spacing);
   text-align: center;
@@ -285,7 +289,7 @@ img {
 
   &-small {
     margin: 0 auto 15px;
-    font-size: 12px;
+    font-size: var(--size-12);;
     text-align: initial;
   }
 }
@@ -330,7 +334,7 @@ img {
   margin: 0;
   color: var(--section-titles-color) !important;
   font-weight: var(--weight-900);
-  font-size: clamp(44px, 14vw, 255px);
+  font-size: var(--size-clamped);
   line-height: 0.2;
   letter-spacing: 0.05px;
   text-align: center;
@@ -346,7 +350,7 @@ img {
   margin: 0;
   color: var(--primary-white);
   font-weight: var(--weight-300);
-  font-size: 16px;
+  font-size: var(--size-16);
   line-height: 1.5;
   letter-spacing: 0.5px;
   text-align: center;
@@ -378,7 +382,7 @@ img {
 
   &-bold {
     margin: 30px auto;
-    font-weight: bold;
+    font-weight: var(--weight-700);
   }
 }
 
@@ -402,7 +406,7 @@ img {
   margin: 0;
   color: var(--primary-white);
   font-weight: var(--weight-700);
-  font-size: 46px;
+  font-size: var(--size-46);
   text-align: center;
 }
 
@@ -412,7 +416,7 @@ img {
   margin-bottom: 25px;
   color: var(--primary-white);
   font-weight: var(--weight-600);
-  font-size: 32px;
+  font-size: var(--size-32);
   line-height: 40px;
   letter-spacing: 1.6px;
   text-align: center;
@@ -426,7 +430,7 @@ img {
     margin: var(--size-20) auto 0;
     color: var(--primary-white);
     font-weight: var(--weight-500);
-    font-size: 24px;
+    font-size: var(--size-24);
     line-height: 30px;
     letter-spacing: 1.6px;
     text-align: left;
@@ -443,7 +447,7 @@ img {
     margin: 0 0 10px;
     color: var(--primary-white);
     font-weight: var(--weight-300);
-    font-size: 14px;
+    font-size: var(--size-14);
     line-height: var(--size-20);
     letter-spacing: var(--letter-spacing);
     text-align: left;
@@ -473,7 +477,7 @@ img {
     margin: 0 0 15px;
     color: var(--primary-white);
     font-weight: var(--weight-300);
-    font-size: 16px;
+    font-size: var(--size-16);
     line-height: 24px;
     letter-spacing: var(--letter-spacing);
     text-align: left;
@@ -483,7 +487,7 @@ img {
     margin: 0 0 15px var(--size-20);
     padding: 5px 15px;
     font-weight: var(--weight-400);
-    font-size: 16px;
+    font-size: var(--size-16);
     line-height: 26px;
     text-align: left;
     border-left: var(--size-1) solid var(--primary-white);

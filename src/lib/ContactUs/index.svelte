@@ -149,7 +149,7 @@
         }
 
         &::-webkit-scrollbar-track {
-          background-color: rgba(17, 50, 78, 0.2);
+          background-color: var(--section-titles-color);
         }
 
         &::-webkit-scrollbar-thumb {

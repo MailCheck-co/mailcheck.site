@@ -70,12 +70,6 @@
     text-align: left;
   }
 
-  :global(.content-block h1) :global(.content-block a),
-  :global(.content-block h2) :global(.content-block a),
-  :global(.content-block h3) :global(.content-block a) {
-    color: inherit !important;
-  }
-
   :global(.content-block h1) {
     width: 100%;
     height: auto;

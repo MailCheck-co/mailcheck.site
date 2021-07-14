@@ -17,7 +17,7 @@ desc: Step by step guide on how to use Mailcheck with Integromat.
 - Open Mailcheck Integrations - [https://app.mailcheck.co/dashboard/integration](https://app.mailcheck.co/dashboard/integration)
   and click "Connect" you will be redirected into "Integromat"
 
-![integromat email verifiaction integration](./integromat-1.png)
+![integromat email verification integration](./integromat-1.png)
 
 ### Step 2
 

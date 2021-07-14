@@ -3,24 +3,6 @@
   import logo from '$lib/Header/mailcheck-logo.svg';
 
   let open = false;
-  /*let lang = 'en';
-  const onLangSelect = (e) => {
-    const current = e.target.options.selectedIndex;
-    switch (+current) {
-      case 0:
-        lang = 'en';
-        break;
-      case 1:
-        lang = 'es';
-        break;
-      case 2:
-        lang = 'ru';
-        break;
-      default:
-        lang = 'en';
-        break;
-    }
-  };*/
 </script>
 
 <ToTop />
@@ -38,11 +20,6 @@
       <a class="nav-link" title="faq" href="/faq">FAQ</a>
     </nav>
     <div>
-      <!--<select class="select" on:blur={onLangSelect}>
-        <option value="en">en</option>
-        <option value="es">es</option>
-        <option value="ru">ru</option>
-      </select>-->
       <a
         rel="external"
         target="_blank"
@@ -79,30 +56,6 @@
 </nav>
 
 <style lang="scss">
-  %select {
-    margin-right: 1.56rem;
-    color: var(--primary-white);
-    background-color: var(--transparent);
-    border: var(--size-1) solid var(--transparent);
-
-    & > option {
-      color: var(--black);
-      background-color: var(--transparent);
-
-      &:checked {
-        background-color: var(--transparent);
-      }
-
-      &:not(:checked) {
-        background-color: var(--transparent);
-      }
-
-      &:hover {
-        background-color: var(--transparent);
-      }
-    }
-  }
-
   .wrapper-header {
     display: flex;
     align-items: center;
@@ -119,10 +72,6 @@
   .header-nav {
     display: flex;
     justify-content: space-between;
-  }
-
-  .select {
-    @extend %select;
   }
 
   .btn-sign-in {
@@ -185,10 +134,6 @@
       .logo {
         z-index: 100;
         margin-left: var(--size-30);
-      }
-
-      .select {
-        display: none;
       }
     }
 

@@ -440,7 +440,7 @@
     margin-bottom: var(--size-8);
     padding: var(--size-20) var(--size-46) var(--size-18) var(--size-16);
     background-color: var(--dark-01);
-    border-color: transparent;
+    border-color: var(--transparent);
     border-radius: 0.25rem;
 
     &::placeholder {
@@ -577,27 +577,13 @@
 
   .list-item-result {
     margin-bottom: 0;
-    text-indent: initial;
     color: var(--primary-white);
+    text-indent: initial;
   }
 
   .list-right {
     margin: 0;
     padding: 0;
-  }
-
-  .list-item {
-    display: flex;
-    align-items: center;
-    font-size: var(--size-12);
-  }
-
-  .list-item-title {
-    min-width: 5.3125rem;
-    margin-bottom: 0;
-    padding-right: var(--size-10);
-    color: var(--primary-white);
-    text-indent: initial;
   }
 
   .results-icons {
@@ -685,7 +671,7 @@
     right: var(--size-16);
     width: var(--size-12);
     height: var(--size-12);
-    background-color: transparent;
+    background-color: var(--transparent);
     border: none;
     outline: none;
 

@@ -283,7 +283,7 @@
             max-width: 8.75rem;
             margin-bottom: var(--size-16);
             color: var(--primary-white);
-            font-weight: 100;
+            font-weight: var(--weight-100);
             font-size: var(--size-16);
             line-height: var(--size-20);
             letter-spacing: var(--letter-spacing);

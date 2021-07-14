@@ -7,30 +7,25 @@
     height: 3em;
     padding: 0.25em;
     overflow: hidden;
-    color: #5fcbd2;
+    color: var(--color-progress);
     font-size: var(--size-16);
-    background-color: transparent;
+    background-color: var(--transparent);
     border: none;
     border-radius: 50%;
     appearance: none;
   }
 
   .progress::-webkit-progress-bar {
-    background-color: transparent;
+    background-color: var(--transparent);
   }
 
   /* Indeterminate */
   .progress:indeterminate {
-    -webkit-mask-image: linear-gradient(transparent 50%, black 50%),
-      linear-gradient(to right, transparent 50%, black 50%);
-    mask-image: linear-gradient(transparent 50%, black 50%),
-      linear-gradient(to right, transparent 50%, black 50%);
+    -webkit-mask-image: linear-gradient(var(--transparent) 50%, black 50%),
+      linear-gradient(to right, var(--transparent) 50%, black 50%);
+    mask-image: linear-gradient(var(--transparent) 50%, black 50%),
+      linear-gradient(to right, var(--transparent) 50%, black 50%);
     animation: pure-material-progress-circular 6s infinite cubic-bezier(0.3, 0.6, 1, 1);
-  }
-
-  :-ms-lang(x),
-  .progress:indeterminate {
-    animation: none;
   }
 
   .progress:indeterminate::before,
@@ -40,9 +35,9 @@
     width: 100% !important;
     height: 100%;
     margin-bottom: 0.25em;
-    background-color: transparent;
-    border: solid 0.25em transparent;
-    border-top-color: currentColor;
+    background-color: var(--transparent);
+    border: solid 0.25em var(--transparent);
+    border-top-color: var(--color-progress);
     border-radius: 50%;
     animation: pure-material-progress-circular-pseudo 0.75s infinite linear alternate;
     content: '';
@@ -52,9 +47,9 @@
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background-color: transparent;
-    border: solid 0.25em transparent;
-    border-top-color: currentColor;
+    background-color: var(--transparent);
+    border: solid 0.25em var(--transparent);
+    border-top-color: var(--color-progress);
     border-radius: 50%;
     animation: pure-material-progress-circular-pseudo 0.75s infinite linear alternate;
   }
@@ -102,20 +97,20 @@
       transform: rotate(-30deg);
     }
     29.4% {
-      border-left-color: transparent;
+      border-left-color: var(--transparent);
     }
     29.41% {
-      border-left-color: currentColor;
+      border-left-color: var(--color-progress);
     }
     64.7% {
-      border-bottom-color: transparent;
+      border-bottom-color: var(--transparent);
     }
     64.71% {
-      border-bottom-color: currentColor;
+      border-bottom-color: var(--color-progress);
     }
     100% {
-      border-bottom-color: currentColor;
-      border-left-color: currentColor;
+      border-bottom-color: var(--color-progress);
+      border-left-color: var(--color-progress);
       transform: rotate(225deg);
     }
   }

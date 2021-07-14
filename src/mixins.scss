@@ -42,14 +42,6 @@ $min-width-x-large: 1600px;
   justify-content: center;
 }
 
-%btn {
-
-  :hover {
-
-  }
-
-}
-
 @mixin font($size, $weight, $color) {
   color: $color;
   font-weight: $weight;

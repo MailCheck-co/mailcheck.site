@@ -66,15 +66,15 @@
   }
 
   :global(h1 a) {
-    color: inherit !important;
+    color: var(--primary-white) !important;
   }
 
   :global(h2 a) {
-    color: inherit !important;
+    color: var(--primary-white) !important;
   }
 
   :global(h3 a) {
-    color: inherit !important;
+    color: var(--primary-white) !important;
   }
 
   :global(pre) :global(code) {

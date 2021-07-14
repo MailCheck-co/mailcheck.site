@@ -53,7 +53,7 @@
     color: var(--primary-white);
 
     &:hover {
-      color: inherit;
+      color: var(--primary-white);
       text-decoration: underline;
     }
   }

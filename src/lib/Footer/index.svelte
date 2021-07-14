@@ -167,19 +167,19 @@
 
 <style lang='scss'>
   .footer {
-    padding-top: 6.25rem;
     position: relative;
+    padding-top: 6.25rem;
     background: var(--footer-gradient);
   }
 
   .footer-bg::before {
     position: absolute;
-    transform: translateY(-105%);
     display: block;
     width: 100%;
     height: 64rem;
     background: url('city.png') no-repeat center;
     background-size: cover;
+    transform: translateY(-105%);
     opacity: 0.4;
     content: '';
     pointer-events: none;
@@ -235,8 +235,6 @@
 
   .footer-social-link {
     display: inline-block;
-    align-items: center;
-    justify-content: space-between;
     margin-left: var(--size-16);
   }
 
@@ -278,11 +276,6 @@
 
   .footer-social {
     display: block;
-  }
-
-  .footer-social-link {
-    display: inline-block;
-    margin-left: var(--size-16);
   }
 
   .copyright2 {

@@ -105,7 +105,7 @@
       margin-bottom: 0;
       padding-top: var(--size-50);
       color: var(--primary-white);
-      font-weight: bold;
+      font-weight: var(--weight-700);
       font-size: var(--size-20);
       line-height: 1.2;
       text-indent: initial;
