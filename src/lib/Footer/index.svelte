@@ -6,15 +6,20 @@
   import iconLinkedin from '$lib/Footer/icon-linkedin.svg';
   import iconGitHub from '$lib/Footer/icon-github.svg';
   import iconMoneyBack from '$lib/Footer/icon-money-back.svg';
+
+  export let footerBg = true;
 </script>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-logo-copyright">
-        <a class="logo2" href="/" title="logo">
-          <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a>
-        <address class="footer-address">
+<footer class='footer'>
+  {#if footerBg}
+  <div class='footer-bg'></div>
+  {/if}
+  <div class='container'>
+    <div class='footer-top'>
+      <div class='footer-logo-copyright'>
+        <a class='logo2' href='/' title='logo'>
+          <img src={mailcheckLogo} width='162' height='27' alt='logo2' /></a>
+        <address class='footer-address'>
           Suite 4005 43 Bedford Street,<br />
           London, England, WC2E 9HA
         </address>
@@ -162,22 +167,22 @@
 
 <style lang="scss">
   .footer {
-    position: relative;
     padding-top: 6.25rem;
+    position: relative;
     background: var(--footer-gradient);
+  }
 
-    &::before {
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 64rem;
-      background: url('city.png') no-repeat center;
-      background-size: cover;
-      transform: translateY(-105%);
-      opacity: 0.4;
-      content: '';
-      pointer-events: none;
-    }
+  .footer-bg::before {
+    position: absolute;
+    transform: translateY(-105%);
+    display: block;
+    width: 100%;
+    height: 64rem;
+    background: url('city.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.4;
+    content: '';
+    pointer-events: none;
   }
 
   .footer-top {
@@ -225,7 +230,6 @@
   }
 
   .footer-social-link {
-    display: flex;
     display: inline-block;
     align-items: center;
     justify-content: space-between;

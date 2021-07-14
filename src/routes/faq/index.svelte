@@ -437,16 +437,16 @@
   }
 
   .input-radio {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9;
     width: 100%;
     height: 40px;
-    cursor: pointer;
     opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    cursor: pointer;
 
     &:checked ~ .tab-content {
       height: auto;
@@ -496,11 +496,13 @@
   .tab-text {
     margin-top: 0;
     padding: 0 10px;
-    color: var(--primary-white);
+    font-weight: var(--weight-300);
     font-size: var(--size-16);
+    color: var(--primary-white);
     text-align: initial;
     text-indent: initial;
     word-break: break-word;
+    letter-spacing: var(--letter-spacing-text);
   }
 
   .tab-label {
@@ -513,7 +515,7 @@
     font-weight: var(--weight-500);
     font-size: var(--size-18);
     line-height: 27px;
-    letter-spacing: 0.9px;
+    letter-spacing: var(--letter-spacing);
 
     &::after {
       position: absolute;
@@ -544,7 +546,7 @@
       position: absolute;
       right: 0;
       left: 0;
-      z-index: 0;
+      z-index: -1;
       display: block;
       width: 1024px;
       height: 170px;
@@ -565,6 +567,8 @@
     max-width: 1280px;
     margin: 0 auto 50px;
     padding: 50px 20px 0;
+    position: relative;
+    z-index: 1;
   }
 
   @media only screen and (max-width: 1024px) {

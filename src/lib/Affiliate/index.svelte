@@ -74,22 +74,22 @@
 
     .grid {
       display: grid;
+      column-gap: 40px;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      text-align: center;
       max-width: var(--size-880);
       margin: 2rem auto 0;
-      text-align: center;
-      column-gap: 40px;
 
       a {
         height: var(--size-60);
         padding: 0 var(--size-40);
         color: var(--primary-white);
+        background-color: transparent;
         font-weight: var(--weight-700);
         font-size: var(--size-16);
-        line-height: var(--size-60);
         letter-spacing: var(--letter-spacing);
         text-transform: uppercase;
-        background-color: transparent;
+        line-height: var(--size-60);
         border: var(--size-1) solid var(--primary-white);
         border-radius: var(--size-6);
         outline: none;
@@ -99,7 +99,7 @@
           color: var(--primary-accent);
           text-decoration: none;
           background-color: var(--primary-white);
-          transform: translateY(-var(--size-1));
+          transform: translateY(var(--size-1-invert));
         }
 
         &:first-child {
