@@ -7,6 +7,7 @@
 </script>
 
 <section
+  id="features"
   class="features"
   class:intersecting
   use:inview={inviewOptions}

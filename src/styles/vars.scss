@@ -1,5 +1,3 @@
-@import '@fontsource/fira-mono';
-
 :root {
   --inherit: inherit;
 
@@ -11,7 +9,8 @@
 
   --roboto: 'Roboto', sans-serif;
   --font-mono: 'Fira Mono', monospace;
-  --letter-spacing: 0.05rem;
+  --letter-spacing: 0.05625rem;
+  --letter-spacing-text: 0.05rem;
 
   // colors
   --transparent: rgba(0, 0, 0, 0);
@@ -78,7 +77,7 @@
   --color-notice: #66b;
 
   // Mailcheck Landing colors
-  --primary-accent: #1bced4;
+    --primary-accent: #1bced4;
   --dark-01: rgba(255, 255, 255, 0.1);
   --dark-02: rgba(255, 255, 255, 0.2);
   --dark-04: rgba(255, 255, 255, 0.4);
@@ -152,6 +151,7 @@
   // sizes
   --size-0: 0;
   --size-1: 0.08rem;
+  --size-1-invert: -0.08rem;
   --size-2: 0.125rem;
   --size-6: 0.375rem;
   --size-8: 0.5rem;

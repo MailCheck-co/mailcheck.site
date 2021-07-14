@@ -51,9 +51,18 @@
 
   .article-title {
     color: var(--primary-white);
+
+    &:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
   }
 
   .article-snippet {
     text-indent: initial;
+  }
+
+  .text-thin-link {
+    color: var(--color-link);
   }
 </style>

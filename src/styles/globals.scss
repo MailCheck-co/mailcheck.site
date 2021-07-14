@@ -154,7 +154,7 @@ img {
   transition: transform 0.25s ease;
 
   &:hover {
-    transform: translateY(-var(--size-1));
+    transform: translateY(var(--size-1-invert));
   }
 
   &:active {

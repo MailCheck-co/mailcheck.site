@@ -117,11 +117,7 @@
   }
 
   :global(a:hover) {
-    color: var(--color-link-hover);
-  }
-
-  :global(a:visited) {
-    color: var(--color-visited);
+    text-decoration: underline;
   }
 
   :global(img) {

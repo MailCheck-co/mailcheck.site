@@ -523,6 +523,7 @@
 
   .results-title {
     margin-top: 0;
+    color: var(--primary-white);
     font-weight: var(--weight-700);
     font-size: var(--size-18);
     line-height: 1.2;
@@ -577,6 +578,7 @@
   .list-item-result {
     margin-bottom: 0;
     text-indent: initial;
+    color: var(--primary-white);
   }
 
   .list-right {

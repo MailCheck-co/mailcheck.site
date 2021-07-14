@@ -1,16 +1,18 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
+  import Progress from '$lib/Progress/index.svelte';
 
   let intersecting: boolean;
   let isValid: boolean;
   let email = '';
   let isOpen = false;
   let isError = false;
-  let contactForm = { reset: () => {} };
+  let contactForm = { reset: () => {''} };
   let popUpBlock: HTMLElement;
   let nameValue = '';
   let textareaValue = '';
+  let isSending = false;
   function validate() {
     return {
       update() {
@@ -22,10 +24,14 @@
   const onClose = () => {
     isOpen = false;
     isError = false;
+    isSending = false;
+    isValid = false;
     document.body.classList.remove('fixed');
   };
   const onSubmit = async (e: Event) => {
     e.preventDefault();
+    isSending = true;
+    isValid = true;
     const referrerValue = document.referrer;
     const data = {
       name: nameValue,
@@ -61,6 +67,7 @@
 <section
   class:intersecting
   id="contact-us"
+  class="contact-us"
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
@@ -88,7 +95,15 @@
         bind:value={textareaValue}
         placeholder="Message"
         required />
-      <button disabled={!isValid} class="btn btn-submit" type="submit">submit</button>
+      <button disabled={!isValid} class="btn btn-submit" type="submit">
+        {#if isSending}
+          <span class="progress-wrapper">
+            <Progress />
+          </span>
+        {:else}
+          submit
+        {/if}
+      </button>
     </form>
   </div>
 </section>
@@ -109,7 +124,7 @@
 </div>
 
 <style lang="scss">
-  #contact-us {
+  .contact-us {
     @include intersection;
 
     z-index: 100;
@@ -192,13 +207,13 @@
   }
 
   @media only screen and (max-width: 768px) {
-    #contact-us {
+    .contact-us {
       padding: 0;
     }
   }
 
   @media only screen and (max-width: 1024px) {
-    #contact-us {
+    .contact-us {
       .title-contact::before {
         display: none;
       }

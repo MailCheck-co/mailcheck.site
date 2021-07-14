@@ -143,14 +143,6 @@
     color: var(--color-link);
   }
 
-  :global(.content-block a:hover) {
-    color: var(--color-link-hover);
-  }
-
-  :global(.content-block a:visited) {
-    color: var(--color-visited);
-  }
-
   :global(img) {
     max-width: 100%;
     height: auto;
