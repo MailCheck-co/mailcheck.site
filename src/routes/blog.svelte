@@ -64,5 +64,10 @@
 
   .text-thin-link {
     color: var(--color-link);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 </style>

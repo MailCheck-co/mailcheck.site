@@ -223,6 +223,10 @@
 
   .footer-nav-link {
     margin: 0 0 var(--size-16) 0;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .footer-social-mobile {
