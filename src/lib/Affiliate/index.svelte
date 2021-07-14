@@ -42,9 +42,9 @@
 
       .title-small {
         width: 100%;
+        color: var(--primary-white);
         height: auto;
         margin-bottom: var(--size-24);
-        color: var(--primary-white);
         font-weight: var(--weight-700);
         font-size: var(--size-32);
         line-height: var(--size-40);
@@ -67,8 +67,8 @@
         line-height: 0.2;
         letter-spacing: var(--letter-spacing);
         text-align: center;
-        text-transform: uppercase;
         pointer-events: none;
+        text-transform: uppercase;
       }
     }
 

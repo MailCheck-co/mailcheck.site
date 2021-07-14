@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang='ts'>
   import esLogo from '$lib/Footer/es-logo.svg';
   import mailcheckLogo from '$lib/Footer/mailcheck-logo.svg';
   import iconTwitter from '$lib/Footer/icon-twitter.svg';
@@ -24,140 +24,140 @@
           London, England, WC2E 9HA
         </address>
       </div>
-      <nav class="footer-nav" role="navigation">
-        <a class="nav-link footer-nav-link" title="features" href="/#features">Features</a>
-        <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
-        <a class="nav-link footer-nav-link" title="contact us" href="/#contact-us">Contact Us</a>
-        <a class="nav-link footer-nav-link" title="blog" href="/blog">Blog</a>
+      <nav class='footer-nav' role='navigation'>
+        <a class='nav-link footer-nav-link' title='features' href='/#features'>Features</a>
+        <a class='nav-link footer-nav-link' title='pricing' href='/#pricing'>Pricing</a>
+        <a class='nav-link footer-nav-link' title='contact us' href='/#contact-us'>Contact Us</a>
+        <a class='nav-link footer-nav-link' title='blog' href='/blog'>Blog</a>
         <a
-          class="nav-link footer-nav-link"
-          href="https://app.mailcheck.co/docs#tag--email"
-          rel="external"
-          title="API"
-          target="_blank">API</a>
-        <a class="nav-link footer-nav-link" title="Privacy policy" href="/privacy"
-          >Privacy policy</a>
-        <a class="nav-link footer-nav-link" title="Terms and conditions" href="/terms"
-          >Terms and conditions</a>
-        <a class="nav-link footer-nav-link" title="Cookie policy" href="/cookies">Cookie policy</a>
+          class='nav-link footer-nav-link'
+          href='https://app.mailcheck.co/docs#tag--email'
+          rel='external'
+          title='API'
+          target='_blank'>API</a>
+        <a class='nav-link footer-nav-link' title='Privacy policy' href='/privacy'
+        >Privacy policy</a>
+        <a class='nav-link footer-nav-link' title='Terms and conditions' href='/terms'
+        >Terms and conditions</a>
+        <a class='nav-link footer-nav-link' title='Cookie policy' href='/cookies'>Cookie policy</a>
         <a
-          rel="external"
-          target="_blank"
-          title="Product of NodeArt"
-          class="nav-link footer-nav-link"
-          href="https://nodeart.io">Product of NodeArt</a>
+          rel='external'
+          target='_blank'
+          title='Product of NodeArt'
+          class='nav-link footer-nav-link'
+          href='https://nodeart.io'>Product of NodeArt</a>
       </nav>
-      <div class="footer-social-mobile">
+      <div class='footer-social-mobile'>
         <a
-          href="https://www.facebook.com/mailcheck.co/"
-          target="_blank"
-          rel="external"
-          title="Facebook page"
-          class="footer-social-link">
+          href='https://www.facebook.com/mailcheck.co/'
+          target='_blank'
+          rel='external'
+          title='Facebook page'
+          class='footer-social-link'>
           <img
-            width="18"
-            height="18"
-            class="footer-social-icon"
+            width='18'
+            height='18'
+            class='footer-social-icon'
             src={iconFacebook}
-            alt="Facebook" />
+            alt='Facebook' />
         </a>
         <a
-          href="https://www.linkedin.com/company/mailcheck/"
-          target="_blank"
-          rel="external"
-          title="LinkedIn page"
-          class="footer-social-link">
+          href='https://www.linkedin.com/company/mailcheck/'
+          target='_blank'
+          rel='external'
+          title='LinkedIn page'
+          class='footer-social-link'>
           <img
-            width="18"
-            height="18"
-            class="footer-social-icon"
+            width='18'
+            height='18'
+            class='footer-social-icon'
             src={iconLinkedin}
-            alt="LinkedIn" />
+            alt='LinkedIn' />
         </a>
         <a
-          href="https://twitter.com/mailcheckco"
-          target="_blank"
-          rel="external"
-          title="Twitter page"
-          class="footer-social-link">
-          <img width="18" height="18" class="footer-social-icon" src={iconTwitter} alt="Twitter" />
+          href='https://twitter.com/mailcheckco'
+          target='_blank'
+          rel='external'
+          title='Twitter page'
+          class='footer-social-link'>
+          <img width='18' height='18' class='footer-social-icon' src={iconTwitter} alt='Twitter' />
         </a>
         <a
-          href="https://github.com/MailCheck-co"
-          target="_blank"
-          rel="external"
-          title="GitHub page"
-          class="footer-social-link">
-          <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
+          href='https://github.com/MailCheck-co'
+          target='_blank'
+          rel='external'
+          title='GitHub page'
+          class='footer-social-link'>
+          <img width='18' height='18' class='footer-social-icon' src={iconGitHub} alt='GitHub' />
         </a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer-info left">
-        <div class="footer-info-item">
-          <img class="footer-info-logo" src={esLogo} alt="logo" />
-          <p class="footer-info-text">
+    <div class='footer-bottom'>
+      <div class='footer-info left'>
+        <div class='footer-info-item'>
+          <img class='footer-info-logo' src={esLogo} alt='logo' />
+          <p class='footer-info-text'>
             GDPR Compliant<br />
             We will never share your data.
           </p>
         </div>
-        <div class="footer-info-item">
-          <img class="footer-info-logo" src={iconMoneyBack} alt="40 days money-back guarantee" />
-          <p class="footer-info-text">
+        <div class='footer-info-item'>
+          <img class='footer-info-logo' src={iconMoneyBack} alt='40 days money-back guarantee' />
+          <p class='footer-info-text'>
             40 days<br />
             money-back guarantee
           </p>
         </div>
       </div>
-      <div class="footer-info right">
-        <span class="copyright2">&#x24B8; 2017-{new Date().getUTCFullYear()} Mailcheck</span>
-        <div class="footer-social">
+      <div class='footer-info right'>
+        <span class='copyright2'>&#x24B8; 2017-{new Date().getUTCFullYear()} Mailcheck</span>
+        <div class='footer-social'>
           <a
-            href="https://www.facebook.com/mailcheck.co/"
-            target="_blank"
-            rel="external"
-            title="Facebook page"
-            class="footer-social-link">
+            href='https://www.facebook.com/mailcheck.co/'
+            target='_blank'
+            rel='external'
+            title='Facebook page'
+            class='footer-social-link'>
             <img
-              width="18"
-              height="18"
-              class="footer-social-icon"
+              width='18'
+              height='18'
+              class='footer-social-icon'
               src={iconFacebook}
-              alt="Facebook" />
+              alt='Facebook' />
           </a>
           <a
-            href="https://www.linkedin.com/company/mailcheck/"
-            target="_blank"
-            rel="external"
-            title="LinkedIn page"
-            class="footer-social-link">
+            href='https://www.linkedin.com/company/mailcheck/'
+            target='_blank'
+            rel='external'
+            title='LinkedIn page'
+            class='footer-social-link'>
             <img
-              width="18"
-              height="18"
-              class="footer-social-icon"
+              width='18'
+              height='18'
+              class='footer-social-icon'
               src={iconLinkedin}
-              alt="LinkedIn" />
+              alt='LinkedIn' />
           </a>
           <a
-            href="https://twitter.com/mailcheckco"
-            target="_blank"
-            rel="external"
-            title="Twitter page"
-            class="footer-social-link">
+            href='https://twitter.com/mailcheckco'
+            target='_blank'
+            rel='external'
+            title='Twitter page'
+            class='footer-social-link'>
             <img
-              width="18"
-              height="18"
-              class="footer-social-icon"
+              width='18'
+              height='18'
+              class='footer-social-icon'
               src={iconTwitter}
-              alt="Twitter" />
+              alt='Twitter' />
           </a>
           <a
-            href="https://github.com/MailCheck-co"
-            target="_blank"
-            rel="external"
-            title="GitHub page"
-            class="footer-social-link">
-            <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
+            href='https://github.com/MailCheck-co'
+            target='_blank'
+            rel='external'
+            title='GitHub page'
+            class='footer-social-link'>
+            <img width='18' height='18' class='footer-social-icon' src={iconGitHub} alt='GitHub' />
           </a>
         </div>
       </div>
@@ -165,7 +165,7 @@
   </div>
 </footer>
 
-<style lang="scss">
+<style lang='scss'>
   .footer {
     padding-top: 6.25rem;
     position: relative;
