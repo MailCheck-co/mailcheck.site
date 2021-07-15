@@ -23,6 +23,8 @@
 
   {#if noindex}
     <meta name="robots" content="noindex" />
+  {:else}
+    <meta name="robots" content="all" />
   {/if}
 
   <!-- Open Graph / Facebook -->
