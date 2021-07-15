@@ -34,11 +34,7 @@
   isPost={true}
   schemas={[websiteSchema, articleSchema]} />
 
-<div class="container" id="blog">
-  <div class="content-block">
-    <slot />
-  </div>
-</div>
+  <slot />
 
 <ContactUs />
 
