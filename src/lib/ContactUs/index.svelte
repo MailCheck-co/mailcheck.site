@@ -8,7 +8,11 @@
   let email = '';
   let isOpen = false;
   let isError = false;
-  let contactForm = { reset: () => {''} };
+  let contactForm = {
+    reset: () => {
+      ('');
+    }
+  };
   let popUpBlock: HTMLElement;
   let nameValue = '';
   let textareaValue = '';

@@ -6,6 +6,6 @@
 
 <Header />
 
-<slot></slot>
+<slot />
 
-<Footer footerBg='{false}' />
+<Footer footerBg={false} />

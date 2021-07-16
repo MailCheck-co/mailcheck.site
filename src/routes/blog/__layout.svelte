@@ -34,7 +34,7 @@
   isPost={true}
   schemas={[websiteSchema, articleSchema]} />
 
-  <slot />
+<slot />
 
 <ContactUs />
 
