@@ -3,7 +3,7 @@ import data from './site-data';
 
 export type Schema = Thing | WithContext<Thing>;
 
-export function serializeSchema(thing: Schema) {
+export function serializeSchema(thing: Schema): string {
   return `<script type="application/ld+json">${JSON.stringify(thing, null, 2)}</script>`;
 }
 
