@@ -39,25 +39,6 @@
 <ContactUs />
 
 <style>
-  .container {
-    position: relative;
-    z-index: 1;
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    min-width: 320px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--size-30);
-  }
-
-  .content-block {
-    display: flex;
-    flex-direction: column;
-    max-width: var(--size-880);
-    margin: 0 auto;
-  }
-
   :global(.content-block h1),
   :global(.content-block h2),
   :global(.content-block h3) {
@@ -131,6 +112,16 @@
 
   :global(.content-block a) {
     color: var(--color-link);
+  }
+
+  :global(.content-block a:hover) {
+    text-decoration: underline;
+  }
+
+  :global(.content-block h1 a),
+  :global(.content-block h2 a),
+  :global(.content-block h3 a) {
+    color: var(--primary-white);
   }
 
   :global(img) {

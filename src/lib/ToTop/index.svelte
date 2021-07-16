@@ -20,7 +20,7 @@
     position: fixed;
     right: 3%;
     bottom: 7rem;
-    z-index: 5;
+    z-index: 110;
     background-color: var(--midnight-blue);
     border-radius: var(--size-20);
     cursor: pointer;

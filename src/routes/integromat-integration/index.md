@@ -83,11 +83,11 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 
 ### Step 8
 
-![](./integromat-12.png)
+![Email from the modal window](./integromat-12.png)
 
 - Choose "Email from the modal window"
 
-![](./integromat-13.png)
+![update segment](./integromat-13.png)
 
 - And now we want to update our segment pasting "Mailcheck Trust rate" to define the validity of the email
 
@@ -105,7 +105,7 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 - Choose your list from the dropdown menu and make sure "Map" disabled
 - Choose on the "email address field "Email address" however, make sure the Map is "ENABLED"
 
-![](./integromat-15.png)
+![update map option](./integromat-15.png)
 
 ### Step 11
 

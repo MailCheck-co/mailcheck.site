@@ -1,12 +1,3 @@
-<script lang="ts">
-  import Seo from '$lib/Seo/index.svelte';
-  import { websiteSchema } from '$utils/json-ld';
-
-  export let title = '';
-</script>
-
-<Seo {title} desc={title} isPost={true} schemas={[websiteSchema]} />
-
 <div class="container" id="blog">
   <div class="content-block">
     <slot />
