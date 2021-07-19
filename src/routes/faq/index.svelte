@@ -9,7 +9,7 @@
 <!--Questions-->
 <section id="faq" class="frequent-questions faq-page">
   <div class="wrapper-questions">
-    <h3 class="title-small">FAQ</h3>
+    <h1 class="title-small">FAQ</h1>
 
     <div class="accordion">
       <div class="accordion-column">
