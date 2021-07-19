@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 slug: privacy
 title: Privacy Policy
 date: 25.06.2020

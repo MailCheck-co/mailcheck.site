@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 slug: cookies
 title: Cookie Policy
 date: 25.06.2020
