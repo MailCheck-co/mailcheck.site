@@ -17,6 +17,14 @@
 
 <Seo title="Home" schemas={[websiteSchema, organizationSchema]} />
 
+<svelte:head>
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="RSS Feed for mailcheck.co"
+    href="/rss.xml" />
+</svelte:head>
+
 <main class="manage-customers" role="main" id="main">
   <!-- EMAILS VERIFY -->
   <EmailsVerify />
