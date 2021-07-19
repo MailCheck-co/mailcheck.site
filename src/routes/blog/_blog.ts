@@ -1,17 +1,9 @@
 import slugFromPath from '$utils/slugFromPath';
 
-/** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get({ query }) {
+export const getPublishedPosts = async () => {
   const modules = import.meta.glob('/**/*.md');
 
   const postPromises = [];
-  const limit = Number(query.get('limit') ?? Infinity);
-
-  if (Number.isNaN(limit)) {
-    return {
-      status: 400
-    };
-  }
 
   for (let [path, resolver] of Object.entries(modules)) {
     const slug = slugFromPath(path);
@@ -24,11 +16,9 @@ export async function get({ query }) {
   }
 
   const posts = await Promise.all(postPromises);
-  const publishedPosts = posts.filter((post) => post.published).slice(0, limit);
+  const publishedPosts = posts.filter((post) => post.published);
 
   publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
 
-  return {
-    body: publishedPosts.slice(0, limit)
-  };
+  return publishedPosts;
 }
