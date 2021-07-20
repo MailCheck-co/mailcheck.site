@@ -21,4 +21,4 @@ export const getPublishedPosts = async () => {
   publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
 
   return publishedPosts;
-}
+};

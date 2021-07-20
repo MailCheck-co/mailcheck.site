@@ -46,7 +46,7 @@
           title="Product of NodeArt"
           class="nav-link footer-nav-link"
           href="https://nodeart.io">Product of NodeArt</a>
-          <a class="nav-link footer-nav-link" title="RSS Feed" href="/rss.xml">RSS</a>
+        <a class="nav-link footer-nav-link" title="RSS Feed" href="/rss.xml">RSS</a>
       </nav>
       <div class="footer-social-mobile">
         <a

@@ -43,6 +43,13 @@
     <meta property="twitter:image" content={thumbnail} />
   {/if}
 
+  <!-- RSS Feed -->
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="RSS Feed for mailcheck.co"
+    href="/rss.xml" />
+
   <!-- JSON-LD Schema -->
   {#each schemas as schema}
     {@html serializeSchema(schema)}
