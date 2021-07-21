@@ -3,7 +3,7 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export async function load({ page, fetch }) {
-    const post = await fetch(`${page.path}.json`).then((res) => res.json());
+    const post = await fetch(`${page.path}.json`).then((res: Response) => res.json());
 
     if (!post || !post.published) {
       return {
@@ -25,7 +25,9 @@
   import ContactUs from '$lib/ContactUs/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
 
-  export let post;
+  export let post: {
+    title: string;
+  };
 </script>
 
 <Seo

@@ -3,7 +3,7 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export async function load({ fetch }) {
-    const posts = await fetch('/blog.json').then((res) => res.json());
+    const posts = await fetch('/blog.json').then((res: Response) => res.json());
     return {
       props: {
         posts
@@ -17,7 +17,14 @@
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, blogSchema } from '$utils/json-ld';
 
-  export let posts;
+  type Post = {
+    slug: string;
+    title: string;
+    snippet: string;
+    date: Date | string;
+  };
+
+  export let posts: Post[];
   let desc = 'Blog';
 </script>
 
