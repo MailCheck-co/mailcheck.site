@@ -1,10 +1,18 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import Header from '$lib/Header/index.svelte';
   import Footer from '$lib/Footer/index.svelte';
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema } from '$utils/json-ld';
   import filter from './filter.png';
   import '../../app.scss';
+  import Accordion from './accordion';
+
+  onMount(() => {
+    document.querySelectorAll('details').forEach((el) => {
+      new Accordion(el);
+    });
+  });
 </script>
 
 <Seo desc="FAQ" title="FAQ" schemas={[websiteSchema]} />
