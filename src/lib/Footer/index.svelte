@@ -62,6 +62,7 @@
             src={iconFacebook}
             alt="Facebook" />
         </a>
+        <a href="/rss.xml">rss</a>
         <a
           href="https://www.linkedin.com/company/mailcheck/"
           target="_blank"
