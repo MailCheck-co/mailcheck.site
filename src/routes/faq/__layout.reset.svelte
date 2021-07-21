@@ -8,8 +8,10 @@
   import '../../app.scss';
   import Accordion from './accordion';
 
+  let accordion: HTMLElement;
+
   onMount(() => {
-    document.querySelectorAll('details').forEach((el) => {
+    accordion.querySelectorAll('details').forEach((el: HTMLElement) => {
       new Accordion(el);
     });
   });
@@ -23,7 +25,7 @@
 <section class="faq-page">
   <div class="wrapper-questions">
     <h1 class="title">FAQ</h1>
-    <div class="accordion">
+    <div class="accordion" bind:this={accordion}>
       <slot />
     </div>
     <img class="filter-img" src={filter} width="444" height="568" alt="filter" />

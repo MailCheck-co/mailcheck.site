@@ -15,13 +15,13 @@
 <script lang="ts">
   import ContactUs from '$lib/ContactUs/index.svelte';
   import Seo from '$lib/Seo/index.svelte';
-  import { websiteSchema, articleSchema } from '$utils/json-ld';
+  import { websiteSchema, blogSchema } from '$utils/json-ld';
 
   export let posts;
   let desc = 'Blog';
 </script>
 
-<Seo {desc} title={desc} schemas={[websiteSchema, articleSchema]} />
+<Seo {desc} title={desc} schemas={[websiteSchema, blogSchema]} />
 
 <main class="terms" id="blog">
   <div class="container">
