@@ -10,8 +10,8 @@ export function serializeSchema(thing: Schema): string {
 export const websiteSchema: WithContext<WebSite> = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: data.title,
-  url: data.url,
+  name: data.siteName,
+  url: data.siteUrl,
   description: data.description,
   author: data.author,
   sameAs: [data.siteUrl, data.twitter, data.facebook, data.linkedin, data.github]
