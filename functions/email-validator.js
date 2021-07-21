@@ -1,11 +1,10 @@
-"use strict";
+'use strict';
 
-const functions = require("firebase-functions");
-const fetch = require("node-fetch");
+const functions = require('firebase-functions');
+const fetch = require('node-fetch');
 const apiLink =
-  (functions.config().mailcheck || {}).link ||
-  "https://api.mailcheck.co/v1/singleEmail:check";
-const apiKey = (functions.config().mailcheck || {}).key || "apiKey";
+  (functions.config().mailcheck || {}).link || 'https://api.mailcheck.co/v1/singleEmail:check';
+const apiKey = (functions.config().mailcheck || {}).key || 'apiKey';
 
 class EmailValidator {
   constructor() {
@@ -19,7 +18,7 @@ class EmailValidator {
     if (cachedResult) {
       return {
         code: 200,
-        data: cachedResult,
+        data: cachedResult
       };
     }
 
@@ -30,22 +29,22 @@ class EmailValidator {
       return {
         code: 429,
         data: {
-          code: "429",
-          message: "rate limit reached for ip " + reqIp,
-        },
+          code: '429',
+          message: 'rate limit reached for ip ' + reqIp
+        }
       };
     }
-    console.log(reqIp + ": reqCount:", reqCount);
+    console.log(reqIp + ': reqCount:', reqCount);
 
     try {
       const apires = await fetch(apiLink, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
-          authorization: "Bearer " + apiKey,
-          "user-agent": "mailcheck landing",
+          'Content-Type': 'application/json',
+          authorization: 'Bearer ' + apiKey,
+          'user-agent': 'mailcheck landing'
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email })
       });
 
       const json = await apires.json();
@@ -53,15 +52,15 @@ class EmailValidator {
 
       return {
         code: apires.status,
-        data: json,
+        data: json
       };
     } catch (err) {
       return {
         code: 500,
         data: {
-          code: "500",
-          message: err.toString(),
-        },
+          code: '500',
+          message: err.toString()
+        }
       };
     }
   }

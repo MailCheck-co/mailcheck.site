@@ -1,28 +1,21 @@
 <script lang="ts">
-  import Seo from "../components/Seo.svelte";
-  import EmailsVerify from "../components/EmailsVerify.svelte";
-  import Partners from "../components/Partners.svelte";
-  import Features from "../components/Features.svelte";
-  import Choose from "../components/Choose.svelte";
-  import Pricing from "../components/Pricing.svelte";
-  import Reviews from "../components/Reviews.svelte";
-  import Team from "../components/Team.svelte";
-  import Testimonials from "../components/Testimonials.svelte";
-  import Faq from "../components/Faq.svelte";
-  import ContactUs from "../components/ContactUs.svelte";
-  import Cta from "../components/Cta.svelte";
-  import Affiliate from "../components/Affiliate.svelte";
+  import Seo from '$lib/Seo/index.svelte';
+  import { websiteSchema, organizationSchema } from '$utils/json-ld';
+  import EmailsVerify from '$lib/EmailsVerify/index.svelte';
+  import Partners from '$lib/Partners/index.svelte';
+  import Features from '$lib/Features/index.svelte';
+  import Choose from '$lib/Choose/index.svelte';
+  import Pricing from '$lib/Pricing/index.svelte';
+  import Reviews from '$lib/Reviews/index.svelte';
+  import Team from '$lib/Team/index.svelte';
+  import Testimonials from '$lib/Testimonials/index.svelte';
+  import Faq from '$lib/Faq/index.svelte';
+  import ContactUs from '$lib/ContactUs/index.svelte';
+  import Cta from '$lib/Cta/index.svelte';
+  import Affiliate from '$lib/Affiliate/index.svelte';
 </script>
 
-<Seo title="Verify your real customers in one way" />
-<svelte:head>
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="RSS Feed for mailcheck.co"
-    href="/feed.xml" />
-</svelte:head>
+<Seo title="Home" schemas={[websiteSchema, organizationSchema]} />
 
 <main class="manage-customers" role="main" id="main">
   <!-- EMAILS VERIFY -->
@@ -31,7 +24,7 @@
   <!-- PARTNERS SECTION -->
   <Partners />
 
-  <!--Welcome to the featuress-->
+  <!--Welcome to the features-->
   <Features />
 
   <!--Choose your audience-->
@@ -61,3 +54,72 @@
   <!-- SECTION CTA -->
   <Cta />
 </main>
+
+<style lang="scss">
+  .manage-customers {
+    position: relative;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 45.625rem;
+      background: url('./lines.svg') no-repeat center;
+      background-size: 100% 66%, 40.875rem 46.25rem;
+      content: '';
+      pointer-events: none;
+    }
+
+    &::after {
+      transform: scaleX(-1);
+    }
+  }
+
+  @media only screen and (min-width: 1920px) {
+    .manage-customers::before {
+      background-position: 0 35%, 70.9375rem 0;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .manage-customers::before {
+      background-position: 0 35%, 48.75rem calc(#{var(--size-20)} * -1);
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .manage-customers::before {
+      background-position: 0 35%, 44.6875rem -0.9375rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .manage-customers::before {
+      margin-top: -6.25rem;
+      padding-top: 6.25rem;
+      background-position: top 35% left 30%;
+      background-size: auto;
+    }
+
+    .manage-customers::after {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .manage-customers::before {
+      background-position: center left 35%;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .manage-customers::before {
+      background-position: 6.25rem -3.5rem;
+      background-size: 0, 40.875rem 46.25rem;
+    }
+  }
+</style>
