@@ -1,11 +1,13 @@
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
-  import { websiteSchema } from '$utils/json-ld';
+  import { websiteSchema, articleSchema } from '$utils/json-ld';
 
   export let title = '';
+  export let canonical = '';
+  export let noindex = false;
 </script>
 
-<Seo {title} desc={title} isPost={true} schemas={[websiteSchema]} />
+<Seo {title} desc={title} isPost={true} {canonical} {noindex} schemas={[websiteSchema, articleSchema]} />
 
 <div class="container" id="blog">
   <div class="content-block">

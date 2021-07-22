@@ -1,5 +1,7 @@
 ---
 layout: article
+canonical: 
+noindex: true
 slug: privacy
 title: Privacy Policy
 date: 25.06.2020

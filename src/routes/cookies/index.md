@@ -1,5 +1,7 @@
 ---
 layout: article
+canonical:
+noindex: true
 slug: cookies
 title: Cookie Policy
 date: 25.06.2020

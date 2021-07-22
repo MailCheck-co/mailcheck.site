@@ -1,5 +1,7 @@
 ---
 layout: article
+canonical: 
+noindex: true
 slug: terms
 title: Terms of Service
 date: 25.06.2020
