@@ -266,7 +266,7 @@
     display: none;
     width: 100%;
     height: 100%;
-    background: url('../footer/city.png') no-repeat center 50%;
+    background: url('../footer/assets/city.png') no-repeat center 50%;
     background-size: 150% 150%;
 
     &.open {

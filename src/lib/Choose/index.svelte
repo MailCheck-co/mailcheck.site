@@ -15,7 +15,7 @@
   }}>
   <div class="container">
     <div class="section-heading sm-left">
-      <h2 class="title">WHY DO YOU CHOOSE MAILCHECK?</h2>
+      <h2 class="title">Why do you choose mailcheck?</h2>
       <p class="section-title-lg">YOU CAN</p>
     </div>
     <div class="wrapper-choose">
@@ -81,6 +81,7 @@
 
       .title {
         margin-bottom: var(--size-6);
+        text-transform: uppercase;
       }
     }
   }

@@ -184,7 +184,7 @@
     display: block;
     width: 100%;
     height: 64rem;
-    background: url('city.png') no-repeat center;
+    background: url('assets/city.png') no-repeat center;
     background-size: cover;
     transform: translateY(-105%);
     opacity: 0.4;
