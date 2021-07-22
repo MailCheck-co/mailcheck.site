@@ -1,6 +1,5 @@
 ---
 layout: article
-canonical: 
 noindex: true
 slug: privacy
 title: Privacy Policy

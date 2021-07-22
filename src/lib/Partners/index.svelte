@@ -20,8 +20,8 @@
     intersecting = inView;
   }}>
   <div class="section-heading sm-left">
-    <h2 class="title">YOU’RE IN GOOD COMPANY</h2>
-    <p class="section-title-lg">PARTNERS</p>
+    <h2 class="title">You’re in good company</h2>
+    <p class="section-title-lg">Partners</p>
   </div>
   <div class="partners-list">
     <div class="partners-list-item">

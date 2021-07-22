@@ -19,8 +19,8 @@
   <div class="container">
     <div class="section-wrapper">
       <div class="section-heading sm-left">
-        <h2 class="title">MAILCHECK TEAM</h2>
-        <p class="section-title-lg">TEAM</p>
+        <h2 class="title">Mailcheck team</h2>
+        <p class="section-title-lg">Team</p>
       </div>
       <div class="team-members">
         <div class="team-member csm">

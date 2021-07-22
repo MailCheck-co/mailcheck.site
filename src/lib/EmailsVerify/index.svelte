@@ -219,7 +219,7 @@
     <div class="emails-block">
       <div class="main-buttons">
         <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-live-demo"
-          >GET FREE EMAILS NOW</a>
+          >Get free emails now</a>
         <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-start"
           >Start</a>
       </div>
@@ -390,6 +390,7 @@
     width: 100%;
     margin-right: var(--size-20);
     color: var(--primary-white);
+    text-transform: uppercase;
     text-decoration: none;
     background: var(--transparent);
     border: var(--size-1) solid var(--dark-05);

@@ -38,11 +38,11 @@
   .faq-page {
     .wrapper-questions {
       position: relative;
+      z-index: 1;
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
       justify-content: center;
-      z-index: 1;
       max-width: 80rem;
       margin: 0 auto var(--size-50);
       padding: var(--size-50) var(--size-20) 0;
@@ -59,9 +59,9 @@
         }
 
         :global(details) {
-          overflow: hidden;
           position: relative;
           margin-bottom: var(--size-14);
+          overflow: hidden;
           border-bottom: var(--size-1) solid var(--dark-02);
           transition: all 0.35s ease-in-out;
         }

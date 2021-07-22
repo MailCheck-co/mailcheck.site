@@ -52,7 +52,7 @@
     href="https://app.mailcheck.co/"
     target="_blank"
     title="sign in"
-    class="btn btn-sign-in mobile-btn">sign in</a>
+    class="btn btn-sign-in mobile-btn">Sign in</a>
 </nav>
 
 <style lang="scss">

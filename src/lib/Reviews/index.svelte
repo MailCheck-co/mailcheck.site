@@ -20,7 +20,7 @@
   }}>
   <div class="section-heading">
     <h2 class="title">Our customer's reviews</h2>
-    <p class="section-title-lg">REVIEWS</p>
+    <p class="section-title-lg">Reviews</p>
   </div>
   <div class="container">
     <div class="section-wrapper sm-left">
@@ -39,7 +39,7 @@
             target="_blank"
             rel="external"
             title="Read Reviews"
-            class="reviews-item-link btn">READ REVIEWS</a>
+            class="reviews-item-link btn">Read Reviews</a>
         </div>
         <div class="reviews-item">
           <img width="120" height="40" src={iconBeta} alt="" class="reviews-item-logo" />
@@ -52,7 +52,7 @@
             target="_blank"
             rel="external"
             title="Read Reviews"
-            class="reviews-item-link btn">READ REVIEWS</a>
+            class="reviews-item-link btn">Read Reviews</a>
         </div>
         <div class="reviews-item">
           <img width="145" height="32" src={iconCapterra} alt="" class="reviews-item-logo" />
@@ -68,7 +68,7 @@
             target="_blank"
             rel="external"
             title="Read Reviews"
-            class="reviews-item-link btn">READ REVIEWS</a>
+            class="reviews-item-link btn">Read Reviews</a>
         </div>
       </div>
     </div>
@@ -135,6 +135,7 @@
 
   .reviews-item-link {
     white-space: nowrap;
+    text-transform: uppercase;
     border: var(--size-1) solid var(--primary-white);
 
     &:visited {

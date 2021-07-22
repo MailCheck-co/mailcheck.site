@@ -38,7 +38,7 @@
   }}>
   <div class="section-heading sm-left">
     <h2 class="title">Cost-effective pricing plans</h2>
-    <p class="section-title-lg">PRICING</p>
+    <p class="section-title-lg">Pricing</p>
     <p class="section-subtitle">Choose wisely.</p>
   </div>
   <div class="wrapper-cost">
@@ -89,10 +89,10 @@
       <li class="card" id="custom">
         <h3 class="title-colored red">custom</h3>
         <span class="card-features-text">
-          <span class="bold">EPIC</span>
+          <span class="bold">Epic</span>
           100,000+ emails to validate included</span>
         <span class="card-features-text">
-          <span class="bold">LEGENDARY</span>
+          <span class="bold">Legendary</span>
           1,000,000,000+ emails to validate included</span>
         <a
           title="choose"
@@ -206,6 +206,7 @@
 
           .bold {
             font-weight: var(--weight-700);
+            text-transform: uppercase;
           }
 
           .btn-choose {

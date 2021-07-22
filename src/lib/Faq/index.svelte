@@ -94,7 +94,7 @@
       </div>
     </div>
 
-    <a href="/faq" title="faq" class="btn btn-start">LEARN MORE</a>
+    <a href="/faq" title="faq" class="btn btn-start">Learn More</a>
 
     <img class="filter-img" src={filterIcon} width="444" height="568" alt="filter" />
   </div>
@@ -106,6 +106,7 @@
 
     .btn-start {
       color: var(--primary-white);
+      text-transform: uppercase;
       background-color: var(--primary-accent);
       border: none;
 

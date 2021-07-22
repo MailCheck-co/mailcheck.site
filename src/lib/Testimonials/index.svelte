@@ -69,8 +69,8 @@
     intersecting = inView;
   }}>
   <div class="section-heading sm-left">
-    <h2 class="title">TESTIMONIALS</h2>
-    <p class="section-title-lg">TESTIMONIALS</p>
+    <h2 class="title">Testimonials</h2>
+    <p class="section-title-lg">Testimonials</p>
   </div>
   <div class="section-wrapper">
     <div class="testimonials-container">

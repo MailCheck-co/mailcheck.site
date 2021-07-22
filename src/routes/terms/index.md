@@ -1,6 +1,5 @@
 ---
 layout: article
-canonical: 
 noindex: true
 slug: terms
 title: Terms of Service

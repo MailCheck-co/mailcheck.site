@@ -14,12 +14,12 @@
     intersecting = inView;
   }}>
   <div class="section-heading sm-left">
-    <h3 class="title-small">affiliate Program</h3>
-    <p class="section-title-lg">affiliate</p>
+    <h3 class="title-small">Affiliate Program</h3>
+    <p class="section-title-lg">Affiliate</p>
   </div>
 
   <div class="grid">
-    <a rel="external" target="_blank" href="/" title="Become an affiliate"> Become an affiliate</a>
+    <a rel="external" target="_blank" href="/" title="Become an affiliate">Become an affiliate</a>
     <a
       rel="external"
       href="https://app.mailcheck.co/auth/login"
