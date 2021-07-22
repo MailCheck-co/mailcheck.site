@@ -1,11 +1,12 @@
 <script lang="ts">
-  import esLogo from '$lib/Footer/es-logo.svg';
-  import mailcheckLogo from '$lib/Footer/mailcheck-logo.svg';
-  import iconTwitter from '$lib/Footer/icon-twitter.svg';
-  import iconFacebook from '$lib/Footer/icon-facebook.svg';
-  import iconLinkedin from '$lib/Footer/icon-linkedin.svg';
-  import iconGitHub from '$lib/Footer/icon-github.svg';
-  import iconMoneyBack from '$lib/Footer/icon-money-back.svg';
+  import esLogo from '$lib/Footer/assets/es-logo.svg';
+  import mailcheckLogo from '$lib/Footer/assets/mailcheck-logo.svg';
+  import iconTwitter from '$lib/Footer/assets/icon-twitter.svg';
+  import iconFacebook from '$lib/Footer/assets/icon-facebook.svg';
+  import iconLinkedin from '$lib/Footer/assets/icon-linkedin.svg';
+  import iconGitHub from '$lib/Footer/assets/icon-github.svg';
+  import iconMoneyBack from '$lib/Footer/assets/icon-money-back.svg';
+  import iconRSS from '$lib/Footer/assets/rss.svg';
 
   export let footerBg = true;
 </script>
@@ -46,7 +47,6 @@
           title="Product of NodeArt"
           class="nav-link footer-nav-link"
           href="https://nodeart.io">Product of NodeArt</a>
-        <a class="nav-link footer-nav-link" title="RSS Feed" href="/rss.xml">RSS</a>
       </nav>
       <div class="footer-social-mobile">
         <a
@@ -62,7 +62,6 @@
             src={iconFacebook}
             alt="Facebook" />
         </a>
-        <a href="/rss.xml">rss</a>
         <a
           href="https://www.linkedin.com/company/mailcheck/"
           target="_blank"
@@ -91,6 +90,14 @@
           title="GitHub page"
           class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
+        </a>
+        <a href="/rss.xml" class="footer-social-link">
+          <img
+            width="18"
+            height="18"
+            class="footer-social-icon"
+            src={iconRSS}
+            alt="LinkedIn" />
         </a>
       </div>
     </div>
@@ -160,6 +167,14 @@
             title="GitHub page"
             class="footer-social-link">
             <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
+          </a>
+          <a href="/rss.xml" class="footer-social-link">
+            <img
+              width="18"
+              height="18"
+              class="footer-social-icon"
+              src={iconRSS}
+              alt="LinkedIn" />
           </a>
         </div>
       </div>

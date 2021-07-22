@@ -17,7 +17,7 @@ export const get: RequestHandler = async () => {
           <guid>https://www.mailcheck.co/blog/${post.slug}</guid>
           <title>${post.title}</title>
           <link>https://www.mailcheck.co/blog/${post.slug}</link>
-          <pubDate>${new Date(post.date).toUTCString()}</pubDate>
+          <pubDate>${post.date}</pubDate>
           <description>${post.desc}</description>
           </item>`
       )
