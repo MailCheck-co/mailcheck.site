@@ -1,5 +1,6 @@
 ---
 layout: article
+canonical: /
 noindex: true
 slug: cookies
 title: Cookie Policy
