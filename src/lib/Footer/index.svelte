@@ -92,12 +92,7 @@
           <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
         </a>
         <a href="/rss.xml" class="footer-social-link">
-          <img
-            width="18"
-            height="18"
-            class="footer-social-icon"
-            src={iconRSS}
-            alt="LinkedIn" />
+          <img width="18" height="18" class="footer-social-icon" src={iconRSS} alt="LinkedIn" />
         </a>
       </div>
     </div>
@@ -169,12 +164,7 @@
             <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
           </a>
           <a href="/rss.xml" class="footer-social-link">
-            <img
-              width="18"
-              height="18"
-              class="footer-social-icon"
-              src={iconRSS}
-              alt="LinkedIn" />
+            <img width="18" height="18" class="footer-social-icon" src={iconRSS} alt="LinkedIn" />
           </a>
         </div>
       </div>
