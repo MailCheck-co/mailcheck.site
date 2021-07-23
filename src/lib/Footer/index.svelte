@@ -282,7 +282,7 @@
   }
 
   .footer-social {
-    display: block;
+    display: flex;
   }
 
   .copyright2 {
