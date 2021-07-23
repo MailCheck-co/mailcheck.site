@@ -118,13 +118,14 @@
         }
 
         :global(details a) {
-          color: var(--primary-accent);
+          color: var(--primary-white);
           font-weight: var(--weight-300);
           font-size: var(--size-16);
           letter-spacing: var(--letter-spacing-text);
           text-align: initial;
           text-indent: initial;
           word-break: break-word;
+          text-decoration: underline;
         }
 
         :global(details a:hover) {

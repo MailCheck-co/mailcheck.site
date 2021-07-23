@@ -113,17 +113,19 @@
   }
 
   :global(.content-block a) {
-    color: var(--color-link);
+    color: var(--primary-white);
+    text-decoration: underline;
   }
 
   :global(.content-block a:hover) {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   :global(.content-block h1 a),
   :global(.content-block h2 a),
   :global(.content-block h3 a) {
     color: var(--primary-white);
+    text-decoration: none;
   }
 
   :global(img) {

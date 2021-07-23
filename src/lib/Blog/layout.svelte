@@ -58,14 +58,17 @@
 
   :global(h1 a) {
     color: var(--primary-white) !important;
+    text-decoration: none;
   }
 
   :global(h2 a) {
     color: var(--primary-white) !important;
+    text-decoration: none;
   }
 
   :global(h3 a) {
     color: var(--primary-white) !important;
+    text-decoration: none;
   }
 
   :global(pre) :global(code) {
@@ -104,11 +107,12 @@
   }
 
   :global(a) {
-    color: var(--color-link);
+    color: var(--primary-white);
+    text-decoration: underline;
   }
 
   :global(a:hover) {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   :global(img) {
