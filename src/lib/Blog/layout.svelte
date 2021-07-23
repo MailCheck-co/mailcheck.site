@@ -22,7 +22,7 @@
     margin: 0 auto;
   }
 
-  :global(h1) {
+  :global(.container .content-block h1) {
     width: 100%;
     height: auto;
     margin-bottom: var(--size-24);
@@ -35,19 +35,19 @@
     text-transform: uppercase;
   }
 
-  :global(h2) {
+  :global(.container .content-block h2) {
     color: var(--primary-white) !important;
     font-weight: var(--weight-700);
     font-size: var(--size-30);
   }
 
-  :global(h3) {
+  :global(.container .content-block h3) {
     color: var(--primary-white) !important;
     font-weight: var(--weight-700);
     font-size: var(--size-24);
   }
 
-  :global(pre) {
+  :global(.container .content-block pre) {
     padding: 0.5em;
     overflow-x: auto;
     color: var(--primary-white);
@@ -56,38 +56,38 @@
     box-shadow: inset var(--size-1) var(--size-1) var(--size-6) var(--color-pre-global-shadow);
   }
 
-  :global(h1 a) {
-    color: var(--primary-white) !important;
-    text-decoration: none;
-  }
-
-  :global(h2 a) {
-    color: var(--primary-white) !important;
-    text-decoration: none;
-  }
-
-  :global(h3 a) {
-    color: var(--primary-white) !important;
-    text-decoration: none;
-  }
-
-  :global(pre) :global(code) {
+  :global(.container .content-block pre code) {
     padding: 0;
     color: var(--primary-white);
     background-color: var(--transparent);
   }
 
-  :global(ul) {
+  :global(.container .content-block h1 a) {
+    color: var(--primary-white) !important;
+    text-decoration: none !important;
+  }
+
+  :global(.container .content-block h2 a) {
+    color: var(--primary-white) !important;
+    text-decoration: none !important;
+  }
+
+  :global(.container .content-block h3 a) {
+    color: var(--primary-white) !important;
+    text-decoration: none !important;
+  }
+
+  :global(.container .content-block ul) {
     padding: 0 0 0 var(--size-24);
     line-height: 1.5;
   }
 
-  :global(li) {
+  :global(.container .content-block li) {
     margin: 0 0 0.5em 0;
     color: var(--primary-white);
   }
 
-  :global(p) {
+  :global(.container .content-block p) {
     color: var(--primary-white) !important;
     font-weight: var(--weight-400);
     line-height: 1.5;
@@ -96,26 +96,26 @@
     text-indent: var(--size-20);
   }
 
-  :global(p) :global(img) {
+  :global(.container .content-block p img) {
     display: block;
     margin: 0 auto;
   }
 
-  :global(strong) {
+  :global(.container .content-block strong) {
     color: var(--primary-white);
     font-weight: var(--weight-700);
   }
 
-  :global(a) {
+  :global(.container .content-block a) {
     color: var(--primary-white);
     text-decoration: underline;
   }
 
-  :global(a:hover) {
+  :global(.container .content-block a:hover) {
     text-decoration: none;
   }
 
-  :global(img) {
+  :global(.container .content-block img) {
     max-width: 100%;
     height: auto;
   }

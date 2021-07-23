@@ -156,6 +156,12 @@
       }
     }
 
+    .section-heading {
+      .section-subtitle {
+        position: relative;
+      }
+    }
+
     .wrapper-cost {
       display: flex;
       flex-wrap: wrap;
