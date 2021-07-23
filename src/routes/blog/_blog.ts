@@ -18,7 +18,10 @@ export const getPublishedPosts = async () => {
   const posts = await Promise.all(postPromises);
   const publishedPosts = posts.filter((post) => post.published);
 
-  publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
+  const sortedPosts = publishedPosts.sort((a, b) => {
+    return new Date(a.date.split(".").reverse().toString()) <
+      new Date(b.date.split(".").reverse().toString()) ? 1 : -1;
+  });
 
-  return publishedPosts;
+  return sortedPosts;
 };
