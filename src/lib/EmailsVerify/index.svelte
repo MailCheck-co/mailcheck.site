@@ -589,7 +589,7 @@
 
   .results-icons {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
