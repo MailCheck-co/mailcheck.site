@@ -7,7 +7,7 @@
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 </script>
 
-<svelte:window bind:scrollY={currentPosition} />
+<svelte:window bind:scrollY|passive={currentPosition} />
 
 {#if currentPosition > 50}
   <div class="button" on:click={scrollToTop} transition:fade={{ duration: 100 }}>
