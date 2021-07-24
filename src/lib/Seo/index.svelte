@@ -21,11 +21,7 @@
   <link rel="canonical" href={canonical ? siteUrl + canonical : siteUrl + ($page.path ?? '')} />
   <meta name="description" content={desc || defaultDesc} />
 
-  {#if noindex}
-    <meta name="robots" content="noindex" />
-  {:else}
-    <meta name="robots" content="all" />
-  {/if}
+  <meta name="robots" content={noindex ? 'noindex' : 'all'} />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content={isPost ? 'blog' : 'website'} />
@@ -36,7 +32,7 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="{siteUrl}{$page.path}" />
+  <meta property="twitter:url" content="{siteUrl}{$page.path ?? ''}" />
   <meta property="twitter:title" content={title || siteName} />
   <meta property="twitter:description" content={desc || defaultDesc} />
   {#if thumbnail !== ''}
