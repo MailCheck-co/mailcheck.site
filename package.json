@@ -33,7 +33,7 @@
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-svelte3": "^3.2.0",
-    "fast-glob": "^3.2.6",
+    "fast-glob": "^3.2.7",
     "mdsvex": "^0.9.0",
     "postcss": "^8.3.6",
     "postcss-load-config": "^3.0.1",
