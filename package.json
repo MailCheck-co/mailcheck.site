@@ -27,7 +27,7 @@
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.4.0",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
+    "@typescript-eslint/parser": "^4.28.4",
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.2",
     "eslint": "^7.22.0",
