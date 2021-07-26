@@ -1,7 +1,7 @@
 ---
 layout: article
 slug: faq
-title: Frequent Questions
+title: FAQ
 date: 25.06.2020
 readingTime: 1 min read
 snippet: Frequent Questions

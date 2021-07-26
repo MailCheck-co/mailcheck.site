@@ -20,7 +20,10 @@
 
 {#if slug == 'faq'}
   <div class="wrapper-questions">
-    <h1 class="title">{title}</h1>
+    <div class="section-heading sm-left">
+      <h1 class="title">{title}</h1>
+      <p class="section-title-lg">{title}</p>
+    </div>
     <div class="accordion">
       <slot />
     </div>
@@ -159,9 +162,14 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
     max-width: 80rem;
     margin: 0 auto var(--size-50);
     padding: var(--size-50) var(--size-20) 0;
+  }
+
+  :global(.section-heading) {
+    width: 100%;
   }
   :global(.accordion) {
     display: flex;
@@ -306,7 +314,7 @@
   }
   @keyframes sweep {
     0% {
-      transform: translate(-20px, -10px);
+      transform: translateY(-20px);
       opacity: 0;
     }
     100% {
