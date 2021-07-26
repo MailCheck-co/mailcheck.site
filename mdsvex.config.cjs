@@ -1,4 +1,4 @@
-module.exports = {
+module.exports={
   layout: {
     blog: './src/lib/Blog/layout.svelte',
     article: './src/lib/Article/layout.svelte'
