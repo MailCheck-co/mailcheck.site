@@ -1,3 +1,1 @@
-interface Window {
-  dataLayer?: Record<string, unknown>[];
-}
+/// <reference types="@sveltejs/kit" />

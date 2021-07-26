@@ -9,7 +9,7 @@
       new RegExp(
         // eslint-disable-next-line no-useless-escape
         "(?:^|; )" +
-          name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
+          name.replace(/([.$?*|{}()[\]\\/+^])/g, "\\$1") +
           "=([^;]*)"
       )
     );

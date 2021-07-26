@@ -1,37 +1,46 @@
-/* eslint-env node */
-const sveltePreprocess = require("svelte-preprocess");
-const { mdsvex } = require("mdsvex");
+import path from 'path';
+import { mdsvex } from 'mdsvex';
+import { mdsvexConfig } from './mdsvex.config.js';
+import preprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-static';
 
-const mode = process.env.NODE_ENV;
-const dev = mode === "development";
-
-const svelteOptions = {
-  extensions: [".svelte", ".svx"],
-  compilerOptions: {
-    immutable: true,
-  },
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+  extensions: ['.svelte', ...mdsvexConfig.extensions],
+  // Consult https://github.com/sveltejs/svelte-preprocess
+  // for more information about preprocessors
   preprocess: [
-    sveltePreprocess({
-      scss: {
-        includePaths: ["src"],
-      },
-      sourceMap: dev,
-      postcss: {
-        plugins: [require("autoprefixer")()],
-      },
+    mdsvex(mdsvexConfig),
+    preprocess({
+      postcss: true,
       defaults: {
-        style: "scss",
-        script: "typescript",
+        style: 'scss',
+        script: 'typescript'
       },
-    }),
-    mdsvex({
-      layout: {
-        blog: "./src/layouts/blog.svelte",
-        article: "./src/routes/_layout.svelte",
-        _: "./src/routes/_layout.svelte",
-      },
-    }),
+      scss: {
+        prependData: `@import "src/mixins.scss";`
+      }
+    })
   ],
+
+  kit: {
+    target: '#svelte',
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: null
+    }),
+    prerender: {
+      force: true
+    },
+    vite: {
+      resolve: {
+        alias: {
+          $utils: path.resolve('./src/utils')
+        }
+      }
+    }
+  }
 };
 
-module.exports = svelteOptions;
+export default config;
