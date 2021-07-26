@@ -30,7 +30,7 @@
 
 <Seo {desc} title={desc} schemas={[websiteSchema, blogSchema]} />
 
-<main class="terms" id="blog">
+<main class="blog-page" id="blog">
   <div class="container">
     <div class="content-block">
       <h1 class="title">{desc}</h1>
@@ -51,60 +51,65 @@
 <ContactUs />
 
 <style lang="scss">
-  .terms {
+  .blog-page {
     position: relative;
     z-index: 1;
-  }
 
-  .article {
-    &-title {
-      width: 100%;
-      height: auto;
-      margin: var(--size-20) auto 0;
-      color: var(--primary-white);
-      font-weight: var(--weight-500);
-      font-size: var(--size-24);
-      line-height: 30px;
-      letter-spacing: 1.6px;
-      text-align: left;
-      text-transform: uppercase;
+    .container {
+      .content-block {
+        .article {
+          &-title {
+            width: 100%;
+            height: auto;
+            margin: var(--size-20) auto 0;
+            color: var(--primary-white);
+            font-weight: var(--weight-500);
+            font-size: var(--size-24);
+            line-height: 30px;
+            letter-spacing: 1.6px;
+            text-align: left;
+            text-transform: uppercase;
+            text-decoration: none;
 
-      &:hover {
-        color: var(--primary-white);
-        text-decoration: underline;
+            &:hover {
+              color: var(--primary-white);
+              text-decoration: underline;
+            }
+          }
+
+          &-date {
+            width: 100%;
+            margin: 0 0 10px;
+            color: var(--primary-white);
+            font-weight: var(--weight-300);
+            font-size: var(--size-14);
+            line-height: var(--size-20);
+            letter-spacing: var(--letter-spacing);
+            text-align: left;
+            opacity: 0.5;
+          }
+
+          &-snippet {
+            margin: 0 0 15px;
+            color: var(--primary-white);
+            font-weight: var(--weight-300);
+            font-size: var(--size-16);
+            line-height: 24px;
+            letter-spacing: var(--letter-spacing);
+            text-align: left;
+            text-indent: initial;
+
+            .text-thin-link {
+              color: var(--color-link);
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
       }
-    }
-
-    &-date {
-      width: 100%;
-      margin: 0 0 10px;
-      color: var(--primary-white);
-      font-weight: var(--weight-300);
-      font-size: var(--size-14);
-      line-height: var(--size-20);
-      letter-spacing: var(--letter-spacing);
-      text-align: left;
-      opacity: 0.5;
-    }
-
-    &-snippet {
-      margin: 0 0 15px;
-      color: var(--primary-white);
-      font-weight: var(--weight-300);
-      font-size: var(--size-16);
-      line-height: 24px;
-      letter-spacing: var(--letter-spacing);
-      text-align: left;
-      text-indent: initial;
-    }
-  }
-
-  .text-thin-link {
-    color: var(--color-link);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 </style>
