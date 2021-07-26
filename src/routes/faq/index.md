@@ -94,8 +94,8 @@ We are currently testing a beta version of our phone base validations. But it is
 
     <summary>How to interpret a trust rate?</summary>
 
-* Emails with a trust rate of 0-49% are Risky and most likely INVALID, we don't recommend using them
-* Emails with a trust rate of 50-100% are VALID, feel free to use them
+- Emails with a trust rate of 0-49% are Risky and most likely INVALID, we don't recommend using them
+- Emails with a trust rate of 50-100% are VALID, feel free to use them
 
 </details>
 
@@ -167,8 +167,8 @@ All information about our users is protected by Google systems, we do really car
 
 We allow 100 free email validations if the billing information was verified, and 10 free email validations if the payment details weren't provided
 
-* with card 100 emails
-* without card 10 emails
+- with card 100 emails
+- without card 10 emails
 
 </details>
 

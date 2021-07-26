@@ -2,6 +2,7 @@
   import Seo from '$lib/Seo/index.svelte';
   import ContactUs from '$lib/ContactUs/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
+  import filter from '$lib/Faq/filter.png';
 
   export let title = '';
   export let slug = '';
@@ -23,7 +24,7 @@
     <div class="accordion">
       <slot />
     </div>
-    <img class="filter-img" src="./src/lib/faq/filter.png" width="444" height="568" alt="filter" />
+    <img class="filter-img" src={filter} width="444" height="568" alt="filter" />
   </div>
 {:else}
   <div class="container" id="article">
@@ -238,9 +239,9 @@
     font-size: var(--size-16);
     letter-spacing: var(--letter-spacing-text);
     text-align: initial;
+    text-decoration: underline;
     text-indent: initial;
     word-break: break-word;
-    text-decoration: underline;
   }
 
   :global(details a:hover) {
@@ -291,27 +292,26 @@
     :global(.accordion-column) {
       width: 100%;
     }
-  }
-
-  .filter-img {
-    order: -1;
-    width: 50%;
-    min-width: 10%;
-    max-width: 70%;
-    margin-bottom: var(--size-24);
-    transform: translateY(var(--size-50));
+    .filter-img {
+      order: -1;
+      width: 50%;
+      min-width: 10%;
+      max-width: 70%;
+      margin-bottom: var(--size-24);
+      transform: translateY(var(--size-50));
+    }
   }
   :global(details[open] summary ~ *) {
     animation: sweep 0.5s ease-in-out;
   }
   @keyframes sweep {
     0% {
-      opacity: 0;
       transform: translate(-20px, -10px);
+      opacity: 0;
     }
     100% {
+      transform: translateX(0);
       opacity: 1;
-      transform: translateX(0px);
     }
   }
 </style>

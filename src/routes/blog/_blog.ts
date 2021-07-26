@@ -19,8 +19,10 @@ export const getPublishedPosts = async () => {
   const publishedPosts = posts.filter((post) => post.published);
 
   const sortedPosts = publishedPosts.sort((a, b) => {
-    return new Date(a.date.split(".").reverse().toString()) <
-      new Date(b.date.split(".").reverse().toString()) ? 1 : -1;
+    return new Date(a.date.split('.').reverse().toString()) <
+      new Date(b.date.split('.').reverse().toString())
+      ? 1
+      : -1;
   });
 
   return sortedPosts;
