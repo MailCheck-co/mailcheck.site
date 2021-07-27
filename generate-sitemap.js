@@ -21,7 +21,6 @@ async function createSitemap() {
     const noindex3 = page.match("cookies");
     const noindex4 = page.match("404");
     if (!noindex1 && !noindex2 && !noindex3 && !noindex4) {
-      console.info('page: ', page);
       const url = sitemap.ele('url');
       url.ele('loc').txt(getUrl(page));
       url.ele('changefreq').txt('weekly');
