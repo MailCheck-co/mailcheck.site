@@ -16,9 +16,16 @@ async function createSitemap() {
   const pages = await fg(['build/**/*.html']);
 
   pages.forEach((page) => {
-    const url = sitemap.ele('url');
-    url.ele('loc').txt(getUrl(page));
-    url.ele('changefreq').txt('weekly');
+    const noindex1 = page.match("terms");
+    const noindex2 = page.match("privacy");
+    const noindex3 = page.match("cookies");
+    const noindex4 = page.match("404");
+    if (!noindex1 && !noindex2 && !noindex3 && !noindex4) {
+      console.info('page: ', page);
+      const url = sitemap.ele('url');
+      url.ele('loc').txt(getUrl(page));
+      url.ele('changefreq').txt('weekly');
+    }
   });
 
   const xml = sitemap.end({ prettyPrint: true });
