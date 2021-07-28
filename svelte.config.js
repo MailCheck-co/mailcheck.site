@@ -30,9 +30,6 @@ const config = {
       assets: 'build',
       fallback: null
     }),
-    prerender: {
-      force: true
-    },
     vite: {
       resolve: {
         alias: {
