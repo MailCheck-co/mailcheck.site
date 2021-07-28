@@ -6,7 +6,6 @@ cmsName: git
 nodeVersion: 16
 publishDir: build
 buildCommand: npm run build
-devCommand: npm run dev
 assets:
   referenceType: static
   # the folder with static asset files
