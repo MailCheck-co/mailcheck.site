@@ -3,8 +3,17 @@ dataDir: static
 pagesDir: src/routes
 ssgName: sapper
 cmsName: git
-nodeVersion: 12
+nodeVersion: 16
+publishDir: build
 devCommand: npm run build
+assets:
+  referenceType: static
+  # the folder with static asset files
+  staticDir: static
+  # the folder within the staticDir where the uploaded files will be stored
+  uploadDir: images
+  # the URL path from which the static assets will be server
+  publicPath: /
 models:
   route:
     type: page
@@ -41,10 +50,83 @@ models:
       - type: boolean
         name: published
         label: Published
+  blog:
+    type: data
+    label: Blog
+    folder: build\blog
+    fields:
+      - type: boolean
+        name: published
+        label: Published
+      - type: string
+        name: slug
+        label: Slug
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: date
+        label: Date
+      - type: string
+        name: readingTime
+        label: Reading Time
+      - type: string
+        name: snippet
+        label: Snippet
+      - type: string
+        name: desc
+        label: Desc
   manifest:
     type: data
     label: Manifest
-    file: manifest.json
+    file: build\manifest.json
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: string
+        name: short_name
+        label: Short Name
+      - type: string
+        name: description
+        label: Description
+      - type: string
+        name: dir
+        label: Dir
+      - type: string
+        name: lang
+        label: Lang
+      - type: string
+        name: display
+        label: Display
+      - type: string
+        name: orientation
+        label: Orientation
+      - type: string
+        name: start_url
+        label: Start Url
+      - type: string
+        name: background_color
+        label: Background Color
+      - type: list
+        name: icons
+        label: Icons
+        items:
+          type: object
+          fields:
+            - type: image
+              name: src
+              label: Src
+            - type: string
+              name: sizes
+              label: Sizes
+            - type: string
+              name: type
+              label: Type
+  data_1:
+    type: data
+    label: Data 1
+    folder: ''
     fields:
       - type: string
         name: name
