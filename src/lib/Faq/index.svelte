@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import filterIcon from '$lib/Faq/filter.png';
+  import filterIcon from '$lib/MdLayouts/FaqLayout/filter.png';
 
   let intersecting: boolean;
 </script>
