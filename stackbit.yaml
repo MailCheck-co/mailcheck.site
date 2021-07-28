@@ -1,0 +1,90 @@
+stackbitVersion: ~0.3.0
+dataDir: static
+pagesDir: src/routes
+ssgName: sapper
+cmsName: git
+nodeVersion: 12
+devCommand: npm run build
+models:
+  route:
+    type: page
+    label: Route
+    match: '**/*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: canonical
+        label: Canonical
+      - type: boolean
+        name: noindex
+        label: Noindex
+      - type: string
+        name: slug
+        label: Slug
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: date
+        label: Date
+      - type: string
+        name: readingTime
+        label: Reading Time
+      - type: string
+        name: snippet
+        label: Snippet
+      - type: string
+        name: desc
+        label: Desc
+      - type: boolean
+        name: published
+        label: Published
+  manifest:
+    type: data
+    label: Manifest
+    file: manifest.json
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: string
+        name: short_name
+        label: Short Name
+      - type: string
+        name: description
+        label: Description
+      - type: string
+        name: dir
+        label: Dir
+      - type: string
+        name: lang
+        label: Lang
+      - type: string
+        name: display
+        label: Display
+      - type: string
+        name: orientation
+        label: Orientation
+      - type: string
+        name: start_url
+        label: Start Url
+      - type: string
+        name: background_color
+        label: Background Color
+      - type: list
+        name: icons
+        label: Icons
+        items:
+          type: object
+          fields:
+            - type: image
+              name: src
+              label: Src
+            - type: string
+              name: sizes
+              label: Sizes
+            - type: string
+              name: type
+              label: Type
