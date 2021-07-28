@@ -5,7 +5,8 @@ ssgName: sapper
 cmsName: git
 nodeVersion: 16
 publishDir: build
-devCommand: npm run build
+buildCommand: npm run build
+devCommand: npm run dev
 assets:
   referenceType: static
   # the folder with static asset files
