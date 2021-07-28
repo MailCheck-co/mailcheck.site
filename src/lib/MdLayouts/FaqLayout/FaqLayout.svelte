@@ -21,7 +21,6 @@
 
 <div class="wrapper-questions">
   <div class="section-heading sm-left">
-    new custom layout faq
     <h1 class="title">{title}</h1>
     <p class="section-title-lg">{title}</p>
   </div>
