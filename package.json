@@ -11,7 +11,6 @@
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore . && svelte-check",
     "lint:style": "stylelint \"src/**/*.+(scss|css|svelte)\" --fix",
     "format": "prettier --write --plugin-search-dir=. .",
-    "postbuild": "node --experimental-json-modules ./generate-sitemap.js",
     "deploy_hosting": "firebase deploy --only hosting --project=dev",
     "deploy_functions": "firebase deploy --only functions --project=dev",
     "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
