@@ -4,7 +4,7 @@
   "description": "An application to clean your subscription list from bounces, and enrich data about customers.",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build && npm run static:404:cp && npm run static:404:rmdir",
+    "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
