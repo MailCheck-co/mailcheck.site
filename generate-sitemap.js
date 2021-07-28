@@ -8,23 +8,25 @@ const getUrl = (url) => {
   return `${pkg.url}${trimmed}`;
 };
 
+const filterRegexp = new RegExp('noindex');
+
 async function createSitemap() {
   const sitemap = create({ version: '1.0' }).ele('urlset', {
     xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9'
   });
 
   const pages = await fg(['build/**/*.html']);
+  
+  const filteredPages = pages.map(path => {
+    return [path, fs.readFileSync(path).toString()];
+  }).filter(([path, content]) => {
+    return !filterRegexp.test(content);
+  }).map(([path]) => { return path });
 
-  pages.forEach((page) => {
-    const noindex1 = page.match("terms");
-    const noindex2 = page.match("privacy");
-    const noindex3 = page.match("cookies");
-    const noindex4 = page.match("404");
-    if (!noindex1 && !noindex2 && !noindex3 && !noindex4) {
+  filteredPages.forEach((page) => {
       const url = sitemap.ele('url');
       url.ele('loc').txt(getUrl(page));
       url.ele('changefreq').txt('weekly');
-    }
   });
 
   const xml = sitemap.end({ prettyPrint: true });
