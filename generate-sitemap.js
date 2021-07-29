@@ -5,7 +5,7 @@ import pkg from './package.json';
 
 const getUrl = (url) => {
   const trimmed = url.slice(6).replace('index.html', '');
-  return `${pkg.url}${trimmed}`;
+  return pkg.url + trimmed;
 };
 
 const filterRegexp = new RegExp('noindex');
@@ -16,17 +16,16 @@ async function createSitemap() {
   });
 
   const pages = await fg(['build/**/*.html']);
-  
-  const filteredPages = pages.map(path => {
-    return [path, fs.readFileSync(path).toString()];
-  }).filter(([path, content]) => {
-    return !filterRegexp.test(content);
-  }).map(([path]) => { return path });
+
+  const filteredPages = pages
+    .map((path) => [path, fs.readFileSync(path).toString()])
+    .filter(([path, content]) => !filterRegexp.test(content))
+    .map(([path]) => path);
 
   filteredPages.forEach((page) => {
-      const url = sitemap.ele('url');
-      url.ele('loc').txt(getUrl(page));
-      url.ele('changefreq').txt('weekly');
+    const url = sitemap.ele('url');
+    url.ele('loc').txt(getUrl(page));
+    url.ele('changefreq').txt('weekly');
   });
 
   const xml = sitemap.end({ prettyPrint: true });
