@@ -16,9 +16,15 @@ async function createSitemap() {
   });
 
   const pages = await fg(['build/**/*.html']);
+  const tasks = [];
 
+  pages.forEach((path) => {
+    tasks.push(fs.readFile(path));
+  });
+
+  const contents = await Promise.all(tasks);
   const filteredPages = pages
-    .map((path) => [path, fs.readFileSync(path).toString()])
+    .map((path, index) => [path, contents[index].toString()])
     .filter(([path, content]) => !filterRegexp.test(content))
     .map(([path]) => path);
 
