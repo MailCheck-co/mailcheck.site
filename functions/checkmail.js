@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const functions = require('firebase-functions');
 const { EmailValidator } = require('./email-validator');
 

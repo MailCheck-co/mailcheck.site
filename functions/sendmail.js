@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const functions = require('firebase-functions');
 const nodemailer = require('nodemailer');
 const gmailEmail = functions.config().gmail?.email ?? 'email';
