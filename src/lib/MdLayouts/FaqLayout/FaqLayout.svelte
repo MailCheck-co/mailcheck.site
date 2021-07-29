@@ -141,7 +141,11 @@
   :global(details ol, details ul) {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+  }
+
+  :global(details ul) {
+    margin-left: var(--size-30);
+    list-style-type: disc;
   }
 
   :global(details li) {
