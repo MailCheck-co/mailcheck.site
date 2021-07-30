@@ -17,25 +17,23 @@ async function createSitemap() {
 
   const pages = await fg(['build/**/*.html']);
   const bytesToRead = 5000;
-  const tasks = [];
-
+  const openTasks = [];
+  const readTasks = [];
   pages.forEach((path) => {
-    tasks.push(
-      fs.open(path.replace, 'r', (errOpen, fd) => {
-        return fs.read(
-          fd,
-          { buffer: Buffer.alloc(bytesToRead), position: 0, length: bytesToRead },
-          (errRead, bytesRead, buffer) => {
-            return buffer.toString('utf8');
-          }
-        );
-      })
+    openTasks.push(fs.promises.open(path));
+  });
+
+  const openedPages = await Promise.all(openTasks);
+  openedPages.forEach((filehandler) => {
+    readTasks.push(
+      filehandler.read({ buffer: Buffer.alloc(bytesToRead), position: 0, length: bytesToRead })
     );
   });
 
-  const contents = await Promise.all(tasks);
+  const contents = await Promise.all(readTasks);
+
   const filteredPages = pages
-    .map((path, index) => [path, contents[index].toString()])
+    .map((path, index) => [path, contents[index].buffer.toString('utf8')])
     .filter(([path, content]) => !filterRegexp.test(content))
     .map(([path]) => path);
 
