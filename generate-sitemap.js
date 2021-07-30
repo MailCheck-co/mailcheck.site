@@ -16,10 +16,21 @@ async function createSitemap() {
   });
 
   const pages = await fg(['build/**/*.html']);
+  const bytesToRead = 5000;
   const tasks = [];
 
   pages.forEach((path) => {
-    tasks.push(fs.readFile(path));
+    tasks.push(
+      fs.open(path.replace, 'r', (errOpen, fd) => {
+        return fs.read(
+          fd,
+          { buffer: Buffer.alloc(bytesToRead), position: 0, length: bytesToRead },
+          (errRead, bytesRead, buffer) => {
+            return buffer.toString('utf8');
+          }
+        );
+      })
+    );
   });
 
   const contents = await Promise.all(tasks);
