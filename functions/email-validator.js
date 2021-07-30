@@ -3,8 +3,8 @@
 const functions = require('firebase-functions');
 const fetch = require('node-fetch');
 const apiLink =
-  (functions.config().mailcheck || {}).link || 'https://api.mailcheck.co/v1/singleEmail:check';
-const apiKey = (functions.config().mailcheck || {}).key || 'apiKey';
+  functions.config().mailcheck?.link ?? 'https://api.mailcheck.co/v1/singleEmail:check';
+const apiKey = functions.config().mailcheck?.key ?? 'apiKey';
 
 class EmailValidator {
   constructor() {
@@ -15,17 +15,16 @@ class EmailValidator {
 
   async validate(email, reqIp) {
     const cachedResult = this.mailCache.get(email);
-    if (cachedResult) {
+    if (cachedResult)
       return {
         code: 200,
         data: cachedResult
       };
-    }
 
     const reqCount = this.ipCache.get(reqIp) || 0;
     this.ipCache.set(reqIp, reqCount + 1);
 
-    if (reqCount > this.callLimitForOneIp) {
+    if (reqCount > this.callLimitForOneIp)
       return {
         code: 429,
         data: {
@@ -33,8 +32,8 @@ class EmailValidator {
           message: 'rate limit reached for ip ' + reqIp
         }
       };
-    }
-    console.log(reqIp + ': reqCount:', reqCount);
+
+    functions.logger.info(reqIp + ': reqCount:', reqCount);
 
     try {
       const apires = await fetch(apiLink, {

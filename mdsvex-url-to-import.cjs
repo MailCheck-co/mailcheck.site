@@ -38,9 +38,7 @@ function fancyImages() {
     visit(tree, 'html', (node) => {
       if (RE_SCRIPT_START.test(node.value)) {
         is_script = true;
-        node.value = node.value.replace(RE_SCRIPT_START, (script) => {
-          return `${script}\n${scripts}`;
-        });
+        node.value = node.value.replace(RE_SCRIPT_START, (script) => `${script}\n${scripts}`);
       }
     });
 
