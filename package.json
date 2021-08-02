@@ -21,7 +21,7 @@
     "static:404:rmdir": "rimraf - build/error"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
     "@nodeart/stylelint-config-nodeart": "0.0.4",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
