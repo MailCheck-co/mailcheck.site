@@ -59,7 +59,7 @@
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
     "just-camel-case": "^4.0.2",
-    "schema-dts": "^0.9.0",
+    "schema-dts": "^0.10.0",
     "svelte-inview": "^2.0.1",
     "unist-util-visit": "^2.0.3"
   },
