@@ -1,7 +1,7 @@
 ---
-layout: article
+layout: faq
 slug: faq
-title: Frequent Questions
+title: FAQ
 date: 25.06.2020
 readingTime: 1 min read
 snippet: Frequent Questions
@@ -53,22 +53,23 @@ We are currently testing a beta version of our phone base validations. But it is
 
     <summary>How to get started with Mailcheck?</summary>
 
-**Step 1** Go to [login](https://app.mailcheck.co/auth/login) and create an account. Our registration process is one of the easiest in the known systems
+1. **Step 1** Go to [login](https://app.mailcheck.co/auth/login) and create an account. Our registration process is one of the easiest in the known systems
 
-**Step 2** Set your email address and password
+2. **Step 2** Set your email address and password
 
-**Step 3** Fill in your profile information or Skip if you don't have time
+3. **Step 3** Fill in your profile information or Skip if you don't have time
 
-**Step 4** Choose the plan you want to go with or skip if you don't have time
+4. **Step 4** Choose the plan you want to go with or skip if you don't have time
 
-**Step 5** Set your billing information ( in case you didn't choose a plan, you can still go with "Free Tier" 100 emails for free). We have two scenarios if you want a free tier
+5. **Step 5** Set your billing information ( in case you didn't choose a plan, you can still go with "Free Tier" 100 emails for free). We have two scenarios if you want a free tier
 
-1. 10 emails if you didn't set your card
-2. 100 emails if your card details were provided (we don't charge you anything unless you previously has chosen a plan)
+   - 10 emails if you didn't set your card
 
-**Step 6** Ta da! You are in
+   - 100 emails if your card details were provided (we don't charge you anything unless you previously has chosen a plan)
 
-**Step 7** If you have any questions, always [ping our support team](mailto:support+faq@mailcheck.co)
+6. **Step 6** Ta da! You are in
+
+7. **Step 7** If you have any questions, always [ping our support team](mailto:support+faq@mailcheck.co)
 
 </details>
 
@@ -76,17 +77,17 @@ We are currently testing a beta version of our phone base validations. But it is
 
     <summary>How to get verified your first list?</summary>
 
-**Step 1** If you have data collected in .csv, .tsv formats, feel free to click "Upload"
+1. **Step 1** If you have data collected in .csv, .tsv formats, feel free to click "Upload"
 
-**Step 2** Drag and drop your file or choose from your computer
+2. **Step 2** Drag and drop your file or choose from your computer
 
-**Step 3** specify a delimiter (choose one column with emails only)
+3. **Step 3** specify a delimiter (choose one column with emails only)
 
-**Step 4** send a file for the validation
+4. **Step 4** send a file for the validation
 
-**Step 5** go to the uploaded files and click "Process"
+5. **Step 5** go to the uploaded files and click "Process"
 
-**Step 6** When the file processed, you will receive results as the download button inside the site or via email
+6. **Step 6** When the file processed, you will receive results as the download button inside the site or via email
 
 </details>
 
@@ -95,6 +96,7 @@ We are currently testing a beta version of our phone base validations. But it is
     <summary>How to interpret a trust rate?</summary>
 
 - Emails with a trust rate of 0-49% are Risky and most likely INVALID, we don't recommend using them
+
 - Emails with a trust rate of 50-100% are VALID, feel free to use them
 
 </details>
@@ -103,9 +105,9 @@ We are currently testing a beta version of our phone base validations. But it is
 
     <summary>How can I sign up?</summary>
 
-**Step 1** We made our service so easy, that no extra confirmation required, simply set your email and password to register
+1. **Step 1** We made our service so easy, that no extra confirmation required, simply set your email and password to register
 
-**Step 2** Use your Google, facebook account to register with us
+2. **Step 2** Use your Google, facebook account to register with us
 
 </details>
 
@@ -113,9 +115,9 @@ We are currently testing a beta version of our phone base validations. But it is
 
     <summary>How can I login?</summary>
 
-**Step 1** Fill in email/password
+1. **Step 1** Fill in email/password
 
-**Step 1** Log in using Google or Facebook
+1. **Step 1** Log in using Google or Facebook
 
 </details>
 
@@ -168,6 +170,7 @@ All information about our users is protected by Google systems, we do really car
 We allow 100 free email validations if the billing information was verified, and 10 free email validations if the payment details weren't provided
 
 - with card 100 emails
+
 - without card 10 emails
 
 </details>

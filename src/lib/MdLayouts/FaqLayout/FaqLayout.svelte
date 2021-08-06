@@ -1,157 +1,38 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import Seo from '$lib/Seo/index.svelte';
   import ContactUs from '$lib/ContactUs/index.svelte';
-  import { websiteSchema, articleSchema } from '$utils/json-ld';
-  import filter from '$lib/Faq/filter.png';
+  import { websiteSchema } from '$utils/json-ld';
+  import filter from './filter.png';
+  import Accordion from './accordion';
 
   export let title = '';
-  export let slug = '';
   export let canonical = '';
   export let noindex = false;
+
+  onMount(() => {
+    document.querySelectorAll('details').forEach((item) => {
+      new Accordion(item);
+    });
+  });
 </script>
 
-<Seo
-  {title}
-  desc={title}
-  isPost={true}
-  {canonical}
-  {noindex}
-  schemas={[websiteSchema, articleSchema]} />
+<Seo {title} desc={title} isPost={true} {canonical} {noindex} schemas={[websiteSchema]} />
 
-{#if slug == 'faq'}
-  <div class="wrapper-questions">
+<div class="wrapper-questions">
+  <div class="section-heading sm-left">
     <h1 class="title">{title}</h1>
-    <div class="accordion">
-      <slot />
-    </div>
-    <img class="filter-img" src={filter} width="444" height="568" alt="filter" />
+    <p class="section-title-lg">{title}</p>
   </div>
-{:else}
-  <div class="container" id="article">
-    <div class="content-block">
-      <slot />
-    </div>
+  <div class="accordion">
+    <slot />
   </div>
-{/if}
+  <img class="filter-img" src={filter} width="444" height="568" alt="filter" />
+</div>
 
 <ContactUs />
 
 <style lang="scss">
-  .container {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    min-width: 320px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--size-30);
-  }
-
-  .content-block {
-    display: flex;
-    flex-direction: column;
-    max-width: var(--size-880);
-    margin: 0 auto;
-  }
-
-  :global(.container .content-block h1) {
-    width: 100%;
-    height: auto;
-    margin-bottom: var(--size-24);
-    color: var(--primary-white) !important;
-    font-weight: var(--weight-700);
-    font-size: var(--size-36);
-    line-height: var(--size-40);
-    letter-spacing: 0.1rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  :global(.container .content-block h2) {
-    color: var(--primary-white) !important;
-    font-weight: var(--weight-700);
-    font-size: var(--size-30);
-  }
-
-  :global(.container .content-block h3) {
-    color: var(--primary-white) !important;
-    font-weight: var(--weight-700);
-    font-size: var(--size-24);
-  }
-
-  :global(.container .content-block pre) {
-    padding: 0.5em;
-    overflow-x: auto;
-    color: var(--primary-white);
-    background-color: var(--color-pre-global-bg);
-    border-radius: var(--size-2);
-    box-shadow: inset var(--size-1) var(--size-1) var(--size-6) var(--color-pre-global-shadow);
-  }
-
-  :global(.container .content-block pre code) {
-    padding: 0;
-    color: var(--primary-white);
-    background-color: var(--transparent);
-  }
-
-  :global(.container .content-block h1 a) {
-    color: var(--primary-white) !important;
-    text-decoration: none !important;
-  }
-
-  :global(.container .content-block h2 a) {
-    color: var(--primary-white) !important;
-    text-decoration: none !important;
-  }
-
-  :global(.container .content-block h3 a) {
-    color: var(--primary-white) !important;
-    text-decoration: none !important;
-  }
-
-  :global(.container .content-block ul) {
-    padding: 0 0 0 var(--size-24);
-    line-height: 1.5;
-  }
-
-  :global(.container .content-block li) {
-    margin: 0 0 0.5em 0;
-    color: var(--primary-white);
-  }
-
-  :global(.container .content-block p) {
-    color: var(--primary-white) !important;
-    font-weight: var(--weight-400);
-    line-height: 1.5;
-    letter-spacing: var(--letter-spacing);
-    text-align: justify;
-    text-indent: var(--size-20);
-  }
-
-  :global(.container .content-block p img) {
-    display: block;
-    margin: 0 auto;
-  }
-
-  :global(.container .content-block strong) {
-    color: var(--primary-white);
-    font-weight: var(--weight-700);
-  }
-
-  :global(.container .content-block a) {
-    color: var(--primary-white);
-    text-decoration: underline;
-  }
-
-  :global(.container .content-block a:hover) {
-    text-decoration: none;
-  }
-
-  :global(.container .content-block img) {
-    max-width: 100%;
-    height: auto;
-  }
-
   :global(.wrapper-questions) {
     position: relative;
     z-index: 1;
@@ -159,10 +40,16 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
     max-width: 80rem;
     margin: 0 auto var(--size-50);
     padding: var(--size-50) var(--size-20) 0;
   }
+
+  :global(.section-heading) {
+    width: 100%;
+  }
+
   :global(.accordion) {
     display: flex;
     flex-direction: row;
@@ -170,6 +57,7 @@
     width: 100%;
     margin: var(--size-50) var(--size-20) var(--size-50);
   }
+
   :global(.accordion-column) {
     width: 48%;
   }
@@ -186,7 +74,7 @@
     height: max-content;
   }
 
-  :global(details > summary) {
+  :global(details summary) {
     position: relative;
     display: block;
     box-sizing: border-box;
@@ -199,7 +87,7 @@
     letter-spacing: var(--letter-spacing);
   }
 
-  :global(details > summary::after) {
+  :global(details summary::after) {
     position: absolute;
     top: var(--size-10);
     right: var(--size-1);
@@ -213,17 +101,18 @@
     content: '';
   }
 
-  :global(details[open] > summary::after) {
+  :global(details[open] summary::after) {
     transform: rotate(135deg);
   }
 
-  :global(details > summary::-webkit-details-marker) {
+  :global(details summary::-webkit-details-marker) {
     display: none;
   }
 
-  :global(details > p) {
+  :global(details p) {
     margin-top: 0;
-    padding: 0 var(--size-10);
+    margin-bottom: 0;
+    padding: 0 var(--size-10) var(--size-16);
     color: var(--primary-white);
     font-weight: var(--weight-300);
     font-size: var(--size-16);
@@ -249,14 +138,14 @@
     text-decoration: none;
   }
 
-  :global(details ol) {
+  :global(details ol, details ul) {
     margin: 0;
-    padding: 1rem 2.5rem;
+    padding: 0;
   }
 
   :global(details ul) {
-    margin: 0;
-    padding: 1rem 2.5rem;
+    margin-left: var(--size-30);
+    list-style-type: disc;
   }
 
   :global(details li) {
@@ -268,6 +157,7 @@
     text-indent: initial;
     word-break: break-word;
   }
+
   .filter-img {
     position: absolute;
     top: 6rem;
@@ -301,12 +191,14 @@
       transform: translateY(var(--size-50));
     }
   }
+
   :global(details[open] summary ~ *) {
     animation: sweep 0.5s ease-in-out;
   }
+
   @keyframes sweep {
     0% {
-      transform: translate(-20px, -10px);
+      transform: translateY(-20px);
       opacity: 0;
     }
     100% {
