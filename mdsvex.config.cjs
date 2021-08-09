@@ -10,19 +10,19 @@ module.exports = {
   },
   remarkPlugins: [
     [
-      require('./mdsvex-url-to-import.cjs'),
-      require('remark-github'),
+      import('./mdsvex-url-to-import.cjs'),
+      import('remark-github'),
       {
         // Use your own repository
         repository: 'https://github.com/svelte-add/mdsvex.git'
       }
     ],
-    require('remark-abbr')
+    import('remark-abbr')
   ],
   rehypePlugins: [
-    require('rehype-slug'),
+    import('rehype-slug'),
     [
-      require('rehype-autolink-headings'),
+      import('rehype-autolink-headings'),
       {
         behavior: 'wrap'
       }
