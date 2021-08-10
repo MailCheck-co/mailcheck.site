@@ -1,4 +1,4 @@
-<script type="ts">
+<script>
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   import k5Logo from '$lib/Testimonials/5k-logo.svg';
@@ -8,11 +8,11 @@
   import echoLogo from '$lib/Testimonials/echo-logo.svg';
   import arrowNav from '$lib/Testimonials/arrow-slide-nav.svg';
 
-  let intersecting: boolean;
-  let slider: HTMLElement;
+  let intersecting;
+  let slider;
   let active = false;
-  let startX: number;
-  let scrollLeft: number;
+  let startX;
+  let scrollLeft;
   const SCROLL_SPEED = 4; // DON'T CHANGE!!!
   const ITEMS_TO_SCROLL = 1;
   const SCROLL = ITEMS_TO_SCROLL * 420;
@@ -41,7 +41,7 @@
     deactivate(e);
   }
 
-  function onMouseDown(e: MouseEvent) {
+  function onMouseDown(e) {
     active = true;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
@@ -51,7 +51,7 @@
     active = false;
   }
 
-  function onMouseMove(e: MouseEvent) {
+  function onMouseMove(e) {
     if (!active) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
