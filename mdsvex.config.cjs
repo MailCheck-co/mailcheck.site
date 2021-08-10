@@ -10,7 +10,7 @@ module.exports = {
   },
   remarkPlugins: [
     [
-      import('./mdsvex-url-to-import.cjs'),
+      require('./mdsvex-url-to-import.cjs'),
       import('remark-github'),
       {
         // Use your own repository
