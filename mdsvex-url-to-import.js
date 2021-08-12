@@ -1,17 +1,17 @@
-require('svelte/compiler');
-const visit = require('unist-util-visit');
-const to_camel = require('just-camel-case');
+import('svelte/compiler');
+import { visit } from 'unist-util-visit';
+import camelCase from 'just-camel-case';
 
 // forgive me
 const RE_SCRIPT_START = /<script(?:\s+?[a-zA-z]+(=(?:["']){0,1}[a-zA-Z0-9]+(?:["']){0,1}){0,1})*\s*?>/;
 
-function fancyImages() {
+export default function fancyImages() {
   return function transformer(tree, vFile) {
     const images = new Map();
     const image_count = new Map();
 
     visit(tree, 'image', (node) => {
-      let camel = to_camel(node.url);
+      let camel = camelCase(node.url);
       const count = image_count.get(camel);
       const dupe = images.get(node.url);
 
@@ -50,5 +50,3 @@ function fancyImages() {
     }
   };
 }
-
-module.exports = fancyImages;
