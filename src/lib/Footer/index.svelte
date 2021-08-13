@@ -5,6 +5,7 @@
   import iconFacebook from '$lib/Footer/assets/icon-facebook.svg';
   import iconLinkedin from '$lib/Footer/assets/icon-linkedin.svg';
   import iconGitHub from '$lib/Footer/assets/icon-github.svg';
+  import iconYoutube from '$lib/Footer/assets/youtube-light.svg';
   import iconMoneyBack from '$lib/Footer/assets/icon-money-back.svg';
   import iconRSS from '$lib/Footer/assets/rss.svg';
 
@@ -76,6 +77,14 @@
             alt="LinkedIn" />
         </a>
         <a
+          href="https://www.youtube.com/channel/UCX8jKuur4Ylr9ymsRzAaZUQ/"
+          target="_blank"
+          rel="external"
+          title="Youtube channel"
+          class="footer-social-link">
+          <img width="18" height="18" class="footer-social-icon" src={iconYoutube} alt="Youtube" />
+        </a>
+        <a
           href="https://twitter.com/mailcheckco"
           target="_blank"
           rel="external"
@@ -141,6 +150,19 @@
               class="footer-social-icon"
               src={iconLinkedin}
               alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCX8jKuur4Ylr9ymsRzAaZUQ/"
+            target="_blank"
+            rel="external"
+            title="Youtube channel"
+            class="footer-social-link">
+            <img
+              width="18"
+              height="18"
+              class="footer-social-icon"
+              src={iconYoutube}
+              alt="Youtube" />
           </a>
           <a
             href="https://twitter.com/mailcheckco"
