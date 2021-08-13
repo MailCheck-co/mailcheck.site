@@ -4,7 +4,7 @@ slug: emails-validation-api-increase-ecommerce-conversion
 title: Emails validation API can and will increase your E-Commerce conversion
 date: 13.08.2020
 readingTime: 3 min read
-snippet: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API. Click [here](/blog/emails-validation-api-increase-ecommerce-conversion) to find out more.
+snippet: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API.
 desc: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API. Click [here](/blog/emails-validation-api-increase-ecommerce-conversion) to find out more.
 ---
 
