@@ -8,6 +8,19 @@ snippet: Frequent Questions
 desc: Frequent Questions
 ---
 
+<script>
+  import Video from '$lib/Video/index.svelte';
+
+  let idVideoDelimiter = 'XTpv879nfjc';
+  let titleVideoDelimiter = 'How to select the delimiter?';
+
+  let idVideoAddEmails = 'YL4a5M50_Pk';
+  let titleVideoAddEmails = 'How to manually add emails?';
+
+  let idVideoAdaptData = 'dFcw9wEXsAg';
+  let titleVideoAdaptData = 'How to adapt data in Excel?';
+</script>
+
 <div class="accordion-column left">
 <details>
 
@@ -135,13 +148,24 @@ If you want to delete account because of the uploaded database, you can simply h
 
 A delimiter is the comma character, which acts as a field delimiter, we ask to set it in order to validate the chosen column, NOTE it only has to be an email column
 
+<Video id={idVideoDelimiter} title={titleVideoDelimiter} />
 </details>
 
 <details>
 
     <summary>How to prepare a list to get it verified?</summary>
 
-If you data in Google Sheets or Excel you can export them to .csv and upload to your Mailcheck account
+If your data in Google Sheets or Excel you can export them to .csv and upload to your Mailcheck account
+
+</details>
+
+<details>
+
+    <summary>How to adapt data in Excel?</summary>
+
+Watch our video about how to adapt data in Excel
+
+<Video id={idVideoAdaptData} title={titleVideoAdaptData} />
 
 </details>
 </div>
@@ -277,6 +301,16 @@ A step-by-step guide to integrate Mailcheck with daily services using [Zapier](/
     <summary>Integromat Integration instructions</summary>
 
 A step-by-step guide to integrate Mailcheck with daily services using [Integromat](/integromat-integration)
+
+</details>
+
+<details>
+
+    <summary>How to manually add emails?</summary>
+
+Watch our video about how to manually add emails?
+
+<Video id={idVideoAddEmails} title={titleVideoAddEmails} />
 
 </details>
 </div>
