@@ -35,7 +35,7 @@
     @include intersection;
 
     margin-top: 6rem;
-    padding: 0 30px var(--size-50);
+    padding: 0 var(--size-30) var(--size-50);
 
     .section-heading {
       position: relative;
@@ -74,11 +74,11 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
       max-width: var(--size-880);
       margin: 2rem auto 0;
       text-align: center;
-      column-gap: 40px;
+      column-gap: var(--size-40);
 
       a {
         height: var(--size-60);

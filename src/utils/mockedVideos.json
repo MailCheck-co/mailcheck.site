@@ -1,0 +1,187 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "8pyFsPBm0CWsfpAx4uHoxSJ5IKw",
+  "items": [{
+      "kind": "youtube#playlistItem",
+      "etag": "fU1nfaoccRP41NhTdiv3u4dsAlI",
+      "id": "UExJM0RkX1pfX3NxY1VtRDhNYUlGTUlWbmZFdlR0eVBaZy4wOTA3OTZBNzVEMTUzOTMy",
+      "snippet": {
+        "publishedAt": "2021-08-13T08:21:43Z",
+        "channelId": "UCX8jKuur4Ylr9ymsRzAaZUQ",
+        "title": "How to select the delimiter?",
+        "description": "mailcheck.co the email validation tool",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/XTpv879nfjc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/XTpv879nfjc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/XTpv879nfjc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/XTpv879nfjc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/XTpv879nfjc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mailcheck Company",
+        "playlistId": "PLI3Dd_Z__sqcUmD8MaIFMIVnfEvTtyPZg",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "XTpv879nfjc"
+        },
+        "videoOwnerChannelTitle": "Mailcheck Company",
+        "videoOwnerChannelId": "UCX8jKuur4Ylr9ymsRzAaZUQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "12eyrwdCaBz29G_TD72oKnUjl2s",
+      "id": "UExJM0RkX1pfX3NxY1VtRDhNYUlGTUlWbmZFdlR0eVBaZy4xMkVGQjNCMUM1N0RFNEUx",
+      "snippet": {
+        "publishedAt": "2021-08-13T08:26:55Z",
+        "channelId": "UCX8jKuur4Ylr9ymsRzAaZUQ",
+        "title": "How to manually add emails?",
+        "description": "mailcheck.co describes the way to add emails via copy/paste form\nEmail validation service - Mailcheck",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YL4a5M50_Pk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YL4a5M50_Pk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YL4a5M50_Pk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/YL4a5M50_Pk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/YL4a5M50_Pk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mailcheck Company",
+        "playlistId": "PLI3Dd_Z__sqcUmD8MaIFMIVnfEvTtyPZg",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "YL4a5M50_Pk"
+        },
+        "videoOwnerChannelTitle": "Mailcheck Company",
+        "videoOwnerChannelId": "UCX8jKuur4Ylr9ymsRzAaZUQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "9TC8tygacJ-PBAjCi9ScIXOvWkY",
+      "id": "UExJM0RkX1pfX3NxY1VtRDhNYUlGTUlWbmZFdlR0eVBaZy41MzJCQjBCNDIyRkJDN0VD",
+      "snippet": {
+        "publishedAt": "2021-08-13T08:29:37Z",
+        "channelId": "UCX8jKuur4Ylr9ymsRzAaZUQ",
+        "title": "How to adapt data in Excel? Mailcheck.co",
+        "description": "Mailcheck.co \nEmail validation service, the best way to adapt data in your excel sheet.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dFcw9wEXsAg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dFcw9wEXsAg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dFcw9wEXsAg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Mailcheck Company",
+        "playlistId": "PLI3Dd_Z__sqcUmD8MaIFMIVnfEvTtyPZg",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "dFcw9wEXsAg"
+        },
+        "videoOwnerChannelTitle": "Mailcheck Company",
+        "videoOwnerChannelId": "UCX8jKuur4Ylr9ymsRzAaZUQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "yr113VfFJD-DyWOGKpOyjoEs044",
+      "id": "UExJM0RkX1pfX3NxY1VtRDhNYUlGTUlWbmZFdlR0eVBaZy5DQUNERDQ2NkIzRUQxNTY1",
+      "snippet": {
+        "publishedAt": "2021-08-17T13:17:55Z",
+        "channelId": "UCX8jKuur4Ylr9ymsRzAaZUQ",
+        "title": "Mailcheck.co email validation parameters",
+        "description": "In this course, we're going to define Mailcheck.co email validation parameters",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o1C455GQBjE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o1C455GQBjE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o1C455GQBjE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/o1C455GQBjE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/o1C455GQBjE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mailcheck Company",
+        "playlistId": "PLI3Dd_Z__sqcUmD8MaIFMIVnfEvTtyPZg",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "o1C455GQBjE"
+        },
+        "videoOwnerChannelTitle": "Mailcheck Company",
+        "videoOwnerChannelId": "UCX8jKuur4Ylr9ymsRzAaZUQ"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 8,
+    "resultsPerPage": 10
+  }
+}
