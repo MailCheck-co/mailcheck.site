@@ -54,7 +54,7 @@
   <Slidy {...slidy} bind:init bind:index let:item>
     <div class="slide">
       <div class="video">
-        <Video />
+        <Video id={item.id} title={item.title} />
       </div>
       <div class="description">
         description
