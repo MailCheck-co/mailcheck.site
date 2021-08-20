@@ -3,30 +3,32 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export async function load({ fetch }) {
-    const videos = await fetch('videos.json')
-      .then((res: Response) => res.json());
+    const videos = await fetch('videos.json').then((res: Response) => res.json());
     return {
       props: {
         videos
       }
     };
-  };
+  }
 </script>
 
 <script lang="ts">
   import Video from '$lib/Video/video.svelte';
   import Slider from '$lib/Video/slider.svelte';
+  import FaraAva from '$lib/Video/assets/fara.png';
 
   interface IVideo {
     id: string;
     title: string;
     desc: string;
+    date: string;
   }
 
   export let videos: IVideo[];
 </script>
 
 <main class="videos">
+  <h1 class="title">Video Tutorials</h1>
   <div class="slider">
     <Slider slides={videos} />
   </div>
@@ -39,6 +41,15 @@
         <div class="description">
           <h2>{video.title}</h2>
           <p>{video.desc}</p>
+          <div class="author">
+            <div class="avatar">
+              <img src={FaraAva} alt="Fara Muhammadiev" />
+            </div>
+            <div class="about">
+              <h3 class="name">Fara Muhammadiev</h3>
+              <p class="date">{video.date}</p>
+            </div>
+          </div>
         </div>
       </div>
     {/each}
@@ -52,35 +63,35 @@
     width: 100%;
     min-width: 320px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto var(--size-20);
     padding: 0 var(--size-30);
 
     .slider {
       width: 100%;
+      margin-bottom: var(--size-30);
     }
 
     .list {
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
+      flex-flow: column wrap;
       min-height: var(--size-880);
 
       .content {
-        width: 45%;
+        width: 100%;
+        z-index: 1;
 
         %text {
           color: var(--primary-white);
           line-height: 1.2;
           text-align: left;
           text-indent: initial;
+          letter-spacing: normal;
         }
 
         .video-wrapper {
-          position: relative;
           background-color: var(--primary-white);
           border-radius: var(--br-10);
           overflow: hidden;
-          z-index: 1;
         }
 
         .description {
@@ -95,6 +106,49 @@
             font-weight: var(--weight-400);
             font-size: var(--size-14);
           }
+
+          .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--size-20);
+
+            .avatar {
+              height: var(--size-46);
+              width: var(--size-46);
+              margin-right: var(--size-16);
+              background-color: var(--primary-white);
+              border-radius: var(--br-rounded);
+              overflow: hidden;
+            }
+
+            .about {
+              .name {
+                @extend %text;
+                margin: 0;
+                font-weight: var(--weight-400);
+                font-size: var(--size-18);
+                text-transform: none;
+              }
+
+              p {
+                margin: var(--size-8) 0 0;
+                font-size: var(--size-14);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 992px) {
+    .videos {
+      .list {
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        .content {
+          width: 45%;
         }
       }
     }
