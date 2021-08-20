@@ -5,9 +5,3 @@
 export interface Locals {
   userid: string;
 }
-
-declare global {
-  interface Window {
-      gapi: any;
-  }
-}
