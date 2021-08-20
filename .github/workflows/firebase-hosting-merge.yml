@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
         env:
-          VITE_YOUTUBE_API_KEY_ZONE: '${{ secrets.VITE_YOUTUBE_API_KEY }}'
+          VITE_YOUTUBE_API_KEY: '${{ secrets.VITE_YOUTUBE_API_KEY }}'
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
