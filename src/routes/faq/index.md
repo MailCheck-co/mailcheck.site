@@ -9,7 +9,7 @@ desc: Frequent Questions
 ---
 
 <script>
-  import Video from '$lib/Video/index.svelte';
+  import Video from '$lib/Video/video.svelte';
 
   let idVideoDelimiter = 'XTpv879nfjc';
   let titleVideoDelimiter = 'How to select the delimiter?';

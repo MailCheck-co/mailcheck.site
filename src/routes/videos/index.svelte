@@ -1,7 +1,20 @@
+<script lang="ts" context="module">
+  /**
+   * @type {import('@sveltejs/kit').Load}
+   */
+  export async function load({ fetch }) {
+    const videos = await fetch('videos.json')
+      .then((res: Response) => res.json());
+    return {
+      props: {
+        videos
+      }
+    };
+  };
+</script>
+
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { apiKey } from '$lib/Video/key';
-  import Video from '$lib/Video/index.svelte';
+  import Video from '$lib/Video/video.svelte';
   import Slider from '$lib/Video/slider.svelte';
 
   interface IVideo {
@@ -10,59 +23,7 @@
     desc: string;
   }
 
-  let videos: IVideo[] = [];
-  let gapi: {
-    load: (arg0: string) => any;
-    client: {
-      setApiKey: (arg0: string) => any;
-      load: (arg0: string) => Promise<any>;
-      youtube: {
-        playlistItems: {
-          list: (arg0: { part: string[]; maxResults: number; playlistId: string }) => Promise<any>;
-        };
-      };
-    };
-  };
-
-  onMount(() => {
-    gapi = window.gapi;
-    gapi.load('client');
-    const load = setTimeout(() => {
-      loadClient();
-      clearTimeout(load);
-    }, 1000);
-  });
-
-  const loadClient = () => {
-    gapi.client.setApiKey(apiKey);
-
-    return gapi.client.load('https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest').then(
-      () => {
-        return gapi.client.youtube.playlistItems
-          .list({
-            part: ['snippet'],
-            maxResults: 10,
-            playlistId: 'PLI3Dd_Z__sqcUmD8MaIFMIVnfEvTtyPZg'
-          })
-          .then(
-            (response) => {
-              const items = response.result.items;
-              videos = items.map((video: any) => {
-                return {
-                  id: video.snippet.resourceId.videoId,
-                  title: video.snippet.title,
-                  desc: video.snippet.description
-                };
-              });
-            },
-            (err) => console.error('Execute error', err)
-          );
-      },
-      (err) => {
-        console.error('Error loading GAPI client for API', err);
-      }
-    );
-  };
+  export let videos: IVideo[];
 </script>
 
 <main class="videos">

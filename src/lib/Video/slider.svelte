@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Slidy } from 'svelte-slidy';
-    import Video from '$lib/Video/index.svelte';
+    import Video from '$lib/Video/video.svelte';
   
     interface ISlide {
       id: string;
