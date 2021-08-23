@@ -42,7 +42,7 @@
     "rehype-autolink-headings": "^6.0.0",
     "rehype-slug": "^5.0.0",
     "remark-abbr": "^1.4.1",
-    "remark-github": "^11.0.0",
+    "remark-github": "^11.1.0",
     "sass": "^1.38.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
