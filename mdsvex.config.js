@@ -6,7 +6,6 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 const config = {
   layout: {
-    blog: './src/lib/MdLayouts/BlogLayout.svelte',
     article: './src/lib/MdLayouts/ArticleLayout.svelte',
     faq: './src/lib/MdLayouts/FaqLayout/FaqLayout.svelte'
   },
