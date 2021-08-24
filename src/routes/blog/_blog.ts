@@ -5,7 +5,7 @@ export const getPublishedPosts = async () => {
 
   const postPromises = [];
 
-  for (let [path, resolver] of Object.entries(modules)) {
+  for (const [path, resolver] of Object.entries(modules)) {
     const slug = slugFromPath(path);
     const promise = resolver().then((post) => ({
       slug,
@@ -18,12 +18,10 @@ export const getPublishedPosts = async () => {
   const posts = await Promise.all(postPromises);
   const publishedPosts = posts.filter((post) => post.published);
 
-  const sortedPosts = publishedPosts.sort((a, b) => {
+  return publishedPosts.sort((a, b) => {
     return new Date(a.date.split('.').reverse().toString()) <
       new Date(b.date.split('.').reverse().toString())
       ? 1
       : -1;
   });
-
-  return sortedPosts;
 };

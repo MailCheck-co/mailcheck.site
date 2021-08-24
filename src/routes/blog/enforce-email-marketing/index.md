@@ -26,7 +26,7 @@ The obvious advantage of the email marketing is about lower costs and higher ROI
 
 However, you need to spend some time and efforts to provide a proper management and content generation for you newsletter. The more there are subscribers and mailing content for your business, the lower are the costs for making conversions.
 
-![7 Reasons to Enforce Email Marketing for Your Business](./reasons-to-enforce-email-marketing-img1.jpg)
+![7 Reasons to Enforce Email Marketing for Your Business](./reasons-to-enforce-email-marketing-img1.jpg?format=avif;webp;jpg&srcset)
 
 ## Customization and Segmentation
 
@@ -48,7 +48,7 @@ There are two common mistakes made by the businesses - they do not make email ca
 
 Proper newsletter can motivate a user to make spontaneous purchases. If you make a special offer after segmentation of clients that fits user’s needs you can see that during 24 hours after the letters are sent your sales rapidly grow. That is the effect that can hardly be reached with SMM or context campaigns. All you need to do is to make a selling CTA inside your letter.
 
-![7 Reasons to Enforce Email Marketing for Your Business](./reasons-to-enforce-email-marketing-img2.jpg)
+![7 Reasons to Enforce Email Marketing for Your Business](./reasons-to-enforce-email-marketing-img2.jpg?format=avif;webp;jpg&srcset)
 
 ## Easy to Start and Abandon
 

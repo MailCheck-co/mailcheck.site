@@ -37,7 +37,7 @@ There are several things you can do to comply this requirement:
 
 You only can be assured that email belongs to the user at the moment of its confirmation. You do not know what the user will make afterwards - transfer it to someone another, delete or abandoned. That is why you need to comply the following requirement.
 
-![Email Address Validation](./right-approach-img-1.jpg)
+![Email Address Validation](./right-approach-img-1.jpg?format=avif;webp;jpg&srcset)
 
 ## Email Address Is Still Used by The User That Has Subscribed to Our Newsletter
 
@@ -60,7 +60,7 @@ All these tips are based on practice, they are not ideal as there can be many sc
 
 On the moment of subscription confirmation you can say that user really doesn’t mind getting letters from you. However, the time passes and it can be hard to predict how his attitude will change. For the email marketer it is essential to make sure the user is fond of getting letters from you now so that email marketing campaign show good results.
 
-![Email Address Validation](./right-approach-img-2.jpg)
+![Email Address Validation](./right-approach-img-2.jpg?format=avif;webp;jpg&srcset)
 
 ### How to Comply This Requirement?
 

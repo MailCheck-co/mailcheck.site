@@ -38,7 +38,7 @@ The same thing concerns javascript - even if you pass the spam-filters, email cl
 
 Forms are not supported by any of the email client. Though no one can forbid you to place in a letter a call-to-action motivating person to fill the form.
 
-![Increase Emails Deliverability](./increase-emails-deliverability-img1.png)
+![Increase Emails Deliverability](./increase-emails-deliverability-img1.png?format=avif;webp;png&srcset)
 
 ## 6\. Do not Attach Files to The Letter
 
@@ -72,7 +72,7 @@ Even if your mailing list is collected only from the addresses that have passed 
 
 With double-opt-in authorization you send a subscriber an additional email where you ask him to click activation link to confirm subscription. Thus, there is no chance for you to get a wrong email address in your mailing list.
 
-![Increase Emails Deliverability](./increase-emails-deliverability-img2.jpg)
+![Increase Emails Deliverability](./increase-emails-deliverability-img2.jpg?format=avif;webp;jpg&srcset)
 
 ## 13\. Always Add a Subscription Refusal Link to Your Letter
 
