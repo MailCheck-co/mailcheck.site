@@ -3,6 +3,7 @@
   import data from '$utils/site-data';
   import { serializeSchema } from '$utils/json-ld';
   import type { Schema } from '$utils/json-ld';
+  import { browser } from '$app/env';
 
   export let schemas: Schema[];
   export let canonical = '';
@@ -39,6 +40,7 @@
     <meta property="twitter:image" content={thumbnail} />
   {/if}
 
+{#if !browser}
   <!-- RSS Feed -->
   <link
     rel="alternate"
@@ -50,4 +52,6 @@
   {#each schemas as schema}
     {@html serializeSchema(schema)}
   {/each}
+{/if}
 </svelte:head>
+
