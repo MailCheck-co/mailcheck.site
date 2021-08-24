@@ -1,9 +1,9 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import SeregaAva from '$lib/Team/serega-karetnik.png';
-  import KonstantinAva from '$lib/Team/konstantin-nosov.png';
-  import FaraAva from '$lib/Team/fara-muhammadiev.png';
+  import SeregaAva from '$lib/Team/serega-karetnik.png?format=avif;webp;png&srcset';
+  import KonstantinAva from '$lib/Team/konstantin-nosov.png?format=avif;webp;png&srcset';
+  import FaraAva from '$lib/Team/fara-muhammadiev.png?format=avif;webp;png&srcset';
 
   let intersecting: boolean;
 </script>
@@ -25,7 +25,7 @@
       <div class="team-members">
         <div class="team-member csm">
           <div class="team-member-avatar">
-            <img src={SeregaAva} alt="csm" class="avatar" />
+            <img srcset={SeregaAva} alt="csm" class="avatar" />
           </div>
           <div class="team-member-info">
             <p class="team-member-name">Serhii Karetnyk</p>
@@ -34,7 +34,7 @@
         </div>
         <div class="team-member cto">
           <div class="team-member-avatar">
-            <img src={KonstantinAva} alt="cto" class="avatar" />
+            <img srcset={KonstantinAva} alt="cto" class="avatar" />
           </div>
           <div class="team-member-info">
             <p class="team-member-name">Konstantin Nosov</p>
@@ -43,7 +43,7 @@
         </div>
         <div class="team-member own">
           <div class="team-member-avatar">
-            <img src={FaraAva} alt="own" class="avatar" />
+            <img srcset={FaraAva} alt="own" class="avatar" />
           </div>
           <div class="team-member-info">
             <p class="team-member-name">Fara Muhammadiev</p>

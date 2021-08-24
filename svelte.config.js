@@ -2,6 +2,7 @@ import path from 'path';
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
 import preprocess from 'svelte-preprocess';
+import { imagetools } from 'vite-imagetools';
 import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -35,7 +36,8 @@ const config = {
         alias: {
           $utils: path.resolve('./src/utils')
         }
-      }
+      },
+      plugins: [imagetools({ force: true })]
     }
   }
 };

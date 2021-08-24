@@ -3,9 +3,9 @@
   import { inviewOptions } from '$utils/site-data';
   import iconLike from '$lib/Reviews/icon-like-heart.svg';
   import iconStar from '$lib/Reviews/icon-star-rating.svg';
-  import iconProductHunt from '$lib/Reviews/logo-product-hunt.png';
-  import iconBeta from '$lib/Reviews/logo-beta-list.png';
-  import iconCapterra from '$lib/Reviews/logo-capterra.png';
+  import iconProductHunt from '$lib/Reviews/logo-product-hunt.png?format=avif;webp;png&srcset';
+  import iconBeta from '$lib/Reviews/logo-beta-list.png?format=avif;webp;png&srcset';
+  import iconCapterra from '$lib/Reviews/logo-capterra.png?format=avif;webp;png&srcset';
 
   let intersecting: boolean;
 </script>
@@ -26,7 +26,7 @@
     <div class="section-wrapper sm-left">
       <div class="reviews-list">
         <div class="reviews-item">
-          <img width="170" height="40" src={iconProductHunt} alt="" class="reviews-item-logo" />
+          <img width="170" height="40" srcset={iconProductHunt} alt="" class="reviews-item-logo" />
           <div class="reviews-item-rating">
             <img src={iconStar} width="25" height="25" alt="rating 1 star" />
             <img src={iconStar} width="25" height="25" alt="rating 2 stars" />
@@ -37,12 +37,12 @@
           <a
             href="https://www.producthunt.com/posts/mailcheck"
             target="_blank"
-            rel="external"
+            rel="external nofollow"
             title="Read Reviews"
             class="reviews-item-link btn">Read Reviews</a>
         </div>
         <div class="reviews-item">
-          <img width="120" height="40" src={iconBeta} alt="" class="reviews-item-logo" />
+          <img width="120" height="40" srcset={iconBeta} alt="" class="reviews-item-logo" />
           <div class="reviews-item-likes">
             <span class="rating-counter">11</span>
             <img width="25" height="25" src={iconLike} alt="" class="reviews-like-icon" />
@@ -50,12 +50,12 @@
           <a
             href="https://betalist.com/startups/mailcheck"
             target="_blank"
-            rel="external"
+            rel="external nofollow"
             title="Read Reviews"
             class="reviews-item-link btn">Read Reviews</a>
         </div>
         <div class="reviews-item">
-          <img width="145" height="32" src={iconCapterra} alt="" class="reviews-item-logo" />
+          <img width="145" height="32" srcset={iconCapterra} alt="" class="reviews-item-logo" />
           <div class="reviews-item-rating">
             <img src={iconStar} width="25" height="25" alt="rating 1 star" />
             <img src={iconStar} width="25" height="25" alt="rating 2 stars" />
@@ -66,7 +66,7 @@
           <a
             href="https://www.capterra.com/p/195397/Mailcheck/"
             target="_blank"
-            rel="external"
+            rel="external nofollow"
             title="Read Reviews"
             class="reviews-item-link btn">Read Reviews</a>
         </div>
