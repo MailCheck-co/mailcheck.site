@@ -25,10 +25,10 @@
   };
 
   export let posts: Post[];
-  let desc = 'Blog';
+  let desc = 'Blog about building clean b2b and b2c communications free of bounces';
 </script>
 
-<Seo {desc} title={desc} schemas={[websiteSchema, blogSchema]} />
+<Seo {desc} title={desc} schemas={[websiteSchema, {...blogSchema, name: desc, description:desc}]} />
 
 <main class="blog-page" id="blog">
   <div class="container">
