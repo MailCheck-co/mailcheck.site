@@ -18,7 +18,7 @@
   isPost={true}
   {canonical}
   {noindex}
-  schemas={[websiteSchema, {...articleSchema, description:desc}]} />
+  schemas={[websiteSchema, {...articleSchema, name: title, description:desc}]} />
 
 <div class="container" id="article">
   <div class="content-block">

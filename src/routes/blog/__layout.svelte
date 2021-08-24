@@ -21,9 +21,7 @@
 </script>
 
 <script lang="ts">
-  import Seo from '$lib/Seo/index.svelte';
   import ContactUs from '$lib/ContactUs/index.svelte';
-  import { websiteSchema, articleSchema } from '$utils/json-ld';
 
   export let post: {
     title: string;
