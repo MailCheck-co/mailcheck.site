@@ -19,7 +19,7 @@ An email blast is probably no longer the best email marketing practice, as many 
 1.  Your unsubscribe rate will increase dramatically (which is not something you expect your email campaign to bring you).
 2.  Having a significant bounce rate will compromise the credibility of your email marketing campaign in particular and your business overall.
 
-![Digital Savvy](./digital_savvy.jpg?format=avif;webp;jpg&srcset)
+![Digital Savvy](./digital_savvy.jpg?format=webp;jpg;avif&srcset)
 
 Source: Digital Savvy
 
@@ -31,7 +31,7 @@ Validating your email database must be the first and foremost task to do, becaus
 
 Next step - **create (a.k.a. clean up) your email list.** Email list cleaning is all about removing inactive and inaccurate emails from your list. This also involves removing your unsubscribers. This may sound like an extra step, which can be put aside until better times. However, if not handled properly and on time, it can cause you troubles, such as being banned by Gmail from sending out emails to its users.
 
-![NicePNG](./email_list.jpg?format=avif;webp;jpg&srcset)
+![NicePNG](./email_list.jpg?format=webp;jpg;avif&srcset)
 
 Source: NicePNG
 

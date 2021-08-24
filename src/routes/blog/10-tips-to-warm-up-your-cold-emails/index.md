@@ -14,7 +14,7 @@ desc: Cold emailing is in a way an analog of cold calling - you have one generic
 
 Cold emailing is in a way an analog of cold calling - you have one generic message composed and you want to deliver it to a large audience, and, ideally, get a warm response to it. Cold emailing has some cons making it a type of message no one wants to either send or receive. Nonetheless, it is not something you as a business should stay away from. Cold emailing is one of the oldest marketing tools and if crafter and used correctly cold emails can generate new leads and revenues. Let’s dive deeper and see why cold emailing shouldn’t be avoided and how to make it work.
 
-![cold emails](./cold-emails.jpg?format=avif;webp;jpg&srcset)
+![cold emails](./cold-emails.jpg?format=webp;jpg;avif&srcset)
 
 Source: WordStream
 
@@ -30,7 +30,7 @@ Templates are super convenient, no doubt. However, this is just the simplest of 
 
 The goal of a cold email is to reach a broad audience with one single message - a complete opposite of a personalized email. But this does not mean that cold emails cannot be personalized. No one is forbidding you to research several templates, pick a phrase from here and there. But make sure you make it personal. Show your customers that you’ve made a research on what they like, that you put some effort into getting to know them. By adding things like your customer’s name or their interest you will make your customer feel like you are sending a one-off email rather than sending them a generic message from a big blast. With personalized emails, you can double your replies. According to Woodpecker, personalized emails garnered a 17% reply rate, more than double the 7% reply rate for impersonal emails. Yes, it’s a little extra work, but the return is absolutely worth it.
 
-![lighthouse for email marketing](./lighthouse.jpg?format=avif;webp;jpg&srcset)
+![lighthouse for email marketing](./lighthouse.jpg?format=webp;jpg;avif&srcset)
 
 Source: LeadFuse
 
@@ -48,7 +48,7 @@ Remember that your clients don’t read long subject lines. They are more likely
 
 ## 7\. Chose the right time to send your email
 
-![lighthouse for email marketing](./optimalSendTime.jpg?format=avif;webp;jpg&srcset)
+![lighthouse for email marketing](./optimalSendTime.jpg?format=webp;jpg;avif&srcset)
 
 Some marketers underestimate this aspect, but you shouldn’t. What’s the point of sending an email to your prospects at the times when they are the least engaged with their phones or laptops? There are multiple pieces of research on when is the best time to send emails or make social media posts, but you can also use your common sense to predict that. According to MailChimp, the best time of day to send an email is 10 am in the recipients’ own time zones. The majority of your prospects are likely to check their emails in the morning while drinking coffee or commuting (what else to do on a bus or when you are in traffic?) so why not use this information and schedule your email campaigns accordingly. Be clear, specific, and be on time.
 

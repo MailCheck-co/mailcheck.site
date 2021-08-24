@@ -30,7 +30,7 @@ In case the HTML-letter is opened by the subscriber more than one time there wil
 
 Normal opening rate can vary depending on the type of business and letters. However,opening rate is not the most accurate metrics as you do not know how many users watched your letter in the plain text mode.
 
-![Email Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img1.jpg?format=avif;webp;jpg&srcset)
+![Email Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img1.jpg?format=webp;jpg;avif&srcset)
 
 ## CTR
 
@@ -65,7 +65,7 @@ Unsubscribe rate is calculated based on the delivered letters figures as some of
 
 When subscriber marks the letter as a smap an ESP and provider consider that when defining sender’s reputation. Often that doesn’t mean you are a spammer, it is just about the subscribers do not want to get your letters anymore so they have marked you as a spammer. In order to avoid that make unsubscription as easy as possible.
 
-![Email Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img2.jpg?format=avif;webp;jpg&srcset)
+![Email Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img2.jpg?format=webp;jpg;avif&srcset)
 
 ## Churn rate
 

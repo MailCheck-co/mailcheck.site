@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import mailFloat from '$lib/Features/mail-float.png?format=avif;webp;png&srcset';
+  import mailFloat from '$lib/Features/mail-float.png?format=webp;png;avif&srcset';
 
   let intersecting: boolean;
 </script>

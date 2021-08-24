@@ -35,7 +35,7 @@ How to make the subscription process easy:
 
 It should all be easy and intuitive for user no matter whether you are making subscription forms or CTA buttons.
 
-![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img1.jpg?format=avif;webp;jpg&srcset)
+![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img1.jpg?format=webp;jpg;avif&srcset)
 
 ## Make Clear Offers
 
@@ -51,7 +51,7 @@ Always make sure you inform clients in details what are they subscribing. For ex
 
 Although above-grounded advertising and selling letters usually do not get high opening rates and many clicks, those can be useful for company to attract more visitors on a website if you do it in a right way.
 
-![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img2.jpg?format=avif;webp;jpg&srcset)
+![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img2.jpg?format=webp;jpg;avif&srcset)
 
 Researches show that the majority of users want to get updates on discounts and special offers from the companies. 64% users claimed that they prefer to get such offers on emails. Most of the people are irritated when they get such offers via SMS or messengers as they seem to be haunting.
 
