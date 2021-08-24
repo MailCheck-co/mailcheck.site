@@ -3,4 +3,4 @@
   export let alt = '';
 </script>
 
-<img srcset={src} {alt} {...$$restProps} /><slot />
+<img srcset={src} {alt} loading="lazy" {...$$restProps} /><slot />
