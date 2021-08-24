@@ -188,7 +188,7 @@
     height: 23.75rem;
     margin-left: var(--size-10);
     padding: 0;
-    overflow-x: scroll;
+    overflow-x: hidden;
     touch-action: manipulation;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
