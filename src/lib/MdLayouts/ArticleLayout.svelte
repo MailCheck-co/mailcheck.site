@@ -5,28 +5,26 @@
 
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
-  import ContactUs from '$lib/ContactUs/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
   export let title = '';
+  export let desc = '';
   export let canonical = '';
   export let noindex = false;
 </script>
 
 <Seo
-  {title}
-  desc={title}
+  title={`Blog | ${title}`}
+  desc={desc}
   isPost={true}
   {canonical}
   {noindex}
-  schemas={[websiteSchema, articleSchema]} />
+  schemas={[websiteSchema, {...articleSchema, description:desc}]} />
 
 <div class="container" id="article">
   <div class="content-block">
     <slot />
   </div>
 </div>
-
-<ContactUs />
 
 <style lang="scss">
   .container {

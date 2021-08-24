@@ -27,14 +27,9 @@
 
   export let post: {
     title: string;
+    desc: string;
   };
 </script>
-
-<Seo
-  title={`Blog | ${post.title}`}
-  desc={post.title}
-  isPost={true}
-  schemas={[websiteSchema, articleSchema]} />
 
 <slot />
 
