@@ -181,11 +181,13 @@
         height: 26.25rem;
         margin: 0 auto;
         padding: 0;
-        overflow-x: hidden;
+        overflow-x: scroll;
         touch-action: manipulation;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
         scroll-padding: 1rem;
+        scrollbar-width: none;
+        scrollbar-color: var(--transparent);
 
         &.active {
           scroll-snap-type: unset;
