@@ -119,6 +119,7 @@
     .welcome-items {
       width: 100%;
       max-width: 63.75rem;
+      margin-left: var(--size-30);
       padding: 0;
     }
 
