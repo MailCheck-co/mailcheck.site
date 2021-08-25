@@ -1,5 +1,4 @@
 ---
-layout: article
 slug: zapier-integration
 title: Zapier Integration instructions
 date: 18.02.2021

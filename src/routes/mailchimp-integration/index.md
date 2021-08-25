@@ -1,5 +1,4 @@
 ---
-layout: article
 slug: mailchimp-integration
 title: Mailchimp Integration instructions
 date: 18.02.2021

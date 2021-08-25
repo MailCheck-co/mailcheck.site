@@ -1,5 +1,4 @@
 ---
-layout: article
 canonical: /
 noindex: true
 slug: privacy
