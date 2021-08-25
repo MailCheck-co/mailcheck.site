@@ -1,12 +1,22 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
+  import Video from '$lib/Video/video.svelte';
 
+  interface IVideo {
+    id: string;
+    title: string;
+    desc: string;
+    date: string;
+  }
+
+  export let videos: IVideo[];
   let intersecting: boolean;
+  let title = 'Video Tutorials';
 </script>
 
 <section
-  class="affiliate"
+  class="tutorials"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
@@ -14,24 +24,22 @@
     intersecting = inView;
   }}>
   <div class="section-heading sm-left">
-    <h3 class="title-small">Affiliate Program</h3>
-    <p class="section-title-lg">Affiliate</p>
+    <h3 class="title-small">{title}</h3>
+    <p class="section-title-lg">Tutorials</p>
   </div>
 
   <div class="grid">
-    <a rel="external" target="_blank" href="/" title="Become an affiliate">Become an affiliate</a>
-    <a
-      rel="external"
-      href="https://app.mailcheck.co/auth/login"
-      title="Refer a friend"
-      target="_blank">
-      Refer a friend
-    </a>
+    {#each videos as video}
+      <div class="video-wrapper">
+        <Video id={video.id} title={video.title} />
+      </div>
+    {/each}
   </div>
+  <a href="/videos" {title}>view all</a>
 </section>
 
 <style lang="scss">
-  .affiliate {
+  .tutorials {
     @include intersection;
 
     margin-top: 6rem;
@@ -76,33 +84,51 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
       max-width: var(--size-880);
-      margin: 2rem auto 0;
+      margin: 2rem auto var(--size-60);
       text-align: center;
       column-gap: var(--size-40);
 
-      a {
-        height: var(--size-60);
-        padding: 0 var(--size-40);
-        color: var(--primary-white);
-        font-weight: var(--weight-700);
-        font-size: var(--size-16);
-        line-height: var(--size-60);
-        letter-spacing: var(--letter-spacing);
-        text-transform: uppercase;
-        border: var(--size-1) solid var(--primary-white);
-        border-radius: var(--size-6);
-        outline: none;
-        transition: transform 0.25s ease;
-
-        &:hover {
-          color: var(--primary-accent);
-          text-decoration: none;
-          background-color: var(--primary-white);
-          transform: translateY(var(--size-1-invert));
-        }
-
+      .video-wrapper {
         &:first-child {
           margin-bottom: var(--size-60);
+        }
+      }
+    }
+
+    a {
+      display: block;
+      max-width: 10rem;
+      height: var(--size-60);
+      margin: 0 auto;
+      padding: 0 var(--size-40);
+      color: var(--primary-white);
+      font-weight: var(--weight-700);
+      font-size: var(--size-16);
+      line-height: var(--size-60);
+      letter-spacing: var(--letter-spacing);
+      text-align: center;
+      text-transform: uppercase;
+      border: var(--size-1) solid var(--primary-white);
+      border-radius: var(--size-6);
+      outline: none;
+      transition: transform 0.25s ease;
+
+      &:hover {
+        color: var(--primary-accent);
+        text-decoration: none;
+        background-color: var(--primary-white);
+        transform: translateY(var(--size-1-invert));
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .tutorials {
+      .grid {
+        .video-wrapper {
+          &:first-child {
+            margin-bottom: 0;
+          }
         }
       }
     }

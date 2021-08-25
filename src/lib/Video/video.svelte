@@ -1,14 +1,11 @@
-<script>
-  export let id = '';
-  export let title = '';
+<script lang="ts">
+  export let id: string;
+  export let title: string;
 
   let iframePlaceholder = true;
-  let showIframe = () => {
-    iframePlaceholder = false;
-  };
 </script>
 
-<div class="video" on:click|once={showIframe}>
+<div class="video" on:click|once={() => (iframePlaceholder = false)}>
   {#if iframePlaceholder}
     <picture>
       <source srcset="https://i.ytimg.com/vi_webp/{id}/maxresdefault.webp" type="image/webp" />
@@ -36,63 +33,76 @@
 </div>
 
 <style lang="scss">
+  %fill {
+    fill: var(--youtube-red);
+    fill-opacity: 1;
+  }
+
   .video {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     background-color: var(--black);
     cursor: pointer;
-  }
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
+    picture {
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
 
-  button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    width: 68px;
-    height: 48px;
-    padding: 0;
-    background-color: var(--transparent);
-    border: none;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      width: 68px;
+      height: 48px;
+      padding: 0;
+      background-color: var(--transparent);
+      border: none;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
 
-  .shape {
-    fill: var(--dark-06);
-    fill-opacity: 0.8;
-  }
+      svg {
+        .shape {
+          fill: var(--dark-06);
+          fill-opacity: 0.8;
+        }
 
-  .icon {
-    fill: var(--primary-white);
-  }
+        .icon {
+          fill: var(--primary-white);
+        }
+      }
 
-  button:focus {
-    outline: none;
-  }
+      &:focus {
+        outline: none;
 
-  .video:hover .shape,
-  button:focus .shape {
-    fill: var(--youtube-red);
-    fill-opacity: 1;
-  }
+        .shape {
+          @extend %fill;
+        }
+      }
+    }
 
-  iframe {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      .shape {
+        @extend %fill;
+      }
+    }
   }
 </style>

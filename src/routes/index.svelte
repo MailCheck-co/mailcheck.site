@@ -1,3 +1,18 @@
+<script lang="ts" context="module">
+  /**
+   * @type {import('@sveltejs/kit').Load}
+   */
+  export async function load({ fetch }) {
+    const list = await fetch('videos.json').then((res: Response) => res.json());
+    const videos = [list[0], list[1]];
+    return {
+      props: {
+        videos
+      }
+    };
+  }
+</script>
+
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, organizationSchema } from '$utils/json-ld';
@@ -13,6 +28,16 @@
   import ContactUs from '$lib/ContactUs/index.svelte';
   import Cta from '$lib/Cta/index.svelte';
   import Affiliate from '$lib/Affiliate/index.svelte';
+  import Videos from '$lib/Video/videos.svelte';
+
+  interface IVideo {
+    id: string;
+    title: string;
+    desc: string;
+    date: string;
+  }
+
+  export let videos: IVideo[];
 </script>
 
 <Seo title="Home" schemas={[websiteSchema, organizationSchema]} />
@@ -41,6 +66,9 @@
 
   <!-- SECTION TESTIMONIALS -->
   <Testimonials />
+
+  <!-- SECTION VIDEOS -->
+  <Videos {videos} />
 
   <!-- SECTION AFFILIATES -->
   <Affiliate />
