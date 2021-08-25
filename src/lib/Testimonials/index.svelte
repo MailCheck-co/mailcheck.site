@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   import k5Logo from '$lib/Testimonials/5k-logo.svg';
