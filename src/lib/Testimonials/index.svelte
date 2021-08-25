@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   import k5Logo from '$lib/Testimonials/5k-logo.svg';
@@ -18,14 +18,14 @@
   const SCROLL = ITEMS_TO_SCROLL * 420;
   const TIMEOUT = SCROLL_SPEED * 100;
 
-  function deactivate(e) {
+  function deactivate(e: { target: any }) {
     setTimeout(() => {
       active = false;
       e.target.style.pointerEvents = 'auto';
     }, TIMEOUT);
   }
 
-  function onPrev(e) {
+  function onPrev(e: { target: { style: { pointerEvents: string } } }) {
     e.target.style.pointerEvents = 'none';
     active = true;
     scrollLeft = slider.scrollLeft;
@@ -33,7 +33,7 @@
     deactivate(e);
   }
 
-  function onNext(e) {
+  function onNext(e: { target: { style: { pointerEvents: string } } }) {
     e.target.style.pointerEvents = 'none';
     active = true;
     scrollLeft = slider.scrollLeft;
@@ -41,7 +41,7 @@
     deactivate(e);
   }
 
-  function onMouseDown(e) {
+  function onMouseDown(e: MouseEvent) {
     active = true;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
@@ -51,7 +51,7 @@
     active = false;
   }
 
-  function onMouseMove(e) {
+  function onMouseMove(e: MouseEvent) {
     if (!active) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
@@ -188,11 +188,13 @@
     height: 23.75rem;
     margin-left: var(--size-10);
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: scroll;
     touch-action: manipulation;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scroll-padding: 1rem;
+    scrollbar-width: none;
+    scrollbar-color: var(--transparent);
 
     &.active {
       scroll-snap-type: unset;
@@ -295,37 +297,51 @@
   }
 
   @media all and (max-width: 768px) {
-    .testimonials-container {
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: 9;
-        display: block;
-        width: 20%;
-        height: 100%;
-        content: '';
-        pointer-events: none;
+    .testimonials {
+      .testimonials-container {
+        &::before,
+        &::after {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          z-index: 9;
+          display: block;
+          width: 20%;
+          height: 100%;
+          content: '';
+          pointer-events: none;
+        }
+
+        &::before {
+          left: 0;
+          background-image: var(--slider-overlay-gradient-left);
+        }
+
+        &::after {
+          right: 0;
+          background-image: var(--slider-overlay-gradient-right);
+        }
       }
 
-      &::before {
-        left: 0;
-        background-image: var(--slider-overlay-gradient-left);
+      .testimonials-wrapper {
+        padding: 0;
       }
 
-      &::after {
-        right: 0;
-        background-image: var(--slider-overlay-gradient-right);
+      .slider-item {
+        padding: var(--size-30) 6.25rem;
       }
-    }
 
-    .testimonials-wrapper {
-      padding: 0;
-    }
+      .testimonials-button {
+        z-index: 10;
 
-    .slider-item {
-      padding: var(--size-30) 6.25rem;
+        &-prev {
+          left: 5%;
+        }
+
+        &-next {
+          right: 5%;
+        }
+      }
     }
   }
 </style>
