@@ -1,5 +1,4 @@
 ---
-layout: article
 slug: integromat-integration
 title: Integromat Integration instructions
 date: 24.04.2021

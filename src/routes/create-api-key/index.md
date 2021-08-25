@@ -1,5 +1,4 @@
 ---
-layout: article
 slug: create-api-key
 title: A step-by-step guide to create a key for various integrations.
 date: 25.06.2020
