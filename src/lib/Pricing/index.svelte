@@ -1,13 +1,40 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
+  import arrowNav from '$lib/Pricing/arrow-slide-nav.svg';
 
   let intersecting: boolean;
   let slider: HTMLElement;
   let active = false;
   let startX: number;
   let scrollLeft: number;
-  const SCROLL_SPEED = 1;
+  const SCROLL_SPEED = 4;
+  const ITEMS_TO_SCROLL = 1;
+  const SCROLL = ITEMS_TO_SCROLL * 340;
+  const TIMEOUT = SCROLL_SPEED * 100;
+
+  function deactivate(e: { target: any }) {
+    setTimeout(() => {
+      active = false;
+      e.target.style.pointerEvents = 'auto';
+    }, TIMEOUT);
+  }
+
+  function onPrev(e: { target: { style: { pointerEvents: string } } }) {
+    e.target.style.pointerEvents = 'none';
+    active = true;
+    scrollLeft = slider.scrollLeft;
+    slider.scrollLeft = scrollLeft - SCROLL;
+    deactivate(e);
+  }
+
+  function onNext(e: { target: { style: { pointerEvents: string } } }) {
+    e.target.style.pointerEvents = 'none';
+    active = true;
+    scrollLeft = slider.scrollLeft;
+    slider.scrollLeft = scrollLeft + SCROLL;
+    deactivate(e);
+  }
 
   function onMouseDown(e: MouseEvent) {
     active = true;
@@ -102,6 +129,12 @@
           class="btn btn-choose btn-red">choose</a>
       </li>
     </ul>
+  </div>
+  <div class="button button-next" on:click={onNext}>
+    <img src={arrowNav} width="20" height="20" alt="right" />
+  </div>
+  <div class="button button-prev" on:click={onPrev}>
+    <img src={arrowNav} width="20" height="20" alt="left" />
   </div>
 </section>
 
@@ -335,6 +368,27 @@
         }
       }
     }
+
+    .button {
+      position: absolute;
+      top: 50%;
+      width: var(--size-20);
+      height: var(--size-20);
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      &-prev {
+        left: -5%;
+
+        & > img {
+          transform: rotate(-180deg);
+        }
+      }
+
+      &-next {
+        right: -5%;
+      }
+    }
   }
 
   @media only screen and (max-width: 1024px) {
@@ -349,6 +403,22 @@
             position: relative;
             width: 100%;
           }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    #pricing {
+      .button {
+        z-index: 10;
+
+        &-prev {
+          left: 5%;
+        }
+
+        &-next {
+          right: 5%;
         }
       }
     }
