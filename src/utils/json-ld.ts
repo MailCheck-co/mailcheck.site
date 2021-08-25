@@ -57,7 +57,7 @@ export const organizationSchema: WithContext<Organization> = {
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'London, England,',
+    addressLocality: 'London, England',
     postalCode: 'WC2E 9HA',
     streetAddress: 'Suite 4005 43 Bedford Street'
   }

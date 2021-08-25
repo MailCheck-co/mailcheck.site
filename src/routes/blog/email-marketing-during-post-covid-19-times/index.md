@@ -16,7 +16,7 @@ With the coronavirus hitting hard on the economy worldwide, not only retailers h
 
 As a growing number of consumers refrain from going out and doing in-store shopping and more and more shops shutting down due to the pandemic, many retailers gear their marketing efforts towards online platforms even more than they did before.
 
-![Email marketing during post-COVID-19 times. Underrated?](./email-marketing-during-post-covid-19.jpg)
+![Email marketing during post-COVID-19 times. Underrated?](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;avif&srcset)
 
 Source: DundeeMail List Services
 

@@ -108,14 +108,14 @@
     <div class="footer-bottom">
       <div class="footer-info left">
         <div class="footer-info-item">
-          <img class="footer-info-logo" src={esLogo} alt="logo" />
+          <img class="footer-info-logo" width="36" height="36" src={esLogo} alt="logo" />
           <p class="footer-info-text">
             GDPR Compliant<br />
             We will never share your data.
           </p>
         </div>
         <div class="footer-info-item">
-          <img class="footer-info-logo" src={iconMoneyBack} alt="40 days money-back guarantee" />
+          <img class="footer-info-logo" width="36" height="36" src={iconMoneyBack} alt="40 days money-back guarantee" />
           <p class="footer-info-text">
             40 days<br />
             money-back guarantee

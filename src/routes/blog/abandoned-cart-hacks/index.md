@@ -22,7 +22,7 @@ We can offer you 10 ways that will help to close deals successfully. Most of the
 service pay off in a big way. If you are site admin or company owner, just give it a try and it will push your
 conversions beyond all limits. Guaranteed!
 
-![10 Abandoned Cart Hacks, Emails and Tricks that Will Rise Sales](./abandonedCartHacks.jpg)
+![10 Abandoned Cart Hacks, Emails and Tricks that Will Rise Sales](./abandonedCartHacks.jpg?format=webp;jpg;avif&srcset)
 
 ## Use a Progress Indicator
 

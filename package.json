@@ -17,6 +17,7 @@
     "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
     "deploy:prod": "firebase deploy --project=prod",
     "deploy_functions:prod": "firebase deploy --only functions --project=prod",
+    "optimize-svg": "find ./src ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo",
     "static:404:cp": "cp build/error/index.html build/404.html",
     "static:404:rmdir": "rimraf - build/error"
   },
@@ -51,6 +52,7 @@
     "svelte-preprocess": "^4.8.0",
     "tslib": "^2.3.1",
     "typescript": "^4.0.0",
+    "vite-imagetools": "^3.6.8",
     "xmlbuilder2": "^3.0.2"
   },
   "type": "module",

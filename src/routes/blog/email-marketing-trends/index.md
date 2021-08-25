@@ -26,7 +26,7 @@ Preparation of newsletters stops looking like a disaster and can turn into an ea
 
 Mailing services have powerful tools to segmentate and personalize newsletters. Using those you can send clients content based on the analysis of their previous actions - you look what they've opened, links they have pressed, etc. Thus, without automation it is going to be hard for you to compete with other companies and keep your mailing on high level.
 
-![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-1.jpg)
+![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-1.jpg?format=webp;jpg;avif&srcset)
 
 ## Deep Segmentation and Personalization
 
@@ -45,7 +45,7 @@ For now you need to bring even more efforts to get rid of spam in your mailings.
 
 Email marketers already know that it is a bad idea to subscribe on a mailing someone who is not willing to as there are high chances the email will go the spam box which has a negative effect on [the sender’s reputation](/blog/senders-reputation). Thus, you need to make sure the user has made a clear confirm on subscription and profile the content you send to make it remain relevant and engaging.
 
-![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-2.jpg)
+![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-2.jpg?format=webp;jpg;avif&srcset)
 
 ## Interaction and Gamification
 
