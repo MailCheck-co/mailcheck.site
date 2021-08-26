@@ -48,6 +48,7 @@
           title="Product of NodeArt"
           class="nav-link footer-nav-link"
           href="https://nodeart.io">Product of NodeArt</a>
+        <a class="nav-link footer-nav-link" title="Video tutorials" href="/videos">Video tutorials</a>
       </nav>
       <div class="footer-social-mobile">
         <a
