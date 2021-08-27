@@ -15,7 +15,7 @@
 <script lang="ts">
   import Video from '$lib/Video/video.svelte';
   import Slider from '$lib/Video/slider.svelte';
-  import FaraAva from '$lib/Video/assets/fara.png';
+  import FaraAva from '$lib/Video/assets/fara.png?w=46&format=webp;png;avif&srcset';
 
   interface IVideo {
     id: string;
@@ -43,7 +43,7 @@
           <p>{video.desc}</p>
           <div class="author">
             <div class="avatar">
-              <img src={FaraAva} alt="Fara Muhammadiev" />
+              <img width="46" height="46" srcset={FaraAva} alt="Fara Muhammadiev" />
             </div>
             <div class="about">
               <h3 class="name">Fara Muhammadiev</h3>
