@@ -4,8 +4,8 @@ const fetchData = async () => {
   const url = `https://youtube.googleapis.com/youtube/v3/playlistItems?playlistId=${playlistId}&part=snippet&key=${apiKey}`;
   const headers = { accept: 'application/json' };
   return fetch(url, { headers })
-      .then((response) => response.json())
-      .catch((error) => new Error('Error fetching youtube: ' + error));
+    .then((response) => response.json())
+    .catch((error) => new Error('Error fetching youtube: ' + error));
 };
 
 export default fetchData;

@@ -35,15 +35,14 @@
   <meta property="twitter:description" content={desc || defaultDesc} />
   {#if thumbnail !== ''}<meta property="twitter:image" content={thumbnail} />{/if}
   {#if !browser}<!-- RSS Feed -->
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="RSS Feed for mailcheck.co"
-    href="/rss.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed for mailcheck.co"
+      href="/rss.xml" />
 
-  <!-- JSON-LD Schema -->
-  {#each schemas as schema}
-    {@html serializeSchema(schema)}
-  {/each}{/if}
+    <!-- JSON-LD Schema -->
+    {#each schemas as schema}
+      {@html serializeSchema(schema)}
+    {/each}{/if}
 </svelte:head>
-

@@ -42,13 +42,14 @@
         <a class="nav-link footer-nav-link" title="Terms and conditions" href="/terms"
           >Terms and conditions</a>
         <a class="nav-link footer-nav-link" title="Cookie policy" href="/cookies">Cookie policy</a>
+        <a class="nav-link footer-nav-link" title="Video tutorials" href="/videos"
+          >Video tutorials</a>
         <a
           rel="external"
           target="_blank"
           title="Product of NodeArt"
           class="nav-link footer-nav-link"
           href="https://nodeart.io">Product of NodeArt</a>
-        <a class="nav-link footer-nav-link" title="Video tutorials" href="/videos">Video tutorials</a>
       </nav>
       <div class="footer-social-mobile">
         <a
@@ -116,7 +117,12 @@
           </p>
         </div>
         <div class="footer-info-item">
-          <img class="footer-info-logo" width="36" height="36" src={iconMoneyBack} alt="40 days money-back guarantee" />
+          <img
+            class="footer-info-logo"
+            width="36"
+            height="36"
+            src={iconMoneyBack}
+            alt="40 days money-back guarantee" />
           <p class="footer-info-text">
             40 days<br />
             money-back guarantee

@@ -29,9 +29,8 @@ export const get: RequestHandler = async () => {
         date: publishedAt
       };
     });
-  }
-  catch {
-    console.error('Youtube api error: ',response);
+  } catch {
+    console.error('Youtube api error: ', response);
   }
 
   return {
