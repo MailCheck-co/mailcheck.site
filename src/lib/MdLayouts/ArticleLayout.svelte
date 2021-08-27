@@ -14,11 +14,11 @@
 
 <Seo
   title={`Blog | ${title}`}
-  desc={desc}
+  {desc}
   isPost={true}
   {canonical}
   {noindex}
-  schemas={[websiteSchema, {...articleSchema, name: title, description:desc}]} />
+  schemas={[websiteSchema, { ...articleSchema, name: title, description: desc }]} />
 
 <div class="container" id="article">
   <div class="content-block">
@@ -101,6 +101,7 @@
 
   :global(.container .content-block ul) {
     padding: 0 0 0 var(--size-24);
+    margin: 0 0 0 var(--size-24);
     line-height: 1.5;
   }
 
