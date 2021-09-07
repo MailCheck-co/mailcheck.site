@@ -294,6 +294,10 @@ img {
 .section-heading {
   position: relative;
   padding-bottom: 50px;
+
+  .title, .title-small, .section-title-lg {
+    user-select: none;
+  }
 }
 
 .section-title-lg {
