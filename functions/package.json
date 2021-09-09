@@ -15,7 +15,7 @@
   "dependencies": {
     "firebase-admin": "^9.11.1",
     "firebase-functions": "^3.15.5",
-    "firebase-tools": "^9.17.0",
+    "firebase-tools": "^9.18.0",
     "node-fetch": "^2.6.1",
     "nodemailer": "^6.6.3"
   },
