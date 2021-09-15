@@ -9,21 +9,25 @@ const BQ_DATASET = functions.config().mailcheck?.bq_redirects_dataset;
 const BQ_TABLE = functions.config().mailcheck?.bq_redirects_table;
 
 let fallbackUrl = '';
-dns
-  .resolveTxt('*.l.mailcheck.co')
-  .then((result) => {
-    fallbackUrl = new URL(result[0].join(''));
-  })
-  .catch((err) => {
-    functions.logger.error(err);
-    process.exit(1);
-  });
 
-let redirectsBigQueryTable;
+let bigQueryRedirectsTable;
 try {
-  redirectsBigQueryTable = bigQuery.dataset(BQ_DATASET).table(BQ_TABLE);
+  bigQueryRedirectsTable = bigQuery.dataset(BQ_DATASET).table(BQ_TABLE);
 } catch (err) {
   functions.logger.error(err);
+}
+
+/**
+ * @param hostname {string}
+ */
+async function initFallbackUrl(hostname) {
+  if (fallbackUrl) return;
+  try {
+    const chunks = await dns.resolveTxt(hostname);
+    fallbackUrl = new URL(chunks.join(''));
+  } catch (err) {
+    functions.logger.error(err);
+  }
 }
 
 /**
@@ -79,7 +83,7 @@ async function logToBigQuery(req, redirectUrl, key) {
     referrer: req.get('Referrer')
   };
   try {
-    await redirectsBigQueryTable?.insert(row);
+    await bigQueryRedirectsTable?.insert(row);
   } catch (err) {
     functions.logger.error(err);
   }
@@ -91,6 +95,7 @@ export default async function (req, res) {
   if (!hostname) {
     return res.redirect(fallbackUrl);
   }
+  await initFallbackUrl(hostname);
 
   let redirectUrl;
   try {
