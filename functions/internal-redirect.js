@@ -8,6 +8,8 @@ const bigQuery = new BigQuery();
 const BQ_DATASET = functions.config().mailcheck?.bq_redirects_dataset;
 const BQ_TABLE = functions.config().mailcheck?.bq_redirects_table;
 
+const fallbackUrl = new URL(`https://www.mailcheck.co/404`);
+
 let redirectsBigQueryTable;
 try {
   redirectsBigQueryTable = bigQuery.dataset(BQ_DATASET).table(BQ_TABLE);
@@ -77,22 +79,20 @@ export default async function (req, res) {
   const requestUrl = new URL(`${req.protocol}://${req.hostname}${req.originalUrl}`);
   const hostname = requestUrlToHostname(requestUrl);
   if (!hostname) {
-    res.status(404).end();
-    return;
+    return res.redirect(fallbackUrl);
   }
 
   let redirectUrl;
   try {
     redirectUrl = await getRedirectUrlFromTxtRecord(hostname);
   } catch (err) {
-    res.status(404).end();
-    return;
+    return res.redirect(fallbackUrl);
   }
 
   try {
     redirectUrl = mergeUrls(redirectUrl, requestUrl);
     functions.logger.info(`${requestUrl} (${hostname}) => ${redirectUrl}`);
-    res.set('Location', redirectUrl).status(302).end();
+    res.redirect(redirectUrl);
     await new Promise((resolve) => {
       res.once('finish', resolve);
     });
