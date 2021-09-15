@@ -7,8 +7,9 @@ const bigQuery = new BigQuery();
 
 const BQ_DATASET = functions.config().mailcheck?.bq_redirects_dataset;
 const BQ_TABLE = functions.config().mailcheck?.bq_redirects_table;
+const L_MAILCHECK = 'l.mailcheck.co';
 
-let fallbackUrl = '';
+let fallbackUrlBase = '';
 
 let bigQueryRedirectsTable;
 try {
@@ -21,10 +22,10 @@ try {
  * @param hostname {string}
  */
 async function initFallbackUrl(hostname) {
-  if (fallbackUrl) return;
+  if (fallbackUrlBase) return;
   try {
-    const chunks = await dns.resolveTxt(hostname);
-    fallbackUrl = new URL(chunks.join(''));
+    const chunks = await dns.resolveTxt(`*.${L_MAILCHECK}`);
+    fallbackUrlBase = new URL(chunks.join(''));
   } catch (err) {
     functions.logger.error(err);
   }
@@ -38,7 +39,8 @@ function requestUrlToHostname(url) {
   if (!match) {
     return;
   }
-  return { hostname: `${match[1]}.l.mailcheck.co`, key: match[1] };
+  return match[1];
+  // return { hostname: , key: match[1] };
 }
 
 /**
@@ -91,22 +93,18 @@ async function logToBigQuery(req, redirectUrl, key) {
 
 export default async function (req, res) {
   const requestUrl = new URL(`${req.protocol}://${req.hostname}${req.originalUrl}`);
-  const { hostname, key } = requestUrlToHostname(requestUrl);
-  if (!hostname) {
-    return res.redirect(fallbackUrl);
-  }
-  await initFallbackUrl(hostname);
-
-  let redirectUrl;
-  try {
-    redirectUrl = await getRedirectUrlFromTxtRecord(hostname);
-  } catch (err) {
+  await initFallbackUrl();
+  const fallbackUrl = new URL(fallbackUrlBase);
+  const matchKey = requestUrlToHostname(requestUrl);
+  if (!matchKey) {
     return res.redirect(fallbackUrl);
   }
 
   try {
+    let redirectUrl = await getRedirectUrlFromTxtRecord(`${matchKey}.${L_MAILCHECK}`);
+    redirectUrl.searchParams.set('from', matchKey);
     redirectUrl = mergeUrls(redirectUrl, requestUrl);
-    functions.logger.info(`${requestUrl} (${hostname}) => ${redirectUrl}`);
+    functions.logger.info(`${requestUrl} => ${redirectUrl}`);
     res.redirect(redirectUrl);
     await new Promise((resolve) => {
       res.once('finish', resolve);
