@@ -1,12 +1,11 @@
-'use strict';
+import functions from 'firebase-functions';
+import fetch from 'node-fetch';
 
-const functions = require('firebase-functions');
-const fetch = require('node-fetch');
 const apiLink =
   functions.config().mailcheck?.link ?? 'https://api.mailcheck.co/v1/singleEmail:check';
 const apiKey = functions.config().mailcheck?.key ?? 'apiKey';
 
-class EmailValidator {
+export class EmailValidator {
   constructor() {
     this.callLimitForOneIp = 7;
     this.ipCache = new Map();
@@ -64,5 +63,3 @@ class EmailValidator {
     }
   }
 }
-
-module.exports = { EmailValidator };

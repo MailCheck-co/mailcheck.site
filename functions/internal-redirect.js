@@ -1,6 +1,6 @@
-const functions = require('firebase-functions');
-const { BigQuery } = require('@google-cloud/bigquery');
-const { promises: dns } = require('dns');
+import functions from 'firebase-functions';
+import { BigQuery } from '@google-cloud/bigquery';
+import { promises as dns } from 'dns';
 
 const redirectCache = new Map();
 const bigQuery = new BigQuery();
@@ -65,7 +65,7 @@ async function logToBigQuery(req, redirectUrl) {
   }
 }
 
-exports.internalRedirect = functions.https.onRequest(async (req, res) => {
+export default async function (req, res) {
   const requestUrl = new URL(`${req.protocol}://${req.hostname}${req.originalUrl}`);
   const hostname = requestUrlToHostname(requestUrl);
   if (!hostname) {
@@ -94,4 +94,4 @@ exports.internalRedirect = functions.https.onRequest(async (req, res) => {
     res.status(500).end(err.message);
     return;
   }
-});
+}

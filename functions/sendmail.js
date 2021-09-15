@@ -1,9 +1,10 @@
-const functions = require('firebase-functions');
-const nodemailer = require('nodemailer');
+import functions from 'firebase-functions';
+import nodemailer from 'nodemailer';
+import { EmailValidator } from './email-validator.js';
+
 const gmailEmail = functions.config().gmail?.email ?? 'email';
 const gmailPassword = functions.config().gmail?.password ?? 'password';
 
-const { EmailValidator } = require('./email-validator');
 const emailValidator = new EmailValidator();
 
 const MIN_ALLOWED_EMAIL_TRUST_RATE = 40;
@@ -17,7 +18,7 @@ const mailTransport = nodemailer.createTransport({
   }
 });
 
-exports.sendMail = functions.https.onRequest(async (req, res) => {
+export default async function(req, res) {
   let pb;
   try {
     pb = JSON.parse(req.body);
@@ -54,4 +55,4 @@ exports.sendMail = functions.https.onRequest(async (req, res) => {
     functions.logger.info('Message sent to: ', info.envelope.to);
     return res.status(200).send({ data: 'ok' });
   });
-});
+}
