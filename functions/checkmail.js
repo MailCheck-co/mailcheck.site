@@ -1,9 +1,9 @@
-const functions = require('firebase-functions');
-const { EmailValidator } = require('./email-validator');
+import functions from 'firebase-functions';
+import { EmailValidator } from './email-validator.js';
 
 const emailValidator = new EmailValidator();
 
-exports.checkMail = functions.https.onRequest(async (req, res) => {
+export default async function (req, res) {
   if (!req.body.email)
     return res.status(400).json({
       code: '400',
@@ -21,4 +21,4 @@ exports.checkMail = functions.https.onRequest(async (req, res) => {
   const { code, data } = await emailValidator.validate(email, reqIp);
 
   return res.status(code).json(data);
-});
+}

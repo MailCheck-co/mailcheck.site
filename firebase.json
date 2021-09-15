@@ -188,6 +188,10 @@
         "source": "/email-marketing-during-post-Covid-19-times",
         "destination": "/blog/email-marketing-during-post-covid-19-times",
         "type": 301
+      },
+      {
+        "source": "/l/*",
+        "function": "internalRedirect"
       }
     ],
     "cleanUrls": true,

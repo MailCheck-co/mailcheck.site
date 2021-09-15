@@ -1,5 +1,12 @@
-const { sendMail } = require('./sendmail');
-const { checkMail } = require('./checkmail');
+import * as functions from 'firebase-functions';
 
-exports.sendMail = sendMail;
-exports.checkMail = checkMail;
+function lazyOnRequest(path) {
+  return functions.https.onRequest(async (...args) => {
+    const mod = await import(path);
+    mod.default(...args);
+  });
+}
+
+export const sendMail = lazyOnRequest('./sendmail.js');
+export const checkMail = lazyOnRequest('./checkmail.js');
+export const internalRedirect = lazyOnRequest('./internal-redirect.js');
