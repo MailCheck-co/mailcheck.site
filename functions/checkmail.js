@@ -21,4 +21,4 @@ export default async function (req, res) {
   const { code, data } = await emailValidator.validate(email, reqIp);
 
   return res.status(code).json(data);
-};
+}
