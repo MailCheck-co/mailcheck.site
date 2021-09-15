@@ -1,7 +1,11 @@
 const functions = require('firebase-functions');
+const { BigQuery } = require('@google-cloud/bigquery');
 const { promises: dns } = require('dns');
 
 const redirectCache = new Map();
+const bigQuery = new BigQuery();
+const BQ_DATASET = functions.config().mailcheck?.bq_redirects_dataset;
+const BQ_TABLE = functions.config().mailcheck?.bq_redirects_table;
 
 /**
  * @param url {URL}
@@ -40,6 +44,27 @@ function mergeUrls(redirectUrl, requestUrl) {
   return result;
 }
 
+/**
+ * @param req {functions.https.Request}
+ * @param redirectUrl {URL}
+ */
+async function logToBigQuery(req, redirectUrl) {
+  const row = {
+    timestamp: Date.now(),
+    useragent: req.get('User-Agent'),
+    ip: req.get('CF-Connecting-IP'),
+    geo_ip: req.get('CF-IPCountry'),
+    path: req.originalUrl,
+    redirecturl: redirectUrl.href,
+    referrer: req.get('Referrer')
+  };
+  try {
+    await bigQuery.dataset(BQ_DATASET).table(BQ_TABLE).insert(row);
+  } catch (err) {
+    functions.logger.error(err);
+  }
+}
+
 exports.internalRedirect = functions.https.onRequest(async (req, res) => {
   const requestUrl = new URL(`${req.protocol}://${req.hostname}${req.originalUrl}`);
   const hostname = requestUrlToHostname(requestUrl);
@@ -57,17 +82,16 @@ exports.internalRedirect = functions.https.onRequest(async (req, res) => {
   }
 
   try {
-    const mergedUrl = mergeUrls(redirectUrl, requestUrl);
-    functions.logger.info(`${requestUrl} (${hostname}) => ${mergedUrl}`);
-    res.set('Location', mergedUrl).status(302).end();
+    redirectUrl = mergeUrls(redirectUrl, requestUrl);
+    functions.logger.info(`${requestUrl} (${hostname}) => ${redirectUrl}`);
+    res.set('Location', redirectUrl).status(302).end();
     await new Promise((resolve) => {
       res.once('finish', resolve);
     });
+    await logToBigQuery(req, redirectUrl);
   } catch (err) {
     // Someone messed up with TXT records
     res.status(500).end(err.message);
     return;
   }
-
-  // TODO: log request to BQ
 });
