@@ -6,3 +6,4 @@ node_modules
 /package
 /build
 .env
+*-debug.log
