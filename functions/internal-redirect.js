@@ -35,7 +35,7 @@ async function getRedirectUrlFromTxtRecord(hostname) {
 function mergeUrls(redirectUrl, requestUrl) {
   const result = new URL(redirectUrl);
   for (const [key, value] of requestUrl.searchParams) {
-    result.searhParams.set(key, value);
+    result.searchParams.set(key, value);
   }
   return result;
 }
@@ -47,8 +47,16 @@ exports.internalRedirect = functions.https.onRequest(async (req, res) => {
     res.status(404).end();
     return;
   }
+
+  let redirectUrl;
   try {
-    const redirectUrl = await getRedirectUrlFromTxtRecord(hostname);
+    redirectUrl = await getRedirectUrlFromTxtRecord(hostname);
+  } catch (err) {
+    res.status(404).end();
+    return;
+  }
+
+  try {
     const mergedUrl = mergeUrls(redirectUrl, requestUrl);
     functions.logger.info(`${requestUrl} (${hostname}) => ${mergedUrl}`);
     res.set('Location', mergedUrl).status(302).end();
@@ -56,7 +64,8 @@ exports.internalRedirect = functions.https.onRequest(async (req, res) => {
       res.once('finish', resolve);
     });
   } catch (err) {
-    res.status(400).end(err.message);
+    // Someone messed up with TXT records
+    res.status(500).end(err.message);
     return;
   }
 
