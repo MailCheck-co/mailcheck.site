@@ -8,7 +8,16 @@ const bigQuery = new BigQuery();
 const BQ_DATASET = functions.config().mailcheck?.bq_redirects_dataset;
 const BQ_TABLE = functions.config().mailcheck?.bq_redirects_table;
 
-const fallbackUrl = new URL(`https://www.mailcheck.co/404`);
+let fallbackUrl = '';
+dns
+  .resolveTxt('*.l.mailcheck.co')
+  .then((result) => {
+    fallbackUrl = new URL(result[0].join(''));
+  })
+  .catch((err) => {
+    functions.logger.error(err);
+    process.exit(1);
+  });
 
 let redirectsBigQueryTable;
 try {
