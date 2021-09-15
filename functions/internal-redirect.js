@@ -4,8 +4,16 @@ import { promises as dns } from 'dns';
 
 const redirectCache = new Map();
 const bigQuery = new BigQuery();
+
 const BQ_DATASET = functions.config().mailcheck?.bq_redirects_dataset;
 const BQ_TABLE = functions.config().mailcheck?.bq_redirects_table;
+
+let redirectsBigQueryTable;
+try {
+  redirectsBigQueryTable = bigQuery.dataset(BQ_DATASET).table(BQ_TABLE);
+} catch (err) {
+  functions.logger.error(err);
+}
 
 /**
  * @param url {URL}
@@ -59,7 +67,7 @@ async function logToBigQuery(req, redirectUrl) {
     referrer: req.get('Referrer')
   };
   try {
-    await bigQuery.dataset(BQ_DATASET).table(BQ_TABLE).insert(row);
+    await redirectsBigQueryTable?.insert(row);
   } catch (err) {
     functions.logger.error(err);
   }
