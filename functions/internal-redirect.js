@@ -25,7 +25,7 @@ function requestUrlToHostname(url) {
   if (!match) {
     return;
   }
-  return `${match[1]}.l.mailcheck.co`;
+  return { hostname: `${match[1]}.l.mailcheck.co`, key: match[1] };
 }
 
 /**
@@ -58,13 +58,14 @@ function mergeUrls(redirectUrl, requestUrl) {
  * @param req {functions.https.Request}
  * @param redirectUrl {URL}
  */
-async function logToBigQuery(req, redirectUrl) {
+async function logToBigQuery(req, redirectUrl, key) {
   const row = {
     timestamp: Date.now(),
     useragent: req.get('User-Agent'),
     ip: req.get('CF-Connecting-IP'),
     geo_ip: req.get('CF-IPCountry'),
     path: req.originalUrl,
+    key,
     redirecturl: redirectUrl.href,
     referrer: req.get('Referrer')
   };
@@ -77,7 +78,7 @@ async function logToBigQuery(req, redirectUrl) {
 
 export default async function (req, res) {
   const requestUrl = new URL(`${req.protocol}://${req.hostname}${req.originalUrl}`);
-  const hostname = requestUrlToHostname(requestUrl);
+  const { hostname, key } = requestUrlToHostname(requestUrl);
   if (!hostname) {
     return res.redirect(fallbackUrl);
   }
@@ -96,7 +97,7 @@ export default async function (req, res) {
     await new Promise((resolve) => {
       res.once('finish', resolve);
     });
-    await logToBigQuery(req, redirectUrl);
+    await logToBigQuery(req, redirectUrl, key);
   } catch (err) {
     // Someone messed up with TXT records
     res.status(500).end(err.message);
