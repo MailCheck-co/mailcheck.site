@@ -64,7 +64,7 @@
     "schema-dts": "^1.0.0",
     "svelte-inview": "^2.0.1",
     "svelte-slidy": "^2.7.1",
-    "unist-util-visit": "^4.0.0"
+    "unist-util-visit": "^4.1.0"
   },
   "stylelint": {
     "extends": [
