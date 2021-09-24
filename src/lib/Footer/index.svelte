@@ -33,7 +33,7 @@
         <a class="nav-link footer-nav-link" title="blog" href="/blog">Blog</a>
         <a
           class="nav-link footer-nav-link"
-          href="https://app.mailcheck.co/docs#tag--email"
+          href="https://www.mailcheck.co/l/docs"
           rel="external"
           title="API"
           target="_blank">API</a>
@@ -49,11 +49,11 @@
           target="_blank"
           title="Product of NodeArt"
           class="nav-link footer-nav-link"
-          href="https://nodeart.io">Product of NodeArt</a>
+          href="https://www.mailcheck.co/l/na">Product of NodeArt</a>
       </nav>
       <div class="footer-social-mobile">
         <a
-          href="https://www.facebook.com/mailcheck.co/"
+          href="https://www.mailcheck.co/l/fb"
           target="_blank"
           rel="external"
           title="Facebook page"
@@ -66,7 +66,7 @@
             alt="Facebook" />
         </a>
         <a
-          href="https://www.linkedin.com/company/mailcheck/"
+          href="https://www.mailcheck.co/l/linkedin"
           target="_blank"
           rel="external"
           title="LinkedIn page"
@@ -79,7 +79,7 @@
             alt="LinkedIn" />
         </a>
         <a
-          href="https://www.youtube.com/channel/UCX8jKuur4Ylr9ymsRzAaZUQ/"
+          href="https://www.mailcheck.co/l/youtube"
           target="_blank"
           rel="external"
           title="Youtube channel"
@@ -87,7 +87,7 @@
           <img width="18" height="18" class="footer-social-icon" src={iconYoutube} alt="Youtube" />
         </a>
         <a
-          href="https://twitter.com/mailcheckco"
+          href="https://www.mailcheck.co/l/twitter"
           target="_blank"
           rel="external"
           title="Twitter page"
@@ -95,7 +95,7 @@
           <img width="18" height="18" class="footer-social-icon" src={iconTwitter} alt="Twitter" />
         </a>
         <a
-          href="https://github.com/MailCheck-co"
+          href="https://www.mailcheck.co/l/github"
           target="_blank"
           rel="external"
           title="GitHub page"
@@ -133,7 +133,7 @@
         <span class="copyright2">&#x24B8; 2017-{new Date().getUTCFullYear()} Mailcheck</span>
         <div class="footer-social">
           <a
-            href="https://www.facebook.com/mailcheck.co/"
+            href="https://www.mailcheck.co/l/fb"
             target="_blank"
             rel="external"
             title="Facebook page"
@@ -146,7 +146,7 @@
               alt="Facebook" />
           </a>
           <a
-            href="https://www.linkedin.com/company/mailcheck/"
+            href="https://www.mailcheck.co/l/linkedin"
             target="_blank"
             rel="external"
             title="LinkedIn page"
@@ -159,7 +159,7 @@
               alt="LinkedIn" />
           </a>
           <a
-            href="https://www.youtube.com/channel/UCX8jKuur4Ylr9ymsRzAaZUQ/"
+            href="https://www.mailcheck.co/l/youtube"
             target="_blank"
             rel="external"
             title="Youtube channel"
@@ -172,7 +172,7 @@
               alt="Youtube" />
           </a>
           <a
-            href="https://twitter.com/mailcheckco"
+            href="https://www.mailcheck.co/l/twitter"
             target="_blank"
             rel="external"
             title="Twitter page"
@@ -185,7 +185,7 @@
               alt="Twitter" />
           </a>
           <a
-            href="https://github.com/MailCheck-co"
+            href="https://www.mailcheck.co/l/github"
             target="_blank"
             rel="external"
             title="GitHub page"

@@ -31,7 +31,7 @@ You have the right to decide whether to accept or reject cookies. You can exerci
 
 The Cookie Consent Manager can be found in the notification banner and on our website. If you choose to reject cookies, you may still use our website though your access to some functionality and areas of our website may be restricted. You may also set or amend your web browser controls to accept or refuse cookies. As the means by which you can refuse cookies through your web browser controls vary from browser-to-browser, you should visit your browser's help menu for more information.
 
-In addition, most advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit [aboutads.info](http://www.aboutads.info/choices/) or [youronlinechoices.com](http://www.youronlinechoices.com).
+In addition, most advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit [aboutads.info](http://www.aboutads.info/choices/) or [youronlinechoices.com](https://www.mailcheck.co/l/youronlinechoices).
 
 The specific types of first and third party cookies served through our Websites and the purposes they perform are described in the table below (please note that the specific cookies served may vary depending on the specific Online Properties you visit):
 
@@ -45,7 +45,7 @@ Purpose: Used by Cloudflare to identify individual clients behind a shared IP ad
 
 Provider: .mailcheck.co
 
-[Service: CloudFlare View Service Privacy Policy](https://www.cloudflare.com/privacypolicy/)
+[Service: CloudFlare View Service Privacy Policy](https://www.mailcheck.co/l/cf-privacy)
 
 Country: United States
 
@@ -55,7 +55,7 @@ Expires in: 30 days
 
 Provider: .mailcheck.co
 
-[Service: CloudFlare View Service Privacy Policy](https://www.cloudflare.com/privacypolicy/)
+[Service: CloudFlare View Service Privacy Policy](https://www.mailcheck.co/l/cf-privacy)
 
 Country: United States
 
@@ -73,7 +73,7 @@ Purpose: Used by Yandex Metrica as a unique user ID to help track a user in a we
 
 Provider: www.mailcheck.co
 
-Service: Metrica [View Service Privacy Policy](https://yandex.com/legal/privacy/)
+Service: Metrica [View Service Privacy Policy](https://www.mailcheck.co/l/yandex-privacy)
 
 Country: United States
 
@@ -87,7 +87,7 @@ Purpose: Used by Yandex Metrica to determine if a visitor has ad blockers instal
 
 Provider: .mailcheck.co
 
-Service: Metrica [View Service Privacy Policy](https://yandex.com/legal/privacy/)
+Service: Metrica [View Service Privacy Policy](https://www.mailcheck.co/l/yandex-privacy)
 
 Country: United States
 
@@ -101,7 +101,7 @@ Purpose: Used by Yandex Metrica for identifying site users. This cookie exists f
 
 Provider: .yandex.ru
 
-Service: Yandex [View Service Privacy Policy](https://yandex.com/legal/privacy/)
+Service: Yandex [View Service Privacy Policy](https://www.mailcheck.co/l/yandex-privacy)
 
 Country: Russia
 
@@ -115,7 +115,7 @@ Purpose: Used by Yandex Metrica to determine the date of the user's first site s
 
 Provider: .mailcheck.co
 
-Service: Metrica [View Service Privacy Policy](https://yandex.com/legal/privacy/)
+Service: Metrica [View Service Privacy Policy](https://www.mailcheck.co/l/yandex-privacy)
 
 Country: United States
 
@@ -129,7 +129,7 @@ Purpose: Used by Yandex Metrica as a unique user ID to help track a user in a we
 
 Provider: .mailcheck.co
 
-Service: Metrica [View Service Privacy Policy](https://yandex.com/legal/privacy/)
+Service: Metrica [View Service Privacy Policy](https://www.mailcheck.co/l/yandex-privacy)
 
 Country: United States
 
@@ -147,7 +147,7 @@ Purpose: Used by Facebook to collect a unique browser and user ID, used for targ
 
 Provider: .facebook.com
 
-Service: [Facebook View Service Privacy Policy](https://www.facebook.com/privacy/explanation)
+Service: [Facebook View Service Privacy Policy](https://www.mailcheck.co/l/facebook-privacy)
 
 Country: Ireland
 
@@ -161,7 +161,7 @@ Purpose: Facebook tracking pixel used to identify visitors for personalized adve
 
 Provider: .mailcheck.co
 
-Service: [Facebook View Service Privacy Policy](https://www.facebook.com/privacy/explanation)
+Service: [Facebook View Service Privacy Policy](https://www.mailcheck.co/l/facebook-privacy)
 
 Country: United States
 
@@ -361,7 +361,7 @@ Cookies are not the only way to recognize or track visitors to a website. We may
 
 Websites may also use so-called "Flash Cookies" (also known as Local Shared Objects or "LSOs") to, among other things, collect and store information about your use of our services, fraud prevention and for other site operations.
 
-If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the [Website Storage Settings Panel](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html). You can also control Flash Cookies by going to the [Global Storage Settings Panel](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager03.html) and following the instructions (which may include instructions that explain, for example, how to delete existing Flash Cookies (referred to "information" on the Macromedia site), how to prevent Flash LSOs from being placed on your computer without your being asked, and (for Flash Player 8 and later) how to block Flash Cookies that are not being delivered by the operator of the page you are on at the time).
+If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the [Website Storage Settings Panel](https://www.mailcheck.co/l/flash-settings2). You can also control Flash Cookies by going to the [Global Storage Settings Panel](https://www.mailcheck.co/l/flash-settings) and following the instructions (which may include instructions that explain, for example, how to delete existing Flash Cookies (referred to "information" on the Macromedia site), how to prevent Flash LSOs from being placed on your computer without your being asked, and (for Flash Player 8 and later) how to block Flash Cookies that are not being delivered by the operator of the page you are on at the time).
 
 Please note that setting the Flash Player to restrict or limit acceptance of Flash Cookies may reduce or impede the functionality of some Flash applications, including, potentially, Flash applications used in connection with our services or online content.
 

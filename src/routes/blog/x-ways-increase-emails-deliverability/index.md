@@ -89,7 +89,7 @@ If you send HTML letters you need to add plain-text version because:
 - some email-clients do not support html display
 - most people prefer plain-text seeking for mobile traffic decrease
 - ESPs love plain-text
-- [Email marketing](https://www.sendx.io/blog/using-mailchimp-alternatives/ 'email marketing services') software usually has special settings for traking links in plain\\text mails (long links with UTM marks looks ugly in plain text mode)
+- [Email marketing](https://www.mailcheck.co/l/mailchimp-alternatives/ 'email marketing services') software usually has special settings for traking links in plain\\text mails (long links with UTM marks looks ugly in plain text mode)
 
 ## 16\. Add to the Letter Link to Its Online Version
 
