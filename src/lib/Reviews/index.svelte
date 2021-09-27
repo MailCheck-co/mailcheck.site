@@ -35,7 +35,7 @@
             <img src={iconStar} width="25" height="25" alt="rating 5 stars" />
           </div>
           <a
-            href="https://www.mailcheck.co/l/ph"
+            href="/l/ph"
             target="_blank"
             rel="external nofollow"
             title="Read Reviews"
@@ -48,7 +48,7 @@
             <img width="25" height="25" src={iconLike} alt="" class="reviews-like-icon" />
           </div>
           <a
-            href="https://www.mailcheck.co/l/betalist"
+            href="/l/betalist"
             target="_blank"
             rel="external nofollow"
             title="Read Reviews"
@@ -64,7 +64,7 @@
             <img src={iconStar} width="25" height="25" alt="rating 5 stars" />
           </div>
           <a
-            href="https://www.mailcheck.co/l/capterra"
+            href="/l/capterra"
             target="_blank"
             rel="external nofollow"
             title="Read Reviews"

@@ -33,7 +33,7 @@
         <a class="nav-link footer-nav-link" title="blog" href="/blog">Blog</a>
         <a
           class="nav-link footer-nav-link"
-          href="https://www.mailcheck.co/l/docs"
+          href="https://www.mailcheck.co/l/docs#tag--email"
           rel="external"
           title="API"
           target="_blank">API</a>
