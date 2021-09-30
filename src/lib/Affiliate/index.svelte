@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   import imgAffiliate from './invite-friends.jpg';
@@ -7,31 +7,36 @@
 </script>
 
 <section
-  class='affiliate'
+  class="affiliate"
   class:intersecting
   use:inview={inviewOptions}
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
   }}>
-  <div class='section-heading sm-left'>
-    <h3 class='title-small'>Invite friends and EARN <span class='no-wrap'>$10 USD</span></h3>
-    <p class='section-title-lg'>Affiliate</p>
+  <div class="section-heading sm-left">
+    <h3 class="title-small">Invite friends and EARN <span class="no-wrap">$10 USD</span></h3>
+    <p class="section-title-lg">Affiliate</p>
   </div>
 
-  <div class='container'>
-    <div class='affil-block'>
-      <div class='affil-block-inner'>
-        <div class='affil-block-image'>
-          <img src={imgAffiliate} class='affil-image' alt='Invite friends'>
+  <div class="container">
+    <div class="affil-block">
+      <div class="affil-block-inner">
+        <div class="affil-block-image">
+          <img src={imgAffiliate} class="affil-image" alt="Invite friends" />
         </div>
-        <div class='affil-block-content'>
-          <p class='section-description'>
-            Invite your friends and provide them with a $10 USD discount, and receive your part ($10 USD
-            as well) the number of invitations unlimited, stack validations forever! Invite 3 friends in a
-            row and grab the "Enterprise plan" (20k validations) fully free.
+        <div class="affil-block-content">
+          <p class="section-description">
+            Invite your friends and provide them with a $10 USD discount, and receive your part ($10
+            USD as well) the number of invitations unlimited, stack validations forever! Invite 3
+            friends in a row and grab the "Enterprise plan" (20k validations) fully free.
           </p>
-          <a class='affil-btn' rel='external' href='https://app.mailcheck.co/auth/login' title='Invite now' target='_blank'>
+          <a
+            class="affil-btn"
+            rel="external"
+            href="https://app.mailcheck.co/auth/login"
+            title="Invite now"
+            target="_blank">
             Invite now
           </a>
         </div>
@@ -40,7 +45,7 @@
   </div>
 </section>
 
-<style lang='scss'>
+<style lang="scss">
   .affiliate {
     @include intersection;
 
@@ -88,9 +93,9 @@
 
     .section-description {
       margin: 0 0 var(--size-40);
+      color: var(--primary-white);
       font-weight: var(--weight-300);
       letter-spacing: var(--letter-spacing);
-      color: var(--primary-white);
       text-indent: 0;
     }
 
@@ -104,33 +109,33 @@
 
     .affil-block-inner {
       display: flex;
-      align-items: stretch;
       gap: var(--size-40);
+      align-items: stretch;
     }
 
     .affil-block-content {
-      padding: var(--size-30) 0;
       display: flex;
       flex-direction: column;
+      padding: var(--size-30) 0;
     }
 
     .affil-btn {
-      margin-top: auto;
-      border: var(--size-1) solid var(--primary-white);
-      border-radius: var(--size-6);
-      color: var(--primary-white);
       display: block;
-      font-size: var(--size-16);
-      font-weight: var(--weight-700);
-      height: var(--size-60);
-      letter-spacing: var(--letter-spacing);
-      line-height: var(--size-60);
       max-width: 10rem;
-      outline: none;
+      height: var(--size-60);
+      margin-top: auto;
       padding: 0 var(--size-40);
+      color: var(--primary-white);
+      font-weight: var(--weight-700);
+      font-size: var(--size-16);
+      line-height: var(--size-60);
+      letter-spacing: var(--letter-spacing);
       text-align: center;
       text-transform: uppercase;
-      transition: transform .25s ease;
+      border: var(--size-1) solid var(--primary-white);
+      border-radius: var(--size-6);
+      outline: none;
+      transition: transform 0.25s ease;
 
       &:hover {
         color: var(--primary-accent);
@@ -152,11 +157,10 @@
     }
 
     @media (max-width: 1024px) {
-
       .affil-block-inner {
         flex-direction: column;
-        text-align: center;
         gap: 0;
+        text-align: center;
       }
       .affil-block-image {
         max-width: 100%;

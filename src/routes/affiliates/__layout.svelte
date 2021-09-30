@@ -2,6 +2,6 @@
   import ContactUs from '$lib/ContactUs/index.svelte';
 </script>
 
-<slot></slot>
+<slot />
 
 <ContactUs />

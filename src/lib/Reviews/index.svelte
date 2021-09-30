@@ -164,8 +164,8 @@
 
     .reviews-item-rating,
     .reviews-item-likes {
-      margin-bottom: 0;
       flex-grow: 1;
+      margin-bottom: 0;
     }
 
     .reviews-item-rating {

@@ -17,7 +17,7 @@ When you sign up for the Mailcheck Affiliate Program we’ll give you a special 
 To make sure our program is maximum partner-oriented, we will provide marketing materials, brand guidelines, banners, and imagery needed for launching the campaign. Our product team can help with building your campaign or preparing marketing materials, including the email template.
 
 Our program provides you with:
+
 - Payout Schedule Monthly
 - Commission
 - Referral bonuses
-

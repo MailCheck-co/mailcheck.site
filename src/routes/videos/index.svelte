@@ -77,32 +77,34 @@
       min-height: var(--size-880);
 
       .content {
-        width: 100%;
         z-index: 1;
+        width: 100%;
 
         %text {
           color: var(--primary-white);
           line-height: 1.2;
+          letter-spacing: normal;
           text-align: left;
           text-indent: initial;
-          letter-spacing: normal;
         }
 
         .video-wrapper {
+          overflow: hidden;
           background-color: var(--primary-white);
           border-radius: var(--br-10);
-          overflow: hidden;
         }
 
         .description {
           h2 {
             @extend %text;
+
             font-weight: var(--weight-700);
             font-size: var(--size-20);
           }
 
           p {
             @extend %text;
+
             font-weight: var(--weight-400);
             font-size: var(--size-14);
           }
@@ -113,17 +115,18 @@
             margin-bottom: var(--size-20);
 
             .avatar {
-              height: var(--size-46);
               width: var(--size-46);
+              height: var(--size-46);
               margin-right: var(--size-16);
+              overflow: hidden;
               background-color: var(--primary-white);
               border-radius: var(--br-rounded);
-              overflow: hidden;
             }
 
             .about {
               .name {
                 @extend %text;
+
                 margin: 0;
                 font-weight: var(--weight-400);
                 font-size: var(--size-18);

@@ -100,8 +100,8 @@
   }
 
   :global(.container .content-block ul) {
-    padding: 0 0 0 var(--size-24);
     margin: 0 0 0 var(--size-24);
+    padding: 0 0 0 var(--size-24);
     line-height: 1.5;
   }
 
