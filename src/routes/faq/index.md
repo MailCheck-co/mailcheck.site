@@ -168,6 +168,17 @@ Watch our video about how to adapt data in Excel
 <Video id={idVideoAdaptData} title={titleVideoAdaptData} />
 
 </details>
+
+<details>
+
+    <summary>How to manually add emails?</summary>
+
+Watch our video about how to manually add emails?
+
+<Video id={idVideoAddEmails} title={titleVideoAddEmails} />
+
+</details>
+
 </div>
 
 <div class="accordion-column right">
@@ -306,11 +317,9 @@ A step-by-step guide to integrate Mailcheck with daily services using [Integroma
 
 <details>
 
-    <summary>How to manually add emails?</summary>
+    <summary>How to use Sendgrid instructions?</summary>
 
-Watch our video about how to manually add emails?
-
-<Video id={idVideoAddEmails} title={titleVideoAddEmails} />
+A step-by-step guide to integrate Mailcheck with daily services using [Sendgrid](/sendgrid-integration)
 
 </details>
 </div>
