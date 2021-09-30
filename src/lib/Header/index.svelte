@@ -12,22 +12,26 @@
     <a class="logo" href="/" title="logo">
       <img src={logo} width="138" height="26" alt="mailcheck logo" />
     </a>
-    <nav class="header-nav" role="navigation">
-      <a class="nav-link" title="features" href="/#features">Features</a>
-      <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
-      <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
-      <a class="nav-link" title="blog" href="/blog">Blog</a>
-      <a class="nav-link" title="faq" href="/faq">FAQ</a>
-    </nav>
-    <div>
-      <a
-        rel="external"
-        target="_blank"
-        href="https://app.mailcheck.co/"
-        class="btn btn-sign-in"
-        title="sign in">
-        sign in
-      </a>
+    <div class="header-navigation">
+      <nav class="header-nav" role="navigation">
+        <a class="nav-link" title="features" href="/#features">Features</a>
+        <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
+        <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
+        <a class="nav-link" title="blog" href="/blog">Blog</a>
+        <a class="nav-link" title="faq" href="/faq">FAQ</a>
+      </nav>
+      <div>
+        <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-start"
+          >Request a demo</a>
+        <a
+          rel="external"
+          target="_blank"
+          href="https://app.mailcheck.co/"
+          class="btn btn-sign-in"
+          title="sign in">
+          sign in
+        </a>
+      </div>
     </div>
   </div>
 </header>
@@ -53,6 +57,8 @@
     target="_blank"
     title="sign in"
     class="btn btn-sign-in mobile-btn">Sign in</a>
+  <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-bordered"
+    >Request a demo</a>
 </nav>
 
 <style lang="scss">
@@ -64,14 +70,46 @@
     height: 5.625rem;
     margin: 0 auto;
   }
+
   .logo {
     width: 8.625rem;
     height: 1.69rem;
   }
 
+  .header-navigation {
+    display: flex;
+    align-items: center;
+  }
+
   .header-nav {
     display: flex;
-    justify-content: space-between;
+    margin-left: auto;
+  }
+
+  .btn {
+    font-size: var(--size-16);
+
+    & + & {
+      margin-left: var(--size-20);
+    }
+  }
+
+  .btn-start {
+    z-index: 1;
+    color: var(--primary-white);
+    background-color: var(--primary-accent);
+    border: none;
+
+    &:hover {
+      color: var(--primary-accent);
+      text-decoration: none;
+      background-color: var(--primary-white);
+    }
+
+    &:active {
+      color: var(--primary-white);
+      background-color: var(--primary-accent);
+    }
   }
 
   .btn-sign-in {
@@ -86,6 +124,14 @@
 
     &:active {
       border-color: var(--dark-05);
+    }
+  }
+
+  .btn-bordered {
+    border: var(--size-1) solid var(--dark-05);
+
+    &:hover {
+      border-color: var(--primary-white);
     }
   }
 
@@ -119,12 +165,16 @@
     padding: var(--size-50) var(--size-30);
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .wrapper-header {
       justify-content: space-between;
 
-      .header-nav {
+      .header-navigation {
         display: none;
+      }
+
+      .btn {
+        font-size: var(--size-14);
       }
 
       .btn-sign-in {
