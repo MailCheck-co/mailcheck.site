@@ -18,7 +18,7 @@ const mailTransport = nodemailer.createTransport({
   }
 });
 
-export default async function(req, res) {
+export default async function (req, res) {
   let pb;
   try {
     pb = JSON.parse(req.body);
