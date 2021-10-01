@@ -1,8 +1,13 @@
 <script lang="ts">
   import ToTop from '$lib/ToTop/index.svelte';
   import logo from '$lib/Header/mailcheck-logo.svg';
+  import Modal from '$lib/ModalRequestDemo/index.svelte';
 
+  /*MOBILE MENU*/
   let open = false;
+
+  /*MODAL*/
+  let modal;
 </script>
 
 <ToTop />
@@ -21,8 +26,9 @@
         <a class="nav-link" title="faq" href="/faq">FAQ</a>
       </nav>
       <div>
-        <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-start"
-          >Request a demo</a>
+        <button type="button" class="btn btn-start" on:click={() => modal.show()}
+          >Request a demo
+        </button>
         <a
           rel="external"
           target="_blank"
@@ -34,6 +40,8 @@
       </div>
     </div>
   </div>
+
+  <Modal bind:this={modal} />
 </header>
 
 <!--Mobile menu-->
@@ -57,8 +65,9 @@
     target="_blank"
     title="sign in"
     class="btn btn-sign-in mobile-btn">Sign in</a>
-  <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-bordered"
-    >Request a demo</a>
+  <button type="button" class="btn btn-bordered btn-invert" on:click={() => modal.show()}
+    >Request a demo
+  </button>
 </nav>
 
 <style lang="scss">
@@ -132,6 +141,16 @@
 
     &:hover {
       border-color: var(--primary-white);
+    }
+  }
+
+  .btn-invert {
+    background-color: var(--primary-white);
+    color: var(--primary-accent);
+
+    &:hover {
+      background-color: var(--primary-accent);
+      color: var(--primary-white);
     }
   }
 

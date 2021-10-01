@@ -29,6 +29,7 @@
   import Cta from '$lib/Cta/index.svelte';
   import Affiliate from '$lib/Affiliate/index.svelte';
   import Videos from '$lib/Video/videos.svelte';
+  import Modal from '$lib/ModalRequestDemo/index.svelte';
 
   interface IVideo {
     id: string;
@@ -68,7 +69,7 @@
   <Testimonials />
 
   <!-- SECTION VIDEOS -->
-  <Videos {videos} />
+  <!--  <Videos {videos} />-->
 
   <!-- SECTION AFFILIATES -->
   <Affiliate />
