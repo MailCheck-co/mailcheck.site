@@ -13,7 +13,7 @@
 </script>
 
 <Seo
-  title={`Blog | ${title}`}
+  {title}
   {desc}
   isPost={true}
   {canonical}

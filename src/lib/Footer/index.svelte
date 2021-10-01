@@ -26,6 +26,17 @@
           London, England, WC2E 9HA
         </address>
       </div>
+      <div class="footer-nav nav-affiliate">
+        <a
+          rel="external"
+          target="_blank"
+          class="nav-link footer-nav-link"
+          title="Refer a friend"
+          href="https://app.mailcheck.co/auth/login">Refer a friend</a>
+        <a class="nav-link footer-nav-link" title="For affiliates" href="/affiliates"
+          >For affiliates</a>
+      </div>
+
       <nav class="footer-nav" role="navigation">
         <a class="nav-link footer-nav-link" title="features" href="/#features">Features</a>
         <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
@@ -213,7 +224,7 @@
     display: block;
     width: 100%;
     height: 64rem;
-    background: url('assets/city.png') no-repeat center;
+    background: url('assets/city-transparent.png') no-repeat center;
     background-size: cover;
     transform: translateY(-105%);
     opacity: 0.4;
@@ -251,10 +262,14 @@
 
   .footer-nav {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 33%;
     flex-flow: column wrap;
     align-items: flex-start;
     max-height: 10.625rem;
+
+    &.nav-affiliate {
+      flex-basis: 15%;
+    }
   }
 
   .footer-nav-link {
