@@ -39,7 +39,7 @@
     };
   }
 
-  const onSubmit = async (e: Event) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     isSending = true;
     isValid = true;
