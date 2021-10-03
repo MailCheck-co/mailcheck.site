@@ -2,6 +2,18 @@
   import Progress from '$lib/Progress/index.svelte';
 
   let modalVisibility = false;
+  let emailValue = '';
+  let subjectValue = 'Request for Demo';
+  let isSending = false;
+  let isError = false;
+  let isSuccess = false;
+  let isValid = true;
+
+  let modalForm = {
+    reset: () => {
+      ('');
+    }
+  };
 
   export function show() {
     modalVisibility = true;
@@ -11,20 +23,10 @@
     modalVisibility = false;
     isSending = false;
     isValid = false;
+    isError = false;
+    isSuccess = false;
   }
 
-  let emailValue = '';
-  let subjectValue = 'Request for Demo';
-  let isSending = false;
-  let isError = false;
-  let isSuccess = false;
-  let isValid;
-
-  let modalForm = {
-    reset: () => {
-      ('');
-    }
-  };
 
   function validate() {
     return {
@@ -52,9 +54,10 @@
         method: 'POST',
         body: JSON.stringify(data)
       });
-      modalForm.reset();
       isSuccess = true;
-      console.log(data);
+      isSending = false;
+      modalForm.reset();
+      console.log(emailValue);
     } catch (e) {
       isError = true;
       isSending = false;
@@ -158,6 +161,11 @@
 
     &:focus {
       border-color: var(--midnight-blue);
+    }
+
+    &.invalid {
+      color: var(--color-important);
+      border-color: var(--color-important);
     }
   }
 
