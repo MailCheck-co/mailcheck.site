@@ -69,7 +69,7 @@
   <Testimonials />
 
   <!-- SECTION VIDEOS -->
-  <!--  <Videos {videos} />-->
+  <Videos {videos} />
 
   <!-- SECTION AFFILIATES -->
   <Affiliate />
