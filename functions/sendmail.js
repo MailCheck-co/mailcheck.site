@@ -42,7 +42,7 @@ export default async function (req, res) {
 
   const mailOptions = {
     from: `Mailcheck Landing <${gmailEmail}>`,
-    to: 'contact@mailcheck.co',
+    to: 'v.manilo@nodeart.io',
     subject: 'Mailcheсk form',
     html: template
   };
