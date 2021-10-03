@@ -14,7 +14,7 @@
   }
 
   let emailValue = '';
-  let subjectValue = '';
+  let subjectValue = 'Request for Demo';
   let isSending = false;
   let isError = false;
   let isSuccess = false;
@@ -54,6 +54,7 @@
       });
       modalForm.reset();
       isSuccess = true;
+      console.log(data);
     } catch (e) {
       isError = true;
       isSending = false;
