@@ -27,7 +27,6 @@
     isSuccess = false;
   }
 
-
   function validate() {
     return {
       update() {
@@ -105,13 +104,13 @@
   .modal {
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
     z-index: 999;
     display: grid;
-    place-items: center;
     background-color: var(--heading-color);
+    place-items: center;
   }
 
   .modal-content {
@@ -125,22 +124,22 @@
   .modal-close,
   .modal-close:focus,
   .modal-close:active {
-    margin-left: auto;
     display: block;
+    margin-left: auto;
     font-size: var(--size-30);
     background: none;
-    outline: none;
     border: none;
+    outline: none;
   }
 
   .modal-close:hover {
-    font-weight: bold;
+    font-weight: var(--weight-700);
   }
 
   .modal-form {
     display: flex;
-    align-items: center;
     flex-flow: column nowrap;
+    align-items: center;
   }
 
   .modal-title {

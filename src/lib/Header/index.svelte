@@ -145,12 +145,12 @@
   }
 
   .btn-invert {
-    background-color: var(--primary-white);
     color: var(--primary-accent);
+    background-color: var(--primary-white);
 
     &:hover {
-      background-color: var(--primary-accent);
       color: var(--primary-white);
+      background-color: var(--primary-accent);
     }
   }
 
