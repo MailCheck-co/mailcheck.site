@@ -56,7 +56,6 @@
       isSuccess = true;
       isSending = false;
       modalForm.reset();
-      console.log(emailValue);
     } catch (e) {
       isError = true;
       isSending = false;
