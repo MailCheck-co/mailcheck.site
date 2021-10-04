@@ -85,7 +85,7 @@
           <span class="status-title error">Something went wrong! </span>
           <span>Please try again later</span>
         {/if}
-        <button type="submit" class="btn modal-btn" disabled={!isValid}>
+        <button type="submit" class="btn modal-btn" class:progress="{isSending}" disabled={!isValid}>
           {#if isSending}
             <span class="progress-wrapper">
               <Progress />
@@ -173,6 +173,10 @@
     background-color: var(--primary-accent);
     border: 1px solid var(--primary-white);
     outline: none;
+
+    &.progress {
+      background-color: var(--color-background-shade);
+    }
   }
 
   .status-title {
