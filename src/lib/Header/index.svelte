@@ -26,7 +26,7 @@
         <a class="nav-link" title="faq" href="/faq">FAQ</a>
       </nav>
       <div>
-        <button type="button" class="btn btn-start" on:click={() => modal.show()}
+        <button type="button" class="btn btn-start btn-request" on:click={() => modal.show()}
           >Request a demo
         </button>
         <a
@@ -152,6 +152,11 @@
       color: var(--primary-white);
       background-color: var(--primary-accent);
     }
+  }
+
+  .btn-request {
+    font-size: calc(var(--size-16) - 20%);
+    padding: var(--size-10) var(--size-20);
   }
 
   .burger-wrapper {
