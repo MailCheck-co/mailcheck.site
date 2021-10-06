@@ -2,7 +2,6 @@
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   import arrowNav from '$lib/Pricing/arrow-slide-nav.svg';
-  import Modal from '$lib/ModalRequestDemo/index.svelte';
 
   let intersecting: boolean;
   let slider: HTMLElement;
@@ -54,8 +53,6 @@
     const walk = (x - startX) * SCROLL_SPEED;
     slider.scrollLeft = scrollLeft - walk;
   }
-
-  let modal;
 </script>
 
 <section
@@ -124,11 +121,12 @@
         <span class="card-features-text">
           <span class="bold">Legendary</span>
           1,000,000,000+ emails to validate included</span>
-        <button
-          type="button"
-          on:click={() => modal.show()}
+        <a
+          href="https://calendly.com/fm--29/15min"
+          rel="external nofollow"
+          target="_blank"
           title="request a demo"
-          class="btn btn-choose btn-red">request a demo</button>
+          class="btn btn-choose btn-red">request a demo</a>
       </li>
     </ul>
   </div>
@@ -139,8 +137,6 @@
     <img src={arrowNav} width="20" height="20" alt="left" />
   </div>
 </section>
-
-<Modal bind:this={modal} />
 
 <style lang="scss">
   #pricing {

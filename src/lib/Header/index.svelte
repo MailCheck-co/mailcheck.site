@@ -1,13 +1,9 @@
 <script lang="ts">
   import ToTop from '$lib/ToTop/index.svelte';
   import logo from '$lib/Header/mailcheck-logo.svg';
-  import Modal from '$lib/ModalRequestDemo/index.svelte';
 
   /*MOBILE MENU*/
   let open = false;
-
-  /*MODAL*/
-  let modal;
 </script>
 
 <ToTop />
@@ -26,9 +22,12 @@
         <a class="nav-link" title="faq" href="/faq">FAQ</a>
       </nav>
       <div>
-        <button type="button" class="btn btn-start btn-request" on:click={() => modal.show()}
-          >Request a demo
-        </button>
+        <a
+          href="https://calendly.com/fm--29/15min"
+          rel="external nofollow"
+          title="Request a demo"
+          target="_blank"
+          class="btn btn-start btn-request">Request a demo</a>
         <a
           rel="external"
           target="_blank"
@@ -40,8 +39,6 @@
       </div>
     </div>
   </div>
-
-  <Modal bind:this={modal} />
 </header>
 
 <!--Mobile menu-->
@@ -65,9 +62,12 @@
     target="_blank"
     title="sign in"
     class="btn btn-sign-in mobile-btn">Sign in</a>
-  <button type="button" class="btn btn-bordered btn-invert" on:click={() => modal.show()}
-    >Request a demo
-  </button>
+  <a
+    href="https://calendly.com/fm--29/15min"
+    rel="external nofollow"
+    target="_blank"
+    class="btn btn-bordered btn-invert"
+    title="Request a demo">Request a demo</a>
 </nav>
 
 <style lang="scss">
@@ -155,8 +155,8 @@
   }
 
   .btn-request {
-    font-size: calc(var(--size-16) - 20%);
     padding: var(--size-10) var(--size-20);
+    font-size: calc(var(--size-16) - 20%);
   }
 
   .burger-wrapper {
