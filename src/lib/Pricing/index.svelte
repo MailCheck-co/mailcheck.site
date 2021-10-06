@@ -122,11 +122,11 @@
           <span class="bold">Legendary</span>
           1,000,000,000+ emails to validate included</span>
         <a
-          title="choose"
+          href="https://calendly.com/fm--29/15min"
+          rel="external nofollow"
           target="_blank"
-          rel="external"
-          href="https://app.mailcheck.co/dashboard/payment_plans"
-          class="btn btn-choose btn-red">choose</a>
+          title="request a demo"
+          class="btn btn-choose btn-red">request a demo</a>
       </li>
     </ul>
   </div>
@@ -244,6 +244,10 @@
           border-radius: var(--size-6);
           transition: all 1s;
           scroll-snap-align: start;
+
+          &#custom .btn-choose {
+            padding: var(--size-20) var(--size-10);
+          }
 
           .bold {
             font-weight: var(--weight-700);

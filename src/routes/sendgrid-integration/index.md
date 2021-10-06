@@ -14,13 +14,13 @@ desc: Step by step guide on how to use Mailcheck with Sendgrid.
 ### Step 1
 
 Go to [https://app.mailcheck.co/dashboard/integration](https://app.mailcheck.co/dashboard/integration)
-  and click "Connect"
+and click "Connect"
 
 ![sendgrid email verification integration](./Sendgrid-1.jpg?format=webp;jpg;avif&srcset)
 
 ### Step 2
 
-Copy API key from your Sendgrid account  - go to “Settings” in SendGrid and find “API Keys” hit “Create a key”
+Copy API key from your Sendgrid account - go to “Settings” in SendGrid and find “API Keys” hit “Create a key”
 
 ![find api keys ](./Sendgrid-2.jpg?format=webp;jpg;avif&srcset)
 
@@ -40,7 +40,6 @@ You can decide between “Full access” AND “Restricted access” if you sele
 
 Remember if you selected “Restricted Access” then follow the below schema:
 Please adjust only “Marketing” so it’s 100% highlighted with blue as in the below screenshot
-
 
 ![choose access rights ](./Sendgrid-5.jpg?format=webp;jpg;avif&srcset)
 
@@ -70,9 +69,8 @@ Hit the “Sendgrid” button
 
 Before choosing the lists, please pay attention to “Only new contacts”
 
-  - For those who left the checkbox active - Mailcheck will be validating only NEW contacts, if it’s your first session, then nothing to worry about, it will validate all contacts. However. In case the new contacts were added right after the previous session and you still remain the checkbox “Only new contacts ”active” in this case the new emails will be checked ONLY
-  - For those who left the checkbox inactive - and it’s your very first session, nothing will happen, however, in case it’s your repeated session, unticked checkbox means your new contacts + previously validated one will be processed
-
+- For those who left the checkbox active - Mailcheck will be validating only NEW contacts, if it’s your first session, then nothing to worry about, it will validate all contacts. However. In case the new contacts were added right after the previous session and you still remain the checkbox “Only new contacts ”active” in this case the new emails will be checked ONLY
+- For those who left the checkbox inactive - and it’s your very first session, nothing will happen, however, in case it’s your repeated session, unticked checkbox means your new contacts + previously validated one will be processed
 
 ![choosing validation option](./Sendgrid-10.jpg?format=webp;jpg;avif&srcset)
 
@@ -109,18 +107,21 @@ The above screenshot shows the existing list with segments to trigger it, you ha
 ![create list segments](./Sendgrid-14-2.jpg?format=webp;jpg;avif&srcset)
 
 ### Step 15
+
 Name your
 
 ### Step 16
+
 Select which contact you would like to segment
 
 ### Step 17
-Here you must choose “Mailcheck status” OR “Mailcheck Score” I usually use both “Valid” AND “Risky” emails so I’ll add *Mailcheck Score
+
+Here you must choose “Mailcheck status” OR “Mailcheck Score” I usually use both “Valid” AND “Risky” emails so I’ll add \*Mailcheck Score
 
 ![choose targeting](./Sendgrid-17.jpg?format=webp;jpg;avif&srcset)
 
 ### Step 18
-Save segment and use the list for emailing/automation
 
+Save segment and use the list for emailing/automation
 
 Thank you!
