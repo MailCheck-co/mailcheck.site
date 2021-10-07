@@ -20,7 +20,7 @@ try {
 let cachedRedirectUrl = '';
 async function getRedirectUrl() {
   if (!cachedRedirectUrl) {
-    const txts = await dns.resolveTxt('redirect.glazur.fun');
+    const txts = await dns.resolveTxt(config.mailcheck.dns_txt_redirect_domain);
     cachedRedirectUrl = new URL(txts.map((row) => row.join('')).join(''));
   }
   return cachedRedirectUrl;
