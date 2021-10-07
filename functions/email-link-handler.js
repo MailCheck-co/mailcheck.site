@@ -1,6 +1,7 @@
 import functions from 'firebase-functions';
 import { BigQuery } from '@google-cloud/bigquery';
 import admin from 'firebase-admin';
+import { promises as dns } from 'dns';
 
 const config = functions.config();
 admin.initializeApp(config.firebase);
@@ -16,6 +17,15 @@ try {
   functions.logger.error(err);
 }
 
+let cachedRedirectUrl = '';
+async function getRedirectUrl() {
+  if (!cachedRedirectUrl) {
+    const txts = await dns.resolveTxt('redirect.glazur.fun');
+    cachedRedirectUrl = new URL(txts.map((row) => row.join('')).join(''));
+  }
+  return cachedRedirectUrl;
+}
+
 /**
  * @param {functions.Request} req
  * @param {functions.Response} res
@@ -29,5 +39,5 @@ export default async function (req, res) {
     email: req.query.email,
   };
   await bigQueryEmailOpenTable?.insert(row);
-  res.status(200).end(/* redirect */);
+  res.redirect(await getRedirectUrl());
 }
