@@ -4,11 +4,11 @@ import { BigQuery } from "@google-cloud/bigquery";
 
 const config = functions.config();
 admin.initializeApp(config.firebase);
-const bigquery = new BigQuery({ projectId: config.bq.postbacks_project_id });
 /** @type {import('@google-cloud/bigquery').Table} */
 let bigQueryTable;
 try {
-  bigQueryTable = bigquery
+  const bigQuery = new BigQuery({ projectId: config.mailcheck.bq_project_id });
+  bigQueryTable = bigQuery
     .dataset(config.bq.postbacks_dataset)
     .table(config.bq.postbacks_table);
 } catch (err) {
