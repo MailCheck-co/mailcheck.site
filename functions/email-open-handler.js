@@ -36,7 +36,7 @@ export default async function (req, res) {
     click_id: req.query.clickid,
     user_agent: req.get('User-Agent'),
     ip: req.get('CF-Connecting-IP'),
-    email: req.query.email,
+    email: req.query.email
   };
   try {
     await bigQueryEmailOpenTable?.insert(row);

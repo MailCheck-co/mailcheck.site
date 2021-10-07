@@ -253,6 +253,7 @@ img {
     bottom: 0;
     left: 50%;
     display: block;
+    width: 0;
     height: var(--size-1);
     background: var(--primary-white);
     transition: 0.3s;
@@ -262,6 +263,7 @@ img {
   &:hover::after {
     right: var(--size-1);
     left: var(--size-1);
+    width: 100%;
   }
 }
 

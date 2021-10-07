@@ -133,7 +133,7 @@
     margin: 0 var(--size-6);
     padding: 0;
     font-size: var(--size-zero);
-    background: var(--primary-white);
+    background: var(--primary-white) !important;
     border: none;
     border-radius: var(--br-rounded);
     opacity: 0.8;
@@ -143,12 +143,17 @@
   :global(.slidy .slidy-dots li.active button) {
     width: var(--size-16);
     height: var(--size-16);
+    background-color: var(--color-important) !important;
     opacity: 1;
   }
 
   @media all and (min-width: 992px) {
     :global(.slidy) {
       height: 25rem;
+    }
+
+    :global(.slidy .slidy-dots) {
+      justify-content: flex-end !important;
     }
 
     :global(.slidy .slidy-ul li) {
