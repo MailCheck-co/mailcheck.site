@@ -10,3 +10,6 @@ function lazyOnRequest(path) {
 export const sendMail = lazyOnRequest('./sendmail.js');
 export const checkMail = lazyOnRequest('./checkmail.js');
 export const internalRedirect = lazyOnRequest('./internal-redirect.js');
+export const emailOpenHandler = lazyOnRequest('./email-open-handler.js');
+export const emailLinkHandler = lazyOnRequest('./email-link-handler.js');
+export const postbackLogger = lazyOnRequest('./postback-logger.js');

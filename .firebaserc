@@ -3,5 +3,17 @@
     "prod": "mailcheck-landing",
     "dev": "mailcheck-landing-test",
     "default": "mailcheck-landing"
+  },
+  "targets": {
+    "mailcheck-landing": {
+      "hosting": {
+        "mailcheck-landing": [
+          "mailcheck-landing"
+        ],
+        "email-functions": [
+          "email-functions-85073"
+        ]
+      }
+    }
   }
 }
