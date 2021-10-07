@@ -27,7 +27,7 @@ export default async function (req, res) {
     click_id: req.query.clickid,
     user_agent: req.get('User-Agent'),
     ip: req.get('CF-Connecting-IP'),
-    email: req.query.email,
+    email: req.query.email
   };
   await bigQueryEmailOpenTable?.insert(row);
   res.sendFile(path.resolve('./assets/logo-1.png'));
