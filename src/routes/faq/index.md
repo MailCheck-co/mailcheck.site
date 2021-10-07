@@ -19,6 +19,9 @@ desc: Frequent Questions
 
   let idVideoAdaptData = 'dFcw9wEXsAg';
   let titleVideoAdaptData = 'How to adapt data in Excel?';
+
+  let idVideoSendgridInstructions = 'L2TCGUk0iZ0';
+  let titleVideoSendgridInstructions = 'Mailcheck + SendGrid Integration instructions';
 </script>
 
 <div class="accordion-column left">
@@ -321,5 +324,6 @@ A step-by-step guide to integrate Mailcheck with daily services using [Integroma
 
 A step-by-step guide to integrate Mailcheck with daily services using [Sendgrid](/sendgrid-integration)
 
+<Video id={idVideoSendgridInstructions} title={titleVideoSendgridInstructions} />
 </details>
 </div>
