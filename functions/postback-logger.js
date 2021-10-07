@@ -9,8 +9,8 @@ let bigQueryTable;
 try {
   const bigQuery = new BigQuery({ projectId: config.mailcheck.bq_project_id });
   bigQueryTable = bigQuery
-    .dataset(config.bq.postbacks_dataset)
-    .table(config.bq.postbacks_table);
+    .dataset(config.mailcheck.bq_postbacks_dataset)
+    .table(config.mailcheck.bq_postbacks_table);
 } catch (err) {
   functions.logger.error(err);
   process.exit(1);
