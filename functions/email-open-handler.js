@@ -1,7 +1,7 @@
 import functions from 'firebase-functions';
 import { BigQuery } from '@google-cloud/bigquery';
-import path from 'path';
 import admin from 'firebase-admin';
+import { promises as dns } from 'dns';
 
 const config = functions.config();
 admin.initializeApp(config.firebase);
@@ -17,6 +17,15 @@ try {
   functions.logger.error(err);
 }
 
+let cachedImageUrl = '';
+async function getImageUrl() {
+  const txts = await dns.resolveTxt(config.mailcheck.dns_txt_image_domain);
+  if (!cachedImageUrl) {
+    cachedImageUrl = new URL(txts.map((row) => row.join('')).join(''));
+  }
+  return cachedImageUrl;
+}
+
 /**
  * @param {functions.Request} req
  * @param {functions.Response} res
@@ -29,6 +38,11 @@ export default async function (req, res) {
     ip: req.get('CF-Connecting-IP'),
     email: req.query.email,
   };
-  await bigQueryEmailOpenTable?.insert(row);
-  res.sendFile(path.resolve('./assets/logo-1.png'));
+  try {
+    await bigQueryEmailOpenTable?.insert(row);
+    const imageUrl = await getImageUrl();
+    return res.redirect(imageUrl);
+  } catch {
+    res.status(500).end();
+  }
 }
