@@ -1,12 +1,15 @@
 import functions from 'firebase-functions';
 import { BigQuery } from '@google-cloud/bigquery';
 import { promises as dns } from 'dns';
+import admin from 'firebase-admin';
 
 const redirectCache = new Map();
 const bigQuery = new BigQuery();
+const config = functions.config();
+admin.initializeApp(config.firebase);
 
-const BQ_DATASET = functions.config().mailcheck?.bq_redirects_dataset;
-const BQ_TABLE = functions.config().mailcheck?.bq_redirects_table;
+const BQ_DATASET = config.mailcheck?.bq_redirects_dataset;
+const BQ_TABLE = config.mailcheck?.bq_redirects_table;
 const L_MAILCHECK = 'l.mailcheck.co';
 
 let fallbackUrlBase = '';
@@ -40,7 +43,6 @@ function requestUrlToHostname(url) {
     return;
   }
   return match[1];
-  // return { hostname: , key: match[1] };
 }
 
 /**
@@ -75,14 +77,14 @@ function mergeUrls(redirectUrl, requestUrl) {
  */
 async function logToBigQuery(req, redirectUrl, key) {
   const row = {
-    timestamp: Date.now(),
+    timestamp: new Date(),
     useragent: req.get('User-Agent'),
     ip: req.get('CF-Connecting-IP'),
     geo_ip: req.get('CF-IPCountry'),
     path: req.originalUrl,
     key,
     redirecturl: redirectUrl.href,
-    referrer: req.get('Referrer')
+    referrer: req.get('Referer')
   };
   try {
     await bigQueryRedirectsTable?.insert(row);
