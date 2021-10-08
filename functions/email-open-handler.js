@@ -7,6 +7,7 @@ const config = functions.config();
 admin.initializeApp(config.firebase);
 const BQ_DATASET = config.mailcheck?.bq_mail_open_dataset;
 const BQ_TABLE = config.mailcheck?.bq_mail_open_table;
+const dnsCache = new Map();
 
 /** @type {import('@google-cloud/bigquery').Table} */
 let bigQueryEmailOpenTable;
@@ -17,13 +18,19 @@ try {
   functions.logger.error(err);
 }
 
-let cachedImageUrl = '';
-async function getImageUrl() {
-  const txts = await dns.resolveTxt(config.mailcheck.dns_txt_image_domain);
-  if (!cachedImageUrl) {
-    cachedImageUrl = new URL(txts.map((row) => row.join('')).join(''));
+/**
+ * @param {string} subdomain
+ * @return {Promise<URL>}
+ */
+async function getImageUrl(subdomain) {
+  const fullDomain = `${subdomain}.${config.mailcheck.dns_txt_image_domain}`;
+  let cachedUrl = dnsCache.get(fullDomain);
+  if (!cachedUrl) {
+    const txts = await dns.resolveTxt(fullDomain);
+    cachedUrl = new URL(txts.map((row) => row.join('')).join(''));
+    dnsCache.set(fullDomain, cachedUrl);
   }
-  return cachedImageUrl;
+  return cachedUrl;
 }
 
 /**
@@ -31,6 +38,7 @@ async function getImageUrl() {
  * @param {functions.Response} res
  */
 export default async function (req, res) {
+  const imageSubdomain = req.query.image ?? '*';
   const row = {
     timestamp: new Date(),
     click_id: req.query.clickid,
@@ -38,11 +46,17 @@ export default async function (req, res) {
     ip: req.get('CF-Connecting-IP'),
     email: req.query.email
   };
+  let imageUrl;
+  try {
+    imageUrl = await getImageUrl(imageSubdomain);
+  } catch {
+    return res.status(400).end();
+  }
   try {
     await bigQueryEmailOpenTable?.insert(row);
-    const imageUrl = await getImageUrl();
     return res.redirect(imageUrl);
-  } catch {
+  } catch (err) {
+    functions.logger.error(err);
     res.status(500).end();
   }
 }
