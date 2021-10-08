@@ -43,7 +43,7 @@ export default async function (req, res) {
     timestamp: new Date(),
     click_id: req.query.click_id,
     user_agent: req.get('User-Agent'),
-    ip: req.get('CF-Connecting-IP'),
+    ip: req.get('fastly-client-ip'),
     email: req.query.email
   };
   let redirectUrl;
