@@ -108,7 +108,7 @@ The above screenshot shows the existing list with segments to trigger it, you ha
 
 ### Step 15
 
-Name your
+Name your segment
 
 ### Step 16
 
