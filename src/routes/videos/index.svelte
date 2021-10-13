@@ -40,7 +40,7 @@
         </div>
         <div class="description">
           <h2>{video.title}</h2>
-          <p>{video.desc}</p>
+          <p class="description-subtitle">{video.desc}</p>
           <div class="author">
             <div class="avatar">
               <img width="46" height="46" srcset={FaraAva} alt="Fara Muhammadiev" />
@@ -105,13 +105,16 @@
           p {
             @extend %text;
 
-            min-height: var(--size-32);
             font-weight: var(--weight-400);
             font-size: var(--size-14);
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+
+            &.description-subtitle {
+              min-height: var(--size-32);
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
           }
 
           .author {
