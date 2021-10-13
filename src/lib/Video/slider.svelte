@@ -66,6 +66,7 @@
 <style lang="scss">
   :global(.slidy) {
     height: 100%;
+    flex-direction: column;
   }
 
   :global(.slidy .slidy-ul) {
@@ -117,7 +118,6 @@
   }
 
   :global(.slidy .slidy-dots) {
-    bottom: 0;
     z-index: 2;
     height: var(--size-16);
   }
@@ -153,7 +153,7 @@
     }
 
     :global(.slidy .slidy-dots) {
-      justify-content: flex-end !important;
+      position: static !important;
     }
 
     :global(.slidy .slidy-ul li) {

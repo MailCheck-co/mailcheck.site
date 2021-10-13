@@ -16,6 +16,7 @@
   import Video from '$lib/Video/video.svelte';
   import Slider from '$lib/Video/slider.svelte';
   import FaraAva from '$lib/Video/assets/fara.png?w=46&format=webp;png;avif&srcset';
+  import FaraAvaDefault from '$lib/Video/assets/fara.png';
 
   interface IVideo {
     id: string;
@@ -40,10 +41,10 @@
         </div>
         <div class="description">
           <h2>{video.title}</h2>
-          <p>{video.desc}</p>
+          <p class="description-subtitle">{video.desc}</p>
           <div class="author">
             <div class="avatar">
-              <img width="46" height="46" srcset={FaraAva} alt="Fara Muhammadiev" />
+              <img width="46" height="46" srcset={FaraAva} src={FaraAvaDefault} alt="Fara Muhammadiev" />
             </div>
             <div class="about">
               <h3 class="name">Fara Muhammadiev</h3>
@@ -107,6 +108,14 @@
 
             font-weight: var(--weight-400);
             font-size: var(--size-14);
+
+            &.description-subtitle {
+              min-height: var(--size-32);
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
           }
 
           .author {
