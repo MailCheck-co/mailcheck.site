@@ -120,11 +120,13 @@
     bottom: 0;
     z-index: 2;
     height: var(--size-16);
+    pointer-events: none;
   }
 
   :global(.slidy .slidy-dots li) {
     width: auto;
     height: auto;
+    pointer-events: auto;
   }
 
   :global(.slidy .slidy-dots li button) {

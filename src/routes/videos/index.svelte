@@ -105,8 +105,13 @@
           p {
             @extend %text;
 
+            min-height: var(--size-32);
             font-weight: var(--weight-400);
             font-size: var(--size-14);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
           }
 
           .author {
