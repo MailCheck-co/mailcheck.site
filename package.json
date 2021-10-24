@@ -60,7 +60,7 @@
     "@fontsource/fira-mono": "^4.2.2",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
-    "just-camel-case": "^4.0.2",
+    "just-camel-case": "^5.0.0",
     "schema-dts": "^1.0.0",
     "svelte-inview": "^2.0.2",
     "svelte-slidy": "^2.7.1",
