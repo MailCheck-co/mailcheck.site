@@ -29,7 +29,7 @@
     "@types/cookie": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.4.0",
     "cssnano": "^5.0.8",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.1.0",
