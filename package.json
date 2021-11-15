@@ -62,7 +62,7 @@
     "cookie": "^0.4.1",
     "just-camel-case": "^6.0.0",
     "schema-dts": "^1.0.0",
-    "svelte-inview": "^2.0.3",
+    "svelte-inview": "^2.1.0",
     "svelte-slidy": "^2.7.1",
     "unist-util-visit": "^4.1.0"
   },
