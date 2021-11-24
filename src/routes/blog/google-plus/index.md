@@ -58,4 +58,4 @@ Beside Google +, partial shut down of various APIs is performed. For instance, y
 
 In fact, this gives us a reason to think that Google has become entangled in the system of interaction between services since the actions that previously could be performed simply by obtaining the required scope, now require manual validation for 15–75k USD and manual inclusion in whitelist. It remains only to guess what else you can do using undocumented features of the Google's rich ecosystem of the services and the SSO service in particular.
 
-In order to [qualitatively validate mailing lists](https://www.mailcheck.co/), we will need to look for new non-standard ways of public APIs usage, so we will continue to explore the Google \\ Facebook API and other services. (By the way, Facebook until recently had a similar way of email validation.)
+In order to [qualitatively validate mailing lists](/), we will need to look for new non-standard ways of public APIs usage, so we will continue to explore the Google \\ Facebook API and other services. (By the way, Facebook until recently had a similar way of email validation.)
