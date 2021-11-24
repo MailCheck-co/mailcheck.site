@@ -20,9 +20,9 @@ Beginning May 01, 2019, we are announcing a scholarship program for 2019 year. W
 
 Mailcheck is the [new era of email verification](https://www.mailcheck.co). We are a team that validates emails and phones using social networks for the past 3 years. Our team consists of impressively skilled engineers and experienced software developers who are able to work with numerous algorithms. Our service will be useful to those who are working every day to increase conversion in email mailings and who can not overcome the bounce system of mail servers. We will also be useful to those who want to know who is behind that email or phone in order to save time.
 
-Certainly, love for what we do has made it possible to create such a diverse range of email verification services. The most requested ones are an [agency subscription](https://www.mailcheck.co/#pricing) which includes 5000 emails, with an average charge of $0.004 per email.
+Certainly, love for what we do has made it possible to create such a diverse range of email verification services. The most requested ones are an [agency subscription](/#pricing) which includes 5000 emails, with an average charge of $0.004 per email.
 
-As the number of emails increase, price per email can go down, for example, [“Enterprise” subscription.](https://www.mailcheck.co/#pricing)
+As the number of emails increase, price per email can go down, for example, [“Enterprise” subscription.](/#pricing)
 
 The main difference from our competitors is that we do not use an automatic search and validation only, but also a manual moderation filtered materials. So we use all the power of social networks and search engines, for more in-depth validation.
 
