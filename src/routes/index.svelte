@@ -22,6 +22,7 @@
   import Choose from '$lib/Choose/index.svelte';
   import Pricing from '$lib/Pricing/index.svelte';
   import Reviews from '$lib/Reviews/index.svelte';
+  import Integrations from '$lib/Integrations/index.svelte';
   import Team from '$lib/Team/index.svelte';
   import Testimonials from '$lib/Testimonials/index.svelte';
   import Faq from '$lib/Faq/index.svelte';
@@ -60,6 +61,9 @@
 
   <!-- SECTION REVIEWS -->
   <Reviews />
+
+  <!-- SECTION INTEGRATIONS -->
+  <Integrations />
 
   <!-- SECTION TEAM -->
   <Team />
