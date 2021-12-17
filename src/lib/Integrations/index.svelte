@@ -20,28 +20,28 @@
     intersecting = inView;
   }}>
   <div class="section-heading sm-left">
-    <h2 class="title">Software Partners</h2>
+    <h2 class="title">Integrations</h2>
     <p class="section-title-lg">Integrations</p>
   </div>
   <div class="container">
     <div class="integrations-list">
-      <div class="integrations-list-item">
-        <img width="150" height="60" src={integromat} alt="5000 miles" class="integrations-logo"/>
+      <div class="integrations-list-item" data-item-title="Mailchimp">
+        <img width="50" height="50" src={mailchimp} alt="Mailchimp" class="integrations-logo" />
       </div>
-      <div class="integrations-list-item">
-        <img width="150" height="60" src={mailchimp} alt="Bagllet" class="integrations-logo"/>
+      <div class="integrations-list-item" data-item-title="Zapier">
+        <img width="50" height="50" src={zapier} alt="Zapier" class="integrations-logo" />
       </div>
-      <div class="integrations-list-item">
-        <img width="150" height="19" src={n8n} alt="Acell Mail" class="integrations-logo"/>
+      <div class="integrations-list-item" data-item-title="WordPress">
+        <img width="50" height="50" src={WP} alt="WordPress" class="integrations-logo" />
       </div>
-      <div class="integrations-list-item">
-        <img width="150" height="60" src={sendgrid} alt="Sammy-logo" class="integrations-logo"/>
+      <div class="integrations-list-item" data-item-title="Integromat">
+        <img width="50" height="50" src={integromat} alt="Integromat" class="integrations-logo" />
       </div>
-      <div class="integrations-list-item">
-        <img width="150" height="60" src={WP} alt="Zitkani" class="integrations-logo"/>
+      <div class="integrations-list-item" data-item-title="Sendgrid">
+        <img width="50" height="50" src={sendgrid} alt="Sendgrid" class="integrations-logo" />
       </div>
-      <div class="integrations-list-item">
-        <img width="150" height="60" src={zapier} alt="ECHO" class="integrations-logo"/>
+      <div class="integrations-list-item" data-item-title="N8N">
+        <img width="50" height="50" src={n8n} alt="N8N" class="integrations-logo" />
       </div>
     </div>
   </div>
@@ -60,21 +60,58 @@
     flex-flow: row wrap;
     align-items: stretch;
     justify-content: center;
-    gap: var(--size-20);
+    gap: var(--size-40);
   }
 
   .integrations-list-item {
-    padding: var(--size-10);
-    text-align: center;
+    position: relative;
+    max-width: 50px;
+    max-height: 50px;
+    padding: var(--size-30);
     display: flex;
-    flex: 1 0 auto;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--background-without-opacity);
-    border-radius: var(--br-10);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid var(--primary-white);
+    box-shadow: var(--color-shadow);
+    backdrop-filter: blur(10px);
+    border-radius: var(--size-30);
 
-    & > img {
-      max-height: var(--size-60);
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -200%);
+      background-color: var(--primary-accent);
+      border-radius: var(--br-rounded);
+      opacity: 0;
+      transition: var(--transition-default);
+    }
+
+    &::before {
+      content: attr(data-item-title);
+      display: block;
+      min-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      color: var(--primary-white);
+      opacity: 0;
+      transition: var(--transition-default);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:hover::before {
+      transform: translateY(-150%);
     }
   }
 </style>
