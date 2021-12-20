@@ -49,6 +49,12 @@ export default async function (req, res) {
   let redirectUrl;
   try {
     redirectUrl = await getRedirectUrl(redirectSubdomain);
+    redirectUrl = Object.entries(req.query)
+      .reduce(
+        (acc, val)=>
+          acc.replace(`<${val[0]}>`,val[1]),
+        decodeURI(redirectUrl.toString())
+      )
   } catch {
     return res.status(400).end();
   }
