@@ -47,7 +47,7 @@
     "sass": "^1.45.0",
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
-    "svelte": "^3.44.2",
+    "svelte": "^3.44.3",
     "svelte-check": "^2.2.10",
     "svelte-preprocess": "^4.10.1",
     "tslib": "^2.3.1",
