@@ -14,10 +14,6 @@ const config = {
     mdsvex(mdsvexConfig),
     preprocess({
       postcss: true,
-      defaults: {
-        style: 'scss',
-        script: 'typescript'
-      },
       scss: {
         prependData: `@import "src/mixins.scss";`
       }
