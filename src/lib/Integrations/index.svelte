@@ -7,6 +7,9 @@
   import sendgrid from '$lib/Integrations/sendgrid.svg';
   import WP from '$lib/Integrations/WordPress_logo.svg';
   import zapier from '$lib/Integrations/zapier-official.svg';
+  import mailerlite from '$lib/Integrations/mailer-lite.svg';
+  import woodpecker from '$lib/Integrations/woodpecker.svg';
+  import activecampaign from '$lib/Integrations/active-campaign-logo.svg';
 
   let intersecting: boolean;
 </script>
@@ -42,6 +45,20 @@
       </div>
       <div class="integrations-list-item" data-item-title="N8N">
         <img width="50" height="50" src={n8n} alt="N8N" class="integrations-logo" />
+      </div>
+      <div class="integrations-list-item" data-item-title="Mailerlite">
+        <img width="50" height="50" src={mailerlite} alt="Mailerlite" class="integrations-logo" />
+      </div>
+      <div class="integrations-list-item" data-item-title="Woodpecker">
+        <img width="50" height="50" src={woodpecker} alt="Woodpecker" class="integrations-logo" />
+      </div>
+      <div class="integrations-list-item" data-item-title="ActiveCampaign">
+        <img
+          width="50"
+          height="50"
+          src={activecampaign}
+          alt="Active Campaign"
+          class="integrations-logo" />
       </div>
     </div>
   </div>
