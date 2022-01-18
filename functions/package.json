@@ -17,7 +17,7 @@
     "@google-cloud/bigquery": "^5.10.0",
     "firebase-admin": "^10.0.1",
     "firebase-functions": "^3.16.0",
-    "firebase-tools": "^10.0.1",
+    "firebase-tools": "^10.1.0",
     "node-fetch": "^3.1.1",
     "nodemailer": "^6.7.2"
   },
