@@ -60,7 +60,7 @@
     "@fontsource/fira-mono": "^4.2.2",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
-    "firebase-tools": "^10.1.1",
+    "firebase-tools": "^10.1.2",
     "just-camel-case": "^6.0.1",
     "schema-dts": "^1.0.0",
     "svelte-inview": "^2.1.1",
