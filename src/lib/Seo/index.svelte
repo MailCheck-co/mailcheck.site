@@ -19,7 +19,9 @@
 
 <svelte:head>
   <title>{siteName} | {title}</title>
-  <link rel="canonical" href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')} />
+  <link
+    rel="canonical"
+    href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')} />
   <meta name="description" content={desc || defaultDesc} />
   <meta name="robots" content={noindex ? 'noindex' : 'all'} />
   <!-- Open Graph / Facebook -->
