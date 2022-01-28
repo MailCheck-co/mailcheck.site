@@ -18,8 +18,8 @@
     "deploy:prod": "firebase deploy --project=prod",
     "deploy_functions:prod": "firebase deploy --only functions --project=prod",
     "optimize-svg": "find ./src ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo",
-    "static:404:cp": "cp build/error/index.html build/404.html",
-    "static:404:rmdir": "rimraf - build/error"
+    "static:404:cp": "cp build/404/index.html build/404.html",
+    "static:404:rmdir": "rimraf - build/404"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",

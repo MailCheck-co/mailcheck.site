@@ -1,14 +1,27 @@
+<script context="module">
+  /** @type {import('@sveltejs/kit').ErrorLoad} */
+  export function load({ error, status }) {
+    return {
+      props: {
+        status,
+        error
+      }
+    };
+  }
+  export const prerender = false;
+</script>
+
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema } from '$utils/json-ld';
 
-  export let status: number;
-  export let error: Error;
+  export let status;
+  export let error;
 
   const dev = process.env.NODE_ENV === 'development';
 </script>
 
-<Seo title={`${status}`} noindex={true} desc={`Error: ${status}`} schemas={[websiteSchema]} />
+<Seo title={`${status}`} noindex={true} desc={`Error: ${status}`} schemas={[websiteSchema]} canonical="/" />
 <svelte:head>
   <meta http-equiv="refresh" content="5;https://mailcheck.co/" />
 </svelte:head>

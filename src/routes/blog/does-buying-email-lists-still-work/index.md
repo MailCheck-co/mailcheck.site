@@ -16,7 +16,7 @@ An email list is a list of subscribers, who may or may not opted-in to receive e
 
 The first thing email marketers will hear from list providers is that email lists could save them time growing their email database. Technically, that is correct. However, there is no such thing as a free lunch. Buying email lists does have hidden drawbacks. Read on if you want to know what they are.
 
-![AppInstitute](./appInstitute.jpg?format=webp;jpg;avif&srcset)
+![AppInstitute](./app-institute.jpg?format=webp;jpg;avif&srcset)
 
 Source: AppInstitute
 

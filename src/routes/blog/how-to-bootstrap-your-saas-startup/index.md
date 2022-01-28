@@ -28,7 +28,7 @@ product. In the article below we will have a closer look at what exactly constit
 - Define how you will market your SaaS product
 - Select the right development team
 
-![Successful SaaS Startup Components](./successfulSaaSStartupComponents.jpg?format=webp;jpg;avif&srcset)
+![Successful SaaS Startup Components](./successful-saas-startup-components.jpg?format=webp;jpg;avif&srcset)
 
 ### Analyze your idea
 
@@ -72,7 +72,7 @@ piggyback on Google’s data.
 
 While the SaaS product development steps discussed above involve a lot of thinking and analyzes, the design and development of the actual product or at least its prototype is the task that requires the application of hand and brain labor. It is not necessary for you as the CEO of your business to also be a CTO of your product. Outsourcing the technical part of the product development is what most SaaS startups would resort to these days, and so can you. The question then is “Where to get a good development team to bring my idea into life?”
 
-![Right Development Team](./rightDevelopmentTeam.jpg?format=webp;jpg;avif&srcset)
+![Right Development Team](./right-development-team.jpg?format=webp;jpg;avif&srcset)
 Source: Medium
 
 A typical development team usually consists of a project manager, business analyst, front-end and back-end developers,
