@@ -64,7 +64,7 @@
     "just-camel-case": "^6.0.1",
     "schema-dts": "^1.0.0",
     "svelte-inview": "^2.1.1",
-    "svelte-slidy": "^2.8.2",
+    "svelte-slidy": "^2.8.7",
     "unist-util-visit": "^4.1.0"
   },
   "stylelint": {
