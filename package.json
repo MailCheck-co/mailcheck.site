@@ -59,7 +59,7 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.1",
     "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1",
+    "cookie": "^0.4.2",
     "firebase-tools": "^10.1.4",
     "just-camel-case": "^6.0.1",
     "schema-dts": "^1.0.0",
