@@ -57,7 +57,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/fira-mono": "^4.5.1",
+    "@fontsource/fira-mono": "^4.5.2",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.2",
     "firebase-tools": "^10.1.4",
