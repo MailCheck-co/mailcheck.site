@@ -44,7 +44,8 @@ export default async function (req, res) {
     click_id: req.query.clickid,
     user_agent: req.get('User-Agent'),
     ip: req.get('fastly-client-ip'),
-    email: req.query.email
+    email: req.query.email,
+    campaign: req.query.campaign,
   };
   let imageUrl;
   try {

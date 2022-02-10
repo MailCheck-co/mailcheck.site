@@ -47,6 +47,7 @@ export default async function (req, res) {
     email: req.query.email,
     redirect: req.query.redirect,
     place_click: req.query.place_click,
+    campaign: req.query.campaign,
   };
   let redirectUrl;
   try {
