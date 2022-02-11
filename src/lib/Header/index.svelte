@@ -14,7 +14,7 @@
       <img src={logo} width="138" height="26" alt="mailcheck logo" />
     </a>
     <div class="header-navigation">
-      <nav class="header-nav" role="navigation">
+      <nav class="header-nav">
         <a class="nav-link" title="features" href="/#features">Features</a>
         <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
@@ -49,7 +49,6 @@
   class="mobile-menu"
   class:open
   on:click={() => (open = !open)}
-  role="navigation"
   id="mobile-menu">
   <a class="nav-link mobile-menu-links" title="features" href="/#features">Features</a>
   <a class="nav-link mobile-menu-links" title="pricing" href="/#pricing">Pricing</a>

@@ -37,7 +37,7 @@
           >For affiliates</a>
       </div>
 
-      <nav class="footer-nav" role="navigation">
+      <nav class="footer-nav">
         <a class="nav-link footer-nav-link" title="features" href="/#features">Features</a>
         <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link footer-nav-link" title="contact us" href="/#contact-us">Contact Us</a>
