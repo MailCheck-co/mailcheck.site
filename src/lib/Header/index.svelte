@@ -8,7 +8,7 @@
 
 <ToTop />
 
-<header role="banner">
+<header>
   <div class="wrapper-header">
     <a class="logo" href="/" title="logo">
       <img src={logo} width="138" height="26" alt="mailcheck logo" />

@@ -43,7 +43,7 @@
 
 <Seo title="Home" schemas={[websiteSchema, organizationSchema]} />
 
-<main class="manage-customers" role="main" id="main">
+<main class="manage-customers" id="main">
   <!-- EMAILS VERIFY -->
   <EmailsVerify />
 
