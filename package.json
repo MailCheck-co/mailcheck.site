@@ -4,7 +4,7 @@
   "description": "An application to clean your subscription list from bounces, and enrich data about customers.",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build && npm run static:404:cp && npm run static:404:rmdir",
+    "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -17,9 +17,7 @@
     "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
     "deploy:prod": "firebase deploy --project=prod",
     "deploy_functions:prod": "firebase deploy --only functions --project=prod",
-    "optimize-svg": "find ./src ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo",
-    "static:404:cp": "cp build/404/index.html build/404.html",
-    "static:404:rmdir": "rimraf - build/404"
+    "optimize-svg": "find ./src ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",

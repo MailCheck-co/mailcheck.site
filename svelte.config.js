@@ -26,6 +26,7 @@ const config = {
       assets: 'build',
       fallback: null
     }),
+    trailingSlash: 'never',
     vite: {
       resolve: {
         alias: {
