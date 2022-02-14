@@ -16,7 +16,7 @@
   "dependencies": {
     "@google-cloud/bigquery": "^5.10.0",
     "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.17.2",
+    "firebase-functions": "^3.18.0",
     "firebase-tools": "^10.2.0",
     "node-fetch": "^3.2.0",
     "nodemailer": "^6.7.2"
