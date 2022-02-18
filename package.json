@@ -42,7 +42,7 @@
     "rehype-slug": "^5.0.1",
     "remark-abbr": "^1.4.1",
     "remark-github": "^11.2.2",
-    "sass": "^1.49.7",
+    "sass": "^1.49.8",
     "stylelint": "^14.5.1",
     "stylelint-config-prettier": "^9.0.3",
     "svelte": "^3.46.4",
