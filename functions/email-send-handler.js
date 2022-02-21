@@ -12,6 +12,7 @@ let bigQueryEmailSendTable;
 try {
   const bigQuery = new BigQuery({ projectId: config.mailcheck.bq_project_id });
   bigQueryEmailSendTable = bigQuery.dataset(BQ_DATASET).table(BQ_TABLE);
+  functions.logger.info('Connected to BQ');
 } catch (err) {
   functions.logger.error(err);
 }
@@ -22,11 +23,11 @@ try {
  */
 export default async function (req, res) {
   const row = {
-    timestamp: req.body.timestamp || new Date(),
-    click_id: req.body.clickid || '',
-    email: req.body.email,
-    template: req.body.template,
+    timestamp: new Date(),
     receiver: req.body.subject,
+    click_id: Number(req.body.clickid) || null,
+    template: req.body.template,
+    email: req.body.email,
     status: req.body.status
   };
 
@@ -35,6 +36,7 @@ export default async function (req, res) {
     return res.sendStatus(200);
   } catch (err) {
     functions.logger.error(err);
+    functions.logger.error(err.errors[0]);
     res.sendStatus(500);
   }
 }
