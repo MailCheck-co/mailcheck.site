@@ -14,7 +14,7 @@ desc: It’s true - about 43% of the 1006 participants in a Yes Marketing study 
 
 It’s true: about 43% of the 1006 participants in a Yes Marketing study chose email as a preferred channel for communication with brands. No doubt that social media, videos, text messages are also essential marketing mediums, but email is the dominant one, with the best results. How can you leverage that? Let’s take a closer look at the statistics and then we’ll shore some interesting writing tips.
 
-![subscribers](./subscribers.png?format=webp;jpg;avif&srcset)
+![subscribers](./subscribers.jpeg?format=webp;jpg;avif&srcset)
 
 ## Write them, because they love it
 If you were not sure about starting a drip campaign, an email list or writing the people, who’ve already joined it, we know how to change your mind. Just read this article!
