@@ -16,7 +16,7 @@ Nowadays all industries are ever-changing and it is very important to stay up-to
 
 Don’t think that it’s obligatory to follow all the modern trends and forget about your individuality. It’s important to find your own face, your own voice, practices that work for you. Considering them, you’ll succeed, and we are here to inspire you!
 
-![get-ideas-for-email](./get-ideas-for-email.png?format=webp;jpg;avif&srcset)
+![get-ideas-for-email](./get-ideas-for-email.svg)
 
 ## Grow your list with a lead magnet
 Lead magnets are often considered to be outdated, but this opinion can be confusing. Almost all websites you visit offer an incentive in exchange for your email address. Have you signed up, and if yes, how often? We probably do it in 40% of cases, because they’re always something interesting, and they know how to catch our attention. Especially if their cheat sheet or a live webinar are about drip campaign.
