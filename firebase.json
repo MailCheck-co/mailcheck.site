@@ -53,6 +53,10 @@
           "function": "emailLinkHandler"
         },
         {
+          "source": "/handle-send-email",
+          "function": "emailSendHandler"
+        },
+        {
           "source": "/postback",
           "function": "postbackLogger"
         }

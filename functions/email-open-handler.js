@@ -41,11 +41,11 @@ export default async function (req, res) {
   const imageSubdomain = req.query.image ?? '*';
   const row = {
     timestamp: new Date(),
-    click_id: req.query.clickid,
+    click_id: req.query.click_id,
     user_agent: req.get('User-Agent'),
     ip: req.get('fastly-client-ip'),
     email: req.query.email,
-    campaign: req.query.campaign,
+    campaign: req.query.campaign
   };
   let imageUrl;
   try {
