@@ -41,23 +41,21 @@ export default async function (req, res) {
   const redirectSubdomain = req.query.redirect ?? '*';
   const row = {
     timestamp: new Date(),
-    click_id: req.query.click_id,
+    click_id: String(req.query.click_id),
     user_agent: req.get('User-Agent'),
     ip: req.get('fastly-client-ip'),
     email: req.query.email,
     redirect: req.query.redirect,
     place_click: req.query.place_click,
-    campaign: req.query.campaign,
+    campaign: req.query.campaign
   };
   let redirectUrl;
   try {
     redirectUrl = await getRedirectUrl(redirectSubdomain);
-    redirectUrl = Object.entries(req.query)
-      .reduce(
-        (acc, val)=>
-          acc.replace(`<${val[0]}>`,val[1]),
-        decodeURI(redirectUrl.toString())
-      )
+    redirectUrl = Object.entries(req.query).reduce(
+      (acc, val) => acc.replace(`<${val[0]}>`, val[1]),
+      decodeURI(redirectUrl.toString())
+    );
   } catch {
     return res.status(400).end();
   }
