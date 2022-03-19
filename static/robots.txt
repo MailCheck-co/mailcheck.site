@@ -4,4 +4,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.mailcheck.co/sitemap.xml
+Sitemap: https://mailcheck.co/sitemap.xml

@@ -26,7 +26,18 @@ const config = {
       assets: 'build',
       fallback: null
     }),
-    trailingSlash: 'never',
+    prerender: {
+      default: true,
+      onError: ({status, path, referrer, referenceType}) => {
+        if (path.startsWith('/l/')) {
+          return console.warn(
+            `${status} ${path}${referrer ? ` (${referenceType} from ${referrer})` : ''}`
+          );
+        }
+        throw new Error(`${status} ${path}${referrer ? ` (${referenceType} from ${referrer})` : ''}`);
+      }
+    },
+      trailingSlash: 'never',
     vite: {
       resolve: {
         alias: {
