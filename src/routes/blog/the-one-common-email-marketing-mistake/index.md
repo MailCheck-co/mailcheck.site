@@ -26,11 +26,11 @@ The survey tries to understand subscribers behavior, and the facts it reveals ar
 
 First of all, you need to have some people you will write to. Start with a list with your actual audience and grow from there. There a lot of ways how you can find new subscribers: you can offer to sign up for your newsletter on your website, use the CTA button on social media, to import contacts from Linkedin and similar sources.
 
-In no case do not buy an email list, it will harm your reputation and totally doesn’t worth the efforts. Just imagine, a lot of people will receive your emails without any idea who you are. Most likely they will delete them or even put into Spam folder. That’s’ why you need to [verify emails](https://www.mailcheck.co/) addresses and to build your own database with soulmates only.
+In no case do not buy an email list, it will harm your reputation and totally doesn’t worth the efforts. Just imagine, a lot of people will receive your emails without any idea who you are. Most likely they will delete them or even put into Spam folder. That’s’ why you need to [verify emails](/) addresses and to build your own database with soulmates only.
 
 ## The joke without the punch line
 
-How do you think, where does your email marketing strategy begin? Using an [email hygiene services](https://hackmd.io/@E6zgoFvYTZ-F0NXJpIky1A/rJz14ZYfc) is crucial for your letter to reach your repeat customers and prospects in the first place.
+How do you think, where does your email marketing strategy begin? Using an [email hygiene services](/) is crucial for your letter to reach your repeat customers and prospects in the first place.
 
 The next point is your subject line. It is the thing that defines will people open your message or will prefer to ignore it, or even delete. Your content does also matter. Make it customized to your target audience, useful and inspiring. Also, you need to end it with a persuasive, but not intrusive CTA that responds to customer’s desire to buy your offer. As we’ve already told, when people don’t have that opportunity, they get irritated.
 
