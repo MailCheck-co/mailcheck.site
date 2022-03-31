@@ -3,7 +3,7 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export async function load({ fetch }) {
-    const videos = await fetch('videos.json').then((res: Response) => res.json());
+    const videos = await fetch('/videos.json').then((res: Response) => res.json());
     return {
       props: {
         videos
