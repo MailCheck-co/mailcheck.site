@@ -3,7 +3,7 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export async function load({ fetch }) {
-    const list = await fetch('videos.json').then((res: Response) => res.json());
+    const list = await fetch('/videos.json').then((res: Response) => res.json());
     const videos = [list[0], list[1]];
     return {
       props: {
