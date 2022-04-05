@@ -90,7 +90,7 @@
             alt="LinkedIn" />
         </a>
         <a
-          href="/l/youtube"
+          href="/l/yt"
           target="_blank"
           rel="external"
           title="Youtube channel"
