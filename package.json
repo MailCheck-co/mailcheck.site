@@ -58,7 +58,7 @@
     "@fontsource/fira-mono": "^4.5.7",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.2",
-    "firebase-tools": "^10.5.0",
+    "firebase-tools": "^10.6.0",
     "just-camel-case": "^6.0.1",
     "schema-dts": "^1.1.0",
     "svelte-inview": "^3.0.0",
