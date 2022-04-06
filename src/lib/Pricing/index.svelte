@@ -179,12 +179,12 @@
       @media only screen and (max-width: 768px) {
         &::before {
           left: 0;
-          background-image: linear-gradient(90deg, #0a172e, rgba(10, 23, 46, 0));
+          background-image: linear-gradient(90deg, #0a172e, rgb(10 23 46 / 0%));
         }
 
         &::after {
           right: 0;
-          background-image: linear-gradient(-90deg, #0a172e, rgba(10, 23, 46, 0));
+          background-image: linear-gradient(-90deg, #0a172e, rgb(10 23 46 / 0%));
         }
       }
     }
@@ -207,8 +207,7 @@
         @extend %shadows;
 
         display: grid;
-        grid-row-gap: 1rem;
-        grid-column-gap: 1rem;
+        grid-gap: 1rem;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(4, 12.5rem);
         height: 26.25rem;

@@ -65,8 +65,8 @@
 
 <style lang="scss">
   :global(.slidy) {
-    height: 100%;
     flex-direction: column;
+    height: 100%;
   }
 
   :global(.slidy .slidy-ul) {

@@ -1,8 +1,12 @@
 {
+  "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
     "moduleResolution": "node",
     "module": "es2020",
-    "lib": ["es2020"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "target": "es2019",
     /**
 			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript
@@ -23,7 +27,9 @@
     "allowJs": true,
     "checkJs": true,
     "paths": {
+      "$lib": ["src/lib"],
       "$lib/*": ["src/lib/*"],
+      "$utils": ["src/utils"],
       "$utils/*": ["src/utils/*"]
     }
   },

@@ -172,6 +172,7 @@
       justify-content: center;
       padding: var(--size-50) var(--size-20) 0;
     }
+
     .accordion {
       flex-direction: column;
       justify-content: start;
@@ -179,9 +180,11 @@
       margin: 0 0 var(--size-50) 0;
       padding: 0 var(--size-10);
     }
+
     :global(.accordion-column) {
       width: 100%;
     }
+
     .filter-img {
       order: -1;
       width: 50%;
@@ -201,6 +204,7 @@
       transform: translateY(-20px);
       opacity: 0;
     }
+
     100% {
       transform: translateX(0);
       opacity: 1;

@@ -156,6 +156,7 @@
       max-width: 90%;
       margin-left: 0;
     }
+
     li {
       display: flex;
       align-items: center;

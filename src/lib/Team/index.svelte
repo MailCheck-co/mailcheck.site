@@ -141,6 +141,7 @@
         &.csm {
           margin-bottom: 2.2rem;
         }
+
         &.own {
           margin-top: 2.2rem;
         }

@@ -75,51 +75,51 @@
     position: relative;
     display: flex;
     flex-flow: row wrap;
+    gap: var(--size-40);
     align-items: stretch;
     justify-content: center;
-    gap: var(--size-40);
   }
 
   .integrations-list-item {
     position: relative;
-    max-width: 50px;
-    max-height: 50px;
-    padding: var(--size-30);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    max-width: 50px;
+    max-height: 50px;
+    padding: var(--size-30);
+    background: linear-gradient(135deg, rgb(255 255 255 / 10%) 0%, rgb(255 255 255 / 0%) 100%);
     border: 1px solid var(--primary-white);
+    border-radius: var(--size-30);
     box-shadow: var(--color-shadow);
     backdrop-filter: blur(10px);
-    border-radius: var(--size-30);
 
     &::after {
-      content: '';
-      display: inline-block;
-      width: 5px;
-      height: 5px;
       position: absolute;
       bottom: 0;
       left: 50%;
-      transform: translate(-50%, -200%);
+      display: inline-block;
+      width: 5px;
+      height: 5px;
       background-color: var(--primary-accent);
       border-radius: var(--br-rounded);
+      transform: translate(-50%, -200%);
       opacity: 0;
       transition: var(--transition-default);
+      content: '';
     }
 
     &::before {
-      content: attr(data-item-title);
-      display: block;
-      min-width: 100%;
       position: absolute;
       top: 0;
       left: 0;
-      text-align: center;
+      display: block;
+      min-width: 100%;
       color: var(--primary-white);
+      text-align: center;
       opacity: 0;
       transition: var(--transition-default);
+      content: attr(data-item-title);
     }
 
     &:hover::before,
