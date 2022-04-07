@@ -21,8 +21,6 @@
 
   /* Indeterminate */
   .progress:indeterminate {
-    -webkit-mask-image: linear-gradient(var(--transparent) 50%, black 50%),
-      linear-gradient(to right, var(--transparent) 50%, black 50%);
     mask-image: linear-gradient(var(--transparent) 50%, black 50%),
       linear-gradient(to right, var(--transparent) 50%, black 50%);
     animation: pure-material-progress-circular 6s infinite cubic-bezier(0.3, 0.6, 1, 1);
@@ -62,31 +60,39 @@
     0% {
       transform: rotate(0deg);
     }
+
     12.5% {
       transform: rotate(180deg);
       animation-timing-function: linear;
     }
+
     25% {
       transform: rotate(630deg);
     }
+
     37.5% {
       transform: rotate(810deg);
       animation-timing-function: linear;
     }
+
     50% {
       transform: rotate(1260deg);
     }
+
     62.5% {
       transform: rotate(1440deg);
       animation-timing-function: linear;
     }
+
     75% {
       transform: rotate(1890deg);
     }
+
     87.5% {
       transform: rotate(2070deg);
       animation-timing-function: linear;
     }
+
     100% {
       transform: rotate(2520deg);
     }
@@ -96,18 +102,23 @@
     0% {
       transform: rotate(-30deg);
     }
+
     29.4% {
       border-left-color: var(--transparent);
     }
+
     29.41% {
       border-left-color: var(--color-progress);
     }
+
     64.7% {
       border-bottom-color: var(--transparent);
     }
+
     64.71% {
       border-bottom-color: var(--color-progress);
     }
+
     100% {
       border-bottom-color: var(--color-progress);
       border-left-color: var(--color-progress);

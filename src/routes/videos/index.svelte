@@ -110,11 +110,11 @@
             font-size: var(--size-14);
 
             &.description-subtitle {
-              min-height: var(--size-32);
               display: -webkit-box;
+              min-height: var(--size-32);
+              overflow: hidden;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
-              overflow: hidden;
             }
           }
 

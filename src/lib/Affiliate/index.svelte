@@ -162,6 +162,7 @@
         gap: 0;
         text-align: center;
       }
+
       .affil-block-image {
         max-width: 100%;
         margin: 0 auto;

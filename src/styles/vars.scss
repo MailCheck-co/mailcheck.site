@@ -13,17 +13,17 @@
   --letter-spacing-text: 0.05rem;
 
   // colors
-  --transparent: rgba(0, 0, 0, 0);
+  --transparent: rgb(0 0 0 / 0%);
   --primary-color: #b9c6d2;
   --secondary-color: #d0dde9;
   --tertiary-color: #edf0f8;
-  --heading-color: rgba(0, 0, 0, 0.7);
+  --heading-color: rgb(0 0 0 / 70%);
   --text-color: #444;
-  --background-without-opacity: rgba(255, 255, 255, 0.7);
-  --color-pre-bg: rgba(255, 255, 255, 0.45);
+  --background-without-opacity: rgb(255 255 255 / 70%);
+  --color-pre-bg: rgb(255 255 255 / 45%);
   --color-pre-global-bg: #f9f9f9;
   --color-pre-shadow: rgb(255 255 255 / 25%);
-  --color-pre-global-shadow: rgba(0, 0, 0, 0.05);
+  --color-pre-global-shadow: rgb(0 0 0 / 5%);
   --color-progress: #5fcbd2;
   --hopbush: #c69;
   --bouquet: #b37399;
@@ -41,18 +41,18 @@
   --color-primary: var(--hopbush);
   --color-secondary: var(--bouquet);
   --color-accent: var(--patina);
-  --color-shadow: rgba(var(--black), 0.125);
+  --color-shadow: rgb(var(--black) 0.125);
   --color-note: #666;
 
   // Common colors
   --color-background: var(--primary-white);
   --color-background-shade: var(--iron);
   --color-background-invert: var(--hopbush);
-  --color-text: darken(var(--pale-sky), 15);
+  --color-text: hsl(from var(--pale-sky) h s calc(l - 15%));
   --color-text-weak: var(--regent-grey);
   --color-text-strong: var(--midnight-blue);
   --color-text-heading: var(--regent-grey);
-  --color-text-invert: rgba(255, 255, 255, 0.75);
+  --color-text-invert: rgb(255 255 255 / 75%);
   --color-text-strong-invert: var(--color-background);
 
   // Links
@@ -76,28 +76,28 @@
   --color-important: #d00;
   --color-notice: #66b;
 
-  // Mailcheck Landing colors
+  // MailCheck Landing colors
   --primary-accent: #1bced4;
-  --dark-01: rgba(255, 255, 255, 0.1);
-  --dark-02: rgba(255, 255, 255, 0.2);
-  --dark-04: rgba(255, 255, 255, 0.4);
-  --dark-05: rgba(255, 255, 255, 0.5);
+  --dark-01: rgb(255 255 255 / 10%);
+  --dark-02: rgb(255 255 255 / 20%);
+  --dark-04: rgb(255 255 255 / 40%);
+  --dark-05: rgb(255 255 255 / 50%);
   --dark-06: #212121;
   --light-blue-link: #6495ed;
-  --section-titles-color: rgba(17, 50, 78, 0.2);
+  --section-titles-color: rgb(17 50 78 / 20%);
   --pricing-plan-pro: #55baff;
   --pricing-plan-agency: #1edfd0;
   --pricing-plan-enterprise: #7d7d7d;
   --pricing-plan-custom: #e6514e;
-  --pricing-plan-border-pro: rgba(85, 187, 255, 0.5);
-  --pricing-plan-border-agency: rgba(85, 187, 255, 0.5);
-  --pricing-plan-border-enterprise: rgba(85, 187, 255, 0.5);
-  --pricing-plan-border-custom: rgba(85, 187, 255, 0.5);
+  --pricing-plan-border-pro: rgb(85 187 255 / 50%);
+  --pricing-plan-border-agency: rgb(85 187 255 / 50%);
+  --pricing-plan-border-enterprise: rgb(85 187 255 / 50%);
+  --pricing-plan-border-custom: rgb(85 187 255 / 50%);
   --footer-divider-border: #333;
   --footer-bg: #03091400;
   --footer-gradient: linear-gradient(to top, var(--black) 10%, var(--footer-bg) 100%);
   --light-accent-btn: var(--color-progress);
-  --youtube-red: #ff0000;
+  --youtube-red: #f00;
 
   // Gradients
 
@@ -107,8 +107,8 @@
   --gradient-4: #030914;
   --gradient-5: #1edfcf;
   --gradient-6: #5bf;
-  --gradient-7: rgb(10, 23, 46);
-  --gradient-8: rgba(10, 23, 46, 0);
+  --gradient-7: rgb(10 23 46);
+  --gradient-8: rgb(10 23 46 / 0%);
   --bg-gradient-desc: linear-gradient(
     to top,
     var(--black) 1%,

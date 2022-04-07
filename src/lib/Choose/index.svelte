@@ -58,7 +58,7 @@
     .art {
       width: 100%;
       max-width: 43.75rem;
-      margin: 0 0 1.562rem 0;
+      margin: 0 0 1.562rem;
       overflow: hidden;
     }
 

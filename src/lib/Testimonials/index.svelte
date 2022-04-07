@@ -181,8 +181,7 @@
 
   .testimonials-wrapper {
     display: grid;
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
+    grid-gap: 1rem;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 26.25rem);
     height: 23.75rem;
