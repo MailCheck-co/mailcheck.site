@@ -30,11 +30,11 @@ There are two categories of email APIs: transactional and contextual.
 
 Transactional email APIs are for sending bulk or routine emails, such as password reset, notification emails, and mass marketing campaigns through third-party platforms. The role of an email API is that it lets you design beautiful transactional emails and integrate them directly into the functionality of your website or app so you can get the full potential of a well-designed email instead of just including the bare minimum of essential information for customers.
 
-Contextual email APIs are designed for developers building software applications that require email sync, send, and analytics embedded directly into the application for their end-user's benefit. Productivity tools, CRMs, applicant tracking systems, and even car consoles use email APIs to embed email functionality into the application. Contextual emails allow you to sync, send, receive, and collect analytics, as well as take care of general [CRUD](https://www.mailcheck.co/l/wiki-api) for each email service provider connection.
+Contextual email APIs are designed for developers building software applications that require email sync, send, and analytics embedded directly into the application for their end-user's benefit. Productivity tools, CRMs, applicant tracking systems, and even car consoles use email APIs to embed email functionality into the application. Contextual emails allow you to sync, send, receive, and collect analytics, as well as take care of general [CRUD](https://mailcheck.co/l/wiki-api) for each email service provider connection.
 
 Email APIs are also extensively used in sending notifications. Many software tools and websites use notifications to inform their users when something happens with their account or on the platform. For example, Facebook and Instagram notify their users of a new like or a comment made in response to a user’s post. It doesn’t always make sense to send an email for each action that occurs in an application. However, if this action requires the user’s attention, sending an email is the best way to ensure that the user sees the information on time.
 
-Here’s an example of an automated email sent by [booking.com](https://www.mailcheck.co/l/booking) using an email marketing API to thank the customer for leaving a review of their recent hotel stay.
+Here’s an example of an automated email sent by [booking.com](https://mailcheck.co/l/booking) using an email marketing API to thank the customer for leaving a review of their recent hotel stay.
 
 ![Author’s own](./booking.jpg?format=webp;jpg;avif&srcset)
 

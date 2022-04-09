@@ -57,7 +57,7 @@ Researches show that the majority of users want to get updates on discounts and 
 
 Such special offers and discounts can become sales drivers for your business. Sending such newsletters is one of the most cost-efficient ways to inform your clients. It is much cheaper to use mailings that any other channels. However, that doesn’t mean it has to be the only channel.
 
-Also we were featured at [inkThemes](https://www.mailcheck.co/l/email-verification-services) as good solution for small business.
+Also, we were featured at [inkThemes](https://mailcheck.co/l/email-verification-services) as good solution for small business.
 
 ## Where to Get Mailing Base?
 

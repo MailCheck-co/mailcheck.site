@@ -20,7 +20,7 @@ A newsletter is an email sent to inform your readers of your announcements, inte
 
 The two fundamental reasons why you need to invest time and efforts into composing your newsletter email:1. It will help you retain already existing subscribers and therefore maintain your credibility. 2. It could potentially grow your customer database.
 
-According to Campaign Monitor, [0.17%](https://www.mailcheck.co/l/good-unsubscribe-rate) is an average unsubscribe rate. However, if your email unsubscribe rates jumps over 2% this signals that you need to review your newsletter campaign.
+According to Campaign Monitor, [0.17%](https://mailcheck.co/l/good-unsubscribe-rate) is an average unsubscribe rate. However, if your email unsubscribe rates jumps over 2% this signals that you need to review your newsletter campaign.
 
 So what does it take to create a compelling email that not only helps you grow the number of your customers, but also increases your click-through rates and consequently draws income? We have assembled **6 tips** on how to write an email that will prompt your subscribers to action.
 
@@ -34,7 +34,7 @@ Source: Sympli
 
 **Don’t enforce sales content too much.** Clearly, the ultimate goal is to gain customers’ loyalty and subsequently earn profit. However, stuffing your email with sales content only will come off as pushy and somewhat aggressive. After all, making each and every email in your newsletter campaign a special offer may get your customers thinking how “special” is your “special offer”. Instead, try to balance the content by making it 10% sales and 90% educative.
 
-**Invest time into creating an eye-catching subject line.** Believe it or not, subject lines are the first step to enticing your subscribers to read more. Your email campaign may be great, but if your subject line isn’t - everything can fall through. According to [Marketo](https://www.mailcheck.co/l/subject-line-length), seven words or 41 characters are considered the best size for a subject line. This number yields the highest clicks to open. Surprisingly enough, eight words subject line produces half as much as that number.
+**Invest time into creating an eye-catching subject line.** Believe it or not, subject lines are the first step to enticing your subscribers to read more. Your email campaign may be great, but if your subject line isn’t - everything can fall through. According to [Marketo](https://mailcheck.co/l/subject-line-length), seven words or 41 characters are considered the best size for a subject line. This number yields the highest clicks to open. Surprisingly enough, eight words subject line produces half as much as that number.
 
 ![Marketo](./marketo.jpg?format=webp;jpg;avif&srcset)
 
@@ -42,7 +42,7 @@ Source: Marketo
 
 Remember that your emails may be opened on various devices, be it an iPhone or a MacBook, so you might want to consider making your subject line even shorter. As sad as it may sound, people don’t have time to read lengthy texts, so try to keep your subject line short, striking and to the point.
 
-**Invest into design.** According to [HubSpot](https://www.mailcheck.co/l/dreaded-link-blink-test), an average user spends between 3 to 5 seconds skimming a website. We can easily assume that these metrics can be applied to a newsletter too. This means your email has to grab your customer’s attention, get your message across and awake your customer’s interest, all in 3 to 5 seconds. Sounds like a challenge? Remember, that if the layout of your email newsletter is too heavy on media and is cheaply designed, you may not get the desired results. Make sure your newsletter has some blank white spaces. This will alleviate overall outlook of your email and make it easier for your subscribers to click the right button. If you are struggling with designing your newsletter layout, hire a professional designer, or use an app. There’s plenty of beginner-friendly applications that allow to create stunning layouts.
+**Invest into design.** According to [HubSpot](https://mailcheck.co/l/dreaded-link-blink-test), an average user spends between 3 to 5 seconds skimming a website. We can easily assume that these metrics can be applied to a newsletter too. This means your email has to grab your customer’s attention, get your message across and awake your customer’s interest, all in 3 to 5 seconds. Sounds like a challenge? Remember, that if the layout of your email newsletter is too heavy on media and is cheaply designed, you may not get the desired results. Make sure your newsletter has some blank white spaces. This will alleviate overall outlook of your email and make it easier for your subscribers to click the right button. If you are struggling with designing your newsletter layout, hire a professional designer, or use an app. There’s plenty of beginner-friendly applications that allow to create stunning layouts.
 
 **Keep it short and concise.** We know no people who would want to read a 500-words email, especially in the times, when everything in life evolves with lightning speed. Making sure your email includes only relevant, crucial information, that prompts your subscriber to click and find out more is the key in successful email newsletter.
 
