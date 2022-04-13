@@ -1,6 +1,6 @@
 ---
 published: true
-slug: want-to-buy-an-email-list?-we-have-6-reasons-not-to
+slug: want-to-buy-an-email-list-we-have-6-reasons-not-to
 title: Want to Buy an Email List? We Have 6 Reasons Not To
 date: 13.04.2022
 readingTime: 5 min read
