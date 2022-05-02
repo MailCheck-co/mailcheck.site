@@ -48,7 +48,7 @@
     "stylelint": "^14.8.1",
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-prettier-scss": "^0.0.1",
-    "svelte": "^3.47.0",
+    "svelte": "^3.48.0",
     "svelte-check": "^2.7.0",
     "svelte-preprocess": "^4.10.6",
     "tslib": "^2.4.0",
