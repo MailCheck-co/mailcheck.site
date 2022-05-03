@@ -233,7 +233,7 @@ We send the results via [dashboard](https://app.mailcheck.co/dashboard/my_files)
 
     <summary>Integrations</summary>
 
-As of now, we are developing Mailchimp integration.
+Mailcheck offers an integration service with Mailchimp, Zapier, Wordpress, Make.com(ex Integromat), n8n, Sendgrid, Mailerlite, Woodpecker, and ActiveCampaign.
 
 </details>
 
@@ -280,9 +280,9 @@ Mailcheck works on a subscription basis and if you have any of the paid plans (P
 
 <details>
 
-    <summary>Why I can't see a dark mode option on my account?</summary>
+    <summary>Why can't I see the accompanied data from the uploaded file? No "address" line were migrated during the email validation</summary>
 
-We apply Dark Mode only for those users who have purchased paid plans and planning to develop more features
+Unfortunately, migrating other data than email, requires more time to process it and we don't want our users to wait for hours.  
 
 </details>
 
@@ -312,7 +312,7 @@ A step-by-step guide to integrate Mailcheck with daily services using [Zapier](/
 
 <details>
 
-    <summary>Integromat Integration instructions</summary>
+    <summary>Make.com(ex. Integromat) Integration instructions</summary>
 
 A step-by-step guide to integrate Mailcheck with daily services using [Integromat](/integromat-integration)
 
