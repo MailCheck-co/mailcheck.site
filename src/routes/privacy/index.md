@@ -3,7 +3,7 @@ canonical: /
 noindex: true
 slug: privacy
 title: Privacy Policy
-date: 25.06.2020
+date: 05.05.2022
 readingTime: 1 min read
 snippet: This privacy policy applies to all information collected through our website (such as mailcheck.co).
 desc: This privacy policy applies to all information collected through our website (such as mailcheck.co).
@@ -107,15 +107,16 @@ Allow Users to Connect to their Third-Party Accounts:
 
 Communicate and Chat with Users:
 
-- Tawk.to
+- chat.mailcheck.co
 
 Content Optimization:
 
-- Gravatar, MailChimp widget plugin, Reply.io, and YouTube video embed
+- Gravatar, MailChimp widget plugin, Sendgrid.com, and YouTube video embed
 
 Functionality and Infrastructure Optimization:
 
 - Google Cloud Storage
+- Firebase
 
 Invoice and Billing:
 
@@ -123,12 +124,11 @@ Invoice and Billing:
 
 Web and Mobile Analytics:
 
-- Yandex Metrica
-- Google Analitics
+- Google Analytics
 
 Registration/login:
 
-- Google OAuth, Facebook OAuth
+- Google OAuth, Facebook OAuth, Github OAuth, Microsoft Oauth
 
 Advertising:
 
