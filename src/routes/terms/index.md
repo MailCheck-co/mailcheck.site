@@ -3,7 +3,7 @@ canonical: /
 noindex: true
 slug: terms
 title: Terms of Service
-date: 25.06.2020
+date: 05.05.2022
 readingTime: 1 min read
 snippet: In order to use the integrations most of them require an API key, which can be generated on any Mailcheck account.
 desc: In order to use the integrations most of them require an API key, which can be generated on any Mailcheck account.
@@ -57,7 +57,7 @@ We reserve the right to correct any errors or mistakes in pricing, even if we ha
 
 ## FREE TRIAL
 
-We offer a 30-day free trial to new users who register with the Site. The account will be charged according to the user’s chosen subscription at the end of the free trial.
+We offer a 30-days recurrable free trial to the new users who register at our website. The account will be charged according to the user’s chosen subscription at the end of the free trial.
 
 ## CANCELLATION
 
