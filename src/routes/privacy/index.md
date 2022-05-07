@@ -128,7 +128,7 @@ Web and Mobile Analytics:
 
 Registration/login:
 
-- Google OAuth, Facebook OAuth, Github OAuth, Microsoft Oauth
+- Google OAuth, Facebook OAuth, Github OAuth, Microsoft OAuth
 
 Advertising:
 
