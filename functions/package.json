@@ -19,7 +19,7 @@
     "firebase-functions": "^3.20.1",
     "firebase-tools": "^10.7.2",
     "node-fetch": "^3.2.4",
-    "nodemailer": "^6.7.4"
+    "nodemailer": "^6.7.5"
   },
   "private": true
 }
