@@ -326,4 +326,12 @@ A step-by-step guide to integrate Mailcheck with daily services using [Sendgrid]
 
 <Video id={idVideoSendgridInstructions} title={titleVideoSendgridInstructions} />
 </details>
+
+<details>
+
+    <summary>WoodPecker Integration instructions</summary>
+
+A step-by-step guide to integrate Mailcheck with daily services using [WoodPecker](/woodpecker-integration)
+
+</details>
 </div>
