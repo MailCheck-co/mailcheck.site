@@ -182,6 +182,22 @@ Watch our video about how to manually add emails?
 
 </details>
 
+<details>
+
+    <summary>Zapier Integration instructions</summary>
+
+A step-by-step guide to integrate Mailcheck with daily services using [Zapier](/zapier-integration)
+
+</details>
+
+<details>
+
+    <summary>Make.com(ex. Integromat) Integration instructions</summary>
+
+A step-by-step guide to integrate Mailcheck with daily services using [Integromat](/integromat-integration)
+
+</details>
+
 </div>
 
 <div class="accordion-column right">
@@ -299,22 +315,6 @@ It depends but usually takes around 20min-60min just because our innovative tech
     <summary>Mailchimp Integration instructions</summary>
 
 Step by step guide on how to use [Mailchimp](/mailchimp-integration)
-
-</details>
-
-<details>
-
-    <summary>Zapier Integration instructions</summary>
-
-A step-by-step guide to integrate Mailcheck with daily services using [Zapier](/zapier-integration)
-
-</details>
-
-<details>
-
-    <summary>Make.com(ex. Integromat) Integration instructions</summary>
-
-A step-by-step guide to integrate Mailcheck with daily services using [Integromat](/integromat-integration)
 
 </details>
 
