@@ -43,7 +43,7 @@
     width: 100%;
     max-width: 80rem;
     margin: 0 auto var(--size-50);
-    padding: var(--size-50) var(--size-20) 0;
+    padding: var(--size-50) 0;
   }
 
   :global(.section-heading) {
