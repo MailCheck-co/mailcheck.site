@@ -30,11 +30,11 @@
     <div class="integrations-list">
       <div class="integrations-list-item" data-item-title="Mailchimp">
         <img width="50" height="50" src={mailchimp} alt="Mailchimp" class="integrations-logo" />
-        <a rel="external" href="https://mailcheck.co/mailchimp-integration" class="integrations-link"></a>
+        <a href="https://mailcheck.co/mailchimp-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Zapier">
         <img width="50" height="50" src={zapier} alt="Zapier" class="integrations-logo" />
-        <a rel="external" href="https://mailcheck.co/zapier-integration" class="integrations-link"></a>
+        <a href="https://mailcheck.co/zapier-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="WordPress">
         <img width="50" height="50" src={WP} alt="WordPress" class="integrations-logo" />
@@ -42,11 +42,11 @@
       </div>
       <div class="integrations-list-item" data-item-title="Make.com">
         <img width="50" height="50" src={integromat} alt="Make.com" class="integrations-logo" />
-        <a rel="external" href="https://mailcheck.co/integromat-integration" class="integrations-link"></a>
+        <a href="https://mailcheck.co/integromat-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Sendgrid">
         <img width="50" height="50" src={sendgrid} alt="Sendgrid" class="integrations-logo" />
-        <a rel="external" href="https://mailcheck.co/sendgrid-integration" class="integrations-link"></a>
+        <a href="https://mailcheck.co/sendgrid-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="N8N">
         <img width="50" height="50" src={n8n} alt="N8N" class="integrations-logo" />
