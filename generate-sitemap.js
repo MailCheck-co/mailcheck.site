@@ -4,7 +4,7 @@ import { create } from 'xmlbuilder2';
 import pkg from './package.json' assert {type: "json"};
 
 const getUrl = (url) => {
-  const trimmed = url.slice(6).replace('.html', '');
+  const trimmed = url.slice(6).replace('index', '').replace('.html', '');
   return pkg.url + trimmed;
 };
 
