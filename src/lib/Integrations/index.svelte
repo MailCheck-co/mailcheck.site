@@ -30,27 +30,35 @@
     <div class="integrations-list">
       <div class="integrations-list-item" data-item-title="Mailchimp">
         <img width="50" height="50" src={mailchimp} alt="Mailchimp" class="integrations-logo" />
+        <a href="/mailchimp-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Zapier">
         <img width="50" height="50" src={zapier} alt="Zapier" class="integrations-logo" />
+        <a href="/zapier-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="WordPress">
         <img width="50" height="50" src={WP} alt="WordPress" class="integrations-logo" />
+        <a rel="external" href="https://wordpress.org/plugins/mailcheck-co/" class="integrations-link"></a>
       </div>
-      <div class="integrations-list-item" data-item-title="Integromat">
-        <img width="50" height="50" src={integromat} alt="Integromat" class="integrations-logo" />
+      <div class="integrations-list-item" data-item-title="Make.com">
+        <img width="50" height="50" src={integromat} alt="Make.com" class="integrations-logo" />
+        <a href="/integromat-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Sendgrid">
         <img width="50" height="50" src={sendgrid} alt="Sendgrid" class="integrations-logo" />
+        <a href="/sendgrid-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="N8N">
         <img width="50" height="50" src={n8n} alt="N8N" class="integrations-logo" />
+        <a rel="external" href="https://app.mailcheck.co/dashboard/integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Mailerlite">
         <img width="50" height="50" src={mailerlite} alt="Mailerlite" class="integrations-logo" />
+        <a rel="external" href="https://app.mailcheck.co/dashboard/integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Woodpecker">
         <img width="50" height="50" src={woodpecker} alt="Woodpecker" class="integrations-logo" />
+        <a href="/woodpecker-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="ActiveCampaign">
         <img
@@ -59,6 +67,7 @@
           src={activecampaign}
           alt="Active Campaign"
           class="integrations-logo" />
+        <a rel="external" href="https://app.mailcheck.co/dashboard/integration" class="integrations-link"></a>
       </div>
     </div>
   </div>
@@ -94,19 +103,8 @@
     box-shadow: var(--color-shadow);
     backdrop-filter: blur(10px);
 
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      display: inline-block;
-      width: 5px;
-      height: 5px;
-      background-color: var(--primary-accent);
-      border-radius: var(--br-rounded);
-      transform: translate(-50%, -200%);
-      opacity: 0;
-      transition: var(--transition-default);
-      content: '';
+    &:hover{
+      background: linear-gradient(135deg, rgb(255 255 255 / 25%) 0%, rgb(255 255 255 / 0%) 100%);
     }
 
     &::before {
@@ -122,13 +120,19 @@
       content: attr(data-item-title);
     }
 
-    &:hover::before,
-    &:hover::after {
+    &:hover::before {
       opacity: 1;
+      transform: translateY(-150%);
     }
 
-    &:hover::before {
-      transform: translateY(-150%);
+    .integrations-link::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
   }
 </style>

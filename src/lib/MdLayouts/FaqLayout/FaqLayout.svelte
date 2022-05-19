@@ -43,7 +43,7 @@
     width: 100%;
     max-width: 80rem;
     margin: 0 auto var(--size-50);
-    padding: var(--size-50) var(--size-20) 0;
+    padding: var(--size-50) 0;
   }
 
   :global(.section-heading) {
@@ -68,6 +68,7 @@
     overflow: hidden;
     border-bottom: var(--size-1) solid var(--dark-02);
     transition: all 0.35s ease-in-out;
+    cursor: pointer;
   }
 
   :global(details[open]) {
@@ -170,7 +171,7 @@
   @media only screen and (max-width: 1024px) {
     .wrapper-questions {
       justify-content: center;
-      padding: var(--size-50) var(--size-20) 0;
+      padding: var(--size-50) 0;
     }
 
     .accordion {
@@ -183,6 +184,21 @@
 
     :global(.accordion-column) {
       width: 100%;
+    }
+
+    :global(details summary) {
+      font-size: calc(1.2vw + 1.2vh);
+      line-height: calc(1.5vw + 1.5vh);
+      letter-spacing: 0;
+    }
+
+    :global(details p, details a) {
+      font-size: calc(1vw + 1vh);
+      letter-spacing: 0;
+    }
+
+    :global(details summary::after) {
+      top: 4px;
     }
 
     .filter-img {

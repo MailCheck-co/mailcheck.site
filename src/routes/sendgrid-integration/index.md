@@ -7,6 +7,13 @@ snippet: Step by step guide on how to use Mailcheck with Sendgrid
 desc: Step by step guide on how to use Mailcheck with Sendgrid.
 ---
 
+<script>
+  import Video from '$lib/Video/video.svelte';
+
+  let idVideo = 'L2TCGUk0iZ0';
+  let titleVideo = 'Mailcheck + SendGrid Integration instructions';
+</script>
+
 # **{title}**
 
 ## Step by step guide
@@ -123,5 +130,8 @@ Here you must choose “Mailcheck status” OR “Mailcheck Score” I usually u
 ### Step 18
 
 Save segment and use the list for emailing/automation
+
+### {titleVideo}
+<Video id={idVideo} title={titleVideo} />
 
 Thank you!

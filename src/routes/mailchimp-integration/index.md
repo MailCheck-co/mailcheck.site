@@ -7,6 +7,12 @@ snippet: Step by step guide on how to use Mailcheck
 desc: Lots of emails sent every day via Mailchimp, however, the majority of the emails got bounced. In order to prevent it, we’ve created Mailcheck.
 ---
 
+<script>
+  import Video from '$lib/Video/video.svelte';
+  let idVideo = 'ZAMbvnF9rKE';
+  let titleVideo = 'How to use MailChimp integration in mailcheck.co?';
+</script>
+
 # **{title}**
 
 ## {snippet}
@@ -94,5 +100,9 @@ But how to filter the data?
 
 ![MailChimp integration step 9.2: unsubscribe 'invalid' emails](./step9-2.jpg)
 
+### {titleVideo}
+<Video id={idVideo} title={titleVideo} />
+
 That’s it &#128077;
 If you still have questions please contact our team via LiveChat or [integration@mailcheck.co](mailto:integration@mailcheck.co)
+

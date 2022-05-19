@@ -182,6 +182,22 @@ Watch our video about how to manually add emails?
 
 </details>
 
+<details>
+
+    <summary>Zapier Integration instructions</summary>
+
+A step-by-step guide to integrate Mailcheck with daily services using [Zapier](/zapier-integration)
+
+</details>
+
+<details>
+
+    <summary>Make.com(ex. Integromat) Integration instructions</summary>
+
+A step-by-step guide to integrate Mailcheck with daily services using [Integromat](/integromat-integration)
+
+</details>
+
 </div>
 
 <div class="accordion-column right">
@@ -304,26 +320,18 @@ Step by step guide on how to use [Mailchimp](/mailchimp-integration)
 
 <details>
 
-    <summary>Zapier Integration instructions</summary>
-
-A step-by-step guide to integrate Mailcheck with daily services using [Zapier](/zapier-integration)
-
-</details>
-
-<details>
-
-    <summary>Make.com(ex. Integromat) Integration instructions</summary>
-
-A step-by-step guide to integrate Mailcheck with daily services using [Integromat](/integromat-integration)
-
-</details>
-
-<details>
-
     <summary>How to use Sendgrid instructions?</summary>
 
 A step-by-step guide to integrate Mailcheck with daily services using [Sendgrid](/sendgrid-integration)
 
 <Video id={idVideoSendgridInstructions} title={titleVideoSendgridInstructions} />
+</details>
+
+<details>
+
+    <summary>WoodPecker Integration instructions</summary>
+
+A step-by-step guide to integrate Mailcheck with daily services using [WoodPecker](/woodpecker-integration)
+
 </details>
 </div>
