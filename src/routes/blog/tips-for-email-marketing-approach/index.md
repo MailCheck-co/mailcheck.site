@@ -68,4 +68,4 @@ Each letter should have one specified goal, thus there shouldn’t be more than 
 
 ## Conclusion
 
-Use these tips to improve your email marketing results. However, note that all your content improvement efforts are useless if you send your [letters to the wrong email addresses.](/faq)
+Use these tips to improve your email marketing results. However, note that all your content improvement efforts are useless if you send your [letters to the wrong email addresses](/faq).

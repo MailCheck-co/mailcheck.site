@@ -26,7 +26,7 @@ Filling in ALT and TITLE tags can improve your conversion dramatically. Non-comm
 
 ## Specify The Topic of Newsletter and Adhere It
 
-Although you cannot know everything about your subscribers, you can definitely find out their reaction on the different kinds of content you send them. bring efforts to track the core email marketing metrics like open rate. Try to define the best time for sending the next letter and the best topics. [Divide the recipients of the letters based on their interests to personalize your newsletter.](/blog/personalize-your-newsletter-and-increase-sales)
+Although you cannot know everything about your subscribers, you can definitely find out their reaction on the different kinds of content you send them. bring efforts to track the core email marketing metrics like open rate. Try to define the best time for sending the next letter and the best topics. [Divide the recipients of the letters based on their interests to personalize your newsletter](/blog/personalize-your-newsletter-and-increase-sales).
 
 Internet Retailer agency has defined that Isotoner bookmaker company has increased their income from email marketing campaign on 7000% when they have enforced analysis on the basis of the previously sent letters.
 

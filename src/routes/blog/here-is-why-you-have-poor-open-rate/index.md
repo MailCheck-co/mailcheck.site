@@ -16,7 +16,7 @@ Email marketing may sound like an easy task. There is nothing difficult in writi
 
 ![sendong-emails](./sending-emails.png?format=webp;jpg;avif&srcset)
 
-So, you checked your last 10 reports on the engagement rate, and the open rate is far from what you’ve expected? And what about click-through rate? Oh, these results can force you to abandon your strategy and forget about drip campaigns. [We understand how frustrating it can be, but don’t finish with the email marketing.](/blog/great-ideas-for-your-email-marketing-strategy) There are some tips that can change the situation.
+So, you checked your last 10 reports on the engagement rate, and the open rate is far from what you’ve expected? And what about click-through rate? Oh, these results can force you to abandon your strategy and forget about drip campaigns. [We understand how frustrating it can be, but don’t finish with the email marketing](/blog/great-ideas-for-your-email-marketing-strategy). There are some tips that can change the situation.
 
 ## You write great copy, but your list is a mess
 

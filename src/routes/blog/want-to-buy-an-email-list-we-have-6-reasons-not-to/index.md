@@ -30,7 +30,7 @@ All the risk from the first two points is a no-brainer, but the situation is muc
 ## It is a farewell with deliverability
 As an email marketer, your sender reputation speaks for you. There might be people who will promise you to keep your reputation safe. However, better safe than sorry. Momentary desire to get something quick and easy cost you future opportunities to expand your business interacting with customers.
 
-Once you’ve got to blacklist, it is extremely different to engage clients, especially prospects in a significant relationship. That’s because your message no longer reach their inboxes, even after mail validation. [Losing deliverability can be a great blow to your company.](/blog/x-ways-increase-emails-deliverability)
+Once you’ve got to blacklist, it is extremely different to engage clients, especially prospects in a significant relationship. That’s because your message no longer reach their inboxes, even after mail validation. [Losing deliverability can be a great blow to your company](/blog/x-ways-increase-emails-deliverability).
 
 ## It is untrustworthy
 Do you like strangers who come in your inbox and try to sell you something? Surely you don’t. You’d prefer to hit the delete button with any doubts. Your customers act in the same way. They total control over their email space and even consider it their private space. You don’t have the right to be rude, to be intrusive. Prospects won’t welcome your business in their online sanctuary if they don’t remember signing up for your promotions. They never asked to receive your newsletters, so you can expect for some resentment. You’ll definitely lose your customers before you’ve even got them. Even email address list verification won’t help you in such situation.

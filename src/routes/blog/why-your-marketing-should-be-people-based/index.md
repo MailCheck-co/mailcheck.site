@@ -46,6 +46,6 @@ Invalid email addresses harm your drip campaign and marketing strategy. [They wr
 
 The easiest and safest way to prevent this is using [email hygiene services](https://mailcheck.co). It ensures you collect only valid leads and helps you set the communication with your audience. After that you can speak about important ads and marketing campaigns.
 
-Once the [email validation software](https://mailcheck.co) made your list clean, make sure the situation will not change. [That’s why you need to install an email verification API.](/blog/what-is-email-api) It prevents typos, suggest possible options, save you from traps and abuse emails. Such software is important for boosting your campaigns and for crafting new strategies, people-based strategies.
+Once the [email validation software](https://mailcheck.co) made your list clean, make sure the situation will not change. [That’s why you need to install an email verification API](/blog/what-is-email-api). It prevents typos, suggest possible options, save you from traps and abuse emails. Such software is important for boosting your campaigns and for crafting new strategies, people-based strategies.
 
 Great marketing begins with email. It’s the direct way to understanding your audience and to creation a win-win strategy. Make an email address list verification your number one ally.
