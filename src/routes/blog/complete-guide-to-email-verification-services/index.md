@@ -20,7 +20,7 @@ If you make sales with email marketing then getting actual information about the
 
 ![Guide to Email Verification Service](./guide-img1.jpg?format=webp;jpg;avif&srcset)
 
-Why? The thing is that you get corrupted data on deliverability, conversion rate, and other metrics. Moreover, when bounce rate decreases you are at risk of getting sanctions from mailing service which may lead to the inability of your letter to get to the user’s inbox in future. Read how to increase deliverability of your mails. On the other hand, using email address verification service can let you avoid all of these problems.
+Why? The thing is that you get corrupted data on deliverability, conversion rate, and other metrics. Moreover, [when bounce rate decreases you are at risk of getting sanctions from mailing service](/blog/explaining-email-bounce-rate) which may lead to the inability of your letter to get to the user’s inbox in future. Read how to increase deliverability of your mails. On the other hand, using email address verification service can let you avoid all of these problems.
 
 ## Disclosing Email Verification Process
 

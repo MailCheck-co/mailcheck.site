@@ -26,7 +26,7 @@ Filling in ALT and TITLE tags can improve your conversion dramatically. Non-comm
 
 ## Specify The Topic of Newsletter and Adhere It
 
-Although you cannot know everything about your subscribers, you can definitely find out their reaction on the different kinds of content you send them. bring efforts to track the core email marketing metrics like open rate. Try to define the best time for sending the next letter and the best topics. Divide the recipients of the letters based on their interests to personalize your newsletter.
+Although you cannot know everything about your subscribers, you can definitely find out their reaction on the different kinds of content you send them. bring efforts to track the core email marketing metrics like open rate. Try to define the best time for sending the next letter and the best topics. [Divide the recipients of the letters based on their interests to personalize your newsletter.](/blog/personalize-your-newsletter-and-increase-sales)
 
 Internet Retailer agency has defined that Isotoner bookmaker company has increased their income from email marketing campaign on 7000% when they have enforced analysis on the basis of the previously sent letters.
 
@@ -44,7 +44,7 @@ All letters of your company should be connected to each other and show that you 
 
 ## Reputation and Mailing Services
 
-In case you use a specialized service for sending newsletter you get a few points to your [sender’s reputation](/blog/senders-reputation) in the eyes of the ESP. The higher is the deliverability rate, the more clients you can convert so services use addresses with the high IP rating which is supported by the majority of actions.
+In case you use a specialized service for sending newsletter you get a few points to your [sender’s reputation](/blog/senders-reputation) in the eyes of the ESP. [The higher is the deliverability rate,](/blog/x-ways-increase-emails-deliverability) the more clients you can convert so services use addresses with the high IP rating which is supported by the majority of actions.
 
 ## Poor Mailing List
 

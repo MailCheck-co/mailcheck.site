@@ -37,7 +37,7 @@ According to it:
 - 84% say they would like being treated not like a number, but like a person, individuality.
 - 79% of consumers tend do contextualized engagement. People want to share their private data in exchange for personalized offers.
 
-You may think people are closed when it comes to sharing their data. Although, they are waiting for better offers and are more open in exchange for it. Many of them are looking forward to receiving this type of communication from you. Use the information you get from them wisely and make sure you have such offers. Personalization along with the bulk email validation service can affect your sales. Cold mailing is a thing of the past. They annoy, cause rejection and the desire to send your message to spam.
+You may think people are closed when it comes to sharing their data. Although, they are waiting for better offers and are more open in exchange for it. Many of them are looking forward to receiving this type of communication from you. Use the information you get from them wisely and make sure you have such offers. Personalization along with the bulk email validation service can affect your sales. [Cold mailing is a thing of the past.](/blog/10-tips-to-warm-up-your-cold-emails) They annoy, cause rejection and the desire to send your message to spam.
 
 ![email personalization marketing](./email-personalization-marketing.png?format=webp;jpg;avif&srcset)
 
@@ -67,4 +67,4 @@ Studies have shown that relevant messages help generate even more sales than soc
 You need to interact with your target audience. Every prospect on your list is different, which is why it would be a mistake to send them the same email message. Focus on the recipient and you will reach almost 20 times more revenue when compared to general emails. So taking a targeted approach definitely makes a difference. Since you get contacts from different sources, you need to check them. Use [email validation software](https://mailcheck.co/) and your efforts will pay off.
 
 ## Conclusion
-Rely on statistics if you are in any doubt. The tips we have discussed above may seem simple at first, but they are really necessary. They will help you in improving your email marketing, drip campaigns. Remember, they will turn profitable only if you take care of the details. They make up the big picture.
+Rely on statistics if you are in any doubt. The tips we have discussed above may seem simple at first, but they are really necessary. [They will help you in improving your email marketing, drip campaigns.](/blog/the-one-common-email-marketing-mistake) Remember, they will turn profitable only if you take care of the details. They make up the big picture.

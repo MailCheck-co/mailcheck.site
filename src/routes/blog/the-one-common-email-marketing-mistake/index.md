@@ -12,7 +12,7 @@ desc: Without any doubts, your business needs an efficient email marketing strat
 
 {readingTime}
 
-Without any doubts, your business needs an efficient email marketing strategy. And sometimes finding it may feel like an extremely difficult tools. Even when you rely on the proven practices or use the best email validation web services, you can’t be sure it is the thing your clients are waiting for.
+[Without any doubts, your business needs an efficient email marketing strategy](/blog/great-ideas-for-your-email-marketing-strategy). And sometimes finding it may feel like an extremely difficult tools. Even when you rely on the proven practices or use the best email validation web services, you can’t be sure it is the thing your clients are waiting for.
 
 ![email-marketing-mistake](./email-marketing-mistake.png?format=webp;jpg;png;avif&srcset)
 
@@ -26,7 +26,7 @@ The survey tries to understand subscribers behavior, and the facts it reveals ar
 
 First of all, you need to have some people you will write to. Start with a list with your actual audience and grow from there. There a lot of ways how you can find new subscribers: you can offer to sign up for your newsletter on your website, use the CTA button on social media, to import contacts from Linkedin and similar sources.
 
-In no case do not buy an email list, it will harm your reputation and totally doesn’t worth the efforts. Just imagine, a lot of people will receive your emails without any idea who you are. Most likely they will delete them or even put into Spam folder. That’s’ why you need to [verify emails](https://mailcheck.co/) addresses and to build your own database with soulmates only.
+[In no case do not buy an email list, it will harm your reputation and totally doesn’t worth the efforts.](/blog/want-to-buy-an-email-list-we-have-6-reasons-not-to) Just imagine, a lot of people will receive your emails without any idea who you are. Most likely they will delete them or even put into Spam folder. That’s’ why you need to [verify emails](https://mailcheck.co/) addresses and to build your own database with soulmates only.
 
 ## The joke without the punch line
 
