@@ -54,7 +54,7 @@
       </div>
       <div class="integrations-list-item" data-item-title="Mailerlite">
         <img width="50" height="50" src={mailerlite} alt="Mailerlite" class="integrations-logo" />
-        <a rel="external" href="https://app.mailcheck.co/dashboard/integration" class="integrations-link"></a>
+        <a href="/mailerlite-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Woodpecker">
         <img width="50" height="50" src={woodpecker} alt="Woodpecker" class="integrations-logo" />
