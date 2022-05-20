@@ -334,4 +334,12 @@ A step-by-step guide to integrate Mailcheck with daily services using [Sendgrid]
 A step-by-step guide to integrate Mailcheck with daily services using [WoodPecker](/woodpecker-integration)
 
 </details>
+
+<details>
+
+    <summary>MailerLite Integration Guide</summary>
+
+A guide to integrate Mailcheck using [MailerLite](/mailerlite-integration)
+
+</details>
 </div>
