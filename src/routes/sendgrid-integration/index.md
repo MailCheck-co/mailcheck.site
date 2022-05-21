@@ -16,6 +16,10 @@ desc: Step by step guide on how to use Mailcheck with Sendgrid.
 
 # **{title}**
 
+### {titleVideo}
+<Video id={idVideo} title={titleVideo} />
+
+
 ## Step by step guide
 
 ### Step 1
@@ -130,8 +134,5 @@ Here you must choose “Mailcheck status” OR “Mailcheck Score” I usually u
 ### Step 18
 
 Save segment and use the list for emailing/automation
-
-### {titleVideo}
-<Video id={idVideo} title={titleVideo} />
 
 Thank you!

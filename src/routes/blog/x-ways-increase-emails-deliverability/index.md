@@ -97,6 +97,6 @@ Unfortunately, some email-clients can display your letter not properly. In this 
 
 ## 17.Be Laconic
 
-ESP spam filters do not like letters that contain only one line, though they also do not like letters that contain many thousands of symbols. Be laconic in your letters and try to make them not more than 500-1000 symbols in length, use paragraphs, so that it would be more comfortable for your subscribers to read them.
+ESP spam filters do not like letters that contain only one line, though they also do not like letters that contain many thousands of symbols. Be laconic in your letters and try to make them not more than 500-1000 symbols in length, use paragraphs, so that it would be more comfortable for [your subscribers to read them](/blog/subscribers-love-getting-your-emails-but-theres-one-thing-you-have-to-get-right).
 
 That’s all. We hope this list will be helpful for those who want to increase email deliverability of the newsletter.

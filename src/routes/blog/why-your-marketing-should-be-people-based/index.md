@@ -42,10 +42,10 @@ It’s extremely important to study your repeat customers and your target audien
 
 Now take a couple of minutes to think about how you log into your accounts. Whether it’s social media profile, personal bank account, or any other website. Surely you use your email account for that, and it’s one more proof how important is it. And that’s why email connects all the elements that make up the identity of your prospects and customers.
 
-Invalid email addresses harm your drip campaign and marketing strategy. They wreak havoc on your bounce rate, sender reputation and prevent you from communicating with real people who are surely interested in your offers. Also, whenever such address ends up on your list, it becomes a missed link in the chain that connect your customer’s preferences across different channels.
+Invalid email addresses harm your drip campaign and marketing strategy. [They wreak havoc on your bounce rate](/blog/explaining-email-bounce-rate), sender reputation and prevent you from communicating with real people who are surely interested in your offers. Also, whenever such address ends up on your list, it becomes a missed link in the chain that connect your customer’s preferences across different channels.
 
 The easiest and safest way to prevent this is using [email hygiene services](https://mailcheck.co). It ensures you collect only valid leads and helps you set the communication with your audience. After that you can speak about important ads and marketing campaigns.
 
-Once the [email validation software](https://mailcheck.co) made your list clean, make sure the situation will not change. That’s why you need to install an email verification API. It prevents typos, suggest possible options, save you from traps and abuse emails. Such software is important for boosting your campaigns and for crafting new strategies, people-based strategies.
+Once the [email validation software](https://mailcheck.co) made your list clean, make sure the situation will not change. [That’s why you need to install an email verification API](/blog/what-is-email-api). It prevents typos, suggest possible options, save you from traps and abuse emails. Such software is important for boosting your campaigns and for crafting new strategies, people-based strategies.
 
 Great marketing begins with email. It’s the direct way to understanding your audience and to creation a win-win strategy. Make an email address list verification your number one ally.

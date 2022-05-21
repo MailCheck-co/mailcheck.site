@@ -15,6 +15,9 @@ desc: Lots of emails sent every day via Mailchimp, however, the majority of the 
 
 # **{title}**
 
+### {titleVideo}
+<Video id={idVideo} title={titleVideo} />
+
 ## {snippet}
 
 {desc}
@@ -99,9 +102,6 @@ But how to filter the data?
 - I’ve decided to choose “invalid” so I could unsubscribe them from emailing list
 
 ![MailChimp integration step 9.2: unsubscribe 'invalid' emails](./step9-2.jpg)
-
-### {titleVideo}
-<Video id={idVideo} title={titleVideo} />
 
 That’s it &#128077;
 If you still have questions please contact our team via LiveChat or [integration@mailcheck.co](mailto:integration@mailcheck.co)

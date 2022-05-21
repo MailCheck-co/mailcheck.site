@@ -22,7 +22,7 @@ Mailcheck is the [new era of email verification](https://mailcheck.co). We are a
 
 Certainly, love for what we do has made it possible to create such a diverse range of email verification services. The most requested ones are an [agency subscription](/#pricing) which includes 5000 emails, with an average charge of $0.004 per email.
 
-As the number of emails increase, price per email can go down, for example, [“Enterprise” subscription.](/#pricing)
+As the number of emails increase, price per email can go down, for example, [“Enterprise” subscription](/#pricing).
 
 The main difference from our competitors is that we do not use an automatic search and validation only, but also a manual moderation filtered materials. So we use all the power of social networks and search engines, for more in-depth validation.
 
@@ -34,7 +34,7 @@ In order to maintain a passion for email validation, self-development, and profe
 
 1.  To start the application process and to be considered as a potential winner by our post-processing company, first of all, you should write your own essay, following all instructions, which will be described below, as well as the topic.
 2.  To start the application process and to be considered as a potential winner by our post-processing company, first of all, you should write your own essay, following all instructions, which will be described below, as well as the topic.
-3.  When the text is ready, please [email it to us.](mailto:scholarship@mailcheck.co)
+3.  When the text is ready, please [email it to us](mailto:scholarship@mailcheck.co).
 4.  As soon as the creative part is finished, you should fill out the application form that you will find below. Please note that you must concentrate in order to avoid mistakes, otherwise your form will not be activated.
 5.  The application submission deadline is September 30, 2019, 11:59 PM EST.
 6.  The winners will be announced on October 10, 2019.

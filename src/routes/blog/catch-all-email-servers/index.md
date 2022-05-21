@@ -40,7 +40,7 @@ If you conduct email marketing campaigns, then any catch-all email domain in you
 
 - They increase the bounce rate that negatively affects your reputation as a sender, ESP\`s do not like emails that produce letters with a high bounce rate and your email can be blocked for spam.
 - If you send a letter to the pure catch-all email your domain gets marked as a spammer immediately as ESPs know that the only way you could acquire such email address is by using blackhat email marketing methods.
-- Low opening rate, that is caused by the fact, that no-one really opens email letters that ended up on a catch-all email server. A low opening rate negatively affects your reputation and puts your email campaign at risk.
+- [Low opening rate](/blog/here-is-why-you-have-poor-open-rate), that is caused by the fact, that no-one really opens email letters that ended up on a catch-all email server. A low opening rate negatively affects your reputation and puts your email campaign at risk.
 
 ## How to Provide Email Verification for Catch-All Email Servers?
 
