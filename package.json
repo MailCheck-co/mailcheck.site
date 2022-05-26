@@ -21,12 +21,12 @@
     "optimize-svg": "find ./src ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-env": "^7.18.2",
     "@nodeart/stylelint-config-nodeart": "^0.0.9",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.5.1",
-    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "autoprefixer": "^10.4.7",
     "cssnano": "^5.1.9",
@@ -61,7 +61,7 @@
     "@fontsource/fira-mono": "^4.5.8",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.5.0",
-    "firebase-tools": "^11.0.0",
+    "firebase-tools": "^11.0.1",
     "just-camel-case": "^6.0.1",
     "schema-dts": "^1.1.0",
     "svelte-inview": "^3.0.0",
