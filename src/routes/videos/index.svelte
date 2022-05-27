@@ -17,6 +17,8 @@
   import Slider from '$lib/Video/slider.svelte';
   import FaraAva from '$lib/Video/assets/fara.png?w=46&format=webp;png;avif&srcset';
   import FaraAvaDefault from '$lib/Video/assets/fara.png';
+  import { websiteSchema } from '$utils/json-ld.js';
+  import Seo from '$lib/Seo/index.svelte';
 
   interface IVideo {
     id: string;
@@ -27,6 +29,12 @@
 
   export let videos: IVideo[];
 </script>
+
+<Seo
+  title="Email verification Video Tutorials"
+  desc="Video guids on how-to validate emails and run validations"
+  schemas={[websiteSchema]}
+/>
 
 <main class="videos">
   <h1 class="title">Video Tutorials</h1>
@@ -44,7 +52,13 @@
           <p class="description-subtitle">{video.desc}</p>
           <div class="author">
             <div class="avatar">
-              <img width="46" height="46" srcset={FaraAva} src={FaraAvaDefault} alt="Fara Muhammadiev" />
+              <img
+                width="46"
+                height="46"
+                srcset={FaraAva}
+                src={FaraAvaDefault}
+                alt="Fara Muhammadiev"
+              />
             </div>
             <div class="about">
               <h3 class="name">Fara Muhammadiev</h3>
