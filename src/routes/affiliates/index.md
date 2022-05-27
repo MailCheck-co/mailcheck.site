@@ -1,6 +1,4 @@
 ---
-canonical: /
-noindex: true
 slug: affiliates
 title: Affiliate Program
 date: 30.09.2021
