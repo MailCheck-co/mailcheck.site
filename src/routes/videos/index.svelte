@@ -17,7 +17,7 @@
   import Slider from '$lib/Video/slider.svelte';
   import FaraAva from '$lib/Video/assets/fara.png?w=46&format=webp;png;avif&srcset';
   import FaraAvaDefault from '$lib/Video/assets/fara.png';
-  import { websiteSchema } from '$utils/json-ld.js';
+  import { websiteSchema } from '$utils/json-ld';
   import Seo from '$lib/Seo/index.svelte';
 
   interface IVideo {
