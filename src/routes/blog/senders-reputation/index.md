@@ -9,8 +9,8 @@ desc: Sender’s reputation directly affects whether your letters reach the user
 ---
 
 <script context="module">
-  import img from "./email-marketing-campaign-guide-img-1.jpg?format=webp;jpg;avif&srcset";
-  import thumbnail from "./email-marketing-campaign-guide-img-1.jpg";
+  import img from "./senders-reputation-img-1.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./senders-reputation-img-1.jpg";
 
   metadata.image= img;
   metadata.thumbnail = thumbnail;
