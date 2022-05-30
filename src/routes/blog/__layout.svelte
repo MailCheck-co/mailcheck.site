@@ -22,9 +22,6 @@
 
 <script lang="ts">
   import ContactUs from '$lib/ContactUs/index.svelte';
-  import type { IPost } from '$utils/types';
-
-  export let post: IPost;
 </script>
 
 <slot />

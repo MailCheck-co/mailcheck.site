@@ -1,7 +1,7 @@
 export default {
   author: 'Mailcheck company',
   siteName: 'Mailcheck',
-  siteUrl: 'https://www.mailcheck.co',
+  siteUrl: 'https://mailcheck.co',
   github: 'https://github.com/MailCheck-co',
   twitter: 'https://twitter.com/mailcheckco',
   twitterCard: 'summary_large_image',
