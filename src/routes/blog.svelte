@@ -110,8 +110,12 @@
           }
 
           &-img {
-            width: 50%;
+            width: 100%;
             margin: var(--size-10) auto var(--size-14);
+
+            @media (min-width: $min-width-small) {
+              width: 50%;
+            }
           }
         }
       }
