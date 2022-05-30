@@ -26,9 +26,9 @@ Can you name at least one reason to refuse (only if you haven’t forgotten your
 
 Your server already had an information about your preferences and was able to make an additional sale based on it. They invested time researching you and paying attention to your needs and wishes. As a result, they know what to offer you and they’re pretty sure you’ll like it. This is what we call people-based marketing:
 
-- getting to know your audience personal
-- gathering info and stats about them to create a customer’s profile;
-- come up with incentives and convert them in sales.
+ - getting to know your audience personal
+ - gathering info and stats about them to create a customer’s profile;
+ - come up with incentives and convert them in sales.
 
 Of course, the coffee house in our example introduced their macaroons on the menu for a broader audience. But they targeted this offer to you - someone who drinks cappuccino and don’t mind trying something new. People-based marketing focuses on persons instead of groups. People love it when you show they matter, when you invest time to find a solution to their problem.
 

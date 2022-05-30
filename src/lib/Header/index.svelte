@@ -27,15 +27,13 @@
           rel="external nofollow"
           title="Request a demo"
           target="_blank"
-          class="btn btn-start btn-request">Request a demo</a
-        >
+          class="btn btn-start btn-request">Request a demo</a>
         <a
           rel="external"
           target="_blank"
           href="https://app.mailcheck.co/"
           class="btn btn-sign-in"
-          title="sign in"
-        >
+          title="sign in">
           sign in
         </a>
       </div>
@@ -47,7 +45,11 @@
 <button class="burger-wrapper" class:open on:click={() => (open = !open)} id="burger">
   <span class="burger" />
 </button>
-<nav class="mobile-menu" class:open on:click={() => (open = !open)} id="mobile-menu">
+<nav
+  class="mobile-menu"
+  class:open
+  on:click={() => (open = !open)}
+  id="mobile-menu">
   <a class="nav-link mobile-menu-links" title="features" href="/#features">Features</a>
   <a class="nav-link mobile-menu-links" title="pricing" href="/#pricing">Pricing</a>
   <a class="nav-link mobile-menu-links" title="contact us" href="/#contact-us">Contact Us</a>
@@ -58,15 +60,13 @@
     href="https://app.mailcheck.co/"
     target="_blank"
     title="sign in"
-    class="btn btn-sign-in mobile-btn">Sign in</a
-  >
+    class="btn btn-sign-in mobile-btn">Sign in</a>
   <a
     href="https://calendly.com/fm--29/15min"
     rel="external nofollow"
     target="_blank"
     class="btn btn-bordered btn-invert"
-    title="Request a demo">Request a demo</a
-  >
+    title="Request a demo">Request a demo</a>
 </nav>
 
 <style lang="scss">

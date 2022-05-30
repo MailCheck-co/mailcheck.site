@@ -62,8 +62,7 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
->
+  }}>
   <div class="section-heading sm-left">
     <h2 class="title">Cost-effective pricing plans</h2>
     <p class="section-title-lg">Pricing</p>
@@ -77,8 +76,7 @@
       on:mousedown={onMouseDown}
       on:mouseup={onMouseUp}
       on:mouseleave={onMouseUp}
-      on:mousemove={onMouseMove}
-    >
+      on:mousemove={onMouseMove}>
       <li class="card" id="pro">
         <h3 class="title-colored">pro</h3>
         <span class="title lowercase">$10/mo</span>
@@ -89,8 +87,7 @@
           target="_blank"
           rel="external"
           href="https://app.mailcheck.co/dashboard/payment_plans"
-          class="btn btn-choose">choose</a
-        >
+          class="btn btn-choose">choose</a>
       </li>
       <li class="card" id="agency">
         <h3 class="title-colored cyan">agency</h3>
@@ -102,8 +99,7 @@
           target="_blank"
           rel="external"
           href="https://app.mailcheck.co/dashboard/payment_plans"
-          class="btn btn-choose btn-cyan">choose</a
-        >
+          class="btn btn-choose btn-cyan">choose</a>
       </li>
       <li class="card" id="enterprise">
         <h3 class="title-colored grey">enterprise</h3>
@@ -115,26 +111,22 @@
           target="_blank"
           rel="external"
           href="https://app.mailcheck.co/dashboard/payment_plans"
-          class="btn btn-choose btn-grey">choose</a
-        >
+          class="btn btn-choose btn-grey">choose</a>
       </li>
       <li class="card" id="custom">
         <h3 class="title-colored red">custom</h3>
         <span class="card-features-text">
           <span class="bold">Epic</span>
-          100,000+ emails to validate included</span
-        >
+          100,000+ emails to validate included</span>
         <span class="card-features-text">
           <span class="bold">Legendary</span>
-          1,000,000,000+ emails to validate included</span
-        >
+          1,000,000,000+ emails to validate included</span>
         <a
           href="https://calendly.com/fm--29/15min"
           rel="external nofollow"
           target="_blank"
           title="request a demo"
-          class="btn btn-choose btn-red">request a demo</a
-        >
+          class="btn btn-choose btn-red">request a demo</a>
       </li>
     </ul>
   </div>

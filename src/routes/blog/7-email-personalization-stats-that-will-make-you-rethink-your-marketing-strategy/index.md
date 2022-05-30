@@ -50,9 +50,7 @@ You may think people are closed when it comes to sharing their data. Although, t
 ![email personalization marketing](./email-personalization-marketing.png?format=webp;jpg;avif&srcset)
 
 ## Email-marketing
-
 **We picked up the statistics about this type of communication as well. Here are the top channels marketers use nowadays:**
-
 - website: 80%
 - email marketing after email bounce test: 74%;
 - display banners ads: 64%;
@@ -77,5 +75,4 @@ Studies have shown that relevant messages help generate even more sales than soc
 You need to interact with your target audience. Every prospect on your list is different, which is why it would be a mistake to send them the same email message. Focus on the recipient and you will reach almost 20 times more revenue when compared to general emails. So taking a targeted approach definitely makes a difference. Since you get contacts from different sources, you need to check them. Use [email validation software](https://mailcheck.co/) and your efforts will pay off.
 
 ## Conclusion
-
 Rely on statistics if you are in any doubt. The tips we have discussed above may seem simple at first, but they are really necessary. [They will help you in improving your email marketing, drip campaigns](/blog/the-one-common-email-marketing-mistake). Remember, they will turn profitable only if you take care of the details. They make up the big picture.

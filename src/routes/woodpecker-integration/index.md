@@ -42,16 +42,16 @@ As soon as the progress bar reaches **100%** you can switch to **“Woodpecker�
 ### Step 6:
 
 Upon completion you have two methods to migrate the results of the validation:
-
-- **Manually** by downloading directly yo PC
-
+  - **Manually** by downloading directly yo PC
+ 
 ![choose a spreadsheet you require for the validation](./step-6.jpg)
+  - Or **automatically** - all you have to do is to go to your **Woodpecker account** and see the results
 
-- Or **automatically** - all you have to do is to go to your **Woodpecker account** and see the results
 
 ### Step 7:
 
-- Go to **“Prospects”** in your WoodPecker account
-- Scroll horizontally and find a column **“tag”** here you may find a [Mailcheck.co](https://mailcheck.co/) results
+ - Go to **“Prospects”** in your WoodPecker account
+ - Scroll horizontally and find a column **“tag”** here you may find a [Mailcheck.co](https://mailcheck.co/) results
 
 ![test your zap trigger](./step-7.jpg)
+

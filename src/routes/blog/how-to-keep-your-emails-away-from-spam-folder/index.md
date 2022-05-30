@@ -29,10 +29,9 @@ desc: Email marketing is an essential part of your strategy. But sometimes it do
 Only fools and non-professionals bet on quantity, not quality. Just one wrong step is enough to understand that bigger isn’t always better. It’s cool that you have a broad audience, a lot of loyal customers, even more potential customers. How many of them interact with you? What do you change in your copy to make clients highly engaged? Does your statistic show, how many of your prospects have sent your message into spam folder before unsubscribing.
 
 We have 3 tips for you to prevent a poor rep:
-
-- Never ever purchase an email list, even if it seems the only way to continue — you don’t know what emails do you receive, are they active or dormant, and their owners certainly did not express a desire to receive letters from you;
-- Starting your new campaign, just get rid of hard bounces — you can use an email verify service for this task;
-- Trim your list — you need to filter out dormant accounts who don’t communicate or interact with you. It’s better to have a small list of recipients, but engaged.
+ - Never ever purchase an email list, even if it seems the only way to continue — you don’t know what emails do you receive, are they active or dormant, and their owners certainly did not express a desire to receive letters from you;
+ - Starting your new campaign, just get rid of hard bounces — you can use an email verify service for this task;
+ - Trim your list — you need to filter out dormant accounts who don’t communicate or interact with you. It’s better to have a small list of recipients, but engaged.
 
 ## Check your sender information
 
@@ -60,10 +59,10 @@ If you don’t send your messages regularly, people will easily forget about you
 
 ## Tackle the several questions to save your emails from spam:
 
-- Do you consider your email list to be healthy?
-- Which top [email validation services](https://mailcheck.co/) do you use?
-- Are you provided with an authoritative information about the sender?
-- Does your email contain triggering spam filters?
-- Is your send schedule agreed?
+ - Do you consider your email list to be healthy?
+ - Which top [email validation services](https://mailcheck.co/) do you use?
+ - Are you provided with an authoritative information about the sender?
+ - Does your email contain triggering spam filters?
+ - Is your send schedule agreed?
 
 If your emails don’t reach the inbox, why did you ever send them?

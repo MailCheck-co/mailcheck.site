@@ -17,8 +17,7 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
->
+  }}>
   <div class="section-heading">
     <h2 class="title">Our customer's reviews</h2>
     <p class="section-title-lg">Reviews</p>
@@ -40,8 +39,7 @@
             target="_blank"
             rel="external nofollow"
             title="Read Reviews"
-            class="reviews-item-link btn">Read Reviews</a
-          >
+            class="reviews-item-link btn">Read Reviews</a>
         </div>
         <div class="reviews-item">
           <img width="120" height="40" srcset={iconBeta} alt="" class="reviews-item-logo" />
@@ -54,8 +52,7 @@
             target="_blank"
             rel="external nofollow"
             title="Read Reviews"
-            class="reviews-item-link btn">Read Reviews</a
-          >
+            class="reviews-item-link btn">Read Reviews</a>
         </div>
         <div class="reviews-item">
           <img width="145" height="32" srcset={iconCapterra} alt="" class="reviews-item-logo" />
@@ -71,8 +68,7 @@
             target="_blank"
             rel="external nofollow"
             title="Read Reviews"
-            class="reviews-item-link btn">Read Reviews</a
-          >
+            class="reviews-item-link btn">Read Reviews</a>
         </div>
       </div>
     </div>

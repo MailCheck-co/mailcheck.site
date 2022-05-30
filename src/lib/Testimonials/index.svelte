@@ -67,8 +67,7 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
->
+  }}>
   <div class="section-heading sm-left">
     <h2 class="title">Testimonials</h2>
     <p class="section-title-lg">Testimonials</p>
@@ -82,8 +81,7 @@
         on:mousedown={onMouseDown}
         on:mouseup={onMouseUp}
         on:mouseleave={onMouseUp}
-        on:mousemove={onMouseMove}
-      >
+        on:mousemove={onMouseMove}>
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">

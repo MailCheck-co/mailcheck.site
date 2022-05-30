@@ -25,8 +25,7 @@
 <Seo
   {desc}
   title={desc}
-  schemas={[websiteSchema, { ...blogSchema, name: desc, description: desc }]}
-/>
+  schemas={[websiteSchema, { ...blogSchema, name: desc, description: desc }]} />
 
 <main class="blog-page" id="blog">
   <div class="container">
@@ -37,13 +36,12 @@
         <a class="article-title" href="blog/{slug}">{title}</a>
         <p class="article-date">Date: {date}</p>
         <div class="article-img">
-          <img srcset={image} alt={title} />
+          <img srcset={image} alt={title}>
         </div>
         <p class="article-snippet">
           {snippet}
           <a sveltekit:prefetch class="text-thin text-thin-link" href="blog/{slug}"
-            >[Read more...]</a
-          >
+            >[Read more...]</a>
         </p>
       {/each}
     </div>

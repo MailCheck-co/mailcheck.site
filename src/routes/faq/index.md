@@ -298,7 +298,7 @@ Mailcheck works on a subscription basis and if you have any of the paid plans (P
 
     <summary>Why can't I see the accompanied data from the uploaded file? No "address" line were migrated during the email validation</summary>
 
-Unfortunately, migrating other data than email, requires more time to process it and we don't want our users to wait for hours.
+Unfortunately, migrating other data than email, requires more time to process it and we don't want our users to wait for hours.  
 
 </details>
 

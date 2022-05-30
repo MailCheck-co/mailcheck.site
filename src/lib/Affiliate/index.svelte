@@ -13,8 +13,7 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
->
+  }}>
   <div class="section-heading sm-left">
     <h3 class="title-small">Invite friends and EARN <span class="no-wrap">$10 USD</span></h3>
     <p class="section-title-lg">Affiliate</p>
@@ -37,8 +36,7 @@
             rel="external"
             href="https://app.mailcheck.co/auth/login"
             title="Invite now"
-            target="_blank"
-          >
+            target="_blank">
             Invite now
           </a>
         </div>

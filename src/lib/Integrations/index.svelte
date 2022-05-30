@@ -21,8 +21,7 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}
->
+  }}>
   <div class="section-heading sm-left">
     <h2 class="title">Integrations</h2>
     <p class="section-title-lg">Integrations</p>
@@ -31,43 +30,35 @@
     <div class="integrations-list">
       <div class="integrations-list-item" data-item-title="Mailchimp">
         <img width="50" height="50" src={mailchimp} alt="Mailchimp" class="integrations-logo" />
-        <a href="/mailchimp-integration" class="integrations-link" />
+        <a href="/mailchimp-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Zapier">
         <img width="50" height="50" src={zapier} alt="Zapier" class="integrations-logo" />
-        <a href="/zapier-integration" class="integrations-link" />
+        <a href="/zapier-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="WordPress">
         <img width="50" height="50" src={WP} alt="WordPress" class="integrations-logo" />
-        <a
-          rel="external"
-          href="https://wordpress.org/plugins/mailcheck-co/"
-          class="integrations-link"
-        />
+        <a rel="external" href="https://wordpress.org/plugins/mailcheck-co/" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Make.com">
         <img width="50" height="50" src={integromat} alt="Make.com" class="integrations-logo" />
-        <a href="/integromat-integration" class="integrations-link" />
+        <a href="/integromat-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Sendgrid">
         <img width="50" height="50" src={sendgrid} alt="Sendgrid" class="integrations-logo" />
-        <a href="/sendgrid-integration" class="integrations-link" />
+        <a href="/sendgrid-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="N8N">
         <img width="50" height="50" src={n8n} alt="N8N" class="integrations-logo" />
-        <a
-          rel="external"
-          href="https://app.mailcheck.co/dashboard/integration"
-          class="integrations-link"
-        />
+        <a rel="external" href="https://app.mailcheck.co/dashboard/integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Mailerlite">
         <img width="50" height="50" src={mailerlite} alt="Mailerlite" class="integrations-logo" />
-        <a href="/mailerlite-integration" class="integrations-link" />
+        <a href="/mailerlite-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Woodpecker">
         <img width="50" height="50" src={woodpecker} alt="Woodpecker" class="integrations-logo" />
-        <a href="/woodpecker-integration" class="integrations-link" />
+        <a href="/woodpecker-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="ActiveCampaign">
         <img
@@ -75,13 +66,8 @@
           height="50"
           src={activecampaign}
           alt="Active Campaign"
-          class="integrations-logo"
-        />
-        <a
-          rel="external"
-          href="https://app.mailcheck.co/dashboard/integration"
-          class="integrations-link"
-        />
+          class="integrations-logo" />
+        <a rel="external" href="https://app.mailcheck.co/dashboard/integration" class="integrations-link"></a>
       </div>
     </div>
   </div>
@@ -117,7 +103,7 @@
     box-shadow: var(--color-shadow);
     backdrop-filter: blur(10px);
 
-    &:hover {
+    &:hover{
       background: linear-gradient(135deg, rgb(255 255 255 / 25%) 0%, rgb(255 255 255 / 0%) 100%);
     }
 
