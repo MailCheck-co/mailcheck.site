@@ -8,7 +8,7 @@
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
   import data from '$utils/site-data';
-  
+
   export let title = '';
   export let desc = '';
   export let image = '';
@@ -31,9 +31,10 @@
       name: title,
       description: desc,
       backstory: desc,
-      headline: title,
+      headline: title
     }
-  ]} />
+  ]}
+/>
 
 <div class="container" id="article">
   <div class="content-block">

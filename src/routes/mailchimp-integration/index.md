@@ -16,6 +16,7 @@ desc: Lots of emails sent every day via Mailchimp, however, the majority of the 
 # **{title}**
 
 ### {titleVideo}
+
 <Video id={idVideo} title={titleVideo} />
 
 ## {snippet}
@@ -105,4 +106,3 @@ But how to filter the data?
 
 That’s it &#128077;
 If you still have questions please contact our team via LiveChat or [integration@mailcheck.co](mailto:integration@mailcheck.co)
-

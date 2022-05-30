@@ -1,10 +1,4 @@
-import type { 
-  Thing, 
-  WithContext, 
-  Organization, 
-  WebSite, 
-  Blog, 
-  Article, } from 'schema-dts';
+import type { Thing, WithContext, Organization, WebSite, Blog, Article } from 'schema-dts';
 import data from './site-data';
 
 export type Schema = Thing | WithContext<Thing>;
@@ -40,8 +34,8 @@ export const articleSchema: WithContext<Article> = {
   // TODO: article categories
   articleSection: 'Emails, Antispam, Marketing, Subscriptions, Mailings',
   speakable: {
-    "@type": 'SpeakableSpecification',
-    cssSelector: ["#title", ".content-block"]
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['#title', '.content-block']
   },
   author: {
     '@type': 'Organization',
@@ -69,7 +63,7 @@ export const articleSchema: WithContext<Article> = {
       postalCode: 'WC2E 9HA',
       streetAddress: 'Suite 4005 43 Bedford Street'
     }
-  },
+  }
 };
 
 export const organizationSchema: WithContext<Organization> = {

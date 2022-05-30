@@ -21,7 +21,8 @@
   <title>{siteName} | {title}</title>
   <link
     rel="canonical"
-    href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')} />
+    href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')}
+  />
   <meta name="description" content={desc || defaultDesc} />
   <meta name="robots" content={noindex ? 'noindex' : 'all'} />
   <!-- Open Graph / Facebook -->
@@ -41,7 +42,8 @@
       rel="alternate"
       type="application/rss+xml"
       title="RSS Feed for mailcheck.co"
-      href="/rss.xml" />
+      href="/rss.xml"
+    />
 
     <!-- JSON-LD Schema -->
     {#each schemas as schema}

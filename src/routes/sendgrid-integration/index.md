@@ -17,8 +17,8 @@ desc: Step by step guide on how to use Mailcheck with Sendgrid.
 # **{title}**
 
 ### {titleVideo}
-<Video id={idVideo} title={titleVideo} />
 
+<Video id={idVideo} title={titleVideo} />
 
 ## Step by step guide
 

@@ -56,9 +56,9 @@ Surely it takes effort to perfect. You need something more than email verificati
 
 ## Other mistakes we can add to these list:
 
- - not using any AB test to find the best type of copy and design;
- - sending emails to a messy list, instead of check email list valid and install an email validation API on sign up forms;
- - creating messages that don’t adopted for mobile screens;
- - over-selling copy, instead of message that resonates with your subscribers.
+- not using any AB test to find the best type of copy and design;
+- sending emails to a messy list, instead of check email list valid and install an email validation API on sign up forms;
+- creating messages that don’t adopted for mobile screens;
+- over-selling copy, instead of message that resonates with your subscribers.
 
 Have you made one of some mistakes from this list? It’s ok, everyone had. Just try to correct them and to leverage this experience to your benefit. And you can surely share it with your customers in the newslist! They would appreciate your honesty!

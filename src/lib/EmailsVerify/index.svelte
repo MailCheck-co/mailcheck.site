@@ -209,7 +209,8 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="wrapper-main sm-left">
     <h1 class="title">Validate your mailing list in one click</h1>
     <p class="main-text">
@@ -219,16 +220,19 @@
     <div class="emails-block">
       <div class="main-buttons">
         <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-live-demo"
-          >Get free emails now</a>
+          >Get free emails now</a
+        >
         <a rel="external" href="https://app.mailcheck.co/" target="_blank" class="btn btn-start"
-          >Start</a>
+          >Start</a
+        >
       </div>
       <div class="verify-email">
         <p class="verify-email-title">Verify email address in real-time!</p>
         <form
           class="verify-email-form"
           id="verify-email"
-          on:submit|preventDefault={verifyEmailFormSubmit}>
+          on:submit|preventDefault={verifyEmailFormSubmit}
+        >
           <div class="email-block">
             <input
               class="input input-verify"
@@ -237,7 +241,8 @@
               id="email"
               placeholder="Email to verify"
               bind:value={emailInput}
-              on:keyup={keyup} />
+              on:keyup={keyup}
+            />
             {#if isChecking && !isChecked}
               <div class="progress-wrapper">
                 <Progress />
@@ -309,7 +314,8 @@
                     target="_blank"
                     rel="external"
                     class={`social-link active ${link.className}`}
-                    title={link.title}>&nbsp;</a>
+                    title={link.title}>&nbsp;</a
+                  >
                 {:else}
                   <span class={`social-link ${link.className}`} title={link.title}>&nbsp;</span>
                 {/if}
