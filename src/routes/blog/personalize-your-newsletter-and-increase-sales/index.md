@@ -8,6 +8,12 @@ snippet: Successful email marketing strategy development considers you know abou
 desc: Successful email marketing strategy development considers you know about your clients much more than just their email address. You also need to be aware of their tastes and expectations. That is the only way to make them loyal to your brand. In this article we are going to disclose useful tips that can help you personalize newsletter and make it engaging for your clients.
 ---
 
+<script context="module">
+  import img from "./how-to-personalize-your-newsletter.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

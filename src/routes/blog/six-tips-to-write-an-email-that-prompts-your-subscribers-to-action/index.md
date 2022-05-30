@@ -8,6 +8,12 @@ snippet: It is no doubt that electronic mail as a marketing tool has proven its 
 desc: It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
 ---
 
+<script context="module">
+  import img from "./sympli.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

@@ -8,6 +8,12 @@ snippet: An email list is a list of subscribers, who may or may not opted-in to 
 desc: An email list is a list of subscribers, who may or may not opted-in to receive emails from a certain sender.
 ---
 
+<script context="module">
+  import img from "./easyspace.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

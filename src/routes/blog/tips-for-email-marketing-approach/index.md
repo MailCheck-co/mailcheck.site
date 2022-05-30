@@ -8,6 +8,12 @@ snippet: Email marketing is undoubtedly the most efficient tool when it comes to
 desc: Email marketing is undoubtedly the most efficient tool when it comes to ROI. According to the recent researches return on investments when promoting goods and services with email marketing makes 41:1. This is twice as more than for any other online marketing method.
 ---
 
+<script context="module">
+  import img from "./email-marketing-approach-img1.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

@@ -8,6 +8,12 @@ snippet: Email verification service is provided to ensure your letters reach inb
 desc: Email verification service is provided to ensure your letters reach inboxes of real customers. It helps you to increase the outcome from your email marketing campaigns as you get updated data on the actuality of your mailing list. Below you can find out all you need to know about email address verification.
 ---
 
+<script context="module">
+  import img from "./guide-img1.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

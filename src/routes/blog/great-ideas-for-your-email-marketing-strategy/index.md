@@ -8,6 +8,12 @@ snippet: Nowadays, all industries are ever-changing, and it is very important to
 desc: Nowadays, all industries are ever-changing, and it is very important to stay up-to-date. Especially when it goes about email marketing. If you’re not keeping abreast of the trends that come to go, you’re out of market, out of competition. It is a terrible feeling that you have missed on something, haven’t done all possible to capitalize on the power of your email list. Ok, you’re using email validation tool (if you are), but is it enough?
 ---
 
+<script context="module">
+  import img from "./get-ideas-for-email.svg";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

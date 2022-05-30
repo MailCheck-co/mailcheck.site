@@ -8,6 +8,12 @@ snippet: The pace e-commerce is expanding with and the number of sales occurring
 desc: The pace e-commerce is expanding with and the number of sales occurring per minute is growing so fast that these days it is nearly impossible to run a business without an email verifier. If you are already using one - well done, but if you are still in search of a better-than-average email verifier, look no more.
 ---
 
+<script context="module">
+  import img from "./screen2.png?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}
@@ -28,7 +34,7 @@ Mailcheck integration with WordPress is probably the easiest and most convenient
 
 - create a Mailcheck account
 - generate your API key from the API menu at the top of your account dashboard
-  ![account dashboard](./screen1.png)
+  ![account dashboard](./screen1.png?format=webp;jpg;avif&srcset)
 - [download](https://mailcheck.co/l/wp) and install Mailcheck plugin.
   Right now the service integrates with WP-forms, ACF, Contact Form 7, WooCommerce and Elementor.
 
@@ -38,6 +44,6 @@ Integromat is another service that helps you connect apps with one another. So i
 
 Getting started with each of the integrations is super easy. Mailcheck allocated a separate Integration menu on the user account dashboard. Simply login into your Mailcheck account, go to Integration at the top of the screen and choose the service you want to integrate through.
 
-![integration](./screen2.png)
+![integration](./screen2.png?format=webp;jpg;avif&srcset)
 
 Mailcheck alone is a very efficient application that can be used on its own, but in combination with one of the above platforms, its effectiveness is doubled. And did I mention that is offers a free trial too? Head on to Mailcheck website to get a free trial and give those integrations a try.

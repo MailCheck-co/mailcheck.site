@@ -8,6 +8,12 @@ snippet: With the coronavirus hitting hard on the economy worldwide, not only re
 desc: With the coronavirus hitting hard on the economy worldwide, not only retailers had to implement changes in the way they run their business, but also the behaviour of their customers has changed dramatically. In rather ambiguous directions.
 ---
 
+<script context="module">
+  import img from "./email-marketing-during-post-covid-19.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

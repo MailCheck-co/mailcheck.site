@@ -8,6 +8,12 @@ snippet: Have you ever heard about the term “people-based marketing?” It’s
 desc: Have you ever heard about the term “people-based marketing?” It’s impossible only if you completely fell out of the sphere for a while. However, let us give you a more in-depth definition, even if you guess what it describes.
 ---
 
+<script context="module">
+  import img from "./marketing-people-based.png?format=webp;jpg;png;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

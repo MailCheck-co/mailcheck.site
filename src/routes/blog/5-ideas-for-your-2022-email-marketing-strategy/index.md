@@ -8,6 +8,12 @@ snippet: Email remains a powerful tool for attracting new customers and keeping 
 desc: Email remains a powerful tool for attracting new customers and keeping old customers loyal. The number of daily sent and received emails reached a fabulous 333.2 billion in 2022. Just imagine how effectively you can boost your business today by incorporating the right email strategy. However, you need to continuously adapt to the times and opt for the most effective strategy to give a more significant boost to your email campaigns. So what may help kickstart this year? Here are some ideas to experiment with.
 ---
 
+<script context="module">
+  import img from "./keep-spam-at-bay.png?format=webp;jpg;png;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

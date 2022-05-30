@@ -8,6 +8,12 @@ snippet: Sender’s reputation directly affects whether your letters reach the u
 desc: Sender’s reputation directly affects whether your letters reach the user’s inbox or not. The higher is your sender reputation the less are the chances your letter goes to spam and the ESP enforces sanctions on your IP or mailbox. Thus, even if you have an ideal selling content and outstanding product, that all doesn’t matter for your email marketing campaign if your sender’s reputation is low.
 ---
 
+<script context="module">
+  import img from "./email-marketing-campaign-guide-img-1.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

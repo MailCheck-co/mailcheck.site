@@ -8,6 +8,12 @@ snippet: Have some issues with cart abandonment on your website? Keep calm, ever
 desc: Have some issues with cart abandonment on your website? Keep calm, everyone faced it. The statistics says, 80% of people abandon their shopping carts.
 ---
 
+<script context="module">
+  import img from "./abandoned-cart-hacks.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

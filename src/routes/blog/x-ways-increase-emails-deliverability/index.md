@@ -8,6 +8,12 @@ snippet: When you launch a new email marketing campaign it doesn’t matter whet
 desc: When you launch a new email marketing campaign it doesn’t matter whether you have managed to make a good strategy, write an extra-selling content or provide a super valuable service if at the end your email won’t reach the potential client.
 ---
 
+<script context="module">
+  import img from "./increase-emails-deliverability-img2.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

@@ -8,6 +8,12 @@ snippet: How many commercial emails do you receive every day? And how many of th
 desc: How many commercial emails do you receive every day? And how many of them do you really read and respond to? Try to analyze what is the reason for such an amount. How many of these letters are personal or are customized to fit your interests and needs? Although marketers talks so much about mail verification and personalization, not all of them manage to establish communication with this approach. Surely, this job isn’t easy, but people want to be noticed and you should do it to succeed.
 ---
 
+<script context="module">
+  import img from "./email-personalization-marketing.png?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

@@ -8,6 +8,12 @@ snippet: Email marketing is an efficient tool to engage your target audience. IT
 desc: Email marketing is an efficient tool to engage your target audience. IT is important to make personalized letters because people like more being addressed personally. Emails can be sent after the specified action of the user so that you can generate a proper call to action. There can be disclosed any topic for the letter - changes in your company, special offers discounts etc.
 ---
 
+<script context="module">
+  import img from "./reasons-to-enforce-email-marketing-img2.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

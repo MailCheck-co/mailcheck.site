@@ -8,6 +8,12 @@ snippet: Email marketing is an essential part of your strategy. But sometimes it
 desc: Email marketing is an essential part of your strategy. But sometimes it doesn’t make a sense to create an outstanding copy, promising subject line, to offer discounts and promotions. There is about a 20% chance your message will land into junk folder. Yes, despite all your best rates. Your letter could be blocked of even going to junk. If the problem was only that customers would not see the email! It is very dangerous for your open rates and revenue.
 ---
 
+<script context="module">
+  import img from "./spam.png?format=webp;jpg;png;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

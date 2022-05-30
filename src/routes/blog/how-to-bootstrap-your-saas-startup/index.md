@@ -8,6 +8,12 @@ snippet: Every project starts with an idea, and every idea eventually converts i
 desc: Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to successful project implementation.
 ---
 
+<script context="module">
+  import img from "./right-development-team.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

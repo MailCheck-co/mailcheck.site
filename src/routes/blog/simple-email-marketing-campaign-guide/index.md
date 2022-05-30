@@ -8,6 +8,12 @@ snippet: Email marketing is the cheapest and potentially profitable way to commu
 desc: Email marketing is the cheapest and potentially profitable way to communicate with your audience. For example, Monitor company has calculated the expenditure/income for email marketing as 1:38. It is likely you do not mind getting such a ROI for your small business email marketing campaign. Thus, we decided to make this simple guide.
 ---
 
+<script context="module">
+  import img from "./senders-reputation-img-1.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

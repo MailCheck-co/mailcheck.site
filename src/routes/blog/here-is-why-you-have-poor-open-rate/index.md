@@ -8,6 +8,12 @@ snippet: Email marketing may sound like an easy task. There is nothing difficult
 desc: Email marketing may sound like an easy task. There is nothing difficult in writing and sending letters, isn’t? Just remember all the adorable emails you’ve received. Whenever you read them, it feels like copywriters or marketers wrote them so effortlessly. In fact, the situation is different and great copy requires effort and skills. But it costs nothing, if people don’t open and don’t read your emails. So what can you do with a low open rate?
 ---
 
+<script context="module">
+  import img from "./sending-emails.png?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

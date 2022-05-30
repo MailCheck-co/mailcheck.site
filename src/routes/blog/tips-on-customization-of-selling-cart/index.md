@@ -8,6 +8,12 @@ snippet: Cart in the online store is an interface which user can use to add prod
 desc: Cart in the online store is an interface which user can use to add products he is ought to purchase.
 ---
 
+<script context="module">
+  import img from "./selling-cart-customization-img-1.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

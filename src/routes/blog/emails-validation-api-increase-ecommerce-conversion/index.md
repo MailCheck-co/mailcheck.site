@@ -8,6 +8,12 @@ snippet: In the previous article, we discussed what email API is, reviewed the e
 desc: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API. Click [here](/blog/emails-validation-api-increase-ecommerce-conversion) to find out more.
 ---
 
+<script context="module">
+  import img from "./email-dashboard.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

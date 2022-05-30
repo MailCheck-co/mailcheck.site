@@ -8,6 +8,12 @@ snippet: The world before and after the pandemic will never be the same - and e-
 desc: The world before and after the pandemic will never be the same - and e-commerce is there to prove it. We jump into 2021 with new needs, new buying habits, a new understanding of the very essence of shopping. Embracing fast-changing trends in an environment previously unknown to marketing is more difficult than ever - but still possible. Here are the main trends in online shopping that await us in 2021.
 ---
 
+<script context="module">
+  import img from "./digital-advertising.png?format=webp;png;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

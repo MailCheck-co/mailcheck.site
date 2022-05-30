@@ -8,6 +8,12 @@ snippet: Without any doubts, your business needs an efficient email marketing st
 desc: Without any doubts, your business needs an efficient email marketing strategy. And sometimes finding it may feel like an extremely difficult tools. Even when you rely on the proven practices or use the best email validation web services, you can’t be sure it is the thing your clients are waiting for.
 ---
 
+<script context="module">
+  import img from "./email-marketing-mistake.png?format=webp;jpg;png;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

@@ -8,6 +8,12 @@ snippet: In this article we are going to explain catch-all email servers, why do
 desc: In this article we are going to explain catch-all email servers, why do they exist, why it is a problem for you and how you can find them in your mailing list and build a proper email strategy.
 ---
 
+<script context="module">
+  import img from "./catch-all-servers-img2.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}

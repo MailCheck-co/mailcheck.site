@@ -8,6 +8,12 @@ snippet: Email marketing trends in 2019 have changed dramatically. However, some
 desc: Email marketing trends in 2019 have changed dramatically. However, some things remain unchanged. It is still important to provide high-quality content as users deal with a huge amount of content on a daily basis. One more thing that remains unchanged is the fact that the ROI of email marketing remains outstanding, and it is still the most efficient way to communicate with your clients online. Although we see that the approach to email marketing for small business has changed a little bit in 2019.
 ---
 
+<script context="module">
+  import img from "./email-marketing-trends-img-1.jpg?format=webp;jpg;avif&srcset";
+
+  metadata.image= img;
+</script>
+
 # {title}
 
 {readingTime}
