@@ -10,8 +10,10 @@ desc: With the coronavirus hitting hard on the economy worldwide, not only retai
 
 <script context="module">
   import img from "./email-marketing-during-post-covid-19.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./email-marketing-during-post-covid-19.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

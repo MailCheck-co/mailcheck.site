@@ -10,8 +10,10 @@ desc: Email address validation has been the matter of concern for webmasters, em
 
 <script context="module">
   import img from "./right-approach-img-1.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./right-approach-img-1.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

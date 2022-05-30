@@ -10,8 +10,10 @@ desc: Have you ever heard about the term “people-based marketing?” It’s im
 
 <script context="module">
   import img from "./marketing-people-based.png?format=webp;jpg;png;avif&srcset";
+  import thumbnail from "./marketing-people-based.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

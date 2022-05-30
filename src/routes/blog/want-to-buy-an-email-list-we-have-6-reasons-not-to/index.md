@@ -10,8 +10,10 @@ desc: Adestra and Ascend have conducted a survey, which results showed that a ha
 
 <script context="module">
   import img from "./email-list.png?format=webp;jpg;png;avif&srcset";
+  import thumbnail from "./email-list.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

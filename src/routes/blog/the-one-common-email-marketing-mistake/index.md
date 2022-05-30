@@ -10,8 +10,10 @@ desc: Without any doubts, your business needs an efficient email marketing strat
 
 <script context="module">
   import img from "./email-marketing-mistake.png?format=webp;jpg;png;avif&srcset";
+  import thumbnail from "./email-marketing-mistake.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

@@ -10,8 +10,10 @@ desc: Every project starts with an idea, and every idea eventually converts into
 
 <script context="module">
   import img from "./right-development-team.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./right-development-team.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

@@ -10,8 +10,10 @@ desc: The world before and after the pandemic will never be the same - and e-com
 
 <script context="module">
   import img from "./digital-advertising.png?format=webp;png;avif&srcset";
+  import thumbnail from "./digital-advertising.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

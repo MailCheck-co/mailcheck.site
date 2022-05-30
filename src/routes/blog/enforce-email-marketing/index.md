@@ -10,8 +10,10 @@ desc: Email marketing is an efficient tool to engage your target audience. IT is
 
 <script context="module">
   import img from "./reasons-to-enforce-email-marketing-img2.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./reasons-to-enforce-email-marketing-img2.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

@@ -10,8 +10,10 @@ desc: When you launch a new email marketing campaign it doesn’t matter whether
 
 <script context="module">
   import img from "./increase-emails-deliverability-img2.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./increase-emails-deliverability-img2.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

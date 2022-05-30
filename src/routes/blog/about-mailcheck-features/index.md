@@ -10,8 +10,10 @@ desc: The pace e-commerce is expanding with and the number of sales occurring pe
 
 <script context="module">
   import img from "./screen2.png?format=webp;jpg;avif&srcset";
+  import thumbnail from "./screen2.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

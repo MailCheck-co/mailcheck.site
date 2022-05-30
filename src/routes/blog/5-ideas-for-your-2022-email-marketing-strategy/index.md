@@ -10,8 +10,10 @@ desc: Email remains a powerful tool for attracting new customers and keeping old
 
 <script context="module">
   import img from "./keep-spam-at-bay.png?format=webp;jpg;png;avif&srcset";
+  import thumbnail from "./keep-spam-at-bay.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

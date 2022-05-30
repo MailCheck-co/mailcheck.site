@@ -10,8 +10,10 @@ desc: How many commercial emails do you receive every day? And how many of them 
 
 <script context="module">
   import img from "./email-personalization-marketing.png?format=webp;jpg;avif&srcset";
+  import thumbnail from "./email-personalization-marketing.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

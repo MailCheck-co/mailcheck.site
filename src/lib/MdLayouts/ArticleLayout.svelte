@@ -11,9 +11,8 @@
 
   export let title = '';
   export let desc = '';
-  export let image = '';
+  export let thumbnail = '';
   export let canonical = '';
-  $: console.info('image: ', image);
 </script>
 
 <Seo
@@ -21,12 +20,12 @@
   {desc}
   isPost={true}
   {canonical}
-  thumbnail={image}
+  thumbnail={data.siteUrl + thumbnail}
   schemas={[
     websiteSchema,
     {
       ...articleSchema,
-      image,
+      image: data.siteUrl + thumbnail,
       url: data.siteUrl + $page.url.pathname,
       name: title,
       description: desc,

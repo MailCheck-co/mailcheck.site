@@ -10,8 +10,10 @@ desc: Launching newsletter for small business is a good way to get in touch with
 
 <script context="module">
   import img from "./email-marketing-for-small-business-tips-img2.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./email-marketing-for-small-business-tips-img2.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

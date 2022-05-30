@@ -10,8 +10,10 @@ desc: Email marketing metrics are used to analyze efficiency of the marketing ca
 
 <script context="module">
   import img from "./marketing-campaign-metrics-img1.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./marketing-campaign-metrics-img1.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

@@ -10,8 +10,10 @@ desc: Cart in the online store is an interface which user can use to add product
 
 <script context="module">
   import img from "./selling-cart-customization-img-1.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./selling-cart-customization-img-1.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

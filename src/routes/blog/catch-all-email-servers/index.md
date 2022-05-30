@@ -10,8 +10,10 @@ desc: In this article we are going to explain catch-all email servers, why do th
 
 <script context="module">
   import img from "./catch-all-servers-img2.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./catch-all-servers-img2.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

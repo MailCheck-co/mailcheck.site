@@ -10,8 +10,10 @@ desc: Have some issues with cart abandonment on your website? Keep calm, everyon
 
 <script context="module">
   import img from "./abandoned-cart-hacks.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./abandoned-cart-hacks.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

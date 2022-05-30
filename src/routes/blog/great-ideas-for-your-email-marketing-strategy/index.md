@@ -12,6 +12,7 @@ desc: Nowadays, all industries are ever-changing, and it is very important to st
   import img from "./get-ideas-for-email.svg";
 
   metadata.image= img;
+  metadata.thumbnail = img;
 </script>
 
 # {title}

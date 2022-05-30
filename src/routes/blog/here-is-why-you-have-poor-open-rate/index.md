@@ -10,8 +10,10 @@ desc: Email marketing may sound like an easy task. There is nothing difficult in
 
 <script context="module">
   import img from "./sending-emails.png?format=webp;jpg;avif&srcset";
+  import thumbnail from "./sending-emails.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

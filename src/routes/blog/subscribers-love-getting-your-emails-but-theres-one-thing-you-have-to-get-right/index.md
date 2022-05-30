@@ -10,8 +10,10 @@ desc: It’s true - about 43% of the 1006 participants in a Yes Marketing study 
 
 <script context="module">
   import img from "./subscribers.jpeg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./subscribers.jpeg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

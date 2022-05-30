@@ -10,8 +10,10 @@ desc: An email list is a list of subscribers, who may or may not opted-in to rec
 
 <script context="module">
   import img from "./easyspace.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./easyspace.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

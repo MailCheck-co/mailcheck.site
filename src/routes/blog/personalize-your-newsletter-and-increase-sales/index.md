@@ -10,8 +10,10 @@ desc: Successful email marketing strategy development considers you know about y
 
 <script context="module">
   import img from "./how-to-personalize-your-newsletter.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./how-to-personalize-your-newsletter.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

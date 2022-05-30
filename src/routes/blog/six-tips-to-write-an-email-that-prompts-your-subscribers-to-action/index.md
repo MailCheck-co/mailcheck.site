@@ -10,8 +10,10 @@ desc: It is no doubt that electronic mail as a marketing tool has proven its und
 
 <script context="module">
   import img from "./sympli.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./sympli.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

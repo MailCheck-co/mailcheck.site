@@ -10,8 +10,10 @@ desc: Email verification service is provided to ensure your letters reach inboxe
 
 <script context="module">
   import img from "./guide-img1.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./guide-img1.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

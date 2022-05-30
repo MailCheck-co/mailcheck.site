@@ -10,8 +10,10 @@ desc: Email marketing trends in 2019 have changed dramatically. However, some th
 
 <script context="module">
   import img from "./email-marketing-trends-img-1.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./email-marketing-trends-img-1.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

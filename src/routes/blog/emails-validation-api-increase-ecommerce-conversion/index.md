@@ -10,8 +10,10 @@ desc: In the previous article, we discussed what email API is, reviewed the emai
 
 <script context="module">
   import img from "./email-dashboard.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./email-dashboard.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

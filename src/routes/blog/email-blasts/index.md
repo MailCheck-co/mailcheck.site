@@ -10,8 +10,10 @@ desc: Ever wondered what an email blast is? Well, someone may call it an email c
 
 <script context="module">
   import img from "./digital_savvy.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./digital_savvy.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

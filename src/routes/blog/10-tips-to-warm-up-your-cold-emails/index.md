@@ -10,8 +10,10 @@ desc: Cold emailing is in a way an analog of cold calling - you have one generic
 
 <script context="module">
   import img from "./cold-emails.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./cold-emails.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

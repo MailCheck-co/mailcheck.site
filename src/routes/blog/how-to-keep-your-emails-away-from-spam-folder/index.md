@@ -10,8 +10,10 @@ desc: Email marketing is an essential part of your strategy. But sometimes it do
 
 <script context="module">
   import img from "./spam.png?format=webp;jpg;png;avif&srcset";
+  import thumbnail from "./spam.png";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

@@ -10,8 +10,10 @@ desc: Email marketing is the cheapest and potentially profitable way to communic
 
 <script context="module">
   import img from "./senders-reputation-img-1.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./senders-reputation-img-1.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

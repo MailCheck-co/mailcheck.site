@@ -10,8 +10,10 @@ desc: Email marketing is undoubtedly the most efficient tool when it comes to RO
 
 <script context="module">
   import img from "./email-marketing-approach-img1.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./email-marketing-approach-img1.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}

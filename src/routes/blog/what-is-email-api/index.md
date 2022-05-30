@@ -10,8 +10,10 @@ desc: Businesses of all sizes use email as a primary way of communicating with t
 
 <script context="module">
   import img from "./vero.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./vero.jpg";
 
   metadata.image= img;
+  metadata.thumbnail = thumbnail;
 </script>
 
 # {title}
