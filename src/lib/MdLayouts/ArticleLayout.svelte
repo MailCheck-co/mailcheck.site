@@ -22,7 +22,6 @@
   {canonical}
   thumbnail={data.siteUrl + thumbnail}
   schemas={[
-    websiteSchema,
     {
       ...articleSchema,
       image: data.siteUrl + thumbnail,
@@ -31,7 +30,8 @@
       description: desc,
       backstory: desc,
       headline: title,
-    }
+    },
+    websiteSchema
   ]} />
 
 <div class="container" id="article">

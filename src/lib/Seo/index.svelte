@@ -35,7 +35,7 @@
   <meta property="twitter:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
   <meta property="twitter:title" content={title || siteName} />
   <meta property="twitter:description" content={desc || defaultDesc} />
-  {#if thumbnail !== ''}<meta property="twitter:image" content={thumbnail} />{/if}
+  <meta property="twitter:image" content={thumbnail || siteUrl + '/favicon.png'} />
   {#if !browser}<!-- RSS Feed -->
     <link
       rel="alternate"
