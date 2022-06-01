@@ -8,9 +8,19 @@ snippet: It’s been 49 years since Ray Tomlinson has sent the very first email.
 desc: It’s been 49 years since Ray Tomlinson has sent the very first email. Since that time, email remains the primary means of contact between a business and a client. According to the Marketing Insider Group, 59% of B2B marketers believe email is the most effective way to increase revenue. We all know that the advantages of email marketing are direct quick communication with potential customers, relatively low cost of implementation and automation, growth of targeted actions from subscribers and hence, loyalty to your brand, but little known fact is that proper email marketing involves no less competent and meticulous work with the subscribers base. Clean email lists, high deliverability, and a good sender reputation are benefits that you, as a mailing list sender, can win from validating subscriber lists.
 ---
 
+<script context="module">
+  import img from "./email-notification-woman.jpg?format=webp;jpg;avif&srcset";
+  import thumbnail from "./email-notification-woman.jpg";
+
+  metadata.image= img;
+  metadata.thumbnail = thumbnail;
+</script>
+
 # {title}
 
 {readingTime}
+
+![{title}](./email-notification-woman.jpg?format=webp;jpg;avif&srcset)
 
 It’s been 49 years since Ray Tomlinson has sent the very first email. Since that time, email remains the primary means of contact between a business and a client. According to the Marketing Insider Group, 59% of B2B marketers believe email is the most effective way to increase revenue. We all know that the advantages of email marketing are direct quick communication with potential customers, relatively low cost of implementation and automation, growth of targeted actions from subscribers and hence, loyalty to your brand, but little known fact is that proper email marketing involves no less competent and meticulous work with the subscribers base. Clean email lists, high deliverability, and a good sender reputation are benefits that you, as a mailing list sender, can win from validating subscriber lists.
 
