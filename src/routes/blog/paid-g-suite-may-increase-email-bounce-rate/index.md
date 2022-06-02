@@ -28,11 +28,11 @@ Google Workspace or G-Suite is a multi-faceted application, but its primary func
 
 No matter what outer obstacles may interfere with email campaigns, there are always methods to soften these or even bring them to almost zero influence. When it comes to an email interaction between a brand and a customer, a marketer’s first and foremost task is to make sure all emails are sent to active accounts and real users. Here are a few steps that may help achieve it.
 
- - #### Get permission for your emails
+ - ### Get permission for your emails
 
 This step will allow you to determine whether the recipient exists or not. Actually, the easiest way to do it is to send an [email bounce test](https://mailcheck.co/) message to see whether it will be delivered to the right inbox. But it is just the tip of the iceberg - if you really want to do it right, you will have to go through a long checklist that will take time and nerves. Alternatively, there is a great alternative to manual validation – ready-to-use validation applications that will flawlessly do the job for you. Consider Mailcheck, a high-precision service that will perform a hassle-free [email verification](https://mailcheck.co/) in no time. This app can be easily integrated with the most widely used platforms to function on your behalf continuously.
 
- - #### Validate your mailing lists
+ - ### Validate your mailing lists
 
 Do not underestimate the importance of controlling your undelivered emails. Use a marketing tool that will provide you with statistics of soft and hard bounce rates for each campaign. All hard bounces should be specifically monitored. This approach will help you identify which email addresses are no longer alive. The key idea of this stage is to identify the roots of the poor email deliverability and successfully eliminate these. Thorough analysis will enable you to develop a plan to avoid the same mistakes in future.
 
