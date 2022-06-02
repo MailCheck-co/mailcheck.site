@@ -65,8 +65,11 @@ Expires in: 30 days
 
 ## ANALYTICS AND CUSTOMIZATION COOKIES:
 
-URL: analytics.google.com
-Owner: Google
+Mailcheck uses the help of Posthog.com as the third-party tracking/analytical services, but we don’t use these services to track our users individually or collect their personally identifiable information.
+
+URL: posthog.com
+Owner: PostHog, Inc.
+Headquarters Regions San Francisco Bay Area, West Coast, Western US
 
 ## ADVERTISING COOKIES:
 
