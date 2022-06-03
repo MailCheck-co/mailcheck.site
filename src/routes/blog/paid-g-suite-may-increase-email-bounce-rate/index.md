@@ -8,9 +8,19 @@ snippet: Email marketing remains a powerful tool for business development. Even 
 desc: Email marketing remains a powerful tool for business development.
 ---
 
+<script context="module">
+    import img from "./email_960_720.jpg?format=webp;jpg;avif&srcset";
+    import thumbnail from "./email_960_720.jpg";
+
+    metadata.image= img;
+    metadata.thumbnail = thumbnail;
+</script>
+
 # {title}
 
 {readingTime}
+
+![Email marketing](./email_960_720.jpg?format=webp;jpg;avif&srcset)
 
 Email marketing remains a powerful tool for business development. Even if it is one of the oldest digital methods of establishing interaction with the customers, it keeps impressing the market with new technologies, strengthens customer loyalty, and boosts sales. The main attraction of eMarketing is its profitability – experts believe its ROI amounts to 4000%. No wonder as the number of email users has already surpassed 4 billion and is expected to reach [4.6 billion users in 2025](https://www.statista.com/statistics/255080/number-of-e-mail-users-worldwide/). But there are crucial aspects that may whittle down even the most effective email strategy. And bounce rate is one of these.
 

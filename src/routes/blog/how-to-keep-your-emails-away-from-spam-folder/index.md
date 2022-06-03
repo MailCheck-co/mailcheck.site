@@ -14,7 +14,7 @@ desc: Email marketing is an essential part of your strategy. But sometimes it do
 
 2021 Deliverability Benchmark showed, that emails reached the inbox an average of 83% of the time, while the global average is 85%. You might consider that 15% don’t matter, but they do. Messages can just miss or be banned. We’re going to focus on that part, that spoils your stats getting into spam.
 
-![spam](./spam.png?format=webp;jpg;png;avif&srcset)
+![spam](./spam.png?format=webp;jpg;avif&srcset)
 
 ## Keep your email list clean
 
