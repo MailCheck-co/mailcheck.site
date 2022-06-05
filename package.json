@@ -29,14 +29,14 @@
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "autoprefixer": "^10.4.7",
-    "cssnano": "^5.1.10",
+    "cssnano": "^5.1.11",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "fast-glob": "^3.2.11",
     "mdsvex": "^0.10.6",
     "postcss": "^8.4.14",
-    "postcss-load-config": "^3.1.4",
+    "postcss-load-config": "^4.0.1",
     "postcss-scss": "^4.0.4",
     "prettier": "~2.6.2",
     "prettier-plugin-svelte": "^2.7.0",
@@ -50,11 +50,13 @@
     "stylelint-config-prettier-scss": "^0.0.1",
     "svelte": "^3.48.0",
     "svelte-check": "^2.7.2",
-    "svelte-preprocess": "^4.10.6",
+    "just-camel-case": "^6.0.1",
+    "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.2",
+    "typescript": "^4.7.3",
     "vite-imagetools": "^4.0.4",
-    "xmlbuilder2": "^3.0.2"
+    "xmlbuilder2": "^3.0.2",
+    "unist-util-visit": "^4.1.0"
   },
   "type": "module",
   "dependencies": {
@@ -62,11 +64,9 @@
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.5.0",
     "firebase-tools": "^11.0.1",
-    "just-camel-case": "^6.0.1",
     "schema-dts": "^1.1.0",
     "svelte-inview": "^3.0.0",
-    "svelte-slidy": "^2.8.7",
-    "unist-util-visit": "^4.1.0"
+    "svelte-slidy": "^2.8.7"
   },
   "stylelint": {
     "extends": [
