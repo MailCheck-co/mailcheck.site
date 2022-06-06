@@ -38,6 +38,18 @@
           "function": "internalRedirect"
         }
       ],
+      "redirects": [
+        {
+          "source": "/scholarship",
+          "destination": "/blog/mailcheck-scholarship-2019",
+          "type": 301
+        },
+        {
+          "source": "/increaseEmailsDeliverability",
+          "destination": "/blog/x-ways-increase-emails-deliverability",
+          "type": 301
+        }
+      ],
       "cleanUrls": true,
       "trailingSlash": false
     },
