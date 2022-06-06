@@ -1,6 +1,5 @@
 ---
 published: true
-slug: why-your-marketing-should-be-people-based
 title: Why Your Marketing Should Be People-Based
 date: 30.03.2022
 readingTime: 4 min read

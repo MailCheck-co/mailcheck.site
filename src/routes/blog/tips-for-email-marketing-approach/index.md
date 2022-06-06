@@ -1,6 +1,5 @@
 ---
 published: true
-slug: tips-for-email-marketing-approach
 title: 10 Tips for Email Marketing Approach
 date: 20.04.2019
 readingTime: 3 min read

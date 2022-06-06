@@ -1,6 +1,5 @@
 ---
 published: true
-slug: e-commerce-trends-on-the-rise-in-2021
 title: E-Commerce trends on the rise in 2021
 date: 24.05.2021
 readingTime: 4 min read

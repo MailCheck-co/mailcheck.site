@@ -1,6 +1,5 @@
 ---
 published: true
-slug: email-marketing-campaign-metrics
 title: Email Marketing Campaign Metrics for Small Business
 date: 21.04.2019
 readingTime: 3 min read

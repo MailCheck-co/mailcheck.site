@@ -1,6 +1,5 @@
 ---
 published: true
-slug: complete-guide-to-email-verification-services
 title: The Complete Guide to Email Verification Services
 date: 17.03.2019
 readingTime: 3 min read

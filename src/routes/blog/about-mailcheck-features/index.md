@@ -1,6 +1,5 @@
 ---
 published: true
-slug: about-mailcheck-features
 title: All You Need to Know About Mailcheck Features and More
 date: 30.08.2021
 readingTime: 3 min read

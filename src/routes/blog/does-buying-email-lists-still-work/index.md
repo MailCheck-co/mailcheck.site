@@ -1,6 +1,5 @@
 ---
 published: true
-slug: does-buying-email-lists-still-work
 title: Does buying email lists still work?
 date: 01.07.2020
 readingTime: 8 min read

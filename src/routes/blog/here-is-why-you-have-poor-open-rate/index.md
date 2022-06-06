@@ -1,6 +1,5 @@
 ---
 published: true
-slug: here-is-why-you-have-poor-open-rate
 title: Here Is Why You Have Poor Open Rate
 date: 16.02.2022
 readingTime: 3 min read

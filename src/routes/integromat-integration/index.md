@@ -1,5 +1,4 @@
 ---
-slug: integromat-integration
 title: Integromat Integration instructions
 date: 24.04.2021
 readingTime: 3 min read

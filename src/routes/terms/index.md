@@ -1,7 +1,6 @@
 ---
 canonical: /
 noindex: true
-slug: terms
 title: Terms of Service
 date: 05.05.2022
 readingTime: 1 min read

@@ -1,4 +1,6 @@
-import mdsvexUrlToImport from './mdsvex-url-to-import.js';
+import mdsvexUrlToImport from './mdsvexplugins/mdsvex-url-to-import.js';
+import mdsvexFormatterToImport from './mdsvexplugins/mdsvex-formatter-to-import.js';
+import mdsvexGenerateSlug from "./mdsvexplugins/mdsvex-generate-slug.js";
 import remarkGithub from 'remark-github';
 import remarkAbbr from 'remark-abbr';
 import rehypeSlug from 'rehype-slug';
@@ -14,8 +16,10 @@ const config = {
     dashes: 'oldschool'
   },
   remarkPlugins: [
+    mdsvexGenerateSlug,
+    mdsvexFormatterToImport,
+    mdsvexUrlToImport,
     [
-      mdsvexUrlToImport,
       remarkGithub,
       {
         // Use your own repository

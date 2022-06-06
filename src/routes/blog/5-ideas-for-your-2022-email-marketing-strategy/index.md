@@ -1,6 +1,5 @@
 ---
 published: true
-slug: 5-ideas-for-your-2022-email-marketing-strategy
 title: 5 Ideas for Your 2022 Email Marketing Strategy
 date: 15.04.2022
 readingTime: 3 min read

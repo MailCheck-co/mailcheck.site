@@ -1,6 +1,5 @@
 ---
 published: true
-slug: explaining-email-bounce-rate
 title: Explaining Email Bounce Rate and Ways to Reduce It
 date: 30.03.2019
 readingTime: 3 min read

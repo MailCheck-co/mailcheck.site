@@ -1,6 +1,5 @@
 ---
 published: true
-slug: abandoned-cart-hacks
 title: 10 Abandoned Cart Hacks, Emails and Tricks that Will Rise Sales
 date: 15.07.2019
 readingTime: 3 min read

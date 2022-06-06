@@ -1,7 +1,6 @@
 ---
 canonical: /
 noindex: true
-slug: cookies
 title: Cookie Policy
 date: 05.05.2022
 readingTime: 1 min read

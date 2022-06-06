@@ -1,5 +1,4 @@
 ---
-slug: mailerlite-integration
 title: MailerLite Integration Guide
 date: 20.05.2022
 readingTime: 2 min read

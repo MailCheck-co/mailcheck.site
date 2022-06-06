@@ -1,5 +1,4 @@
 ---
-slug: woodpecker-integration
 title: WoodPecker integration guide
 date: 10.05.2022
 readingTime: 5 min read

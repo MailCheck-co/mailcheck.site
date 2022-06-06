@@ -1,5 +1,4 @@
 ---
-slug: Sendgrid-integration
 title: Sendgrid Integration instructions
 date: 29.09.2021
 readingTime: 4 min read

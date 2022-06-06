@@ -1,6 +1,5 @@
 ---
 published: true
-slug: personalize-your-newsletter-and-increase-sales
 title: How to Personalize Your Newsletter and Increase Sales?
 date: 24.04.2019
 readingTime: 3 min read

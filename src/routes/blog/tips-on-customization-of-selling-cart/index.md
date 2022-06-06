@@ -1,6 +1,5 @@
 ---
 published: true
-slug: tips-on-customization-of-selling-cart
 title: X Tips on Customization of Selling Cart
 date: 19.04.2019
 readingTime: 3 min read

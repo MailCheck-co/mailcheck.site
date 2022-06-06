@@ -1,6 +1,5 @@
 ---
 published: true
-slug: subscribers-love-getting-your-emails-but-theres-one-thing-you-have-to-get-right
 title: Subscribers Love Getting Your Emails, But There’s One Thing You Have to Get Right
 date: 23.02.2022
 readingTime: 3 min read

@@ -1,6 +1,5 @@
 ---
 published: true
-slug: 10-tips-to-warm-up-your-cold-emails
 title: 10 tips to “warm up” your cold emails
 date: 11.08.2020
 readingTime: 3 min read
