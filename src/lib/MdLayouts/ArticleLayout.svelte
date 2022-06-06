@@ -10,6 +10,7 @@
   export let desc = '';
   export let canonical = '';
   export let noindex = false;
+  export let thumbnail = '';
 </script>
 
 <Seo
@@ -18,6 +19,7 @@
   isPost={true}
   {canonical}
   {noindex}
+  {thumbnail}
   schemas={[websiteSchema, { ...articleSchema, name: title, description: desc }]} />
 
 <div class="container" id="article">
