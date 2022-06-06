@@ -22,8 +22,11 @@ const config = {
     [
       remarkGithub,
       {
+        buildUrl(values, defaultBuildUrl) {
+                 return values.user === 'example' ? false : defaultBuildUrl(values)
+        },
         // Use your own repository
-        repository: 'https://github.com/svelte-add/mdsvex.git'
+        repository: 'https://github.com/MailCheck-co/mailcheck.site.git'
       }
     ],
     remarkAbbr
