@@ -8,12 +8,14 @@
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
   import data from '$utils/site-data';
-  
+
   export let title = '';
   export let desc = '';
   export let canonical = '';
   export let noindex = false;
-  export let thumbnail = '';
+  export let thumbnailImg = '';
+
+  $: console.info('articleLayout thumbnailImg: ', thumbnailImg)
 </script>
 
 <Seo
@@ -22,11 +24,11 @@
   isPost={true}
   {canonical}
   {noindex}
-  {thumbnail}
+  thumbnail={thumbnailImg}
   schemas={[
     {
       ...articleSchema,
-      image: thumbnail,
+      image: thumbnailImg,
       url: data.siteUrl + $page.url.pathname,
       name: title,
       description: desc,

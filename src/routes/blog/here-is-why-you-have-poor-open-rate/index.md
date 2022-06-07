@@ -5,15 +5,16 @@ date: 16.02.2022
 readingTime: 3 min read
 snippet: Email marketing may sound like an easy task. There is nothing difficult in writing and sending letters, isn’t? Just remember all the adorable emails you’ve received. Whenever you read them, it feels like copywriters or marketers wrote them so effortlessly. In fact, the situation is different and great copy requires effort and skills. But it costs nothing, if people don’t open and don’t read your emails. So what can you do with a low open rate?
 desc: Email marketing may sound like an easy task. There is nothing difficult in writing and sending letters, isn’t? Just remember all the adorable emails you’ve received. Whenever you read them, it feels like copywriters or marketers wrote them so effortlessly. In fact, the situation is different and great copy requires effort and skills. But it costs nothing, if people don’t open and don’t read your emails. So what can you do with a low open rate?
+thumbnailImg: /src/routes/blog/here-is-why-you-have-poor-open-rate/sending-emails.png?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
 
-Email marketing may sound like an easy task. There is nothing difficult in writing and sending letters, isn’t? Just remember all the adorable emails you’ve received. Whenever you read them, it feels like copywriters or marketers wrote them so effortlessly. In fact, the situation is different and great copy requires effort and skills. But it costs nothing, if people don’t open and don’t read your emails. So what can you do with a low open rate?
-
 ![sendong-emails](./sending-emails.png?format=webp;jpg;avif&srcset)
+
+Email marketing may sound like an easy task. There is nothing difficult in writing and sending letters, isn’t? Just remember all the adorable emails you’ve received. Whenever you read them, it feels like copywriters or marketers wrote them so effortlessly. In fact, the situation is different and great copy requires effort and skills. But it costs nothing, if people don’t open and don’t read your emails. So what can you do with a low open rate?
 
 So, you checked your last 10 reports on the engagement rate, and the open rate is far from what you’ve expected? And what about click-through rate? Oh, these results can force you to abandon your strategy and forget about drip campaigns. [We understand how frustrating it can be, but don’t finish with the email marketing](/blog/great-ideas-for-your-email-marketing-strategy). There are some tips that can change the situation.
 

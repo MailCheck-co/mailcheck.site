@@ -5,11 +5,14 @@ date: 22.04.2019
 readingTime: 3 min read
 snippet: Email marketing is an efficient tool to engage your target audience. IT is important to make personalized letters because people like more being addressed personally. Emails can be sent after the specified action of the user so that you can generate a proper call to action. There can be disclosed any topic for the letter - changes in your company, special offers discounts etc.
 desc: Email marketing is an efficient tool to engage your target audience. IT is important to make personalized letters because people like more being addressed personally. Emails can be sent after the specified action of the user so that you can generate a proper call to action. There can be disclosed any topic for the letter - changes in your company, special offers discounts etc.
+thumbnailImg: /src/routes/blog/enforce-email-marketing/reasons-to-enforce-email-marketing-img2.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![7 Reasons to Enforce Email Marketing for Your Business](./reasons-to-enforce-email-marketing-img2.jpg?format=webp;jpg;avif&srcset)
 
 Email marketing is an efficient tool to engage your target audience. IT is important to make personalized letters because people like more being addressed personally. Emails can be sent after the specified action of the user so that you can generate a proper call to action. There can be disclosed any topic for the letter - changes in your company, special offers discounts etc.
 

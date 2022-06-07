@@ -5,11 +5,14 @@ date: 23.04.2019
 readingTime: 3 min read
 snippet: Launching newsletter for small business is a good way to get in touch with potential clients and increase sales. It is also a proper tool to increase loyalty to brand. Regular communication with clients is the only way for the small business to personalize offers and win in a daily struggle with large companies.
 desc: Launching newsletter for small business is a good way to get in touch with potential clients and increase sales. It is also a proper tool to increase loyalty to brand. Regular communication with clients is the only way for the small business to personalize offers and win in a daily struggle with large companies.
+thumbnailImg: /src/routes/blog/small-business-tips/email-marketing-for-small-business-tips-img1.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img1.jpg?format=webp;jpg;avif&srcset)
 
 Launching newsletter for small business is a good way to get in touch with potential clients and increase sales. It is also a proper tool to increase loyalty to brand. Regular communication with clients is the only way for the small business to personalize offers and win in a daily struggle with large companies.
 

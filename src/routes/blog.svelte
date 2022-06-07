@@ -32,12 +32,9 @@
     <div class="content-block">
       <h1 class="title">{desc}</h1>
 
-      {#each posts as { slug, title, snippet, date, thumbnail }}
+      {#each posts as { slug, title, snippet, date }}
         <a class="article-title" href="blog/{slug}">{title}</a>
         <p class="article-date">Date: {date}</p>
-        <div class="article-img">
-          <img srcset={thumbnail} alt={title}>
-        </div>
         <p class="article-snippet">
           {snippet}
           <a sveltekit:prefetch class="text-thin text-thin-link" href="blog/{slug}"
@@ -107,11 +104,6 @@
                 text-decoration: underline;
               }
             }
-          }
-
-          &-img {
-            width: 100%;
-            margin: var(--size-10) auto var(--size-14);
           }
         }
       }
