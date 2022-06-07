@@ -14,8 +14,6 @@
   export let canonical = '';
   export let noindex = false;
   export let thumbnailImg = '';
-
-  $: console.info('articleLayout thumbnailImg: ', thumbnailImg)
 </script>
 
 <Seo
