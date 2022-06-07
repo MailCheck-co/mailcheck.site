@@ -48,7 +48,7 @@
   <meta property="og:image" content={defaultImage} />
   <meta property="og:image:alt" content={desc || defaultDesc} />
   <meta property="business:contact_data:country_name" content="Ukraine" />
-  <meta property="og:locale" content="uk_UA" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content={siteName} />
 
   <!-- Twitter -->
