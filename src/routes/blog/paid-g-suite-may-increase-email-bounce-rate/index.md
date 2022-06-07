@@ -2,19 +2,12 @@
 published: true
 slug: paid-g-suite-may-increase-email-bounce-rate
 title: Paid G-Suite May Increase Email Bounce Rate
-date: 06.02.2022
+date: 07.06.2022
 readingTime: 4 min read
 snippet: Email marketing remains a powerful tool for business development. Even if it is one of the oldest digital methods of establishing interaction with the customers, it keeps impressing the market with new technologies, strengthens customer loyalty, and boosts sales.
 desc: Email marketing remains a powerful tool for business development.
+thumbnailImg: /src/routes/blog/paid-g-suite-may-increase-email-bounce-rate/email_960_720.jpg?format=jpg&width=1200&height=630
 ---
-
-<script context="module">
-    import img from "./email_960_720.jpg?format=webp;jpg;avif&srcset";
-    import thumbnail from "./email_960_720.jpg";
-
-    metadata.image= img;
-    metadata.thumbnail = thumbnail;
-</script>
 
 # {title}
 
