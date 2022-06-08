@@ -1,7 +1,8 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import integromat from '$lib/Integrations/integromat.svg';
+  // assets
+  import makecom from '$lib/Integrations/make.com.svg';
   import mailchimp from '$lib/Integrations/mailchimp-logo.svg';
   import n8n from '$lib/Integrations/n8n-logo.svg';
   import sendgrid from '$lib/Integrations/sendgrid.svg';
@@ -41,8 +42,8 @@
         <a rel="external" href="https://wordpress.org/plugins/mailcheck-co/" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Make.com">
-        <img width="50" height="50" src={integromat} alt="Make.com" class="integrations-logo" />
-        <a href="/integromat-integration" class="integrations-link"></a>
+        <img width="50" height="50" src={makecom} alt="Make.com" class="integrations-logo" />
+        <a rel="external" href="https://make.com/" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Sendgrid">
         <img width="50" height="50" src={sendgrid} alt="Sendgrid" class="integrations-logo" />

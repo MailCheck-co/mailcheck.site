@@ -1,6 +1,5 @@
 ---
 published: true
-slug: 7-email-personalization-stats-that-will-make-you-rethink-your-marketing-strategy
 title: 7 Email Personalization Stats That Will Make You Rethink Your Marketing Strategy
 date: 10.02.2022
 readingTime: 4 min read

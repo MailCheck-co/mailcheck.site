@@ -1,6 +1,5 @@
 ---
 published: true
-slug: email-marketing-trends
 title: Email Marketing Trends 2019 for Small Business
 date: 26.04.2019
 readingTime: 3 min read

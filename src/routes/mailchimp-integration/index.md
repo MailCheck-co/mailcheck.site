@@ -1,5 +1,4 @@
 ---
-slug: mailchimp-integration
 title: Mailchimp Integration instructions
 date: 18.02.2021
 readingTime: 3 min read

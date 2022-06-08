@@ -8,7 +8,7 @@
     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    %svelte.head%
+    %sveltekit.head%
     <!--Fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700"
@@ -48,8 +48,7 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="svelte">%svelte.body%</div>
-    <!--TAWK.to script-->
+    <div id="svelte">%sveltekit.body%</div>
 
     <script>
       (function(d,t) {

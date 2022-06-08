@@ -1,6 +1,5 @@
 ---
 published: true
-slug: emails-validation-api-increase-ecommerce-conversion
 title: Emails validation API can and will increase your E-Commerce conversion
 date: 13.08.2020
 readingTime: 3 min read

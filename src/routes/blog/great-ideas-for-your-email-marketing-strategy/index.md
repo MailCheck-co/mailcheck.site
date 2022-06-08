@@ -1,6 +1,5 @@
 ---
 published: true
-slug: great-ideas-for-your-email-marketing-strategy
 title: Great ideas for your email marketing strategy
 date: 21.02.2022
 readingTime: 3 min read

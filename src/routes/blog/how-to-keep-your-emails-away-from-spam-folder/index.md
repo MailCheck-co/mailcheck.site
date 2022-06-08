@@ -1,6 +1,5 @@
 ---
 published: true
-slug: how-to-keep-your-emails-away-from-spam-folder
 title: How to Keep Your Emails Away from Spam Folder
 date: 08.04.2022
 readingTime: 4 min read

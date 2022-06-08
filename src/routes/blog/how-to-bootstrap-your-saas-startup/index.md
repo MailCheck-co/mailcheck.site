@@ -1,6 +1,5 @@
 ---
 published: true
-slug: how-to-bootstrap-your-saas-startup
 title: How to Bootstrap Your SaaS Startup
 date: 12.11.2020
 readingTime: 3 min read

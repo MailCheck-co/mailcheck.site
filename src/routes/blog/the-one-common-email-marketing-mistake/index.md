@@ -1,6 +1,5 @@
 ---
 published: true
-slug: the-one-common-email-marketing-mistake
 title: The One Common Email Marketing Mistake
 date: 23.03.2022
 readingTime: 3 min read

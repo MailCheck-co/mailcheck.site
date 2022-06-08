@@ -1,6 +1,5 @@
 ---
 layout: faq
-slug: faq
 title: FAQ
 date: 25.06.2020
 readingTime: 1 min read

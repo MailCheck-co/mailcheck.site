@@ -1,6 +1,5 @@
 ---
 published: true
-slug: x-ways-increase-emails-deliverability
 title: X Ways to Increase Emails Deliverability
 date: 06.04.2019
 readingTime: 3 min read

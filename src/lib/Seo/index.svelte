@@ -13,7 +13,7 @@
   export let desc = '';
   export let noindex = false;
 
-  const { siteName, siteUrl } = data;
+  const { siteName, siteUrl, fbAppId } = data;
   const defaultDesc = data.description;
 </script>
 
@@ -25,6 +25,7 @@
   <meta name="description" content={desc || defaultDesc} />
   <meta name="robots" content={noindex ? 'noindex' : 'all'} />
   <!-- Open Graph / Facebook -->
+  <meta property="fb:app_id" content="{fbAppId}" />
   <meta property="og:type" content={isPost ? 'blog' : 'website'} />
   <meta property="og:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
   <meta property="og:title" content={title || siteName} />

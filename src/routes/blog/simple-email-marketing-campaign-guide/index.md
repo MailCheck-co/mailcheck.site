@@ -1,6 +1,5 @@
 ---
 published: true
-slug: simple-email-marketing-campaign-guide
 title: Simple Email Marketing Campaign Guide for Small Business
 date: 15.05.2020
 readingTime: 3 min read

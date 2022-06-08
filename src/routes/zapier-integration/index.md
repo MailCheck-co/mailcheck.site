@@ -1,5 +1,4 @@
 ---
-slug: zapier-integration
 title: Zapier Integration instructions
 date: 18.02.2021
 readingTime: 3 min read

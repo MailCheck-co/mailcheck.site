@@ -1,6 +1,5 @@
 ---
 published: true
-slug: mailcheck-scholarship-2019
 title: Mailcheck scholarship
 date: 18.04.2019
 readingTime: 3 min read

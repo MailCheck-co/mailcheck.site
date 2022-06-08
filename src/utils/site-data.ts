@@ -1,6 +1,7 @@
 export default {
   author: 'Mailcheck company',
   siteName: 'Mailcheck',
+  fbAppId: '489712865299530',
   siteUrl: 'https://mailcheck.co',
   github: 'https://github.com/MailCheck-co',
   twitter: 'https://twitter.com/mailcheckco',
