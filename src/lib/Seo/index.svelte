@@ -13,7 +13,7 @@
   export let desc = '';
   export let noindex = false;
 
-  const { siteName, siteUrl } = data;
+  const { siteName, siteUrl, fbAppId } = data;
   const defaultDesc = data.description;
   const defaultImage = thumbnail || siteUrl + '/favicon.png';
 </script>
@@ -41,6 +41,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="op:markup_version" content="v1.0" />
+  <meta property="fb:app_id" content="{fbAppId}" />
   <meta property="og:type" content={isPost ? 'blog' : 'website'} />
   <meta property="og:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
   <meta property="og:title" content={title || siteName} />
