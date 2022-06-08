@@ -87,69 +87,69 @@ desc: Step by step guide on how to use Mailcheck with Integromat.
 
 ### Step 18
 
-![](./integromat-18.png)
+![create a connection](./integromat-18.png)
 
 ### Step 19
 
-![](./integromat-19.png)
+![enter the key name](./integromat-19.png)
 
 ### Step 20
 
-![](./integromat-20.png)
+![create API key](./integromat-20.png)
 
 ### Step 21
 
-![](./integromat-21.png)
+![copy key](./integromat-21.png)
 
 ### Step 22
 
-![](./integromat-22.png)
+![create a connection](./integromat-22.png)
 
 ### Step 23
 
-![](./integromat-23.png)
+![get a list](./integromat-23.png)
 
 ### Step 24
 
-![](./integromat-24.png)
+![connection](./integromat-24.png)
 
 ### Step 25
 
-![](./integromat-25.png)
+![connected](./integromat-25.png)
 
 ### Step 26
 
-![](./integromat-26.png)
+![update a list](./integromat-26.png)
 
 ### Step 27
 
-![](./integromat-27.png)
+![mailchimp connection](./integromat-27.png)
 
 ### Step 28
 
-![](./integromat-28.png)
+![choose list id](./integromat-28.png)
 
 ### Step 29
 
-![](./integromat-29.png)
+![choose email](./integromat-29.png)
 
 ### Step 30
 
-![](./integromat-30.png)
+![run once](./integromat-30.png)
 
 ### Step 31
 
-![](./integromat-31.png)
+![running](./integromat-31.png)
 
 ### Step 32
 
 - Open your Mailchimp account to view the results.
 
-![](./integromat-32.png)
+![Open your Mailchimp account](./integromat-32.png)
 
 ### Step 33
 
 - It’s one of the examples of the usage between (Mailchimp+Mailcheck) and you can generate the same with other apps.
 
-![](./integromat-33.png)
+![example](./integromat-33.png)
 
