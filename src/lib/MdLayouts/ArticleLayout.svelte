@@ -13,7 +13,7 @@
   export let desc = '';
   export let canonical = '';
   export let noindex = false;
-  export let thumbnailImg = '';
+  export let thumbnail = '';
 </script>
 
 <Seo
@@ -22,11 +22,11 @@
   isPost={true}
   {canonical}
   {noindex}
-  thumbnail={thumbnailImg}
+  {thumbnail}
   schemas={[
     {
       ...articleSchema,
-      image: thumbnailImg,
+      image: thumbnail,
       url: data.siteUrl + $page.url.pathname,
       name: title,
       description: desc,

@@ -3,5 +3,5 @@ export type IPost = {
     title: string;
     snippet: string;
     date: Date | string;
-    thumbnailImg: string;
+    thumbnail: string;
 };
