@@ -27,8 +27,8 @@
   <meta name="msapplication-TileColor" content={data.theme} />
   <meta name="theme-color" content={data.theme} />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="robots" content={noindex ? 'noindex' : 'index,follow'} />
-  <meta name="googlebot" content={noindex ? 'noindex' : 'index,follow'} />
+  <meta name="robots" content={noindex ? 'noindex' : 'all'} />
+  <meta name="googlebot" content={noindex ? 'noindex' : 'all'} />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content={siteName} />
