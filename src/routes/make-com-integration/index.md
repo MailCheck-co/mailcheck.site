@@ -55,100 +55,100 @@ desc: Guide on how to integrate Mailcheck using Make.com
 
 ### Step 10
 
-![api key for email validation](./make-010.png)
+![api key for email validation](./make-10.png)
 
 ### Step 11
 
-![validate email in integromat](./make-011.png)
+![validate email in integromat](./make-11.png)
 
 ### Step 12
 
-![Email from the modal window](./make-012.png)
+![Email from the modal window](./make-12.png)
 
 ### Step 13
 
-![update segment](./make-013.png)
+![update segment](./make-13.png)
 
 ### Step 14
 
-![connect Mailchimp to Integromat](./make-014.png)
+![connect Mailchimp to Integromat](./make-14.png)
 
 ### Step 15
 
-![update map option](./make-015.png)
+![update map option](./make-15.png)
 
 ### Step 16
 
-![email trust rate in Integromat](./make-016.png)
+![email trust rate in Integromat](./make-16.png)
 
 ### Step 17
 
-![run email validation in Integromat](./make-017.png)
+![run email validation in Integromat](./make-17.png)
 
 ### Step 18
 
-![create a connection](./make-018.png)
+![create a connection](./make-18.png)
 
 ### Step 19
 
-![enter the key name](./make-019.png)
+![enter the key name](./make-19.png)
 
 ### Step 20
 
-![create API key](./make-020.png)
+![create API key](./make-20.png)
 
 ### Step 21
 
-![copy key](./make-021.png)
+![copy key](./make-21.png)
 
 ### Step 22
 
-![create a connection](./make-022.png)
+![create a connection](./make-22.png)
 
 ### Step 23
 
-![get a list](./make-023.png)
+![get a list](./make-23.png)
 
 ### Step 24
 
-![connection](./make-024.png)
+![connection](./make-24.png)
 
 ### Step 25
 
-![connected](./make-025.png)
+![connected](./make-25.png)
 
 ### Step 26
 
-![update a list](./make-026.png)
+![update a list](./make-26.png)
 
 ### Step 27
 
-![mailchimp connection](./make-027.png)
+![mailchimp connection](./make-27.png)
 
 ### Step 28
 
-![choose list id](./make-028.png)
+![choose list id](./make-28.png)
 
 ### Step 29
 
-![choose email](./make-029.png)
+![choose email](./make-29.png)
 
 ### Step 30
 
-![run once](./make-030.png)
+![run once](./make-30.png)
 
 ### Step 31
 
-![running](./make-031.png)
+![running](./make-31.png)
 
 ### Step 32
 
 - Open your Mailchimp account to view the results.
 
-![Open your Mailchimp account](./make-032.png)
+![Open your Mailchimp account](./make-32.png)
 
 ### Step 33
 
 - It’s one of the examples of the usage between (Mailchimp+Mailcheck) and you can generate the same with other apps.
 
-![example](./make-033.png)
+![example](./make-33.png)
