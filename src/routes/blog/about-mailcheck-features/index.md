@@ -5,7 +5,7 @@ date: 30.08.2021
 readingTime: 3 min read
 snippet: The pace e-commerce is expanding with and the number of sales occurring per minute is growing so fast that these days it is nearly impossible to run a business without an email verifier. If you are already using one - well done, but if you are still in search of a better-than-average email verifier, look no more.
 desc: The pace e-commerce is expanding with and the number of sales occurring per minute is growing so fast that these days it is nearly impossible to run a business without an email verifier. If you are already using one - well done, but if you are still in search of a better-than-average email verifier, look no more.
-thumbnailImg: /src/routes/blog/about-mailcheck-features/screen2.png?format=jpg&width=1200&height=630
+thumbnailImg: ./screen2.png?format=jpg&width=1200&height=630
 ---
 
 # {title}

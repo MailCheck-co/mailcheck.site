@@ -5,7 +5,7 @@ date: 25.06.2020
 readingTime: 7 min read
 snippet: Ever wondered what an email blast is? Well, someone may call it an email campaign, which it is to a certain degree. An email blast, in its essence, is an unpersonalized email sent to a large number of subscribers. An email blast is used to target all your subscribers at once with the ultimate goal to draw traffic to your site or increase sales. The recipients of an email blast are not typically targeted in a strategic manner.
 desc: Ever wondered what an email blast is? Well, someone may call it an email campaign, which it is to a certain degree. An email blast, in its essence, is an unpersonalized email sent to a large number of subscribers. An email blast is used to target all your subscribers at once with the ultimate goal to draw traffic to your site or increase sales. The recipients of an email blast are not typically targeted in a strategic manner.
-thumbnailImg: /src/routes/blog/email-blasts/digital_savvy.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./digital_savvy.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}

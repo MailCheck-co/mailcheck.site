@@ -5,7 +5,7 @@ date: 18.06.2020
 readingTime: 7 min read
 snippet: It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
 desc: It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
-thumbnailImg: /src/routes/blog/six-tips-to-write-an-email-that-prompts-your-subscribers-to-action/sympli.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./sympli.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}

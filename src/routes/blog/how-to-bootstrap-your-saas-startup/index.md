@@ -5,7 +5,7 @@ date: 12.11.2020
 readingTime: 3 min read
 snippet: Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to successful project implementation.
 desc: Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to successful project implementation.
-thumbnailImg: /src/routes/blog/how-to-bootstrap-your-saas-startup/right-development-team.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./right-development-team.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}

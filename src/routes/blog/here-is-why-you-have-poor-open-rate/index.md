@@ -5,7 +5,7 @@ date: 16.02.2022
 readingTime: 3 min read
 snippet: Email marketing may sound like an easy task. There is nothing difficult in writing and sending letters, isn’t? Just remember all the adorable emails you’ve received. Whenever you read them, it feels like copywriters or marketers wrote them so effortlessly. In fact, the situation is different and great copy requires effort and skills. But it costs nothing, if people don’t open and don’t read your emails. So what can you do with a low open rate?
 desc: Email marketing may sound like an easy task. There is nothing difficult in writing and sending letters, isn’t? Just remember all the adorable emails you’ve received. Whenever you read them, it feels like copywriters or marketers wrote them so effortlessly. In fact, the situation is different and great copy requires effort and skills. But it costs nothing, if people don’t open and don’t read your emails. So what can you do with a low open rate?
-thumbnailImg: /src/routes/blog/here-is-why-you-have-poor-open-rate/sending-emails.png?format=jpg&width=1200&height=630
+thumbnailImg: ./sending-emails.png?format=jpg&width=1200&height=630
 ---
 
 # {title}

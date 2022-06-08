@@ -5,7 +5,7 @@ date: 19.04.2019
 readingTime: 3 min read
 snippet: Cart in the online store is an interface which user can use to add products he is ought to purchase.
 desc: Cart in the online store is an interface which user can use to add products he is ought to purchase.
-thumbnailImg: /src/routes/blog/tips-on-customization-of-selling-cart/selling-cart-customization-img-1.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./selling-cart-customization-img-1.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}

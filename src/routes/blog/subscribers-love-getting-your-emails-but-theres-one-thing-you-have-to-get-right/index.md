@@ -5,7 +5,7 @@ date: 23.02.2022
 readingTime: 3 min read
 snippet: It’s true - about 43% of the 1006 participants in a Yes Marketing study chose email as a preferred channel for communication with brands. No doubt that social media, videos, text messages are also essential marketing mediums, but email is the dominant one, with the best results. How can you leverage that? Let’s take a closer look at the statistics and then we’ll shore some interesting writing tips.
 desc: It’s true - about 43% of the 1006 participants in a Yes Marketing study chose email as a preferred channel for communication with brands. No doubt that social media, videos, text messages are also essential marketing mediums, but email is the dominant one, with the best results. How can you leverage that? Let’s take a closer look at the statistics and then we’ll shore some interesting writing tips.
-thumbnailImg: /src/routes/blog/subscribers-love-getting-your-emails-but-theres-one-thing-you-have-to-get-right/subscribers.jpeg?format=jpg&width=1200&height=630
+thumbnailImg: ./subscribers.jpeg?format=jpg&width=1200&height=630
 ---
 
 # {title}

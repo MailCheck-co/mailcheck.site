@@ -5,7 +5,7 @@ date: 13.08.2020
 readingTime: 3 min read
 snippet: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API.
 desc: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API. Click [here](/blog/emails-validation-api-increase-ecommerce-conversion) to find out more.
-thumbnailImg: /src/routes/blog/emails-validation-api-increase-ecommerce-conversion/email-for-everything.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./email-for-everything.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}

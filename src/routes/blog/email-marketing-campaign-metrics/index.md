@@ -5,7 +5,7 @@ date: 21.04.2019
 readingTime: 3 min read
 snippet: Email marketing metrics are used to analyze efficiency of the marketing campaign.There can be different tasks and goals for an email marketing campaign launched by a small business - the number of registrations, purchases, opening rate etc. For each of the task and goal we make a separate metric. Email marketer has to consider these metrics and monitor them for decision-making purposes.
 desc: Email marketing metrics are used to analyze efficiency of the marketing campaign.There can be different tasks and goals for an email marketing campaign launched by a small business - the number of registrations, purchases, opening rate etc. For each of the task and goal we make a separate metric. Email marketer has to consider these metrics and monitor them for decision-making purposes.
-thumbnailImg: /src/routes/blog/email-marketing-campaign-metrics/marketing-campaign-metrics-img1.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./marketing-campaign-metrics-img1.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}

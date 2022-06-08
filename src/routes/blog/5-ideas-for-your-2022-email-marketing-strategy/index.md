@@ -5,7 +5,7 @@ date: 15.04.2022
 readingTime: 3 min read
 snippet: Email remains a powerful tool for attracting new customers and keeping old customers loyal. The number of daily sent and received emails reached a fabulous 333.2 billion in 2022. Just imagine how effectively you can boost your business today by incorporating the right email strategy. However, you need to continuously adapt to the times and opt for the most effective strategy to give a more significant boost to your email campaigns. So what may help kickstart this year? Here are some ideas to experiment with.
 desc: Email remains a powerful tool for attracting new customers and keeping old customers loyal. The number of daily sent and received emails reached a fabulous 333.2 billion in 2022. Just imagine how effectively you can boost your business today by incorporating the right email strategy. However, you need to continuously adapt to the times and opt for the most effective strategy to give a more significant boost to your email campaigns. So what may help kickstart this year? Here are some ideas to experiment with.
-thumbnailImg: /src/routes/blog/5-ideas-for-your-2022-email-marketing-strategy/keep-spam-at-bay.png?format=jpg&width=1200&height=630
+thumbnailImg: ./keep-spam-at-bay.png?format=jpg&width=1200&height=630
 ---
 
 # {title}
