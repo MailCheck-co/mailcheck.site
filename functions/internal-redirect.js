@@ -4,7 +4,6 @@ import { promises as dns } from 'dns';
 import admin from 'firebase-admin';
 
 const redirectCache = new Map();
-const bigQuery = new BigQuery();
 const config = functions.config();
 admin.initializeApp(config.firebase);
 
@@ -16,6 +15,7 @@ let fallbackUrlBase = '';
 
 let bigQueryRedirectsTable;
 try {
+  const bigQuery = new BigQuery({ projectId: config.mailcheck.bq_project_id });
   bigQueryRedirectsTable = bigQuery.dataset(BQ_DATASET).table(BQ_TABLE);
 } catch (err) {
   functions.logger.error(err);
@@ -24,7 +24,7 @@ try {
 /**
  * @param hostname {string}
  */
-async function initFallbackUrl(hostname) {
+async function initFallbackUrl() {
   if (fallbackUrlBase) return;
   try {
     const chunks = await dns.resolveTxt(`*.${L_MAILCHECK}`);
@@ -99,7 +99,11 @@ export default async function (req, res) {
   const fallbackUrl = new URL(fallbackUrlBase);
   const matchKey = requestUrlToHostname(requestUrl);
   if (!matchKey) {
-    return res.redirect(fallbackUrl);
+    return res
+      .status(200)
+      .send(
+        `<html><head><meta http-equiv="refresh" content="0;URL='${fallbackUrl}'" /></head></html>`
+      );
   }
 
   try {
@@ -107,11 +111,12 @@ export default async function (req, res) {
     redirectUrl.searchParams.set('from', matchKey);
     redirectUrl = mergeUrls(redirectUrl, requestUrl);
     functions.logger.info(`${requestUrl} => ${redirectUrl}`);
-    res.redirect(redirectUrl);
-    await new Promise((resolve) => {
-      res.once('finish', resolve);
-    });
-    await logToBigQuery(req, redirectUrl, key);
+    await logToBigQuery(req, redirectUrl, matchKey);
+    res
+      .status(200)
+      .send(
+        `<html><head><meta http-equiv="refresh" content="0;URL='${redirectUrl}'" /></head></html>`
+      );
   } catch (err) {
     // Someone messed up with TXT records
     res.status(500).end(err.message);
