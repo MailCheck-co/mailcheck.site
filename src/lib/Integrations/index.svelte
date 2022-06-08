@@ -43,7 +43,7 @@
       </div>
       <div class="integrations-list-item" data-item-title="Make.com">
         <img width="50" height="50" src={makecom} alt="Make.com" class="integrations-logo" />
-        <a rel="external" href="https://make.com/" class="integrations-link"></a>
+        <a href="/make-com-integration" class="integrations-link"></a>
       </div>
       <div class="integrations-list-item" data-item-title="Sendgrid">
         <img width="50" height="50" src={sendgrid} alt="Sendgrid" class="integrations-logo" />
