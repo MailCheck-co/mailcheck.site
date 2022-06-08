@@ -12,111 +12,144 @@ desc: Step by step guide on how to use Mailcheck with Integromat.
 
 ### Step 1
 
-- Open Mailcheck Integrations - [https://app.mailcheck.co/dashboard/integration](https://app.mailcheck.co/dashboard/integration)
-  and click "Connect" you will be redirected into "Integromat"
+- Click “Connect”
 
 ![integromat email verification integration](./integromat-1.png)
 
 ### Step 2
 
-- Click "Add to my inventory" and follow the instructions to "Sign up".
-- Once signed up you can "Add to my inventory" our app and click "Start using Mailcheck".
+- Choose “Install”
 
 ![integromat enable email verification](./integromat-2.png)
 
 ### Step 3
 
-- Choose the service you want to integrate with (Mailchimp, Google Sheet, ActiveCampaign, etc.)
+- Checkbox “My Organization” and click Install
 
 ![integromat integration options](./integromat-3.png)
 
-- Once chosen click "Continue".
-
-I am going to use "Mailchimp" as an example, however, you can use any of the existing apps based on your preferences.
+### Step 4
 
 ![integromat mailchimp integration](./integromat-4.png)
 
-### Step 4
-
-- Click on the sign of Mailchimp or any other app you are using, and find "Get a list"
-- Now, set you your Mailchimp account
+### Step 5
 
 ![connect mailchimp to Integromat](./integromat-5.png)
 
-- Follow the next steps to authorize your Mailchimp account
-
-### Step 5
-
-- Once authorized, deactivate "Map"
+### Step 6
 
 ![email list choose in Integromat](./integromat-6.png)
 
-- Select your List (usually named under the name of the audience)
-
-### Step 6
-
-- Add another module
+### Step 7
 
 ![connect Mailcheck to Integromat](./integromat-7.png)
 
-- Find Mailcheck to connect with the previous module
-
-!choose api method in Integromat](./integromat-8.png)
-
-- Click on "+" and type "Mailcheck"
-- Choose "Single Email check"
-
-![validate email in Integromat](./integromat-9.png)
-
-### Step 7
-
-- Click on "Add"
-- Go to your Mailcheck account and click "API" from the Top menu
-
-![api key for email validation](./integromat-10.png)
-
-![validate email in integromat](./integromat-11.png)
-
-- Copy your API KEY and get back to Integromat to paste it
-
 ### Step 8
 
-![Email from the modal window](./integromat-12.png)
 
-- Choose "Email from the modal window"
-
-![update segment](./integromat-13.png)
-
-- And now we want to update our segment pasting "Mailcheck Trust rate" to define the validity of the email
+![validate email in Integromat](./integromat-8.png)
 
 ### Step 9
 
-- Adding another Mailchimp Module
-
-![connect Mailchimp to Integromat](./integromat-14.png)
-
-- We need to choose "Mailchimp" again
-- And from the Modal window "Add/Update subscriber"
+![validate email in Integromat](./integromat-9.png)
 
 ### Step 10
 
-- Choose your list from the dropdown menu and make sure "Map" disabled
-- Choose on the "email address field "Email address" however, make sure the Map is "ENABLED"
-
-![update map option](./integromat-15.png)
+![api key for email validation](./integromat-10.png)
 
 ### Step 11
 
-- Set tag
-- Choose "trust rate" from the modal window option
-
-![email trust rate in Integromat](./integromat-16.png)
+![validate email in integromat](./integromat-11.png)
 
 ### Step 12
 
-- Run once
+![Email from the modal window](./integromat-12.png)
+
+### Step 13
+
+![update segment](./integromat-13.png)
+
+### Step 14
+
+![connect Mailchimp to Integromat](./integromat-14.png)
+
+### Step 15
+
+![update map option](./integromat-15.png)
+
+### Step 16
+
+![email trust rate in Integromat](./integromat-16.png)
+
+### Step 17
 
 ![run email validation in Integromat](./integromat-17.png)
 
-And your integration is fully working now.
-If you can't make it work, please reach out at [integromat@mailcheck.co](mailto:integromat@mailcheck.co)
+### Step 18
+
+![](./integromat-18.png)
+
+### Step 19
+
+![](./integromat-19.png)
+
+### Step 20
+
+![](./integromat-20.png)
+
+### Step 21
+
+![](./integromat-21.png)
+
+### Step 22
+
+![](./integromat-22.png)
+
+### Step 23
+
+![](./integromat-23.png)
+
+### Step 24
+
+![](./integromat-24.png)
+
+### Step 25
+
+![](./integromat-25.png)
+
+### Step 26
+
+![](./integromat-26.png)
+
+### Step 27
+
+![](./integromat-27.png)
+
+### Step 28
+
+![](./integromat-28.png)
+
+### Step 29
+
+![](./integromat-29.png)
+
+### Step 30
+
+![](./integromat-30.png)
+
+### Step 31
+
+![](./integromat-31.png)
+
+### Step 32
+
+- Open your Mailchimp account to view the results.
+
+![](./integromat-32.png)
+
+### Step 33
+
+- It’s one of the examples of the usage between (Mailchimp+Mailcheck) and you can generate the same with other apps.
+
+![](./integromat-33.png)
+
