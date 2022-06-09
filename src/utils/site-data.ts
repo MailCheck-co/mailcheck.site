@@ -10,9 +10,7 @@ export default {
   linkedin: 'https://www.linkedin.com/company/mailcheck/',
   email: 'support@mailcheck.co',
   description:
-    'Mailcheck.co - validate your mailing list with' 
-    + 'just one click and restore harmony to your inbox.'
-    + 'Mailcheck is an easy-to-use, fast, and efficient '
+    'Mailcheck is an easy-to-use, fast, and efficient '
     + 'email validation tool with an API integration '
     + 'feature for on-the-go validation.'
 };
