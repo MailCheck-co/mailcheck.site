@@ -30,13 +30,13 @@
   <meta property="og:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
   <meta property="og:title" content={title || siteName} />
   <meta property="og:description" content={desc || defaultDesc} />
-  <meta property="og:image" content={thumbnail || siteUrl + '/favicon.png'} />
+  <meta property="og:image" content={thumbnail || siteUrl + '/preview.jpeg'} />
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
   <meta property="twitter:title" content={title || siteName} />
   <meta property="twitter:description" content={desc || defaultDesc} />
-  {#if thumbnail !== ''}<meta property="twitter:image" content={thumbnail} />{/if}
+  <meta property="twitter:image" content={thumbnail || siteUrl + '/preview.jpeg'} />
   {#if !browser}<!-- RSS Feed -->
     <link
       rel="alternate"

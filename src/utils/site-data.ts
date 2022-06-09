@@ -10,7 +10,11 @@ export default {
   linkedin: 'https://www.linkedin.com/company/mailcheck/',
   email: 'support@mailcheck.co',
   description:
-    'An application to clean your subscription list from bounces, and enrich data with customers. Verify your real customers in one way'
+    'Mailcheck.co - validate your mailing list with' 
+    + 'just one click and restore harmony to your inbox.'
+    + 'Mailcheck is an easy-to-use, fast, and efficient '
+    + 'email validation tool with an API integration '
+    + 'feature for on-the-go validation.'
 };
 
 export const inviewOptions = {
