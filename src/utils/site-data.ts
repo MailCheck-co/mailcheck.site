@@ -11,7 +11,9 @@ export default {
   email: 'support@mailcheck.co',
   theme: '#0b182d',
   description:
-    'An application to clean your subscription list from bounces, and enrich data with customers. Verify your real customers in one way'
+    'Mailcheck is an easy-to-use, fast, and efficient '
+    + 'email validation tool with an API integration '
+    + 'feature for on-the-go validation.'
 };
 
 export const inviewOptions = {
