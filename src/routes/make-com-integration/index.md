@@ -14,44 +14,44 @@ desc: Guide on how to integrate Mailcheck using Make.com
 
 - Click “Connect”
 
-![integromat email verification integration](./make-1.png?format=webp;jpg;png;avif&srcset&w=880)
+![make email verification integration](./make-1.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 2
 
 - Choose “Install”
 
-![integromat enable email verification](./make-02.png?format=webp;jpg;png;avif&srcset&w=880)
+![make enable email verification](./make-02.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 3
 
 - Checkbox “My Organization” and click Install
 
-![integromat integration options](./make-03.png?format=webp;jpg;png;avif&srcset&w=880)
+![make integration options](./make-03.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 4
 
-![integromat mailchimp integration](./make-04.png?format=webp;jpg;png;avif&srcset&w=880)
+![make mailchimp integration](./make-04.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 5
 
-![connect mailchimp to Integromat](./make-05.png?format=webp;jpg;png;avif&srcset&w=880)
+![connect mailchimp to make](./make-05.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 6
 
-![email list choose in Integromat](./make-06.png?format=webp;jpg;png;avif&srcset&w=880)
+![email list choose in make](./make-06.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 7
 
-![connect Mailcheck to Integromat](./make-07.png?format=webp;jpg;png;avif&srcset&w=880)
+![connect Mailcheck to make](./make-07.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 8
 
 
-![validate email in Integromat](./make-08.png?format=webp;jpg;png;avif&srcset&w=880)
+![validate email in make](./make-08.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 9
 
-![validate email in Integromat](./make-09.png?format=webp;jpg;png;avif&srcset&w=880)
+![validate email in make](./make-09.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 10
 
@@ -59,7 +59,7 @@ desc: Guide on how to integrate Mailcheck using Make.com
 
 ### Step 11
 
-![validate email in integromat](./make-11.png?format=webp;jpg;png;avif&srcset&w=880)
+![validate email in make](./make-11.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 12
 
@@ -71,7 +71,7 @@ desc: Guide on how to integrate Mailcheck using Make.com
 
 ### Step 14
 
-![connect Mailchimp to Integromat](./make-14.png?format=webp;jpg;png;avif&srcset&w=880)
+![connect Mailchimp to make](./make-14.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 15
 
@@ -79,11 +79,11 @@ desc: Guide on how to integrate Mailcheck using Make.com
 
 ### Step 16
 
-![email trust rate in Integromat](./make-16.png?format=webp;jpg;png;avif&srcset&w=880)
+![email trust rate in make](./make-16.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 17
 
-![run email validation in Integromat](./make-17.png?format=webp;jpg;png;avif&srcset&w=880)
+![run email validation in make](./make-17.png?format=webp;jpg;png;avif&srcset&w=880)
 
 ### Step 18
 
