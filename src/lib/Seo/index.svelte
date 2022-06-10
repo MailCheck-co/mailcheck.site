@@ -34,7 +34,6 @@
   <meta name="apple-mobile-web-app-title" content={siteName} />
   <meta name="apple-mobile-web-app-status-bar-style" content={data.theme} />
   <meta name="referrer" content="always" />
-  <meta name="generator" content="sveltekit" />
   <meta name="subject" content={title} />
   <meta name="rating" content="safe for kids" />
   <meta name="format-detection" content="telephone=no" />
