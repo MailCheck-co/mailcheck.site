@@ -5,11 +5,14 @@ date: 01.07.2020
 readingTime: 8 min read
 snippet: An email list is a list of subscribers, who may or may not opted-in to receive emails from a certain sender.
 desc: An email list is a list of subscribers, who may or may not opted-in to receive emails from a certain sender.
+thumbnailImg: ./easyspace.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![Easyspace](./easyspace.jpg?format=webp;jpg;avif&srcset)
 
 An email list is a list of subscribers, who may or may not opted-in to receive emails from a certain sender.
 

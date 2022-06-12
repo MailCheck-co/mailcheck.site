@@ -5,11 +5,14 @@ date: 30.08.2021
 readingTime: 3 min read
 snippet: The pace e-commerce is expanding with and the number of sales occurring per minute is growing so fast that these days it is nearly impossible to run a business without an email verifier. If you are already using one - well done, but if you are still in search of a better-than-average email verifier, look no more.
 desc: The pace e-commerce is expanding with and the number of sales occurring per minute is growing so fast that these days it is nearly impossible to run a business without an email verifier. If you are already using one - well done, but if you are still in search of a better-than-average email verifier, look no more.
+thumbnailImg: ./screen2.png?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![integration](./screen2.png)
 
 The pace e-commerce is expanding with and the number of sales occurring per minute is growing so fast that these days it is nearly impossible to run a business without an email verifier. If you are already using one - well done, but if you are still in search of a better-than-average email verifier, look no more. Mailcheck is a high-accuracy, easy-to-use email verification platform that provides quick email validation for hassle-free, no-bounce email campaigns. [Mailcheck works to increase your deliverability rate](/blog/x-ways-increase-emails-deliverability), and what’s more - it is now possible to integrate with other most popular platforms. Let’s have a closer look at the platforms Mailcheck integrates with, how it works and how you can benefit from it.
 

@@ -5,11 +5,14 @@ date: 23.03.2019
 readingTime: 3 min read
 snippet: In this article we are going to explain catch-all email servers, why do they exist, why it is a problem for you and how you can find them in your mailing list and build a proper email strategy.
 desc: In this article we are going to explain catch-all email servers, why do they exist, why it is a problem for you and how you can find them in your mailing list and build a proper email strategy.
+thumbnailImg: ./catch-all-servers-img2.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![Catch-All Email Servers](./catch-all-servers-img1.png?format=webp;png;avif&srcset)
 
 In this article we are going to explain catch-all email servers, why do they exist, why it is a problem for you and how you can find them in your mailing list and build a proper email strategy.
 

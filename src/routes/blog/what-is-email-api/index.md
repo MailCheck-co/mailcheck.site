@@ -5,11 +5,14 @@ date: 15.07.2020
 readingTime: 8 min read
 snippet: Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
 desc: Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
+thumbnailImg: ./vero.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![Vero](./vero.jpg?format=webp;jpg;avif&srcset)
 
 Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
 

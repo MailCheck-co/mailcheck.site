@@ -5,11 +5,14 @@ date: 06.04.2019
 readingTime: 3 min read
 snippet: When you launch a new email marketing campaign it doesn’t matter whether you have managed to make a good strategy, write an extra-selling content or provide a super valuable service if at the end your email won’t reach the potential client.
 desc: When you launch a new email marketing campaign it doesn’t matter whether you have managed to make a good strategy, write an extra-selling content or provide a super valuable service if at the end your email won’t reach the potential client.
+thumbnailImg: ./increase-emails-deliverability-img2.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![Increase Emails Deliverability](./increase-emails-deliverability-img2.jpg?format=webp;jpg;avif&srcset)
 
 When you launch a new email marketing campaign it doesn’t matter whether you have managed to make a good strategy, write an extra-selling content or provide a super valuable service if at the end your email won’t reach the potential client.
 

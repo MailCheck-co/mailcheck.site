@@ -5,11 +5,14 @@ date: 15.07.2019
 readingTime: 3 min read
 snippet: Have some issues with cart abandonment on your website? Keep calm, everyone faced it. The statistics says, 80% of people abandon their shopping carts.
 desc: Have some issues with cart abandonment on your website? Keep calm, everyone faced it. The statistics says, 80% of people abandon their shopping carts.
+thumbnailImg: ./abandoned-cart-hacks.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![10 Abandoned Cart Hacks, Emails and Tricks that Will Rise Sales](./abandoned-cart-hacks.jpg?format=webp;jpg;avif&srcset)
 
 Have some issues with cart abandonment on your website? Keep calm, everyone faced it. The statistics says, 80% of people
 abandon their shopping carts.
@@ -20,8 +23,6 @@ But let’s save that for another day. For a now, we need another approach, more
 We can offer you 10 ways that will help to close deals successfully. Most of them and some good email verification
 service pay off in a big way. If you are site admin or company owner, just give it a try and it will push your
 conversions beyond all limits. Guaranteed!
-
-![10 Abandoned Cart Hacks, Emails and Tricks that Will Rise Sales](./abandoned-cart-hacks.jpg?format=webp;jpg;avif&srcset)
 
 ## Use a Progress Indicator
 

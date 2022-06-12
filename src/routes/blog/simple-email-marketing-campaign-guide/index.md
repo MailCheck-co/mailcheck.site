@@ -5,11 +5,14 @@ date: 15.05.2020
 readingTime: 3 min read
 snippet: Email marketing is the cheapest and potentially profitable way to communicate with your audience. For example, Monitor company has calculated the expenditure/income for email marketing as 1:38. It is likely you do not mind getting such a ROI for your small business email marketing campaign. Thus, we decided to make this simple guide.
 desc: Email marketing is the cheapest and potentially profitable way to communicate with your audience. For example, Monitor company has calculated the expenditure/income for email marketing as 1:38. It is likely you do not mind getting such a ROI for your small business email marketing campaign. Thus, we decided to make this simple guide.
+thumbnailImg: ./email-marketing-campaign-guide-img-1.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
+
+![Simple Email Marketing Campaign Guide for Small Business](./email-marketing-campaign-guide-img-1.jpg?format=webp;jpg;avif&srcset)
 
 Email marketing is the cheapest and potentially profitable way to communicate with your audience. For example, Monitor company has calculated the expenditure/income for email marketing as 1:38. It is likely you do not mind getting such a ROI for your small business email marketing campaign. Thus, we decided to make this simple guide.
 

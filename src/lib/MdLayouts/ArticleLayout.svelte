@@ -4,12 +4,16 @@
 </script>
 
 <script lang="ts">
+  import { page } from '$app/stores';
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
+  import data from '$utils/site-data';
+
   export let title = '';
   export let desc = '';
   export let canonical = '';
   export let noindex = false;
+  export let thumbnail = '';
 </script>
 
 <Seo
@@ -18,7 +22,19 @@
   isPost={true}
   {canonical}
   {noindex}
-  schemas={[websiteSchema, { ...articleSchema, name: title, description: desc }]} />
+  {thumbnail}
+  schemas={[
+    {
+      ...articleSchema,
+      image: thumbnail,
+      url: data.siteUrl + $page.url.pathname,
+      name: title,
+      description: desc,
+      backstory: desc,
+      headline: title,
+    },
+    websiteSchema
+  ]} />
 
 <div class="container" id="article">
   <div class="content-block">

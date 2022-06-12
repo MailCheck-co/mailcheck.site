@@ -5,19 +5,20 @@ date: 17.03.2019
 readingTime: 3 min read
 snippet: Email verification service is provided to ensure your letters reach inboxes of real customers. It helps you to increase the outcome from your email marketing campaigns as you get updated data on the actuality of your mailing list. Below you can find out all you need to know about email address verification.
 desc: Email verification service is provided to ensure your letters reach inboxes of real customers. It helps you to increase the outcome from your email marketing campaigns as you get updated data on the actuality of your mailing list. Below you can find out all you need to know about email address verification.
+thumbnailImg: ./guide-img1.jpg?format=jpg&width=1200&height=630
 ---
 
 # {title}
 
 {readingTime}
 
+![Guide to Email Verification Service](./guide-img1.jpg?format=webp;jpg;avif&srcset)
+
 Email verification service is provided to ensure your letters reach inboxes of real customers. It helps you to increase the outcome from your email marketing campaigns as you get updated data on the actuality of your mailing list. Below you can find out all you need to know about email address verification.
 
 ## Grounding to Email Address Verification
 
 If you make sales with email marketing then getting actual information about the validity of your client’s email addresses is very important for your business. Of course, mostly on the moment of subscription to your newsletter or registration in your service, you have the valid email which belongs to your client. However, it is figured out that 22% of emails get deleted or abandoned yearly. Thus, without email verification service you cannot really define the efficiency of your email marketing campaign.
-
-![Guide to Email Verification Service](./guide-img1.jpg?format=webp;jpg;avif&srcset)
 
 Why? The thing is that you get corrupted data on deliverability, conversion rate, and other metrics. Moreover, [when bounce rate decreases you are at risk of getting sanctions from mailing service](/blog/explaining-email-bounce-rate) which may lead to the inability of your letter to get to the user’s inbox in future. Read how to increase deliverability of your mails. On the other hand, using email address verification service can let you avoid all of these problems.
 

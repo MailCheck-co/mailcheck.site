@@ -16,15 +16,9 @@
   import ContactUs from '$lib/ContactUs/index.svelte';
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, blogSchema } from '$utils/json-ld';
+  import type { IPost } from '$utils/types';
 
-  type Post = {
-    slug: string;
-    title: string;
-    snippet: string;
-    date: Date | string;
-  };
-
-  export let posts: Post[];
+  export let posts: IPost[];
   let desc = 'Blog about building clean b2b and b2c communications free of bounces';
 </script>
 
