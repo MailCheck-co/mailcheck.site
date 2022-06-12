@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-  <title>{siteName} | {title}</title>
+  <title>{title} | {siteName}</title>
   <link
     rel="canonical"
     href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')} />
