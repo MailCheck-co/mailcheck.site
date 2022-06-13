@@ -6,6 +6,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import Seo from '$lib/Seo/index.svelte';
+  import Related from '$lib/Related/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
   import data from '$utils/site-data';
 
@@ -14,6 +15,7 @@
   export let canonical = '';
   export let noindex = false;
   export let thumbnail = '';
+  export let posts = [];
 </script>
 
 <Seo
@@ -40,6 +42,7 @@
 <div class="container" id="article">
   <div class="content-block">
     <slot />
+    <Related {posts} />
   </div>
 </div>
 
