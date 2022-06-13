@@ -5,14 +5,14 @@ date: 25.06.2020
 readingTime: 7 min read
 snippet: Ever wondered what an email blast is? Well, someone may call it an email campaign, which it is to a certain degree. An email blast, in its essence, is an unpersonalized email sent to a large number of subscribers. An email blast is used to target all your subscribers at once with the ultimate goal to draw traffic to your site or increase sales. The recipients of an email blast are not typically targeted in a strategic manner.
 desc: Ever wondered what an email blast is? Well, someone may call it an email campaign, which it is to a certain degree. An email blast, in its essence, is an unpersonalized email sent to a large number of subscribers. An email blast is used to target all your subscribers at once with the ultimate goal to draw traffic to your site or increase sales. The recipients of an email blast are not typically targeted in a strategic manner.
-thumbnailImg: ./digital_savvy.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./digital_savvy.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Digital Savvy](./digital_savvy.jpg?format=webp;jpg;avif&srcset)
+![Digital Savvy](./digital_savvy.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Ever wondered what an email blast is? Well, someone may call it an email campaign, which it is to a certain degree. An email blast, in its essence, is an unpersonalized email sent to a large number of subscribers. An email blast is used to target all your subscribers at once with the ultimate goal to draw traffic to your site or increase sales. The recipients of an email blast are not typically targeted in a strategic manner.
 
@@ -21,7 +21,7 @@ An email blast is probably no longer the best email marketing practice, as many 
 1.  Your unsubscribe rate will increase dramatically (which is not something you expect your email campaign to bring you).
 2.  Having a significant bounce rate will compromise the credibility of your email marketing campaign in particular and your business overall.
 
-![Digital Savvy](./digital_savvy.jpg?format=webp;jpg;avif&srcset)
+![Digital Savvy](./digital_savvy.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: Digital Savvy
 
@@ -33,7 +33,7 @@ Validating your email database must be the first and foremost task to do, becaus
 
 Next step - **create (a.k.a. clean up) your email list.** Email list cleaning is all about removing inactive and inaccurate emails from your list. This also involves removing your unsubscribers. This may sound like an extra step, which can be put aside until better times. However, if not handled properly and on time, it can cause you troubles, such as being banned by Gmail from sending out emails to its users.
 
-![NicePNG](./email_list.jpg?format=webp;jpg;avif&srcset)
+![NicePNG](./email_list.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: NicePNG
 

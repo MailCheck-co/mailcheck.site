@@ -5,14 +5,14 @@ date: 13.08.2020
 readingTime: 3 min read
 snippet: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API.
 desc: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API. Click [here](/blog/emails-validation-api-increase-ecommerce-conversion) to find out more.
-thumbnailImg: ./email-for-everything.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./email-for-everything.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![email for everything](./email-for-everything.jpg?format=webp;jpg;avif&srcset)
+![email for everything](./email-for-everything.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: WPBeginner
 
@@ -26,7 +26,7 @@ These days, the internet is flooded with online shops, all of them are direct an
 
 Have you ever tried to buy something online, went through most of the checkout steps, and then abandoned it because you found the checkout to be too tedious? If you ever found yourself in a similar situation, your customers have too. Easy and smooth checkout, easy signup, and order placing process as well as many other aspects are a part of pleasant user experience, and email validation API has a part to play in it.
 
-![email dashboard](./email-dashboard.jpg?format=webp;jpg;avif&srcset)
+![email dashboard](./email-dashboard.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: weDevs
 

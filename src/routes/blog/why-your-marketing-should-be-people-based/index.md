@@ -5,14 +5,14 @@ date: 30.03.2022
 readingTime: 4 min read
 snippet: Have you ever heard about the term “people-based marketing?” It’s impossible only if you completely fell out of the sphere for a while. However, let us give you a more in-depth definition, even if you guess what it describes.
 desc: Have you ever heard about the term “people-based marketing?” It’s impossible only if you completely fell out of the sphere for a while. However, let us give you a more in-depth definition, even if you guess what it describes.
-thumbnailImg: ./marketing-people-based.png?format=jpg&width=1200&height=630
+thumbnailImg: ./marketing-people-based.png?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Why Your Marketing Should Be People-Based](./marketing-people-based.png?format=webp;jpg;png;avif&srcset)
+![Why Your Marketing Should Be People-Based](./marketing-people-based.png?format=webp;jpg;png;avif&srcset&width=880)
 
 Think about your favorite coffee house. You may visit it every day, or only on Mondays, or several times a week and order the drink. Let’s imagine you love cappuccino and you always get a cup of one. A couple of weeks enough for barista to remember what you like and what you order usually. So you don’t feel surprised when he or she asks you: “As usual?” during your next visit. You respond “Sure” and they make it for you, while tempting you to try something else: “Would you also like to try out new macaroons? They’re perfect with cappuccino!”
 
@@ -26,7 +26,7 @@ Your server already had an information about your preferences and was able to ma
 
 Of course, the coffee house in our example introduced their macaroons on the menu for a broader audience. But they targeted this offer to you - someone who drinks cappuccino and don’t mind trying something new. People-based marketing focuses on persons instead of groups. People love it when you show they matter, when you invest time to find a solution to their problem.
 
-![Why Your Marketing Should Be People-Based](./marketing-people-based.png?format=webp;jpg;png;avif&srcset)
+![Why Your Marketing Should Be People-Based](./marketing-people-based.png?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Research all channels
 

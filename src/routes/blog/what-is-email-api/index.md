@@ -5,14 +5,14 @@ date: 15.07.2020
 readingTime: 8 min read
 snippet: Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
 desc: Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
-thumbnailImg: ./vero.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./vero.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Vero](./vero.jpg?format=webp;jpg;avif&srcset)
+![Vero](./vero.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
 
@@ -24,7 +24,7 @@ Email APIs are the most efficient way to send and manage email notifications as 
 
 An email API allows applications to access functions offered by the email service providers’ platforms, such as Gmail, Outlook, etc., including generating and sending transactional emails, manipulating templates, moving or editing folders, building drafts, and more. Besides, APIs allow powerful analytics of this data - something you wouldn’t get if integrating with email service providers directly. Email API providers handle protocol matters such as message assembly, message sending, and reporting that would otherwise need to be managed by the application software development team.
 
-![Vero](./vero.jpg?format=webp;jpg;avif&srcset)
+![Vero](./vero.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: Vero
 
@@ -38,7 +38,7 @@ Email APIs are also extensively used in sending notifications. Many software too
 
 Here’s an example of an automated email sent by [booking.com](https://mailcheck.co/l/booking) using an email marketing API to thank the customer for leaving a review of their recent hotel stay.
 
-![Author’s own](./booking.jpg?format=webp;jpg;avif&srcset)
+![Author’s own](./booking.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: Author’s own
 
@@ -58,7 +58,7 @@ With integrated email API applications do not need to transmit fully constructed
 
 In addition to the above, email API is widely used in email validation processes. Acting as a filter between your platform, website or app and your existing or [potential customers](/blog/six-tips-to-write-an-email-that-prompts-your-subscribers-to-action), it screens out any bots that could get into your [email list](/blog/does-buying-email-lists-still-work) and possibly damage your business in the long run if not filtered out on time. There’s thousands of email API providers to choose from. However, a feature that singles out [Mailcheck](/#features), an email validation service, is that it has a built in API integration feature that allows validating your email database on the go. When someone attempts to create an account on your website/platform using a fake email, [Mailcheck](/#pricing) built-in API integration will ban such email from getting into your database, therefore keeping your email list clean and only consisting of real potential customers.
 
-![Mailcheck](./mailcheck.jpg?format=webp;jpg;avif&srcset)
+![Mailcheck](./mailcheck.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Benefits of using email API
 

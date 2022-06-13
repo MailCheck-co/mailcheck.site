@@ -5,14 +5,14 @@ date: 20.04.2019
 readingTime: 3 min read
 snippet: Email marketing is undoubtedly the most efficient tool when it comes to ROI. According to the recent researches return on investments when promoting goods and services with email marketing makes 41:1. This is twice as more than for any other online marketing method.
 desc: Email marketing is undoubtedly the most efficient tool when it comes to ROI. According to the recent researches return on investments when promoting goods and services with email marketing makes 41:1. This is twice as more than for any other online marketing method.
-thumbnailImg: ./email-marketing-approach-img2.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./email-marketing-approach-img2.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Tips for Email Marketing Approach](./email-marketing-approach-img2.jpg?format=webp;jpg;avif&srcset)
+![Tips for Email Marketing Approach](./email-marketing-approach-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Email marketing is undoubtedly the most efficient tool when it comes to ROI. According to the recent researches return on investments when promoting goods and services with email marketing makes 41:1. This is twice as more than for any other online marketing method.
 
@@ -28,7 +28,7 @@ Before you launch a email marketing campaign make sure you have specified the go
 
 Make sure your goals comply SMART approach (specific, measurable, achievable, relevant, time-bound).
 
-![Tips for Email Marketing Approach](./email-marketing-approach-img1.jpg?format=webp;jpg;avif&srcset)
+![Tips for Email Marketing Approach](./email-marketing-approach-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Personalize Your Letters
 
@@ -48,7 +48,7 @@ People get more engaged when you cause the positive reactions and using humour i
 
 Just be careful with the formatting. Some of the ESPs are not fond of rich media content letters.
 
-![Tips for Email Marketing Approach](./email-marketing-approach-img2.jpg?format=webp;jpg;avif&srcset)
+![Tips for Email Marketing Approach](./email-marketing-approach-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Choose The Conversation Style
 

@@ -5,20 +5,20 @@ date: 03.06.2020
 readingTime: 3 min read
 snippet: With the coronavirus hitting hard on the economy worldwide, not only retailers had to implement changes in the way they run their business, but also the behaviour of their customers has changed dramatically. In rather ambiguous directions.
 desc: With the coronavirus hitting hard on the economy worldwide, not only retailers had to implement changes in the way they run their business, but also the behaviour of their customers has changed dramatically. In rather ambiguous directions.
-thumbnailImg: ./email-marketing-during-post-covid-19.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./email-marketing-during-post-covid-19.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Email marketing during post-COVID-19 times. Underrated?](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;avif&srcset)
+![Email marketing during post-COVID-19 times. Underrated?](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 With the coronavirus hitting hard on the economy worldwide, not only retailers had to implement changes in the way they run their business, but also the behaviour of their customers has changed dramatically. In rather ambiguous directions.
 
 As a growing number of consumers refrain from going out and doing in-store shopping and more and more shops shutting down due to the pandemic, many retailers gear their marketing efforts towards online platforms even more than they did before.
 
-![Email marketing during post-COVID-19 times. Underrated?](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;avif&srcset)
+![Email marketing during post-COVID-19 times. Underrated?](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: DundeeMail List Services
 

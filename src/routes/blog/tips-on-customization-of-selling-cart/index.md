@@ -5,14 +5,14 @@ date: 19.04.2019
 readingTime: 3 min read
 snippet: Cart in the online store is an interface which user can use to add products he is ought to purchase.
 desc: Cart in the online store is an interface which user can use to add products he is ought to purchase.
-thumbnailImg: ./selling-cart-customization-img-1.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./selling-cart-customization-img-1.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![X Tips on Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;avif&srcset)
+![X Tips on Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Cart in the online store is an interface which user can use to add products he is ought to purchase.
 
@@ -30,7 +30,7 @@ In order to motivate a client to make a purchase you need to make it display in 
 - Near the cart icon, there should be a list of the products put there with their prices and the overall sum
 - If there is even one product in the cart then its icon should display that, notifying the customer that cart is not empty anymore.
 
-![X Tips on Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;avif&srcset)
+![X Tips on Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Cart Mechanism - Basic Functions
 
@@ -61,7 +61,7 @@ In case the store accepts online coupons the visitor should be able to enter the
 - Point out the shipping cost on the cart page
 - After completing the order customer should see ‘thank you’ page.
 
-![X Tips on Customization of Selling Cart](./selling-cart-customization-img-2.jpg?format=webp;jpg;avif&srcset)
+![X Tips on Customization of Selling Cart](./selling-cart-customization-img-2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Additional Options
 

@@ -5,14 +5,14 @@ date: 15.04.2022
 readingTime: 3 min read
 snippet: Email remains a powerful tool for attracting new customers and keeping old customers loyal. The number of daily sent and received emails reached a fabulous 333.2 billion in 2022. Just imagine how effectively you can boost your business today by incorporating the right email strategy. However, you need to continuously adapt to the times and opt for the most effective strategy to give a more significant boost to your email campaigns. So what may help kickstart this year? Here are some ideas to experiment with.
 desc: Email remains a powerful tool for attracting new customers and keeping old customers loyal. The number of daily sent and received emails reached a fabulous 333.2 billion in 2022. Just imagine how effectively you can boost your business today by incorporating the right email strategy. However, you need to continuously adapt to the times and opt for the most effective strategy to give a more significant boost to your email campaigns. So what may help kickstart this year? Here are some ideas to experiment with.
-thumbnailImg: ./keep-spam-at-bay.png?format=jpg&width=1200&height=630
+thumbnailImg: ./keep-spam-at-bay.png?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![keep-spam-at-bay](./keep-spam-at-bay.png?format=webp;jpg;png;avif&srcset)
+![keep-spam-at-bay](./keep-spam-at-bay.png?format=webp;jpg;png;avif&srcset&width=880)
 
 {desc}
 
@@ -21,7 +21,7 @@ Do not underestimate the importance of click rates and conversions. Measuring yo
 
 You should still review these at least every six months and retain only those recipients that are more likely to open your emails. But before discarding inactive subscribers, try one last time to get them to cooperate - use a targeted email asking if they are still interested in receiving information from you. [And do not be tempted by the idea to buy a ready mailing list](/blog/want-to-buy-an-email-list-we-have-6-reasons-not-to) – it is much more effective to build your own database through the subscription form on your site or with the help of other lead generation tactics.
 
-![keep-spam-at-bay](./keep-spam-at-bay.png?format=webp;jpg;png;avif&srcset)
+![keep-spam-at-bay](./keep-spam-at-bay.png?format=webp;jpg;png;avif&srcset&width=880)
 Source: Depositphotos keep-spam-at-bay
 
 ## Keep spam at bay.
