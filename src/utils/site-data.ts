@@ -11,9 +11,9 @@ export default {
   email: 'support@mailcheck.co',
   theme: '#0b182d',
   description:
-    'Mailcheck is an easy-to-use, fast, and efficient '
-    + 'email validation tool with an API integration '
-    + 'feature for on-the-go validation.'
+    'Mailcheck is an easy-to-use, fast, and efficient ' +
+    'email validation tool with an API integration ' +
+    'feature for on-the-go validation.'
 };
 
 export const inviewOptions = {

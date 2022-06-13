@@ -46,7 +46,6 @@ desc: Guide on how to integrate Mailcheck using Make.com
 
 ### Step 8
 
-
 ![validate email in make](./make-08.png?format=webp;jpg;png;avif&srcset&width=880)
 
 ### Step 9

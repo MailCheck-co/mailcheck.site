@@ -11,6 +11,7 @@ desc: Guide on how to integrate Mailcheck using Mailerlite
 ## {snippet}
 
 ### Step 1:
+
 If you obtain a [Mailcheck.co](https://mailcheck.co/) account, please go to Integration and choose MailerLite.
 
 ![Mailerlite integration step 1: Mailcheck integration page](./step-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
@@ -36,13 +37,13 @@ Click on “MailerLite” button
 
 Sometimes you may not see any subscribers in your lists, no worries. That means no group was created inside your MailerLite cabinet
 
- - Go back to MailerLite
- - Click Subscribers
- - Go to group tab and create a new group
- - Go to segment and create one
- - Add subscribers to the segment and group
+- Go back to MailerLite
+- Click Subscribers
+- Go to group tab and create a new group
+- Go to segment and create one
+- Add subscribers to the segment and group
 
-_*NOTE we will be validating only “Group” contacts_
+_\*NOTE we will be validating only “Group” contacts_
 
 ### Step 6:
 
@@ -50,7 +51,7 @@ Refresh your groups in the [integration page](https://app.mailcheck.co/dashboard
 
 ![Mailerlite integration step 6: Refresh the page](./step-6.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-_*NOTE “Only new contacts” means that the validation will be performed using newly added emails, if you are performing the first time, please ignore this indicator._
+_\*NOTE “Only new contacts” means that the validation will be performed using newly added emails, if you are performing the first time, please ignore this indicator._
 
 ### Step 7:
 

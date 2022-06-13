@@ -31,10 +31,11 @@
       name: title,
       description: desc,
       backstory: desc,
-      headline: title,
+      headline: title
     },
     websiteSchema
-  ]} />
+  ]}
+/>
 
 <div class="container" id="article">
   <div class="content-block">
