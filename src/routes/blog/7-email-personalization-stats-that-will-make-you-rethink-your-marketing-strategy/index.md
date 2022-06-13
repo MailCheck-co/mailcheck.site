@@ -5,14 +5,14 @@ date: 10.02.2022
 readingTime: 4 min read
 snippet: How many commercial emails do you receive every day? And how many of them do you really read and respond to? Try to analyze what is the reason for such an amount. How many of these letters are personal or are customized to fit your interests and needs? Although marketers talks so much about mail verification and personalization, not all of them manage to establish communication with this approach. Surely, this job isn’t easy, but people want to be noticed and you should do it to succeed.
 desc: How many commercial emails do you receive every day? And how many of them do you really read and respond to? Try to analyze what is the reason for such an amount. How many of these letters are personal or are customized to fit your interests and needs? Although marketers talks so much about mail verification and personalization, not all of them manage to establish communication with this approach. Surely, this job isn’t easy, but people want to be noticed and you should do it to succeed.
-thumbnailImg: ./email-personalization-marketing.png?format=jpg&width=1200&height=630
+thumbnailImg: ./email-personalization-marketing.png?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![email personalization marketing](./email-personalization-marketing.png?format=webp;jpg;avif&srcset)
+![email personalization marketing](./email-personalization-marketing.png?format=webp;jpg;png;avif&srcset&width=880)
 
 How many commercial emails do you receive every day? And how many of them do you really read and respond to? Try to analyze: what is the reason for such an amount. How many of these letters are personal or are customized to fit your interests and needs? Although marketers talks so much about mail verification and personalization, not all of them manage to establish communication with this approach. Surely, this job isn’t easy, but people want to be noticed and you should do it to succeed.
 
@@ -41,7 +41,7 @@ According to it:
 
 You may think people are closed when it comes to sharing their data. Although, they are waiting for better offers and are more open in exchange for it. Many of them are looking forward to receiving this type of communication from you. Use the information you get from them wisely and make sure you have such offers. Personalization along with the bulk email validation service can affect your sales. [Cold mailing is a thing of the past](/blog/10-tips-to-warm-up-your-cold-emails). They annoy, cause rejection and the desire to send your message to spam.
 
-![email personalization marketing](./email-personalization-marketing.png?format=webp;jpg;avif&srcset)
+![email personalization marketing](./email-personalization-marketing.png?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Email-marketing
 **We picked up the statistics about this type of communication as well. Here are the top channels marketers use nowadays:**

@@ -5,14 +5,14 @@ date: 24.05.2021
 readingTime: 4 min read
 snippet: The world before and after the pandemic will never be the same - and e-commerce is there to prove it. We jump into 2021 with new needs, new buying habits, a new understanding of the very essence of shopping. Embracing fast-changing trends in an environment previously unknown to marketing is more difficult than ever - but still possible. Here are the main trends in online shopping that await us in 2021.
 desc: The world before and after the pandemic will never be the same - and e-commerce is there to prove it. We jump into 2021 with new needs, new buying habits, a new understanding of the very essence of shopping. Embracing fast-changing trends in an environment previously unknown to marketing is more difficult than ever - but still possible. Here are the main trends in online shopping that await us in 2021.
-thumbnailImg: ./digital-advertising.png?format=jpg&width=1200&height=630
+thumbnailImg: ./digital-advertising.png?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Increased demand in digital advertising](./digital-advertising.png?format=webp;png;avif&srcset)
+![Increased demand in digital advertising](./digital-advertising.png?format=webp;jpg;png;avif&srcset&width=880)
 
 The world before and after the pandemic will never be the same - and e-commerce is there to prove it. We jump into 2021 with new needs, new buying habits, a new understanding of the very essence of shopping. Embracing fast-changing trends in an environment previously unknown to marketing is more difficult than ever - but still possible. Here are the main trends in online shopping that await us in 2021.
 

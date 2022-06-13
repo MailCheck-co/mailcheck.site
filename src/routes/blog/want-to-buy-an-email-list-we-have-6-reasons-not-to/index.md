@@ -5,20 +5,20 @@ date: 13.04.2022
 readingTime: 5 min read
 snippet: Adestra and Ascend have conducted a survey, which results showed that a half of marketing professionals consider the enriching contact data quality to be their most important issue. Now we see how difficult is creating a really strong and valuable email list, with enough data to help you attractive emails, personalized and engaging. It can take months to build a good database for your company. That’s why you might want to find the quickest way and to buy an email list. Shortcuts save time and effort, right? However, they can cause disastrous consequences, to harm your business. In what way?
 desc: Adestra and Ascend have conducted a survey, which results showed that a half of marketing professionals consider the enriching contact data quality to be their most important issue. Now we see how difficult is creating a really strong and valuable email list, with enough data to help you attractive emails, personalized and engaging. It can take months to build a good database for your company. That’s why you might want to find the quickest way and to buy an email list. Shortcuts save time and effort, right? However, they can cause disastrous consequences, to harm your business. In what way?
-thumbnailImg: ./email-list.png?format=jpg&width=1200&height=630
+thumbnailImg: ./email-list.png?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![email list](./email-list.png?format=webp;jpg;png;avif&srcset)
+![email list](./email-list.png?format=webp;jpg;png;avif&srcset&width=880)
 
 Adestra and Ascend have conducted a survey, which results showed that a half of marketing professionals consider the enriching contact data quality to be their most important issue. Now we see how difficult is creating a really strong and valuable email list, with enough data to help you attractive emails, personalized and engaging. It can take months to build a good database for your company. That’s why you might want to find the quickest way and to buy an email list. Shortcuts save time and effort, right? However, they can cause disastrous consequences, to harm your business. In what way?
 
 We can compare an email list with Internet gold. Mine it, do it right, leverage its opportunities and you will succeed. However, you need more than a few bucks to buy it from vendors. They may promise you the Earth, but there are several reasons why you should never listen to them.
 
-![email list](./email-list.png?format=webp;jpg;png;avif&srcset)
+![email list](./email-list.png?format=webp;jpg;png;avif&srcset&width=880)
 
 ## It is actually illegally
 First, buying an email list may be against the law, depending on your country. Even if buying is not, using it is definitely against. Yeah, it seems we have the “free” internet and modern marketing world calls for desperate measures, but there are strict rules, consumer protections and guidelines. All over the world there are regulations protecting inboxes, such as GDPR in Europe, CAN-SPAM in the US of CASL in Canada. They are needed to protect consumers. There regulations require marketers to send any emails only with permission. And the buying of an email list does not suggest you’ve obtained that.

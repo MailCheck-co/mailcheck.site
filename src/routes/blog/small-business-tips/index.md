@@ -5,14 +5,14 @@ date: 23.04.2019
 readingTime: 3 min read
 snippet: Launching newsletter for small business is a good way to get in touch with potential clients and increase sales. It is also a proper tool to increase loyalty to brand. Regular communication with clients is the only way for the small business to personalize offers and win in a daily struggle with large companies.
 desc: Launching newsletter for small business is a good way to get in touch with potential clients and increase sales. It is also a proper tool to increase loyalty to brand. Regular communication with clients is the only way for the small business to personalize offers and win in a daily struggle with large companies.
-thumbnailImg: ./email-marketing-for-small-business-tips-img1.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./email-marketing-for-small-business-tips-img1.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img1.jpg?format=webp;jpg;avif&srcset)
+![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Launching newsletter for small business is a good way to get in touch with potential clients and increase sales. It is also a proper tool to increase loyalty to brand. Regular communication with clients is the only way for the small business to personalize offers and win in a daily struggle with large companies.
 
@@ -37,7 +37,7 @@ How to make the subscription process easy:
 
 It should all be easy and intuitive for user no matter whether you are making subscription forms or CTA buttons.
 
-![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img1.jpg?format=webp;jpg;avif&srcset)
+![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Make Clear Offers
 
@@ -53,7 +53,7 @@ Always make sure you inform clients in details what are they subscribing. For ex
 
 Although above-grounded advertising and selling letters usually do not get high opening rates and many clicks, those can be useful for company to attract more visitors on a website if you do it in a right way.
 
-![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img2.jpg?format=webp;jpg;avif&srcset)
+![Email Marketing for Small Business Tips](./email-marketing-for-small-business-tips-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Researches show that the majority of users want to get updates on discounts and special offers from the companies. 64% users claimed that they prefer to get such offers on emails. Most of the people are irritated when they get such offers via SMS or messengers as they seem to be haunting.
 

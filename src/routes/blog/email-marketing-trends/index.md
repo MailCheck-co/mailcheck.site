@@ -5,14 +5,14 @@ date: 26.04.2019
 readingTime: 3 min read
 snippet: Email marketing trends in 2019 have changed dramatically. However, some things remain unchanged. It is still important to provide high-quality content as users deal with a huge amount of content on a daily basis. One more thing that remains unchanged is the fact that the ROI of email marketing remains outstanding, and it is still the most efficient way to communicate with your clients online. Although we see that the approach to email marketing for small business has changed a little bit in 2019.
 desc: Email marketing trends in 2019 have changed dramatically. However, some things remain unchanged. It is still important to provide high-quality content as users deal with a huge amount of content on a daily basis. One more thing that remains unchanged is the fact that the ROI of email marketing remains outstanding, and it is still the most efficient way to communicate with your clients online.
-thumbnailImg: ./email-marketing-trends-img-1.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./email-marketing-trends-img-1.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-1.jpg?format=webp;jpg;avif&srcset)
+![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Email marketing trends in 2019 have changed dramatically. However, some things remain unchanged. It is still important to provide high-quality content as users deal with a huge amount of content on a daily basis. One more thing that remains unchanged is the fact that the ROI of email marketing remains outstanding, and it is still the most efficient way to communicate with your clients online. Although we see that the approach to email marketing for small business has changed a little bit in 2019.
 
@@ -28,7 +28,7 @@ Preparation of newsletters stops looking like a disaster and can turn into an ea
 
 Mailing services have powerful tools to segmentate and personalize newsletters. Using those you can send clients content based on the analysis of their previous actions - you look what they've opened, links they have pressed, etc. Thus, without automation it is going to be hard for you to compete with other companies and keep your mailing on high level.
 
-![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-1.jpg?format=webp;jpg;avif&srcset)
+![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Deep Segmentation and Personalization
 
@@ -47,7 +47,7 @@ For now you need to bring even more efforts to get rid of spam in your mailings.
 
 Email marketers already know that it is a bad idea to subscribe on a mailing someone who is not willing to as there are high chances the email will go the spam box which has a negative effect on [the sender’s reputation](/blog/senders-reputation). Thus, you need to make sure the user has made a clear confirm on subscription and profile the content you send to make it remain relevant and engaging.
 
-![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-2.jpg?format=webp;jpg;avif&srcset)
+![Email Marketing Trends 2019 for Small Business](./email-marketing-trends-img-2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Interaction and Gamification
 

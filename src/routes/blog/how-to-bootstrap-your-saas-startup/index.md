@@ -5,14 +5,14 @@ date: 12.11.2020
 readingTime: 3 min read
 snippet: Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to successful project implementation.
 desc: Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to successful project implementation.
-thumbnailImg: ./right-development-team.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./right-development-team.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Right Development Team](./right-development-team.jpg?format=webp;jpg;avif&srcset)
+![Right Development Team](./right-development-team.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 [In the previous article, we discussed what email API is](/blog/what-is-email-api), reviewed the email API mechanism, analyzed a couple of examples
 of email API application as well as discussed the benefits of using email API.
@@ -29,7 +29,7 @@ product. In the article below we will have a closer look at what exactly constit
 - Define how you will market your SaaS product
 - Select the right development team
 
-![Successful SaaS Startup Components](./successful-saas-startup-components.jpg?format=webp;jpg;avif&srcset)
+![Successful SaaS Startup Components](./successful-saas-startup-components.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ### Analyze your idea
 
@@ -73,7 +73,7 @@ piggyback on Google’s data.
 
 While the SaaS product development steps discussed above involve a lot of thinking and analyzes, the design and development of the actual product or at least its prototype is the task that requires the application of hand and brain labor. It is not necessary for you as the CEO of your business to also be a CTO of your product. Outsourcing the technical part of the product development is what most SaaS startups would resort to these days, and so can you. The question then is “Where to get a good development team to bring my idea into life?”
 
-![Right Development Team](./right-development-team.jpg?format=webp;jpg;avif&srcset)
+![Right Development Team](./right-development-team.jpg?format=webp;jpg;png;avif&srcset&width=880)
 Source: Medium
 
 A typical development team usually consists of a project manager, business analyst, front-end and back-end developers,

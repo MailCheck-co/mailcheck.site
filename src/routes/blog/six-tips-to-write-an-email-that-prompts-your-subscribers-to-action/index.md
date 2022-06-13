@@ -5,14 +5,14 @@ date: 18.06.2020
 readingTime: 7 min read
 snippet: It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
 desc: It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
-thumbnailImg: ./sympli.jpg?format=jpg&width=1200&height=630
+thumbnailImg: ./sympli.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
 
-![Sympli](./sympli.jpg?format=webp;jpg;avif&srcset)
+![Sympli](./sympli.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
 
@@ -30,7 +30,7 @@ So what does it take to create a compelling email that not only helps you grow t
 
 **Choose one primary call-to-action.** It is acceptable to highlight several things in your email. However, do not let those overshadow the main message. Your message could come across unclear and customers will lose interest in reading further. Make sure your email has a core point and let the rest of the information remain secondary.
 
-![Sympli](./sympli.jpg?format=webp;jpg;avif&srcset)
+![Sympli](./sympli.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: Sympli
 
@@ -38,7 +38,7 @@ Source: Sympli
 
 **Invest time into creating an eye-catching subject line.** Believe it or not, subject lines are the first step to enticing your subscribers to read more. Your email campaign may be great, but if your subject line isn’t - everything can fall through. According to [Marketo](https://mailcheck.co/l/subject-line-length), seven words or 41 characters are considered the best size for a subject line. This number yields the highest clicks to open. Surprisingly enough, eight words subject line produces half as much as that number.
 
-![Marketo](./marketo.jpg?format=webp;jpg;avif&srcset)
+![Marketo](./marketo.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: Marketo
 
