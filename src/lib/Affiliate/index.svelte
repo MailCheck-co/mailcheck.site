@@ -24,7 +24,7 @@
     <div class="affil-block">
       <div class="affil-block-inner">
         <div class="affil-block-image">
-          <img src={imgAffiliate} class="affil-image" alt="Invite friends" />
+          <img src={imgAffiliate} width="500" class="affil-image" alt="Invite friends" />
         </div>
         <div class="affil-block-content">
           <p class="section-description">
@@ -107,6 +107,10 @@
 
     .affil-block-image {
       max-width: 50%;
+
+      img {
+          max-width: unset;
+        }
     }
 
     .affil-block-inner {
