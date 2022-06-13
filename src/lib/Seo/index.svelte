@@ -22,7 +22,8 @@
   <title>{title} | {siteName}</title>
   <link
     rel="canonical"
-    href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')} />
+    href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')}
+  />
   <meta name="description" content={desc || defaultDesc} />
   <meta name="msapplication-TileColor" content={data.theme} />
   <meta name="theme-color" content={data.theme} />
@@ -40,7 +41,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="op:markup_version" content="v1.0" />
-  <meta property="fb:app_id" content="{fbAppId}" />
+  <meta property="fb:app_id" content={fbAppId} />
   <meta property="og:type" content={isPost ? 'blog' : 'website'} />
   <meta property="og:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
   <meta property="og:title" content={title || siteName} />
@@ -66,7 +67,8 @@
       rel="alternate"
       type="application/rss+xml"
       title="RSS Feed for mailcheck.co"
-      href="/rss.xml" />
+      href="/rss.xml"
+    />
 
     <!-- JSON-LD Schema -->
     {#each schemas as schema}

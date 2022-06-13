@@ -77,7 +77,8 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="container">
     <form class="contact-form" bind:this={contactForm} on:submit={onSubmit}>
       <h2 class="title title-contact">contact us</h2>
@@ -86,7 +87,8 @@
         type="text"
         placeholder="Name"
         bind:value={nameValue}
-        required />
+        required
+      />
       <input
         class="input input-email"
         type="text"
@@ -94,12 +96,14 @@
         placeholder="Email"
         use:validate={email}
         class:invalid={!isValid}
-        required />
+        required
+      />
       <textarea
         class="input input-message"
         bind:value={textareaValue}
         placeholder="Message"
-        required />
+        required
+      />
       <button disabled={!isValid} class="btn btn-submit" type="submit">
         {#if isSending}
           <span class="progress-wrapper">

@@ -21,7 +21,13 @@
   const dev = process.env.NODE_ENV === 'development';
 </script>
 
-<Seo title={`${status}`} noindex={true} desc={`Error: ${status}`} schemas={[websiteSchema]} canonical="/" />
+<Seo
+  title={`${status}`}
+  noindex={true}
+  desc={`Error: ${status}`}
+  schemas={[websiteSchema]}
+  canonical="/"
+/>
 <svelte:head>
   <meta http-equiv="refresh" content="5;https://mailcheck.co/" />
 </svelte:head>
