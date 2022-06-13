@@ -58,7 +58,6 @@ h5,
 h6,
 p {
   color: var(--heading-color);
-  font-family: var(--roboto);
   line-height: 1.5;
 }
 
@@ -69,7 +68,7 @@ p {
 
 h1 {
   margin: var(--size-24) 0;
-  font-weight: var(--weight-600);
+  font-weight: var(--weight-700);
   font-size: var(--size-32);
   text-align: center;
 }
@@ -107,7 +106,7 @@ pre {
   overflow-x: auto;
   color: var(--text-color);
   font-size: var(--size-16);
-  font-family: var(--font-mono);
+  font-family: var(--fira-mono);
   background-color: var(--color-pre-bg);
   border-radius: var(--br-3);
   box-shadow: var(--size-2) var(--size-2) var(--size-6) var(--color-pre-shadow);
@@ -381,7 +380,7 @@ img {
   height: auto;
   margin-bottom: 25px;
   color: var(--primary-white);
-  font-weight: var(--weight-600);
+  font-weight: var(--weight-700);
   font-size: var(--size-32);
   line-height: 40px;
   letter-spacing: 1.6px;
