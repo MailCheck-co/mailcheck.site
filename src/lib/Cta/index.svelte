@@ -12,12 +12,14 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="container">
     <div class="cta-info">
       <h2 class="cta-text">Verify 10-100 emails for free!</h2>
       <a rel="external" target="_blank" href="https://app.mailcheck.co" class="btn btn-start"
-        >Get started</a>
+        >Get started</a
+      >
     </div>
   </div>
 </section>

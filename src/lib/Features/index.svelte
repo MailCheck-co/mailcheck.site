@@ -14,7 +14,8 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="section-heading sm-left">
     <h2 class="title">The Features</h2>
     <p class="section-title-lg">Features</p>

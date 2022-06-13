@@ -13,7 +13,8 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="wrapper-questions">
     <h3 class="title-small">FAQ</h3>
 

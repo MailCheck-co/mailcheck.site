@@ -22,7 +22,8 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="section-heading sm-left">
     <h2 class="title">Integrations</h2>
     <p class="section-title-lg">Integrations</p>
@@ -43,7 +44,8 @@
         <a
           rel="external"
           href="https://wordpress.org/plugins/mailcheck-co/"
-          class="integrations-link">
+          class="integrations-link"
+        >
           <img width="50" height="50" src={WP} alt="WordPress" class="integrations-logo" />
         </a>
       </div>
@@ -61,7 +63,8 @@
         <a
           rel="external"
           href="https://app.mailcheck.co/dashboard/integration"
-          class="integrations-link">
+          class="integrations-link"
+        >
           <img width="50" height="50" src={n8n} alt="N8N" class="integrations-logo" />
         </a>
       </div>
@@ -79,13 +82,15 @@
         <a
           rel="external"
           href="https://app.mailcheck.co/dashboard/integration"
-          class="integrations-link">
+          class="integrations-link"
+        >
           <img
             width="50"
             height="50"
             src={activecampaign}
             alt="Active Campaign"
-            class="integrations-logo" />
+            class="integrations-logo"
+          />
         </a>
       </div>
     </div>
