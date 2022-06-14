@@ -109,8 +109,8 @@
       max-width: 50%;
 
       img {
-          max-width: unset;
-        }
+        max-width: unset;
+      }
     }
 
     .affil-block-inner {
