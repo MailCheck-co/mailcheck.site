@@ -64,7 +64,7 @@
     "@fontsource/roboto": "^4.5.7",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.5.0",
-    "firebase-tools": "^11.0.1",
+    "firebase-tools": "^11.1.0",
     "schema-dts": "^1.1.0",
     "svelte-inview": "^3.0.1",
     "svelte-slidy": "^2.8.7"
