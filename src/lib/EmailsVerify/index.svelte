@@ -212,7 +212,7 @@
   }}
 >
   <div class="wrapper-main sm-left">
-    <h1 class="title">Validate your mailing list in one click</h1>
+    <h1 class="title">Verification email adresses online in one click</h1>
     <p class="main-text">
       Get assured your mailing list contains only real emails addresses, get rid of bots and
       inactive users
