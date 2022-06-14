@@ -33,7 +33,7 @@ Address validation is carried out at the collection stage and it is advisable to
 
 You can always test email addresses manually. This approach is budgetary but, at the same time, requires lots of effort and does not often bring the desired results. You will need to export emails from your list and upload them to the email checking processor. It can work if you need to check only a few emails but it is more efficient to use special software for [bulk email validation](https://mailcheck.co/). These include various online services and SaaS products, for example, Mailcheck.
 
-![email verification](./XsKsz38.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![email verification](./verification.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 This particular service allows you to test its performance for free. Once you are on the Mailcheck home page, you will see a box where you can validate any email address in just a few steps:
 
