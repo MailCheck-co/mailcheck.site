@@ -4,8 +4,8 @@
   // fonts
   font-family: var(--roboto);
 
-  --roboto: "Roboto", sans-serif;
-  --fira-mono: "Fira Mono", monospace;
+  --roboto: 'Roboto', sans-serif;
+  --fira-mono: 'Fira Mono', monospace;
   --letter-spacing: 0.05625rem;
   --letter-spacing-text: 0.05rem;
 
@@ -123,8 +123,16 @@
     var(--gradient-4) 100%
   );
   --card-bg-gradient: linear-gradient(to top, var(--gradient-4) 0%, var(--gradient-4) 100%);
-  --slider-overlay-gradient-left: linear-gradient(90deg, var(--gradient-7) 0%, var(--gradient-8) 100%);
-  --slider-overlay-gradient-right: linear-gradient(-90deg, var(--gradient-7) 0%, var(--gradient-8) 100%);
+  --slider-overlay-gradient-left: linear-gradient(
+    90deg,
+    var(--gradient-7) 0%,
+    var(--gradient-8) 100%
+  );
+  --slider-overlay-gradient-right: linear-gradient(
+    -90deg,
+    var(--gradient-7) 0%,
+    var(--gradient-8) 100%
+  );
   --mob-menu-gradient: linear-gradient(to top, var(--gradient-5) 0%, var(--gradient-6) 100%);
   --popup-bg-gradient: var(--mob-menu-gradient);
 
