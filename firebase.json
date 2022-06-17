@@ -45,6 +45,11 @@
           "type": 301
         },
         {
+          "source": "/make-integration",
+          "destination": "/make-com-integration",
+          "type": 301
+        },
+        {
           "source": "/increaseEmailsDeliverability",
           "destination": "/blog/x-ways-increase-emails-deliverability",
           "type": 301
