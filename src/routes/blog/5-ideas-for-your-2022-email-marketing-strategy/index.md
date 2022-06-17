@@ -12,8 +12,6 @@ thumbnailImg: ./keep-spam-at-bay.png?format=jpg&width=880
 
 {readingTime}
 
-![keep-spam-at-bay](./keep-spam-at-bay.png?format=webp;jpg;png;avif&srcset&width=880)
-
 {desc}
 
 ## Focus on impactful metrics.
