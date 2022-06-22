@@ -4,7 +4,7 @@
       "target": "mailcheck-landing",
       "headers": [
         {
-          "source": "**/*.@(js|css|xml|jpg|jpeg|gif|webp|png|avif|svg)",
+          "source": "**/*.@(js|css|xml|jpg|jpeg|gif|webp|png|avif|svg|woff|woff2)",
           "headers": [
             {
               "key": "Cache-Control",
