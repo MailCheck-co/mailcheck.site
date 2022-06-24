@@ -4,15 +4,15 @@ title: What is email API and why do I need one?
 date: 15.07.2020
 readingTime: 8 min read
 snippet: Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
-desc: Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
+desc: Why the email APIs are the efficient tool to send and manage emails. The mechanism behind email APIs. Benefits of using email API.
 thumbnailImg: ./vero.jpg?format=jpg&width=880
 ---
 
-# {title}
+# What is email API and why do I need one?
 
 {readingTime}
 
-![Vero](./vero.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![email api](./vero.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
 
@@ -24,7 +24,7 @@ Email APIs are the most efficient way to send and manage email notifications as 
 
 An email API allows applications to access functions offered by the email service providers’ platforms, such as Gmail, Outlook, etc., including generating and sending transactional emails, manipulating templates, moving or editing folders, building drafts, and more. Besides, APIs allow powerful analytics of this data - something you wouldn’t get if integrating with email service providers directly. Email API providers handle protocol matters such as message assembly, message sending, and reporting that would otherwise need to be managed by the application software development team.
 
-![Vero](./vero.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Email verfication](./vero.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: Vero
 
@@ -32,13 +32,15 @@ There are two categories of email APIs: transactional and contextual.
 
 Transactional email APIs are for sending bulk or routine emails, such as password reset, notification emails, and mass [marketing campaigns](/blog/simple-email-marketing-campaign-guide) through third-party platforms. The role of an email API is that it lets you design beautiful transactional emails and integrate them directly into the functionality of your website or app so you can get the full potential of a well-designed email instead of just including the bare minimum of essential information for customers.
 
-Contextual email APIs are designed for developers building software applications that require email sync, send, and analytics embedded directly into the application for their end-user's benefit. Productivity tools, CRMs, applicant tracking systems, and even car consoles use email APIs to embed email functionality into the application. Contextual emails allow you to sync, send, receive, and collect analytics, as well as take care of general [CRUD](https://mailcheck.co/l/wiki-api) for each email service provider connection.
+Contextual email APIs are designed for developers building software applications that require email sync, send, and analytics embedded directly into the application for their end-user's benefit. Productivity tools, CRMs, applicant tracking systems, and even car consoles use email APIs to embed email functionality into the application. Contextual emails allow you to sync, send, receive, and collect analytics, as well as take care of general CRUD* for each email service provider connection.
+
+*CRUD -In computer programming, create, read, update, and delete (CRUD) are the four basic operations of persistent storage. CRUD is also sometimes used to describe user interface conventions that facilitate viewing, searching, and changing information using computer-based forms and reports. The term was likely first popularized by James Martin in his 1983 book Managing the Data-base environment. Sourse: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete*
 
 Email APIs are also extensively used in sending notifications. Many software tools and websites use notifications to inform their users when something happens with their account or on the platform. For example, Facebook and Instagram notify their users of a new like or a comment made in response to a user’s post. It doesn’t always make sense to send an email for each action that occurs in an application. However, if this action requires the user’s attention, sending an email is the best way to ensure that the user sees the information on time.
 
-Here’s an example of an automated email sent by [booking.com](https://mailcheck.co/l/booking) using an email marketing API to thank the customer for leaving a review of their recent hotel stay.
+Here’s an example of an automated email sent by booking.com using an email marketing API to thank the customer for leaving a review of their recent hotel stay.
 
-![Author’s own](./booking.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Example of email](./booking.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: Author’s own
 
@@ -58,7 +60,7 @@ With integrated email API applications do not need to transmit fully constructed
 
 In addition to the above, email API is widely used in email validation processes. Acting as a filter between your platform, website or app and your existing or [potential customers](/blog/six-tips-to-write-an-email-that-prompts-your-subscribers-to-action), it screens out any bots that could get into your [email list](/blog/does-buying-email-lists-still-work) and possibly damage your business in the long run if not filtered out on time. There’s thousands of email API providers to choose from. However, a feature that singles out [Mailcheck](/#features), an email validation service, is that it has a built in API integration feature that allows validating your email database on the go. When someone attempts to create an account on your website/platform using a fake email, [Mailcheck](/#pricing) built-in API integration will ban such email from getting into your database, therefore keeping your email list clean and only consisting of real potential customers.
 
-![Mailcheck](./mailcheck.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Mailcheck verification form](./mailcheck.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Benefits of using email API
 
@@ -67,3 +69,5 @@ One of the primary purposes of an email API is to act as an intermediary level b
 Deliverability is the end goal of every email campaign and it is dependent on many technical factors and contingencies. Email APIs handle this task flawlessly. Email API providers are responsible for minimizing any interruptions caused by Internet outages, natural disasters, distributed denial of service attacks, and a variety of other network problems that could impact the delivery of your emails. Their service guarantees that you won’t lose any business because your servers were unable to respond or poorly configured.
 
 You could potentially manage without an email API…if it was the 90s. In the era of constantly changing technologies, economic demand, and consumer behavior, integrating email APIs into your existing platforms is all but necessary to make your customer communications faster and more efficient and to save yourself that always lacking time.
+
+*Read more in other useful articles on our [blog](/blog).*

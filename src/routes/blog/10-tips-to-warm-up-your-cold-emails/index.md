@@ -4,11 +4,11 @@ title: 10 tips to “warm up” your cold emails
 date: 11.08.2020
 readingTime: 3 min read
 snippet: Cold emailing is in a way an analog of cold calling - you have one generic message composed and you want to deliver it to a large audience, and, ideally, get a warm response to it. Cold emailing has some cons making it a type of message no one wants to either send or receive. Nonetheless, it is not something you as a business should stay away from. Cold emailing is one of the oldest marketing tools and if crafter and used correctly cold emails can generate new leads and revenues. Let’s dive deeper and see why cold emailing shouldn’t be avoided and how to make it work.
-desc: Cold emailing is in a way an analog of cold calling - you have one generic message composed and you want to deliver it to a large audience, and, ideally, get a warm response to it. Cold emailing has some cons making it a type of message no one wants to either send or receive. Nonetheless, it is not something you as a business should stay away from. Cold emailing is one of the oldest marketing tools and if crafter and used correctly cold emails can generate new leads and revenues. Let’s dive deeper and see why cold emailing shouldn’t be avoided and how to make it work.
+desc: How to make your cold emails effective. 10 important things you need to know to warm up your mailing list. Personalization, verification, subject line and more.
 thumbnailImg: ./cold-emails.jpg?format=jpg&width=880
 ---
 
-# {title}
+# 10 tips to warm up your mailing
 
 {readingTime}
 
@@ -65,3 +65,5 @@ Your customers deserve to know who you are and what is your business. And the mo
 Since a cold email a priori is a type of email sent to a large number of people (something similar to an email blast), you better make sure that emails you have in your database belong to real people. This is crucial for three reasons: 1) to ensure a better deliverability 2) to ensure a better click-through rate 3) to protect your sender score. If your database comprises of thousands or even millions of emails, there’s no chance you can manually check each of them for validity. We recommend using an email validation and verification service, like, for instance, Mailcheck. Mailcheck is an email validation software that will save you from a headache of filtering your email database for fake emails, so your emails, even the “cold” ones, reach the proper, real people. After years of research and constant development, Mailcheck can now validate one million emails in less than 15 minutes, and the API integration feature will validate your customer’s emails on the go, so no fake email will be able to get into your clean email list.
 
 Cold emailing is one of the oldest email marketing strategies and if crafted and managed properly with the tips we provided above it can be a powerful tool of your [email marketing strategy](/blog/great-ideas-for-your-email-marketing-strategy). Establishing credibility with your prospects has to be your first priority. It is a well- known fact that it all starts with trust.
+
+*Read more in other useful articles on our [blog](/blog).*
