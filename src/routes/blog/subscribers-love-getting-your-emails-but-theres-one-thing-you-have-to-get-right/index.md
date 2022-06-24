@@ -1,22 +1,22 @@
 ---
 published: true
-title: Subscribers Love Getting Your Emails, But There’s One Thing You Have to Get Right
+title: DO SUBSCRIBERS LOVE YOUR EMAILS?
 date: 23.02.2022
 readingTime: 3 min read
 snippet: It’s true - about 43% of the 1006 participants in a Yes Marketing study chose email as a preferred channel for communication with brands. No doubt that social media, videos, text messages are also essential marketing mediums, but email is the dominant one, with the best results. How can you leverage that? Let’s take a closer look at the statistics and then we’ll shore some interesting writing tips.
-desc: It’s true - about 43% of the 1006 participants in a Yes Marketing study chose email as a preferred channel for communication with brands. No doubt that social media, videos, text messages are also essential marketing mediums, but email is the dominant one, with the best results. How can you leverage that? Let’s take a closer look at the statistics and then we’ll shore some interesting writing tips.
+desc: How to make SUBSCRIBERS love YOUR EMAILS? Let’s take a closer look and show some interesting writing tips.
 thumbnailImg: ./subscribers.jpeg?format=jpg&width=880
 ---
 
-# {title}
+# DO SUBSCRIBERS LOVE YOUR EMAILS?
 
 {readingTime}
 
-![subscribers](./subscribers.jpeg?format=webp;jpg;png;avif&srcset&width=880)
+![email subscribers](./subscribers.jpeg?format=webp;jpg;png;avif&srcset&width=880)
 
 It’s true: about 43% of the 1006 participants in a Yes Marketing study chose email as a preferred channel for communication with brands. No doubt that social media, videos, text messages are also essential marketing mediums, but email is the dominant one, with the best results. How can you leverage that? Let’s take a closer look at the statistics and then we’ll shore some interesting writing tips.
 
-## Write them, because they love it
+## Write consumerls, because they prefere mails
 
 If you were not sure about starting a drip campaign, an email list or writing the people, who’ve already joined it, we know how to change your mind. Just read this article!
 
@@ -26,7 +26,7 @@ Almost half of people that participated in [Yes Marketing study](https://www.dat
 
 You need to know, that open-rates sometimes mean nothing. People can don’t open your emails, but they still keep an eye on what you send. We’re sure you do the same - just scan the object lines and decide whether you want to read that. Why don’t your customers unsubscribe if they’re not interested in messages and even don’t bother to read them? Maybe they’re expecting a nice birthday gift or a sale. Or they don’t know how to find the “unsubscribe” button in your letter. Make sure that it is noticeable, as it’s better to get rid of such dormant accounts who don’t want to interact with you. You can use [mail validation service](https://mailcheck.co/) for this task as well.
 
-## Subject lines matter
+## Email Subject lines matter
 
 What really determines your deliverability and your open rates - is how clean your database it. If email delivery verification isn’t a part of your [marketing strategy](/blog/great-ideas-for-your-email-marketing-strategy) yet, your list may be risky. Outdated database can really harm you and your email campaign. When fake and dormant addresses get on your list, less real customers will get your messages. As your bounce rate increases, your sender’s reputation gets ruined and Internet Service Providers stop delivering your messages even to the valid email addresses. What do you need to do - is not to allow your list to be clogged by spam traps, bots etc. They increase your risk of getting blacklisted. Once mail lists verifier cleans your list, think about your subject lines. We can compare it to newspaper headlines. People might just glance at them and make a decision if they’re interested.
 
@@ -53,3 +53,5 @@ It’s better to test your email with a group of people. At least five. Their fe
 ## Conclusion
 
 Get rid of dormant accounts by [email verification](https://mailcheck.co/) and create a decent content by using the best marketing practises. Remember, people love receiving your emails, don’t disappoint them!
+
+*Read more in other useful articles on our [blog](/blog).*
