@@ -1,13 +1,13 @@
 ---
 published: true
-title: Why hosting email at home isn't good idea
+title: HOSTING EMAIL AT HOME ISN'T GOOD IDEA
 date: 20.07.2019
 readingTime: 3 min read
 snippet: Now days it's pretty simple task to launch mail server at home. Tools like docker and virtualization can help us to run MTA in a few minutes. But you shouldn't. SMTP wasn't designed in secure manner and SPAM is q global problem for that old standard.
-desc: Now days it's pretty simple task to launch mail server at home. Tools like docker and virtualization can help us to run MTA in a few minutes. But you shouldn't. SMTP wasn't designed in secure manner and SPAM is q global problem for that old standard.
+desc: Why shouldn't you launch mail server at home. How spammers can use your IP. Penalties from providers. SaaS services & Data centers.
 ---
 
-# {title}
+# WHY HOSTING EMAIL AT HOME ISN'T GOOD IDEA
 
 {readingTime}
 
@@ -26,3 +26,5 @@ Then big mail providers started to grade incoming mails also by as net records. 
 Also, in a difference of home iPs - even virtual servers have static IPs. Another problem that in most home networks IPS are floating, that makes correct usage of SPF impossible. Even more - you can't guess who was yours predecessor, who controlled that IP before.
 
 That's why if you want to send mails you should better rent SaaS service like G Suite, or at least setup server at Data center.
+
+*Read more in other useful articles on our [blog](/blog).*

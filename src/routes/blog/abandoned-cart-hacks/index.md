@@ -1,18 +1,18 @@
 ---
 published: true
-title: 10 Abandoned Cart Hacks, Emails and Tricks that Will Rise Sales
+title: 10 ABANDONED CART HACKS
 date: 15.07.2019
 readingTime: 3 min read
 snippet: Have some issues with cart abandonment on your website? Keep calm, everyone faced it. The statistics says, 80% of people abandon their shopping carts.
-desc: Have some issues with cart abandonment on your website? Keep calm, everyone faced it. The statistics says, 80% of people abandon their shopping carts.
+desc: 10 ABANDONED CART HACKS, EMAILS AND TRICKS THAT WILL RISE SALES. Usability. Technical tips & auto email responders.
 thumbnailImg: ./abandoned-cart-hacks.jpg?format=jpg&width=880
 ---
 
-# {title}
+# 10 ABANDONED CART HACKS THAT RISE SALES
 
 {readingTime}
 
-![10 Abandoned Cart Hacks, Emails and Tricks that Will Rise Sales](./abandoned-cart-hacks.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![10 Abandoned Cart Hacks](./abandoned-cart-hacks.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Have some issues with cart abandonment on your website? Keep calm, everyone faced it. The statistics says, 80% of people
 abandon their shopping carts.
@@ -113,3 +113,5 @@ keeping your database actual. Or you can set your site up with triggers, pop-up 
 Despite all your effort, abandoned carts will still happen. Nothing personal, just stats. It will always be an issue for
 any e-commerce website. A multi-pronged approach will mitigate it and undoubtedly boost your sales in the long run.
 Good luck!
+
+*Read more in other useful articles on our [blog](/blog).*

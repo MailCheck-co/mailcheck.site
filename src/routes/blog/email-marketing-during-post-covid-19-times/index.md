@@ -1,24 +1,24 @@
 ---
 published: true
-title: Email marketing during post-COVID-19 times. Underrated?
+title: EMAIL MARKETING DURING POST-COVID-19 TIMES
 date: 03.06.2020
 readingTime: 3 min read
 snippet: With the coronavirus hitting hard on the economy worldwide, not only retailers had to implement changes in the way they run their business, but also the behaviour of their customers has changed dramatically. In rather ambiguous directions.
-desc: With the coronavirus hitting hard on the economy worldwide, not only retailers had to implement changes in the way they run their business, but also the behaviour of their customers has changed dramatically. In rather ambiguous directions.
+desc: Why is it so important to focus on email marketing during and after the COVID-19 days? What will change in the way we run email campaigns in the post-pandemic times?
 thumbnailImg: ./email-marketing-during-post-covid-19.jpg?format=jpg&width=880
 ---
 
-# {title}
+# EMAIL MARKETING IN POST-COVID-19 TIMES
 
 {readingTime}
 
-![Email marketing during post-COVID-19 times. Underrated?](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Email marketing](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 With the coronavirus hitting hard on the economy worldwide, not only retailers had to implement changes in the way they run their business, but also the behaviour of their customers has changed dramatically. In rather ambiguous directions.
 
 As a growing number of consumers refrain from going out and doing in-store shopping and more and more shops shutting down due to the pandemic, many retailers gear their marketing efforts towards online platforms even more than they did before.
 
-![Email marketing during post-COVID-19 times. Underrated?](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Email marketing](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Source: DundeeMail List Services
 
@@ -26,7 +26,7 @@ As a vivid example, many food stores have implemented online ordering as well as
 
 It is not a secret, that online marketing is probably the most utilized tool when trying to get the message across to the consumer. But during the post-pandemic times business owners may consider pushing for it even harder.
 
-## So why is it so important to focus on email marketing during and after the coronavirus days and what is it that will change in the way we run our email marketing campaigns in the post-pandemic times?
+## Email marketing campaigns in the post-pandemic times
 
 Here’s some statistics to digest: according to Statista 2020, in 2019, global email users constituted the number of [3.9 billion](https://mailcheck.co/l/e-mail-users-worldwide.l). This figure is set to grow to [4.3 billion users](https://mailcheck.co/l/e-mail-users-worldwide.l) in 2023 ([Oberlo](https://mailcheck.co/l/email-marketing-statistics)). This is almost half of the world population! And with the world in lockdown that number could grow even more. This statistics undoubtedly proves that email marketing is an opportunity not to be underrated.
 
@@ -39,3 +39,5 @@ What about what’s in your email? It is probably not the best idea to reach out
 This is why it is so important to focus on where you send your emails and how many of them get to the recipients inbox and subsequently get opened. [For all of the above our team has created **Mailcheck**](/blog/how-mailcheck-can-help-your-business) - an email validation tool that will help you grasp it all in one step. Mailcheck uses sophisticated algorithms to validate authenticity of the email addresses in your database. Aside from automatic search and validation, we also provide manual moderation. So we use all the power of social networks and search engines, for more in-depth validation. For the past three years we have been improving our validation system, and today it takes us only 15 minutes to validate 1 000 000 email addresses. API integration feature is one other property that makes Mailcheck different from the competitors. API integration allows validating your email database on the go saving one extra step in your email marketing routine. With API integration your email marketing routine will remain intact, but your email list will be validated each time you launch your newsletter campaign.
 
 Difficult times come, and the COVID-19 is certainly one of those. But there were no times in history when businesses failed to adapt to the rapidly changing economy. It’s all about employing some analysis, re-thinking your business practices and taking advantage of the little tools that are so easily available to us to quickly and effectively adapt to these non-easy times.
+
+*Read more in other useful articles on our [blog](/blog).*
