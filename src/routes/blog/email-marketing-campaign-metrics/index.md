@@ -1,18 +1,18 @@
 ---
 published: true
-title: Email Marketing Campaign Metrics for Small Business
+title: Email Marketing Campaign Metrics
 date: 21.04.2019
 readingTime: 3 min read
 snippet: Email marketing metrics are used to analyze efficiency of the marketing campaign.There can be different tasks and goals for an email marketing campaign launched by a small business - the number of registrations, purchases, opening rate etc. For each of the task and goal we make a separate metric. Email marketer has to consider these metrics and monitor them for decision-making purposes.
-desc: Email marketing metrics are used to analyze efficiency of the marketing campaign.There can be different tasks and goals for an email marketing campaign launched by a small business - the number of registrations, purchases, opening rate etc. For each of the task and goal we make a separate metric. Email marketer has to consider these metrics and monitor them for decision-making purposes.
+desc: Email marketing campaign metrics for small business. What these metrics are? What tasks and goals you may use them for. How to use them efficiently.
 thumbnailImg: ./marketing-campaign-metrics-img1.jpg?format=jpg&width=880
 ---
 
-# {title}
+# EMAIL MARKETING CAMPAIGN METRICS FOR SMALL BUSINESS
 
 {readingTime}
 
-![Email Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Email Marketing Campaign Metrics](./marketing-campaign-metrics-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Email marketing metrics are used to analyze efficiency of the marketing campaign.There can be different tasks and goals for an email marketing campaign launched by a small business - the number of registrations, purchases, opening rate etc. For each of the task and goal we make a separate metric. Email marketer has to consider these metrics and monitor them for decision-making purposes.
 
@@ -32,7 +32,7 @@ In case the HTML-letter is opened by the subscriber more than one time there wil
 
 Normal opening rate can vary depending on the type of business and letters. However,opening rate is not the most accurate metrics as you do not know how many users watched your letter in the plain text mode.
 
-![Email Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Email Marketing Campaign Metrics](./marketing-campaign-metrics-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## CTR
 
@@ -67,7 +67,7 @@ Unsubscribe rate is calculated based on the delivered letters figures as some of
 
 When subscriber marks the letter as a smap an ESP and provider consider that when defining sender’s reputation. Often that doesn’t mean you are a spammer, it is just about the subscribers do not want to get your letters anymore so they have marked you as a spammer. In order to avoid that make unsubscription as easy as possible.
 
-![Email Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Churn rate
 
@@ -80,3 +80,5 @@ Depending on the business industry you can either make calculations on the annua
 ## Conclusion
 
 If you think there are too much efforts you need to bring to calculate the metrics, note that email marketing is one of the most efficient ways to promote your product or company which is grounded in our article.
+
+*Read more in other useful articles on our [blog](/blog).*

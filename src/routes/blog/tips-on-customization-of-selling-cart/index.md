@@ -1,18 +1,18 @@
 ---
 published: true
-title: X Tips on Customization of Selling Cart
+title: Customization of selling cart. X tips
 date: 19.04.2019
 readingTime: 3 min read
 snippet: Cart in the online store is an interface which user can use to add products he is ought to purchase.
-desc: Cart in the online store is an interface which user can use to add products he is ought to purchase.
+desc: How to customize selling cart in the online store. Cart Mechanism and Functions, UX and UI design. Order Management
 thumbnailImg: ./selling-cart-customization-img-1.jpg?format=jpg&width=880
 ---
 
-# {title}
+# CUSTOMIZATION OF SELLING CART: X TIPS
 
 {readingTime}
 
-![X Tips on Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Cart in the online store is an interface which user can use to add products he is ought to purchase.
 
@@ -30,7 +30,7 @@ In order to motivate a client to make a purchase you need to make it display in 
 - Near the cart icon, there should be a list of the products put there with their prices and the overall sum
 - If there is even one product in the cart then its icon should display that, notifying the customer that cart is not empty anymore.
 
-![X Tips on Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Cart Mechanism - Basic Functions
 
@@ -61,7 +61,7 @@ In case the store accepts online coupons the visitor should be able to enter the
 - Point out the shipping cost on the cart page
 - After completing the order customer should see ‘thank you’ page.
 
-![X Tips on Customization of Selling Cart](./selling-cart-customization-img-2.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![X Tips on Customization](./selling-cart-customization-img-2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Additional Options
 
@@ -91,3 +91,5 @@ There should be three stages of purchase enforced on the website:
 - Signed up user - user enters his login data and all his data is entered in order form automatically.
 
 If the user has to wait more than several seconds for the manager’s response, he estimates this like disrespect to him and his time. Thus, you need to provide an immediate notification about the pending order, so that manager would be able to contact the client ASAP.
+
+*Read more in other useful articles on our [blog](/blog).*

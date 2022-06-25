@@ -1,18 +1,18 @@
 ---
 published: true
-title: All You Need to Know About Sender’s Reputation
+title: Sender’s reputation. All you need to know
 date: 18.04.2019
 readingTime: 3 min read
 snippet: Sender’s reputation directly affects whether your letters reach the user’s inbox or not. The higher is your sender reputation the less are the chances your letter goes to spam and the ESP enforces sanctions on your IP or mailbox. Thus, even if you have an ideal selling content and outstanding product, that all doesn’t matter for your email marketing campaign if your sender’s reputation is low.
-desc: Sender’s reputation directly affects whether your letters reach the user’s inbox or not. The higher is your sender reputation the less are the chances your letter goes to spam and the ESP enforces sanctions on your IP or mailbox. Thus, even if you have an ideal selling content and outstanding product, that all doesn’t matter for your email marketing campaign if your sender’s reputation is low.
+desc: What is sender's reputation, what does it depend on. How to track the sender’s reputation. How to deal with reputation decrease
 thumbnailImg: ./senders-reputation-img-1.jpg?format=jpg&width=880
 ---
 
-# {title}
+# Sender’s reputation. All you need to know
 
 {readingTime}
 
-![All You Need to Know About Sender’s Reputation](./senders-reputation-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Senders Reputation](./senders-reputation-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Sender’s reputation directly affects whether your letters reach the user’s inbox or not. The higher is your sender reputation the less are the chances your letter goes to spam and the ESP enforces sanctions on your IP or mailbox. Thus, even if you have an ideal selling content and outstanding product, that all doesn’t matter for your email marketing campaign if your sender’s reputation is low.
 
@@ -41,17 +41,15 @@ In order to make a right calculation of reputation rate you need to set the emai
 
 ESPs are interested in making mailings spam-free, thus they help senders track their reputation and increase it. For example, Google has a number of services developed for email marketers you can use. These services can help you get a detailed statistics on your letters deliverability rate.
 
-## Gmail: [postmaster.google.com](https://postmaster.google.com/)
-
-Main metrics:
+## Gmail Main metrics
 
 - IP reputation rate
 
-![All You Need to Know About Sender’s Reputation](./senders-reputation-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Sender’s Reputation](./senders-reputation-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 - Domain Reputation
 
-![All You Need to Know About Sender’s Reputation](./senders-reputation-img-2.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Domain Reputation](./senders-reputation-img-2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 It is good that Google makes different graphs for the domain and IP reputation. You can understand promptly if somewhere there are any problems by tracking the decreased indicator. However, there is one shortcoming for this tool - you only can track your statistics if you send at least 200-500 letters a day on gmail inbox mails.
 
@@ -69,3 +67,5 @@ There are always good reasons for the sender’s reputation to decrease. It is h
 ## Conclusion
 
 Your sender’s reputation is the base score your email marketing efforts are based. Thus, it is important to make sure you look good in the eyes of the email service providers.
+
+*Read more in other useful articles on our [blog](/blog).*

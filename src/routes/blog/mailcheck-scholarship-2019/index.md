@@ -4,10 +4,10 @@ title: Mailcheck scholarship
 date: 18.04.2019
 readingTime: 3 min read
 snippet: We are pleased to announce that Mailcheck Academic Scholarship 2019 is now open to receive new applications.
-desc: We are pleased to announce that Mailcheck Academic Scholarship 2019 is now open to receive new applications.
+desc: Mailcheck Academic Scholarship is now open to receive new applications. How to Apply for this Scholarship and other important details of the programm
 ---
 
-# {title}
+# Mailcheck scholarship 2019
 
 {readingTime}
 
@@ -74,3 +74,5 @@ Below we will note some necessary rules that must be followed without any except
 - Remember that all information mentioned in your essay should be true to life. Our company will check every detail that you describe in your text carefully. If we find out that information is false or unreliable, your essay will not be considered.
 
 If you follow these rules, you have a great chance of succeeding in this competition. We are open to fresh and totally new visions about the future of the email verification industry. Thus, we are waiting for your rich essays! In case of problems with the application or just questions, please contact us via email.
+
+*Read more in our [blog](/blog).*
