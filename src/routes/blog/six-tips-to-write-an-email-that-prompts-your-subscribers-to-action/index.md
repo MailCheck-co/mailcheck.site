@@ -22,7 +22,7 @@ However, sending out emails alone with the content irrelevant to your customer n
 
 The two fundamental reasons why you need to invest time and efforts into composing your newsletter email:1. It will help you retain already existing subscribers and therefore maintain your credibility. 2. [It could potentially grow your customer database](/blog/six-tips-to-write-an-email-that-prompts-your-subscribers-to-action).
 
-According to Campaign Monitor, [0.17%](https://mailcheck.co/l/good-unsubscribe-rate) is an average unsubscribe rate. However, if your email unsubscribe rates jumps over 2% this signals that you need to review your newsletter campaign.
+According to Campaign Monitor, 0.17% is an average unsubscribe rate. However, if your email unsubscribe rates jumps over 2% this signals that you need to review your newsletter campaign.
 
 So what does it take to create a compelling email that not only helps you grow the number of your customers, but also increases your click-through rates and consequently draws income? We have assembled **6 tips** on how to write an email that will prompt your subscribers to action.
 

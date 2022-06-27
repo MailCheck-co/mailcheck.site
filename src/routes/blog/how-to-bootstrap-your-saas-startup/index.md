@@ -48,7 +48,7 @@ As outdated as it may sound, business plans are necessary, and they do work. No 
 business plan. A simple one-page outline of your strategy will do. You can always go back to it if you need to make
 adjustments and it will be much easier to change a simple plan rather than changing an already thought-through business
 plan. You can create a bullet-point plan or break it down in a table format, or you can use a business planning
-software like [Enloop](https://mailcheck.co/l/enloop) to help you with building your lean business plan.
+software like Enloop to help you with building your lean business plan.
 
 ### Determine your strategy
 
@@ -65,7 +65,7 @@ Marketing something that has no physical presence, like a SaaS product, has its 
 - Reward customers for referrals
 - Employ content marketing and SEO to attract more customers
 
-For SEO, you can use Google Analytics or any other free SEO tools, like [CanIRank](https://mailcheck.co/l/canirank) or [Seobility](https://mailcheck.co/l/seobility). However, note that most of the other data tools simply piggyback on Google’s data.
+For SEO, you can use Google Analytics or any other free SEO tools, like CanIRank or Seobility. However, note that most of the other data tools simply piggyback on Google’s data.
 
 ### Select the right development team
 
