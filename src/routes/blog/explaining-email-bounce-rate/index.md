@@ -1,13 +1,13 @@
 ---
 published: true
-title: Explaining Email Bounce Rate and Ways to Reduce It
+title: Email bounce rate explaining and reduceing
 date: 30.03.2019
 readingTime: 3 min read
 snippet: Bounce rate shows the percentage of letters that have not been delivered. There can be numerous reasons for bouncing - starting from entering wrong recipient in the "To" field and ending by the blockade from the recipient's server. Let’s disclose possible types of bounces.
-desc: Bounce rate shows the percentage of letters that have not been delivered. There can be numerous reasons for bouncing - starting from entering wrong recipient in the "To" field and ending by the blockade from the recipient's server. Let’s disclose possible types of bounces.
+desc: Explaining email bounce rate and ways to reduce it. Type of bounces in email marketing. Recommendations that can help you to reduce the email bounce rate.
 ---
 
-# {title}
+# EMAIL BOUNCE RATE: EXPLAINING AND REDUCEING
 
 {readingTime}
 
@@ -66,3 +66,5 @@ Below we have prepared a set of recommendations that can help you to reduce the 
 Bounce rate is a critical metric for your email marketing campaign. It is more about technical reasons than the pros and cons of your marketing strategy, so here you have the simple rules to avoid being downgraded in the eyes of ESPs and your clients.
 
 Follow the tips above to avoid any penalties and make sure that your email bounce rate doesn’t exceed 2-3 % to be confident about your mailing reputation.
+
+*Read more in other useful articles on our [blog](/blog).*

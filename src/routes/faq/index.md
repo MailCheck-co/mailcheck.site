@@ -1,10 +1,10 @@
 ---
 layout: faq
-title: FAQ
+title:  FAQ. Frequently Asked Question
 date: 25.06.2020
 readingTime: 1 min read
 snippet: Frequent Questions
-desc: Frequent Questions
+desc: requently Asked Question about an online email verification service - Mailcheck
 ---
 
 <script>

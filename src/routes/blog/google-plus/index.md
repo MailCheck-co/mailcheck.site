@@ -4,22 +4,22 @@ title: Google+ is shutting down. So what?
 date: 15.03.2019
 readingTime: 3 min read
 snippet: Google announced shutting down social media platform Google+. It is hard to find some technical article that hasn’t mentioned the end of Google’s social network era. But, a high level of consistency in connectivity within services of the company had received scant attention. In this article I would like to share my thoughts on the internal way of Google services consistency and what does it mean for Google API users when it comes to a Google+ shutdown.
-desc: Google announced shutting down social media platform Google+. It is hard to find some technical article that hasn’t mentioned the end of Google’s social network era. But, a high level of consistency in connectivity within services of the company had received scant attention. In this article I would like to share my thoughts on the internal way of Google services consistency and what does it mean for Google API users when it comes to a Google+ shutdown.
+desc: GOOGLE+ is shutting down. Closer look at a process of Google’s one of the external services takeovers, and what’s going on with taken-over service API and Google API.
 ---
 
-# {title}
+# GOOGLE+ IS SHUTTING DOWN. SO WHAT?
 
 {readingTime}
 
 Google announced shutting down social media platform Google+. It is hard to find some technical article that hasn’t mentioned the end of Google’s social network era. But, a high level of consistency in connectivity within services of the company had received scant attention. In this article I would like to share my thoughts on the internal way of Google services consistency and what does it mean for Google API users when it comes to a Google+ shutdown.
 
-From a client’s point of view, the use of Gmail Photos and a further shift to Docs should be as clear as possible — at first glance, these services are independent and united within one platform that is a point of access called Single Sign-On [accounts.google.com](https://accounts.google.com). But as developers, we know, that terms “shutdown”, “takeover”, “integrate” involve great meaning (and also work) for those people, who take part in this process. So, let’s take a closer look at a process of Google’s one of the external services takeovers, and what’s going on with taken-over service API and Google API.
+From a client’s point of view, the use of Gmail Photos and a further shift to Docs should be as clear as possible — at first glance, these services are independent and united within one platform that is a point of access called Single Sign-On accounts.google.com. But as developers, we know, that terms “shutdown”, “takeover”, “integrate” involve great meaning (and also work) for those people, who take part in this process. So, let’s take a closer look at a process of Google’s one of the external services takeovers, and what’s going on with taken-over service API and Google API.
 
 ## Account and userID
 
 Beside users who use Gmail and may heard of Google Plus, there is also a huge number of APIs for developers that include such things as account identifiers, the notorious userID. The userID is Google’s internal ID, this is the thing that helps Google services understand who is who. It appeared in many APIs, and we see that it has not changed from service to service.
 
-## Let’s take a closer look at another example of external takeover performed by Google
+## Enother example of external takeover performed by Google
 
 Obviously, for the implementation of SSO in the newly absorbed service, you cannot simply take and transfer accounts from the old base to the new “Google accounts base”. I think there is simply no such thing - there are many intertwined services, levels of interaction, chains of responsibility, service management services. Seriously, if you think about it, then there must be many, many, many levels of connections between Google services for everything to work. But then everything goes not so smoothly - in an effort to popularize G+ it used the userID of users who are part of the global SSO service.
 
@@ -40,12 +40,12 @@ For instance, we develop an email validator. In this case, this API would be a m
 Let’s check: [https://picasaweb.google.com/data/feed/api/user/nosov@nodeart.io?deprecation-extension=true](https://picasaweb.google.com/data/feed/api/user/nosov@nodeart.io?deprecation-extension=true)
 
 - [https://picasaweb.google.com/data/feed/api/user/](https://picasaweb.google.com/data/feed/api/user/)
-- API’s endpoint; — [nosov@nodeart.io](mailto:nosov@nodeart.io) — user’s email for validation (as we can see, it is not required to use Gmails only). User should have Google Apps accounts (this validation is very helpful with lead generation), users with Google+ accounts also have this (by linking a third-party email beforehand), for example, [Yandex.ru](https://yandex.ru/)
+- API’s endpoint; — [nosov@nodeart.io](mailto:nosov@nodeart.io) — user’s email for validation (as we can see, it is not required to use Gmails only). User should have Google Apps accounts (this validation is very helpful with lead generation), users with Google+ accounts also have this (by linking a third-party email beforehand), for example, Yandex.
 - deprecation-extension=true — the indication about an imminent end of API's life.
 
 If we will try to pass nonexistent email, we’ll get clear interpreted response: “Unable to find a user with email [noname@nodeart.io](mailto:noname@nodeart.io), that leads to the conclusion that this email is not valid. And even more — if we will try to send a group mailing address to the API the answer be “Unknown user”. It would then be possible to distinguish the difference between personal G-Suite emails and corporate emails. It’s hard to say that we can “catch” personal data this way if this data wasn’t shared by the user, but it was good for the global validation of user list via API.
 
-## So, how this imprecision was linked to Google+ shutting down? Conclusions
+## How this imprecision was linked to Google+ shutting down?
 
 The key reason to shut down Google+ was security lapse, more precisely, the ability to get data from Google+ by the services that weren’t planned and intended beforehand.
 
@@ -58,3 +58,5 @@ Beside Google +, partial shut down of various APIs is performed. For instance, y
 In fact, this gives us a reason to think that Google has become entangled in the system of interaction between services since the actions that previously could be performed simply by obtaining the required scope, now require manual validation for 15–75k USD and manual inclusion in whitelist. It remains only to guess what else you can do using undocumented features of the Google's rich ecosystem of the services and the SSO service in particular.
 
 In order to [qualitatively validate mailing lists](/), we will need to look for new non-standard ways of public APIs usage, so we will continue to explore the Google \\ Facebook API and other services. (By the way, Facebook until recently had a similar way of email validation.)
+
+*Read more in other useful articles on our [blog](/blog).*

@@ -70,3 +70,7 @@ Go back to your Mailerlite account and find “Subscribers” on the left sideba
 Thank you!
 
 Please [let me know](mailto:integration@mailcheck.co) if you have any questions.
+
+*Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [Zapier](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration).*
+
+[*OUR BLOG*](/blog)

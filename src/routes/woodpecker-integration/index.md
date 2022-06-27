@@ -3,7 +3,7 @@ title: WoodPecker integration guide
 date: 10.05.2022
 readingTime: 5 min read
 snippet: A step-by-step guide to integrate Mailcheck with daily services using WoodPecker
-desc: WoodPecker helps to configure several services to work in conjunction with Mailcheck.
+desc: A step-by-step guide to integrate Mailcheck with daily services using WoodPecker. How to use WoodPecker integration in MailCheck.co
 ---
 
 # **{title}**
@@ -54,3 +54,7 @@ Upon completion you have two methods to migrate the results of the validation:
 - Scroll horizontally and find a column **“tag”** here you may find a [Mailcheck.co](https://mailcheck.co/) results
 
 ![test your zap trigger](./step-7.jpg?format=webp;jpg;png;avif&srcset&width=880)
+
+*Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Zapier](/zapier-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration).*
+
+[*OUR BLOG*](/blog)
