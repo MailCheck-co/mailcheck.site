@@ -4,7 +4,7 @@ title: 10 tips to “warm up” your cold emails
 date: 11.08.2020
 readingTime: 3 min read
 snippet: Cold emailing is in a way an analog of cold calling - you have one generic message composed and you want to deliver it to a large audience, and, ideally, get a warm response to it. Cold emailing has some cons making it a type of message no one wants to either send or receive. Nonetheless, it is not something you as a business should stay away from. Cold emailing is one of the oldest marketing tools and if crafter and used correctly cold emails can generate new leads and revenues. Let’s dive deeper and see why cold emailing shouldn’t be avoided and how to make it work.
-desc: How to make your cold emails effective. 10 important things you need to know to warm up your mailing list. Personalization, verification, subject line and more.
+desc: How to make your cold emails effective. 10 important things you need to know to warm up your mailing. Personalization, verification, subject line and more
 thumbnailImg: ./cold-emails.jpg?format=jpg&width=880
 ---
 
