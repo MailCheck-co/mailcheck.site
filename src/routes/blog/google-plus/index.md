@@ -5,11 +5,14 @@ date: 15.03.2019
 readingTime: 3 min read
 snippet: Google announced shutting down social media platform Google+. It is hard to find some technical article that hasn’t mentioned the end of Google’s social network era. But, a high level of consistency in connectivity within services of the company had received scant attention. In this article I would like to share my thoughts on the internal way of Google services consistency and what does it mean for Google API users when it comes to a Google+ shutdown.
 desc: GOOGLE+ is shutting down. Closer look at a process of Google’s one of the external services takeovers, and what’s going on with taken-over service API.
+thumbnailImg: ./google-plus-img-1.jpg?format=jpg&width=880
 ---
 
 # GOOGLE+ IS SHUTTING DOWN. SO WHAT?
 
 {readingTime}
+
+![Google plus shut down](./google-plus-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Google announced shutting down social media platform Google+. It is hard to find some technical article that hasn’t mentioned the end of Google’s social network era. But, a high level of consistency in connectivity within services of the company had received scant attention. In this article I would like to share my thoughts on the internal way of Google services consistency and what does it mean for Google API users when it comes to a Google+ shutdown.
 
