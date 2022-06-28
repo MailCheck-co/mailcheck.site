@@ -48,7 +48,7 @@ In case the store accepts online coupons the visitor should be able to enter the
 
 ## How to Use The Cart on 100%
 
-- Make a call-to-action to purchase the product
+- Make a [call-to-action to purchase](/blog/the-one-common-email-marketing-mistake) the product
 - The button near the product should call the action. Type in the word Order Now or Buy.
 - If the button doesn’t contain any text it should be notable, large and have the clear icon
 - The Buy button should be placed on all the site pages with the product on the blocks with a short description.
@@ -76,7 +76,7 @@ Forms with many fields negatively affect the chance for the purchase to be finis
 
 Do not abuse pop-down menus - sometimes it is better to let the user type in data on his own. For example, when one has to type in the birth date or the city.
 
-Do not force people to subscribe to your newsletter. This can decrease your deliverability rate as a sender and spoil your reputation in the eyes of the client.
+Do not force people to subscribe to your newsletter. This can decrease your [deliverability rate](/blog/x-ways-increase-emails-deliverability) as a sender and spoil your reputation in the eyes of the client.
 
 ## Subscription to Newsletter
 

@@ -55,8 +55,8 @@ Unsubscribe rate is calculated based on the delivered letters figures as some of
 
 ## How to Decrease Unsubscribe Rate:
 
-- Make sure you clean the mailing list from the inactive users. Email verification services can help with this task.
-- Do not use purchased or rented mailing lists and parced lists.
+- Make sure you clean the mailing list from the inactive users. [Email verification services](https://mailcheck.co/) can help with this task.
+- Do not use [purchased or rented mailing lists](/blog/want-to-buy-an-email-list-we-have-6-reasons-not-to) and parced lists.
 - Enforce double opt-in subscription.
 - Create interesting content for all subscriber groups.
 - Study up the clients’ preferences using the content map. Read about this in our article about the valuable tip for small business email marketing.

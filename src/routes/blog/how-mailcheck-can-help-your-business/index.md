@@ -14,7 +14,7 @@ thumbnailImg: ./email-notification-woman.jpg?format=jpg&width=880
 
 ![mailcheck-can-help-your-busines](./email-notification-woman.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-It’s been 49 years since Ray Tomlinson has sent the very first email. Since that time, email remains the primary means of contact between a business and a client. According to the Marketing Insider Group, 59% of B2B marketers believe email is the most effective way to increase revenue. We all know that the advantages of email marketing are direct quick communication with potential customers, relatively low cost of implementation and automation, growth of targeted actions from subscribers and hence, loyalty to your brand, but little known fact is that proper email marketing involves no less competent and meticulous work with the subscribers base. Clean email lists, high deliverability, and a good sender reputation are benefits that you, as a mailing list sender, can win from validating subscriber lists.
+It’s been 49 years since Ray Tomlinson has sent the very first email. Since that time, email remains the primary means of contact between a business and a client. According to the Marketing Insider Group, 59% of B2B marketers believe email is the most effective way to increase revenue. We all know that the advantages of email marketing are direct quick communication with potential customers, relatively low cost of implementation and automation, growth of targeted actions from subscribers and hence, loyalty to your brand, but little known fact is that proper email marketing involves no less competent and meticulous work with the subscribers base. Clean email lists, high deliverability, and a [good sender reputation](/senders-reputation) are benefits that you, as a mailing list sender, can win from validating subscriber lists.
 
 Research Experian (USA) found:
 
@@ -33,7 +33,7 @@ To avoid the above mentioned , we advise you to work only with a validated list 
 
 **Mailcheck** uses state of the art algorithms to determine whether the email contact in your mailing list belongs to a real person. This helps to dramatically improve your conversion rates and will definitely optimize your email marketing budgets by ensuring that your newsletters will only be delivered to active email addresses, and hence, most likely will be opened.
 
-Each mailing platform like Sendgrid or Mailchimp has its own tariff system: you pay either for the number of subscribers in the sheet or for the volume of emails sent. When you are serving the "dead load" and sending letters to those who do not even open them, you simply waste your hard-earned bucks.
+Each mailing platform like [Sendgrid](/sendgrid-integration) or [Mailchimp](/mailchimp-integration) has its own tariff system: you pay either for the number of subscribers in the sheet or for the volume of emails sent. When you are serving the "dead load" and sending letters to those who do not even open them, you simply waste your hard-earned bucks.
 
 Let’s take a closer look at how Mailcheck can contribute your email marketing hygiene, and hence, your profits.
 
@@ -43,7 +43,7 @@ Automatisation is the core value of any digital service, Mailcheck is not an exc
 
 Email database validation seems like a good way to fix the mess in your current mailing list, but is it possible to prevent those emails from slipping into your base in the first place? 87% of interviewed email marketers claim that filtering the subscribers before they reach your database is the best way to reach your peak email marketing performance. With the Mailchecks single opt-in widget validation tool you can be sure that each subscription to your newsletter feed has a real person standing behind it. The way it works is simple, all you need to do is to integrate our widget\`s code to your opt-in form and Mailcheck will do the rest of the work for you. Once done, you can be sure that you are only collecting email addresses of real users that are genuinely interested in your product or service.
 
-Overall, it doesn’t matter if you rely on the third party databases or only to your opt-in users, Mailcheck will ensure that you only reach the audience that can be reached without wasting your money and risking your reputation.
+Overall, it doesn’t matter if you rely on the [third party databases](/blog/does-buying-email-lists-still-work) or only to your opt-in users, Mailcheck will ensure that you only reach the audience that can be reached without wasting your money and risking your reputation.
 
 ## Metrics that can be improved with Mailcheck
 

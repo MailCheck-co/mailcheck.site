@@ -32,7 +32,7 @@ However, you need to spend some time and efforts to provide a proper management 
 
 ## Customization and Segmentation
 
-The best approach for the email marketing campaign for the small business is to conduct a proper segmentation of target audience and creating personalized content for each segment separately.
+The [best approach for the email marketing](/blog/tips-for-email-marketing-approach) campaign for the small business is to conduct a proper segmentation of target audience and creating personalized content for each segment separately.
 
 The thing is when you write a post in social network you address all your clients no matter which segment they belong to, so there is no opportunity for personalization. However, newsletter allows you to address each user or a group of users personally.
 
@@ -44,7 +44,7 @@ Thus, make sure you gather useful data about your clients to make a proper segme
 
 ## Address Users That Like You
 
-There are two common mistakes made by the businesses - they do not make email campaigns losing the chance to get in touch with clients that already like them, or they make pushy email campaigns that make clients irritated by the company. If you do not make an email marketing campaign among your clients you are up to lose the future sales and loyalty of people who are already satisfied by your services.
+There are two common mistakes made by the businesses - they do not make email campaigns losing the chance to get in touch with [clients that already like them](/blog/subscribers-love-getting-your-emails-but-theres-one-thing-you-have-to-get-right), or they make pushy email campaigns that make clients irritated by the company. If you do not make an email marketing campaign among your clients you are up to lose the future sales and loyalty of people who are already satisfied by your services.
 
 ## Motivate for Spontaneous Purchases
 

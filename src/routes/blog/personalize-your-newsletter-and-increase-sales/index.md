@@ -4,7 +4,7 @@ title: How to personalize newsletter and increase sales
 date: 24.04.2019
 readingTime: 3 min read
 snippet: Successful email marketing strategy development considers you know about your clients much more than just their email address. You also need to be aware of their tastes and expectations. That is the only way to make them loyal to your brand. In this article we are going to disclose useful tips that can help you personalize newsletter and make it engaging for your clients.
-desc: How you can personalize your newsletter. Which user data you can export. Subscrubers behaviour, devices, opening and click statistics, heat map.
+desc: How you can personalize your newsletter. Which user data you can export. Subscribers behaviour, devices, opening and click statistics, heat map.
 thumbnailImg: ./how-to-personalize-your-newsletter.jpg?format=jpg&width=880
 ---
 
@@ -14,13 +14,13 @@ thumbnailImg: ./how-to-personalize-your-newsletter.jpg?format=jpg&width=880
 
 ![NEWSLETTER PERSONALIZION](./how-to-personalize-your-newsletter.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-Successful email marketing strategy development considers you know about your clients much more than just their email address. You also need to be aware of their tastes and expectations. That is the only way to make them loyal to your brand. In this article we are going to disclose useful tips that can help you personalize newsletter and make it engaging for your clients.
+Successful [email marketing strategy](/blog/great-ideas-for-your-email-marketing-strategy) development considers you know about your clients much more than just their email address. You also need to be aware of their tastes and expectations. That is the only way to make them loyal to your brand. In this article we are going to disclose useful tips that can help you personalize newsletter and make it engaging for your clients.
 
 Personalization is important as template letters do not sell well, they even barely get read. In order to make an efficient personalized newsletter you need to address client by name, consider his current location and offer the products he needs here and now.
 
 Personalized emails should contain relevant information for the subscriber. You can set personalized data in the letter using tags.
 
-So what do you need to do to start using email marketing personalization techniques? The answer is obvious: you need to gather data about your clients and make relevant letters.
+So what do you need to do to start using email [marketing personalization](/blog/7-email-personalization-stats-that-will-make-you-rethink-your-marketing-strategy) techniques? The answer is obvious: you need to gather data about your clients and make relevant letters.
 
 According to Experian research 69% of users are willing to provide personal data if it is going to be used to make service better for them. However, in practice the more there are fields in the subscription form (especially the mandatory ones), the smaller is the number of users that fill it.
 
@@ -67,7 +67,7 @@ This technology allows email marketer to define which elements of the mailing ha
 
 ## Opening Statistics
 
-Opening statistics also helps personalizing newsletters. Each time you send letters to your clients it is vital to know whether they open letters or not. If not, that means the subject line is not catchy enough. In such a case you need to analyze the statistics and personalize a letter for the customer.
+[Opening statistics](/blog/explaining-email-bounce-rate) also helps personalizing newsletters. Each time you send letters to your clients it is vital to know whether they open letters or not. If not, that means the subject line is not catchy enough. In such a case you need to analyze the statistics and personalize a letter for the customer.
 
 ## Personalization by Device
 
