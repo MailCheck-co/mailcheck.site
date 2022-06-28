@@ -5,11 +5,15 @@ date: 30.03.2019
 readingTime: 3 min read
 snippet: Bounce rate shows the percentage of letters that have not been delivered. There can be numerous reasons for bouncing - starting from entering wrong recipient in the "To" field and ending by the blockade from the recipient's server. Let’s disclose possible types of bounces.
 desc: Explaining email bounce rate and ways to reduce it. Type of bounces in email marketing. Recommendations that can help you to reduce the email bounce rate.
+thumbnailImg: ./bounce-rate-img-1.jpg?format=jpg&width=880
 ---
 
 # EMAIL BOUNCE RATE: EXPLAINING AND REDUCEING
 
 {readingTime}
+
+![bounce rate](./bounce-rate-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
+
 
 Bounce rate shows the percentage of letters that have not been delivered. There can be numerous reasons for bouncing - starting from entering wrong recipient in the "To" field and ending by the blockade from the recipient's server. Let’s disclose possible types of bounces.
 
