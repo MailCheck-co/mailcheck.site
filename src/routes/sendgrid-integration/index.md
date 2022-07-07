@@ -3,7 +3,7 @@ title: Sendgrid Integration instructions
 date: 29.09.2021
 readingTime: 4 min read
 snippet: Step by step guide on how to use Mailcheck with Sendgrid
-desc: Mailcheck + SendGrid Integration instructions. A step-by-step guide on how to integrate Mailcheck using SendGrid
+description: Mailcheck + SendGrid Integration instructions. A step-by-step guide on how to integrate Mailcheck using SendGrid
 ---
 
 <script>

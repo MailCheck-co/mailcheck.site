@@ -5,7 +5,7 @@ title: Privacy Policy
 date: 05.05.2022
 readingTime: 1 min read
 snippet: This privacy policy applies to all information collected through our website (such as mailcheck.co).
-desc: This privacy policy applies to all information collected through our website (such as mailcheck.co).
+description: This privacy policy applies to all information collected through our website (such as mailcheck.co).
 ---
 
 # {title}

@@ -4,7 +4,7 @@ title: X Ways to Increase Emails Deliverability
 date: 06.04.2019
 readingTime: 3 min read
 snippet: When you launch a new email marketing campaign it doesn’t matter whether you have managed to make a good strategy, write an extra-selling content or provide a super valuable service if at the end your email won’t reach the potential client.
-desc: How to Increase Emails Deliverability. Х practical tips from professionals. Forms, attachments, fonts, spam, mailing list checking, copywriting and more
+description: How to Increase Emails Deliverability. Х practical tips from professionals. Forms, attachments, fonts, spam, mailing list checking, copywriting and more
 thumbnailImg: ./increase-emails-deliverability-img2.jpg?format=jpg&width=880
 ---
 

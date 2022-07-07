@@ -3,7 +3,7 @@ title: WoodPecker integration guide
 date: 10.05.2022
 readingTime: 5 min read
 snippet: A step-by-step guide to integrate Mailcheck with daily services using WoodPecker
-desc: A step-by-step guide to integrate Mailcheck with daily services using WoodPecker. How to use WoodPecker integration in MailCheck.co
+description: A step-by-step guide to integrate Mailcheck with daily services using WoodPecker. How to use WoodPecker integration in MailCheck.co
 ---
 
 # **{title}**

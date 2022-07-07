@@ -4,7 +4,7 @@ title: 6 reasons not to buy an Email List. Mail checker advice
 date: 13.04.2022
 readingTime: 5 min read
 snippet: Adestra and Ascend have conducted a survey, which results showed that a half of marketing professionals consider the enriching contact data quality to be their most important issue. Now we see how difficult is creating a really strong and valuable email list, with enough data to help you attractive emails, personalized and engaging. It can take months to build a good database for your company. That’s why you might want to find the quickest way and to buy an email list. Shortcuts save time and effort, right? However, they can cause disastrous consequences, to harm your business. In what way?
-desc: Good mail list needs a lot of work - collection, verification, cleaning. You can’t just buy it and in our blog we tell you why.
+description: Good mail list needs a lot of work - collection, verification, cleaning. You can’t just buy it and in our blog we tell you why.
 thumbnailImg: ./email-list.png?format=jpg&width=880
 ---
 

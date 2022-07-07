@@ -4,7 +4,7 @@ title: USEFUL EMAIL PERSONALIZATION STATISTICS
 date: 10.02.2022
 readingTime: 4 min read
 snippet: How many commercial emails do you receive every day? And how many of them do you really read and respond to? Try to analyze what is the reason for such an amount. How many of these letters are personal or are customized to fit your interests and needs? Although marketers talks so much about mail verification and personalization, not all of them manage to establish communication with this approach. Surely, this job isn’t easy, but people want to be noticed and you should do it to succeed.
-desc: 7 EMAIL PERSONALIZATION STATS THAT WILL MAKE YOU RETHINK YOUR MARKETING STRATEGY. Top channels that email-marketers use nowadays
+description: 7 EMAIL PERSONALIZATION STATS THAT WILL MAKE YOU RETHINK YOUR MARKETING STRATEGY. Top channels that email-marketers use nowadays
 thumbnailImg: ./email-personalization-marketing.png?format=jpg&width=880
 ---
 

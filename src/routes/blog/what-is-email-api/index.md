@@ -4,7 +4,7 @@ title: What is email API and why do I need one?
 date: 15.07.2020
 readingTime: 8 min read
 snippet: Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
-desc: Why the email APIs are the efficient tool to send and manage emails. The mechanism behind email APIs. Benefits of using email API.
+description: Why the email APIs are the efficient tool to send and manage emails. The mechanism behind email APIs. Benefits of using email API.
 thumbnailImg: ./vero.jpg?format=jpg&width=880
 ---
 

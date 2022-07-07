@@ -3,7 +3,7 @@ title: Zapier Integration instructions
 date: 18.02.2021
 readingTime: 3 min read
 snippet: A step-by-step guide to integrate Mailcheck with daily services using Zapier
-desc: Using Mailcheck with Zapier. Here is what you need. A step-by-step guide to integrate Mailcheck with daily services using Zapier
+description: Using Mailcheck with Zapier. Here is what you need. A step-by-step guide to integrate Mailcheck with daily services using Zapier
 ---
 
 # **Zapier Integration instructions**

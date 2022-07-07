@@ -4,7 +4,7 @@ title: How to Bootstrap Your SaaS Startup
 date: 12.11.2020
 readingTime: 3 min read
 snippet: Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to successful project implementation.
-desc: BOOTSTRAP YOUR SAAS STARTUP? Closer look at what exactly constitutes a successful SaaS product launch. Successful Saas startup components.
+description: BOOTSTRAP YOUR SAAS STARTUP? Closer look at what exactly constitutes a successful SaaS product launch. Successful Saas startup components.
 thumbnailImg: ./right-development-team.jpg?format=jpg&width=880
 ---
 

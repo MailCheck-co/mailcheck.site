@@ -3,7 +3,7 @@ title: How to create a key for various integrations
 date: 25.06.2020
 readingTime: 1 min read
 snippet: In order to use the integrations most of them require an API key, which can be generated on any Mailcheck account.
-desc: A step-by-step guide to create a key for various integrations with mailcheck
+description: A step-by-step guide to create a key for various integrations with mailcheck
 ---
 
 # HOW TO CREATE A MAILCHECK API KEY

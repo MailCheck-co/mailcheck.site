@@ -4,7 +4,7 @@ title: How to personalize newsletter and increase sales
 date: 24.04.2019
 readingTime: 3 min read
 snippet: Successful email marketing strategy development considers you know about your clients much more than just their email address. You also need to be aware of their tastes and expectations. That is the only way to make them loyal to your brand. In this article we are going to disclose useful tips that can help you personalize newsletter and make it engaging for your clients.
-desc: How you can personalize your newsletter. Which user data you can export. Subscribers behaviour, devices, opening and click statistics, heat map.
+description: How you can personalize your newsletter. Which user data you can export. Subscribers behaviour, devices, opening and click statistics, heat map.
 thumbnailImg: ./how-to-personalize-your-newsletter.jpg?format=jpg&width=880
 ---
 

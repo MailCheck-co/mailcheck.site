@@ -10,7 +10,7 @@
   import data from '$utils/site-data';
 
   export let title = '';
-  export let desc = '';
+  export let description = '';
   export let canonical = '';
   export let noindex = false;
   export let thumbnail = '';
@@ -18,7 +18,7 @@
 
 <Seo
   {title}
-  {desc}
+  {description}
   isPost={true}
   {canonical}
   {noindex}
@@ -29,8 +29,8 @@
       image: thumbnail,
       url: data.siteUrl + $page.url.pathname,
       name: title,
-      description: desc,
-      backstory: desc,
+      description: description,
+      backstory: description,
       headline: title
     },
     websiteSchema

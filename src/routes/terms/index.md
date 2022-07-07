@@ -5,7 +5,7 @@ title: Terms of Service
 date: 05.05.2022
 readingTime: 1 min read
 snippet: In order to use the integrations most of them require an API key, which can be generated on any Mailcheck account.
-desc: In order to use the integrations most of them require an API key, which can be generated on any Mailcheck account.
+description: In order to use the integrations most of them require an API key, which can be generated on any Mailcheck account.
 ---
 
 # {title}

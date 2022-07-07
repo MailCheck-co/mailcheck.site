@@ -4,7 +4,7 @@ title: Mailcheck scholarship
 date: 18.04.2019
 readingTime: 3 min read
 snippet: We are pleased to announce that Mailcheck Academic Scholarship 2019 is now open to receive new applications.
-desc: Mailcheck Academic Scholarship is now open to receive new applications. How to Apply for this Scholarship and other important details of the programm
+description: Mailcheck Academic Scholarship is now open to receive new applications. How to Apply for this Scholarship and other important details of the programm
 ---
 
 # Mailcheck scholarship 2019

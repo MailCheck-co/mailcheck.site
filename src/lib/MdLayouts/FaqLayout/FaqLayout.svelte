@@ -17,7 +17,7 @@
   });
 </script>
 
-<Seo {title} desc={title} isPost={true} {canonical} {noindex} schemas={[websiteSchema]} />
+<Seo {title} description={title} isPost={true} {canonical} {noindex} schemas={[websiteSchema]} />
 
 <div class="wrapper-questions">
   <div class="section-heading sm-left">

@@ -4,7 +4,7 @@ title: E-Commerce trends on the rise in 2021
 date: 24.05.2021
 readingTime: 4 min read
 snippet: The world before and after the pandemic will never be the same - and e-commerce is there to prove it. We jump into 2021 with new needs, new buying habits, a new understanding of the very essence of shopping. Embracing fast-changing trends in an environment previously unknown to marketing is more difficult than ever - but still possible. Here are the main trends in online shopping that await us in 2021.
-desc: Main trends in e-commerce that wait us in 2021. Advertising, email, customer engagemet, chatbots, social media.
+description: Main trends in e-commerce that wait us in 2021. Advertising, email, customer engagemet, chatbots, social media.
 thumbnailImg: ./digital-advertising.png?format=jpg&width=880
 ---
 

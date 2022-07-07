@@ -18,7 +18,7 @@ export const get: RequestHandler = async () => {
           <title>${post.title}</title>
           <link>https://mailcheck.co/blog/${post.slug}</link>
           <pubDate>${post.date}</pubDate>
-          <description>${post.desc}</description>
+          <description>${post.description}</description>
           </item>`
       )
       .join('')}

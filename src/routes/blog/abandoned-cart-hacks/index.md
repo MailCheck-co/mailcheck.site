@@ -4,7 +4,7 @@ title: 10 ABANDONED CART HACKS
 date: 15.07.2019
 readingTime: 3 min read
 snippet: Have some issues with cart abandonment on your website? Keep calm, everyone faced it. The statistics says, 80% of people abandon their shopping carts.
-desc: 10 ABANDONED CART HACKS, EMAILS AND TRICKS THAT WILL RISE SALES. Usability. Technical tips & auto email responders.
+description: 10 ABANDONED CART HACKS, EMAILS AND TRICKS THAT WILL RISE SALES. Usability. Technical tips & auto email responders.
 thumbnailImg: ./abandoned-cart-hacks.jpg?format=jpg&width=880
 ---
 

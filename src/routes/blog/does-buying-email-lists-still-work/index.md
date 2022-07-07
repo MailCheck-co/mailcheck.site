@@ -4,7 +4,7 @@ title: Does buying email lists still work?
 date: 01.07.2020
 readingTime: 8 min read
 snippet: An email list is a list of subscribers, who may or may not opted-in to receive emails from a certain sender.
-desc: Hidden drawbacks of buying email lists. Reputaion, legal implemetaion, verification, spam filterls. Will you turn your subscribers into loyal customers.
+description: Hidden drawbacks of buying email lists. Reputaion, legal implemetaion, verification, spam filterls. Will you turn your subscribers into loyal customers.
 thumbnailImg: ./easyspace.jpg?format=jpg&width=880
 ---
 

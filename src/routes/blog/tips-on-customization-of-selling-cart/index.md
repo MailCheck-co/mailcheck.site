@@ -4,7 +4,7 @@ title: Customization of selling cart. X tips
 date: 19.04.2019
 readingTime: 3 min read
 snippet: Cart in the online store is an interface which user can use to add products he is ought to purchase.
-desc: How to customize selling cart in the online store. Cart Mechanism and Functions, UX and UI design. Order Management
+description: How to customize selling cart in the online store. Cart Mechanism and Functions, UX and UI design. Order Management
 thumbnailImg: ./selling-cart-customization-img-1.jpg?format=jpg&width=880
 ---
 

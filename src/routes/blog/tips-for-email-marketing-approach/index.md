@@ -4,7 +4,7 @@ title: 10 Tips for Email Marketing Approach
 date: 20.04.2019
 readingTime: 3 min read
 snippet: Email marketing is undoubtedly the most efficient tool when it comes to ROI. According to the recent researches return on investments when promoting goods and services with email marketing makes 41:1. This is twice as more than for any other online marketing method.
-desc: 10 Tips for Email Marketing Approach. We talk about emails delivery, checkers, SMART Goals, personalization, customers needs, call to action and more.
+description: 10 Tips for Email Marketing Approach. We talk about emails delivery, checkers, SMART Goals, personalization, customers needs, call to action and more.
 thumbnailImg: ./email-marketing-approach-img2.jpg?format=jpg&width=880
 ---
 

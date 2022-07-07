@@ -3,7 +3,7 @@ title: Make.com Integration Guide
 date: 06.08.2022
 readingTime: 5 min read
 snippet: Guide on how to integrate Mailcheck using Make.com
-desc: A step-by-step guide on how to integrate Mailcheck using Make.com
+description: A step-by-step guide on how to integrate Mailcheck using Make.com
 ---
 
 # **{title}**

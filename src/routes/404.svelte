@@ -12,7 +12,7 @@
 <Seo
   title="Page not found"
   noindex={true}
-  desc={'Page not found: 404'}
+  description={'Page not found: 404'}
   schemas={[websiteSchema]}
   canonical="/"
 />

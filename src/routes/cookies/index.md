@@ -5,7 +5,7 @@ title: Cookie Policy
 date: 05.05.2022
 readingTime: 1 min read
 snippet: This Cookie Policy explains how OSA Management LLP ("Company", "we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our websites at mailcheck.co
-desc: Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
+description: Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
 ---
 
 # COOKIE POLICY

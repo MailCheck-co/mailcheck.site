@@ -4,7 +4,7 @@ title: EMAILS VALIDATION API WILL INCREASE CONVERSION
 date: 13.08.2020
 readingTime: 3 min read
 snippet: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API.
-desc: HOW EMAILS VALIDATION API CAN AND WILL INCREASE YOUR E-COMMERCE CONVERSION. Automatic verification and cleaning in bulk emailings
+description: HOW EMAILS VALIDATION API CAN AND WILL INCREASE YOUR E-COMMERCE CONVERSION. Automatic verification and cleaning in bulk emailings
 thumbnailImg: ./email-for-everything.jpg?format=jpg&width=880
 ---
 

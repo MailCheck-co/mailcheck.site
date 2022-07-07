@@ -4,7 +4,7 @@ title: Email marketing tips for small business
 date: 23.04.2019
 readingTime: 3 min read
 snippet: Launching newsletter for small business is a good way to get in touch with potential clients and increase sales. It is also a proper tool to increase loyalty to brand. Regular communication with clients is the only way for the small business to personalize offers and win in a daily struggle with large companies.
-desc: Email marketing for small business tips. How to increase profitability of newsletter. Promotion issues. Where to get mailing base.
+description: Email marketing for small business tips. How to increase profitability of newsletter. Promotion issues. Where to get mailing base.
 thumbnailImg: ./email-marketing-for-small-business-tips-img1.jpg?format=jpg&width=880
 ---
 
