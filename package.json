@@ -3,9 +3,9 @@
   "version": "3.0.0",
   "description": "An application to clean your subscription list from bounces, and enrich data about customers.",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore . && svelte-check",
@@ -52,8 +52,11 @@
     "svelte-check": "^2.8.0",
     "just-camel-case": "^6.0.1",
     "svelte-preprocess": "^4.10.7",
+    "firebase-tools": "^11.2.0",
+    "schema-dts": "^1.1.0",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4",
+    "vite": "^2.9.13",
     "vite-imagetools": "^4.0.4",
     "xmlbuilder2": "^3.0.2",
     "unist-util-visit": "^4.1.0"
@@ -62,10 +65,7 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.8",
     "@fontsource/roboto": "^4.5.7",
-    "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.5.0",
-    "firebase-tools": "^11.2.0",
-    "schema-dts": "^1.1.0",
     "svelte-inview": "^3.0.1",
     "svelte-slidy": "^2.8.7"
   },
