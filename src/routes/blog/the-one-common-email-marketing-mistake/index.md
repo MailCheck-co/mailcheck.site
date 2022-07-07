@@ -57,4 +57,4 @@ Surely it takes effort to perfect. You need something more than email verificati
 
 Have you made one of some mistakes from this list? It’s ok, everyone had. Just try to correct them and to leverage this experience to your benefit. And you can surely share it with your customers in the newslist! They would appreciate your honesty!
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

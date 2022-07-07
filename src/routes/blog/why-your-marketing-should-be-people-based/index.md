@@ -16,7 +16,6 @@ Have you ever heard about the term “people-based marketing?” It’s impossib
 
 ![People-Based Marketing](./marketing-people-based.png?format=webp;jpg;png;avif&srcset&width=880)
 
-
 Think about your favorite coffee house. You may visit it every day, or only on Mondays, or several times a week and order the drink. Let’s imagine you love cappuccino and you always get a cup of one. A couple of weeks enough for barista to remember what you like and what you order usually. So you don’t feel surprised when he or she asks you: “As usual?” during your next visit. You respond “Sure” and they make it for you, while tempting you to try something else: “Would you also like to try out new macaroons? They’re perfect with cappuccino!”
 
 Can you name at least one reason to refuse (only if you haven’t forgotten your purse and have money only for one cup of cappuccino)?
@@ -55,4 +54,4 @@ Once the [email validation software](https://mailcheck.co) made your list clean,
 
 Great marketing begins with email. It’s the direct way to understanding your audience and to creation a win-win strategy. Make an email address list verification your number one ally.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

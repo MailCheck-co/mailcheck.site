@@ -40,4 +40,4 @@ This is why it is so important to focus on where you send your emails and how ma
 
 Difficult times come, and the COVID-19 is certainly one of those. But there were no times in history when businesses failed to adapt to the rapidly changing economy. It’s all about employing some analysis, re-thinking your business practices and taking advantage of the little tools that are so easily available to us to quickly and effectively adapt to these non-easy times.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

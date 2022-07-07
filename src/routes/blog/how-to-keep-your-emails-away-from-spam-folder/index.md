@@ -62,4 +62,4 @@ If you don’t send your messages regularly, people will easily forget about you
 
 If your emails don’t reach the inbox, why did you ever send them?
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

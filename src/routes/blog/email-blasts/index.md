@@ -45,4 +45,4 @@ Last but not least - **your email must include a clear call to action.** It is i
 
 One last and already mentioned thing, an email blast is probably no longer the best email marketing practice, and the reason to that rests primarily in the term “blast” itself (there are multiple debates why “blast” is not the best term for an email campaign). Our advice - rethink the idea of an email blast at its core. In the end, you’re not blasting your recipients; you are providing them with valuable content that may persuade them to pay for your service or product.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

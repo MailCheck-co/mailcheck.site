@@ -75,4 +75,4 @@ Below we will note some necessary rules that must be followed without any except
 
 If you follow these rules, you have a great chance of succeeding in this competition. We are open to fresh and totally new visions about the future of the email verification industry. Thus, we are waiting for your rich essays! In case of problems with the application or just questions, please contact us via email.
 
-*Read more in our [blog](/blog).*
+_Read more in our [blog](/blog)._

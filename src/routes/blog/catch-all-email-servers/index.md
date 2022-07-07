@@ -72,4 +72,4 @@ Actually, you do not really need to find such emails - your goal is to find emai
 
 Catch-all email servers are the big problem for all of those who deal with email marketing. Even if you use only the whitehat methods you are not guaranteed from accidentally sending an email to the catch-all email server. However, there is no need to panic, just use the recommendations above to build the strategy and define broken emails and you are likely to avoid any issues with this problem.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

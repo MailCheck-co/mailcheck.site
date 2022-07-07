@@ -42,7 +42,7 @@ Source: Sympli
 
 Clearly, the ultimate goal is to gain customers’ loyalty and subsequently earn profit. However, stuffing your email with sales content only will come off as pushy and somewhat aggressive. After all, making each and every email in your newsletter campaign a special offer may get your customers thinking how “special” is your “special offer”. Instead, try to balance the content by making it 10% sales and 90% educative.
 
-## Create an eye-catching subject line 
+## Create an eye-catching subject line
 
 Believe it or not, subject lines are the first step to enticing your subscribers to read more. Your email campaign may be great, but if your subject line isn’t - everything can fall through. According to Marketo, seven words or 41 characters are considered the best size for a subject line. This number yields the highest clicks to open. Surprisingly enough, eight words subject line produces half as much as that number.
 
@@ -52,7 +52,7 @@ Source: Marketo
 
 Remember that your emails may be opened on various devices, be it an iPhone or a MacBook, so you might want to consider making your subject line even shorter. As sad as it may sound, people don’t have time to read lengthy texts, so try to keep your subject line short, striking and to the point.
 
-## Design is important too 
+## Design is important too
 
 According to HubSpot, an average user spends between 3 to 5 seconds skimming a website. We can easily assume that these metrics can be applied to a newsletter too. This means your email has to grab your customer’s attention, get your message across and awake your customer’s interest, all in 3 to 5 seconds. Sounds like a challenge? Remember, that if the layout of your email newsletter is too heavy on media and is cheaply designed, you may not get the desired results. Make sure your newsletter has some blank white spaces. This will alleviate overall outlook of your email and make it easier for your subscribers to click the right button. If you are struggling with designing your newsletter layout, hire a professional designer, or use an app. There’s plenty of beginner-friendly applications that allow to create stunning layouts.
 
@@ -68,4 +68,4 @@ Clearly, preparing a decent newsletter campaign is a chunk of work, but in fact 
 
 We learn as we go, and the above list is probably exhaustless. Perfecting your email newsletter campaign is a process that involves constant changes, and the best way to ensure that your changes are actually improvements is to test them.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

@@ -81,4 +81,4 @@ Depending on the business industry you can either make calculations on the annua
 
 If you think there are too much efforts you need to bring to calculate the metrics, note that email marketing is one of the most efficient ways to promote your product or company which is grounded in our article.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

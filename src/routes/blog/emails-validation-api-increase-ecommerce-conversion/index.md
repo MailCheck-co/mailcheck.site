@@ -46,4 +46,4 @@ There’s a number of email validation providers, but [Mailcheck](/#features) is
 
 While email validation API may seem like a minor thing, it will substantially ease your job and will allow you to spend your time on other more important tasks.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

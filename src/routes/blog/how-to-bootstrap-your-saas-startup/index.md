@@ -101,4 +101,4 @@ As you can see, developing a SaaS startup has its own specifics and rules which,
 a successful product launch and its further operation. If you are currently working on developing a software product
 we hope that this article will serve you as a guide.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

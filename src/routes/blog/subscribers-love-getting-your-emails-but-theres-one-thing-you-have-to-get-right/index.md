@@ -54,4 +54,4 @@ It’s better to test your email with a group of people. At least five. Their fe
 
 Get rid of dormant accounts by [email verification](https://mailcheck.co/) and create a decent content by using the best marketing practises. Remember, people love receiving your emails, don’t disappoint them!
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

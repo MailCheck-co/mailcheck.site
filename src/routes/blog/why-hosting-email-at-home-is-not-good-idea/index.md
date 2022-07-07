@@ -30,4 +30,4 @@ Also, in a difference of home iPs - even virtual servers have static IPs. Anothe
 
 That's why if you want to send mails you should better rent SaaS service like G Suite, or at least setup server at Data center.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

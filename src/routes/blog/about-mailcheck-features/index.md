@@ -44,4 +44,4 @@ Getting started with each of the integrations is super easy. Mailcheck allocated
 
 Mailcheck alone is a very efficient application that can be used on its own, but in combination with one of the above platforms, its effectiveness is doubled. And did I mention that is offers a free trial too? Head on to Mailcheck website to get a free trial and give those integrations a try.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

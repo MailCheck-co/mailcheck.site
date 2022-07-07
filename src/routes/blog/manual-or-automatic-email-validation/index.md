@@ -1,6 +1,6 @@
 ---
 published: true
-title: Email Validation. Manual or Automatic 
+title: Email Validation. Manual or Automatic
 date: 14.06.2022
 readingTime: 3 min read
 snippet: The success of your email marketing campaign depends on many factors. The most vital metrics include open rate, conversion, click-through rate, spam return and bounce rate.

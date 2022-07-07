@@ -103,4 +103,4 @@ ESP spam filters do not like letters that contain only one line, though they als
 
 That’s all. We hope this list will be helpful for those who want to increase email deliverability of the newsletter.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

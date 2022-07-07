@@ -68,4 +68,4 @@ There are always good reasons for the sender’s reputation to decrease. It is h
 
 Your sender’s reputation is the base score your email marketing efforts are based. Thus, it is important to make sure you look good in the eyes of the email service providers.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

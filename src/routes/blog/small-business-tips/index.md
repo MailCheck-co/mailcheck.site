@@ -65,4 +65,4 @@ Also, we were featured at inkThemes as good solution for small business.
 
 There is one thing you definitely shouldn’t do - do not buy it. It is a very bad idea to purchase or exchange email bases, we have grounded this [in our article](/blog/x-ways-increase-emails-deliverability). The best way is to collect them on your own by getting subscriptions from your current clients.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

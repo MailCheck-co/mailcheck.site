@@ -72,4 +72,4 @@ If you are commonly using Google Sheets, do the next:
 
 The procedure of converting to a CSV file with using spreadsheet software is similar. You can also use online services to get a CSV file.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

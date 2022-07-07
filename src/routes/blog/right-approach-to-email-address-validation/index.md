@@ -88,4 +88,4 @@ So here is the right approach:
 - use the manual verification services to validate mails from the list
 - do not worry if the bounce rate doesn’t exceed 2.5-4%.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

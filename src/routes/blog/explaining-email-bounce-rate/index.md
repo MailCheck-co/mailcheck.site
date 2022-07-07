@@ -14,7 +14,6 @@ thumbnailImg: ./bounce-rate-img-1.jpg?format=jpg&width=880
 
 ![bounce rate](./bounce-rate-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-
 Bounce rate shows the percentage of letters that have not been delivered. There can be numerous reasons for bouncing - starting from entering wrong recipient in the "To" field and ending by the blockade from the recipient's server. Let’s disclose possible types of bounces.
 
 ## Type of Bounces in Email Marketing
@@ -71,4 +70,4 @@ Bounce rate is a critical metric for your email marketing campaign. It is more a
 
 Follow the tips above to avoid any penalties and make sure that your email bounce rate doesn’t exceed 2-3 % to be confident about your mailing reputation.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

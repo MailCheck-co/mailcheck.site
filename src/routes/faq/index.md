@@ -1,6 +1,6 @@
 ---
 layout: faq
-title:  FAQ. Frequently Asked Question
+title: FAQ. Frequently Asked Question
 date: 25.06.2020
 readingTime: 1 min read
 snippet: Frequent Questions

@@ -71,6 +71,6 @@ Thank you!
 
 Please [let me know](mailto:integration@mailcheck.co) if you have any questions.
 
-*Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [Zapier](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration).*
+_Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [Zapier](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration)._
 
-[*OUR BLOG*](/blog)
+[_OUR BLOG_](/blog)

@@ -77,4 +77,4 @@ You also should consider making personalization by device used. Monitoring the g
 
 Personalization demands vast efforts you, however, if done properly it can increase your conversion dramatically.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

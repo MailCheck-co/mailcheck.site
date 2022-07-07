@@ -57,4 +57,4 @@ Thus, in 2019 you need to use interactive elements in your mailings. This will l
 
 If you start to include in each letter the excessive amount of media content it is going to be too much for the user and you are going to get negative effect. The thing is that after couple of such letters the user will become either tired of your emails or irritated by overloaded newsletter. It is better to make them a part of the content strategy, not its core.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

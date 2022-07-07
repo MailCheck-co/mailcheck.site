@@ -64,4 +64,4 @@ Have you ever noticed that not all of the letters you get from other businesses 
 
 Email marketing campaign can become a powerful driver for your business. It can either boost your sales or increase loyalty of your clients and even become the main sales channel. Do not ignore email marketing for small business if you want to get it all from your client base.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

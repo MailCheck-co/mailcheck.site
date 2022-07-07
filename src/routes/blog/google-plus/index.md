@@ -40,7 +40,8 @@ For instance, there was a service called PicasaWeb — the predecessor of Go
 
 For instance, we develop an email validator. In this case, this API would be a manna from heaven. Knowing an Account ID from G+ we can get a name of a user, photo, and even additional information. The trick is that you can't get userID if this user never logged in to our website. But despite this, users were able to post pictures at web-albums that were linked with email using old PicasaWebAlbums. That suggested that old API allows getting to user’s account using userID or user’s email.
 
-Let’s check: 
+Let’s check:
+
 - https://picasaweb.google.com/data/feed/api/user/nosov@nodeart.io?deprecation-extension=true
 
 - https://picasaweb.google.com/data/feed/api/user/
@@ -64,4 +65,4 @@ In fact, this gives us a reason to think that Google has become entangled in the
 
 In order to [qualitatively validate mailing lists](/), we will need to look for new non-standard ways of public APIs usage, so we will continue to explore the Google \\ Facebook API and other services. (By the way, Facebook until recently had a similar way of email validation.)
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

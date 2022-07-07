@@ -74,4 +74,4 @@ You need to interact with your target audience. Every prospect on your list is d
 
 Rely on statistics if you are in any doubt. The tips we have discussed above may seem simple at first, but they are really necessary. [They will help you in improving your email marketing, drip campaigns](/blog/the-one-common-email-marketing-mistake). Remember, they will turn profitable only if you take care of the details. They make up the big picture.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

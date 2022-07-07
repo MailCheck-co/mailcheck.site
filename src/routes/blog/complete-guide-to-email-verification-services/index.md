@@ -8,7 +8,7 @@ description: Guide to Email Verification Services. Grounding & Disclosing Valida
 thumbnailImg: ./guide-img1.jpg?format=jpg&width=880
 ---
 
-# EMAIL VERIFICATION SERVICES. THE  COMPLITE GUIDE TO USE
+# EMAIL VERIFICATION SERVICES. THE COMPLITE GUIDE TO USE
 
 {readingTime}
 
@@ -48,4 +48,4 @@ The last step of email address verification considers enforcement of SMTP protoc
 
 It can take more time to complete all of the three stages if the email address belongs to the outdated mailing service or if there are busy servers.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

@@ -55,6 +55,6 @@ Upon completion you have two methods to migrate the results of the validation:
 
 ![test your zap trigger](./step-7.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-*Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Zapier](/zapier-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration).*
+_Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Zapier](/zapier-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration)._
 
-[*OUR BLOG*](/blog)
+[_OUR BLOG_](/blog)

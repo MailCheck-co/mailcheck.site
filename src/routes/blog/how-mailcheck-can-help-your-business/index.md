@@ -65,4 +65,4 @@ The purity of your email list is the best way to pump up those ROI numbers since
 
 Clients are the fuel to any business. Like a sports car can be damaged if fueled with low quality petrol, your business can be harmed if it reaches the email lists of questionable quality. Mailcheck is definitely a service you want to be subscribed to if you are willing to sustain your email campaigns on the highest level.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

@@ -66,4 +66,4 @@ Making a regular newsletter is a good way to make your users get used to reading
 
 Although email marketing is a must-have for any small business for communication it still demands from you much efforts to make it personalized and profitable on the stage of building email marketing campaign. If you adhere the guide above it is going to be easy for you to get a magnificent ROI.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

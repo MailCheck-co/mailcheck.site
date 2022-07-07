@@ -50,4 +50,4 @@ Surely you are easy-going, fun and creative. Share it with your friends, but don
 
 Have fun! Email marketing is an interesting journey, full of insights and experience. Leverage all opportunities on your way and you’ll surely succeed!
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

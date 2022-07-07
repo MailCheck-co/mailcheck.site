@@ -114,4 +114,4 @@ Despite all your effort, abandoned carts will still happen. Nothing personal, ju
 any e-commerce website. A multi-pronged approach will mitigate it and undoubtedly boost your sales in the long run.
 Good luck!
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

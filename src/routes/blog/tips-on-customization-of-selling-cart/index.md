@@ -92,4 +92,4 @@ There should be three stages of purchase enforced on the website:
 
 If the user has to wait more than several seconds for the manager’s response, he estimates this like disrespect to him and his time. Thus, you need to provide an immediate notification about the pending order, so that manager would be able to contact the client ASAP.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

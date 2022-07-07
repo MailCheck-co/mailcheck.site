@@ -66,4 +66,4 @@ Since a cold email a priori is a type of email sent to a large number of people 
 
 Cold emailing is one of the oldest email marketing strategies and if crafted and managed properly with the tips we provided above it can be a powerful tool of your [email marketing strategy](/blog/great-ideas-for-your-email-marketing-strategy). Establishing credibility with your prospects has to be your first priority. It is a well- known fact that it all starts with trust.
 
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._

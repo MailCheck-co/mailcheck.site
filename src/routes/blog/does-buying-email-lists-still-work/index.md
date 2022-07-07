@@ -30,7 +30,7 @@ Using email lists could also lead to some serious legal implications. Email mark
 
 ## Reputation, deliverability and user engagement
 
-When it comes to your reputation, email deliverability and user engagement is what defines it. Deliverability rate is measured by the number of emails that landed in your subscribers' inbox, as opposed to their spam folder. In this regard, email lists could be a pitfall on the way to successful email marketing. Whether you want it or not, the majority of purchased lists will contain old email addresses that aren’t active, which will result in your emails being bounced and your bounce rate climb. A bounce rate of no higher than 2%* is normal. If a recipient does receive an email from a sender they never subscribed to, expect that this recipient will most likely not engage with it. In the worst-case scenario, they will mark it as spam. These two at first sight insignificant factors in fact measure your business reputation, and jeopardizing it and neglecting all the efforts put into creating an email campaign would be irrational.
+When it comes to your reputation, email deliverability and user engagement is what defines it. Deliverability rate is measured by the number of emails that landed in your subscribers' inbox, as opposed to their spam folder. In this regard, email lists could be a pitfall on the way to successful email marketing. Whether you want it or not, the majority of purchased lists will contain old email addresses that aren’t active, which will result in your emails being bounced and your bounce rate climb. A bounce rate of no higher than 2%\* is normal. If a recipient does receive an email from a sender they never subscribed to, expect that this recipient will most likely not engage with it. In the worst-case scenario, they will mark it as spam. These two at first sight insignificant factors in fact measure your business reputation, and jeopardizing it and neglecting all the efforts put into creating an email campaign would be irrational.
 
 Sending emails to recipients who have little or if any interest in your content, can cause no less troubles than high bounce rates. Internet Service Providers (ISP) like Gmail, Hotmail, or Yahoo want to make sure their users receive relevant and high-quality content from email marketers. They track if their users open, engage with or report an email as spam. If there is high engagement, the ISP will automatically make sure similar emails will arrive at the recipient’s inbox. If there is low engagement, the ISP will make sure the email skips the recipient’s inbox and will land in their spam folder. The more sender’s emails are marked as spam or are bounced, the lower email deliverability rates will be, which will in turn damage the sender’s reputation and have his emails constantly marked as spam, even if the recipient didn’t mark them so.
 
@@ -46,9 +46,8 @@ We have established that buying email lists is bad. But how to fill up an email 
 
 While we recommend against buying email lists, you are probably still thinking about giving it a try just for the sake of curiosity, or because you need people who you can email and you need them fast. However, don’t jump the gun with sending your newsletter to your “fresh new subscribers” just yet. You might want to consider filtering it through an email validation software, like [Mailcheck](/#features). Validating your email lists, purchased or organic, will make sure your email database is clean and contains only valid email addresses, which in turn will improve your deliverability and engagement rates, as well as your reputation, and will turn your subscribers into loyal customers.
 
-*Sources*
-* - https://www.campaignmonitor.com/
+_Sources_
 
+- - https://www.campaignmonitor.com/
 
-
-*Read more in other useful articles on our [blog](/blog).*
+_Read more in other useful articles on our [blog](/blog)._
