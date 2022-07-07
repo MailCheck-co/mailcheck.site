@@ -20,14 +20,11 @@
 
   export let posts: IPost[];
   const title = 'Blog about effective email checking & communication';
-  const desc = 'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
+  const description =
+    'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
 </script>
 
-<Seo
-  {desc}
-  title={title}
-  schemas={[websiteSchema, { ...blogSchema, name: title, description: desc }]}
-/>
+<Seo {description} {title} schemas={[websiteSchema, { ...blogSchema, name: title, description: desc }]} />
 
 <main class="blog-page" id="blog">
   <div class="container">
