@@ -10,7 +10,12 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
       - run: npm ci && npm run build
         env:
           VITE_YOUTUBE_API_KEY: '${{ secrets.VITE_YOUTUBE_API_KEY }}'
