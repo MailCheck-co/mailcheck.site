@@ -45,7 +45,7 @@ async function createSitemap() {
 
   const xml = sitemap.end({ prettyPrint: true });
 
-  fs.writeFileSync('build/sitemap.xml', xml);
+  fs.writeFileSync('./build/sitemap.xml', xml);
 }
 
 createSitemap();
