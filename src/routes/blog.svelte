@@ -24,7 +24,7 @@
     'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
 </script>
 
-<Seo {description} {title} schemas={[websiteSchema, { ...blogSchema, name: title, description: desc }]} />
+<Seo {description} {title} schemas={[websiteSchema, { ...blogSchema, name: title, description }]} />
 
 <main class="blog-page" id="blog">
   <div class="container">
