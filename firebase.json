@@ -12,7 +12,7 @@
             },
             {
               "key": "X-Frame-Options",
-              "value": "ALLOW-FROM https://get.google.com"
+              "value": "SAMEORIGIN"
             },
             {
               "key": "X-UA-Compatible",
