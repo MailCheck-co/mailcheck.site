@@ -115,7 +115,7 @@ export default async function (req, res) {
     res
       .status(200)
       .send(
-        `<html><head><meta http-equiv="refresh" content="0;URL='${redirectUrl}'" /></head></html>`
+        `<html><head><meta http-equiv="refresh" content="0;URL='${redirectUrl}'" /><link rel="canonical" href="https://mailcheck.co"/></head></html>`
       );
   } catch (err) {
     // Someone messed up with TXT records
