@@ -136,6 +136,6 @@ Save segment and use the list for emailing/automation
 
 Thank you!
 
-_Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [Zapier](/zapier-integration),[Integromat](/integromat-integration)._
+_Other popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [Zapier](/zapier-integration), [Integromat](/integromat-integration)._
 
 [_OUR BLOG_](/blog)

@@ -121,6 +121,6 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 And your integration is fully working now.
 If you can't make it work, please reach out at [integromat@mailcheck.co](mailto:integromat@mailcheck.co)
 
-_Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Zapier](/zapier-integration)._
+_Other popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [SendGrid](/sendgrid-integration), [Zapier](/zapier-integration)._
 
 [_OUR BLOG_](/blog)

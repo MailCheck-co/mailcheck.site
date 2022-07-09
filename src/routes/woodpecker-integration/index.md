@@ -40,9 +40,9 @@ As soon as the progress bar reaches **100%** you can switch to **“Woodpecker�
 
 ### Step 6:
 
-Upon completion you have two methods to migrate the results of the validation:
+Upon completion, you have two methods to migrate the results of the validation:
 
-- **Manually** by downloading directly yo PC
+- **Manually** by downloading directly to yours PC
 
 ![choose a spreadsheet you require for the validation](./step-6.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
@@ -55,6 +55,6 @@ Upon completion you have two methods to migrate the results of the validation:
 
 ![test your zap trigger](./step-7.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-_Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Zapier](/zapier-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration)._
+_Other popular integrations guides: [Mailchimp](/mailchimp-integration), [Zapier](/zapier-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [SendGrid](/sendgrid-integration), [Integromat](/integromat-integration)._
 
 [_OUR BLOG_](/blog)

@@ -27,7 +27,7 @@ Mailing to irrelevant addresses threatens you with sanctions from the mail servi
 
 From 22% to 35% of subscribers abandon their email accounts every year. Your business is no exception. In the best-case scenario, mailing abandoned accounts will pour your money down the drain, and in the worst-case scenario, you get blacklisted and irreparably damage your reputation. So if your database is regularly updated and growing, clean it once every six months. If you have more than 500,000 subscribers, do it even more often.
 
-To avoid the above mentioned , we advise you to work only with a validated list of contacts. If you are not sure of the correctness of the contacts, you can check them using **Mailcheck**.
+To avoid the above mentioned, we advise you to work only with a validated list of contacts. If you are not sure of the correctness of the contacts, you can check them using **Mailcheck**.
 
 ## Mailcheck: work only with a validated contacts
 

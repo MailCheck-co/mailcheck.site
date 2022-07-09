@@ -106,6 +106,6 @@ But how to filter the data?
 That’s it &#128077;
 If you still have questions please contact our team via LiveChat or [integration@mailcheck.co](mailto:integration@mailcheck.co)
 
-_Оther popular integrations guides: [Zapier](/zapier-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration)._
+_Other popular integrations guides: [Zapier](/zapier-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [SendGrid](/sendgrid-integration), [Integromat](/integromat-integration)._
 
 [_OUR BLOG_](/blog)

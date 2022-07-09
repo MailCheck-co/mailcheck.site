@@ -20,7 +20,7 @@ Marketers mostly know about that. However, not all webmasters know the truly use
 
 ## Make Sure Subscriber Is Fond of Getting Your Mails
 
-Use the double opt-in subscription forms to assure that user is willing to subscribe to your newsletter. This is more the technical moment of leading an email marketing campaign developed to [improve your deliverability rate](/blog/x-ways-increase-emails-deliverability) , however, it remains important.
+Use the double opt-in subscription forms to assure that user is willing to subscribe to your newsletter. This is more the technical moment of leading an email marketing campaign developed to [improve your deliverability rate](/blog/x-ways-increase-emails-deliverability), however, it remains important.
 
 ## Develop SMART Goals
 
