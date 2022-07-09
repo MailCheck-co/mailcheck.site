@@ -1,0 +1,16 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [],
+  "dictionaries": ["typescript", "mch"],
+  "showStatus": true,
+  "allowCompoundWords": true,
+  "dictionaryDefinitions": [
+    {
+      "name": "mch",
+      "path": "./cspell-mch.txt"
+    }
+  ],
+  "ignorePaths": ["**/*.scss"],
+  "useGitignore": true
+}

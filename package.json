@@ -18,6 +18,7 @@
     "deploy_hosting:prod": "firebase deploy --only hosting --project=prod",
     "deploy:prod": "firebase deploy --project=prod",
     "deploy_functions:prod": "firebase deploy --only functions --project=prod",
+    "spell": "npx cspell lint \"**/*.{ts,svelte,scss,md}\" -c configs/.cspell.json --no-progress",
     "optimize-svg": "find ./src ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo"
   },
   "devDependencies": {
