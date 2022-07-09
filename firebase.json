@@ -4,6 +4,15 @@
       "target": "mailcheck-landing",
       "headers": [
         {
+          "source": "**/*",
+          "headers": [
+            {"key": "X-Content-Type-Options", "value": "nosniff"},
+            {"key": "X-Frame-Options", "value": "ALLOW-FROM https://get.google.com"},
+            {"key": "X-UA-Compatible", "value": "ie=edge"},
+            {"key": "X-XSS-Protection", "value": "1; mode=block"}
+          ]
+        },
+        {
           "source": "**/*.@(js|css|xml|jpg|jpeg|gif|webp|png|avif|svg|woff|woff2)",
           "headers": [
             {
