@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import SerhiiAva from './serhii-karetnyk.png';
+  import SerhiiAva from './serhii-karetnyk.png?w=200&format=webp;png;avif&srcset';
   import KonstantinAva from '$lib/Team/konstantin-nosov.png?w=200&format=webp;png;avif&srcset';
   import FaraAva from '$lib/Team/fara-muhammadiev.png?w=200&format=webp;png;avif&srcset';
 
