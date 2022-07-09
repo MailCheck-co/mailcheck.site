@@ -45,7 +45,6 @@ async function createSitemap() {
 
   const xml = sitemap.end({ prettyPrint: true });
 
-  console.log(process.cwd(),process.cwd() + 'build/sitemap.xml')
   fs.writeFileSync('build/sitemap.xml', xml);
 }
 
