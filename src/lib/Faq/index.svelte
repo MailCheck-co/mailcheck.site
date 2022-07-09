@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import filterIcon from '$lib/MdLayouts/FaqLayout/filter.png';
+  import filterImg from '$lib/MdLayouts/FaqLayout/filter.png?format=webp;png;avif&srcset';
 
   let intersecting: boolean;
 </script>
@@ -97,7 +97,7 @@
 
     <a href="/faq" title="faq" class="btn btn-start">Learn More</a>
 
-    <img class="filter-img" src={filterIcon} width="444" height="568" alt="filter" />
+    <img class="filter-img" srcset={filterImg} width="444" height="568" alt="filter" />
   </div>
 </section>
 
