@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import imgAffiliate from './invite-friends.jpg';
+  import imgAffiliate from './invite-friends.jpg?w=200&format=webp;png;avif&srcset';
 
   let intersecting: boolean;
 </script>
@@ -24,7 +24,7 @@
     <div class="affiliate-block">
       <div class="affiliate-block-inner">
         <div class="affiliate-block-image">
-          <img src={imgAffiliate} width="500" class="affiliate-image" alt="Invite friends" />
+          <img srcset={imgAffiliate} width="500" class="affiliate-image" alt="Invite friends" />
         </div>
         <div class="affiliate-block-content">
           <p class="section-description">
