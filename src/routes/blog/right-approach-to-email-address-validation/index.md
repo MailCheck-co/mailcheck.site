@@ -80,7 +80,7 @@ Considering you have followed the requirements listed above it is almost hard to
 
 ## The Right Approach to The Email Address Validation
 
-There are too much things to do if you want to get assured the addresses you have in your mailing list are valid. Especially if you did not follow the tips pointed out above from the start. In such a case you need to verify the email addresses you already have in your base. For this reason you need to use the automated [email verification services](/faq). However, automatic check can be not enough and you may need services of the company that provides a [manual verification](https://mailcheck.co).
+There are too much things to do if you want to get assured the addresses you have in your mailing list are valid. Especially if you did not follow the tips pointed out above from the start. In such a case you need to verify the email addresses you already have in your base. For this reason you need to use the automated [email verification services](/faq). However, automatic check can be not enough and you may need services of the company that provides a [manual verification](/).
 
 So here is the right approach:
 

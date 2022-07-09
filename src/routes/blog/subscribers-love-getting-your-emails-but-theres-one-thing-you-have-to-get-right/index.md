@@ -24,7 +24,7 @@ Almost half of people that participated in [Yes Marketing study](https://www.dat
 
 ## Bet on active audience and provide some ways to unsubscribe
 
-You need to know, that open-rates sometimes mean nothing. People can don’t open your emails, but they still keep an eye on what you send. We’re sure you do the same - just scan the object lines and decide whether you want to read that. Why don’t your customers unsubscribe if they’re not interested in messages and even don’t bother to read them? Maybe they’re expecting a nice birthday gift or a sale. Or they don’t know how to find the “unsubscribe” button in your letter. Make sure that it is noticeable, as it’s better to get rid of such dormant accounts who don’t want to interact with you. You can use [mail validation service](https://mailcheck.co/) for this task as well.
+You need to know, that open-rates sometimes mean nothing. People can don’t open your emails, but they still keep an eye on what you send. We’re sure you do the same - just scan the object lines and decide whether you want to read that. Why don’t your customers unsubscribe if they’re not interested in messages and even don’t bother to read them? Maybe they’re expecting a nice birthday gift or a sale. Or they don’t know how to find the “unsubscribe” button in your letter. Make sure that it is noticeable, as it’s better to get rid of such dormant accounts who don’t want to interact with you. You can use [mail validation service](/) for this task as well.
 
 ## Email Subject lines matter
 
@@ -52,6 +52,6 @@ It’s better to test your email with a group of people. At least five. Their fe
 
 ## Conclusion
 
-Get rid of dormant accounts by [email verification](https://mailcheck.co/) and create a decent content by using the best marketing practises. Remember, people love receiving your emails, don’t disappoint them!
+Get rid of dormant accounts by [email verification](/) and create a decent content by using the best marketing practises. Remember, people love receiving your emails, don’t disappoint them!
 
 _Read more in other useful articles on our [blog](/blog)._

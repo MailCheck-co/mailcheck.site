@@ -40,11 +40,11 @@ Send your subscribers a questions and make sure someone on your times responds t
 
 ## Get rid of bad contacts
 
-We bet you feel extremely happy when you get a couple of new subscribers. Every single prospect that join your list is an additional reminder that you’re moving in the correct way, that you’ve chosen the right direction. However, don’t forget to validate that new prospect, as it may be bot or another type of bad email address. If you decide to write them anyway, they bounce and it causes the drop of your sender score. Use [email validation tool](https://mailcheck.co/) and it will tell you which addresses are catch-all. Bet on quality, not quantity, this rule always works.
+We bet you feel extremely happy when you get a couple of new subscribers. Every single prospect that join your list is an additional reminder that you’re moving in the correct way, that you’ve chosen the right direction. However, don’t forget to validate that new prospect, as it may be bot or another type of bad email address. If you decide to write them anyway, they bounce and it causes the drop of your sender score. Use [email validation tool](/) and it will tell you which addresses are catch-all. Bet on quality, not quantity, this rule always works.
 
 ## Be consistent
 
-Surely you are easy-going, fun and creative. Share it with your friends, but don’t rely on these features in your email marketing! We’re not about copy, but about your schedule and email strategy. Don’t think [email address verification](https://mailcheck.co/) is enough, you need to have a strict plan and follow it. And it’s impossible without determined metrics, set goals and marketing budget. You can’t invent new subject lines each single day, just before you send an email. Write them in advance and then analyze the result they bring to the table. If they don’t work, review them, but don’t do this recklessly.
+Surely you are easy-going, fun and creative. Share it with your friends, but don’t rely on these features in your email marketing! We’re not about copy, but about your schedule and email strategy. Don’t think [email address verification](/) is enough, you need to have a strict plan and follow it. And it’s impossible without determined metrics, set goals and marketing budget. You can’t invent new subject lines each single day, just before you send an email. Write them in advance and then analyze the result they bring to the table. If they don’t work, review them, but don’t do this recklessly.
 
 ## Conclusion
 

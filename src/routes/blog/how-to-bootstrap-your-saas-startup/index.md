@@ -92,7 +92,7 @@ for reasons such as an abundance of skillful software developers, affordable pay
 software development companies in Ukraine develop and sell their own software products as well as outsource their
 development teams to help other startups grow. A decent example of such a company is Mailcheck - a team of dedicated
 software developers who aside from building their own successful
-[email validation platform](https://mailcheck.co/), specializes in developing products for iGaming and [eCommerce industries](/blog/e-commerce-trends-on-the-rise-in-2021). Mailcheck offers a team of experienced developers, project managers, business analysts, and designers that
+[email validation platform](/), specializes in developing products for iGaming and [eCommerce industries](/blog/e-commerce-trends-on-the-rise-in-2021). Mailcheck offers a team of experienced developers, project managers, business analysts, and designers that
 have a decent portfolio of successfully launched products. If you have an idea for a software product and looking for
 an experienced development team to do all the hands-on work shoot them
 an email at [partnership@mailcheck.co](mailto:partnership@mailcheck.co).

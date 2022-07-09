@@ -21,7 +21,7 @@ No email marketing campaign will be fruitful without a proper audience. Mailing 
 
 ## How an email address can be validated?
 
-[Email validation](https://mailcheck.co/) in marketing is the process of checking all addresses on your list for suitability. Your database should contain only addresses that are active, correctly written and not involved in suspicious activity. That is, you should send your messages only to those who can receive mailings. Regular cleaning of your mailing list will allow you to:
+[Email validation](/) in marketing is the process of checking all addresses on your list for suitability. Your database should contain only addresses that are active, correctly written and not involved in suspicious activity. That is, you should send your messages only to those who can receive mailings. Regular cleaning of your mailing list will allow you to:
 
 - Filter email addresses with a high risk of getting into spam;
 - Get a higher domain rating due to increased trust in the domain;
@@ -31,7 +31,7 @@ Address validation is carried out at the collection stage and it is advisable to
 
 ## Benefits of email validation services
 
-You can always test email addresses manually. This approach is budgetary but, at the same time, requires lots of effort and does not often bring the desired results. You will need to export emails from your list and upload them to the email checking processor. It can work if you need to check only a few emails but it is more efficient to use special software for [bulk email validation](https://mailcheck.co/). These include various online services and SaaS products, for example, Mailcheck.
+You can always test email addresses manually. This approach is budgetary but, at the same time, requires lots of effort and does not often bring the desired results. You will need to export emails from your list and upload them to the email checking processor. It can work if you need to check only a few emails but it is more efficient to use special software for [bulk email validation](/). These include various online services and SaaS products, for example, Mailcheck.
 
 ![email verification](./verification.jpg?format=webp;jpg;png;avif&srcset&width=880)
 

@@ -26,7 +26,7 @@ Let me show the easiest way to validate your audience before starting the campai
 
 What you need:
 
-1. You have to be registered in [MailCheck.co](https://mailcheck.co/)
+1. You have to be registered in [MailCheck.co](/)
 2. And be a Mailchimp User
 
 ### Step 1:

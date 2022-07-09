@@ -30,7 +30,7 @@ We have 3 tips for you to prevent a poor rep:
 
 ## Check your sender information
 
-First impression matters. Just imagine — you’ve used an [email verification service](https://mailcheck.co/) to get rid of dormant accounts, prepared the fantastic newsletter with profitable discounts and offers, but your prospects didn’t even bother to open it. All efforts are wasted, but because of what? Your subject line? It surely matters, but we’ll tackle that next. Such aspect of email as your From Name is no less important. Nearly half of subscribers open a letter or put it into spam folder after reading the sender name. That’s why you need to be consistently in this issue.
+First impression matters. Just imagine — you’ve used an [email verification service](/) to get rid of dormant accounts, prepared the fantastic newsletter with profitable discounts and offers, but your prospects didn’t even bother to open it. All efforts are wasted, but because of what? Your subject line? It surely matters, but we’ll tackle that next. Such aspect of email as your From Name is no less important. Nearly half of subscribers open a letter or put it into spam folder after reading the sender name. That’s why you need to be consistently in this issue.
 
 The second moment — don’t send all the messages from the one address. You can separate them by purpose, use separate addresses, domains if you don’t want them to lose.
 
@@ -55,7 +55,7 @@ If you don’t send your messages regularly, people will easily forget about you
 ## Tackle the several questions to save your emails from spam:
 
 - Do you consider your email list to be healthy?
-- Which top [email validation services](https://mailcheck.co/) do you use?
+- Which top [email validation services](/) do you use?
 - Are you provided with an authoritative information about the sender?
 - Does your email contain triggering spam filters?
 - Is your send schedule agreed?

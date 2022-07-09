@@ -55,7 +55,7 @@ You may think people are closed when it comes to sharing their data. Although, t
 
 54% of professionals say that they use video advertising and about 35% of them are going to use it in the next year.
 
-**Over 70% of marketers use emails to communicate with their prospects and loyal customers. These may be welcome letters, new arrival notifications, promotional offers, satisfaction surveys, just a newsletter. Through properly developed strategy, consistent and valuable messages, you can stay on top of your audience’s mind, educate your readers on the topics that matter most to them and show your appreciation by letting them know about special promotions. Don’t forget about [email address list verification](https://mailcheck.co/) just in case.**
+**Over 70% of marketers use emails to communicate with their prospects and loyal customers. These may be welcome letters, new arrival notifications, promotional offers, satisfaction surveys, just a newsletter. Through properly developed strategy, consistent and valuable messages, you can stay on top of your audience’s mind, educate your readers on the topics that matter most to them and show your appreciation by letting them know about special promotions. Don’t forget about [email address list verification](/) just in case.**
 Studies have shown that relevant messages help generate even more sales than social media giants Facebook&Twitter. Use these tricks to achieve success.
 
 - test every subject line before delivery;
@@ -68,7 +68,7 @@ Studies have shown that relevant messages help generate even more sales than soc
 - manage your schedule on a calendar;
 - include a signup link in personal emails.
 
-You need to interact with your target audience. Every prospect on your list is different, which is why it would be a mistake to send them the same email message. Focus on the recipient and you will reach almost 20 times more revenue when compared to general emails. So taking a targeted approach definitely makes a difference. Since you get contacts from different sources, you need to check them. Use [email validation software](https://mailcheck.co/) and your efforts will pay off.
+You need to interact with your target audience. Every prospect on your list is different, which is why it would be a mistake to send them the same email message. Focus on the recipient and you will reach almost 20 times more revenue when compared to general emails. So taking a targeted approach definitely makes a difference. Since you get contacts from different sources, you need to check them. Use [email validation software](/) and your efforts will pay off.
 
 ## Conclusion
 

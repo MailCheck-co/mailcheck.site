@@ -12,7 +12,7 @@ description: A step-by-step guide to integrate Mailcheck with daily services usi
 
 ### Step 1:
 
-If you obtain a [Mailcheck.co](https://mailcheck.co/) account, please go to Integration and choose **WoodPecker**.
+If you obtain a [Mailcheck.co](/) account, please go to Integration and choose **WoodPecker**.
 
 ![choose WoodPecker](./step-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
@@ -51,7 +51,7 @@ Upon completion you have two methods to migrate the results of the validation:
 ### Step 7:
 
 - Go to **“Prospects”** in your WoodPecker account
-- Scroll horizontally and find a column **“tag”** here you may find a [Mailcheck.co](https://mailcheck.co/) results
+- Scroll horizontally and find a column **“tag”** here you may find a [Mailcheck.co](/) results
 
 ![test your zap trigger](./step-7.jpg?format=webp;jpg;png;avif&srcset&width=880)
 

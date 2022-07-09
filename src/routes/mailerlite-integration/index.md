@@ -12,7 +12,7 @@ description: Guide on how to integrate Mailcheck using Mailerlite
 
 ### Step 1:
 
-If you obtain a [Mailcheck.co](https://mailcheck.co/) account, please go to Integration and choose MailerLite.
+If you obtain a [Mailcheck.co](/) account, please go to Integration and choose MailerLite.
 
 ![Mailerlite integration step 1: Mailcheck integration page](./step-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
