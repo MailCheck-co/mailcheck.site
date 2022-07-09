@@ -15,6 +15,10 @@
               "value": "SAMEORIGIN"
             },
             {
+              "key": "Referrer-Policy",
+              "value": "no-referrer-when-downgrade"
+            },
+            {
               "key": "X-UA-Compatible",
               "value": "ie=edge"
             },
