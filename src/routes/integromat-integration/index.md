@@ -61,7 +61,7 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 
 - Find Mailcheck to connect with the previous module
 
-!choose api method in Integromat](./integromat-8.png?format=webp;jpg;png;avif&srcset&width=880)
+![choose api method in Integromat](./integromat-8.png?format=webp;jpg;png;avif&srcset&width=880)
 
 - Click on "+" and type "Mailcheck"
 - Choose "Single Email check"
