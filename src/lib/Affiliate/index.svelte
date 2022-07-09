@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import imgAffiliate from './invite-friends.jpg?w=200&format=webp;png;avif&srcset';
+  import imgAffiliate from './invite-friends.jpg?w=500&format=webp;png;avif&srcset';
 
   let intersecting: boolean;
 </script>
@@ -107,10 +107,6 @@
 
     .affiliate-block-image {
       max-width: 50%;
-
-      img {
-        max-width: unset;
-      }
     }
 
     .affiliate-block-inner {
