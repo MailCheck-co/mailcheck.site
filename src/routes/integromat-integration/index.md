@@ -3,7 +3,7 @@ title: Integromat Integration instructions
 date: 24.04.2021
 readingTime: 3 min read
 snippet: Step by step guide on how to use Mailcheck with Integromat
-description: INTEGROMAT INTEGRATION. A step-by-step guide on how to integrate Mailcheck using MINTEGROMAT
+description: INTEGROMAT INTEGRATION. A step-by-step guide on how to integrate Mailcheck using INTEGROMAT
 ---
 
 # **{title}**

@@ -24,7 +24,7 @@ We can compare an email list with Internet gold. Mine it, do it right, leverage 
 
 First, buying an email list may be against the law, depending on your country. Even if buying is not, using it is definitely against. Yeah, it seems we have the “free” internet and modern marketing world calls for desperate measures, but there are strict rules, consumer protections and guidelines. All over the world there are regulations protecting inboxes, such as GDPR in Europe, CAN-SPAM in the US of CASL in Canada. They are needed to protect consumers. There regulations require marketers to send any emails only with permission. And the buying of an email list does not suggest you’ve obtained that.
 
-## Own base of email adresses is always more profitable
+## Own base of email addresses is always more profitable
 
 This point is obvious. Just think, if you have an email list that performs, would you sell it, or maybe rent? Besides, all professionals know that consumer loyalty depends on trust, so it is very stupid for them to sell contacts, especially without consent. All marketers want to keep these leads to themselves. If you need some lists that are based on some promises of targeting, you should be especially wary, as they’ve changed a lot of times. Don’t even expect that you’ll have good customers from them. It doesn’t matter what methods the compiler of this email list used, people will still view your messages as spam.
 

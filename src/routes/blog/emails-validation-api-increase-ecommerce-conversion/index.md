@@ -30,8 +30,6 @@ Have you ever tried to buy something online, went through most of the checkout s
 
 ![email dashboard](./email-dashboard.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-Source: weDevs
-
 ## EMAILS CHECK API saves your resources
 
 First and foremost, email validation will save you and your customers a lot of time. You probably came across websites that would tell you if you entered a wrong email address when you tried to sign up. This is where email API is employed. Now, imagine your website has no such feature. Your customer makes a mistake in his/her email address or a shipping address without noticing it, places an order, and the entire order tracking process goes downhill, resulting in your customer not getting his/her order and you having to spend time on figuring this out. Sounds like a loss, doesn’t it? An integrated email API will detect such mistakes at the point of placing the order or sign up and will make sure your customers enter only valid details before your system accepts the order and initiates shipping. You will also save costs of re-assigning jobs for staff, wasted postage, and other resources.

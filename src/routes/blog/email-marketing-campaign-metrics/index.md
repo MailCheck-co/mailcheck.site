@@ -56,7 +56,7 @@ Unsubscribe rate is calculated based on the delivered letters figures as some of
 ## How to Decrease Unsubscribe Rate:
 
 - Make sure you clean the mailing list from the inactive users. [Email verification services](/) can help with this task.
-- Do not use [purchased or rented mailing lists](/blog/want-to-buy-an-email-list-we-have-6-reasons-not-to) and parced lists.
+- Do not use [purchased or rented mailing lists](/blog/want-to-buy-an-email-list-we-have-6-reasons-not-to) and parsed lists.
 - Enforce double opt-in subscription.
 - Create interesting content for all subscriber groups.
 - Study up the clients’ preferences using the content map. Read about this in our article about the valuable tip for small business email marketing.
@@ -65,7 +65,7 @@ Unsubscribe rate is calculated based on the delivered letters figures as some of
 
 ## Complaint Rate
 
-When subscriber marks the letter as a smap an ESP and provider consider that when defining sender’s reputation. Often that doesn’t mean you are a spammer, it is just about the subscribers do not want to get your letters anymore so they have marked you as a spammer. In order to avoid that make unsubscription as easy as possible.
+When subscriber marks the letter as a spam an ESP and provider consider that when defining sender’s reputation. Often that doesn’t mean you are a spammer, it is just about the subscribers do not want to get your letters anymore so they have marked you as a spammer. In order to avoid that make unsubscription as easy as possible.
 
 ![Marketing Campaign Metrics for Small Business](./marketing-campaign-metrics-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 

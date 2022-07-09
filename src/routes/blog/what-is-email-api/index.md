@@ -5,14 +5,14 @@ date: 15.07.2020
 readingTime: 8 min read
 snippet: Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
 description: Why the email APIs are the efficient tool to send and manage emails. The mechanism behind email APIs. Benefits of using email API.
-thumbnailImg: ./vero.jpg?format=jpg&width=880
+thumbnailImg: ./mailbox-verification.jpg?format=jpg&width=880
 ---
 
 # What is email API and why do I need one?
 
 {readingTime}
 
-![email api](./vero.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![email api](./mailbox-verification.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Businesses of all sizes use email as a primary way of communicating with their customers. Tens of billions of emails are sent every day - a continuous conversation between businesses and their customers around the world.
 
@@ -24,9 +24,7 @@ Email APIs are the most efficient way to send and manage email notifications as 
 
 An email API allows applications to access functions offered by the email service providers’ platforms, such as Gmail, Outlook, etc., including generating and sending transactional emails, manipulating templates, moving or editing folders, building drafts, and more. Besides, APIs allow powerful analytics of this data - something you wouldn’t get if integrating with email service providers directly. Email API providers handle protocol matters such as message assembly, message sending, and reporting that would otherwise need to be managed by the application software development team.
 
-![Email verfication](./vero.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
-Source: Vero
+![Email verification](./mailbox-verification.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 There are two categories of email APIs: transactional and contextual.
 
@@ -34,7 +32,7 @@ Transactional email APIs are for sending bulk or routine emails, such as passwor
 
 Contextual email APIs are designed for developers building software applications that require email sync, send, and analytics embedded directly into the application for their end-user's benefit. Productivity tools, CRMs, applicant tracking systems, and even car consoles use email APIs to embed email functionality into the application. Contextual emails allow you to sync, send, receive, and collect analytics, as well as take care of general CRUD\* for each email service provider connection.
 
-_CRUD -In computer programming, create, read, update, and delete (CRUD) are the four basic operations of persistent storage. CRUD is also sometimes used to describe user interface conventions that facilitate viewing, searching, and changing information using computer-based forms and reports. The term was likely first popularized by James Martin in his 1983 book Managing the Data-base environment. Sourse: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete_
+_CRUD -In computer programming, create, read, update, and delete (CRUD) are the four basic operations of persistent storage. CRUD is also sometimes used to describe user interface conventions that facilitate viewing, searching, and changing information using computer-based forms and reports. The term was likely first popularized by James Martin in his 1983 book Managing the Data-base environment. Source: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete_
 
 Email APIs are also extensively used in sending notifications. Many software tools and websites use notifications to inform their users when something happens with their account or on the platform. For example, Facebook and Instagram notify their users of a new like or a comment made in response to a user’s post. It doesn’t always make sense to send an email for each action that occurs in an application. However, if this action requires the user’s attention, sending an email is the best way to ensure that the user sees the information on time.
 

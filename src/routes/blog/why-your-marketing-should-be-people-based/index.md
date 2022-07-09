@@ -8,7 +8,7 @@ description: People-based marketing focuses on people instead of groups. Because
 thumbnailImg: ./marketing-people-based.png?format=jpg&width=880
 ---
 
-# PEOPLE-BASED MARKETING WHY YOU SHULD USE
+# PEOPLE-BASED MARKETING, WHY YOU SHOULD USE IT?
 
 {readingTime}
 

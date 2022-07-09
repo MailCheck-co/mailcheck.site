@@ -22,7 +22,7 @@ From a client’s point of view, the use of Gmail Photos and a further shift to 
 
 Beside users who use Gmail and may heard of Google Plus, there is also a huge number of APIs for developers that include such things as account identifiers, the notorious userID. The userID is Google’s internal ID, this is the thing that helps Google services understand who is who. It appeared in many APIs, and we see that it has not changed from service to service.
 
-## Enother example of external takeover performed by Google
+## Another example of external takeover performed by Google
 
 Obviously, for the implementation of SSO in the newly absorbed service, you cannot simply take and transfer accounts from the old base to the new “Google accounts base”. I think there is simply no such thing - there are many intertwined services, levels of interaction, chains of responsibility, service management services. Seriously, if you think about it, then there must be many, many, many levels of connections between Google services for everything to work. But then everything goes not so smoothly - in an effort to popularize G+ it used the userID of users who are part of the global SSO service.
 

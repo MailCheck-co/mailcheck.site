@@ -5,14 +5,14 @@ date: 18.06.2020
 readingTime: 7 min read
 snippet: It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
 description: 6 tips to write an email that prompts your subscribers to-action. What does it take to create an email that helps you grow the number of your customers.
-thumbnailImg: ./sympli.jpg?format=jpg&width=880
+thumbnailImg: ./simple-action.jpg?format=jpg&width=880
 ---
 
 # SIX TIPS TO WRITE AN EMAIL
 
 {readingTime}
 
-![email call to action](./sympli.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![email call to action](./simple-action.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
 
@@ -34,9 +34,7 @@ Even though the numbers above imposingly tell us to push for email marketing, do
 
 It is acceptable to highlight several things in your email. However, do not let those overshadow the main message. Your message could come across unclear and customers will lose interest in reading further. Make sure your email has a core point and let the rest of the information remain secondary.
 
-![subscribers to-action](./sympli.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
-Source: Sympli
+![subscribers to-action](./simple-action.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Don’t enforce sales content too much
 

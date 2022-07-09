@@ -39,7 +39,7 @@ This particular service allows you to test its performance for free. Once you ar
 
 - Type in email in the empty box;
 - Click on the arrow symbol to start the check;
-- In an instant, you will see the result of the check based on several parameters: validity, trust rate, SMPT, belonging to catch-all domain and disposable addresses.
+- In an instant, you will see the result of the check based on several parameters: validity, trust rate, SMTP, belonging to catch-all domain and disposable addresses.
 
 The validation software is more convenient as it can be easily integrated with your working platform and will save you a lot of time. Such services use artificial intelligence and work according to a complex algorithm that usually includes several crucial stages.
 
