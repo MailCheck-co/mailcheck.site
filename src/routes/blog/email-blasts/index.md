@@ -18,8 +18,8 @@ Ever wondered what an email blast is? Well, someone may call it an email campaig
 
 An email blast is probably no longer the best email marketing practice, as many email marketers would say, and often such emails end up in your subscriber’s spam folder. The ultimate purpose is to create a single message that would be useful to every subscriber in your email list. Now think about nearly 4 billion email users around the world and the different tastes, desires, and goals they have. That being said, sending out one single email to all the contacts in your email list indiscriminately will most likely not bring the desired results. Moreover, it can potentially harm your business in the following ways:
 
-1.  Your unsubscribe rate will increase dramatically (which is not something you expect your email campaign to bring you).
-2.  Having a significant bounce rate will compromise the credibility of your email marketing campaign in particular and your business overall.
+1. Your unsubscribe rate will increase dramatically (which is not something you expect your email campaign to bring you).
+2. Having a significant bounce rate will compromise the credibility of your email marketing campaign in particular and your business overall.
 
 ![Email campaign results](./digital_savvy.jpg?format=webp;jpg;png;avif&srcset&width=880)
 

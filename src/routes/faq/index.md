@@ -78,9 +78,9 @@ We are currently testing a beta version of our phone base validations. But it is
 
 5. **Step 5** Set your billing information ( in case you didn't choose a plan, you can still go with "Free Tier" 100 emails for free). We have two scenarios if you want a free tier
 
-   - 10 emails if you didn't set your card
+- 10 emails if you didn't set your card
 
-   - 100 emails if your card details were provided (we don't charge you anything unless you previously has chosen a plan)
+- 100 emails if your card details were provided (we don't charge you anything unless you previously has chosen a plan)
 
 6. **Step 6** Ta da! You are in
 

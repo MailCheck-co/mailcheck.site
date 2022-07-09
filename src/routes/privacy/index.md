@@ -213,9 +213,9 @@ In Short: Yes, we will update this policy as necessary to stay compliant with re
 
 If you have questions or comments about this policy, you may email us at s@mailcheck.co or by post to:
 
-OSA MANAGEMENT LLP  
-Suite 4005 43 Bedford Street  
-London, England WC2E 9HA  
-United Kingdom  
-Phone: +44 203 807 08 08  
+OSA MANAGEMENT LLP 
+Suite 4005 43 Bedford Street 
+London, England WC2E 9HA 
+United Kingdom 
+Phone: +44 203 807 08 08 
 support@mailcheck.co

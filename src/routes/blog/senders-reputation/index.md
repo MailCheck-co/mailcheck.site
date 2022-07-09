@@ -57,10 +57,10 @@ It is good that Google makes different graphs for the domain and IP reputation. 
 
 Let’s imagine that you have tracked a negative trend in your reputation indicators. In order to fix the situation follow the instruction below:
 
-1.  Analyze your last actions since the moment reputation decrease has started. Watch through the criterias that affect the rating and think over the reason that could decrease your reputation. Haven’t added to your added list new recipients? Haven’t you change the topic of the mailings?
-2.  Study up the reports in postmaster. Make sure there weren’t too much mistakes in your last newsletters. Examine your letters for the rapid change of deliverability and open rate. In case you noticed something like that define the differences with your other mailings. [newsletter complies to the requirements of ESPs](/blog/personalize-your-newsletter-and-increase-sales).
-3.  Fix the mistakes. If there is an issue with the subscribers or emails delivered, you either delete new subscribers from the mailing list or change the letters content.
-4.  Contact support. If the reputation decrease reason hasn’t been revealed you need to ask ESP agents what is going wrong. ESPs are always trying to help good senders.
+1. Analyze your last actions since the moment reputation decrease has started. Watch through the criterias that affect the rating and think over the reason that could decrease your reputation. Haven’t added to your added list new recipients? Haven’t you change the topic of the mailings?
+2. Study up the reports in postmaster. Make sure there weren’t too much mistakes in your last newsletters. Examine your letters for the rapid change of deliverability and open rate. In case you noticed something like that define the differences with your other mailings. [newsletter complies to the requirements of ESPs](/blog/personalize-your-newsletter-and-increase-sales).
+3. Fix the mistakes. If there is an issue with the subscribers or emails delivered, you either delete new subscribers from the mailing list or change the letters content.
+4. Contact support. If the reputation decrease reason hasn’t been revealed you need to ask ESP agents what is going wrong. ESPs are always trying to help good senders.
 
 There are always good reasons for the sender’s reputation to decrease. It is hard to restore it on the previous level, so make sure you do it all to follow the rules of ESPs.
 

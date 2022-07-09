@@ -30,9 +30,9 @@ Mailcheck integration with WordPress is probably the easiest and most convenient
 
 - create a Mailcheck account
 - generate your API key from the API menu at the top of your account dashboard
-  ![mailcheck account dashboard](./screen1.png?format=webp;jpg;png;avif&srcset&width=880)
+![mailcheck account dashboard](./screen1.png?format=webp;jpg;png;avif&srcset&width=880)
 - [download](https://mailcheck.co/l/wp) and install Mailcheck plugin.
-  Right now the service integrates with WP-forms, ACF, Contact Form 7, WooCommerce and Elementor.
+Right now the service integrates with WP-forms, ACF, Contact Form 7, WooCommerce and Elementor.
 
 ## Integromat (Make) professional integrations
 

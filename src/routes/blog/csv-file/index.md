@@ -39,10 +39,10 @@ A CSV file can be processed by a text editor. The list of software is pretty sig
 
 To create a CSV file (with spreadsheet software) please follow the instructions:
 
-1.  Open a new spreadsheet in Microsoft Excel, OpenOffice Calc or Google Sheets.
-2.  Indicate all headings and field names in the first row of cells at the top of a spreadsheet. For instance, indicate "Product Name" in A1 cell, "Product Price" in B1 cell etc.
-3.  Enter data into cells and rows of a table. Continue to create spreadsheet content.
-4.  Fill all necessary data and then press File>Save as>. Input file name and choose an option Save as type .CSV. That's all, the CSV file is ready to use. The commas will be added automatically in order to separate fields including data.
+1. Open a new spreadsheet in Microsoft Excel, OpenOffice Calc or Google Sheets.
+2. Indicate all headings and field names in the first row of cells at the top of a spreadsheet. For instance, indicate "Product Name" in A1 cell, "Product Price" in B1 cell etc.
+3. Enter data into cells and rows of a table. Continue to create spreadsheet content.
+4. Fill all necessary data and then press File>Save as>. Input file name and choose an option Save as type .CSV. That's all, the CSV file is ready to use. The commas will be added automatically in order to separate fields including data.
 
 The process of creating a CSV file with a Notepad is similar.
 
@@ -60,15 +60,15 @@ Be careful when converting a file to a CSV format. You should remember that you 
 
 To convert datasheets from Excel or Open Office you must perform the following operations:
 
-1.  Open your file with desirable software.
-2.  Click a tab File>Save as.
-3.  Select Save as Type CSV and input file name.
+1. Open your file with desirable software.
+2. Click a tab File>Save as.
+3. Select Save as Type CSV and input file name.
 
 If you are commonly using Google Sheets, do the next:
 
-1.  Open a file with Google Sheets.
-2.  Right-click a tab File>Download as.
-3.  Select "Comma-separated values".
+1. Open a file with Google Sheets.
+2. Right-click a tab File>Download as.
+3. Select "Comma-separated values".
 
 The procedure of converting to a CSV file with using spreadsheet software is similar. You can also use online services to get a CSV file.
 
