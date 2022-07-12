@@ -20,7 +20,7 @@
     "firebase-functions": "^3.22.0",
     "firebase-tools": "^11.2.1",
     "google-auth-library": "^8.1.0",
-    "node-fetch": "^3.2.6",
+    "node-fetch": "^3.2.7",
     "nodemailer": "^6.7.7"
   },
   "private": true
