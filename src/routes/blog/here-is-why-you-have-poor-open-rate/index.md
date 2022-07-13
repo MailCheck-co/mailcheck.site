@@ -4,7 +4,7 @@ title: Low Open Rate. What Can You Do
 date: 16.02.2022
 readingTime: 3 min read
 snippet: Email marketing may sound like an easy task. There is nothing difficult in writing and sending letters, isn’t? Just remember all the adorable emails you’ve received. Whenever you read them, it feels like copywriters or marketers wrote them so effortlessly. In fact, the situation is different and great copy requires effort and skills. But it costs nothing, if people don’t open and don’t read your emails. So what can you do with a low open rate?
-description: YOU HAVE POOR OPEN RATE. Reasons and some tips that can change the situation in your mailing campaigns
+description: You have a poor open rate. Reasons and some tips that can change the situation in your mailing campaigns
 thumbnailImg: ./sending-emails.png?format=jpg&width=880
 ---
 

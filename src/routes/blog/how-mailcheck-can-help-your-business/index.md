@@ -29,7 +29,7 @@ From 22% to 35% of subscribers abandon their email accounts every year. Your bus
 
 To avoid the above mentioned, we advise you to work only with a validated list of contacts. If you are not sure of the correctness of the contacts, you can check them using **Mailcheck**.
 
-## Mailcheck: work only with a validated contacts
+## Mailcheck: work only with validated contacts
 
 **Mailcheck** uses state of the art algorithms to determine whether the email contact in your mailing list belongs to a real person. This helps to dramatically improve your conversion rates and will definitely optimize your email marketing budgets by ensuring that your newsletters will only be delivered to active email addresses, and hence, most likely will be opened.
 

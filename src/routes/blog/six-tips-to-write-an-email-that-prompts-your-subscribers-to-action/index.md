@@ -4,7 +4,7 @@ title: 6 tips in email to prompt subscribers to-action
 date: 18.06.2020
 readingTime: 7 min read
 snippet: It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
-description: 6 tips to write an email that prompts your subscribers to-action. What does it take to create an email that helps you grow the number of your customers.
+description: Six tips to write an email that prompts your subscribers to action. What does it take to create a compelling email that helps you grow the number of your customers?
 thumbnailImg: ./simple-action.jpg?format=jpg&width=880
 ---
 
@@ -36,7 +36,7 @@ It is acceptable to highlight several things in your email. However, do not let 
 
 ![subscribers to-action](./simple-action.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-## Don’t enforce sales content too much
+## Don't enforce sales content too much
 
 Clearly, the ultimate goal is to gain customers’ loyalty and subsequently earn profit. However, stuffing your email with sales content only will come off as pushy and somewhat aggressive. After all, making each and every email in your newsletter campaign a special offer may get your customers thinking how “special” is your “special offer”. Instead, try to balance the content by making it 10% sales and 90% educative.
 

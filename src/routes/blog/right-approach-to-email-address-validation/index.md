@@ -8,7 +8,7 @@ description: Email validation is an important part of the work of email marketer
 thumbnailImg: ./right-approach-img-1.jpg?format=jpg&width=880
 ---
 
-# EMAIL ADDRESS VALIDATION: THE RIGHT APPROACH
+# EMAIL ADDRESS VALIDATION - THE RIGHT APPROACH
 
 {readingTime}
 

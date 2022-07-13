@@ -1,10 +1,10 @@
 ---
 published: true
-title: Sender’s reputation. All you need to know
+title: Sender's reputation. All you need to know
 date: 18.04.2019
 readingTime: 3 min read
 snippet: Sender’s reputation directly affects whether your letters reach the user’s inbox or not. The higher is your sender reputation the less are the chances your letter goes to spam and the ESP enforces sanctions on your IP or mailbox. Thus, even if you have an ideal selling content and outstanding product, that all doesn’t matter for your email marketing campaign if your sender’s reputation is low.
-description: What is sender's reputation, what does it depend on. How to track the sender’s reputation. How to deal with reputation decrease
+description: What is sender's reputation, and what does it depend on. How to Track the Sender’s Reputation. How to Deal with Reputation Decrease
 thumbnailImg: ./senders-reputation-img-1.jpg?format=jpg&width=880
 ---
 

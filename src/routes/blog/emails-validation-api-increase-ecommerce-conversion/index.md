@@ -4,11 +4,11 @@ title: EMAILS VALIDATION API WILL INCREASE CONVERSION
 date: 13.08.2020
 readingTime: 3 min read
 snippet: In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API.
-description: HOW EMAILS VALIDATION API CAN AND WILL INCREASE YOUR E-COMMERCE CONVERSION. Automatic verification and cleaning in bulk emailings
+description: How emails validation api can and will increase your e-commerce conversion. Automatic verification and cleaning in bulk emailing
 thumbnailImg: ./email-for-everything.jpg?format=jpg&width=880
 ---
 
-# EMAILS VALIDATION API INCREASE E-COMMERCE CONVERSION
+# EMAIL VALIDATION API WILL INCREASE CONVERSION
 
 {readingTime}
 
@@ -20,7 +20,7 @@ In the previous article, we discussed what email API is, reviewed the email API 
 
 We have established that having an email API integrated into your website or app provides automation of many processes such as generating password reset emails, notification emails, and sending mass marketing campaigns through third-party platforms. Email API is also extensively used in sending automatic email notifications such as those related to social media use (likes, comments, follow requests, etc.). Email API has multiple use, however, one and probably most important feature is that an integrated email API ensures a clean email database. Lots of businesses may, however, underestimate the potential of email API. A long-established business knows that having an email API saves a lot of such precious time and ensures smoothly run email campaigns.
 
-## Automatic bulk verification keeps the maillist clean
+## Automatic bulk verification keeps the email list clean
 
 According to Mailchimp, an average email open rate is 21.33%. This means that out of all emails you may have in your database, only 21% on average opens emails your business sends to them. Sounds like a lot of work for such a small return? The good news is that email validation API can ease it off a little by taking care of a part of your headache. Email validation API will ensure that your email database consists of only real emails and that your emails will be sent to real leads only, thus increasing your open and click-through rates. Email validation API essentially validates emails by screening your email database and filtering out all fake, invalid, “catch-all” emails, keeping your email list clean, and consisting of prospective clients only.
 

@@ -1,10 +1,10 @@
 ---
 published: true
-title: HOW TO KEEP YOUR EMAILS AWAY FROM SPAM FOLDER
+title: How to keep your emails away from the spam folder
 date: 08.04.2022
 readingTime: 4 min read
 snippet: Email marketing is an essential part of your strategy. But sometimes it doesn’t make a sense to create an outstanding copy, promising subject line, to offer discounts and promotions. There is about a 20% chance your message will land into junk folder. Yes, despite all your best rates. Your letter could be blocked of even going to junk. If the problem was only that customers would not see the email! It is very dangerous for your open rates and revenue.
-description: Email deliverability, open rate, sender reputation and other important things. We focus on what spoils your mailing statistics by getting into spam.
+description: Email deliverability, open rate, sender reputation, and other important things. We focus on what spoils your mailing statistics by getting into spam.
 thumbnailImg: ./spam.png?format=jpg&width=880
 ---
 

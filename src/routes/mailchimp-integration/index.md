@@ -3,7 +3,7 @@ title: Mailchimp Integration instructions
 date: 18.02.2021
 readingTime: 3 min read
 snippet: Step by step guide on how to use Mailcheck
-description: How to use MailChimp integration in mailcheck.co? Step by step guide on how to use Mailcheck with Mailchimp.
+description: How to use MailChimp integration in mailcheck.co? Step-by-step guide on how to use Mailcheck with Mailchimp.
 ---
 
 <script>
