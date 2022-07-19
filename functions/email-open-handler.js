@@ -1,13 +1,12 @@
 import functions from 'firebase-functions';
 import { BigQuery } from '@google-cloud/bigquery';
 import { promises as dns } from 'dns';
-import fetch from 'node-fetch';
+import { request } from 'undici';
 import { GoogleAuth } from 'google-auth-library';
 import { sheets as sheets_v4 } from '@googleapis/sheets';
 
 const config = functions.config();
 const ACTIONS = { PASS: 'pass', BLOCK: 'block' };
-const REJECT_REDIRECT_URL = config.mailcheck?.reject_redirect_url;
 const BQ_DATASET = config.mailcheck?.bq_mail_open_dataset;
 const BQ_TABLE = config.mailcheck?.bq_mail_open_table;
 const dnsCache = new Map();
@@ -55,8 +54,8 @@ async function getImageUrl(subdomain) {
  */
 async function getAsn(ip) {
   try {
-    const res = await fetch(`https://iptoasn-webservice.vercel.app/api/${ip}`);
-    const json = await res.json();
+    const res = await request(`https://iptoasn-webservice.vercel.app/api/${ip}`);
+    const json = await res.body.json();
     const { as_country_code, as_description, as_number } = json;
     return { as_country_code, as_description, as_number };
   } catch (e) {
@@ -146,15 +145,7 @@ export default async function (req, res) {
   let imageUrl;
   let status;
   try {
-    if (req.query.email === 'nobody@mycraftmail.com') {
-      imageUrl = REJECT_REDIRECT_URL;
-      status = ACTIONS.BLOCK;
-    } else if (
-      ua_action === ACTIONS.BLOCK ||
-      asn_action === ACTIONS.BLOCK ||
-      (asn.as_country_code === 'US' && geo === '') ||
-      geo === 'US'
-    ) {
+    if (ua_action === ACTIONS.BLOCK || asn_action === ACTIONS.BLOCK) {
       imageUrl = await getImageUrl(imageSubdomain);
       status = ACTIONS.BLOCK;
     } else {

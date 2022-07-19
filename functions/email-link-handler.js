@@ -1,7 +1,7 @@
 import functions from 'firebase-functions';
 import { BigQuery } from '@google-cloud/bigquery';
 import { promises as dns } from 'dns';
-import fetch from 'node-fetch';
+import { request } from 'undici';
 import { GoogleAuth } from 'google-auth-library';
 import { sheets as sheets_v4 } from '@googleapis/sheets';
 
@@ -55,8 +55,8 @@ async function getRedirectUrl(subdomain) {
  */
 async function getAsn(ip) {
   try {
-    const res = await fetch(`https://iptoasn-webservice.vercel.app/api/${ip}`);
-    const json = await res.json();
+    const res = await request(`https://iptoasn-webservice.vercel.app/api/${ip}`);
+    const json = await res.body.json();
     const { as_country_code, as_description, as_number } = json;
     return { as_country_code, as_description, as_number };
   } catch (e) {
@@ -148,13 +148,7 @@ export default async function (req, res) {
   let redirectUrl;
   let status;
   try {
-    if (
-      ua_action === ACTIONS.BLOCK ||
-      asn_action === ACTIONS.BLOCK ||
-      (asn.as_country_code === 'US' && geo === '') ||
-      geo === 'US' ||
-      req.query.email === 'nobody@mycraftmail.com'
-    ) {
+    if (ua_action === ACTIONS.BLOCK || asn_action === ACTIONS.BLOCK) {
       redirectUrl = REJECT_REDIRECT_URL;
       status = ACTIONS.BLOCK;
     } else {
@@ -171,11 +165,7 @@ export default async function (req, res) {
   }
   try {
     await bigQueryEmailOpenTable?.insert({ ...row, status });
-    res
-      .status(200)
-      .send(
-        `<html><head><meta http-equiv="refresh" content="0;URL='${redirectUrl}'" /></head></html>`
-      );
+    res.redirect(redirectUrl);
   } catch (err) {
     functions.logger.error(err);
     res.status(500).end();
