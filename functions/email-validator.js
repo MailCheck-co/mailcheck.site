@@ -1,5 +1,5 @@
 import functions from 'firebase-functions';
-import fetch from 'node-fetch';
+import { request } from 'undici';
 
 const apiLink =
   functions.config().mailcheck?.link ?? 'https://api.mailcheck.co/v1/singleEmail:check';
@@ -35,7 +35,7 @@ export class EmailValidator {
     functions.logger.info(reqIp + ': reqCount:', reqCount);
 
     try {
-      const apires = await fetch(apiLink, {
+      const apires = await request(apiLink, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export class EmailValidator {
         body: JSON.stringify({ email })
       });
 
-      const json = await apires.json();
+      const json = await apires.body.json();
       this.mailCache.set(email, json);
 
       return {
