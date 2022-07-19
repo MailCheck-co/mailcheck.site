@@ -49,7 +49,7 @@ export class EmailValidator {
       this.mailCache.set(email, json);
 
       return {
-        code: apires.status,
+        code: apires.statusCode,
         data: json
       };
     } catch (err) {
