@@ -12,8 +12,8 @@ description: INTEGROMAT INTEGRATION. A step-by-step guide on how to integrate Ma
 
 ### Step 1
 
-- Open Mailcheck Integrations - [https://app.mailcheck.co/dashboard/integration](https://app.mailcheck.co/dashboard/integration) 
-and click "Connect" you will be redirected into "Integromat"
+- Open Mailcheck Integrations - [https://app.mailcheck.co/dashboard/integration](https://app.mailcheck.co/dashboard/integration)
+  and click "Connect" you will be redirected into "Integromat"
 
 ![integromat email verification integration](./integromat-1.png?format=webp;jpg;png;avif&srcset&width=880)
 

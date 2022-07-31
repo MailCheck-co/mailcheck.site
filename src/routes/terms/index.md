@@ -215,9 +215,9 @@ These Terms of Use and any policies or operating rules posted by us on the Site 
 
 In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at:
 
-OSA MANAGEMENT LLP 
-Suite 4005 43 Bedford Street 
-London, England WC2E 9HA 
-United Kingdom 
-Phone: +44 203 807 08 08 
+OSA MANAGEMENT LLP
+Suite 4005 43 Bedford Street
+London, England WC2E 9HA
+United Kingdom
+Phone: +44 203 807 08 08
 support@mailcheck.co

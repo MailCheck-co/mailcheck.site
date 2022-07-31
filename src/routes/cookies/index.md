@@ -128,9 +128,9 @@ The date at the top of this Cookie Policy indicates when it was last updated.
 
 If you have any questions about our use of cookies or other technologies, please email us at s@mailcheck.co or by post to:
 
-OSA MANAGEMENT LLP 
-Suite 4005 43 Bedford Street 
-London, England WC2E 9HA 
-United Kingdom 
-Phone: +44 203 807 08 08 
+OSA MANAGEMENT LLP
+Suite 4005 43 Bedford Street
+London, England WC2E 9HA
+United Kingdom
+Phone: +44 203 807 08 08
 support@mailcheck.co
