@@ -16,7 +16,7 @@
   "dependencies": {
     "@google-cloud/bigquery": "^6.0.1",
     "@googleapis/sheets": "^3.0.2",
-    "firebase-admin": "^11.0.0",
+    "firebase-admin": "^11.0.1",
     "firebase-functions": "^3.22.0",
     "firebase-tools": "^11.4.0",
     "google-auth-library": "^8.1.1",
