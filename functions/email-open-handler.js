@@ -124,7 +124,7 @@ async function resolveAsnAction(asn) {
  */
 export default async function (req, res) {
   const imageSubdomain = req.query.image ?? '*';
-  const ip = req.get('fastly-client-ip');
+  const ip = req.get('cf-connecting-ip') ?? req.get('fastly-client-ip');
   const asn = await getAsn(ip);
   const user_agent = req.get('User-Agent');
   const ua_action = await resolveUaAction(user_agent);

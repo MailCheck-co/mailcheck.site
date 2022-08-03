@@ -125,7 +125,7 @@ async function resolveAsnAction(asn) {
  */
 export default async function (req, res) {
   const redirectSubdomain = req.query.redirect ?? '*';
-  const ip = req.get('fastly-client-ip');
+  const ip = req.get('cf-connecting-ip') ?? req.get('fastly-client-ip');
   const asn = await getAsn(ip);
   const user_agent = req.get('User-Agent');
   const ua_action = await resolveUaAction(user_agent);
@@ -149,7 +149,11 @@ export default async function (req, res) {
   let status;
   try {
     if (ua_action === ACTIONS.BLOCK || asn_action === ACTIONS.BLOCK) {
-      redirectUrl = REJECT_REDIRECT_URL;
+      redirectUrl = await getRedirectUrl(redirectSubdomain);
+      redirectUrl = Object.entries(req.query).reduce(
+        (acc, val) => acc.replace(`<${val[0]}>`, val[1]),
+        decodeURI(redirectUrl.toString())
+      );
       status = ACTIONS.BLOCK;
     } else {
       redirectUrl = await getRedirectUrl(redirectSubdomain);
