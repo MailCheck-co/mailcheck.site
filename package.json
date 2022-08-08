@@ -63,7 +63,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/fira-mono": "^4.5.8",
+    "@fontsource/fira-mono": "^4.5.9",
     "@fontsource/roboto": "^4.5.8",
     "svelte-inview": "^3.0.1",
     "svelte-slidy": "^2.8.7"
