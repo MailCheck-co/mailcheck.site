@@ -59,7 +59,7 @@
     "vite": "^3.0.8",
     "vite-imagetools": "^4.0.4",
     "xmlbuilder2": "^3.0.2",
-    "unist-util-visit": "^4.1.0"
+    "unist-util-visit": "^4.1.1"
   },
   "type": "module",
   "dependencies": {
