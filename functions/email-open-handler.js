@@ -4,6 +4,8 @@ import { promises as dns } from 'dns';
 import { request } from 'undici';
 import { GoogleAuth } from 'google-auth-library';
 import { sheets as sheets_v4 } from '@googleapis/sheets';
+import { buffer } from 'stream/consumers';
+import { Readable } from 'stream';
 
 const config = functions.config();
 const ACTIONS = { PASS: 'pass', BLOCK: 'block' };
@@ -39,13 +41,16 @@ try {
  */
 async function getImageUrl(subdomain) {
   const fullDomain = `${subdomain}.${config.mailcheck.dns_txt_image_domain}`;
-  let cachedUrl = dnsCache.get(fullDomain);
-  if (!cachedUrl) {
+  let image = dnsCache.get(fullDomain)?.deref();
+  if (!image) {
     const txts = await dns.resolveTxt(fullDomain);
-    cachedUrl = new URL(txts.map((row) => row.join('')).join(''));
-    dnsCache.set(fullDomain, cachedUrl);
+    const imageUrl = new URL(txts.map((row) => row.join('')).join(''));
+    const imageResponse = await request(imageUrl);
+    image = await buffer(imageResponse.body);
+    const imageRef = new WeakRef(image);
+    dnsCache.set(fullDomain, imageRef);
   }
-  return cachedUrl;
+  return image;
 }
 
 /**
@@ -124,7 +129,7 @@ async function resolveAsnAction(asn) {
  */
 export default async function (req, res) {
   const imageSubdomain = req.query.image ?? '*';
-  const ip = req.get('fastly-client-ip');
+  const ip = req.get('cf-connecting-ip') ?? req.get('fastly-client-ip');
   const asn = await getAsn(ip);
   const user_agent = req.get('User-Agent');
   const ua_action = await resolveUaAction(user_agent);
@@ -157,7 +162,8 @@ export default async function (req, res) {
   }
   try {
     await bigQueryEmailOpenTable?.insert({ ...row, status });
-    res.redirect(imageUrl);
+    res.header('cache-control', 'no-cache');
+    Readable.from(imageUrl).pipe(res);
   } catch (err) {
     functions.logger.error(err);
     res.status(500).end();
