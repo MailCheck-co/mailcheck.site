@@ -25,7 +25,7 @@ export default async function (req, res) {
   const row = {
     timestamp: new Date(),
     receiver: req.body.subject,
-    click_id: Number(req.body.click_id) || null,
+    click_id: req.body.click_id,
     template: req.body.template,
     email: req.body.email,
     status: req.body.status
