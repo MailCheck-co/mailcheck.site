@@ -149,11 +149,7 @@ export default async function (req, res) {
   let status;
   try {
     if (ua_action === ACTIONS.BLOCK || asn_action === ACTIONS.BLOCK) {
-      redirectUrl = await getRedirectUrl(redirectSubdomain);
-      redirectUrl = Object.entries(req.query).reduce(
-        (acc, val) => acc.replace(`<${val[0]}>`, val[1]),
-        decodeURI(redirectUrl.toString())
-      );
+      redirectUrl = REJECT_REDIRECT_URL;
       status = ACTIONS.BLOCK;
     } else {
       redirectUrl = await getRedirectUrl(redirectSubdomain);
