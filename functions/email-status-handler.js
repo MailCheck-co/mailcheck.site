@@ -4,14 +4,14 @@ import admin from 'firebase-admin';
 
 const config = functions.config();
 admin.initializeApp(config.firebase);
-const BQ_DATASET = config.mailcheck?.bq_mail_send_dataset;
-const BQ_TABLE = config.mailcheck?.bq_mail_send_table;
+const BQ_DATASET = config.mailcheck?.bq_mail_status_dataset;
+const BQ_TABLE = config.mailcheck?.bq_mail_status_table;
 
 /** @type {import('@google-cloud/bigquery').Table} */
-let bigQueryEmailSendTable;
+let bigQueryEmailStatusTable;
 try {
   const bigQuery = new BigQuery({ projectId: config.mailcheck.bq_project_id });
-  bigQueryEmailSendTable = bigQuery.dataset(BQ_DATASET).table(BQ_TABLE);
+  bigQueryEmailStatusTable = bigQuery.dataset(BQ_DATASET).table(BQ_TABLE);
   functions.logger.info('Connected to BQ');
 } catch (err) {
   functions.logger.error(err);
@@ -22,17 +22,10 @@ try {
  * @param {functions.Response} res
  */
 export default async function (req, res) {
-  const row = {
-    timestamp: new Date(),
-    receiver: req.body.subject,
-    click_id: req.body.click_id,
-    template: req.body.template,
-    email: req.body.email,
-    status: req.body.status
-  };
+  const rows = req.body.records;
 
   try {
-    await bigQueryEmailSendTable?.insert(row);
+    await bigQueryEmailStatusTable?.insert(rows);
     return res.sendStatus(200);
   } catch (err) {
     functions.logger.error(err);

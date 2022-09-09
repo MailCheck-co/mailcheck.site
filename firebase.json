@@ -99,6 +99,10 @@
           "function": "emailSendHandler"
         },
         {
+          "source": "/handle-status-email",
+          "function": "emailStatusHandler"
+        },
+        {
           "source": "/postback",
           "function": "postbackLogger"
         }
