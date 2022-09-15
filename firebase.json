@@ -103,6 +103,10 @@
           "function": "emailStatusHandler"
         },
         {
+          "source": "/handle-email/*",
+          "function": "emailHandler"
+        },
+        {
           "source": "/postback",
           "function": "postbackLogger"
         }

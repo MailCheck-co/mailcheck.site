@@ -14,4 +14,5 @@ export const emailOpenHandler = lazyOnRequest('./email-open-handler.js');
 export const emailLinkHandler = lazyOnRequest('./email-link-handler.js');
 export const emailSendHandler = lazyOnRequest('./email-send-handler.js');
 export const emailStatusHandler = lazyOnRequest('./email-status-handler.js');
+export const emailHandler = lazyOnRequest('./email-handler.js');
 export const postbackLogger = lazyOnRequest('./postback-logger.js');
