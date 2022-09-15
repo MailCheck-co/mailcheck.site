@@ -4,6 +4,8 @@ import { promises as dns } from 'dns';
 import { request } from 'undici';
 import { GoogleAuth } from 'google-auth-library';
 import { sheets as sheets_v4 } from '@googleapis/sheets';
+import { buffer } from 'stream/consumers';
+import { Readable } from 'stream';
 
 const config = functions.config();
 const ACTIONS = { PASS: 'pass', BLOCK: 'block' };
@@ -14,7 +16,6 @@ const params = {
         BQ_TABLE: config.mailcheck?.bq_mail_open_table,
         txtDomain: config.mailcheck.dns_txt_image_domain,
         getSubdomain: q => q.image,
-        parseUrl: (r) => r,
         metaRedirect: (res, redirectUrl) => res.redirect(redirectUrl),
         table: null
     },
@@ -23,15 +24,12 @@ const params = {
         BQ_TABLE: config.mailcheck?.bq_mail_link_table,
         txtDomain: config.mailcheck.dns_txt_redirect_domain,
         getSubdomain: q => q.redirect,
-        parseUrl: (r, q) => Object.entries(q).reduce(
-            (acc, val) => acc.replace(`<${val[0]}>`, val[1]),
-            decodeURI(r.toString())
-        ),
         metaRedirect: (res, redirectUrl) => res.status(200).send(`<html><head><meta http-equiv="refresh" content="0;URL='${redirectUrl}'" /></head></html>`),
         table: null
     },
 };
-const dnsCache = new Map();
+const dnsLinkCache = new Map();
+const dnsImageCache = new Map();
 
 try {
   const bigQuery = new BigQuery({ projectId: config.mailcheck.bq_project_id });
@@ -60,13 +58,36 @@ try {
  */
 async function getRedirectUrl(subdomain, txtDomain) {
   const fullDomain = `${subdomain}.${txtDomain}`;
-  let cachedUrl = dnsCache.get(fullDomain);
+  let cachedUrl = dnsLinkCache.get(fullDomain);
   if (!cachedUrl) {
     const txts = await dns.resolveTxt(fullDomain);
     cachedUrl = new URL(txts.map((row) => row.join('')).join(''));
-    dnsCache.set(fullDomain, cachedUrl);
+    dnsLinkCache.set(fullDomain, cachedUrl);
   }
   return cachedUrl;
+}
+
+const inflateRedirectUrl = (r, q) => Object.entries(q).reduce(
+  (acc, val) => acc.replace(`<${val[0]}>`, val[1]),
+  decodeURI(r.toString())
+);
+
+/**
+ * @param {string} subdomain
+ * @return {Promise<buffer>}
+ */
+ async function getImage(subdomain, txtDomain) {
+  const fullDomain = `${subdomain}.${txtDomain}`;
+  let image = dnsImageCache.get(fullDomain)?.deref();
+  if (!image) {
+    const txts = await dns.resolveTxt(fullDomain);
+    const imageUrl = new URL(txts.map((row) => row.join('')).join(''));
+    const imageResponse = await request(imageUrl);
+    image = await buffer(imageResponse.body);
+    const imageRef = new WeakRef(image);
+    dnsImageCache.set(fullDomain, imageRef);
+  }
+  return image;
 }
 
 /**
@@ -139,9 +160,8 @@ async function resolveAsnAction(asn) {
  */
 export default async function (req, res) {
   // open or link
-  const decodedParams = Buffer.from(req.path.substring(1), 'base64').toString();
+  const decodedParams = Buffer.from(req.path.split('/')[2], 'base64').toString();
   const type = decodedParams.split('?')[0];
-
   if (!['open', 'link'].includes(type)) {
     return res.redirect(REJECT_REDIRECT_URL);
   }
@@ -174,21 +194,20 @@ export default async function (req, res) {
   }
   const isBlocked = ua_action === ACTIONS.BLOCK || asn_action === ACTIONS.BLOCK;
   const status = isBlocked ? ACTIONS.BLOCK : ACTIONS.PASS;
-  let redirectUrl;
   try {
-    if (type === 'link' && isBlocked) {
-      redirectUrl = REJECT_REDIRECT_URL;
+    if (type === 'open') {
+      const image = await getImage(redirectSubdomain, typeParams.txtDomain);
+      await typeParams.table.insert({...row, status});
+      res.header('cache-control', 'no-cache');
+      Readable.from(image).pipe(res);
+      return;
     } else {
-      redirectUrl = await getRedirectUrl(redirectSubdomain);
-      redirectUrl = typeParams.parseUrl(redirectUrl, query);
+      const redirectUrl = await getRedirectUrl(redirectSubdomain, typeParams.txtDomain);
+      const inflatedRedirectUrl = isBlocked ? REJECT_REDIRECT_URL : inflateRedirectUrl(redirectUrl, query);
+      await typeParams.table.insert({...row, status});
+      res.redirect(inflatedRedirectUrl);
+      return;
     }
-  } catch (err) {
-    functions.logger.warn(err);
-    return res.status(400).end();
-  }
-  try {
-    await typeParams.table.insert({...row, status});
-    res.redirect(redirectUrl);
   } catch (err) {
     functions.logger.error(err);
     res.status(500).end();
