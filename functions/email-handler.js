@@ -170,7 +170,7 @@ export default async function (req, res) {
   const query = [...(new URLSearchParams(queryString)).entries()].reduce((a,v) => (a[v[0]] = v[1], a), {});
   const typeParams = params[type];
   const redirectSubdomain = typeParams.getSubdomain(query) ?? '*';
-  const ip = req.get('fastly-client-ip');
+  const ip = req.get('cf-connecting-ip') ?? req.get('fastly-client-ip');
   const asn = await getAsn(ip);
   const user_agent = req.get('User-Agent');
   const ua_action = await resolveUaAction(user_agent);
