@@ -22,7 +22,7 @@ The first thing email marketers will hear from list providers is that email list
 
 Source: AppInstitute
 
-Email lists may contain emails of users who never subscribed to your newsletter, therefore chances are they will not open your emails and will not engage with it. Email lists also contain old emails that can no longer be active, which will result in the increase of your bounce rate. Even if a company that is selling you email lists claims (and it certainly will) it contains only high-quality data, chances are that data is irrelevant to your business, meaning that recipients will not be interested in the content of your emails, which will be followed by an increased unsubscribe rate.
+Email lists may contain emails of users who never subscribed to your newsletter, therefore chances are they will not open your emails and will not engage with it. Email lists also contain old emails that can no longer be active, [which will result in the increase of your bounce rate.](https://mailcheck.co/blog/explaining-email-bounce-rate) Even if a company that is selling you email lists claims (and it certainly will) it contains only high-quality data, chances are that data is irrelevant to your business, meaning that recipients will not be interested in the content of your emails, which will be followed by an increased unsubscribe rate.
 
 ## Legal implications of buying email addresses
 

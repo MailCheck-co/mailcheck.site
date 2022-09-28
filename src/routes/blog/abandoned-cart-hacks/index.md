@@ -71,7 +71,7 @@ close phone, only to later come back and see that your shopping cart has been em
 are a lot of ways to save a situation. You can provide an appropriate button that does it, or you can use cookies with a
 prompt to let customers know why this feature is needed.
 
-You can also use top email validation services and after that send your consumers follow-up with different subject
+[You can also use top email validation services](https://mailcheck.co/blog/how-mailcheck-can-help-your-business) and after that send your consumers follow-up with different subject
 lines, e.g. “There’s something in your cart…”. Your customers need to know they can just click a link and return to
 checkout.
 

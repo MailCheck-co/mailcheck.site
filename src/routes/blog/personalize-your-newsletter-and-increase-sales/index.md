@@ -18,7 +18,7 @@ Successful [email marketing strategy](/blog/great-ideas-for-your-email-marketing
 
 Personalization is important as template letters do not sell well, they even barely get read. In order to make an efficient personalized newsletter you need to address client by name, consider his current location and offer the products he needs here and now.
 
-Personalized emails should contain relevant information for the subscriber. You can set personalized data in the letter using tags.
+[Personalized emails should contain relevant information for the subscriber.](https://mailcheck.co/blog/subscribers-love-getting-your-emails-but-theres-one-thing-you-have-to-get-right) You can set personalized data in the letter using tags.
 
 So what do you need to do to start using email [marketing personalization](/blog/7-email-personalization-stats-that-will-make-you-rethink-your-marketing-strategy) techniques? The answer is obvious: you need to gather data about your clients and make relevant letters.
 
