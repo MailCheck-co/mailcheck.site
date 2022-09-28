@@ -12,7 +12,7 @@ thumbnailImg: ./spam.png?format=jpg&width=880
 
 {readingTime}
 
-[Email marketing is an essential part of your strategy.](https://mailcheck.co/blog/great-ideas-for-your-email-marketing-strategy) But sometimes it doesn’t make a sense to create an outstanding copy, promising subject line, to offer discounts and promotions. There is about a 20% chance your message will land into junk folder. Yes, despite all your best rates. Your letter could be blocked of even going to junk. If the problem was only that customers would not see the email! It is very dangerous for your open rates and revenue.
+[Email marketing is an essential part of your strategy.](/blog/great-ideas-for-your-email-marketing-strategy) But sometimes it doesn’t make a sense to create an outstanding copy, promising subject line, to offer discounts and promotions. There is about a 20% chance your message will land into junk folder. Yes, despite all your best rates. Your letter could be blocked of even going to junk. If the problem was only that customers would not see the email! It is very dangerous for your open rates and revenue.
 
 2021 Deliverability Benchmark showed, that emails reached the inbox an average of 83% of the time, while the global average is 85%. You might consider that 15% don’t matter, but they do. Messages can just miss or be banned. We’re going to focus on that part, that spoils your stats getting into spam.
 
@@ -42,7 +42,7 @@ Campaign Monitor tells that about 20% of initial recipients don’t complete the
 
 Have you received messages from Arab princes who need money, or rich relatives, living abroad, who want to support you until the end of life? Let us guess, as soon as you see trigger words in subject lines, the letter goes directly to spam. There are some suspicious words and milder ones, anyway, they’re destructive for emails and sender reputation.
 
-[In fact, the perfect solution for effective drip campaigns](https://mailcheck.co/blog/email-marketing-campaign-metrics), email marketing has not yet come up. The most essential thing to remember when preparing an email is to offer the value. It is important to avoid patterns, evaluate the tastes and mood of your target audience, prepare email newsletter with this in mind.
+[In fact, the perfect solution for effective drip campaigns](/blog/email-marketing-campaign-metrics), email marketing has not yet come up. The most essential thing to remember when preparing an email is to offer the value. It is important to avoid patterns, evaluate the tastes and mood of your target audience, prepare email newsletter with this in mind.
 
 Avoid capital letters or special characters in your subject line, as well as a lot of exclamation points. Using images, do not overdo it. It’s better not to attach files, who will open the file from the unfamiliar sender? Redirectors, such as bit.ly or goo.gl are also undesirable.
 
