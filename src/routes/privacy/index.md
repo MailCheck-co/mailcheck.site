@@ -107,6 +107,7 @@ Allow Users to Connect to their Third-Party Accounts:
 Communicate and Chat with Users:
 
 - chat.mailcheck.co
+- Mailgun
 
 Content Optimization:
 
@@ -124,6 +125,7 @@ Invoice and Billing:
 Web and Mobile Analytics:
 
 - Google Analytics
+- Google Tag Manager
 
 Registration/login:
 
@@ -132,6 +134,7 @@ Registration/login:
 Advertising:
 
 - Use of Facebook Pixels, Google Ad
+- Meta Events Manager
 
 ## 5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
 
