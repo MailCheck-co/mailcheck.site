@@ -32,7 +32,7 @@ In case user entered a wrong address that doesn’t exist we get a hard bounce. 
 
 There are several things you can do to comply this requirement:
 
-- Send confirmation letters - if for authorization in your service or subscribing the newsletter a user has to follow the activation link inside the letter you send him for confirmation, there is no chance that the email address he has entered is wrong in any way, as he cannot confirm the subscription if the email entered is wrong
+- Send confirmation letters - if for authorization in your service or subscribing [the newsletter a user](/blog/personalize-your-newsletter-and-increase-sales) has to follow the activation link inside the letter you send him for confirmation, there is no chance that the email address he has entered is wrong in any way, as he cannot confirm the subscription if the email entered is wrong
 - Do not buy email lists - you do not know the method that was used to collect it
 
 #### Disclaimer to The Requirement

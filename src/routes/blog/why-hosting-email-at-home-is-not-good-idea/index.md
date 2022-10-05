@@ -28,6 +28,6 @@ Then big mail providers started to grade incoming mails also by as net records. 
 
 Also, in a difference of home iPs - even virtual servers have static IPs. Another problem that in most home networks IPS are floating, that makes correct usage of SPF impossible. Even more - you can't guess who was yours predecessor, who controlled that IP before.
 
-That's why if you want to send mails you should better rent SaaS service like G Suite, or at least setup server at Data center.
+[That's why if you want to send mails you should better rent SaaS service like G Suite](/blog/paid-g-suite-may-increase-email-bounce-rate), or at least setup server at Data center.
 
 _Read more in other useful articles on our [blog](/blog)._

@@ -22,7 +22,7 @@ In this article we are going to disclose the main tips on email marketing applic
 
 ## How Small Business Can Increase Profitability of Newsletter?
 
-Big brands with huge advertising budgets always make experiments with the various options to make better marketing strategies. Small business cannot try something new all the times due to the deficit of resources. In order to increase chances of getting a long-term improvement in sales for you small business it is better to make local tasks.
+Big brands with huge advertising budgets always make experiments with the various options [to make better marketing strategies.](/blog/great-ideas-for-your-email-marketing-strategy) Small business cannot try something new all the times due to the deficit of resources. In order to increase chances of getting a long-term improvement in sales for you small business it is better to make local tasks.
 
 ## Make Subscription Easy
 

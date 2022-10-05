@@ -25,7 +25,7 @@ No email marketing campaign will be fruitful without a proper audience. Mailing 
 
 - Filter email addresses with a high risk of getting into spam;
 - Get a higher domain rating due to increased trust in the domain;
-- Boost your email deliverability.
+- [Boost your email deliverability.](/blog/x-ways-increase-emails-deliverability)
 
 Address validation is carried out at the collection stage and it is advisable to repeat the verification at least once every six months. If you continuously add new addresses to your list, it is obvious to increase the frequency of checks.
 
