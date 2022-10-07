@@ -22,7 +22,7 @@
     "optimize-svg": "find ./src ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-env": "^7.19.3",
     "@nodeart/stylelint-config-nodeart": "^0.0.9",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
@@ -44,7 +44,7 @@
     "rehype-slug": "^5.0.1",
     "remark-abbr": "^1.4.1",
     "remark-github": "^11.2.4",
-    "sass": "^1.54.5",
+    "sass": "^1.55.0",
     "stylelint": "^14.11.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier-scss": "^0.0.1",
