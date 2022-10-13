@@ -30,7 +30,7 @@
     "@typescript-eslint/parser": "^5.39.0",
     "autoprefixer": "^10.4.12",
     "cssnano": "^5.1.13",
-    "eslint": "^8.24.0",
+    "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "fast-glob": "^3.2.12",
@@ -57,7 +57,7 @@
     "tslib": "^2.4.0",
     "typescript": "^4.8.4",
     "vite": "^3.1.6",
-    "vite-imagetools": "^4.0.9",
+    "vite-imagetools": "^4.0.11",
     "xmlbuilder2": "^3.0.2",
     "unist-util-visit": "^4.1.1"
   },
