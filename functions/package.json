@@ -17,7 +17,7 @@
     "@google-cloud/bigquery": "^6.0.3",
     "@googleapis/sheets": "^3.0.2",
     "firebase-admin": "^11.1.0",
-    "firebase-functions": "^3.24.1",
+    "firebase-functions": "^4.0.0",
     "firebase-tools": "^11.14.3",
     "google-auth-library": "^8.5.2",
     "nodemailer": "^6.8.0",
