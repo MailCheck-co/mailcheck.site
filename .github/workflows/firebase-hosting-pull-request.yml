@@ -3,6 +3,12 @@
 
 name: Deploy to Firebase Hosting on PR
 'on': pull_request
+
+# cancel in-progress runs on new commits to same PR (gitub.event.number)
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+  cancel-in-progress: true
+  
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
