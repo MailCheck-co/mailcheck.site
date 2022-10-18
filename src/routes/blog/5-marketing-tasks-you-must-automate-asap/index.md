@@ -30,7 +30,7 @@ If you are not yet automating your social media routine, you are not getting the
 
 ### Analytics
 
-In order to understand whether your marketing campaigns are worth the efforts, you need to see some return on investment. Gathering all data across multiple spreadsheets and trying to put them into a report to get some actionable insights is feasible but also time-consuming and no longer effective. There are many marketing tools that can automate the data collection and reporting and do the job for you. [Morphio](https://appsumo.com/products/morphio/) in the past and HawkeAI in the present day is a marketing tool that analyses your digital marketing performance, goals, advertising budgets, and audience behaviour, so you can have quick and easy access to the most critical information and understand how well your marketing campaign is performing.
+In order to understand whether your marketing campaigns are worth the efforts, you need to see some return on investment. Gathering all data across multiple spreadsheets and trying to put them into a report to get some actionable insights is feasible but also time-consuming and no longer effective. There are many marketing tools that can automate the data collection and reporting and do the job for you. [Hawke.ai](https://hawke.ai/) in the present day is a marketing tool that analyses your digital marketing performance, goals, advertising budgets, and audience behaviour, so you can have quick and easy access to the most critical information and understand how well your marketing campaign is performing.
 
 ### Split testing
 
@@ -42,7 +42,7 @@ Automating your split testing routine will save you a lot of time and provide yo
 
 ### Marketing funnel
 
-As a business owner and a marketer, in particular, you strive to turn the majority of your leads (if not all) into buying customers. Creating an effective marketing funnel is one way to achieve this goal, and if you mix in a bit of automation, the number of your customers is guaranteed to increase. For instance, [PipeOne.me](https://appsumo.com/products/pipeoneme/?ref=best-match) allows you to consolidate all your messaging channels into one platform, simplifying your customer communication routine. Other tools enable your customer data to be automatically pulled directly into your CRM making it much easier for you to keep track of your leads and make those sales.
+As a business owner and a marketer, in particular, you strive to turn the majority of your leads (if not all) into buying customers. Creating an effective marketing funnel is one way to achieve this goal, and if you mix in a bit of automation, the number of your customers is guaranteed to increase. For instance, you can check and try some services, that allows you to consolidate all your messaging channels into one platform, simplifying your customer communication routine. Other tools enable your customer data to be automatically pulled directly into your CRM making it much easier for you to keep track of your leads and make those sales.
 
 ## Benefits of marketing automation
 
