@@ -22,7 +22,7 @@
     "optimize-svg": "find ./src ./static -name '*.svg' -print0 | xargs -0 -P16 -L20 npx svgo"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-env": "^7.20.2",
     "@nodeart/stylelint-config-nodeart": "^0.0.9",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
