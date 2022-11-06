@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
-    "@nodeart/stylelint-config-nodeart": "^0.0.9",
+    "@nodeart/stylelint-config-nodeart": "^0.0.10",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
