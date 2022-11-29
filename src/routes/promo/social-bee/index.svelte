@@ -6,8 +6,8 @@
 
   function copyPromoCode() {
     const type = "text/plain";
-    const blob = new Blob([promocode], { type });
-    const data = [new ClipboardItem({ [type]: blob })];
+    const blob = new Blob([promocode], {type});
+    const data = [new ClipboardItem({[type]: blob})];
 
     navigator.clipboard.write(data).then(
       () => {
