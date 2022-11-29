@@ -39,7 +39,9 @@
     id="email"
     placeholder="Email to verify"
     value={promocode}
+    disabled
     on:keydown={copyPromoCode}
+    on:mousedown={copyPromoCode}
   />
   <button type="button" class="btn-verify-email" on:click={copyPromoCode}/>
 
