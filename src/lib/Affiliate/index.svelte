@@ -35,7 +35,7 @@
           <a
             class="affiliate-btn"
             rel="external"
-            href="https://app.mailcheck.co/auth/login"
+            href="https://app.mailcheck.co/dashboard/settings"
             title="Invite now"
             target="_blank"
           >
