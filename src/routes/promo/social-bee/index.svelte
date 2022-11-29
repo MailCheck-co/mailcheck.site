@@ -4,6 +4,21 @@
 
   const promocode = "SBMailcheck60";
 
+  function copyPromoCode() {
+    const type = "text/plain";
+    const blob = new Blob([promocode], { type });
+    const data = [new ClipboardItem({ [type]: blob })];
+
+    navigator.clipboard.write(data).then(
+      () => {
+        /* success */
+      },
+      () => {
+        /* failure */
+      }
+    );
+  }
+
 </script>
 <main>
   <img src={sassb}/>
@@ -24,9 +39,9 @@
     id="email"
     placeholder="Email to verify"
     value={promocode}
-    on:keydown={()=>{}}
+    on:keydown={copyPromoCode}
   />
-  <button type="button" class="btn-verify-email" on:click={()=>{}}/>
+  <button type="button" class="btn-verify-email" on:click={copyPromoCode}/>
 
 
 </main>
