@@ -21,7 +21,16 @@ jobs:
           node-version: 18
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
-      - run: npm ci && npm run build
+      - name: Cache dependencies
+        id: cache
+        uses: actions/cache@v3
+        with:
+          path: ./node_modules
+          key: modules-${{ hashFiles('package-lock.json') }}
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci --ignore-scripts
+      - run: npm run build
         env:
           VITE_YOUTUBE_API_KEY: '${{ secrets.VITE_YOUTUBE_API_KEY }}'
       - uses: FirebaseExtended/action-hosting-deploy@v0
