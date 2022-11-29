@@ -8,7 +8,7 @@ name: Deploy to Firebase Hosting on PR
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
   cancel-in-progress: true
-  
+
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
