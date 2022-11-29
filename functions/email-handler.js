@@ -11,22 +11,27 @@ const config = functions.config();
 const ACTIONS = { PASS: 'pass', BLOCK: 'block' };
 const REJECT_REDIRECT_URL = config.mailcheck?.reject_redirect_url;
 const params = {
-    open: {
-        BQ_DATASET: config.mailcheck?.bq_mail_open_dataset,
-        BQ_TABLE: config.mailcheck?.bq_mail_open_table,
-        txtDomain: config.mailcheck.dns_txt_image_domain,
-        getSubdomain: q => q.image,
-        metaRedirect: (res, redirectUrl) => res.redirect(redirectUrl),
-        table: null
-    },
-    link: {
-        BQ_DATASET: config.mailcheck?.bq_mail_link_dataset,
-        BQ_TABLE: config.mailcheck?.bq_mail_link_table,
-        txtDomain: config.mailcheck.dns_txt_redirect_domain,
-        getSubdomain: q => q.redirect,
-        metaRedirect: (res, redirectUrl) => res.status(200).send(`<html><head><meta http-equiv="refresh" content="0;URL='${redirectUrl}'" /></head></html>`),
-        table: null
-    },
+  open: {
+    BQ_DATASET: config.mailcheck?.bq_mail_open_dataset,
+    BQ_TABLE: config.mailcheck?.bq_mail_open_table,
+    txtDomain: config.mailcheck.dns_txt_image_domain,
+    getSubdomain: (q) => q.image,
+    metaRedirect: (res, redirectUrl) => res.redirect(redirectUrl),
+    table: null
+  },
+  link: {
+    BQ_DATASET: config.mailcheck?.bq_mail_link_dataset,
+    BQ_TABLE: config.mailcheck?.bq_mail_link_table,
+    txtDomain: config.mailcheck.dns_txt_redirect_domain,
+    getSubdomain: (q) => q.redirect,
+    metaRedirect: (res, redirectUrl) =>
+      res
+        .status(200)
+        .send(
+          `<html><head><meta http-equiv="refresh" content="0;URL='${redirectUrl}'" /></head></html>`
+        ),
+    table: null
+  }
 };
 const dnsLinkCache = new Map();
 const dnsImageCache = new Map();
@@ -67,16 +72,17 @@ async function getRedirectUrl(subdomain, txtDomain) {
   return cachedUrl;
 }
 
-const inflateRedirectUrl = (r, q) => Object.entries(q).reduce(
-  (acc, val) => acc.replace(`<${val[0]}>`, val[1]),
-  decodeURI(r.toString())
-);
+const inflateRedirectUrl = (r, q) =>
+  Object.entries(q).reduce(
+    (acc, val) => acc.replace(`<${val[0]}>`, val[1]),
+    decodeURI(r.toString())
+  );
 
 /**
  * @param {string} subdomain
  * @return {Promise<buffer>}
  */
- async function getImage(subdomain, txtDomain) {
+async function getImage(subdomain, txtDomain) {
   const fullDomain = `${subdomain}.${txtDomain}`;
   let image = dnsImageCache.get(fullDomain)?.deref();
   if (!image) {
@@ -98,10 +104,10 @@ async function getAsn(ip) {
   try {
     const res = await request(`https://iptoasn-webservice.vercel.app/api/${ip}`);
     const json = await res.body.json();
-    const {as_country_code, as_description, as_number} = json;
-    return {as_country_code, as_description, as_number};
+    const { as_country_code, as_description, as_number } = json;
+    return { as_country_code, as_description, as_number };
   } catch (e) {
-    return {as_country_code: null, as_description: null, as_number: null};
+    return { as_country_code: null, as_description: null, as_number: null };
   }
 }
 
@@ -113,10 +119,13 @@ async function resolveUaAction(user_agent) {
   if (!user_agent) return ACTIONS.PASS;
   try {
     if (!uaBlocks) {
-      const res = await sheets.spreadsheets.values.get({spreadsheetId: config.sheets.sheet_id, range: config.sheets.ua_range});
-      uaBlocks = res.data.values.map(e => [new RegExp(e[0]), e[1]]);
+      const res = await sheets.spreadsheets.values.get({
+        spreadsheetId: config.sheets.sheet_id,
+        range: config.sheets.ua_range
+      });
+      uaBlocks = res.data.values.map((e) => [new RegExp(e[0]), e[1]]);
     }
-    const match = uaBlocks.find(e => e[0].test(user_agent));
+    const match = uaBlocks.find((e) => e[0].test(user_agent));
     if (match) {
       return match[1];
     }
@@ -134,17 +143,20 @@ async function resolveAsnAction(asn) {
   if (!asn) return ACTIONS.PASS;
   try {
     if (!asnBlocks) {
-      const res = await sheets.spreadsheets.values.get({spreadsheetId: config.sheets.sheet_id, range: config.sheets.asn_range});
+      const res = await sheets.spreadsheets.values.get({
+        spreadsheetId: config.sheets.sheet_id,
+        range: config.sheets.asn_range
+      });
       asnBlocks = {
-        numbers: res.data.values.filter(e => e[0] === 'num').map(e => [parseInt(e[1]), e[2]]),
-        regex: res.data.values.filter(e => e[0] === 'regex').map(e => [new RegExp(e[1]), e[2]]),
+        numbers: res.data.values.filter((e) => e[0] === 'num').map((e) => [parseInt(e[1]), e[2]]),
+        regex: res.data.values.filter((e) => e[0] === 'regex').map((e) => [new RegExp(e[1]), e[2]])
       };
     }
-    const numMatch = asnBlocks.numbers.find(e => e[0] === asn.as_number);
+    const numMatch = asnBlocks.numbers.find((e) => e[0] === asn.as_number);
     if (numMatch) {
       return numMatch[1];
     }
-    const regexMatch = asnBlocks.regex.find(e => e[0].test(asn.as_description));
+    const regexMatch = asnBlocks.regex.find((e) => e[0].test(asn.as_description));
     if (regexMatch) {
       return regexMatch[1];
     }
@@ -167,7 +179,10 @@ export default async function (req, res) {
   }
 
   const queryString = '?' + decodedParams.split('?').slice(1).join('?');
-  const query = [...(new URLSearchParams(queryString)).entries()].reduce((a,v) => (a[v[0]] = v[1], a), {});
+  const query = [...new URLSearchParams(queryString).entries()].reduce(
+    (a, v) => ((a[v[0]] = v[1]), a),
+    {}
+  );
   const typeParams = params[type];
   const redirectSubdomain = typeParams.getSubdomain(query) ?? '*';
   const ip = req.get('cf-connecting-ip') ?? req.get('fastly-client-ip');
@@ -197,14 +212,16 @@ export default async function (req, res) {
   try {
     if (type === 'open') {
       const image = await getImage(redirectSubdomain, typeParams.txtDomain);
-      await typeParams.table.insert({...row, status});
+      await typeParams.table.insert({ ...row, status });
       res.header('cache-control', 'no-cache');
       Readable.from(image).pipe(res);
       return;
     } else {
       const redirectUrl = await getRedirectUrl(redirectSubdomain, typeParams.txtDomain);
-      const inflatedRedirectUrl = isBlocked ? REJECT_REDIRECT_URL : inflateRedirectUrl(redirectUrl, query);
-      await typeParams.table.insert({...row, status});
+      const inflatedRedirectUrl = isBlocked
+        ? REJECT_REDIRECT_URL
+        : inflateRedirectUrl(redirectUrl, query);
+      await typeParams.table.insert({ ...row, status });
       res.redirect(inflatedRedirectUrl);
       return;
     }

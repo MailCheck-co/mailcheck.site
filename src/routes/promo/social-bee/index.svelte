@@ -1,13 +1,13 @@
 <script>
-  import sassb from "./sass-b.png"
+  import sassb from './sass-b.png';
   import ContactUs from '$lib/ContactUs/index.svelte';
 
-  const promocode = "SBMailcheck60";
+  const promocode = 'SBMailcheck60';
 
   function copyPromoCode() {
-    const type = "text/plain";
-    const blob = new Blob([promocode], {type});
-    const data = [new ClipboardItem({[type]: blob})];
+    const type = 'text/plain';
+    const blob = new Blob([promocode], { type });
+    const data = [new ClipboardItem({ [type]: blob })];
 
     navigator.clipboard.write(data).then(
       () => {
@@ -18,48 +18,89 @@
       }
     );
   }
-
 </script>
+
 <main>
-  <img src={sassb}/>
-
-
-  <h2>GET YOUR 60% OFF DISCOUNT</h2>
-  <h1>WELCOME TO MAILCHECK BLACK FRIDAY <span>DEAL</span></h1>
-  <p>We are giving a <span>60% discount for 1 year</span>, hurry up to catch this moment. Mailcheck.co is a
-    subscription-based product. Those who will use this promo code get discount for each month during the next 12
-    months.
-  </p>
-
-
-  <input
-    class="input input-verify"
-    type="email"
-    name="email"
-    id="email"
-    placeholder="Email to verify"
-    value={promocode}
-    disabled
-    on:keydown={copyPromoCode}
-    on:mousedown={copyPromoCode}
-  />
-  <button type="button" class="btn-verify-email" on:click={copyPromoCode}/>
-
-
+  <div class="row">
+    <div class="col">
+      <h2>GET YOUR 60% OFF DISCOUNT</h2>
+      <h1>WELCOME TO MAILCHECK BLACK FRIDAY <span>DEAL</span></h1>
+      <p>
+        We are giving a <span>60% discount for 1 year</span>, hurry up to catch this moment.
+        Mailcheck.co is a subscription-based product. Those who will use this promo code get
+        discount for each month during the next 12 months.
+      </p>
+    </div>
+    <div class="col right">
+      <img src={sassb} />
+      <div class="field">
+        <input
+          class="input input-verify"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email to verify"
+          value={promocode}
+          disabled
+          on:keydown={copyPromoCode}
+          on:mousedown={copyPromoCode}
+        />
+        <button type="button" class="btn-verify-email" on:click={copyPromoCode}>
+          Copy Promocode
+        </button>
+      </div>
+    </div>
+  </div>
 </main>
-<ContactUs/>
+<ContactUs />
 
 <style lang="scss">
   main {
     --heading-color: #ffffff;
     --promo-color: #9747ff;
-    padding: 30px;
-    min-height: 500px;
+    padding: var(--size-30) 5.625rem;
+    min-height: 31.25rem;
+
+    .row {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      justify-content: space-between;
+
+      @media all and (min-width: 992px) {
+        flex-flow: row wrap;
+      }
+
+      .col {
+        max-width: 40%;
+        width: auto;
+        flex: 1 0 auto;
+        text-align: center;
+        margin-bottom: var(--size-30);
+
+        @media all and (min-width: 992px) {
+          margin-bottom: 0;
+          text-align: left;
+        }
+
+        &.right {
+          img {
+            margin-bottom: 2rem;
+          }
+
+          .field {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
   }
 
   img {
     width: 50%;
-    min-width: 300px;
+    min-width: 18.75rem;
   }
 
   span {
@@ -68,7 +109,7 @@
 
   .input-verify {
     position: relative;
-    margin-bottom: var(--size-8);
+    margin-bottom: 0;
     padding: var(--size-20) var(--size-46) var(--size-18) var(--size-16);
     background-color: var(--dark-01);
     border-color: var(--transparent);
@@ -89,18 +130,22 @@
   }
 
   .btn-verify-email {
-    position: absolute;
     top: var(--size-8);
     right: var(--size-6);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--size-38);
-    height: var(--size-36);
+    min-width: 10rem;
+    margin-left: 1rem;
+    height: 3.25rem;
     background-color: var(--color-progress);
     border: none;
     border-radius: var(--size-6);
     transition: 0.35s;
+    color: var(--primary-white);
+    font-weight: var(--weight-700);
+    font-size: var(--size-14);
+    text-transform: uppercase;
 
     &:hover {
       transform: translateX(var(--size-2));

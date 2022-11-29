@@ -10,7 +10,7 @@ name: Deploy to Firebase Hosting on merge
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
   cancel-in-progress: true
-  
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
