@@ -55,7 +55,7 @@
     "firebase-tools": "^11.19.0",
     "schema-dts": "^1.1.0",
     "tslib": "^2.4.1",
-    "typescript": "^4.9.3",
+    "typescript": "^4.9.4",
     "vite": "^3.2.5",
     "vite-imagetools": "^4.0.12",
     "xmlbuilder2": "^3.0.2",
