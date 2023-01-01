@@ -50,7 +50,7 @@
     "stylelint-config-prettier-scss": "^0.0.1",
     "svelte": "^3.52.0",
     "svelte-check": "^2.10.1",
-    "just-camel-case": "^6.1.1",
+    "just-camel-case": "^6.2.0",
     "svelte-preprocess": "^4.10.7",
     "firebase-tools": "^11.19.0",
     "schema-dts": "^1.1.0",
