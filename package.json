@@ -52,7 +52,7 @@
     "svelte-check": "^3.0.2",
     "just-camel-case": "^6.2.0",
     "svelte-preprocess": "^4.10.7",
-    "firebase-tools": "^11.20.0",
+    "firebase-tools": "^11.21.0",
     "schema-dts": "^1.1.0",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4",
