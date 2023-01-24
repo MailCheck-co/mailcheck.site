@@ -57,7 +57,7 @@
     "tslib": "^2.4.1",
     "typescript": "^4.9.4",
     "vite": "^3.2.5",
-    "vite-imagetools": "^4.0.13",
+    "vite-imagetools": "^4.0.16",
     "xmlbuilder2": "^3.0.2",
     "unist-util-visit": "^4.1.1"
   },
