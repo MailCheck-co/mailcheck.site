@@ -5,14 +5,14 @@ date: 06.04.2019
 readingTime: 3 min read
 snippet: When you launch a new email marketing campaign it doesn’t matter whether you have managed to make a good strategy, write an extra-selling content or provide a super valuable service if at the end your email won’t reach the potential client.
 description: How to increase email deliverability. Х practical tips from professional email marketers. Forms, attachments, fonts, word spam, mailing list checking, copywriting, and more
-thumbnailImg: ./increase-emails-deliverability-img2.jpg?format=jpg&width=880
+thumbnailImg: ./email-alert-popup-reminder-concept.jpg?format=jpg&width=880
 ---
 
 # X WAYS TO INCREASE EMAILS DELIVERABILITY
 
 {readingTime}
 
-![Emails Deliverability](./increase-emails-deliverability-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Emails Deliverability](./email-alert-popup-reminder-concept.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 When you launch a new email marketing campaign it doesn’t matter whether you have managed to make a good strategy, write an extra-selling content or provide a super valuable service if at the end your email won’t reach the potential client.
 
@@ -74,7 +74,7 @@ Even if your mailing list is collected only from the addresses that have passed 
 
 With double-opt-in authorization you send a subscriber an additional email where you ask him to click activation link to confirm subscription. Thus, there is no chance for you to get a wrong email address in your mailing list.
 
-![Increase Deliverability](./increase-emails-deliverability-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Increase Deliverability](./account-verification-with-password-3d-padlock.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## 13\. Always Add a Subscription Refusal Link to Your Letter
 

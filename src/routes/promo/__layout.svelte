@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Seo from "$lib/Seo/index.svelte";
-  import {websiteSchema} from "$utils/json-ld.js";
+  import Seo from '$lib/Seo/index.svelte';
+  import { websiteSchema } from '$utils/json-ld.js';
 </script>
 
 <Seo
@@ -11,4 +11,3 @@
   canonical="/"
 />
 <slot />
-
