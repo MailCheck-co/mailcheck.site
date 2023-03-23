@@ -14,7 +14,7 @@
     "node": "16"
   },
   "dependencies": {
-    "@google-cloud/bigquery": "^6.1.0",
+    "@google-cloud/bigquery": "^6.2.0",
     "@googleapis/sheets": "^4.0.2",
     "firebase-admin": "^11.5.0",
     "firebase-functions": "^4.2.1",
