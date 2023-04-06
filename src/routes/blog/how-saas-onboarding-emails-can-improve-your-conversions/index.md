@@ -8,7 +8,7 @@ description: Making sure the email addresses entered by your users are valid pre
 thumbnailImg: ./saas.jpg?format=jpg&width=880
 ---
 
-# Effective email-marketing in 2022
+# {title}
 
 {readingTime}
 
@@ -18,8 +18,8 @@ I understand how important it is to turn trial users into paying customers becau
 
 Making sure the email addresses entered by your users are valid presents one of the biggest challenges for onboarding emails. The effectiveness of your campaign can be affected by invalid email addresses that prevent your emails from reaching the intended recipients. I’ve discovered that using an email validation service like Mailcheck can be very helpful in resolving this issue.
 
-Mailcheck is an email validation service that can check the validity of an email address in real-time. When a user enters their email address during the sign-up process, Mailcheck checks the address against its database of known domains and top-level domains to ensure that it’s valid. If the email address is invalid or has a typo, Mailcheck suggests a correction to the user, preventing lost leads and improving the overall quality of your email list.
-Apart from Mailcheck, creating a personalized welcome email series is also crucial to improving conversions. The welcome email series is the foundation of your onboarding email campaign. It’s the first point of contact with your users, and it sets the tone for the rest of the onboarding process. That’s why I put a lot of thought into creating a personalized welcome email series that resonates with my users.
+[Mailcheck](/) is an email validation service that can check the validity of an email address in real-time. When a user enters their email address during the sign-up process, Mailcheck checks the address against its database of known domains and top-level domains to ensure that it’s valid. If the email address is invalid or has a typo, Mailcheck suggests a correction to the user, preventing lost leads and improving the overall quality of your email list.
+Apart from [Mailcheck](/), creating a personalized welcome email series is also crucial to improving conversions. The welcome email series is the foundation of your onboarding email campaign. It’s the first point of contact with your users, and it sets the tone for the rest of the onboarding process. That’s why I put a lot of thought into creating a personalized welcome email series that resonates with my users.
 
 ## Overview of Welcome Email Series and its Content
 
