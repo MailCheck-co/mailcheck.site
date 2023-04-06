@@ -36,7 +36,7 @@ Sending people an email asking for their feedback is one of the ways I solicit i
 
 Building trust and loyalty with your users also involves giving them value. They should receive information that is pertinent to their needs and useful in every email. For instance, if you provide a project management tool, you might send an email with project management advice.
 
-Mailcheck is an email validation service that can be a valuable addition to your onboarding email campaign. When a user signs up for your product, they may mistype their email address, which can lead to bounced emails and lost conversions. Mailcheck checks the user’s email address for common typos and errors and suggests corrections, reducing the likelihood of bounced emails.
+[Mailcheck](/) is an email validation service that can be a valuable addition to your onboarding email campaign. When a user signs up for your product, they may mistype their email address, which can lead to bounced emails and lost conversions. Mailcheck checks the user’s email address for common typos and errors and suggests corrections, reducing the likelihood of bounced emails.
 
 By integrating Mailcheck into your onboarding email campaign, you can ensure that your emails are reaching the right inbox and increase the chances of converting trial users into loyal customers. The personalized welcome email series can include a message that thanks the user for signing up and asks them to confirm their email address. Mailcheck can be used in this step to suggest corrections if needed.
 
@@ -46,6 +46,6 @@ Triggered emails can also benefit from Mailcheck. For example, if a user creates
 
 It’s crucial to gauge the success of your onboarding email campaign using metrics such as open rates, click-through rates, and conversion rates in addition to Mailcheck. You can use these metrics to assess the effectiveness of your emails and make necessary adjustments. You can compare different versions of your emails using A/B testing to make sure they are optimized for the most conversions.
 
-In conclusion, onboarding emails are a powerful tool for converting trial users into loyal customers. By creating a personalized welcome email series, using triggered emails to encourage engagement, soliciting user feedback, providing value, using Mailcheck to validate email addresses, and measuring success with metrics, you can improve your conversion rates and grow your business.
+In conclusion, onboarding emails are a powerful tool for converting trial users into loyal customers. By creating a personalized welcome email series, using triggered emails to encourage engagement, soliciting user feedback, providing value, using [Mailcheck](/) to validate email addresses, and measuring success with metrics, you can improve your conversion rates and grow your business.
 
 _Read more in other useful articles on our [blog](/blog)._
