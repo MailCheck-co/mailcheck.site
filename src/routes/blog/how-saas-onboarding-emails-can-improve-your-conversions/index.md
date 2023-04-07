@@ -12,7 +12,7 @@ thumbnailImg: ./saas.jpg?format=jpg&width=880
 
 {readingTime}
 
-![SaaS Onboarding Emails](./saas.jpg??format=webp;jpg;png;avif&srcset&width=880)
+![SaaS Onboarding Emails](./saas.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 I understand how important it is to turn trial users into paying customers because I am a SaaS product owner. I’ve tried several strategies to optimize my onboarding procedure over the years, and I’ve discovered that onboarding emails are one of the best ways to increase conversions. I’ll share my knowledge and perspectives on how onboarding emails can help you turn trial users into devoted customers in this article.
 
