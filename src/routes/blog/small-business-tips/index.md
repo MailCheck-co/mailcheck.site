@@ -37,8 +37,6 @@ How to make the subscription process easy:
 
 It should all be easy and intuitive for user no matter whether you are making subscription forms or CTA buttons.
 
-![Email Marketing for Small Business](./email-marketing-for-small-business-tips-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Make Clear Offers
 
 No one wants to get spam on their emails. You too do not want to send spam emails because it is very bad for your sender reputation. In our article you can read how to make efficient mailings and in the meantime keep a good reputation in the eyes of the ESPs.

@@ -39,8 +39,6 @@ There are several things you can do to comply this requirement:
 
 You only can be assured that email belongs to the user at the moment of its confirmation. You do not know what the user will make afterwards - transfer it to someone another, delete or abandoned. That is why you need to comply the following requirement.
 
-![Email Address Validation](./right-approach-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Email Address Is Still Used by The User That Has Subscribed to Our Newsletter
 
 Even in case the email address is valid know it can get invalid in future just because the user has deleted, abandoned or transferred a valid email address to another person. Such a thing doesn’t depend on you, so all you can do is to follow the recommendations below.

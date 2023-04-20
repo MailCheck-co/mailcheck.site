@@ -21,10 +21,6 @@ An email blast is probably no longer the best email marketing practice, as many 
 1. Your unsubscribe rate will increase dramatically (which is not something you expect your email campaign to bring you).
 2. Having a significant bounce rate will compromise the credibility of your email marketing campaign in particular and your business overall.
 
-![Email campaign results](./digital_savvy.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
-Source: Digital Savvy
-
 So what must one do in order to avoid the above consequences and have their email blast work out for the best? We have assembled four essential steps to help your email blast, or email campaign, get delivered, and bring some meaningful results.
 
 ## Steps to help your email campaign bring results.

@@ -28,8 +28,6 @@ Your server already had an information about your preferences and was able to ma
 
 Of course, the coffee house in our example introduced their macaroons on the menu for a broader audience. But they targeted this offer to you - someone who drinks cappuccino and don’t mind trying something new. People-based marketing focuses on persons instead of groups. People love it when you show they matter, when you invest time to find a solution to their problem.
 
-![Why Your Marketing Should Be People-Based](./marketing-people-based.png?format=webp;jpg;png;avif&srcset&width=880)
-
 ## MARKETING is constant research and testing
 
 If you’re going to change your approach, the first thing you need to consider - is you find your customers, the people who will support and promote your brand. You should try different channels and shouldn’t rely on proven methods. Some of them are outdated and will not show the proper result.

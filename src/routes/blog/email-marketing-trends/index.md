@@ -28,8 +28,6 @@ Preparation of newsletters stops looking like a disaster and can turn into an ea
 
 Mailing services have powerful tools to segmentate and [personalize newsletters](/blog/personalize-your-newsletter-and-increase-sales). Using those you can send clients content based on the analysis of their previous actions - you look what they've opened, links they have pressed, etc. Thus, without automation it is going to be hard for you to compete with other companies and keep your mailing on high level.
 
-![Marketing for Small Business](./email-marketing-trends-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Deep Segmentation and Personalization
 
 It always has been a good idea to conduct deep segmentation and personalization for your newsletter. However, it is more than a good idea - it is also possible thanks to the majority of the online tools provided by the email marketing automation tools. We have reviewed personalization in details in [our previous article](/blog/personalize-your-newsletter-and-increase-sales). Still here we will disclose the basic points to consider.

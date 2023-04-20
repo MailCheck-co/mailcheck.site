@@ -48,8 +48,6 @@ People get more engaged when you cause the positive reactions and using humour i
 
 Just be careful with the formatting. Some of the ESPs are not fond of rich media content letters.
 
-![Email Marketing Approach](./email-marketing-approach-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Choose The Conversation Style
 
 80% of users stand on the position that the way you talk with them matters so conversation style you exploit matters, especially when it comes to the first letters you send. Analyze your audience thoroughly and work out your own linguistic formulas that can be applied to your readers and clients. However, if you choose informal style still do not use salty language - it disaffects 70% of readers.

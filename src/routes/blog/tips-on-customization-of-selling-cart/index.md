@@ -30,8 +30,6 @@ In order to motivate a client to make a purchase you need to make it display in 
 - Near the cart icon, there should be a list of the products put there with their prices and the overall sum
 - If there is even one product in the cart then its icon should display that, notifying the customer that cart is not empty anymore.
 
-![Customization of Selling Cart](./selling-cart-customization-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Cart Mechanism - Basic Functions
 
 After the customer has chosen products to put in the cart he has to be redirected to the checkout page to create an order:

@@ -5,11 +5,14 @@ date: 18.04.2019
 readingTime: 3 min read
 snippet: A CSV file is an acronym for Comma Separated Values File that presents a file with values separated (delimited) by commas. A CVS file is a text format file designed to depict spreadsheet data.
 description: CSV (Comma Separated Values) file - theoretical aspects and practical usage. Structure. How to create, open and convert a CSV file
+thumbnailImg: ./csv.jpg?format=jpg&width=880
 ---
 
 # CSV FILE - THEORETICAL ASPECTS AND PRACTICAL USAGE
 
 {readingTime}
+
+![CSV file](./csv.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 A CSV file is an acronym for Comma Separated Values File that presents a file with values separated (delimited) by commas. A CVS file is a text format file designed to depict spreadsheet data.
 

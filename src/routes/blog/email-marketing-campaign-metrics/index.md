@@ -32,8 +32,6 @@ In case the HTML-letter is opened by the subscriber more than one time there wil
 
 [Normal opening rate can vary depending on the type of business and letters.](/blog/here-is-why-you-have-poor-open-rate) However, opening rate is not the most accurate metrics as you do not know how many users watched your letter in the plain text mode.
 
-![Email Marketing Campaign Metrics](./marketing-campaign-metrics-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 ## CTR
 
 This metrics shows the share of subscribers that have clicked one of the links in your letter - it also could be a button or image. When the click rate is counted all clicks are considered.

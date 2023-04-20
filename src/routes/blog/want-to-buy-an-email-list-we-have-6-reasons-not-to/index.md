@@ -18,8 +18,6 @@ Adestra and Ascend have conducted a survey, which results showed that a half of 
 
 We can compare an email list with Internet gold. Mine it, do it right, leverage its opportunities and you will succeed. However, you need more than a few bucks to buy it from vendors. They may promise you the Earth, but there are several reasons why you should never listen to them.
 
-![email list](./email-list.png?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Selling email addresses is actually illegally
 
 First, buying an email list may be against the law, depending on your country. Even if buying is not, using it is definitely against. Yeah, it seems we have the “free” internet and modern marketing world calls for desperate measures, but there are strict rules, consumer protections and guidelines. All over the world there are regulations protecting inboxes, such as GDPR in Europe, CAN-SPAM in the US of CASL in Canada. They are needed to protect consumers. There regulations require marketers to send any emails only with permission. And the buying of an email list does not suggest you’ve obtained that.

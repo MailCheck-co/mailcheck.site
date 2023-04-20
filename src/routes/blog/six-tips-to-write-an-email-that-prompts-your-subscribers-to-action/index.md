@@ -34,8 +34,6 @@ Even though the numbers above imposingly tell us to push for email marketing, do
 
 It is acceptable to highlight several things in your email. However, do not let those overshadow the main message. Your message could come across unclear and customers will lose interest in reading further. Make sure your email has a core point and let the rest of the information remain secondary.
 
-![subscribers to-action](./simple-action.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Don't enforce sales content too much
 
 Clearly, the ultimate goal is to gain customers’ loyalty and subsequently earn profit. However, stuffing your email with sales content only will come off as pushy and somewhat aggressive. After all, making each and every email in your newsletter campaign a special offer may get your customers thinking how “special” is your “special offer”. Instead, try to balance the content by making it 10% sales and 90% educative.

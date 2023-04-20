@@ -41,8 +41,6 @@ According to it:
 
 You may think people are closed when it comes to sharing their data. Although, they are waiting for better offers and are more open in exchange for it. Many of them are looking forward to receiving this type of communication from you. Use the information you get from them wisely and make sure you have such offers. Personalization along with the bulk email validation service can affect your sales. [Cold mailing is a thing of the past](/blog/10-tips-to-warm-up-your-cold-emails). They annoy, cause rejection and the desire to send your message to spam.
 
-![email personalization marketing](./email-personalization-marketing.png?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Top channels marketers use nowadays
 
 **We picked up the statistics about this type of communication as well. Here are the top channels marketers use nowadays:**

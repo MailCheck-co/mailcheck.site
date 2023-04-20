@@ -18,10 +18,6 @@ With the coronavirus hitting hard on the economy worldwide, not only retailers h
 
 As a growing number of consumers refrain from going out and doing in-store shopping and more and more shops shutting down due to the pandemic, many retailers gear their marketing efforts towards online platforms even more than they did before.
 
-![Email marketing](./email-marketing-during-post-covid-19.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
-Source: DundeeMail List Services
-
 As a vivid example, many food stores have implemented online ordering as well as curbside delivery - a service, that became especially popular in these challenging pandemic times, as larger crowds of people prefer to shop online. Getting the message out to those customers was a no brainer. Big retailers like Walmart Inc reached out to its customers via **email** with a message that read “We’ve enhanced Drive Up with your safety in mind. No signature required and we’ll load your trunk, too.”
 
 It is not a secret, that online marketing is probably the most utilized tool when trying to get the message across to the consumer. But during the post-pandemic times business owners may consider pushing for it even harder.

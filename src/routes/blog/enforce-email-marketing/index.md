@@ -50,8 +50,6 @@ There are two common mistakes made by the businesses - they do not make email ca
 
 Proper newsletter can motivate a user to make spontaneous purchases. If you make a special offer after segmentation of clients that fits user’s needs you can see that during 24 hours after the letters are sent your sales rapidly grow. That is the effect that can hardly be reached with SMM or context campaigns. All you need to do is to make a selling CTA inside your letter.
 
-![Email Marketing for Your Business](./reasons-to-enforce-email-marketing-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 ## Easy to Start and Abandon
 
 Launching email marketing campaign is much easier than making a selling website or creating and leading an account in social networks. You do not need any technical skills or budget. Proper newsletter can be created on your own in several clicks. Just write a short text, add some media, make a list of your subscribers and go on. In case you need to re-consider the campaign you always can take a pause without any reputational risks.
