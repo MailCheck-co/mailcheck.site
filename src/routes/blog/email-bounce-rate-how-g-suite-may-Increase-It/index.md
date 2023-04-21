@@ -1,6 +1,5 @@
 ---
 published: true
-slug: paid-g-suite-may-increase-email-bounce-rate
 title: Email Bounce Rate. How G-Suite May Increase It
 date: 07.06.2022
 readingTime: 4 min read
