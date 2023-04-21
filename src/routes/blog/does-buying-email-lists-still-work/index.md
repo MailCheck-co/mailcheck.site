@@ -8,7 +8,7 @@ description: Hidden drawbacks of buying email lists. Reputation, legal implement
 thumbnailImg: ./easyspace.jpg?format=jpg&width=880
 ---
 
-# Does buying email lists still work?
+# {title}
 
 {readingTime}
 

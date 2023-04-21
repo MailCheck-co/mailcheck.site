@@ -8,7 +8,7 @@ description: Why the email APIs are the efficient tool to send and manage emails
 thumbnailImg: ./mailbox-verification.jpg?format=jpg&width=880
 ---
 
-# What is email API and why do I need one?
+# {title}
 
 {readingTime}
 

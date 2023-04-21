@@ -8,7 +8,7 @@ description: We singled out reasons to enforce email marketing in your business.
 thumbnailImg: ./reasons-to-enforce-email-marketing-img2.jpg?format=jpg&width=880
 ---
 
-# 7 REASONS TO ENFORCE EMAIL MARKETING
+# {title}
 
 {readingTime}
 

@@ -8,7 +8,7 @@ description: How to make SUBSCRIBERS love YOUR EMAILS? Let’s take a closer loo
 thumbnailImg: ./subscribers.jpeg?format=jpg&width=880
 ---
 
-# DO SUBSCRIBERS LOVE YOUR EMAILS?
+# {title}
 
 {readingTime}
 

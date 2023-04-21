@@ -1,6 +1,6 @@
 ---
 published: true
-title: Email Marketing Trends 2019
+title: EMAIL MARKETING TRENDS FOR A SMALL BUSINESS
 date: 26.04.2019
 readingTime: 3 min read
 snippet: Email marketing trends in 2019 have changed dramatically. However, some things remain unchanged. It is still important to provide high-quality content as users deal with a huge amount of content on a daily basis. One more thing that remains unchanged is the fact that the ROI of email marketing remains outstanding, and it is still the most efficient way to communicate with your clients online. Although we see that the approach to email marketing for small business has changed a little bit in 2019.
@@ -8,7 +8,7 @@ description: Email marketing trends 2019 for small businesses. Newsletter automa
 thumbnailImg: ./email-marketing-trends-img-1.jpg?format=jpg&width=880
 ---
 
-# EMAIL MARKETING TRENDS FOR A SMALL BUSINESS
+# {title}
 
 {readingTime}
 

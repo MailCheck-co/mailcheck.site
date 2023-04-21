@@ -8,7 +8,7 @@ description: How emails validation api can and will increase your e-commerce con
 thumbnailImg: ./email-for-everything.jpg?format=jpg&width=880
 ---
 
-# EMAIL VALIDATION API WILL INCREASE CONVERSION
+# {title}
 
 {readingTime}
 

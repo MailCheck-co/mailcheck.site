@@ -1,6 +1,6 @@
 ---
 published: true
-title: Email Marketing Campaign Metrics
+title: EMAIL MARKETING CAMPAIGN METRICS FOR SMALL BUSINESS
 date: 21.04.2019
 readingTime: 3 min read
 snippet: Email marketing metrics are used to analyze efficiency of the marketing campaign.There can be different tasks and goals for an email marketing campaign launched by a small business - the number of registrations, purchases, opening rate etc. For each of the task and goal we make a separate metric. Email marketer has to consider these metrics and monitor them for decision-making purposes.
@@ -8,7 +8,7 @@ description: Email marketing campaign metrics for small businesses. What these m
 thumbnailImg: ./marketing-campaign-metrics-img1.jpg?format=jpg&width=880
 ---
 
-# EMAIL MARKETING CAMPAIGN METRICS FOR SMALL BUSINESS
+# {title}
 
 {readingTime}
 

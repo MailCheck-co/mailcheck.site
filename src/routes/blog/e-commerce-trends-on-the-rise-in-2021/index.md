@@ -8,7 +8,7 @@ description: Main trends in e-commerce that wait for us in 2021. Advertising, em
 thumbnailImg: ./digital-advertising.png?format=jpg&width=880
 ---
 
-# E-COMMERCE TRENDS ON THE RISE IN 2021
+# {title}
 
 {readingTime}
 

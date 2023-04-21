@@ -1,6 +1,6 @@
 ---
 published: true
-title: Email Blasts
+title: EMAIL BLASTS. WHAT THEY ARE
 date: 25.06.2020
 readingTime: 7 min read
 snippet: Ever wondered what an email blast is? Well, someone may call it an email campaign, which it is to a certain degree. An email blast, in its essence, is an unpersonalized email sent to a large number of subscribers. An email blast is used to target all your subscribers at once with the ultimate goal to draw traffic to your site or increase sales. The recipients of an email blast are not typically targeted in a strategic manner.
@@ -8,7 +8,7 @@ description: EMAIL BLASTS. WHAT THEY ARE AND HOW TO MANAGE THEM RIGHT. Essential
 thumbnailImg: ./digital_savvy.jpg?format=jpg&width=880
 ---
 
-# EMAIL BLASTS. WHAT THEY ARE
+# {title}
 
 {readingTime}
 

@@ -1,6 +1,6 @@
 ---
 published: true
-title: WHY YOUR MARKETING SHOULD BE PEOPLE-BASED
+title: PEOPLE-BASED MARKETING, WHY YOU SHOULD USE IT?
 date: 30.03.2022
 readingTime: 4 min read
 snippet: Have you ever heard about the term “people-based marketing?” It’s impossible only if you completely fell out of the sphere for a while. However, let us give you a more in-depth definition, even if you guess what it describes.
@@ -8,7 +8,7 @@ description: People-based marketing focuses on people instead of groups because 
 thumbnailImg: ./marketing-people-based.png?format=jpg&width=880
 ---
 
-# PEOPLE-BASED MARKETING, WHY YOU SHOULD USE IT?
+# {title}
 
 {readingTime}
 

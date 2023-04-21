@@ -8,7 +8,7 @@ description: MailCheck and clean email lists, high deliverability, sender reputa
 thumbnailImg: ./email-notification-woman.jpg?format=jpg&width=880
 ---
 
-# How Mailcheck can help your business
+# {title}
 
 {readingTime}
 

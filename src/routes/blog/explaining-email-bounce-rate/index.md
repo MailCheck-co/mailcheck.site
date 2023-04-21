@@ -8,7 +8,7 @@ description: Explaining email bounce rate and ways to reduce it. Type of bounces
 thumbnailImg: ./bounce-rate-img-1.jpg?format=jpg&width=880
 ---
 
-# EMAIL BOUNCE RATE: EXPLAINING AND REDUCEING
+# {title}
 
 {readingTime}
 

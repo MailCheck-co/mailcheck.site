@@ -8,7 +8,7 @@ description: What is sender's reputation, and what does it depend on. How to Tra
 thumbnailImg: ./senders-reputation-img-1.jpg?format=jpg&width=880
 ---
 
-# Sender’s reputation. All you need to know
+# {title}
 
 {readingTime}
 

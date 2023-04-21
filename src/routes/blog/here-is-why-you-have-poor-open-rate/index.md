@@ -8,7 +8,7 @@ description: You have a poor open rate. Reasons and some tips that can change th
 thumbnailImg: ./sending-emails.png?format=jpg&width=880
 ---
 
-# Low Open Rate. What Can You Do
+# {title}
 
 {readingTime}
 

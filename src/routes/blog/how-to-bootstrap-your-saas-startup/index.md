@@ -8,7 +8,7 @@ description: Bootstrap your saas startup? A closer look at what exactly constitu
 thumbnailImg: ./right-development-team.jpg?format=jpg&width=880
 ---
 
-# How to Bootstrap Your SaaS Startup
+# {title}
 
 {readingTime}
 

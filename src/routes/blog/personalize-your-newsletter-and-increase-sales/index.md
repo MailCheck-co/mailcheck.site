@@ -1,6 +1,6 @@
 ---
 published: true
-title: How to personalize the newsletter and increase sales?
+title: NEWSLETTER PERSONALIZATION AND SALES
 date: 24.04.2019
 readingTime: 3 min read
 snippet: Successful email marketing strategy development considers you know about your clients much more than just their email address. You also need to be aware of their tastes and expectations. That is the only way to make them loyal to your brand. In this article we are going to disclose useful tips that can help you personalize newsletter and make it engaging for your clients.
@@ -8,7 +8,7 @@ description: How you can personalize your newsletter. Which user data you can ex
 thumbnailImg: ./report-newsletter-update-subscribe-information.jpg?format=jpg&width=880
 ---
 
-# NEWSLETTER PERSONALIZATION AND SALES
+# {title}
 
 {readingTime}
 

@@ -8,7 +8,7 @@ description: How to make your cold emails effective. 10 important things you nee
 thumbnailImg: ./cold-emails.jpg?format=jpg&width=880
 ---
 
-# 10 tips to warm up your mailing
+# {title}
 
 {readingTime}
 

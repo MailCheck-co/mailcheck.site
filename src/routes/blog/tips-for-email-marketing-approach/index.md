@@ -8,7 +8,7 @@ description: 10 Tips for Email Marketing Approach. We talk about emails delivery
 thumbnailImg: ./email-marketing-approach-img2.jpg?format=jpg&width=880
 ---
 
-# 10 TIPS FOR EMAIL MARKETING APPROACH
+# {title}
 
 {readingTime}
 

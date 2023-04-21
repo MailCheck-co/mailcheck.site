@@ -8,7 +8,7 @@ description: Why shouldn't you launch mail server at home. How spammers can use 
 thumbnailImg: ./hosting-email-img-1.jpg?format=jpg&width=880
 ---
 
-# WHY HOSTING EMAIL AT HOME ISN'T A GOOD IDEA
+# {title}
 
 {readingTime}
 

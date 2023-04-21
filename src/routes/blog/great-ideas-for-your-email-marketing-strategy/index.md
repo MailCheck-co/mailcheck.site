@@ -1,6 +1,6 @@
 ---
 published: true
-title: MUST HAVE FOR YOUR EMAIL MARKETING STRATEGY
+title: EMAIL MARKETING - stay up-to-date
 date: 21.02.2022
 readingTime: 3 min read
 snippet: Nowadays, all industries are ever-changing, and it is very important to stay up-to-date. Especially when it goes about email marketing. If you’re not keeping abreast of the trends that come to go, you’re out of market, out of competition. It is a terrible feeling that you have missed on something, haven’t done all possible to capitalize on the power of your email list. Ok, you’re using email validation tool (if you are), but is it enough?
@@ -8,7 +8,7 @@ description: Email marketing trends that already a must-have for powerful market
 thumbnailImg: ./get-ideas-for-email.svg
 ---
 
-# EMAIL MARKETING - stay up-to-date
+# {title}
 
 {readingTime}
 

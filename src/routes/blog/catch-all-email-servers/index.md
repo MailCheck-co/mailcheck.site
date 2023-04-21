@@ -8,7 +8,7 @@ description: What do you need to know about catch-all email servers? Types of ca
 thumbnailImg: ./catch-all-servers-img2.jpg?format=jpg&width=880
 ---
 
-# CATCH-ALL EMAIL SERVERS: WHAT YOU NEED TO KNOW
+# {title}
 
 {readingTime}
 

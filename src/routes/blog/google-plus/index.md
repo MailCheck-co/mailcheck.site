@@ -8,7 +8,7 @@ description: GOOGLE+ is shutting down. A closer look at the process of Google’
 thumbnailImg: ./google-plus-img-1.jpg?format=jpg&width=880
 ---
 
-# GOOGLE+ IS SHUTTING DOWN. SO WHAT?
+# {title}
 
 {readingTime}
 

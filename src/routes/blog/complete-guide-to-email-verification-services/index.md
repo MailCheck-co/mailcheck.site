@@ -1,6 +1,6 @@
 ---
 published: true
-title: Email verification services. The guide to use
+title: EMAIL VERIFICATION SERVICES. THE COMPLITE GUIDE TO USE
 date: 17.03.2019
 readingTime: 3 min read
 snippet: Email verification service is provided to ensure your letters reach inboxes of real customers. It helps you to increase the outcome from your email marketing campaigns as you get updated data on the actuality of your mailing list. Below you can find out all you need to know about email address verification.
@@ -8,7 +8,7 @@ description: Guide to Email Verification Services. Grounding & Disclosing Valida
 thumbnailImg: ./guide-img1.jpg?format=jpg&width=880
 ---
 
-# EMAIL VERIFICATION SERVICES. THE COMPLITE GUIDE TO USE
+# {title}
 
 {readingTime}
 

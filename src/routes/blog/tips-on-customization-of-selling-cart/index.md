@@ -8,7 +8,7 @@ description: How to customize the selling cart in the online store. Cart Mechani
 thumbnailImg: ./selling-cart-customization-img-1.jpg?format=jpg&width=880
 ---
 
-# CUSTOMIZATION OF SELLING CART: X TIPS
+# {title}
 
 {readingTime}
 

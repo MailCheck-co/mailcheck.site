@@ -8,7 +8,7 @@ description: All you need to know about automation, marketing & email platforms.
 thumbnailImg: ./screen2.png?format=jpg&width=880
 ---
 
-# MAILCHECK INTEGRATIONS
+# {title}
 
 {readingTime}
 

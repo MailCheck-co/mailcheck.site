@@ -8,7 +8,7 @@ description: How to increase email deliverability. Х practical tips from profes
 thumbnailImg: ./email-alert-popup-reminder-concept.jpg?format=jpg&width=880
 ---
 
-# X WAYS TO INCREASE EMAILS DELIVERABILITY
+# {title}
 
 {readingTime}
 
