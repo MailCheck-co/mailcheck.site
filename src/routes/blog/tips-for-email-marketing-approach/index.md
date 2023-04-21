@@ -8,11 +8,11 @@ description: 10 Tips for Email Marketing Approach. We talk about emails delivery
 thumbnailImg: ./email-marketing-approach-img2.jpg?format=jpg&width=880
 ---
 
-# TIPS FOR EMAIL MARKETING APPROACH
+# 10 TIPS FOR EMAIL MARKETING APPROACH
 
 {readingTime}
 
-![Tips for Email Marketing](./email-marketing-approach-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
+![Tips for Email Marketing](./email-marketing-approach-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 Email marketing is undoubtedly the most efficient tool when it comes to ROI. According to the recent researches return on investments when promoting goods and services with email marketing makes 41:1. This is twice as more than for any other online marketing method.
 
@@ -27,8 +27,6 @@ Use the double opt-in subscription forms to assure that user is willing to subsc
 [Before you launch a email marketing campaign](/blog/email-marketing-campaign-metrics) make sure you have specified the goals properly. Ask yourself what is the purpose of your campaign. Are you willing to sell the product or service, do you want to invite users to the event?
 
 Make sure your goals comply SMART approach (specific, measurable, achievable, relevant, time-bound).
-
-![Tips for Email Marketing](./email-marketing-approach-img1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 ## Personalize Your Letters
 

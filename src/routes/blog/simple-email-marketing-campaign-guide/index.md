@@ -22,8 +22,6 @@ MarketingCharts agency has derived that usually we get up to 400 business emails
 
 However, it is necessary to consider that almost the half of all letters are opened on the mobile devices. Although mobile devices provide faster response, small monitors not always are fit for proper image display. Thus, if the recipient opens letter only to see the blocked image he will barely be satisfied by your letter. The more often it happens, the harder it is going to be to make a positive reputation of you as a valuable sender.
 
-![Guide for Small Business](./email-marketing-campaign-guide-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 Filling in ALT and TITLE tags can improve your conversion dramatically. Non-commerce organization WebAIM has pointed out that filled in ALT tag in the image provides more loyal attitude towards blocked images. Check whether the tag ALT is filled in your letters and make sure it reflects the content of the image.
 
 ## Specify The Topic of Newsletter and Adhere It

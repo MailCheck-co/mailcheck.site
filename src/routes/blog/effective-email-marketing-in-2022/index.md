@@ -8,7 +8,7 @@ description: Some ideas that help you to build an effective email marketing stra
 thumbnailImg: ./keep-spam-at-bay.png?format=jpg&width=880
 ---
 
-# Effective email-marketing in 2022
+# EFFECTIVE EMAIL-MARKETING IN 2022
 
 {readingTime}
 

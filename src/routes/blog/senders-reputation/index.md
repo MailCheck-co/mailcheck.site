@@ -44,9 +44,6 @@ ESPs are interested in making mailings spam-free, thus they help senders track t
 ## Gmail Main metrics
 
 - IP reputation rate
-
-![Sender’s Reputation](./senders-reputation-img-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 - Domain Reputation
 
 ![Domain Reputation](./senders-reputation-img-2.jpg?format=webp;jpg;png;avif&srcset&width=880)

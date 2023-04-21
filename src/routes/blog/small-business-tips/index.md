@@ -51,8 +51,6 @@ Always make sure you inform clients in details what are they subscribing. For ex
 
 Although above-grounded advertising and selling letters usually do not get high opening rates and many clicks, those can be useful for company to attract more visitors on a website if you do it in a right way.
 
-![Email Marketing Tips](./email-marketing-for-small-business-tips-img2.jpg?format=webp;jpg;png;avif&srcset&width=880)
-
 Researches show that the majority of users want to get updates on discounts and special offers from the companies. 64% users claimed that they prefer to get such offers on emails. Most of the people are irritated when they get such offers via SMS or messengers as they seem to be haunting.
 
 Such special offers and discounts can become sales drivers for your business. Sending such newsletters is one of the most cost-efficient ways to inform your clients. It is much cheaper to use mailings that any other channels. However, that doesn’t mean it has to be the only channel.
