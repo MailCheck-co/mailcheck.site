@@ -46,7 +46,7 @@ In case the store accepts online coupons the visitor should be able to enter the
 
 ## How to Use The Cart on 100%
 
-- Make a [call-to-action to purchase](/blog/the-one-common-email-marketing-mistake) the product
+- Make a [call-to-action to purchase](/blog/email-marketing-mistakes) the product
 - The button near the product should call the action. Type in the word Order Now or Buy.
 - If the button doesn’t contain any text it should be notable, large and have the clear icon
 - The Buy button should be placed on all the site pages with the product on the blocks with a short description.
