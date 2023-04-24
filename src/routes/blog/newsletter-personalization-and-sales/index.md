@@ -14,7 +14,7 @@ thumbnailImg: ./report-newsletter-update-subscribe-information.jpg?format=jpg&wi
 
 ![NEWSLETTER PERSONALIZION](./report-newsletter-update-subscribe-information.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-Successful [email marketing strategy](/blog/great-ideas-for-your-email-marketing-strategy) development considers you know about your clients much more than just their email address. You also need to be aware of their tastes and expectations. That is the only way to make them loyal to your brand. In this article we are going to disclose useful tips that can help you personalize newsletter and make it engaging for your clients.
+Successful [email marketing strategy](/blog/email-marketing-stay-up-to-date) development considers you know about your clients much more than just their email address. You also need to be aware of their tastes and expectations. That is the only way to make them loyal to your brand. In this article we are going to disclose useful tips that can help you personalize newsletter and make it engaging for your clients.
 
 Personalization is important as template letters do not sell well, they even barely get read. In order to make an efficient personalized newsletter you need to address client by name, consider his current location and offer the products he needs here and now.
 

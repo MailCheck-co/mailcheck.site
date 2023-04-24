@@ -12,7 +12,7 @@ thumbnailImg: ./spam.png?format=jpg&width=880
 
 {readingTime}
 
-[Email marketing is an essential part of your strategy.](/blog/great-ideas-for-your-email-marketing-strategy) But sometimes it doesn’t make a sense to create an outstanding copy, promising subject line, to offer discounts and promotions. There is about a 20% chance your message will land into junk folder. Yes, despite all your best rates. Your letter could be blocked of even going to junk. If the problem was only that customers would not see the email! It is very dangerous for your open rates and revenue.
+[Email marketing is an essential part of your strategy.](/blog/email-marketing-stay-up-to-date) But sometimes it doesn’t make a sense to create an outstanding copy, promising subject line, to offer discounts and promotions. There is about a 20% chance your message will land into junk folder. Yes, despite all your best rates. Your letter could be blocked of even going to junk. If the problem was only that customers would not see the email! It is very dangerous for your open rates and revenue.
 
 2021 Deliverability Benchmark showed, that emails reached the inbox an average of 83% of the time, while the global average is 85%. You might consider that 15% don’t matter, but they do. Messages can just miss or be banned. We’re going to focus on that part, that spoils your stats getting into spam.
 
