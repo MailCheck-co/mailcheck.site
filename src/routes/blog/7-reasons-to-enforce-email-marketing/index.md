@@ -32,7 +32,7 @@ However, you need to spend some time and efforts to provide a proper management 
 
 ## Customization and Segmentation
 
-The [best approach for the email marketing](/blog/tips-for-email-marketing-approach) campaign for the small business is to conduct a proper segmentation of target audience and creating personalized content for each segment separately.
+The [best approach for the email marketing](/blog/10-tips-for-the-email-marketing-approach) campaign for the small business is to conduct a proper segmentation of target audience and creating personalized content for each segment separately.
 
 The thing is when you write a post in social network you address all your clients no matter which segment they belong to, so there is no opportunity for personalization. However, newsletter allows you to address each user or a group of users personally.
 
