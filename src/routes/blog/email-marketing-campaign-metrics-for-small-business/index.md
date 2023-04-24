@@ -30,7 +30,7 @@ Open rate is a relative figure showing the coefficient of the opened/sent letter
 
 In case the HTML-letter is opened by the subscriber more than one time there will be counted each opening.
 
-[Normal opening rate can vary depending on the type of business and letters.](/blog/here-is-why-you-have-poor-open-rate) However, opening rate is not the most accurate metrics as you do not know how many users watched your letter in the plain text mode.
+[Normal opening rate can vary depending on the type of business and letters.](/blog/low-open-rate-what-can-you-do) However, opening rate is not the most accurate metrics as you do not know how many users watched your letter in the plain text mode.
 
 ## CTR
 

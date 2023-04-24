@@ -49,7 +49,7 @@ You should to factor in:
 - the total number of messages you send;
 - the % that will actually reach the inbox;
 - the % that will land in Spam;
-- [a low open rate](/blog/here-is-why-you-have-poor-open-rate);
+- [a low open rate](/blog/low-open-rate-what-can-you-do);
 - the click-through rate
 
 All these risks can’t be worth it. Maybe this thing worked yesterday, but now it doesn’t. That’s why you must adapt to new approaches of digital marketing.
