@@ -40,7 +40,7 @@ Every healthy and long-lasting relationship starts with building trust first (we
 
 ## 5\. If you do want to sell something in your cold email, sell your “give”, not your product
 
-It is no doubt that the main goal of your cold emails and your marketing campaign overall is to sell a product/service. However, making your message explicitly all about the sale will most likely scare off your prospects, especially if no trust is yet built with them. People like to buy, but they don’t like to be sold. [So focus your message on giving, not selling](/blog/subscribers-love-getting-your-emails-but-theres-one-thing-you-have-to-get-right).
+It is no doubt that the main goal of your cold emails and your marketing campaign overall is to sell a product/service. However, making your message explicitly all about the sale will most likely scare off your prospects, especially if no trust is yet built with them. People like to buy, but they don’t like to be sold. [So focus your message on giving, not selling](/blog/do-subscribers-love-your-emails).
 
 ## 6\. Write a compelling subject line...with your prospective’s name in it
 

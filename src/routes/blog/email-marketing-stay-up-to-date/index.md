@@ -26,7 +26,7 @@ You need to create original content, your audience is interested in. Of course, 
 
 ## Work on your subject lines
 
-[It’s a proven fact: half of your subscribers decide to open an email if they’re interested in its subject line](/blog/subscribers-love-getting-your-emails-but-theres-one-thing-you-have-to-get-right). It’s the first thing they pay attention to in their inbox, so you need to consider it before sending. If you’re not sure you have enough good ideas for your subject line, we can offer a simple exercise. Just sit and write down all options that come to mind. Some of them, especially first ones, are going to be extremely bad, but it isn’t the thing you should worry about. You need only couple of them and eventually you’ll find the best options.
+[It’s a proven fact: half of your subscribers decide to open an email if they’re interested in its subject line](/blog/do-subscribers-love-your-emails). It’s the first thing they pay attention to in their inbox, so you need to consider it before sending. If you’re not sure you have enough good ideas for your subject line, we can offer a simple exercise. Just sit and write down all options that come to mind. Some of them, especially first ones, are going to be extremely bad, but it isn’t the thing you should worry about. You need only couple of them and eventually you’ll find the best options.
 
 There is one more way that can help you to determine the good subject line. Run A\B tests and rely on statistics After you send out several messages, you’ll know the success formula. When using email hygiene services, email marketing is all about testing.
 

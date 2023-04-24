@@ -44,7 +44,7 @@ Thus, make sure you gather useful data about your clients to make a proper segme
 
 ## Address Users That Like You
 
-There are two common mistakes made by the businesses - they do not make email campaigns losing the chance to get in touch with [clients that already like them](/blog/subscribers-love-getting-your-emails-but-theres-one-thing-you-have-to-get-right), or they make pushy email campaigns that make clients irritated by the company. If you do not make an email marketing campaign among your clients you are up to lose the future sales and loyalty of people who are already satisfied by your services.
+There are two common mistakes made by the businesses - they do not make email campaigns losing the chance to get in touch with [clients that already like them](/blog/do-subscribers-love-your-emails), or they make pushy email campaigns that make clients irritated by the company. If you do not make an email marketing campaign among your clients you are up to lose the future sales and loyalty of people who are already satisfied by your services.
 
 ## Motivate for Spontaneous Purchases
 
