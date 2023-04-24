@@ -42,7 +42,7 @@ Campaign Monitor tells that about 20% of initial recipients don’t complete the
 
 Have you received messages from Arab princes who need money, or rich relatives, living abroad, who want to support you until the end of life? Let us guess, as soon as you see trigger words in subject lines, the letter goes directly to spam. There are some suspicious words and milder ones, anyway, they’re destructive for emails and sender reputation.
 
-[In fact, the perfect solution for effective drip campaigns](blog/email-marketing-campaign-metrics-for-small-business), email marketing has not yet come up. The most essential thing to remember when preparing an email is to offer the value. It is important to avoid patterns, evaluate the tastes and mood of your target audience, prepare email newsletter with this in mind.
+[In fact, the perfect solution for effective drip campaigns](/blog/email-marketing-campaign-metrics-for-small-business), email marketing has not yet come up. The most essential thing to remember when preparing an email is to offer the value. It is important to avoid patterns, evaluate the tastes and mood of your target audience, prepare email newsletter with this in mind.
 
 Avoid capital letters or special characters in your subject line, as well as a lot of exclamation points. Using images, do not overdo it. It’s better not to attach files, who will open the file from the unfamiliar sender? Redirectors, such as bit.ly or goo.gl are also undesirable.
 
