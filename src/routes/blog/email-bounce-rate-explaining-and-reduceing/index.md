@@ -47,7 +47,7 @@ One of the general reasons for high bounce rate is that in your base there are e
 
 In the eyes of the email service providers, high bounce rate makes you look like a spammer. This can lead to the delivery failure for all of your letters on the side of ESP and even cause the ban of your IP.
 
-As a result, your reputation will suffer and your email can be included in the blacklist so you won’t be able to conduct [effective email marketing campaigns.](/blog/email-marketing-campaign-metrics)
+As a result, your reputation will suffer and your email can be included in the blacklist so you won’t be able to conduct [effective email marketing campaigns.](blog/email-marketing-campaign-metrics-or-small-business)
 
 ## How Can I Reduce Bounce Rate in My Email Marketing Campaign?
 

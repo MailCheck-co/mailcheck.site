@@ -24,7 +24,7 @@ Use the double opt-in subscription forms to assure that user is willing to subsc
 
 ## Develop SMART Goals
 
-[Before you launch a email marketing campaign](/blog/email-marketing-campaign-metrics) make sure you have specified the goals properly. Ask yourself what is the purpose of your campaign. Are you willing to sell the product or service, do you want to invite users to the event?
+[Before you launch a email marketing campaign](blog/email-marketing-campaign-metrics-or-small-business) make sure you have specified the goals properly. Ask yourself what is the purpose of your campaign. Are you willing to sell the product or service, do you want to invite users to the event?
 
 Make sure your goals comply SMART approach (specific, measurable, achievable, relevant, time-bound).
 
