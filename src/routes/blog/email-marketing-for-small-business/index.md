@@ -44,13 +44,13 @@ All letters of your company should be connected to each other and show that you 
 
 ## Reputation and Mailing Services
 
-In case you use a specialized service for sending newsletter you get a few points to your [sender’s reputation](/blog/senders-reputation) in the eyes of the ESP. [The higher is the deliverability rate,](/blog/x-ways-increase-emails-deliverability) the more clients you can convert so services use addresses with the high IP rating which is supported by the majority of actions.
+In case you use a specialized service for sending newsletter you get a few points to your [sender’s reputation](/blog/senders-reputation) in the eyes of the ESP. [The higher is the deliverability rate,](/blog/x-ways-to-increase-email-deliverability) the more clients you can convert so services use addresses with the high IP rating which is supported by the majority of actions.
 
 ## Poor Mailing List
 
 It is better to have small mailing list containing the addresses of users that really want to get your newsletters than a huge base of barely real subscribers that did not confirm getting emails from you.
 
-You can read about the way to keep your mailing list clean [in our article](/blog/x-ways-increase-emails-deliverability). The main thing you need to know - immediately delete the user if you got the hard bounce for him and the user which has caused a soft bounce more than 3 time a month.
+You can read about the way to keep your mailing list clean [in our article](/blog/x-ways-to-increase-email-deliverability). The main thing you need to know - immediately delete the user if you got the hard bounce for him and the user which has caused a soft bounce more than 3 time a month.
 
 ## Poor Content
 

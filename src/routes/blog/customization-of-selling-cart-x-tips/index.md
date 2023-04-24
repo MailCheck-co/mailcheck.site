@@ -74,7 +74,7 @@ Forms with many fields negatively affect the chance for the purchase to be finis
 
 Do not abuse pop-down menus - sometimes it is better to let the user type in data on his own. For example, when one has to type in the birth date or the city.
 
-Do not force people to subscribe to your newsletter. This can decrease your [deliverability rate](/blog/x-ways-increase-emails-deliverability) as a sender and spoil your reputation in the eyes of the client.
+Do not force people to subscribe to your newsletter. This can decrease your [deliverability rate](/blog/x-ways-to-increase-email-deliverability) as a sender and spoil your reputation in the eyes of the client.
 
 ## Subscription to Newsletter
 

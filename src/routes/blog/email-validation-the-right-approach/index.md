@@ -82,7 +82,7 @@ There are too much things to do if you want to get assured the addresses you hav
 
 So here is the right approach:
 
-- follow the tips mentioned above and [listed here](/blog/x-ways-increase-emails-deliverability)
+- follow the tips mentioned above and [listed here](/blog/x-ways-to-increase-email-deliverability)
 - use the manual verification services to validate mails from the list
 - do not worry if the bounce rate doesn’t exceed 2.5-4%.
 
