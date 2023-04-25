@@ -20,7 +20,7 @@ Personalization is important as template letters do not sell well, they even bar
 
 [Personalized emails should contain relevant information for the subscriber.](/blog/do-subscribers-love-your-emails) You can set personalized data in the letter using tags.
 
-So what do you need to do to start using email [marketing personalization](/blog/7-email-personalization-stats-that-will-make-you-rethink-your-marketing-strategy) techniques? The answer is obvious: you need to gather data about your clients and make relevant letters.
+So what do you need to do to start using email [marketing personalization](/blog/email-personalization-stats-that-will-make-you-think) techniques? The answer is obvious: you need to gather data about your clients and make relevant letters.
 
 According to Experian research 69% of users are willing to provide personal data if it is going to be used to make service better for them. However, in practice the more there are fields in the subscription form (especially the mandatory ones), the smaller is the number of users that fill it.
 
