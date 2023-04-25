@@ -43,7 +43,7 @@ The more time is passing the more it takes from the content creators to think ov
 
 For now you need to bring even more efforts to get rid of spam in your mailings.
 
-Email marketers already know that it is a bad idea to subscribe on a mailing someone who is not willing to as there are high chances the email will go the spam box which has a negative effect on [the sender’s reputation](/blog/senders-reputation). Thus, you need to make sure the user has made a clear confirm on subscription and profile the content you send to make it remain relevant and engaging.
+Email marketers already know that it is a bad idea to subscribe on a mailing someone who is not willing to as there are high chances the email will go the spam box which has a negative effect on [the sender’s reputation](/blog/senders-reputation-all-you-need-to-know). Thus, you need to make sure the user has made a clear confirm on subscription and profile the content you send to make it remain relevant and engaging.
 
 ![Email Marketing Trends](./email-marketing-trends-img-2.jpg?format=webp;jpg;png;avif&srcset&width=880)
 

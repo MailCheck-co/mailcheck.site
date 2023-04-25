@@ -44,7 +44,7 @@ All letters of your company should be connected to each other and show that you 
 
 ## Reputation and Mailing Services
 
-In case you use a specialized service for sending newsletter you get a few points to your [sender’s reputation](/blog/senders-reputation) in the eyes of the ESP. [The higher is the deliverability rate,](/blog/x-ways-to-increase-email-deliverability) the more clients you can convert so services use addresses with the high IP rating which is supported by the majority of actions.
+In case you use a specialized service for sending newsletter you get a few points to your [sender’s reputation](/blog/senders-reputation-all-you-need-to-know) in the eyes of the ESP. [The higher is the deliverability rate,](/blog/x-ways-to-increase-email-deliverability) the more clients you can convert so services use addresses with the high IP rating which is supported by the majority of actions.
 
 ## Poor Mailing List
 
