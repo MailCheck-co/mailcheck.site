@@ -28,7 +28,7 @@ An email API allows applications to access functions offered by the email servic
 
 There are two categories of email APIs: transactional and contextual.
 
-Transactional email APIs are for sending bulk or routine emails, such as password reset, notification emails, and mass [marketing campaigns](/blog/simple-email-marketing-campaign-guide) through third-party platforms. The role of an email API is that it lets you design beautiful transactional emails and integrate them directly into the functionality of your website or app so you can get the full potential of a well-designed email instead of just including the bare minimum of essential information for customers.
+Transactional email APIs are for sending bulk or routine emails, such as password reset, notification emails, and mass [marketing campaigns](/blog/email-marketing-for-small-business) through third-party platforms. The role of an email API is that it lets you design beautiful transactional emails and integrate them directly into the functionality of your website or app so you can get the full potential of a well-designed email instead of just including the bare minimum of essential information for customers.
 
 Contextual email APIs are designed for developers building software applications that require email sync, send, and analytics embedded directly into the application for their end-user's benefit. Productivity tools, CRMs, applicant tracking systems, and even car consoles use email APIs to embed email functionality into the application. Contextual emails allow you to sync, send, receive, and collect analytics, as well as take care of general CRUD\* for each email service provider connection.
 
