@@ -8,13 +8,13 @@ description: Bootstrap your saas startup? A closer look at what exactly constitu
 thumbnailImg: ./right-development-team.jpg?format=jpg&width=880
 ---
 
-# How to Bootstrap Your SaaS Startup
+# {title}
 
 {readingTime}
 
 ![Mailcheck Development Team](./right-development-team.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-[In the previous article, we discussed what email API is](/blog/what-is-email-api), reviewed the email API mechanism, analyzed a couple of examples
+[In the previous article, we discussed what email API is](/blog/what-is-email-api-and-why-do-i-need-one), reviewed the email API mechanism, analyzed a couple of examples
 of email API application as well as discussed the benefits of using email API.
 
 Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to
@@ -31,7 +31,7 @@ product. In the article below we will have a closer look at what exactly constit
 
 ![Successful SaaS Startup Components](./successful-saas-startup-components.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-### Analyze your idea
+## Analyze your idea
 
 When you are in the early stages of developing your future SaaS product the first question you must ask yourself is
 “What is the problem I need to solve and how will my product solve it?” Think of any problems you can address by
@@ -42,7 +42,7 @@ can jump straight away into creating a solution to this problem. Remember, if yo
 is useless. As Russell L. Ackoff noted, “We fail more often because we solve the wrong problem than because we get
 the wrong solution to the right problem.”
 
-### Create a lean business plan
+## Create a lean business plan
 
 As outdated as it may sound, business plans are necessary, and they do work. No need to go nuts and create a 50 pages
 business plan. A simple one-page outline of your strategy will do. You can always go back to it if you need to make
@@ -50,11 +50,11 @@ adjustments and it will be much easier to change a simple plan rather than chang
 plan. You can create a bullet-point plan or break it down in a table format, or you can use a business planning
 software like Enloop to help you with building your lean business plan.
 
-### Determine your strategy
+## Determine your strategy
 
 This is where you define your unique value proposition (UVP). Your UVP is what separates your business from your competitors. It also explains how your product solves your customers’ problem, what benefits it brings, and why your target customers should choose you over the competition. This is also where you define your target market and analyze your competition.
 
-### Define how you will market your SaaS product
+## Define how you will market your SaaS product
 
 Marketing something that has no physical presence, like a SaaS product, has its own set of rules. It takes a person a couple of days or even hours to consider and purchase a SaaS product (be it a project management tool or a CRM software subscription). So the efforts needed to market a SaaS product are quite manageable compared to marketing a new car make. Tactics to consider first and foremost:
 
@@ -67,12 +67,9 @@ Marketing something that has no physical presence, like a SaaS product, has its 
 
 For SEO, you can use Google Analytics or any other free SEO tools, like CanIRank or Seobility. However, note that most of the other data tools simply piggyback on Google’s data.
 
-### Select the right development team
+## Select the right development team
 
 While the SaaS product development steps discussed above involve a lot of thinking and analyzes, the design and development of the actual product or at least its prototype is the task that requires the application of hand and brain labor. It is not necessary for you as the CEO of your business to also be a CTO of your product. Outsourcing the technical part of the product development is what most SaaS startups would resort to these days, and so can you. The question then is “Where to get a good development team to bring my idea into life?”
-
-![Mailcheck Development Team](./right-development-team.jpg?format=webp;jpg;png;avif&srcset&width=880)
-Source: Medium
 
 A typical development team usually consists of a project manager, business analyst, front-end and back-end developers,
 UX/UI designer, and a QA engineer. The benefits of hiring a dedicated development team over an in-house team are huge:

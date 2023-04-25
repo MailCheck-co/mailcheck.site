@@ -1,15 +1,18 @@
 ---
 published: true
-title: Mailcheck scholarship
+title: Mailcheck scholarship 2019
 date: 18.04.2019
 readingTime: 3 min read
 snippet: We are pleased to announce that Mailcheck Academic Scholarship 2019 is now open to receive new applications.
 description: Mailcheck Academic Scholarship is now open to receive new applications. How to Apply for this Scholarship and other important details of the program
+thumbnailImg: ./top-view-academic-cap-with-copy-space.jpg?format=jpg&width=880
 ---
 
-# Mailcheck scholarship 2019
+# {title}
 
 {readingTime}
+
+![Mailcheck scholarship](./top-view-academic-cap-with-copy-space.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 We are pleased to announce that Mailcheck Academic Scholarship 2019 is now open to receive new applications.
 
@@ -17,7 +20,7 @@ Beginning May 01, 2019, we are announcing a scholarship program for 2019 year. W
 
 ## Learn More About Mailcheck
 
-Mailcheck is the [new era of email verification](/). We are a team that validates emails and phones using social networks for the past 3 years. Our team consists of impressively skilled engineers and experienced software developers who are able to work with numerous algorithms. [Our service will be useful to those who are working every day to increase conversion in email mailings](/blog/emails-validation-api-increase-ecommerce-conversion) and who can not overcome the bounce system of mail servers. We will also be useful to those who want to know who is behind that email or phone in order to save time.
+Mailcheck is the [new era of email verification](/). We are a team that validates emails and phones using social networks for the past 3 years. Our team consists of impressively skilled engineers and experienced software developers who are able to work with numerous algorithms. [Our service will be useful to those who are working every day to increase conversion in email mailings](/blog/emails-validation-api-will-increase-conversion) and who can not overcome the bounce system of mail servers. We will also be useful to those who want to know who is behind that email or phone in order to save time.
 
 Certainly, love for what we do has made it possible to create such a diverse range of email verification services. The most requested ones are an [agency subscription](/#pricing) which includes 5000 emails, with an average charge of $0.004 per email.
 

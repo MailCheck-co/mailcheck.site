@@ -119,7 +119,13 @@
   :global(.container .content-block ul) {
     margin: 0 0 0 var(--size-24);
     padding: 0 0 0 var(--size-24);
-    line-height: 1.5;
+    line-height: var(--size-24);
+  }
+
+  :global(.container .content-block ol) {
+    margin: 0 0 0 var(--size-24);
+    padding: 0 0 0 var(--size-24);
+    line-height: var(--size-24);
   }
 
   :global(.container .content-block li) {
