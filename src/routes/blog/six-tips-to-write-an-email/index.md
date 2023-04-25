@@ -18,7 +18,7 @@ It is no doubt that electronic mail as a marketing tool has proven its undeniabl
 
 However, sending out emails alone with the content irrelevant to your customer needs, even if it is on a regular basis, will not do the trick. Making sure your email marketing campaign is well-crafted and speaks to your audience must be a priority task to tackle, regardless if you are a newly minted entrepreneur or a long-established business.
 
-[A newsletter is an email sent to inform your readers of your announcements, interesting and relevant content and, most importantly, promotions](/blog/personalize-your-newsletter-and-increase-sales). It is one of the most essential tools in keeping your customers in the loop and in gaining traffic to your webpage as well as your social media pages.
+[A newsletter is an email sent to inform your readers of your announcements, interesting and relevant content and, most importantly, promotions](/blog/newsletter-personalization-and-sales). It is one of the most essential tools in keeping your customers in the loop and in gaining traffic to your webpage as well as your social media pages.
 
 The two fundamental reasons why you need to invest time and efforts into composing your newsletter email:1. It will help you retain already existing subscribers and therefore maintain your credibility. 2. [It could potentially grow your customer database](/blog/six-tips-to-write-an-email).
 

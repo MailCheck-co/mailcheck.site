@@ -31,7 +31,7 @@ To avoid the above mentioned, we advise you to work only with a validated list o
 
 ## Mailcheck: work only with validated contacts
 
-**Mailcheck** uses state of the art algorithms to determine whether the email contact in your mailing list belongs to a real person. [This helps to dramatically improve your conversion rates and will definitely optimize your email marketing budgets by ensuring that your newsletters will only be delivered to active email addresses, and hence, most likely will be opened.](/blog/personalize-your-newsletter-and-increase-sales)
+**Mailcheck** uses state of the art algorithms to determine whether the email contact in your mailing list belongs to a real person. [This helps to dramatically improve your conversion rates and will definitely optimize your email marketing budgets by ensuring that your newsletters will only be delivered to active email addresses, and hence, most likely will be opened.](/blog/newsletter-personalization-and-sales)
 
 Each mailing platform like [Sendgrid](/sendgrid-integration) or [Mailchimp](/mailchimp-integration) has its own tariff system: you pay either for the number of subscribers in the sheet or for the volume of emails sent. When you are serving the "dead load" and sending letters to those who do not even open them, you simply waste your hard-earned bucks.
 

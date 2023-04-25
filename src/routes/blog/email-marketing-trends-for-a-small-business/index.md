@@ -26,11 +26,11 @@ Email marketing automation helps you to adopt [your campaign](/blog/email-market
 
 Preparation of newsletters stops looking like a disaster and can turn into an easy task. For example, there should a series of welcome letters that is being created only once and then is launched automatically. Such an approach forms trust of the users and provides loyalty to your brand. You do not need to memorize the content strategy or which letter has to be sent next as everything is automated. It is very important for you as it all depends on the beginning of your conversation.
 
-Mailing services have powerful tools to segmentate and [personalize newsletters](/blog/personalize-your-newsletter-and-increase-sales). Using those you can send clients content based on the analysis of their previous actions - you look what they've opened, links they have pressed, etc. Thus, without automation it is going to be hard for you to compete with other companies and keep your mailing on high level.
+Mailing services have powerful tools to segmentate and [personalize newsletters](/blog/newsletter-personalization-and-sales). Using those you can send clients content based on the analysis of their previous actions - you look what they've opened, links they have pressed, etc. Thus, without automation it is going to be hard for you to compete with other companies and keep your mailing on high level.
 
 ## Deep Segmentation and Personalization
 
-It always has been a good idea to conduct deep segmentation and personalization for your newsletter. However, it is more than a good idea - it is also possible thanks to the majority of the online tools provided by the email marketing automation tools. We have reviewed personalization in details in [our previous article](/blog/personalize-your-newsletter-and-increase-sales). Still here we will disclose the basic points to consider.
+It always has been a good idea to conduct deep segmentation and personalization for your newsletter. However, it is more than a good idea - it is also possible thanks to the majority of the online tools provided by the email marketing automation tools. We have reviewed personalization in details in [our previous article](/blog/newsletter-personalization-and-sales). Still here we will disclose the basic points to consider.
 
 - personalization can only be successful if you analyse the behaviour and preferences of your users
 - you also need to consider basic metrics like geo, sex, and age
