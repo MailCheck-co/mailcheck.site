@@ -65,7 +65,7 @@ This technology allows email marketer to define which elements of the mailing ha
 
 ## Opening Statistics
 
-[Opening statistics](/blog/explaining-email-bounce-rate) also helps personalizing newsletters. Each time you send letters to your clients it is vital to know whether they open letters or not. If not, that means the subject line is not catchy enough. In such a case you need to analyze the statistics and personalize a letter for the customer.
+[Opening statistics](/blog/email-bounce-rate-explaining-and-reduceing) also helps personalizing newsletters. Each time you send letters to your clients it is vital to know whether they open letters or not. If not, that means the subject line is not catchy enough. In such a case you need to analyze the statistics and personalize a letter for the customer.
 
 ## Personalization by Device
 

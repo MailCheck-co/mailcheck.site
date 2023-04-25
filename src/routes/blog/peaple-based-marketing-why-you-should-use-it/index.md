@@ -44,7 +44,7 @@ It’s extremely important to study your repeat customers and your target audien
 
 Now take a couple of minutes to think about how you log into your accounts. Whether it’s social media profile, personal bank account, or any other website. Surely you use your email account for that, and it’s one more proof how important is it. And that’s why email connects all the elements that make up the identity of your prospects and customers.
 
-Invalid email addresses harm your drip campaign and marketing strategy. [They wreak havoc on your bounce rate](/blog/explaining-email-bounce-rate), sender reputation and prevent you from communicating with real people who are surely interested in your offers. Also, whenever such address ends up on your list, it becomes a missed link in the chain that connect your customer’s preferences across different channels.
+Invalid email addresses harm your drip campaign and marketing strategy. [They wreak havoc on your bounce rate](/blog/email-bounce-rate-explaining-and-reduceing), sender reputation and prevent you from communicating with real people who are surely interested in your offers. Also, whenever such address ends up on your list, it becomes a missed link in the chain that connect your customer’s preferences across different channels.
 
 The easiest and safest way to prevent this is using [email hygiene services](/). It ensures you collect only valid leads and helps you set the communication with your audience. After that you can speak about important ads and marketing campaigns.
 
