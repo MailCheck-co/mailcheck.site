@@ -20,7 +20,7 @@ However, sending out emails alone with the content irrelevant to your customer n
 
 [A newsletter is an email sent to inform your readers of your announcements, interesting and relevant content and, most importantly, promotions](/blog/personalize-your-newsletter-and-increase-sales). It is one of the most essential tools in keeping your customers in the loop and in gaining traffic to your webpage as well as your social media pages.
 
-The two fundamental reasons why you need to invest time and efforts into composing your newsletter email:1. It will help you retain already existing subscribers and therefore maintain your credibility. 2. [It could potentially grow your customer database](/blog/six-tips-to-write-an-email-that-prompts-your-subscribers-to-action).
+The two fundamental reasons why you need to invest time and efforts into composing your newsletter email:1. It will help you retain already existing subscribers and therefore maintain your credibility. 2. [It could potentially grow your customer database](/blog/six-tips-to-write-an-email).
 
 According to Campaign Monitor, 0.17% is an average unsubscribe rate. However, if your email unsubscribe rates jumps over 2% this signals that you need to review your newsletter campaign.
 
