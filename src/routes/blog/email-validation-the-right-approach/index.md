@@ -64,7 +64,7 @@ On the moment of subscription confirmation you can say that user really doesn’
 
 ### How to Comply This Requirement?
 
-Actually, when it comes to the technical moments it is enough for you to follow the tips listed above and read our articles about [the catch-all email servers](/blog/catch-all-email-servers) and inbox and delivery improvement.
+Actually, when it comes to the technical moments it is enough for you to follow the tips listed above and read our articles about [the catch-all email servers](/blog/catch-all-email-servers-what-you-need-to-know) and inbox and delivery improvement.
 
 Most of the work that can be done here is about the content and the way you make your newsletters:
 

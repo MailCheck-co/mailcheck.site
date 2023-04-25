@@ -22,7 +22,7 @@ It is calculated by the ESP services. Based on the rating assigned to your by ES
 
 - IP-address or domain rating
 - the share of recipients sending your letter to spam box
-- the number of letters sent to nonexistent addresses and [the catch-all email servers](/blog/catch-all-email-servers)
+- the number of letters sent to nonexistent addresses and [the catch-all email servers](/blog/catch-all-email-servers-what-you-need-to-know)
 - number of letters deleted without being read
 - email-authentication settings
 - periodicity of mailing

@@ -41,7 +41,7 @@ Soft bounce:
 
 In such a situation the service will make several attempts to deliver your letter. It can take days for the server. However, if you see that there are 3 or more soft bounces per address, it is better to delete it from your mailing list.
 
-One of the general reasons for high bounce rate is that in your base there are emails that belong [to catch-all email servers](/blog/catch-all-email-servers).
+One of the general reasons for high bounce rate is that in your base there are emails that belong [to catch-all email servers](/blog/catch-all-email-servers-what-you-need-to-know).
 
 ## Why Do I Have to Concern About My Email Bounce Rate?
 
