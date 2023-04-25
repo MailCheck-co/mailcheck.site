@@ -13,7 +13,7 @@ description: How an email address can be validated? Benefits of email validation
 
 ![email verification](./validations.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-The [success of your email marketing campaign](/blog/5-ideas-for-your-2022-email-marketing-strategy) depends on many factors. The most vital metrics include open rate, conversion, click-through rate, spam return and bounce rate. Almost each of these parameters is closely tied to your email list. To be more precise, these depend on the relevance of all addresses in your database. Experts say that up to [22% of all emails become inactive](https://canvas.uoregon.edu/eportfolios/2413/Home/Invalid_Email_Addresses_What_to_Do_and_How_to_Avoid_Them) every year and another 30% of users change their addresses regularly for a variety of reasons. A high percentage of inactive recipients can seriously hurt the deliverability level of your emails.
+The [success of your email marketing campaign](/blog/effective-email-marketing-in-2022) depends on many factors. The most vital metrics include open rate, conversion, click-through rate, spam return and bounce rate. Almost each of these parameters is closely tied to your email list. To be more precise, these depend on the relevance of all addresses in your database. Experts say that up to [22% of all emails become inactive](https://canvas.uoregon.edu/eportfolios/2413/Home/Invalid_Email_Addresses_What_to_Do_and_How_to_Avoid_Them) every year and another 30% of users change their addresses regularly for a variety of reasons. A high percentage of inactive recipients can seriously hurt the deliverability level of your emails.
 
 ## What is the value of email validation?
 
