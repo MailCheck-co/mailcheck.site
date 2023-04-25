@@ -16,7 +16,7 @@ thumbnailImg: ./email-for-everything.jpg?format=jpg&width=880
 
 Source: WPBeginner
 
-In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API. Click [here](/blog/what-is-email-api) to find out more.
+In the previous article, we discussed what email API is, reviewed the email API mechanism, analyzed a couple of examples of email API application as well as discussed the benefits of using email API. Click [here](/blog/what-is-email-api-and-why-do-i-need-one) to find out more.
 
 We have established that having an email API integrated into your website or app provides automation of many processes such as generating password reset emails, notification emails, and sending mass marketing campaigns through third-party platforms. Email API is also extensively used in sending automatic email notifications such as those related to social media use (likes, comments, follow requests, etc.). Email API has multiple use, however, one and probably most important feature is that an integrated email API ensures a clean email database. Lots of businesses may, however, underestimate the potential of email API. A long-established business knows that having an email API saves a lot of such precious time and ensures smoothly run email campaigns.
 

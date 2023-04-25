@@ -14,7 +14,7 @@ thumbnailImg: ./right-development-team.jpg?format=jpg&width=880
 
 ![Mailcheck Development Team](./right-development-team.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
-[In the previous article, we discussed what email API is](/blog/what-is-email-api), reviewed the email API mechanism, analyzed a couple of examples
+[In the previous article, we discussed what email API is](/blog/what-is-email-api-and-why-do-i-need-one), reviewed the email API mechanism, analyzed a couple of examples
 of email API application as well as discussed the benefits of using email API.
 
 Every project starts with an idea, and every idea eventually converts into a plan which, if executed properly, leads to
