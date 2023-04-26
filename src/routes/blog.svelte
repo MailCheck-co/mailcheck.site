@@ -19,7 +19,7 @@
   import type { IPost } from '$utils/types';
 
   export let posts: IPost[];
-  const title = 'Blog';
+  const title = 'Blog about effective email checking & communication';
   const description =
     'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
 </script>
