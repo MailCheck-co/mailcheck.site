@@ -4,7 +4,7 @@ title: MAILCHECK INTEGRATION. ALL YOU NEED TO KNOW
 date: 30.08.2021
 readingTime: 3 min read
 snippet: The pace e-commerce is expanding with and the number of sales occurring per minute is growing so fast that these days it is nearly impossible to run a business without an email verifier. If you are already using one - well done, but if you are still in search of a better-than-average email verifier, look no more.
-description: All you need to know about automation, marketing & email platforms. Mailcheck integrates with mailchimp, wordpress, and others.
+description: All you need to know about automation, marketing and email platforms. Mailcheck integrates with mailchimp, wordpress, and others.
 thumbnailImg: ./screen2.png?format=jpg&width=880
 ---
 
