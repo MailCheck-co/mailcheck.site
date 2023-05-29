@@ -4,7 +4,7 @@ title: EMAIL MARKETING FOR SMALL BUSINESS
 date: 15.05.2020
 readingTime: 3 min read
 snippet: Email marketing is the cheapest and potentially profitable way to communicate with your audience. For example, Monitor company has calculated the expenditure/income for email marketing as 1:38. It is likely you do not mind getting such a ROI for your small business email marketing campaign. Thus, we decided to make this simple guide.
-description: Simple email marketing campaign guide for small businesses. Alts and titles, the topic of newsletter, content & design, reputation, and mailing services
+description: Simple email marketing campaign guide for small businesses. Alts and titles, the topic of newsletter, content and design, reputation, and mailing services
 thumbnailImg: ./email-marketing-campaign-guide-img-1.jpg?format=jpg&width=880
 ---
 
