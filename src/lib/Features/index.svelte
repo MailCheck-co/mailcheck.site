@@ -46,6 +46,10 @@
         <span class="digits">05</span>
         <p class="text-thin item">Risk-free 40 days money-back guarantee</p>
       </li>
+      <li>
+        <span class="digits">06</span>
+        <p class="text-thin item">Don't pay for a duplicate in the list</p>
+      </li>
     </ul>
   </div>
 </section>
