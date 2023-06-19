@@ -28,9 +28,9 @@
         </div>
         <div class="affiliate-block-content">
           <p class="section-description">
-            Invite your friends and provide them with a $10 USD discount, and receive your part ($10
-            USD as well) the number of invitations unlimited, stack validations forever! Invite 3
-            friends in a row and grab the "Enterprise plan" (20k validations) fully free.
+            "Invite your friends and earn $10 USD in cash or validation if your invited friend purchases 
+             any of our plans. Your friend will also get a $10 USD discount on their first month. 
+             It's a win-win for both of you!"
           </p>
           <a
             class="affiliate-btn"
