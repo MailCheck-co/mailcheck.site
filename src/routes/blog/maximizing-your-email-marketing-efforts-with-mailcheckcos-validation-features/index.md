@@ -5,7 +5,7 @@ date: 07.07.2023
 readingTime: 3 min read
 snippet: Email marketing is one of the most effective ways to reach and engage with your audience. However, it can be challenging to ensure that your emails are being delivered to the right people, especially if you have a large email list.
 description: Email marketing is one of the most effective ways to reach and engage with your audience.
-thumbnailImg: ./1.png?format=jpg&width=880
+thumbnailImg: ./img1.png?format=jpg&width=880
 ---
 
 # {title}
@@ -42,7 +42,7 @@ One of the most frustrating things that can happen when managing an email list i
 
 Thankfully, [Mailcheck.co](/) has a solution for this problem. With [Mailcheck.co](/), you don’t have to worry about paying for duplicates in your list. This means that if you have multiple entries for the same email address, you won’t be charged for each one.
 
-![Mailcheck](./1.png?format=jpg&width=880)
+![Mailcheck](./img1.png?format=jpg&width=880)
 
 Displaying -1 in the results is an indication of a duplicate email within the same file. When you upload a file for processing, [Mailcheck.co](/) identifies and flags any duplicate emails it detects. This allows you to easily identify and manage duplicate entries within your email list.
 
@@ -68,20 +68,20 @@ On the screenshots, you can look at the Steps:
 
 - Click on Manually add emails, and you will switch to the next block, look at step 2.
 
-![Step 1](./2.png?format=jpg&width=880)
+![Step 1](./img2.png?format=jpg&width=880)
 
 ### Step 2
 
 - Manually adding your email, if you adding more than one email, please don’t forget to use delimiters
 
-![Step 2](./3.png?format=jpg&width=880)
-![Step 2](./4.png?format=jpg&width=880)
+![Step 2](./img3.png?format=jpg&width=880)
+![Step 2](./img4.png?format=jpg&width=880)
 
 By providing multiple options for validating email addresses, [Mailcheck.co](/) gives you the flexibility to choose the method that best suits your needs. And with the added benefit of not being charged for duplicate email addresses in your list, you can rest assured that you’re only paying for the valid email addresses you need.
 
 ## 8\. “Effortless Validation: Upload Files with or without Headers on [Mailcheck.co](/)”
 
-![Mailcheck](./5.png?format=jpg&width=880)
+![Mailcheck](./img5.png?format=jpg&width=880)
 
 Uploading files to [Mailcheck.co](/) is a breeze with the option to upload files with or without headers. This feature allows users to omit the first line of their CSV, which typically includes the headers for each column. By omitting this line, [Mailcheck.co](/) can process the data more efficiently, saving time and ensuring accuracy in the validation process.
 
@@ -97,7 +97,7 @@ Whether you choose to upload files with headers or without, [Mailcheck.co](/) en
 
 ## 9\. Specify the delimiter manually
 
-![Mailcheck](./6.png?format=jpg&width=880)
+![Mailcheck](./img6.png?format=jpg&width=880)
 
 Specify the delimiter manually for accurate data parsing. When working with .csv files, it’s essential to ensure that the fields are correctly separated by the appropriate delimiter. In some cases, the table may not be displayed correctly due to an incorrect or unrecognized delimiter.
 
@@ -123,15 +123,15 @@ Users who validate emails on the go often face the problem of parsing database t
 
 You can look at the screenshot below
 
-![Mailcheck](./7.png?format=jpg&width=880)
+![Mailcheck](./img7.png?format=jpg&width=880)
 
 3\. Users can copy the columns from the email and trust report and select the entire database within two columns.
 
-![Mailcheck](./8.png?format=jpg&width=880)
+![Mailcheck](./img8.png?format=jpg&width=880)
 
 4\. The original file remains unchanged as much as possible, making it easy for users to merge their validated data with the original file.
 
-![Mailcheck](./9.png?format=jpg&width=880)
+![Mailcheck](./img9.png?format=jpg&width=880)
 
 5\. It is important to remember that the email checker system recommends using emails with a 50-100% trust score, as they are more likely to reach the corresponding user’s mailbox.
 
@@ -141,7 +141,7 @@ You can look at the screenshot below
 
 8\. Swift Data Merge: Effortlessly Combine All Data with Your Original File in Less Than a Minute. Look below:
 
-![Mailcheck](./10.png?format=jpg&width=880)
+![Mailcheck](./img10.png?format=jpg&width=880)
 
 P.S. [Mailcheck.co](/) does not take credits for validating duplicate or broken syntax emails, and the validated data can be transferred directly to the original file with no row mismatch.
 
@@ -149,7 +149,7 @@ P.S. [Mailcheck.co](/) does not take credits for validating duplicate or broken 
 
 Setting up an Email API is a crucial step in enhancing the functionality and security of your online platforms. By integrating the Email API provided by [Mailcheck.co](/), you can seamlessly incorporate a contact form, registration, and login processes while ensuring effective filtering to determine which contacts are allowed and which ones are not.
 
-![Mailcheck](./11.png?format=jpg&width=880)
+![Mailcheck](./img11.png?format=jpg&width=880)
 
 The Email API settings offered by [Mailcheck.co](/) allow you to effortlessly configure your API to handle incoming emails. This integration empowers you to filter and validate email addresses in real-time, ensuring that only legitimate and verified contacts gain access to your systems. By leveraging the power of the Email API, you can safeguard your platforms from potential spam, abuse, or fake accounts.
 Here is you can look into with our  [documentation](https://app.mailcheck.co/docs#tag--email)
