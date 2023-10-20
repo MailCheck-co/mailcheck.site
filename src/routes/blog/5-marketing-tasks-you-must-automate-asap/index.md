@@ -12,6 +12,8 @@ thumbnailImg: ./marketing-tasks-email.jpg?format=jpg&width=880
 
 {readingTime}
 
+![Marketing Tasks You Must Automate ASAP](./marketing-tasks-you-must-automate-asap.jpg?format=webp;jpg;png;avif&srcset&width=880)
+
 {snippet}
 
 ## 5 Marketing Tasks You Need To Automate ASAP
