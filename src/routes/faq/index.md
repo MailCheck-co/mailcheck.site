@@ -197,6 +197,14 @@ A step-by-step guide to integrate Mailcheck with daily services using [Integroma
 
 </details>
 
+<details>
+
+    <summary>ActiveCampaign Integration instructions</summary>
+
+A step-by-step guide to integrate Mailcheck with [ActiveCampaign](/activecampaign-integration)
+
+</details>
+
 </div>
 
 <div class="accordion-column right">
