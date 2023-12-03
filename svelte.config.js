@@ -39,15 +39,7 @@ const config = {
         );
       }
     },
-    trailingSlash: 'never',
-    vite: {
-      resolve: {
-        alias: {
-          $utils: path.resolve('./src/utils')
-        }
-      },
-      plugins: [imagetools({ force: true })]
-    }
+    trailingSlash: 'never'
   }
 };
 

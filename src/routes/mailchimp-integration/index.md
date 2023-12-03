@@ -3,7 +3,7 @@ title: Mailchimp Integration instructions
 date: 18.02.2021
 readingTime: 3 min read
 snippet: Step by step guide on how to use Mailcheck
-desc: Lots of emails sent every day via Mailchimp, however, the majority of the emails got bounced. In order to prevent it, we’ve created Mailcheck.
+description: How to use MailChimp integration in mailcheck.co? Step-by-step guide on how to use Mailcheck with Mailchimp.
 ---
 
 <script>
@@ -20,13 +20,13 @@ desc: Lots of emails sent every day via Mailchimp, however, the majority of the 
 
 ## {snippet}
 
-{desc}
+{description}
 
 Let me show the easiest way to validate your audience before starting the campaign.
 
 What you need:
 
-1. You have to be registered in [MailCheck.co](https://mailcheck.co/)
+1. You have to be registered in [MailCheck.co](/)
 2. And be a Mailchimp User
 
 ### Step 1:
@@ -105,3 +105,7 @@ But how to filter the data?
 
 That’s it &#128077;
 If you still have questions please contact our team via LiveChat or [integration@mailcheck.co](mailto:integration@mailcheck.co)
+
+_Other popular integrations guides: [Zapier](/zapier-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [SendGrid](/sendgrid-integration), [Integromat](/integromat-integration)._
+
+[_OUR BLOG_](/blog)

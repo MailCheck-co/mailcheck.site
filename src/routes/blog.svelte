@@ -19,26 +19,24 @@
   import type { IPost } from '$utils/types';
 
   export let posts: IPost[];
-  let desc = 'Blog about building clean b2b and b2c communications free of bounces';
+  const title = 'Blog about effective email checking & communication';
+  const description =
+    'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
 </script>
 
-<Seo
-  {desc}
-  title={desc}
-  schemas={[websiteSchema, { ...blogSchema, name: desc, description: desc }]}
-/>
+<Seo {description} {title} schemas={[websiteSchema, { ...blogSchema, name: title, description }]} />
 
 <main class="blog-page" id="blog">
   <div class="container">
     <div class="content-block">
-      <h1 class="title">{desc}</h1>
+      <h1 class="title">{title}</h1>
 
-      {#each posts as { slug, title, snippet, date }}
-        <a class="article-title" href="blog/{slug}">{title}</a>
-        <p class="article-date">Date: {date}</p>
+      {#each posts as post (post.slug)}
+        <a class="article-title" href="blog/{post.slug}">{post.title}</a>
+        <p class="article-date">Date: {post.date}</p>
         <p class="article-snippet">
-          {snippet}
-          <a sveltekit:prefetch class="text-thin text-thin-link" href="blog/{slug}"
+          {post.snippet}
+          <a sveltekit:prefetch class="text-thin text-thin-link" href="blog/{post.slug}"
             >[Read more...]</a
           >
         </p>

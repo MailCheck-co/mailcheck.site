@@ -32,7 +32,9 @@ export default async function (req, res) {
     cf_worker: req.get('cf-worker'),
     referer: req.get('Referer'),
     user_agent: req.get('User-Agent'),
-    path: u.pathname
+    path: u.pathname,
+    click_id: u.searchParams.get('click_id'),
+    cnv_status: u.searchParams.get('cnv_status')
   };
   for (const [key, val] in Object.entries(row)) {
     if ((typeof val === 'number' && isNaN(val)) || val === undefined) {

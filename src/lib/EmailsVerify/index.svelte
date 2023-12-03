@@ -146,12 +146,12 @@
       });
       const data: fetchData = await response.json();
       const exist = data.mxExists ? '+' : '-';
-      const smpt = data.smtpExists ? '+' : '-';
+      const smtp = data.smtpExists ? '+' : '-';
       const disposable = data.isNotDisposable ? '+' : '-';
       const catchAll = data.isNotSmtpCatchAll ? '+' : '-';
       emailResult = data.email;
       existsResult = exist;
-      smtpResult = smpt;
+      smtpResult = smtp;
       rateResult = data?.trustRate.toString() ?? '0';
       disposableResult = disposable;
       catchResult = catchAll;
@@ -212,7 +212,7 @@
   }}
 >
   <div class="wrapper-main sm-left">
-    <h1 class="title">Validate your mailing list in one click</h1>
+    <h1 class="title">Verification email addresses online in one click</h1>
     <p class="main-text">
       Get assured your mailing list contains only real emails addresses, get rid of bots and
       inactive users
@@ -298,7 +298,7 @@
                     {disposableResult}
                   </p>
                 </li>
-                <li class="list-item smpt-ca">
+                <li class="list-item smtp-ca">
                   <p class="list-item-title">Is Not SMTP catch-all:</p>
                   <p id="catch-result" class="list-item-result">
                     {catchResult}

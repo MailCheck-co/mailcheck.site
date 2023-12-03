@@ -3,8 +3,8 @@ import slugFromBlogPath from '$utils/slugFromBlogPath';
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
  */
-export async function get({ params }) {
-  const modules = import.meta.glob(`/**/*.md`);
+export async function GET({ params }) {
+  const modules = import.meta.glob('/**/*.md');
 
   let match: any[];
   for (const [path, resolver] of Object.entries(modules)) {

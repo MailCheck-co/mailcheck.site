@@ -3,7 +3,7 @@ title: MailerLite Integration Guide
 date: 20.05.2022
 readingTime: 2 min read
 snippet: Guide on how to integrate Mailcheck using Mailerlite
-desc: Guide on how to integrate Mailcheck using Mailerlite
+description: Guide on how to integrate Mailcheck using Mailerlite
 ---
 
 # **{title}**
@@ -12,7 +12,7 @@ desc: Guide on how to integrate Mailcheck using Mailerlite
 
 ### Step 1:
 
-If you obtain a [Mailcheck.co](https://mailcheck.co/) account, please go to Integration and choose MailerLite.
+If you obtain a [Mailcheck.co](/) account, please go to Integration and choose MailerLite.
 
 ![Mailerlite integration step 1: Mailcheck integration page](./step-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
@@ -70,3 +70,7 @@ Go back to your Mailerlite account and find “Subscribers” on the left sideba
 Thank you!
 
 Please [let me know](mailto:integration@mailcheck.co) if you have any questions.
+
+_Other popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [Zapier](/mailerlite-integration), [Make.com](/make-com-integration), [SendGrid](/sendgrid-integration), [Integromat](/integromat-integration)._
+
+[_OUR BLOG_](/blog)

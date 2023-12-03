@@ -3,7 +3,7 @@ title: WoodPecker integration guide
 date: 10.05.2022
 readingTime: 5 min read
 snippet: A step-by-step guide to integrate Mailcheck with daily services using WoodPecker
-desc: WoodPecker helps to configure several services to work in conjunction with Mailcheck.
+description: A step-by-step guide to integrate Mailcheck with daily services using WoodPecker. How to use WoodPecker integration in MailCheck.co
 ---
 
 # **{title}**
@@ -12,7 +12,7 @@ desc: WoodPecker helps to configure several services to work in conjunction with
 
 ### Step 1:
 
-If you obtain a [Mailcheck.co](https://mailcheck.co/) account, please go to Integration and choose **WoodPecker**.
+If you obtain a [Mailcheck.co](/) account, please go to Integration and choose **WoodPecker**.
 
 ![choose WoodPecker](./step-1.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
@@ -40,9 +40,9 @@ As soon as the progress bar reaches **100%** you can switch to **“Woodpecker�
 
 ### Step 6:
 
-Upon completion you have two methods to migrate the results of the validation:
+Upon completion, you have two methods to migrate the results of the validation:
 
-- **Manually** by downloading directly yo PC
+- **Manually** by downloading directly to yours PC
 
 ![choose a spreadsheet you require for the validation](./step-6.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
@@ -51,6 +51,10 @@ Upon completion you have two methods to migrate the results of the validation:
 ### Step 7:
 
 - Go to **“Prospects”** in your WoodPecker account
-- Scroll horizontally and find a column **“tag”** here you may find a [Mailcheck.co](https://mailcheck.co/) results
+- Scroll horizontally and find a column **“tag”** here you may find a [Mailcheck.co](/) results
 
 ![test your zap trigger](./step-7.jpg?format=webp;jpg;png;avif&srcset&width=880)
+
+_Other popular integrations guides: [Mailchimp](/mailchimp-integration), [Zapier](/zapier-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [SendGrid](/sendgrid-integration), [Integromat](/integromat-integration)._
+
+[_OUR BLOG_](/blog)

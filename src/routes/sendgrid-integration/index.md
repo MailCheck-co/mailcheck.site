@@ -3,7 +3,7 @@ title: Sendgrid Integration instructions
 date: 29.09.2021
 readingTime: 4 min read
 snippet: Step by step guide on how to use Mailcheck with Sendgrid
-desc: Step by step guide on how to use Mailcheck with Sendgrid.
+description: Mailcheck + SendGrid Integration instructions. A step-by-step guide on how to integrate Mailcheck using SendGrid
 ---
 
 <script>
@@ -135,3 +135,7 @@ Here you must choose “Mailcheck status” OR “Mailcheck Score” I usually u
 Save segment and use the list for emailing/automation
 
 Thank you!
+
+_Other popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [Zapier](/zapier-integration), [Integromat](/integromat-integration)._
+
+[_OUR BLOG_](/blog)

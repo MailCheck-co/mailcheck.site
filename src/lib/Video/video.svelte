@@ -9,7 +9,12 @@
   {#if iframePlaceholder}
     <picture>
       <source srcset="https://i.ytimg.com/vi_webp/{id}/maxresdefault.webp" type="image/webp" />
-      <img src="https://i.ytimg.com/vi/{id}/maxresdefault.jpg" alt={title} />
+      <img
+        loading="lazy"
+        decoding="async"
+        src="https://i.ytimg.com/vi/{id}/maxresdefault.jpg"
+        alt={title}
+      />
     </picture>
     <button>
       <svg width="68" height="48" viewBox="0 0 68 48">

@@ -4,11 +4,36 @@
       "target": "mailcheck-landing",
       "headers": [
         {
-          "source": "**/*.@(js|xml|jpg|jpeg|gif|webp|png|avif|svg)",
+          "source": "**/*",
+          "headers": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "no-referrer-when-downgrade"
+            },
+            {
+              "key": "X-UA-Compatible",
+              "value": "ie=edge"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(js|css|xml|jpg|jpeg|gif|webp|png|avif|svg|woff|woff2)",
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "max-age=691200"
+              "value": "max-age=1209600"
             }
           ]
         },
@@ -45,6 +70,11 @@
           "type": 301
         },
         {
+          "source": "/make-integration",
+          "destination": "/make-com-integration",
+          "type": 301
+        },
+        {
           "source": "/increaseEmailsDeliverability",
           "destination": "/blog/x-ways-increase-emails-deliverability",
           "type": 301
@@ -67,6 +97,14 @@
         {
           "source": "/handle-send-email",
           "function": "emailSendHandler"
+        },
+        {
+          "source": "/handle-status-email",
+          "function": "emailStatusHandler"
+        },
+        {
+          "source": "/handle-email/*",
+          "function": "emailHandler"
         },
         {
           "source": "/postback",

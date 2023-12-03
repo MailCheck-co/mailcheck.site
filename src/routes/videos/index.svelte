@@ -32,7 +32,7 @@
 
 <Seo
   title="Email verification Video Tutorials"
-  desc="Video guids on how-to validate emails and run validations"
+  description="Mailcheck Email verification Video Tutorials. How to use Mailcheck for bulk and single email validation."
   schemas={[websiteSchema]}
 />
 

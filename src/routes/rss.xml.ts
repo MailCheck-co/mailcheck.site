@@ -1,7 +1,7 @@
 import { getPublishedPosts } from './blog/_blog';
 import type { RequestHandler } from '@sveltejs/kit';
 
-export const get: RequestHandler = async () => {
+export const GET: RequestHandler = async () => {
   const maxAge = 600;
   const posts = await getPublishedPosts();
   const body = `<?xml version="1.0" encoding="UTF-8" ?>
@@ -18,7 +18,7 @@ export const get: RequestHandler = async () => {
           <title>${post.title}</title>
           <link>https://mailcheck.co/blog/${post.slug}</link>
           <pubDate>${post.date}</pubDate>
-          <description>${post.desc}</description>
+          <description>${post.description}</description>
           </item>`
       )
       .join('')}
