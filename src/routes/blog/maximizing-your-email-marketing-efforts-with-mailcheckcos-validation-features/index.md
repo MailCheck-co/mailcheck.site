@@ -154,7 +154,7 @@ Setting up an Email API is a crucial step in enhancing the functionality and sec
 ![Mailcheck](./img11.png?format=jpg&width=880)
 
 The Email API settings offered by [Mailcheck.co](/) allow you to effortlessly configure your API to handle incoming emails. This integration empowers you to filter and validate email addresses in real-time, ensuring that only legitimate and verified contacts gain access to your systems. By leveraging the power of the Email API, you can safeguard your platforms from potential spam, abuse, or fake accounts.
-Here is you can look into with our  [documentation](https://app.mailcheck.co/docs#tag--email)
+Here is you can look into with our [documentation](https://app.mailcheck.co/docs#tag--email)
 
 ## 12\. Connect integration to streamline the workflow
 

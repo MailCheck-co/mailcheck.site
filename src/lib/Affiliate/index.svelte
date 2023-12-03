@@ -28,9 +28,9 @@
         </div>
         <div class="affiliate-block-content">
           <p class="section-description">
-            "Invite your friends and earn $10 USD in cash or validation if your invited friend purchases 
-             any of our plans. Your friend will also get a $10 USD discount on their first month. 
-             It's a win-win for both of you!"
+            "Invite your friends and earn $10 USD in cash or validation if your invited friend
+            purchases any of our plans. Your friend will also get a $10 USD discount on their first
+            month. It's a win-win for both of you!"
           </p>
           <a
             class="affiliate-btn"

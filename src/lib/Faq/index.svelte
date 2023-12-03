@@ -13,7 +13,8 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="wrapper-questions">
     <h3 class="title-small">FAQ</h3>
 
@@ -95,7 +96,8 @@
         <div class="tab">
           <input class="input-radio" type="checkbox" name="acc-tabs" />
           <span class="tab-label"
-            >Why Mailcheck.co is better than other email validation tools?</span>
+            >Why Mailcheck.co is better than other email validation tools?</span
+          >
           <div class="tab-content">
             <p class="tab-text">
               When it comes to email verification services, there are many popular options. However,
