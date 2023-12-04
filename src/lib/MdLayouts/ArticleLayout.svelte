@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
   import { img } from './components';
+
   export { img };
 </script>
 
@@ -9,13 +10,43 @@
   import Related from '$lib/Related/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
   import data from '$utils/site-data';
+  import type { IPost } from '$utils/types';
 
   export let title = '';
   export let description = '';
   export let canonical = '';
   export let noindex = false;
   export let thumbnail = '';
-  export let posts = [];
+  export let relatedPosts: IPost[] = [];
+
+  const postsData = [
+    {
+      title: '5 Marketing Tasks You Must Automate ASAP',
+      date: '13.10.2022',
+      slug: 'post-1',
+      snippet:
+        'Marketing automation is on the rise like never before. It involves using different tools to automate repetitive marketing tasks like tracking customer engagement, sending welcome emails, new product launch emails and so on. If you are an emerging marketer looking to optimize your marketing operations, here is an undeniable list of tasks that you need to automate.',
+      thumbnail:
+        'https://images.unsplash.com/photo-1657127791613-5c65412614d3?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    {
+      title: '5 Marketing Tasks You Must Automate ASAP',
+      date: '13.10.2022',
+      slug: 'post-2',
+      snippet:
+        'Marketing automation is on the rise like never before. It involves using different tools to automate repetitive marketing tasks like tracking customer engagement, sending welcome emails, new product launch emails and so on. If you are an emerging marketer looking to optimize your marketing operations, here is an undeniable list of tasks that you need to automate.',
+      thumbnail:
+        'https://images.unsplash.com/photo-1657127791613-5c65412614d3?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    {
+      title: "MAXIMIZING YOUR EMAIL MARKETING EFFORTS WITH MAILCHECK.CO'S VALIDATION FEATURES",
+      date: '07.07.2023',
+      slug: 'maximizing-your-email-marketing-efforts-with-mailcheckcos-validation-features',
+      snippet:
+        'Email marketing is one of the most effective ways to reach and engage with your audience. However, it can be challenging to ensure that your emails are being delivered to the right people, especially if you have a large email list. That’s where email validation services like Mailcheck.co come in. In this article, we’ll explore the features of Mailcheck.co, an email validation service that can help you improve your email deliverability and increase your ROI.',
+      thumbnail: './img1.png?format=jpg&width=880'
+    }
+  ];
 </script>
 
 <Seo
@@ -36,14 +67,13 @@
       headline: title
     },
     websiteSchema
-  ]}
-/>
+  ]} />
 
 <div class="container" id="article">
   <div class="content-block">
     <slot />
-    <Related {posts} />
   </div>
+  <Related posts={relatedPosts.length ? relatedPosts : postsData} />
 </div>
 
 <style lang="scss">
