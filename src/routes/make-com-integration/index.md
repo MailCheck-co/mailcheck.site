@@ -3,7 +3,7 @@ title: Make.com Integration Guide
 date: 06.08.2022
 readingTime: 5 min read
 snippet: Guide on how to integrate Mailcheck using Make.com
-desc: A step-by-step guide on how to integrate Mailcheck using Make.com
+description: A step-by-step guide on how to integrate Mailcheck using Make.com
 ---
 
 # **{title}**
@@ -152,6 +152,6 @@ desc: A step-by-step guide on how to integrate Mailcheck using Make.com
 
 ![example](./make-33.png?format=webp;jpg;png;avif&srcset&width=880)
 
-*Оther integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration),[Zapier](/zapier-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration).*
+_Other integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration), [Zapier](/zapier-integration), [SendGrid](/sendgrid-integration), [Integromat](/integromat-integration)._
 
-[*OUR BLOG*](/blog)
+[_OUR BLOG_](/blog)

@@ -31,7 +31,6 @@ export const articleSchema: WithContext<Article> = {
   url: data.siteUrl,
   name: data.siteName,
   description: data.description,
-  // TODO: article categories
   articleSection: 'Emails, Antispam, Marketing, Subscriptions, Mailings',
   speakable: {
     '@type': 'SpeakableSpecification',

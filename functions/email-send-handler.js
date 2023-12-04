@@ -23,12 +23,13 @@ try {
  */
 export default async function (req, res) {
   const row = {
-    timestamp: new Date(),
+    timestamp: new Date(req.body.timestamp),
     receiver: req.body.subject,
-    click_id: Number(req.body.click_id) || null,
+    click_id: req.body.click_id,
     template: req.body.template,
     email: req.body.email,
-    status: req.body.status
+    status: req.body.status,
+    table_name: req.body.table_name
   };
 
   try {

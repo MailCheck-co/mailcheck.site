@@ -42,7 +42,10 @@
       let isLoaded = false;
       const root = document.getElementById('svelte');
       function chatwoot() {
-        console.info('run!');
+        console.info('chatwoot init!');
+        window.chatwootSettings = {
+          baseDomain: '.mailcheck.co',
+        };
         var d = document;
         var t = "script";
         var BASE_URL = "https://chat.mailcheck.co";

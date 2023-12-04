@@ -24,7 +24,7 @@
 <Seo
   title={`${status}`}
   noindex={true}
-  desc={`Error: ${status}`}
+  description={`Error: ${status}`}
   schemas={[websiteSchema]}
   canonical="/"
 />

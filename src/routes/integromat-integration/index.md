@@ -3,7 +3,7 @@ title: Integromat Integration instructions
 date: 24.04.2021
 readingTime: 3 min read
 snippet: Step by step guide on how to use Mailcheck with Integromat
-desc: INTEGROMAT INTEGRATION. A step-by-step guide on how to integrate Mailcheck using MINTEGROMAT
+description: INTEGROMAT INTEGRATION. A step-by-step guide on how to integrate Mailcheck using INTEGROMAT
 ---
 
 # **{title}**
@@ -61,7 +61,7 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 
 - Find Mailcheck to connect with the previous module
 
-!choose api method in Integromat](./integromat-8.png?format=webp;jpg;png;avif&srcset&width=880)
+![choose api method in Integromat](./integromat-8.png?format=webp;jpg;png;avif&srcset&width=880)
 
 - Click on "+" and type "Mailcheck"
 - Choose "Single Email check"
@@ -121,7 +121,6 @@ I am going to use "Mailchimp" as an example, however, you can use any of the exi
 And your integration is fully working now.
 If you can't make it work, please reach out at [integromat@mailcheck.co](mailto:integromat@mailcheck.co)
 
-*Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Zapier](/zapier-integration).*
+_Other popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [SendGrid](/sendgrid-integration), [Zapier](/zapier-integration)._
 
-[*OUR BLOG*](/blog)
-
+[_OUR BLOG_](/blog)

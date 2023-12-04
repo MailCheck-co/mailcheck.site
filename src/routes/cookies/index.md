@@ -5,7 +5,7 @@ title: Cookie Policy
 date: 05.05.2022
 readingTime: 1 min read
 snippet: This Cookie Policy explains how OSA Management LLP ("Company", "we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our websites at mailcheck.co
-desc: Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
+description: Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
 ---
 
 # COOKIE POLICY
@@ -128,9 +128,9 @@ The date at the top of this Cookie Policy indicates when it was last updated.
 
 If you have any questions about our use of cookies or other technologies, please email us at s@mailcheck.co or by post to:
 
-OSA MANAGEMENT LLP  
-Suite 4005 43 Bedford Street  
-London, England WC2E 9HA  
-United Kingdom  
-Phone: +44 203 807 08 08  
+OSA MANAGEMENT LLP
+Suite 4005 43 Bedford Street
+London, England WC2E 9HA
+United Kingdom
+Phone: +44 203 807 08 08
 support@mailcheck.co

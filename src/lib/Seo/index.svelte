@@ -10,11 +10,11 @@
   export let title: string;
   export let isPost = false;
   export let thumbnail = '';
-  export let desc = '';
+  export let description = '';
   export let noindex = false;
 
   const { siteName, siteUrl, fbAppId } = data;
-  const defaultDesc = data.description;
+  const defaultDescription = data.description;
   const defaultImage = thumbnail || siteUrl + '/favicon.png';
 </script>
 
@@ -24,7 +24,7 @@
     rel="canonical"
     href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')}
   />
-  <meta name="description" content={desc || defaultDesc} />
+  <meta name="description" content={description || defaultDescription} />
   <meta name="msapplication-TileColor" content={data.theme} />
   <meta name="theme-color" content={data.theme} />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -45,9 +45,9 @@
   <meta property="og:type" content={isPost ? 'blog' : 'website'} />
   <meta property="og:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
   <meta property="og:title" content={title || siteName} />
-  <meta property="og:description" content={desc || defaultDesc} />
+  <meta property="og:description" content={description || defaultDescription} />
   <meta property="og:image" content={defaultImage} />
-  <meta property="og:image:alt" content={desc || defaultDesc} />
+  <meta property="og:image:alt" content={description || defaultDescription} />
   <meta property="business:contact_data:country_name" content="Ukraine" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content={siteName} />
@@ -56,7 +56,7 @@
   <meta property="twitter:card" content={data.twitterCard} />
   <meta property="twitter:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
   <meta property="twitter:title" content={title || siteName} />
-  <meta property="twitter:description" content={desc || defaultDesc} />
+  <meta property="twitter:description" content={description || defaultDescription} />
   <meta property="twitter:image" content={defaultImage} />
 
   <link rel="preload" href={defaultImage} as="image" />

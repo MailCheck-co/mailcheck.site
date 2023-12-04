@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import SeregaAva from '$lib/Team/serega-karetnik.png?w=200&format=webp;png;avif&srcset';
+  import SerhiiAva from './serhii-karetnyk.png?w=200&format=webp;png;avif&srcset';
   import KonstantinAva from '$lib/Team/konstantin-nosov.png?w=200&format=webp;png;avif&srcset';
   import FaraAva from '$lib/Team/fara-muhammadiev.png?w=200&format=webp;png;avif&srcset';
 
@@ -26,7 +26,7 @@
       <div class="team-members">
         <div class="team-member csm">
           <div class="team-member-avatar">
-            <img srcset={SeregaAva} alt="csm" class="avatar" />
+            <img srcset={SerhiiAva} alt="csm" class="avatar" />
           </div>
           <div class="team-member-info">
             <p class="team-member-name">Serhii Karetnyk</p>

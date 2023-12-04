@@ -94,8 +94,8 @@
               to stay with Mailcheck as these guys are truly doing what they offer. I had a years
               old email list but after running it through a verification never thought that 20% of
               it would come back as invalid! No wonder why my sender score was so bad! Also, as an
-              online-store owner, I really enjoyed the benefits of their API feature. And the
-              cost..Absolutely worth it!
+              online-store owner, I really enjoyed the benefits of their API feature. And the cost..
+              Absolutely worth it!
             </p>
             <p class="slide-name">Timofei G.</p>
           </div>

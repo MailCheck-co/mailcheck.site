@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import imgAffiliate from './invite-friends.jpg';
+  import imgAffiliate from './invite-friends.jpg?w=500&format=webp;png;avif&srcset';
 
   let intersecting: boolean;
 </script>
@@ -21,21 +21,21 @@
   </div>
 
   <div class="container">
-    <div class="affil-block">
-      <div class="affil-block-inner">
-        <div class="affil-block-image">
-          <img src={imgAffiliate} width="500" class="affil-image" alt="Invite friends" />
+    <div class="affiliate-block">
+      <div class="affiliate-block-inner">
+        <div class="affiliate-block-image">
+          <img srcset={imgAffiliate} width="500" class="affiliate-image" alt="Invite friends" />
         </div>
-        <div class="affil-block-content">
+        <div class="affiliate-block-content">
           <p class="section-description">
-            Invite your friends and provide them with a $10 USD discount, and receive your part ($10
-            USD as well) the number of invitations unlimited, stack validations forever! Invite 3
-            friends in a row and grab the "Enterprise plan" (20k validations) fully free.
+            "Invite your friends and earn $10 USD in cash or validation if your invited friend
+            purchases any of our plans. Your friend will also get a $10 USD discount on their first
+            month. It's a win-win for both of you!"
           </p>
           <a
-            class="affil-btn"
+            class="affiliate-btn"
             rel="external"
-            href="https://app.mailcheck.co/auth/login"
+            href="https://app.mailcheck.co/dashboard/settings"
             title="Invite now"
             target="_blank"
           >
@@ -101,31 +101,27 @@
       text-indent: 0;
     }
 
-    .affil-block {
+    .affiliate-block {
       padding: var(--size-20) 0;
     }
 
-    .affil-block-image {
+    .affiliate-block-image {
       max-width: 50%;
-
-      img {
-        max-width: unset;
-      }
     }
 
-    .affil-block-inner {
+    .affiliate-block-inner {
       display: flex;
       gap: var(--size-40);
       align-items: stretch;
     }
 
-    .affil-block-content {
+    .affiliate-block-content {
       display: flex;
       flex-direction: column;
       padding: var(--size-30) 0;
     }
 
-    .affil-btn {
+    .affiliate-btn {
       display: block;
       max-width: 10rem;
       height: var(--size-60);
@@ -163,18 +159,18 @@
     }
 
     @media (max-width: 1024px) {
-      .affil-block-inner {
+      .affiliate-block-inner {
         flex-direction: column;
         gap: 0;
         text-align: center;
       }
 
-      .affil-block-image {
+      .affiliate-block-image {
         max-width: 100%;
         margin: 0 auto;
       }
 
-      .affil-btn {
+      .affiliate-btn {
         margin: 0 auto;
       }
     }

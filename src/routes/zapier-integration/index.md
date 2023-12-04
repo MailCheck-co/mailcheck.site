@@ -3,7 +3,7 @@ title: Zapier Integration instructions
 date: 18.02.2021
 readingTime: 3 min read
 snippet: A step-by-step guide to integrate Mailcheck with daily services using Zapier
-desc: Using Mailcheck with Zapier. Here is what you need. A step-by-step guide to integrate Mailcheck with daily services using Zapier
+description: Using Mailcheck with Zapier. Here is what you need. A step-by-step guide to integrating Mailcheck with daily services using Zapier
 ---
 
 # **Zapier Integration instructions**
@@ -171,6 +171,6 @@ Let’s perform manual tests to ensure everything is working properly.
 However, the fundamental principles remain the same. Zapier’s library contains more than 2,000 online apps, which means that they are likely to support the CRM or ESP which you are currently using.
 Be creative while exploring the endless possibilities of Zapier. If you ever encounter any issues, kindly get in touch with our LiveChat support team for proper assistance.
 
-*Оther popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration),[Make.com](/make-com-integration), [SendGrid](/sendgrid-integration),[Integromat](/integromat-integration).*
+_Other popular integrations guides: [Mailchimp](/mailchimp-integration), [Woodpecker](/woodpecker-integration), [MailerLite](/mailerlite-integration), [Make.com](/make-com-integration), [SendGrid](/sendgrid-integration), [Integromat](/integromat-integration)._
 
-[*OUR BLOG*](/blog)
+[_OUR BLOG_](/blog)
