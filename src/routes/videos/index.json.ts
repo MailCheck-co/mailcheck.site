@@ -1,7 +1,7 @@
 import fetchData from './_videos';
 import type { RequestHandler } from '@sveltejs/kit';
 
-export const get: RequestHandler = async () => {
+export const GET: RequestHandler = async () => {
   const response = await fetchData();
   let videos;
   try {

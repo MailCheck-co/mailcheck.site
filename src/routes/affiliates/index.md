@@ -2,6 +2,7 @@
 title: Affiliate Program
 date: 30.09.2021
 readingTime: 1 min read
+description: Mailcheck affiliate program. Earn the highest commissions on referrals.
 snippet: Invite your friends and provide them with a $10 USD discount, and receive your part ($10 USD as well) the number of invitations unlimited, stack validations forever! Invite 3 friends in a row and grab the "Enterprise plan" (20k validations) fully free.
 ---
 

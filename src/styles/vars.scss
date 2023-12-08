@@ -2,13 +2,10 @@
   --inherit: inherit;
 
   // fonts
-  --defoult-font: arial, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-  font-family: var(--defoult-font);
+  font-family: var(--roboto);
 
   --roboto: 'Roboto', sans-serif;
-  --font-mono: 'Fira Mono', monospace;
+  --fira-mono: 'Fira Mono', monospace;
   --letter-spacing: 0.05625rem;
   --letter-spacing-text: 0.05rem;
 

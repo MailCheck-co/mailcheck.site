@@ -5,7 +5,7 @@ title: Cookie Policy
 date: 05.05.2022
 readingTime: 1 min read
 snippet: This Cookie Policy explains how OSA Management LLP ("Company", "we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our websites at mailcheck.co
-desc: Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
+description: Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
 ---
 
 # COOKIE POLICY
@@ -102,7 +102,6 @@ Type: http_cookie
 
 Expires in: 2 months 29 days
 
-
 ## WHAT ABOUT OTHER TRACKING TECHNOLOGIES, LIKE WEB BEACONS?
 
 Cookies are not the only way to recognize or track visitors to a website. We may use other, similar technologies from time to time, like web beacons (sometimes called "tracking pixels" or "clear gifs"). These are tiny graphics files that contain a unique identifier that enable us to recognize when someone has visited our Websites or opened an e-mail including them. This allows us, for example, to monitor the traffic patterns of users from one page within a website to another, to deliver or communicate with cookies, to understand whether you have come to the website from an online advertisement displayed on a third-party website, to improve site performance, and to measure the success of e-mail marketing campaigns. In many instances, these technologies are reliant on cookies to function properly, and so declining cookies will impair their functioning.
@@ -129,9 +128,9 @@ The date at the top of this Cookie Policy indicates when it was last updated.
 
 If you have any questions about our use of cookies or other technologies, please email us at s@mailcheck.co or by post to:
 
-OSA MANAGEMENT LLP  
-Suite 4005 43 Bedford Street  
-London, England WC2E 9HA  
-United Kingdom  
-Phone: +44 203 807 08 08  
+OSA MANAGEMENT LLP
+Suite 4005 43 Bedford Street
+London, England WC2E 9HA
+United Kingdom
+Phone: +44 203 807 08 08
 support@mailcheck.co

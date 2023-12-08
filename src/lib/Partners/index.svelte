@@ -18,9 +18,10 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="section-heading sm-left">
-    <h2 class="title">You’re in good company</h2>
+    <h2 class="title">Successful business already use MailCheck</h2>
     <p class="section-title-lg">Partners</p>
   </div>
   <div class="partners-list">

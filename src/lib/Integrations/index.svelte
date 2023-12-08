@@ -2,15 +2,15 @@
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   // assets
-  import makecom from '$lib/Integrations/make.com.svg';
+  import makeCom from '$lib/Integrations/make.com.svg';
   import mailchimp from '$lib/Integrations/mailchimp-logo.svg';
   import n8n from '$lib/Integrations/n8n-logo.svg';
   import sendgrid from '$lib/Integrations/sendgrid.svg';
   import WP from '$lib/Integrations/WordPress_logo.svg';
   import zapier from '$lib/Integrations/zapier-official.svg';
-  import mailerlite from '$lib/Integrations/mailer-lite.svg';
+  import mailerLite from '$lib/Integrations/mailer-lite.svg';
   import woodpecker from '$lib/Integrations/woodpecker.svg';
-  import activecampaign from '$lib/Integrations/active-campaign-logo.svg';
+  import activeCampaign from '$lib/Integrations/active-campaign-logo.svg';
 
   let intersecting: boolean;
 </script>
@@ -22,7 +22,8 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="section-heading sm-left">
     <h2 class="title">Integrations</h2>
     <p class="section-title-lg">Integrations</p>
@@ -30,45 +31,125 @@
   <div class="container">
     <div class="integrations-list">
       <div class="integrations-list-item" data-item-title="Mailchimp">
-        <img width="50" height="50" src={mailchimp} alt="Mailchimp" class="integrations-logo" />
-        <a href="/mailchimp-integration" class="integrations-link"></a>
+        <a href="/mailchimp-integration" class="integrations-link">
+          <img
+            loading="lazy"
+            decoding="async"
+            width="50"
+            height="50"
+            src={mailchimp}
+            alt="Mailchimp"
+            class="integrations-logo"
+          />
+        </a>
       </div>
       <div class="integrations-list-item" data-item-title="Zapier">
-        <img width="50" height="50" src={zapier} alt="Zapier" class="integrations-logo" />
-        <a href="/zapier-integration" class="integrations-link"></a>
+        <a href="/zapier-integration" class="integrations-link">
+          <img
+            loading="lazy"
+            decoding="async"
+            width="50"
+            height="50"
+            src={zapier}
+            alt="Zapier"
+            class="integrations-logo"
+          />
+        </a>
       </div>
       <div class="integrations-list-item" data-item-title="WordPress">
-        <img width="50" height="50" src={WP} alt="WordPress" class="integrations-logo" />
-        <a rel="external" href="https://wordpress.org/plugins/mailcheck-co/" class="integrations-link"></a>
+        <a
+          rel="external"
+          href="https://wordpress.org/plugins/mailcheck-co/"
+          class="integrations-link"
+        >
+          <img
+            loading="lazy"
+            decoding="async"
+            width="50"
+            height="50"
+            src={WP}
+            alt="WordPress"
+            class="integrations-logo"
+          />
+        </a>
       </div>
       <div class="integrations-list-item" data-item-title="Make.com">
-        <img width="50" height="50" src={makecom} alt="Make.com" class="integrations-logo" />
-        <a rel="external" href="https://make.com/" class="integrations-link"></a>
+        <a href="/make-com-integration" class="integrations-link">
+          <img width="50" height="50" src={makeCom} alt="Make.com" class="integrations-logo" />
+        </a>
       </div>
       <div class="integrations-list-item" data-item-title="Sendgrid">
-        <img width="50" height="50" src={sendgrid} alt="Sendgrid" class="integrations-logo" />
-        <a href="/sendgrid-integration" class="integrations-link"></a>
+        <a href="/sendgrid-integration" class="integrations-link">
+          <img
+            loading="lazy"
+            decoding="async"
+            width="50"
+            height="50"
+            src={sendgrid}
+            alt="Sendgrid"
+            class="integrations-logo"
+          />
+        </a>
       </div>
       <div class="integrations-list-item" data-item-title="N8N">
-        <img width="50" height="50" src={n8n} alt="N8N" class="integrations-logo" />
-        <a rel="external" href="https://app.mailcheck.co/dashboard/integration" class="integrations-link"></a>
+        <a
+          rel="external"
+          href="https://app.mailcheck.co/dashboard/integration"
+          class="integrations-link"
+        >
+          <img
+            loading="lazy"
+            decoding="async"
+            width="50"
+            height="50"
+            src={n8n}
+            alt="N8N"
+            class="integrations-logo"
+          />
+        </a>
       </div>
       <div class="integrations-list-item" data-item-title="Mailerlite">
-        <img width="50" height="50" src={mailerlite} alt="Mailerlite" class="integrations-logo" />
-        <a href="/mailerlite-integration" class="integrations-link"></a>
+        <a href="/mailerlite-integration" class="integrations-link">
+          <img
+            loading="lazy"
+            decoding="async"
+            width="50"
+            height="50"
+            src={mailerLite}
+            alt="Mailerlite"
+            class="integrations-logo"
+          />
+        </a>
       </div>
       <div class="integrations-list-item" data-item-title="Woodpecker">
-        <img width="50" height="50" src={woodpecker} alt="Woodpecker" class="integrations-logo" />
-        <a href="/woodpecker-integration" class="integrations-link"></a>
+        <a href="/woodpecker-integration" class="integrations-link">
+          <img
+            loading="lazy"
+            decoding="async"
+            width="50"
+            height="50"
+            src={woodpecker}
+            alt="Woodpecker"
+            class="integrations-logo"
+          />
+        </a>
       </div>
       <div class="integrations-list-item" data-item-title="ActiveCampaign">
-        <img
-          width="50"
-          height="50"
-          src={activecampaign}
-          alt="Active Campaign"
-          class="integrations-logo" />
-        <a rel="external" href="https://app.mailcheck.co/dashboard/integration" class="integrations-link"></a>
+        <a
+          rel="external"
+          href="https://app.mailcheck.co/dashboard/integration"
+          class="integrations-link"
+        >
+          <img
+            loading="lazy"
+            decoding="async"
+            width="50"
+            height="50"
+            src={activeCampaign}
+            alt="Active Campaign"
+            class="integrations-logo"
+          />
+        </a>
       </div>
     </div>
   </div>
@@ -104,7 +185,7 @@
     box-shadow: var(--color-shadow);
     backdrop-filter: blur(10px);
 
-    &:hover{
+    &:hover {
       background: linear-gradient(135deg, rgb(255 255 255 / 25%) 0%, rgb(255 255 255 / 0%) 100%);
     }
 

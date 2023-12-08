@@ -5,7 +5,7 @@ title: Privacy Policy
 date: 05.05.2022
 readingTime: 1 min read
 snippet: This privacy policy applies to all information collected through our website (such as mailcheck.co).
-desc: This privacy policy applies to all information collected through our website (such as mailcheck.co).
+description: This privacy policy applies to all information collected through our website (such as mailcheck.co).
 ---
 
 # {title}
@@ -107,6 +107,7 @@ Allow Users to Connect to their Third-Party Accounts:
 Communicate and Chat with Users:
 
 - chat.mailcheck.co
+- Mailgun
 
 Content Optimization:
 
@@ -124,6 +125,7 @@ Invoice and Billing:
 Web and Mobile Analytics:
 
 - Google Analytics
+- Google Tag Manager
 
 Registration/login:
 
@@ -132,6 +134,7 @@ Registration/login:
 Advertising:
 
 - Use of Facebook Pixels, Google Ad
+- Meta Events Manager
 
 ## 5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
 
@@ -213,9 +216,9 @@ In Short: Yes, we will update this policy as necessary to stay compliant with re
 
 If you have questions or comments about this policy, you may email us at s@mailcheck.co or by post to:
 
-OSA MANAGEMENT LLP  
-Suite 4005 43 Bedford Street  
-London, England WC2E 9HA  
-United Kingdom  
-Phone: +44 203 807 08 08  
+OSA MANAGEMENT LLP
+Suite 4005 43 Bedford Street
+London, England WC2E 9HA
+United Kingdom
+Phone: +44 203 807 08 08
 support@mailcheck.co

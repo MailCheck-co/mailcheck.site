@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import filterIcon from '$lib/MdLayouts/FaqLayout/filter.png';
+  import filterImg from '$lib/MdLayouts/FaqLayout/filter.png?format=webp;png;avif&srcset';
 
   let intersecting: boolean;
 </script>
@@ -13,7 +13,8 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
-  }}>
+  }}
+>
   <div class="wrapper-questions">
     <h3 class="title-small">FAQ</h3>
 
@@ -91,12 +92,67 @@
             </p>
           </div>
         </div>
+
+        <div class="tab">
+          <input class="input-radio" type="checkbox" name="acc-tabs" />
+          <span class="tab-label"
+            >Why Mailcheck.co is better than other email validation tools?</span
+          >
+          <div class="tab-content">
+            <p class="tab-text">
+              When it comes to email verification services, there are many popular options. However,
+              if you are looking for a service with recurring plans, Mailcheck.co is the better
+              choice.
+            </p>
+            <p class="tab-text">Here's why:</p>
+            <ol>
+              <li class="tab-text">
+                <strong>Affordable Recurring Plans:</strong> Mailcheck.co offers affordable recurring
+                plans on a monthly or yearly basis, making it easier for businesses to budget for email
+                verification services. With “other email validation tools”, you have to pay for each
+                verification separately, which can be inconvenient if you need regular email verification
+                services.
+              </li>
+              <li class="tab-text">
+                <strong>Wide Range of Features:</strong> Mailcheck.co offers a wide range of features,
+                including disposable email detection, syntax checking, and domain validation, making
+                it a comprehensive and versatile email verification tool. “other email validation tools”
+                offers more advanced features, but for most businesses, the features offered by Mailcheck.co
+                are sufficient.
+              </li>
+              <li class="tab-text">
+                <strong>User-Friendly Interface:</strong> Mailcheck.co's user interface is intuitive
+                and easy to navigate, making it simple for users to upload their email lists and get
+                started with email verification. “Other email validation tools” can be more challenging
+                to use, particularly for users who are new to email verification services.
+              </li>
+              <li class="tab-text">
+                <strong>Excellent Customer Support:</strong> Mailcheck.co provides exceptional customer
+                support, including email and live chat support, as well as a knowledge base that can
+                help you troubleshoot any issues you may encounter. “Other email validation tools” also
+                offers customer support, but Mailcheck.co's support is particularly well-regarded.
+              </li>
+              <li class="tab-text">
+                <strong>Highly Accurate Results:</strong> Both “Another email validation tool” and Mailcheck.co
+                provide highly accurate email verification results. While “other email validation tools”
+                is known for its accuracy, Mailcheck.co also has an excellent reputation for providing
+                accurate verification results.
+              </li>
+            </ol>
+            <p class="tab-text">
+              In summary, if you are looking for an email verification service with recurring plans,
+              Mailcheck.co is the better choice. Its affordable pricing, a wide range of features,
+              user-friendly interface, excellent customer support, and highly accurate results make
+              it a perfect option for businesses looking to keep their email list clean and valid.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
     <a href="/faq" title="faq" class="btn btn-start">Learn More</a>
 
-    <img class="filter-img" src={filterIcon} width="444" height="568" alt="filter" />
+    <img class="filter-img" srcset={filterImg} width="444" height="568" alt="filter" />
   </div>
 </section>
 

@@ -1,15 +1,18 @@
 ---
 published: true
-title: Mailcheck scholarship
+title: Mailcheck scholarship 2019
 date: 18.04.2019
 readingTime: 3 min read
 snippet: We are pleased to announce that Mailcheck Academic Scholarship 2019 is now open to receive new applications.
-desc: We are pleased to announce that Mailcheck Academic Scholarship 2019 is now open to receive new applications.
+description: Mailcheck Academic Scholarship is now open to receive new applications. How to Apply for this Scholarship and other important details of the program
+thumbnailImg: ./top-view-academic-cap-with-copy-space.jpg?format=jpg&width=880
 ---
 
 # {title}
 
 {readingTime}
+
+![Mailcheck scholarship](./top-view-academic-cap-with-copy-space.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
 We are pleased to announce that Mailcheck Academic Scholarship 2019 is now open to receive new applications.
 
@@ -17,7 +20,7 @@ Beginning May 01, 2019, we are announcing a scholarship program for 2019 year. W
 
 ## Learn More About Mailcheck
 
-Mailcheck is the [new era of email verification](https://mailcheck.co). We are a team that validates emails and phones using social networks for the past 3 years. Our team consists of impressively skilled engineers and experienced software developers who are able to work with numerous algorithms. Our service will be useful to those who are working every day to increase conversion in email mailings and who can not overcome the bounce system of mail servers. We will also be useful to those who want to know who is behind that email or phone in order to save time.
+Mailcheck is the [new era of email verification](/). We are a team that validates emails and phones using social networks for the past 3 years. Our team consists of impressively skilled engineers and experienced software developers who are able to work with numerous algorithms. [Our service will be useful to those who are working every day to increase conversion in email mailings](/blog/emails-validation-api-will-increase-conversion) and who can not overcome the bounce system of mail servers. We will also be useful to those who want to know who is behind that email or phone in order to save time.
 
 Certainly, love for what we do has made it possible to create such a diverse range of email verification services. The most requested ones are an [agency subscription](/#pricing) which includes 5000 emails, with an average charge of $0.004 per email.
 
@@ -31,12 +34,12 @@ In order to maintain a passion for email validation, self-development, and profe
 
 ## How to Apply for this Scholarship
 
-1.  To start the application process and to be considered as a potential winner by our post-processing company, first of all, you should write your own essay, following all instructions, which will be described below, as well as the topic.
-2.  To start the application process and to be considered as a potential winner by our post-processing company, first of all, you should write your own essay, following all instructions, which will be described below, as well as the topic.
-3.  When the text is ready, please [email it to us](mailto:scholarship@mailcheck.co).
-4.  As soon as the creative part is finished, you should fill out the application form that you will find below. Please note that you must concentrate in order to avoid mistakes, otherwise your form will not be activated.
-5.  The application submission deadline is September 30, 2019, 11:59 PM EST.
-6.  The winners will be announced on October 10, 2019.
+1. To start the application process and to be considered as a potential winner by our post-processing company, first of all, you should write your own essay, following all instructions, which will be described below, as well as the topic.
+2. To start the application process and to be considered as a potential winner by our post-processing company, first of all, you should write your own essay, following all instructions, which will be described below, as well as the topic.
+3. When the text is ready, please [email it to us](mailto:scholarship@mailcheck.co).
+4. As soon as the creative part is finished, you should fill out the application form that you will find below. Please note that you must concentrate in order to avoid mistakes, otherwise your form will not be activated.
+5. The application submission deadline is September 30, 2019, 11:59 PM EST.
+6. The winners will be announced on October 10, 2019.
 
 ## Important Details About the Scholarship Program
 
@@ -74,3 +77,5 @@ Below we will note some necessary rules that must be followed without any except
 - Remember that all information mentioned in your essay should be true to life. Our company will check every detail that you describe in your text carefully. If we find out that information is false or unreliable, your essay will not be considered.
 
 If you follow these rules, you have a great chance of succeeding in this competition. We are open to fresh and totally new visions about the future of the email verification industry. Thus, we are waiting for your rich essays! In case of problems with the application or just questions, please contact us via email.
+
+_Read more in our [blog](/blog)._

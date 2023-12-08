@@ -41,7 +41,10 @@
   export let videos: IVideo[];
 </script>
 
-<Seo title="Home" schemas={[websiteSchema, organizationSchema]} />
+<Seo
+  title="Online email verification tool. Bulk check and cleaning"
+  schemas={[websiteSchema, organizationSchema]}
+/>
 
 <main class="manage-customers" id="main">
   <!-- EMAILS VERIFY -->
