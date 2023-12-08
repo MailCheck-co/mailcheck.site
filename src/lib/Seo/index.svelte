@@ -9,7 +9,7 @@
   export let canonical = '';
   export let title: string;
   export let isPost = false;
-  export let thumbnail = '';
+  export let thumbnail = '/preview.jpeg';
   export let description = '';
   export let noindex = false;
 
