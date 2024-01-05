@@ -35,7 +35,7 @@
     "eslint-plugin-svelte3": "^4.0.0",
     "fast-glob": "^3.2.12",
     "mdsvex": "^0.10.6",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.33",
     "postcss-load-config": "^4.0.1",
     "postcss-scss": "^4.0.6",
     "prettier": "~2.8.8",
