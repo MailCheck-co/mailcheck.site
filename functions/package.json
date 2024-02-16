@@ -20,7 +20,7 @@
     "firebase-functions": "^4.4.1",
     "firebase-tools": "^12.4.6",
     "google-auth-library": "^8.8.0",
-    "nodemailer": "^6.9.3",
+    "nodemailer": "^6.9.9",
     "undici": "^5.26.2"
   },
   "private": true
