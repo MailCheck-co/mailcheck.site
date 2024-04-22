@@ -205,6 +205,14 @@ A step-by-step guide to integrate Mailcheck with [ActiveCampaign](/activecampaig
 
 </details>
 
+<details>
+
+    <summary>N8N Integration instructions</summary>
+
+A guide to integrate Mailcheck with [N8N](/n8n-integration)
+
+</details>
+
 </div>
 
 <div class="accordion-column right">
