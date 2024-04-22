@@ -6,6 +6,19 @@ readingTime: 4 min read
 snippet: Marketing automation is on the rise like never before. It involves using different tools to automate repetitive marketing tasks like tracking customer engagement, sending welcome emails, new product launch emails and so on. If you are an emerging marketer looking to optimize your marketing operations, here is an undeniable list of tasks that you need to automate.
 description: Some ideas that help you to build an effective email marketing strategy and get a high response from your mail list.
 thumbnailImg: ./marketing-tasks-email.jpg?format=jpg&width=880
+relatedPosts:
+  - title: "Title of Related Post 1"
+    slug: "slug-of-related-post-1"
+    snippet: "slug-of-related-post-1"
+    thumbnail: "./marketing-tasks-you-must-automate-asap.jpg?format=jpg&width=370"
+  - title: "Title of Related Post 2"
+    slug: "slug-of-related-post-2"
+    snippet: "slug-of-related-post-2"
+    thumbnail: "./marketing-tasks-you-must-automate-asap.jpg?format=jpg&width=370"
+  - title: "Title of Related Post 3"
+    slug: "slug-of-related-post-3"
+    snippet: "slug-of-related-post-3"
+    thumbnail: "./marketing-tasks-you-must-automate-asap.jpg?format=jpg&width=370"
 ---
 
 # {title}
