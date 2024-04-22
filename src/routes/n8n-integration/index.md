@@ -36,7 +36,7 @@ Add the block Mailcheck the same way you did it in step 2. You choose the right 
 
 ### Step 5:
 
-You will see window Edit Expression, and you have to choose next node, and there will be green line in your expression and result, in means you are on right way. Close this editing. Click on the Execute node.
+You will see window Edit Expression, and you have to choose next node, and there will be green line in your expression and result, it means you are on right way. Close this editing. Click on the Execute node.
 
 ![N8N integration step 5: Choose next node](./step-5.jpg?format=webp;jpg;png;avif&srcset&width=880)
 
