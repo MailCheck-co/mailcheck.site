@@ -143,7 +143,7 @@ description: This privacy policy applies to all information collected through ou
     }
     @media screen and (min-width: 1280px) {
         .services-grid {
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
         }
     }
 
