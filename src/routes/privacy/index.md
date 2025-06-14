@@ -141,5 +141,10 @@ description: This privacy policy applies to all information collected through ou
     .services-grid .purpose {
         padding: 8px;
     }
+    .header{
+      text-align: center;
+      font-size: 1.4em;
+      line-height: 1.4;
+    }
 
 </style>
