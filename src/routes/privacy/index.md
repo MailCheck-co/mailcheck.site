@@ -127,7 +127,7 @@ description: This privacy policy applies to all information collected through ou
 <style> 
     .services-grid {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr 1fr;
         gap: 8px 16px;
         align-items: start;
         margin-top: 10px;
@@ -140,11 +140,6 @@ description: This privacy policy applies to all information collected through ou
     .services-grid .service,
     .services-grid .purpose {
         padding: 8px;
-    }
-    @media screen and (min-width: 1280px) {
-        .services-grid {
-            grid-template-columns: 1fr 1fr;
-        }
     }
 
 </style>
