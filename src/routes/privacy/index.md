@@ -42,30 +42,48 @@ description: This privacy policy applies to all information collected through ou
 
   <div class="section">
   <h2>5. Third-Party Services</h2>
-  <div class="services-grid">
-    <div>
-    <div class="header service">Service</div>
-    <div class="service"> Calendly </div>
-    <div class="service">Cloudflare</div>
-    <div class="service">Google Tag Manager</div>
-    <div class="service">Meta Events (Facebook Pixel)</div>
-    <div class="service">SendGrid / Mailgun</div>
-    <div class="service">Stripe</div>
-    <div class="service">Google Analytics 4</div>
-    <div class="service">Mailchimp (optional)</div>
-    </div>
-    <div>
-    <div class="header purpose">Purpose</div>
-    <div class="purpose">Call scheduling for support</div>
-    <div class="purpose">Performance & security (CDN, DDoS)</div>
-    <div class="purpose">Managing tracking and analytics scripts</div>
-    <div class="purpose">Conversion tracking</div>
-    <div class="purpose">Transactional and notification emails</div>
-    <div class="purpose">Payment processing (incl. AppSumo deals)</div>
-    <div class="purpose">Website analytics and performance</div>
-    <div class="purpose">Newsletter mailings</div>
-    </div>
-  </div>
+  <table class="services-table">
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Calendly</td>
+      <td>Call scheduling for support</td>
+    </tr>
+    <tr>
+      <td>Cloudflare</td>
+      <td>Performance & security (CDN, DDoS)</td>
+    </tr>
+    <tr>
+      <td>Google Tag Manager</td>
+      <td>Managing tracking and analytics scripts</td>
+    </tr>
+    <tr>
+      <td>Meta Events (Facebook Pixel)</td>
+      <td>Conversion tracking</td>
+    </tr>
+    <tr>
+      <td>SendGrid / Mailgun</td>
+      <td>Transactional and notification emails</td>
+    </tr>
+    <tr>
+      <td>Stripe</td>
+      <td>Payment processing (incl. AppSumo deals)</td>
+    </tr>
+    <tr>
+      <td>Google Analytics 4</td>
+      <td>Website analytics and performance</td>
+    </tr>
+    <tr>
+      <td>Mailchimp (optional)</td>
+      <td>Newsletter mailings</td>
+    </tr>
+  </tbody>
+</table>
 
   <p>Each third party operates under its own privacy policy, and only necessary data is shared.</p>
 </div>
@@ -125,26 +143,19 @@ description: This privacy policy applies to all information collected through ou
     <p>Tax Number: 17528 77095</p>
   </div>
 <style> 
-    .services-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px 16px;
-        align-items: start;
-        margin-top: 10px;
-        color: #ffffff;
-    }
-    .services-grid .header {
-        font-weight: bold;
-        padding: 8px;
-    }
-    .services-grid .service,
-    .services-grid .purpose {
-        padding: 8px;
-    }
-    .header{
-      text-align: center;
-      font-size: 1.4em;
-      line-height: 1.4;
-    }
-
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+}
+.services-table th,
+.services-table td {
+  padding: 8px;
+  text-align: left;
+}
+.services-table thead th {
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: center;
+}
 </style>
