@@ -152,6 +152,7 @@ description: This privacy policy applies to all information collected through ou
 .services-table td {
   padding: 8px;
   text-align: left;
+  vertical-align: top;
 }
 .services-table thead th {
   font-weight: bold;
