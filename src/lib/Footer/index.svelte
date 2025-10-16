@@ -20,8 +20,7 @@
     <div class="footer-top">
       <div class="footer-logo-copyright">
         <a class="logo2" href="/" title="logo">
-          <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a
-        >
+          <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a>
         <address class="footer-address">
           Suite 4005 43 Bedford Street,<br />
           London, England, WC2E 9HA
@@ -33,11 +32,9 @@
           target="_blank"
           class="nav-link footer-nav-link"
           title="Refer a friend"
-          href="https://app.mailcheck.co/auth/login">Refer a friend</a
-        >
+          href="https://app.mailcheck.co/auth/login">Refer a friend</a>
         <a class="nav-link footer-nav-link" title="For affiliates" href="/affiliates"
-          >For affiliates</a
-        >
+          >For affiliates</a>
       </div>
 
       <nav class="footer-nav">
@@ -50,24 +47,20 @@
           href="/l/docs#tag--email"
           rel="external"
           title="API"
-          target="_blank">API</a
-        >
-        <a class="nav-link footer-nav-link" title="Privacy policy" href="/privacy">Privacy policy</a
-        >
+          target="_blank">API</a>
+        <a class="nav-link footer-nav-link" title="Privacy policy" href="/privacy"
+          >Privacy policy</a>
         <a class="nav-link footer-nav-link" title="Terms and conditions" href="/terms"
-          >Terms and conditions</a
-        >
+          >Terms and conditions</a>
         <a class="nav-link footer-nav-link" title="Cookie policy" href="/cookies">Cookie policy</a>
         <a class="nav-link footer-nav-link" title="Video tutorials" href="/videos"
-          >Video tutorials</a
-        >
+          >Video tutorials</a>
         <a
           rel="external"
           target="_blank"
           title="Product of NodeArt"
           class="nav-link footer-nav-link"
-          href="/l/na">Product of NodeArt</a
-        >
+          href="/l/na">Product of NodeArt</a>
       </nav>
       <div class="footer-social-mobile">
         <a
@@ -75,38 +68,33 @@
           target="_blank"
           rel="external"
           title="Facebook page"
-          class="footer-social-link"
-        >
+          class="footer-social-link">
           <img
             width="18"
             height="18"
             class="footer-social-icon"
             src={iconFacebook}
-            alt="Facebook"
-          />
+            alt="Facebook" />
         </a>
         <a
           href="/l/linkedin"
           target="_blank"
           rel="external"
           title="LinkedIn page"
-          class="footer-social-link"
-        >
+          class="footer-social-link">
           <img
             width="18"
             height="18"
             class="footer-social-icon"
             src={iconLinkedin}
-            alt="LinkedIn"
-          />
+            alt="LinkedIn" />
         </a>
         <a
           href="/l/yt"
           target="_blank"
           rel="external"
           title="Youtube channel"
-          class="footer-social-link"
-        >
+          class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconYoutube} alt="Youtube" />
         </a>
         <a
@@ -114,8 +102,7 @@
           target="_blank"
           rel="external"
           title="Twitter page"
-          class="footer-social-link"
-        >
+          class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconTwitter} alt="Twitter" />
         </a>
         <a
@@ -123,8 +110,7 @@
           target="_blank"
           rel="external"
           title="GitHub page"
-          class="footer-social-link"
-        >
+          class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
         </a>
         <a href="/rss.xml" class="footer-social-link">
@@ -147,8 +133,7 @@
             width="36"
             height="36"
             src={iconMoneyBack}
-            alt="40 days money-back guarantee"
-          />
+            alt="40 days money-back guarantee" />
           <p class="footer-info-text">
             40 days<br />
             money-back guarantee
@@ -163,68 +148,59 @@
             target="_blank"
             rel="external"
             title="Facebook page"
-            class="footer-social-link"
-          >
+            class="footer-social-link">
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconFacebook}
-              alt="Facebook"
-            />
+              alt="Facebook" />
           </a>
           <a
             href="/l/linkedin"
             target="_blank"
             rel="external"
             title="LinkedIn page"
-            class="footer-social-link"
-          >
+            class="footer-social-link">
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconLinkedin}
-              alt="LinkedIn"
-            />
+              alt="LinkedIn" />
           </a>
           <a
             href="/l/yt"
             target="_blank"
             rel="external"
             title="Youtube channel"
-            class="footer-social-link"
-          >
+            class="footer-social-link">
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconYoutube}
-              alt="Youtube"
-            />
+              alt="Youtube" />
           </a>
           <a
             href="/l/twitter"
             target="_blank"
             rel="external"
             title="Twitter page"
-            class="footer-social-link"
-          >
+            class="footer-social-link">
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconTwitter}
-              alt="Twitter"
-            />
+              alt="Twitter" />
           </a>
           <a
             href="/l/github"
             target="_blank"
             rel="external"
             title="GitHub page"
-            class="footer-social-link"
-          >
+            class="footer-social-link">
             <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
           </a>
           <a href="/rss.xml" class="footer-social-link">

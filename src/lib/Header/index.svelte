@@ -4,6 +4,11 @@
 
   /*MOBILE MENU*/
   let open = false;
+  let isActive = false;
+
+  function toggleSubMenu() {
+    isActive = !isActive;
+  }
 </script>
 
 <ToTop />
@@ -18,6 +23,16 @@
         <a class="nav-link" title="features" href="/#features">Features</a>
         <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
+        <div class="sub-nav">
+          <button class="nav-link nav-btn-not" disabled title="blog">Case Studies</button>
+          <div class="sub-nav-inner">
+            <div class="sub-nav-flex">
+              <a class="nav-link" title="blog" href="/case-studies/king-billy-4x-deposit-conversion"
+                >King Billy × Mailcheck — 4× Deposit Conversions</a>
+              <!-- <a class="nav-link" title="blog" href="/blog">222222</a> -->
+            </div>
+          </div>
+        </div>
         <a class="nav-link" title="blog" href="/blog">Blog</a>
         <a class="nav-link" title="faq" href="/faq">FAQ</a>
       </nav>
@@ -27,15 +42,13 @@
           rel="external nofollow"
           title="Request a demo"
           target="_blank"
-          class="btn btn-start btn-request">Request a demo</a
-        >
+          class="btn btn-start btn-request">Request a demo</a>
         <a
           rel="external"
           target="_blank"
           href="https://app.mailcheck.co/"
           class="btn btn-sign-in"
-          title="sign in"
-        >
+          title="sign in">
           sign in
         </a>
       </div>
@@ -47,27 +60,56 @@
 <button class="burger-wrapper" class:open on:click={() => (open = !open)} id="burger">
   <span class="burger" />
 </button>
-<nav class="mobile-menu" class:open on:click={() => (open = !open)} id="mobile-menu">
-  <a class="nav-link mobile-menu-links" title="features" href="/#features">Features</a>
+<nav class="mobile-menu" class:open id="mobile-menu">
+  <a
+    class="nav-link mobile-menu-links"
+    on:click={() => (open = !open)}
+    title="features"
+    href="/#features">Features</a>
   <a class="nav-link mobile-menu-links" title="pricing" href="/#pricing">Pricing</a>
   <a class="nav-link mobile-menu-links" title="contact us" href="/#contact-us">Contact Us</a>
-  <a class="nav-link mobile-menu-links" title="blog" href="/blog">Blog</a>
-  <a class="nav-link mobile-menu-links" title="faq" href="/faq">FAQ</a>
+  <div class="sub-mobile">
+    <button class="nav-link mobile-menu-links" on:click={toggleSubMenu} aria-expanded={isActive}>
+      Case Studies
+    </button>
+    <div class="sub-mobile-links" class:active={isActive}>
+      <div class="sub-mobile-links-inner">
+        <a
+          class="nav-link mobile-menu-links"
+          on:click={() => (open = !open)}
+          title="blog"
+          href="/case-studies/king-billy-4x-deposit-conversion"
+          >King Billy × Mailcheck — 4× Deposit Conversions</a>
+      </div>
+    </div>
+  </div>
+  <a class="nav-link mobile-menu-links" on:click={() => (open = !open)} title="blog" href="/blog"
+    >Blog</a>
+  <a class="nav-link mobile-menu-links" on:click={() => (open = !open)} title="faq" href="/faq"
+    >FAQ</a>
   <a
     rel="external"
     href="https://app.mailcheck.co/"
     target="_blank"
     title="sign in"
-    class="btn btn-sign-in mobile-btn">Sign in</a
-  >
+    class="btn btn-sign-in mobile-btn">Sign in</a>
   <a
     href="https://calendly.com/fm--29/15min"
     rel="external nofollow"
     target="_blank"
     class="btn btn-bordered btn-invert"
-    title="Request a demo">Request a demo</a
-  >
+    title="Request a demo">Request a demo</a>
 </nav>
+
+<button
+  class="burger-wrapper"
+  class:open
+  on:click={() => (open = !open)}
+  id="burger"
+  aria-controls="mobile-menu"
+  aria-expanded={open}>
+  <span class="burger" />
+</button>
 
 <style lang="scss">
   .wrapper-header {
@@ -293,6 +335,28 @@
       justify-content: center;
       margin: var(--size-30) 0;
       margin-left: var(--size-16);
+    }
+    .sub-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+    }
+    .sub-mobile-links {
+      display: grid;
+      grid-template-rows: 0fr;
+      overflow: hidden;
+      transition: 0.25s;
+      &.active {
+        grid-template-rows: 1fr;
+      }
+    }
+    .sub-mobile-links-inner {
+      min-height: 0;
     }
   }
 </style>
