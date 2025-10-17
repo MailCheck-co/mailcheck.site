@@ -9,31 +9,29 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ fetch }) {
-    const posts = await fetch('/blog.json').then((res: Response) => res.json());
-    return {
-      props: {
-        posts
-      }
-    };
-  }
+  // export async function load({ fetch }) {
+  //   const posts = await fetch('/blog.json').then((res: Response) => res.json());
+  //   return {
+  //     props: {
+  //       posts
+  //     }
+  //   };
+  // }
 </script>
 
 <script lang="ts">
-  import ContactUs from '$lib/ContactUs/index.svelte';
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, blogSchema } from '$utils/json-ld';
   import type { IPost } from '$utils/types';
 
   export let posts: IPost[];
   const title = 'Mailcheck <> King Billy Casino';
-  const description =
-    'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
+  const description = 'Mailcheck <> King Billy Casino';
 </script>
 
 <Seo {description} {title} schemas={[websiteSchema, { ...blogSchema, name: title, description }]} />
 
-<main class="blog-page" id="blog">
+<main class="blog-page" id="king-billy-4x-deposit-conversion">
   <div class="container">
     <div class="content-block">
       <div class="content-item">
@@ -217,8 +215,6 @@
     </div>
   </div>
 </main>
-
-<ContactUs />
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');

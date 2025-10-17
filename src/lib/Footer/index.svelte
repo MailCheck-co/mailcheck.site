@@ -54,7 +54,8 @@
                 <a
                   class="nav-link footer-nav-link"
                   title="blog"
-                  href="/case-studies/king-billy-4x-deposit-conversion">King Billy × Mailcheck</a>
+                  href="/case-studies/king-billy-4x-deposit-conversion#king-billy-4x-deposit-conversion"
+                  >King Billy × Mailcheck</a>
               </div>
             </div>
           </div>

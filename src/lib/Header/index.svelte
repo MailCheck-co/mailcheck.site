@@ -24,7 +24,7 @@
         <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
         <div class="sub-nav">
-          <button class="nav-link nav-btn-not" disabled title="blog">Case Studies</button>
+          <button class="nav-link nav-btn-not" title="blog">Case Studies</button>
           <div class="sub-nav-inner">
             <div class="sub-nav-flex">
               <a class="nav-link" title="blog" href="/case-studies/king-billy-4x-deposit-conversion"
