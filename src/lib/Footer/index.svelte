@@ -10,6 +10,11 @@
   import iconRSS from '$lib/Footer/assets/rss.svg';
 
   export let footerBg = true;
+
+  let isActivSub = false;
+  function toggleSub() {
+    isActivSub = !isActivSub;
+  }
 </script>
 
 <footer class="footer">
@@ -41,7 +46,20 @@
         <a class="nav-link footer-nav-link" title="features" href="/#features">Features</a>
         <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link footer-nav-link" title="contact us" href="/#contact-us">Contact Us</a>
-        <a class="nav-link footer-nav-link" title="blog" href="/blog">Blog</a>
+        <div class="sub-menu-footer">
+          <button class="nav-link footer-nav-link" on:click={toggleSub}>Case studies</button>
+          <div class="sub-menu-footer-drop" class:active={isActivSub}>
+            <div class="sub-menu-footer-drop-inner">
+              <div class="footer-link-flex">
+                <a
+                  class="nav-link footer-nav-link"
+                  title="blog"
+                  href="/case-studies/king-billy-4x-deposit-conversion">King Billy × Mailcheck</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link footer-nav-link" title="blog" href="/#blog">Blog</a>
         <a
           class="nav-link footer-nav-link"
           href="/l/docs#tag--email"
@@ -265,7 +283,9 @@
     flex-basis: 33%;
     flex-flow: column wrap;
     align-items: flex-start;
-    max-height: 10.625rem;
+    // max-height: 10.625rem;
+    max-height: 13.625rem;
+    gap: 0 16px;
 
     &.nav-affiliate {
       flex-basis: 15%;
@@ -278,6 +298,13 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+  .footer-link-flex {
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .footer-social-mobile {
@@ -337,6 +364,46 @@
     opacity: 0.5;
   }
 
+  .sub-menu-footer {
+    position: relative;
+  }
+  .sub-menu-footer-drop {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: 0.25s;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .sub-menu-footer-drop-inner {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .sub-menu-footer {
+    .nav-link {
+      justify-content: flex-start;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding-left: 0;
+    }
+    @media (hover: hover) {
+      &:hover {
+        .sub-menu-footer-drop {
+          grid-template-rows: 1fr;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .footer {
       padding-top: var(--size-50);
@@ -393,6 +460,14 @@
 
     .footer-social-mobile {
       display: block;
+    }
+  }
+
+  .sub-menu-footer {
+    .sub-menu-footer-drop {
+      &.active {
+        grid-template-rows: 1fr;
+      }
     }
   }
 </style>
