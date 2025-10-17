@@ -235,7 +235,7 @@
         display: block;
         width: 100vw;
         height: 100%;
-        background-color: #171a1fff;
+        background-color: var(--dark-case);
         position: absolute;
         top: 0;
         left: 50%;
@@ -244,13 +244,13 @@
       }
     }
     &.marked {
-      background: #021d22ff;
+      background: var(--dark-case-blind);
       &::before {
         content: '';
         display: block;
         width: 100vw;
         height: 100%;
-        background-color: #021d22ff;
+        background-color: var(--dark-case-blind);
         position: absolute;
         top: 0;
         left: 50%;
@@ -320,7 +320,7 @@
     font-size: var(--size-36);
     font-weight: var(--weight-700);
     :global(svg) {
-      color: #0a8ca9ff;
+      color: var(--brand-case);
     }
   }
 
@@ -364,11 +364,11 @@
     .content-item {
       padding: 16px;
       border-radius: 4px;
-      background-color: #171a1fff;
+      background-color: var(--dark-case);
       overflow: hidden;
       margin-bottom: 24px;
       &:first-child {
-        background-color: #021d22ff;
+        background-color: var(--dark-case-blind);
       }
       &::before {
         display: none;

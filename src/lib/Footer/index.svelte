@@ -372,7 +372,7 @@
     grid-template-rows: 0fr;
     overflow: hidden;
     transition: 0.25s;
-    background-color: #000000;
+    background-color: var(--black);
     position: absolute;
     left: 0;
     top: 100%;
