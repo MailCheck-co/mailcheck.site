@@ -47,12 +47,13 @@
         <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link footer-nav-link" title="contact us" href="/#contact-us">Contact Us</a>
         <div class="sub-menu-footer">
-          <button class="nav-link footer-nav-link" on:click={toggleSub}>Case studies</button>
+          <button class="nav-link footer-nav-link" class:active={isActivSub} on:click={toggleSub}
+            >Case studies <span class="drop-arrow" /></button>
           <div class="sub-menu-footer-drop" class:active={isActivSub}>
             <div class="sub-menu-footer-drop-inner">
               <div class="footer-link-flex">
                 <a
-                  class="nav-link footer-nav-link"
+                  class="footer-sub-menu-link"
                   title="blog"
                   href="/case-studies/king-billy-4x-deposit-conversion#king-billy-4x-deposit-conversion"
                   >King Billy × Mailcheck</a>
@@ -302,10 +303,16 @@
   }
 
   .footer-link-flex {
-    padding: 16px 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    backdrop-filter: saturate(140%) blur(8px);
+    border: 1px solid #ffffff14;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    background-color: #181c24;
   }
 
   .footer-social-mobile {
@@ -367,6 +374,32 @@
 
   .sub-menu-footer {
     position: relative;
+    .footer-nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .footer-sub-menu-link {
+    backdrop-filter: saturate(140%) blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.0784313725);
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    background-color: #181c24;
+    color: var(--primary-white);
+    font-weight: var(--weight-300);
+    transition: 0.25s;
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-2px);
+        border-color: rgba(0, 224, 199, 0.35);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        color: var(--primary-accent);
+      }
+    }
   }
   .sub-menu-footer-drop {
     display: grid;
@@ -395,6 +428,18 @@
       border: none;
       outline: none;
       padding-left: 0;
+      &.active {
+        .drop-arrow {
+          scale: -1;
+        }
+      }
+      @media (hover: hover) {
+        &:hover {
+          .drop-arrow {
+            scale: -1;
+          }
+        }
+      }
     }
     @media (hover: hover) {
       &:hover {

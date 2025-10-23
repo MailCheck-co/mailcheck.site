@@ -79,11 +79,11 @@
         <ul>
           <li>
             A high incidence of invalid, temporary, or fraudulent email addresses during
-            registration, affecting over 18%of new sign-ups.
+            registration, affecting over <span class="colored-bold">18%</span> of new sign-ups.
           </li>
           <li>
-            Elevated email bounce rates, consistently exceeding 12% for critical communications such
-            as welcome emails and promotional offers.
+            Elevated email bounce rates, consistently exceeding <span class="colored-bold"
+              >12%</span> for critical communications such as welcome emails and promotional offers.
           </li>
           <li>
             Ineffective marketing campaigns due to poor deliverability, resulting in wasted budget
@@ -165,6 +165,7 @@
           fundamentally improved our ability to connect with our players. It's a robust solution
           that delivers tangible results, allowing us to focus on providing an exceptional gaming
           experience."
+          <p>— Volodymyr, Head of CRM at King Billy Casino</p>
         </div>
       </div>
       <div class="content-item">
@@ -345,6 +346,13 @@
     }
   }
 
+  .colored-bold {
+    color: var(--primary-accent);
+    font-weight: var(--weight-700);
+    font-size: inherit;
+    letter-spacing: inherit;
+  }
+
   .italic-box {
     width: 100%;
     max-width: 768px;
@@ -353,7 +361,13 @@
     color: var(--primary-white);
     font-size: 36px;
     font-weight: 600;
+    font-style: italic;
     text-align: center;
+    p {
+      font-size: 22px;
+      color: inherit;
+      text-align: center;
+    }
   }
 
   @media (max-width: 768px) {

@@ -24,12 +24,18 @@
         <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
         <div class="sub-nav">
-          <button class="nav-link nav-btn-not" title="blog">Case Studies</button>
+          <button class="nav-link nav-btn-not" title="blog"
+            >Case Studies <span class="drop-arrow" /></button>
           <div class="sub-nav-inner">
-            <div class="sub-nav-flex">
-              <a class="nav-link" title="blog" href="/case-studies/king-billy-4x-deposit-conversion"
-                >King Billy × Mailcheck — 4× Deposit Conversions</a>
-              <!-- <a class="nav-link" title="blog" href="/blog">222222</a> -->
+            <div class="pre-flex">
+              <div class="sub-nav-flex">
+                <a
+                  class="header-sub-link"
+                  title="blog"
+                  href="/case-studies/king-billy-4x-deposit-conversion"
+                  >King Billy × Mailcheck — 4× Deposit Conversions</a>
+                <!-- <a class="nav-link" title="blog" href="/blog">222222</a> -->
+              </div>
             </div>
           </div>
         </div>
@@ -69,8 +75,13 @@
   <a class="nav-link mobile-menu-links" title="pricing" href="/#pricing">Pricing</a>
   <a class="nav-link mobile-menu-links" title="contact us" href="/#contact-us">Contact Us</a>
   <div class="sub-mobile">
-    <button class="nav-link mobile-menu-links" on:click={toggleSubMenu} aria-expanded={isActive}>
+    <button
+      class="nav-link mobile-menu-links"
+      class:active={isActive}
+      on:click={toggleSubMenu}
+      aria-expanded={isActive}>
       Case Studies
+      <span class="drop-arrow" />
     </button>
     <div class="sub-mobile-links" class:active={isActive}>
       <div class="sub-mobile-links-inner">
@@ -344,6 +355,14 @@
         border: none;
         outline: none;
         background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &.active {
+          span {
+            scale: -1;
+          }
+        }
       }
     }
     .sub-mobile-links {
