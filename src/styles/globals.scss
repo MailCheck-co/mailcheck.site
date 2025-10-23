@@ -266,24 +266,78 @@ img {
 }
 
 .header-sub-link {
-  backdrop-filter: saturate(140%) blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.0784313725);
-  border-radius: 8px;
-  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
   overflow: hidden;
-  background-color: #181c24;
+  background: linear-gradient(180deg, rgba(0, 224, 199, 0.08), transparent 70%);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.header-sub-link-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   color: var(--primary-white);
   font-weight: var(--weight-300);
   transition: 0.25s;
-  @media (hover: hover) {
-    &:hover {
-      transform: translateY(-2px);
-      border-color: rgba(0, 224, 199, 0.35);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-      color: var(--primary-accent);
-    }
+  // @media (hover: hover) {
+  //   &:hover {
+  //     transform: translateY(-2px);
+  //     border-color: rgba(0, 224, 199, 0.35);
+  //     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  //     color: var(--primary-accent);
+  //   }
+  // }
+}
+.sub-link-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(0, 224, 199, 0.16);
+  color: var(--primary-accent);
+  display: grid;
+  place-items: center;
+  font-weight: var(--weight-800);
+}
+.sub-link-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 2px;
+
+  p {
+    margin: 0;
+    color: var(--primary-white);
+    text-indent: 0;
   }
+  .name {
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.25s;
+    font-weight: var(--weight-800);
+  }
+  .sub-name {
+    font-size: 13px;
+    line-height: 1;
+    color: #9aa7b4;
+    transition: 0.25s;
+  }
+}
+
+.fake-btn {
+  align-self: flex-start;
+  text-decoration: none;
+  background: var(--primary-accent);
+  color: #062224;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: var(--weight-700);
+  transition: transform 0.15s ease;
 }
 
 .drop-arrow {
@@ -326,6 +380,13 @@ img {
     padding: 0;
     z-index: 2;
     white-space: nowrap;
+    @media (hover: hover) {
+      &:hover {
+        .name {
+          color: var(--primary-accent);
+        }
+      }
+    }
   }
   .pre-flex {
     min-height: 0;

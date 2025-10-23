@@ -47,16 +47,21 @@
         <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link footer-nav-link" title="contact us" href="/#contact-us">Contact Us</a>
         <div class="sub-menu-footer">
-          <button class="nav-link footer-nav-link" class:active={isActivSub} on:click={toggleSub}
-            >Case studies <span class="drop-arrow" /></button>
+          <button class="nav-link footer-nav-link" class:active={isActivSub} on:click={toggleSub}>
+            Case studies <span class="drop-arrow" /></button>
           <div class="sub-menu-footer-drop" class:active={isActivSub}>
             <div class="sub-menu-footer-drop-inner">
               <div class="footer-link-flex">
                 <a
                   class="footer-sub-menu-link"
                   title="blog"
-                  href="/case-studies/king-billy-4x-deposit-conversion#king-billy-4x-deposit-conversion"
-                  >King Billy × Mailcheck</a>
+                  href="/case-studies/king-billy-4x-deposit-conversion#king-billy-4x-deposit-conversion">
+                  <div class="link-avatar">KB</div>
+                  <div class="link-data">
+                    <p>King Billy × Mailcheck</p>
+                    <p class="sub">4× Deposit Conversions</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -302,6 +307,18 @@
     }
   }
 
+  .link-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 224, 199, 0.16);
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 12px;
+  }
+
   .footer-link-flex {
     display: flex;
     flex-direction: column;
@@ -381,17 +398,44 @@
     }
   }
 
+  .link-data {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer-sub-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     backdrop-filter: saturate(140%) blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.0784313725);
-    border-radius: 8px;
-    padding: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    border: 1px solid #2c333b;
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    border-radius: 10px;
+    padding: 10px;
     overflow: hidden;
     background-color: #181c24;
     color: var(--primary-white);
     font-weight: var(--weight-300);
     transition: 0.25s;
+
+    p {
+      margin: 0;
+      color: inherit;
+      font-weight: var(--weight-600);
+      font-size: 14px;
+      text-indent: 0;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+    .sub {
+      font-weight: var(--weight-300);
+      font-size: 13px;
+      color: #9aa7b4;
+      margin-bottom: 0;
+    }
     @media (hover: hover) {
       &:hover {
         transform: translateY(-2px);

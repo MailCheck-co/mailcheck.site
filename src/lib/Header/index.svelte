@@ -32,9 +32,16 @@
                 <a
                   class="header-sub-link"
                   title="blog"
-                  href="/case-studies/king-billy-4x-deposit-conversion"
-                  >King Billy × Mailcheck — 4× Deposit Conversions</a>
-                <!-- <a class="nav-link" title="blog" href="/blog">222222</a> -->
+                  href="/case-studies/king-billy-4x-deposit-conversion">
+                  <div class="header-sub-link-inner">
+                    <div class="sub-link-avatar">KB</div>
+                    <div class="sub-link-data">
+                      <p class="name">King Billy × Mailcheck</p>
+                      <p class="sub-name">4× Deposit Conversions</p>
+                    </div>
+                  </div>
+                  <div class="fake-btn">Read case</div>
+                </a>
               </div>
             </div>
           </div>
