@@ -28,7 +28,7 @@
   schemas={[websiteSchema]}
   canonical="/" />
 <svelte:head>
-  <!-- <meta http-equiv="refresh" content="5;https://mailcheck.co/" /> -->
+  <meta http-equiv="refresh" content="5;https://mailcheck.co/" />
 </svelte:head>
 <main class="terms" id="terms">
   <div class="container">
