@@ -15,23 +15,22 @@
 
 <header>
   <div class="wrapper-header">
-    <a class="logo" href="/" title="logo">
+    <a class="logo" href="/" aria-label="logo">
       <img src={logo} width="138" height="26" alt="mailcheck logo" />
     </a>
     <div class="header-navigation">
       <nav class="header-nav">
-        <a class="nav-link" title="features" href="/#features">Features</a>
-        <a class="nav-link" title="pricing" href="/#pricing">Pricing</a>
-        <a class="nav-link" title="contact us" href="/#contact-us">Contact Us</a>
+        <a class="nav-link" aria-label="features" href="/#features">Features</a>
+        <a class="nav-link" aria-label="pricing" href="/#pricing">Pricing</a>
+        <a class="nav-link" aria-label="contact us" href="/#contact-us">Contact Us</a>
         <div class="sub-nav">
-          <button class="nav-link nav-btn-not" title="blog"
-            >Case Studies <span class="drop-arrow" /></button>
+          <button class="nav-link nav-btn-not">Case Studies <span class="drop-arrow" /></button>
           <div class="sub-nav-inner">
             <div class="pre-flex">
               <div class="sub-nav-flex">
                 <a
                   class="header-sub-link"
-                  title="blog"
+                  aria-label="King Billy × Mailcheck"
                   href="/case-studies/king-billy-4x-deposit-conversion">
                   <div class="header-sub-link-inner">
                     <div class="sub-link-avatar">KB</div>
@@ -40,20 +39,19 @@
                       <p class="sub-name">4× Deposit Conversions</p>
                     </div>
                   </div>
-                  <div class="fake-btn">Read case</div>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <a class="nav-link" title="blog" href="/blog">Blog</a>
-        <a class="nav-link" title="faq" href="/faq">FAQ</a>
+        <a class="nav-link" aria-label="blog" href="/blog">Blog</a>
+        <a class="nav-link" aria-label="faq" href="/faq">FAQ</a>
       </nav>
       <div>
         <a
           href="https://calendly.com/fm--29/15min"
           rel="external nofollow"
-          title="Request a demo"
+          aria-label="Request a demo"
           target="_blank"
           class="btn btn-start btn-request">Request a demo</a>
         <a
@@ -61,7 +59,7 @@
           target="_blank"
           href="https://app.mailcheck.co/"
           class="btn btn-sign-in"
-          title="sign in">
+          aria-label="sign in">
           sign in
         </a>
       </div>
@@ -77,10 +75,10 @@
   <a
     class="nav-link mobile-menu-links"
     on:click={() => (open = !open)}
-    title="features"
+    aria-label="features"
     href="/#features">Features</a>
-  <a class="nav-link mobile-menu-links" title="pricing" href="/#pricing">Pricing</a>
-  <a class="nav-link mobile-menu-links" title="contact us" href="/#contact-us">Contact Us</a>
+  <a class="nav-link mobile-menu-links" aria-label="pricing" href="/#pricing">Pricing</a>
+  <a class="nav-link mobile-menu-links" aria-label="contact us" href="/#contact-us">Contact Us</a>
   <div class="sub-mobile">
     <button
       class="nav-link mobile-menu-links"
@@ -95,28 +93,31 @@
         <a
           class="nav-link mobile-menu-links"
           on:click={() => (open = !open)}
-          title="blog"
+          aria-label="King Billy × Mailcheck"
           href="/case-studies/king-billy-4x-deposit-conversion"
           >King Billy × Mailcheck — 4× Deposit Conversions</a>
       </div>
     </div>
   </div>
-  <a class="nav-link mobile-menu-links" on:click={() => (open = !open)} title="blog" href="/blog"
-    >Blog</a>
-  <a class="nav-link mobile-menu-links" on:click={() => (open = !open)} title="faq" href="/faq"
+  <a
+    class="nav-link mobile-menu-links"
+    on:click={() => (open = !open)}
+    aria-label="blog"
+    href="/blog">Blog</a>
+  <a class="nav-link mobile-menu-links" on:click={() => (open = !open)} aria-label="faq" href="/faq"
     >FAQ</a>
   <a
     rel="external"
     href="https://app.mailcheck.co/"
     target="_blank"
-    title="sign in"
+    aria-label="sign in"
     class="btn btn-sign-in mobile-btn">Sign in</a>
   <a
     href="https://calendly.com/fm--29/15min"
     rel="external nofollow"
     target="_blank"
     class="btn btn-bordered btn-invert"
-    title="Request a demo">Request a demo</a>
+    aria-label="Request a demo">Request a demo</a>
 </nav>
 
 <button

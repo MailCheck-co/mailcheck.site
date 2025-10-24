@@ -24,7 +24,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-logo-copyright">
-        <a class="logo2" href="/" title="logo">
+        <a class="logo2" href="/" aria-label="logo">
           <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a>
         <address class="footer-address">
           Suite 4005 43 Bedford Street,<br />
@@ -36,16 +36,17 @@
           rel="external"
           target="_blank"
           class="nav-link footer-nav-link"
-          title="Refer a friend"
+          aria-label="Refer a friend"
           href="https://app.mailcheck.co/auth/login">Refer a friend</a>
-        <a class="nav-link footer-nav-link" title="For affiliates" href="/affiliates"
+        <a class="nav-link footer-nav-link" aria-label="For affiliates" href="/affiliates"
           >For affiliates</a>
       </div>
 
       <nav class="footer-nav">
-        <a class="nav-link footer-nav-link" title="features" href="/#features">Features</a>
-        <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
-        <a class="nav-link footer-nav-link" title="contact us" href="/#contact-us">Contact Us</a>
+        <a class="nav-link footer-nav-link" aria-label="features" href="/#features">Features</a>
+        <a class="nav-link footer-nav-link" aria-label="pricing" href="/#pricing">Pricing</a>
+        <a class="nav-link footer-nav-link" aria-label="contact us" href="/#contact-us"
+          >Contact Us</a>
         <div class="sub-menu-footer">
           <button class="nav-link footer-nav-link" class:active={isActivSub} on:click={toggleSub}>
             Case studies <span class="drop-arrow" /></button>
@@ -54,7 +55,7 @@
               <div class="footer-link-flex">
                 <a
                   class="footer-sub-menu-link"
-                  title="blog"
+                  aria-label="King Billy × Mailcheck"
                   href="/case-studies/king-billy-4x-deposit-conversion#king-billy-4x-deposit-conversion">
                   <div class="link-avatar">KB</div>
                   <div class="link-data">
@@ -66,24 +67,25 @@
             </div>
           </div>
         </div>
-        <a class="nav-link footer-nav-link" title="blog" href="/#blog">Blog</a>
+        <a class="nav-link footer-nav-link" aria-label="blog" href="/#blog">Blog</a>
         <a
           class="nav-link footer-nav-link"
           href="/l/docs#tag--email"
           rel="external"
-          title="API"
+          aria-label="API"
           target="_blank">API</a>
-        <a class="nav-link footer-nav-link" title="Privacy policy" href="/privacy"
+        <a class="nav-link footer-nav-link" aria-label="Privacy policy" href="/privacy"
           >Privacy policy</a>
-        <a class="nav-link footer-nav-link" title="Terms and conditions" href="/terms"
+        <a class="nav-link footer-nav-link" aria-label="Terms and conditions" href="/terms"
           >Terms and conditions</a>
-        <a class="nav-link footer-nav-link" title="Cookie policy" href="/cookies">Cookie policy</a>
-        <a class="nav-link footer-nav-link" title="Video tutorials" href="/videos"
+        <a class="nav-link footer-nav-link" aria-label="Cookie policy" href="/cookies"
+          >Cookie policy</a>
+        <a class="nav-link footer-nav-link" aria-label="Video tutorials" href="/videos"
           >Video tutorials</a>
         <a
           rel="external"
           target="_blank"
-          title="Product of NodeArt"
+          aria-label="Product of NodeArt"
           class="nav-link footer-nav-link"
           href="/l/na">Product of NodeArt</a>
       </nav>
@@ -92,7 +94,7 @@
           href="/l/fb"
           target="_blank"
           rel="external"
-          title="Facebook page"
+          aria-label="Facebook page"
           class="footer-social-link">
           <img
             width="18"
@@ -105,7 +107,7 @@
           href="/l/linkedin"
           target="_blank"
           rel="external"
-          title="LinkedIn page"
+          aria-label="LinkedIn page"
           class="footer-social-link">
           <img
             width="18"
@@ -118,7 +120,7 @@
           href="/l/yt"
           target="_blank"
           rel="external"
-          title="Youtube channel"
+          aria-label="Youtube channel"
           class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconYoutube} alt="Youtube" />
         </a>
@@ -126,7 +128,7 @@
           href="/l/twitter"
           target="_blank"
           rel="external"
-          title="Twitter page"
+          aria-label="Twitter page"
           class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconTwitter} alt="Twitter" />
         </a>
@@ -134,7 +136,7 @@
           href="/l/github"
           target="_blank"
           rel="external"
-          title="GitHub page"
+          aria-label="GitHub page"
           class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
         </a>
@@ -172,7 +174,7 @@
             href="/l/fb"
             target="_blank"
             rel="external"
-            title="Facebook page"
+            aria-label="Facebook page"
             class="footer-social-link">
             <img
               width="18"
@@ -185,7 +187,7 @@
             href="/l/linkedin"
             target="_blank"
             rel="external"
-            title="LinkedIn page"
+            aria-label="LinkedIn page"
             class="footer-social-link">
             <img
               width="18"
@@ -198,7 +200,7 @@
             href="/l/yt"
             target="_blank"
             rel="external"
-            title="Youtube channel"
+            aria-label="Youtube channel"
             class="footer-social-link">
             <img
               width="18"
@@ -211,7 +213,7 @@
             href="/l/twitter"
             target="_blank"
             rel="external"
-            title="Twitter page"
+            aria-label="Twitter page"
             class="footer-social-link">
             <img
               width="18"
@@ -224,7 +226,7 @@
             href="/l/github"
             target="_blank"
             rel="external"
-            title="GitHub page"
+            aria-label="GitHub page"
             class="footer-social-link">
             <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
           </a>
