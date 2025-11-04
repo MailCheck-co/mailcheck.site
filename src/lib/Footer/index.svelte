@@ -10,6 +10,11 @@
   import iconRSS from '$lib/Footer/assets/rss.svg';
 
   export let footerBg = true;
+
+  let isActivSub = false;
+  function toggleSub() {
+    isActivSub = !isActivSub;
+  }
 </script>
 
 <footer class="footer">
@@ -19,9 +24,8 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-logo-copyright">
-        <a class="logo2" href="/" title="logo">
-          <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a
-        >
+        <a class="logo2" href="/" aria-label="logo">
+          <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a>
         <address class="footer-address">
           Suite 4005 43 Bedford Street,<br />
           London, England, WC2E 9HA
@@ -32,99 +36,108 @@
           rel="external"
           target="_blank"
           class="nav-link footer-nav-link"
-          title="Refer a friend"
-          href="https://app.mailcheck.co/auth/login">Refer a friend</a
-        >
-        <a class="nav-link footer-nav-link" title="For affiliates" href="/affiliates"
-          >For affiliates</a
-        >
+          aria-label="Refer a friend"
+          href="https://app.mailcheck.co/auth/login">Refer a friend</a>
+        <a class="nav-link footer-nav-link" aria-label="For affiliates" href="/affiliates"
+          >For affiliates</a>
       </div>
 
       <nav class="footer-nav">
-        <a class="nav-link footer-nav-link" title="features" href="/#features">Features</a>
-        <a class="nav-link footer-nav-link" title="pricing" href="/#pricing">Pricing</a>
-        <a class="nav-link footer-nav-link" title="contact us" href="/#contact-us">Contact Us</a>
-        <a class="nav-link footer-nav-link" title="blog" href="/blog">Blog</a>
+        <a class="nav-link footer-nav-link" aria-label="features" href="/#features">Features</a>
+        <a class="nav-link footer-nav-link" aria-label="pricing" href="/#pricing">Pricing</a>
+        <a class="nav-link footer-nav-link" aria-label="contact us" href="/#contact-us"
+          >Contact Us</a>
+        <div class="sub-menu-footer">
+          <button class="nav-link footer-nav-link" class:active={isActivSub} on:click={toggleSub}>
+            Case studies <span class="drop-arrow" /></button>
+          <div class="sub-menu-footer-drop" class:active={isActivSub}>
+            <div class="sub-menu-footer-drop-inner">
+              <div class="footer-link-flex">
+                <a
+                  class="footer-sub-menu-link"
+                  aria-label="King Billy × Mailcheck"
+                  href="/case-studies/king-billy-4x-deposit-conversion#king-billy-4x-deposit-conversion">
+                  <div class="link-avatar">KB</div>
+                  <div class="link-data">
+                    <p>King Billy × Mailcheck</p>
+                    <p class="sub">4× Deposit Conversions</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link footer-nav-link" aria-label="blog" href="/#blog">Blog</a>
         <a
           class="nav-link footer-nav-link"
           href="/l/docs#tag--email"
           rel="external"
-          title="API"
-          target="_blank">API</a
-        >
-        <a class="nav-link footer-nav-link" title="Privacy policy" href="/privacy">Privacy policy</a
-        >
-        <a class="nav-link footer-nav-link" title="Terms and conditions" href="/terms"
-          >Terms and conditions</a
-        >
-        <a class="nav-link footer-nav-link" title="Cookie policy" href="/cookies">Cookie policy</a>
-        <a class="nav-link footer-nav-link" title="Video tutorials" href="/videos"
-          >Video tutorials</a
-        >
+          aria-label="API"
+          target="_blank">API</a>
+        <a class="nav-link footer-nav-link" aria-label="Privacy policy" href="/privacy"
+          >Privacy policy</a>
+        <a class="nav-link footer-nav-link" aria-label="Terms and conditions" href="/terms"
+          >Terms and conditions</a>
+        <a class="nav-link footer-nav-link" aria-label="Cookie policy" href="/cookies"
+          >Cookie policy</a>
+        <a class="nav-link footer-nav-link" aria-label="Video tutorials" href="/videos"
+          >Video tutorials</a>
         <a
           rel="external"
           target="_blank"
-          title="Product of NodeArt"
+          aria-label="Product of NodeArt"
           class="nav-link footer-nav-link"
-          href="/l/na">Product of NodeArt</a
-        >
+          href="/l/na">Product of NodeArt</a>
       </nav>
       <div class="footer-social-mobile">
         <a
           href="/l/fb"
           target="_blank"
           rel="external"
-          title="Facebook page"
-          class="footer-social-link"
-        >
+          aria-label="Facebook page"
+          class="footer-social-link">
           <img
             width="18"
             height="18"
             class="footer-social-icon"
             src={iconFacebook}
-            alt="Facebook"
-          />
+            alt="Facebook" />
         </a>
         <a
           href="/l/linkedin"
           target="_blank"
           rel="external"
-          title="LinkedIn page"
-          class="footer-social-link"
-        >
+          aria-label="LinkedIn page"
+          class="footer-social-link">
           <img
             width="18"
             height="18"
             class="footer-social-icon"
             src={iconLinkedin}
-            alt="LinkedIn"
-          />
+            alt="LinkedIn" />
         </a>
         <a
           href="/l/yt"
           target="_blank"
           rel="external"
-          title="Youtube channel"
-          class="footer-social-link"
-        >
+          aria-label="Youtube channel"
+          class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconYoutube} alt="Youtube" />
         </a>
         <a
           href="/l/twitter"
           target="_blank"
           rel="external"
-          title="Twitter page"
-          class="footer-social-link"
-        >
+          aria-label="Twitter page"
+          class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconTwitter} alt="Twitter" />
         </a>
         <a
           href="/l/github"
           target="_blank"
           rel="external"
-          title="GitHub page"
-          class="footer-social-link"
-        >
+          aria-label="GitHub page"
+          class="footer-social-link">
           <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
         </a>
         <a href="/rss.xml" class="footer-social-link">
@@ -147,8 +160,7 @@
             width="36"
             height="36"
             src={iconMoneyBack}
-            alt="40 days money-back guarantee"
-          />
+            alt="40 days money-back guarantee" />
           <p class="footer-info-text">
             40 days<br />
             money-back guarantee
@@ -162,69 +174,60 @@
             href="/l/fb"
             target="_blank"
             rel="external"
-            title="Facebook page"
-            class="footer-social-link"
-          >
+            aria-label="Facebook page"
+            class="footer-social-link">
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconFacebook}
-              alt="Facebook"
-            />
+              alt="Facebook" />
           </a>
           <a
             href="/l/linkedin"
             target="_blank"
             rel="external"
-            title="LinkedIn page"
-            class="footer-social-link"
-          >
+            aria-label="LinkedIn page"
+            class="footer-social-link">
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconLinkedin}
-              alt="LinkedIn"
-            />
+              alt="LinkedIn" />
           </a>
           <a
             href="/l/yt"
             target="_blank"
             rel="external"
-            title="Youtube channel"
-            class="footer-social-link"
-          >
+            aria-label="Youtube channel"
+            class="footer-social-link">
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconYoutube}
-              alt="Youtube"
-            />
+              alt="Youtube" />
           </a>
           <a
             href="/l/twitter"
             target="_blank"
             rel="external"
-            title="Twitter page"
-            class="footer-social-link"
-          >
+            aria-label="Twitter page"
+            class="footer-social-link">
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconTwitter}
-              alt="Twitter"
-            />
+              alt="Twitter" />
           </a>
           <a
             href="/l/github"
             target="_blank"
             rel="external"
-            title="GitHub page"
-            class="footer-social-link"
-          >
+            aria-label="GitHub page"
+            class="footer-social-link">
             <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
           </a>
           <a href="/rss.xml" class="footer-social-link">
@@ -289,7 +292,9 @@
     flex-basis: 33%;
     flex-flow: column wrap;
     align-items: flex-start;
-    max-height: 10.625rem;
+    // max-height: 10.625rem;
+    max-height: 13.625rem;
+    gap: 0 16px;
 
     &.nav-affiliate {
       flex-basis: 15%;
@@ -302,6 +307,31 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+  .link-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 224, 199, 0.16);
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 12px;
+  }
+
+  .footer-link-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    backdrop-filter: saturate(140%) blur(8px);
+    border: 1px solid #ffffff14;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    background-color: #181c24;
   }
 
   .footer-social-mobile {
@@ -361,6 +391,111 @@
     opacity: 0.5;
   }
 
+  .sub-menu-footer {
+    position: relative;
+    .footer-nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .link-data {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-sub-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: saturate(140%) blur(8px);
+    border: 1px solid #2c333b;
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #181c24;
+    color: var(--primary-white);
+    font-weight: var(--weight-300);
+    transition: 0.25s;
+
+    p {
+      margin: 0;
+      color: inherit;
+      font-weight: var(--weight-600);
+      font-size: 14px;
+      text-indent: 0;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+    .sub {
+      font-weight: var(--weight-300);
+      font-size: 13px;
+      color: #9aa7b4;
+      margin-bottom: 0;
+    }
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-2px);
+        border-color: rgba(0, 224, 199, 0.35);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        color: var(--primary-accent);
+      }
+    }
+  }
+  .sub-menu-footer-drop {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: 0.25s;
+    background-color: var(--black);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .sub-menu-footer-drop-inner {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .sub-menu-footer {
+    .nav-link {
+      justify-content: flex-start;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding-left: 0;
+      &.active {
+        .drop-arrow {
+          scale: -1;
+        }
+      }
+      @media (hover: hover) {
+        &:hover {
+          .drop-arrow {
+            scale: -1;
+          }
+        }
+      }
+    }
+    @media (hover: hover) {
+      &:hover {
+        .sub-menu-footer-drop {
+          grid-template-rows: 1fr;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .footer {
       padding-top: var(--size-50);
@@ -417,6 +552,14 @@
 
     .footer-social-mobile {
       display: block;
+    }
+  }
+
+  .sub-menu-footer {
+    .sub-menu-footer-drop {
+      &.active {
+        grid-template-rows: 1fr;
+      }
     }
   }
 </style>

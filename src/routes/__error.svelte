@@ -26,8 +26,7 @@
   noindex={true}
   description={`Error: ${status}`}
   schemas={[websiteSchema]}
-  canonical="/"
-/>
+  canonical="/" />
 <svelte:head>
   <meta http-equiv="refresh" content="5;https://mailcheck.co/" />
 </svelte:head>
