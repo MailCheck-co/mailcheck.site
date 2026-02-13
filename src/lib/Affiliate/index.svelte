@@ -1,51 +1,50 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
-  import imgAffiliate from './invite-friends.jpg?w=500&format=webp;png;avif&srcset';
+  import IntersectionObserver from 'svelte-intersection-observer';
+  import imgAffiliate from './invite-friends.jpg?enhanced';
 
-  let intersecting: boolean;
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
 </script>
 
-<section
-  class="affiliate"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="section-heading sm-left">
-    <h3 class="title-small">Invite friends and EARN <span class="no-wrap">$10 USD</span></h3>
-    <p class="section-title-lg">Affiliate</p>
-  </div>
+<IntersectionObserver {element} bind:intersecting once>
+  <section class="affiliate" class:intersecting bind:this={element}>
+    <div class="section-heading sm-left">
+      <h3 class="title-small">Invite friends and EARN <span class="no-wrap">$10 USD</span></h3>
+      <p class="section-title-lg">Affiliate</p>
+    </div>
 
-  <div class="container">
-    <div class="affiliate-block">
-      <div class="affiliate-block-inner">
-        <div class="affiliate-block-image">
-          <img srcset={imgAffiliate} width="500" class="affiliate-image" alt="Invite friends" />
-        </div>
-        <div class="affiliate-block-content">
-          <p class="section-description">
-            "Invite your friends and earn $10 USD in cash or validation if your invited friend
-            purchases any of our plans. Your friend will also get a $10 USD discount on their first
-            month. It's a win-win for both of you!"
-          </p>
-          <a
-            class="affiliate-btn"
-            rel="external"
-            href="https://app.mailcheck.co/dashboard/settings"
-            title="Invite now"
-            target="_blank"
-          >
-            Invite now
-          </a>
+    <div class="container">
+      <div class="affiliate-block">
+        <div class="affiliate-block-inner">
+          <div class="affiliate-block-image">
+            <enhanced:img
+              src={imgAffiliate}
+              width="500"
+              class="affiliate-image"
+              alt="Invite friends"
+            />
+          </div>
+          <div class="affiliate-block-content">
+            <p class="section-description">
+              "Invite your friends and earn $10 USD in cash or validation if your invited friend
+              purchases any of our plans. Your friend will also get a $10 USD discount on their
+              first month. It's a win-win for both of you!"
+            </p>
+            <a
+              class="affiliate-btn"
+              rel="external"
+              href="https://app.mailcheck.co/dashboard/settings"
+              title="Invite now"
+              target="_blank"
+            >
+              Invite now
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</IntersectionObserver>
 
 <style lang="scss">
   .affiliate {

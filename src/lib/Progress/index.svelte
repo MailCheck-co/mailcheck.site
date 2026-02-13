@@ -1,4 +1,4 @@
-<progress class="progress" />
+<progress class="progress"></progress>
 
 <style>
   .progress {
@@ -21,7 +21,8 @@
 
   /* Indeterminate */
   .progress:indeterminate {
-    mask-image: linear-gradient(var(--transparent) 50%, black 50%),
+    mask-image:
+      linear-gradient(var(--transparent) 50%, black 50%),
       linear-gradient(to right, var(--transparent) 50%, black 50%);
     animation: pure-material-progress-circular 6s infinite cubic-bezier(0.3, 0.6, 1, 1);
   }

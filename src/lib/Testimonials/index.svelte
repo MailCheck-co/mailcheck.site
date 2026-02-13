@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
+  import IntersectionObserver from 'svelte-intersection-observer';
   import k5Logo from '$lib/Testimonials/5k-logo.svg';
   import baglletLogo from '$lib/Testimonials/bagllet.svg';
   import sammyLogo from '$lib/Testimonials/sammy-logo.svg';
@@ -8,160 +7,144 @@
   import echoLogo from '$lib/Testimonials/echo-logo.svg';
   import arrowNav from '$lib/Testimonials/arrow-slide-nav.svg';
 
-  let intersecting;
-  let slider;
-  let active = false;
-  let startX;
-  let scrollLeft;
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
+  let slider = $state<HTMLElement>();
+  let active = $state(false);
+  let scrollLeft = $state(0);
   const SCROLL_SPEED = 4; // DON'T CHANGE!!!
   const ITEMS_TO_SCROLL = 1;
   const SCROLL = ITEMS_TO_SCROLL * 420;
   const TIMEOUT = SCROLL_SPEED * 100;
 
-  function deactivate(e: { target: any }) {
+  function deactivate(e: MouseEvent | PointerEvent) {
     setTimeout(() => {
       active = false;
-      e.target.style.pointerEvents = 'auto';
+      if (e.target && (e.target as HTMLElement).style) {
+        (e.target as HTMLElement).style.pointerEvents = 'auto';
+      }
     }, TIMEOUT);
   }
 
-  function onPrev(e: { target: { style: { pointerEvents: string } } }) {
-    e.target.style.pointerEvents = 'none';
+  function onPrev(e: MouseEvent | PointerEvent) {
+    if (e.target && (e.target as HTMLElement).style)
+      (e.target as HTMLElement).style.pointerEvents = 'none';
     active = true;
-    scrollLeft = slider.scrollLeft;
-    slider.scrollLeft = scrollLeft - SCROLL;
+    if (slider) {
+      scrollLeft = slider.scrollLeft;
+      slider.scrollLeft = scrollLeft - SCROLL;
+    }
     deactivate(e);
   }
 
-  function onNext(e: { target: { style: { pointerEvents: string } } }) {
-    e.target.style.pointerEvents = 'none';
+  function onNext(e: MouseEvent | PointerEvent) {
+    if (e.target && (e.target as HTMLElement).style)
+      (e.target as HTMLElement).style.pointerEvents = 'none';
     active = true;
-    scrollLeft = slider.scrollLeft;
-    slider.scrollLeft = scrollLeft + SCROLL;
+    if (slider) {
+      scrollLeft = slider.scrollLeft;
+      slider.scrollLeft = scrollLeft + SCROLL;
+    }
     deactivate(e);
-  }
-
-  function onMouseDown(e: MouseEvent) {
-    active = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  }
-
-  function onMouseUp() {
-    active = false;
-  }
-
-  function onMouseMove(e: MouseEvent) {
-    if (!active) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * SCROLL_SPEED;
-    slider.scrollLeft = scrollLeft - walk;
   }
 </script>
 
-<section
-  class="testimonials"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="section-heading sm-left">
-    <h2 class="title">Testimonials</h2>
-    <p class="section-title-lg">Testimonials</p>
-  </div>
-  <div class="section-wrapper">
-    <div class="testimonials-container">
-      <ul
-        class="testimonials-wrapper"
-        class:active
-        bind:this={slider}
-        on:mousedown={onMouseDown}
-        on:mouseup={onMouseUp}
-        on:mouseleave={onMouseUp}
-        on:mousemove={onMouseMove}
+<IntersectionObserver {element} bind:intersecting once>
+  <section class="testimonials" class:intersecting bind:this={element}>
+    <div class="section-heading sm-left">
+      <h2 class="title">Testimonials</h2>
+      <p class="section-title-lg">Testimonials</p>
+    </div>
+    <div class="section-wrapper">
+      <div class="testimonials-container">
+        <ul class="testimonials-wrapper" class:active bind:this={slider}>
+          <li class="testimonial-slide">
+            <div class="slider-item">
+              <div class="slide-logo-wrapper">
+                <img width="119" height="94" class="slide-logo" src={baglletLogo} alt="Bagllet" />
+              </div>
+              <p class="slide-text">
+                Been using Mailcheck for about 6 months now. Tried other services before but decided
+                to stay with Mailcheck as these guys are truly doing what they offer. I had a years
+                old email list but after running it through a verification never thought that 20% of
+                it would come back as invalid! No wonder why my sender score was so bad! Also, as an
+                online-store owner, I really enjoyed the benefits of their API feature. And the
+                cost.. Absolutely worth it!
+              </p>
+              <p class="slide-name">Timofei G.</p>
+            </div>
+          </li>
+          <li class="testimonial-slide">
+            <div class="slider-item">
+              <div class="slide-logo-wrapper">
+                <img width="94" height="94" class="slide-logo" src={sammyLogo} alt="Sammy Icon" />
+              </div>
+              <p class="slide-text">
+                "Probably one of the most comfortable validation services, simple in use.
+              </p>
+              <p class="slide-name">Nick A.</p>
+            </div>
+          </li>
+          <li class="testimonial-slide">
+            <div class="slider-item">
+              <div class="slide-logo-wrapper">
+                <img width="94" height="94" class="slide-logo" src={k5Logo} alt="5000 miles" />
+              </div>
+              <p class="slide-text">
+                Name of the brand popped my attention, I decided to try because was planning to
+                launch my marketing campaign, some leads were outdated, didn't want to blacklist my
+                email account status and my domain, so went to Mailcheck. I can say honestly these
+                guys kicking their A***s off to make sure their users receive what they paid for.
+                Highly recommend!!!
+              </p>
+              <p class="slide-name">Vadim С.</p>
+            </div>
+          </li>
+          <li class="testimonial-slide">
+            <div class="slider-item">
+              <div class="slide-logo-wrapper">
+                <img width="150" height="88" class="slide-logo" src={zitkaniLogo} alt="Zitkani" />
+              </div>
+              <p class="slide-text">
+                The file I have checked have been accepted by MailerLite, thank you! Your service
+                did it better than 2 others I have tried before.
+              </p>
+              <p class="slide-name">Claude I.</p>
+            </div>
+          </li>
+          <li class="testimonial-slide">
+            <div class="slider-item">
+              <div class="slide-logo-wrapper">
+                <img width="150" height="88" class="slide-logo" src={echoLogo} alt="ECHO" />
+              </div>
+              <p class="slide-text">
+                So far, the best mail validation service we tried. It doesn’t rely only on mx check
+                (as the majority of cleaning tool does) but it retrieve data from social networks
+                and many other sources to assign a score to a specific mail. Customer service is
+                great. Very happy with Mailcheck
+              </p>
+              <p class="slide-name">Francesco E.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="testimonials-button testimonials-button-next"
+        onclick={onNext}
+        aria-label="Next slide"
       >
-        <li class="testimonial-slide">
-          <div class="slider-item">
-            <div class="slide-logo-wrapper">
-              <img width="119" height="94" class="slide-logo" src={baglletLogo} alt="Bagllet" />
-            </div>
-            <p class="slide-text">
-              Been using Mailcheck for about 6 months now. Tried other services before but decided
-              to stay with Mailcheck as these guys are truly doing what they offer. I had a years
-              old email list but after running it through a verification never thought that 20% of
-              it would come back as invalid! No wonder why my sender score was so bad! Also, as an
-              online-store owner, I really enjoyed the benefits of their API feature. And the cost..
-              Absolutely worth it!
-            </p>
-            <p class="slide-name">Timofei G.</p>
-          </div>
-        </li>
-        <li class="testimonial-slide">
-          <div class="slider-item">
-            <div class="slide-logo-wrapper">
-              <img width="94" height="94" class="slide-logo" src={sammyLogo} alt="Sammy Icon" />
-            </div>
-            <p class="slide-text">
-              "Probably one of the most comfortable validation services, simple in use.
-            </p>
-            <p class="slide-name">Nick A.</p>
-          </div>
-        </li>
-        <li class="testimonial-slide">
-          <div class="slider-item">
-            <div class="slide-logo-wrapper">
-              <img width="94" height="94" class="slide-logo" src={k5Logo} alt="5000 miles" />
-            </div>
-            <p class="slide-text">
-              Name of the brand popped my attention, I decided to try because was planning to launch
-              my marketing campaign, some leads were outdated, didn't want to blacklist my email
-              account status and my domain, so went to Mailcheck. I can say honestly these guys
-              kicking their A***s off to make sure their users receive what they paid for. Highly
-              recommend!!!
-            </p>
-            <p class="slide-name">Vadim С.</p>
-          </div>
-        </li>
-        <li class="testimonial-slide">
-          <div class="slider-item">
-            <div class="slide-logo-wrapper">
-              <img width="150" height="88" class="slide-logo" src={zitkaniLogo} alt="Zitkani" />
-            </div>
-            <p class="slide-text">
-              The file I have checked have been accepted by MailerLite, thank you! Your service did
-              it better than 2 others I have tried before.
-            </p>
-            <p class="slide-name">Claude I.</p>
-          </div>
-        </li>
-        <li class="testimonial-slide">
-          <div class="slider-item">
-            <div class="slide-logo-wrapper">
-              <img width="150" height="88" class="slide-logo" src={echoLogo} alt="ECHO" />
-            </div>
-            <p class="slide-text">
-              So far, the best mail validation service we tried. It doesn’t rely only on mx check
-              (as the majority of cleaning tool does) but it retrieve data from social networks and
-              many other sources to assign a score to a specific mail. Customer service is great.
-              Very happy with Mailcheck
-            </p>
-            <p class="slide-name">Francesco E.</p>
-          </div>
-        </li>
-      </ul>
+        <img src={arrowNav} width="20" height="20" alt="right" />
+      </button>
+      <button
+        class="testimonials-button testimonials-button-prev"
+        onclick={onPrev}
+        aria-label="Previous slide"
+      >
+        <img src={arrowNav} width="20" height="20" alt="left" />
+      </button>
     </div>
-    <div class="testimonials-button testimonials-button-next" on:click={onNext}>
-      <img src={arrowNav} width="20" height="20" alt="right" />
-    </div>
-    <div class="testimonials-button testimonials-button-prev" on:click={onPrev}>
-      <img src={arrowNav} width="20" height="20" alt="left" />
-    </div>
-  </div>
-</section>
+  </section>
+</IntersectionObserver>
 
 <style lang="scss">
   .testimonials {

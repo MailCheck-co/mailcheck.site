@@ -1,15 +1,15 @@
 export default class Accordion {
-  el: HTMLElement | any;
+  el: HTMLDetailsElement;
   summary: HTMLElement;
   content: HTMLElement;
-  animation: null | any;
+  animation: null | Animation;
   isClosing: boolean;
   isExpanding: boolean;
 
-  constructor(el: HTMLElement) {
+  constructor(el: HTMLDetailsElement) {
     this.el = el;
-    this.summary = el.querySelector('summary');
-    this.content = el.querySelector('p, ul, ol');
+    this.summary = el.querySelector('summary') as HTMLElement;
+    this.content = el.querySelector('p, ul, ol') as HTMLElement;
     this.animation = null;
     this.isClosing = false;
     this.isExpanding = false;

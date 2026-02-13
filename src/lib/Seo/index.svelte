@@ -1,28 +1,46 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import data from '$utils/site-data';
   import { serializeSchema } from '$utils/json-ld';
   import type { Schema } from '$utils/json-ld';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
 
-  export let schemas: Schema[];
-  export let canonical = '';
-  export let title: string;
-  export let isPost = false;
-  export let thumbnail = '/preview.jpeg';
-  export let description = '';
-  export let noindex = false;
+  interface Props {
+    schemas: Schema[];
+    canonical?: string;
+    title: string;
+    isPost?: boolean;
+    thumbnail?: string | { src: string };
+    description?: string;
+    noindex?: boolean;
+  }
+
+  let {
+    schemas,
+    canonical = '',
+    title,
+    isPost = false,
+    thumbnail = '/preview.jpeg',
+    description = '',
+    noindex = false
+  }: Props = $props();
 
   const { siteName, siteUrl, fbAppId } = data;
   const defaultDescription = data.description;
-  const defaultImage = thumbnail || siteUrl + '/favicon.png';
+  const defaultImage = $derived.by(() => {
+    let img = typeof thumbnail === 'object' && thumbnail?.src ? thumbnail.src : thumbnail;
+    if (!img) return siteUrl + '/preview.jpeg';
+    if (typeof img !== 'string') return siteUrl + '/preview.jpeg';
+    if (img.startsWith('http')) return img;
+    return siteUrl + (img.startsWith('/') ? img : '/' + img);
+  });
 </script>
 
 <svelte:head>
   <title>{title} | {siteName}</title>
   <link
     rel="canonical"
-    href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')}
+    href={canonical ? siteUrl + canonical : siteUrl + (page.url.pathname ?? '')}
   />
   <meta name="description" content={description || defaultDescription} />
   <meta name="msapplication-TileColor" content={data.theme} />
@@ -43,7 +61,7 @@
   <meta property="op:markup_version" content="v1.0" />
   <meta property="fb:app_id" content={fbAppId} />
   <meta property="og:type" content={isPost ? 'blog' : 'website'} />
-  <meta property="og:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
+  <meta property="og:url" content="{siteUrl}{page.url.pathname ?? ''}" />
   <meta property="og:title" content={title || siteName} />
   <meta property="og:description" content={description || defaultDescription} />
   <meta property="og:image" content={defaultImage} />
@@ -54,7 +72,7 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content={data.twitterCard} />
-  <meta property="twitter:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
+  <meta property="twitter:url" content="{siteUrl}{page.url.pathname ?? ''}" />
   <meta property="twitter:title" content={title || siteName} />
   <meta property="twitter:description" content={description || defaultDescription} />
   <meta property="twitter:image" content={defaultImage} />

@@ -7,7 +7,7 @@ const RE_SCRIPT_START =
   /<script(?:\s+?[a-zA-z]+(=(?:["']){0,1}[a-zA-Z0-9]+(?:["']){0,1}){0,1})*\s*?>/i;
 
 export default function fancyImages() {
-  return function transformer(tree, vFile) {
+  return function transformer(tree) {
     const images = new Map();
     const image_count = new Map();
 
@@ -32,7 +32,14 @@ export default function fancyImages() {
     });
 
     let scripts = '';
-    images.forEach((x) => (scripts += `import ${x.id} from "${x.path}";\n`));
+    images.forEach((x) => {
+      const path =
+        (x.path.startsWith('.') || (!x.path.startsWith('http') && !x.path.startsWith('/'))) &&
+        !x.path.includes('?enhanced')
+          ? `${x.path}?enhanced`
+          : x.path;
+      scripts += `import ${x.id} from "${path}";\n`;
+    });
 
     let is_script = false;
 

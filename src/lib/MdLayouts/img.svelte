@@ -1,6 +1,13 @@
-<script>
-  export let src = '';
-  export let alt = '';
+<script lang="ts">
+  interface Props {
+    src?: string | import('@sveltejs/enhanced-img').Picture;
+    alt?: string;
+    loading?: 'lazy' | 'eager';
+    decoding?: 'async' | 'auto' | 'sync';
+    children?: import('svelte').Snippet;
+  }
+
+  let { src = '', alt = '', loading = 'lazy', decoding = 'async', children }: Props = $props();
 </script>
 
-<img srcset={src} {alt} loading="lazy" decoding="async" {...$$restProps} /><slot />
+<enhanced:img {src} {alt} {loading} {decoding} />{@render children?.()}

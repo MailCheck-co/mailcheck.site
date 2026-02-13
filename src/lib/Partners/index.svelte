@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
+  import IntersectionObserver from 'svelte-intersection-observer';
   import acellLogo from '$lib/Partners/acell-mail.svg';
   import k5Logo from '$lib/Partners/5k-logo.svg';
   import baglletLogo from '$lib/Partners/bagllet.svg';
@@ -8,43 +7,38 @@
   import zitkaniLogo from '$lib/Partners/zitkani.svg';
   import echoLogo from '$lib/Partners/echo-logo.svg';
 
-  let intersecting: boolean;
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
 </script>
 
-<section
-  class="partners"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="section-heading sm-left">
-    <h2 class="title">Successful business already use MailCheck</h2>
-    <p class="section-title-lg">Partners</p>
-  </div>
-  <div class="partners-list">
-    <div class="partners-list-item">
-      <img width="150" height="60" src={k5Logo} alt="5000 miles" class="partners-logo" />
+<IntersectionObserver {element} bind:intersecting once>
+  <section class="partners" class:intersecting bind:this={element}>
+    <div class="section-heading sm-left">
+      <h2 class="title">Successful business already use MailCheck</h2>
+      <p class="section-title-lg">Partners</p>
     </div>
-    <div class="partners-list-item">
-      <img width="150" height="60" src={baglletLogo} alt="Bagllet" class="partners-logo" />
+    <div class="partners-list">
+      <div class="partners-list-item">
+        <img width="150" height="60" src={k5Logo} alt="5000 miles" class="partners-logo" />
+      </div>
+      <div class="partners-list-item">
+        <img width="150" height="60" src={baglletLogo} alt="Bagllet" class="partners-logo" />
+      </div>
+      <div class="partners-list-item">
+        <img width="150" height="19" src={acellLogo} alt="Acell Mail" class="partners-logo" />
+      </div>
+      <div class="partners-list-item">
+        <img width="150" height="60" src={sammyLogo} alt="Sammy-logo" class="partners-logo" />
+      </div>
+      <div class="partners-list-item">
+        <img width="150" height="60" src={zitkaniLogo} alt="Zitkani" class="partners-logo" />
+      </div>
+      <div class="partners-list-item">
+        <img width="150" height="60" src={echoLogo} alt="ECHO" class="partners-logo" />
+      </div>
     </div>
-    <div class="partners-list-item">
-      <img width="150" height="19" src={acellLogo} alt="Acell Mail" class="partners-logo" />
-    </div>
-    <div class="partners-list-item">
-      <img width="150" height="60" src={sammyLogo} alt="Sammy-logo" class="partners-logo" />
-    </div>
-    <div class="partners-list-item">
-      <img width="150" height="60" src={zitkaniLogo} alt="Zitkani" class="partners-logo" />
-    </div>
-    <div class="partners-list-item">
-      <img width="150" height="60" src={echoLogo} alt="ECHO" class="partners-logo" />
-    </div>
-  </div>
-</section>
+  </section>
+</IntersectionObserver>
 
 <style lang="scss">
   .partners {

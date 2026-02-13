@@ -1,11 +1,24 @@
 <script lang="ts">
-  export let id: string;
-  export let title: string;
+  import { once } from 'svelte/legacy';
 
-  let iframePlaceholder = true;
+  interface Props {
+    id: string;
+    title: string;
+  }
+
+  let { id, title }: Props = $props();
+
+  let iframePlaceholder = $state(true);
 </script>
 
-<div class="video" on:click|once={() => (iframePlaceholder = false)}>
+<div
+  class="video"
+  onclick={once(() => (iframePlaceholder = false))}
+  onkeydown={(e) => (e.key === 'Enter' || e.key === ' ' ? (iframePlaceholder = false) : null)}
+  role="button"
+  tabindex="0"
+  aria-label="Play video {title}"
+>
   {#if iframePlaceholder}
     <picture>
       <source srcset="https://i.ytimg.com/vi_webp/{id}/maxresdefault.webp" type="image/webp" />
@@ -16,7 +29,7 @@
         alt={title}
       />
     </picture>
-    <button>
+    <button aria-label="Play">
       <svg width="68" height="48" viewBox="0 0 68 48">
         <path
           class="shape"
@@ -35,7 +48,7 @@
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-    />
+    ></iframe>
   {/if}
 </div>
 

@@ -11,10 +11,11 @@ const RE_SCRIPT_START =
 export default function formatterToImport() {
   return function transformer(tree, vFile) {
     if (vFile.data.fm?.thumbnailImg) {
-      // if all thumbnails will have the same sizes we can set them here, avoiding putting
-      // them in markdown formatter
-      const scripts = `import thumbnail from "${vFile.data.fm.thumbnailImg}";\n
-      metadata.thumbnail=thumbnail;\n`;
+      const path = vFile.data.fm.thumbnailImg.includes('?')
+        ? vFile.data.fm.thumbnailImg
+        : `${vFile.data.fm.thumbnailImg}?enhanced`;
+      const scripts = `import thumbnail from "${path}";\n
+      metadata.thumbnail = thumbnail;\n`;
       let is_script = false;
       visit(tree, 'html', (node) => {
         if (RE_SCRIPT_START.test(node.value)) {

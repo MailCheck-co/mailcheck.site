@@ -2,7 +2,7 @@
   import { fade } from 'svelte/transition';
   import arrowNav from '$lib/ToTop/arrow-slide-nav.svg';
 
-  let currentPosition: number;
+  let currentPosition = $state(0);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 </script>
@@ -10,9 +10,14 @@
 <svelte:window bind:scrollY={currentPosition} />
 
 {#if currentPosition > 50}
-  <div class="button" on:click={scrollToTop} transition:fade={{ duration: 100 }}>
+  <button
+    class="button"
+    onclick={scrollToTop}
+    transition:fade={{ duration: 100 }}
+    aria-label="Scroll to top"
+  >
     <img src={arrowNav} width="50" height="50" alt="to top" />
-  </div>
+  </button>
 {/if}
 
 <style lang="scss">

@@ -6,10 +6,15 @@ import remarkAbbr from 'remark-abbr';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const config = {
   layout: {
-    _: './src/lib/MdLayouts/ArticleLayout.svelte',
-    faq: './src/lib/MdLayouts/FaqLayout/FaqLayout.svelte'
+    _: resolve(__dirname, './src/lib/MdLayouts/ArticleLayout.svelte'),
+    faq: resolve(__dirname, './src/lib/MdLayouts/FaqLayout/FaqLayout.svelte')
   },
   extensions: ['.svelte.md', '.md', '.svx'],
   smartypants: {
