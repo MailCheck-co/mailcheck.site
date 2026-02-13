@@ -1,14 +1,23 @@
+<script module lang="ts">
+  export { img } from '../components';
+</script>
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import Seo from '$lib/Seo/index.svelte';
   import ContactUs from '$lib/ContactUs/index.svelte';
   import { websiteSchema } from '$utils/json-ld';
-  import filterImg from './filter.png?format=webp;png;avif&srcset';
+  import filterImg from './filter.png?enhanced';
   import Accordion from './accordion';
 
-  export let title = '';
-  export let canonical = '';
-  export let noindex = false;
+  interface Props {
+    title?: string;
+    canonical?: string;
+    noindex?: boolean;
+    children?: import('svelte').Snippet;
+  }
+
+  let { title = '', canonical = '', noindex = false, children }: Props = $props();
 
   onMount(() => {
     document.querySelectorAll('details').forEach((item) => {
@@ -17,7 +26,15 @@
   });
 </script>
 
-<Seo {title} description={title} isPost={true} {canonical} {noindex} schemas={[websiteSchema]} />
+<Seo
+  {title}
+  description={title}
+  isPost={true}
+  {canonical}
+  {noindex}
+  thumbnail={undefined}
+  schemas={[websiteSchema]}
+/>
 
 <div class="wrapper-questions">
   <div class="section-heading sm-left">
@@ -25,9 +42,9 @@
     <p class="section-title-lg">{title}</p>
   </div>
   <div class="accordion">
-    <slot />
+    {@render children?.()}
   </div>
-  <img class="filter-img" srcset={filterImg} width="444" height="568" alt="filter" />
+  <enhanced:img class="filter-img" src={filterImg} width="444" height="568" alt="filter" />
 </div>
 
 <ContactUs />

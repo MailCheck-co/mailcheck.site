@@ -84,7 +84,10 @@ a {
   text-decoration: none;
   background: transparent;
   outline: none;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    border-color 0.3s;
 
   &:hover {
     text-decoration: none;

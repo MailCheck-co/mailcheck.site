@@ -9,9 +9,13 @@
   import iconMoneyBack from '$lib/Footer/assets/icon-money-back.svg';
   import iconRSS from '$lib/Footer/assets/rss.svg';
 
-  export let footerBg = true;
+  interface Props {
+    footerBg?: boolean;
+  }
 
-  let isActivSub = false;
+  let { footerBg = true }: Props = $props();
+
+  let isActivSub = $state(false);
   function toggleSub() {
     isActivSub = !isActivSub;
   }
@@ -19,13 +23,14 @@
 
 <footer class="footer">
   {#if footerBg}
-    <div class="footer-bg" />
+    <div class="footer-bg"></div>
   {/if}
   <div class="container">
     <div class="footer-top">
       <div class="footer-logo-copyright">
         <a class="logo2" href="/" aria-label="logo">
-          <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a>
+          <img src={mailcheckLogo} width="162" height="27" alt="logo2" /></a
+        >
         <address class="footer-address">
           Suite 4005 43 Bedford Street,<br />
           London, England, WC2E 9HA
@@ -37,26 +42,31 @@
           target="_blank"
           class="nav-link footer-nav-link"
           aria-label="Refer a friend"
-          href="https://app.mailcheck.co/auth/login">Refer a friend</a>
+          href="https://app.mailcheck.co/auth/login">Refer a friend</a
+        >
         <a class="nav-link footer-nav-link" aria-label="For affiliates" href="/affiliates"
-          >For affiliates</a>
+          >For affiliates</a
+        >
       </div>
 
       <nav class="footer-nav">
         <a class="nav-link footer-nav-link" aria-label="features" href="/#features">Features</a>
         <a class="nav-link footer-nav-link" aria-label="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link footer-nav-link" aria-label="contact us" href="/#contact-us"
-          >Contact Us</a>
+          >Contact Us</a
+        >
         <div class="sub-menu-footer">
-          <button class="nav-link footer-nav-link" class:active={isActivSub} on:click={toggleSub}>
-            Case studies <span class="drop-arrow" /></button>
+          <button class="nav-link footer-nav-link" class:active={isActivSub} onclick={toggleSub}>
+            Case studies <span class="drop-arrow"></span></button
+          >
           <div class="sub-menu-footer-drop" class:active={isActivSub}>
             <div class="sub-menu-footer-drop-inner">
               <div class="footer-link-flex">
                 <a
                   class="footer-sub-menu-link"
                   aria-label="King Billy × Mailcheck"
-                  href="/case-studies/king-billy-4x-deposit-conversion#king-billy-4x-deposit-conversion">
+                  href="/case-studies/king-billy-4x-deposit-conversion#king-billy-4x-deposit-conversion"
+                >
                   <div class="link-avatar">KB</div>
                   <div class="link-data">
                     <p>King Billy × Mailcheck</p>
@@ -67,27 +77,33 @@
             </div>
           </div>
         </div>
-        <a class="nav-link footer-nav-link" aria-label="blog" href="/#blog">Blog</a>
+        <a class="nav-link footer-nav-link" aria-label="blog" href="/blog">Blog</a>
         <a
           class="nav-link footer-nav-link"
           href="/l/docs#tag--email"
           rel="external"
           aria-label="API"
-          target="_blank">API</a>
+          target="_blank">API</a
+        >
         <a class="nav-link footer-nav-link" aria-label="Privacy policy" href="/privacy"
-          >Privacy policy</a>
+          >Privacy policy</a
+        >
         <a class="nav-link footer-nav-link" aria-label="Terms and conditions" href="/terms"
-          >Terms and conditions</a>
+          >Terms and conditions</a
+        >
         <a class="nav-link footer-nav-link" aria-label="Cookie policy" href="/cookies"
-          >Cookie policy</a>
+          >Cookie policy</a
+        >
         <a class="nav-link footer-nav-link" aria-label="Video tutorials" href="/videos"
-          >Video tutorials</a>
+          >Video tutorials</a
+        >
         <a
           rel="external"
           target="_blank"
           aria-label="Product of NodeArt"
           class="nav-link footer-nav-link"
-          href="/l/na">Product of NodeArt</a>
+          href="/l/na">Product of NodeArt</a
+        >
       </nav>
       <div class="footer-social-mobile">
         <a
@@ -95,33 +111,38 @@
           target="_blank"
           rel="external"
           aria-label="Facebook page"
-          class="footer-social-link">
+          class="footer-social-link"
+        >
           <img
             width="18"
             height="18"
             class="footer-social-icon"
             src={iconFacebook}
-            alt="Facebook" />
+            alt="Facebook"
+          />
         </a>
         <a
           href="/l/linkedin"
           target="_blank"
           rel="external"
           aria-label="LinkedIn page"
-          class="footer-social-link">
+          class="footer-social-link"
+        >
           <img
             width="18"
             height="18"
             class="footer-social-icon"
             src={iconLinkedin}
-            alt="LinkedIn" />
+            alt="LinkedIn"
+          />
         </a>
         <a
           href="/l/yt"
           target="_blank"
           rel="external"
           aria-label="Youtube channel"
-          class="footer-social-link">
+          class="footer-social-link"
+        >
           <img width="18" height="18" class="footer-social-icon" src={iconYoutube} alt="Youtube" />
         </a>
         <a
@@ -129,7 +150,8 @@
           target="_blank"
           rel="external"
           aria-label="Twitter page"
-          class="footer-social-link">
+          class="footer-social-link"
+        >
           <img width="18" height="18" class="footer-social-icon" src={iconTwitter} alt="Twitter" />
         </a>
         <a
@@ -137,7 +159,8 @@
           target="_blank"
           rel="external"
           aria-label="GitHub page"
-          class="footer-social-link">
+          class="footer-social-link"
+        >
           <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
         </a>
         <a href="/rss.xml" class="footer-social-link">
@@ -160,7 +183,8 @@
             width="36"
             height="36"
             src={iconMoneyBack}
-            alt="40 days money-back guarantee" />
+            alt="40 days money-back guarantee"
+          />
           <p class="footer-info-text">
             40 days<br />
             money-back guarantee
@@ -175,59 +199,68 @@
             target="_blank"
             rel="external"
             aria-label="Facebook page"
-            class="footer-social-link">
+            class="footer-social-link"
+          >
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconFacebook}
-              alt="Facebook" />
+              alt="Facebook"
+            />
           </a>
           <a
             href="/l/linkedin"
             target="_blank"
             rel="external"
             aria-label="LinkedIn page"
-            class="footer-social-link">
+            class="footer-social-link"
+          >
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconLinkedin}
-              alt="LinkedIn" />
+              alt="LinkedIn"
+            />
           </a>
           <a
             href="/l/yt"
             target="_blank"
             rel="external"
             aria-label="Youtube channel"
-            class="footer-social-link">
+            class="footer-social-link"
+          >
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconYoutube}
-              alt="Youtube" />
+              alt="Youtube"
+            />
           </a>
           <a
             href="/l/twitter"
             target="_blank"
             rel="external"
             aria-label="Twitter page"
-            class="footer-social-link">
+            class="footer-social-link"
+          >
             <img
               width="18"
               height="18"
               class="footer-social-icon"
               src={iconTwitter}
-              alt="Twitter" />
+              alt="Twitter"
+            />
           </a>
           <a
             href="/l/github"
             target="_blank"
             rel="external"
             aria-label="GitHub page"
-            class="footer-social-link">
+            class="footer-social-link"
+          >
             <img width="18" height="18" class="footer-social-icon" src={iconGitHub} alt="GitHub" />
           </a>
           <a href="/rss.xml" class="footer-social-link">
@@ -414,7 +447,10 @@
     backdrop-filter: saturate(140%) blur(8px);
     border: 1px solid #2c333b;
     background: rgba(255, 255, 255, 0.02);
-    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition:
+      transform 0.15s ease,
+      border-color 0.15s ease,
+      box-shadow 0.15s ease;
     border-radius: 10px;
     padding: 10px;
     overflow: hidden;

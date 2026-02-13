@@ -8,12 +8,18 @@
     desc: string;
   }
 
-  export let slides: ISlide[];
-  let index: number;
-  let init = false;
-  $: init && (index = 1);
+  interface Props {
+    slides: ISlide[];
+  }
 
-  const slidy = {
+  let { slides }: Props = $props();
+  let index = $state(0);
+  let init = $state(false);
+  $effect(() => {
+    if (init) index = 1;
+  });
+
+  const slidy = $derived({
     slides: slides,
     timeout: 1000, // loading timeout
     wrap: {
@@ -48,19 +54,21 @@
       loop: true,
       duration: 200
     }
-  };
+  });
 </script>
 
-<Slidy {...slidy} bind:init bind:index let:item>
-  <div class="slide">
-    <div class="video-wrapper">
-      <Video id={item.id} title={item.title} />
+<Slidy {...slidy} bind:init bind:index>
+  {#snippet children({ item }: { item: ISlide })}
+    <div class="slide">
+      <div class="video-wrapper">
+        <Video id={item.id} title={item.title} />
+      </div>
+      <div class="description">
+        <h2>{item.title}</h2>
+        <p>{item.desc}</p>
+      </div>
     </div>
-    <div class="description">
-      <h2>{item.title}</h2>
-      <p>{item.desc}</p>
-    </div>
-  </div>
+  {/snippet}
 </Slidy>
 
 <style lang="scss">
@@ -137,7 +145,10 @@
     border: none;
     border-radius: var(--br-rounded);
     opacity: 0.8;
-    transition: width 0.3s, height 0.3s, opacity 0.3s;
+    transition:
+      width 0.3s,
+      height 0.3s,
+      opacity 0.3s;
   }
 
   :global(.slidy .slidy-dots li.active button) {

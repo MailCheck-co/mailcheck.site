@@ -15,7 +15,3 @@ export default {
     'email validation tool with an API integration ' +
     'feature for on-the-go validation.'
 };
-
-export const inviewOptions = {
-  unobserveOnEnter: true
-};

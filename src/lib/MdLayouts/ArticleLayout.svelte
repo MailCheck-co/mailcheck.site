@@ -1,19 +1,37 @@
-<script context="module" lang="ts">
-  import { img } from './components';
-  export { img };
+<script module lang="ts">
+  export { img } from './components';
 </script>
 
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
   import data from '$utils/site-data';
 
-  export let title = '';
-  export let description = '';
-  export let canonical = '';
-  export let noindex = false;
-  export let thumbnail = '';
+  interface Props {
+    title?: string;
+    description?: string;
+    canonical?: string;
+    noindex?: boolean;
+    thumbnail?: string | { src: string };
+    thumbnailImg?: string | { src: string };
+    children?: import('svelte').Snippet;
+  }
+
+  let {
+    title = '',
+    description = '',
+    canonical = '',
+    noindex = false,
+    thumbnail = '',
+    thumbnailImg = '',
+    children
+  }: Props = $props();
+
+  const thumbUrl = $derived.by(() => {
+    const raw = thumbnailImg || thumbnail;
+    return typeof raw === 'object' && raw?.src ? raw.src : raw;
+  });
 </script>
 
 <Seo
@@ -22,12 +40,12 @@
   isPost={true}
   {canonical}
   {noindex}
-  {thumbnail}
+  thumbnail={thumbUrl}
   schemas={[
     {
       ...articleSchema,
-      image: thumbnail,
-      url: data.siteUrl + $page.url.pathname,
+      image: thumbUrl as string,
+      url: data.siteUrl + page.url.pathname,
       name: title,
       description: description,
       backstory: description,
@@ -39,7 +57,7 @@
 
 <div class="container" id="article">
   <div class="content-block">
-    <slot />
+    {@render children?.()}
   </div>
 </div>
 

@@ -1,28 +1,29 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
+  import IntersectionObserver from 'svelte-intersection-observer';
   import Progress from '$lib/Progress/index.svelte';
 
-  let intersecting: boolean;
-  let isValid: boolean;
-  let email = '';
-  let isOpen = false;
-  let isError = false;
-  let contactForm = {
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
+  let isValid = $state(false);
+  let email = $state('');
+  let isOpen = $state(false);
+  let isError = $state(false);
+  let contactForm = $state({
     reset: () => {
-      ('');
+      // form reset logic
     }
-  };
-  let popUpBlock: HTMLElement;
-  let nameValue = '';
-  let textareaValue = '';
-  let isSending = false;
-  function validate() {
+  });
+  let popUpBlock = $state<HTMLElement>();
+  let nameValue = $state('');
+  let textareaValue = $state('');
+  let isSending = $state(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  function validate(_node: HTMLElement, _param: string) {
     return {
-      update() {
+      update(newParam: string) {
         const reg =
           /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
-        return (isValid = reg.test(String(email).toLowerCase()));
+        return (isValid = reg.test(String(newParam).toLowerCase()));
       }
     };
   }
@@ -69,64 +70,66 @@
   };
 </script>
 
-<section
-  class:intersecting
-  id="contact-us"
-  class="contact-us"
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="container">
-    <form class="contact-form" bind:this={contactForm} on:submit={onSubmit}>
-      <h2 class="title title-contact">contact us</h2>
-      <input
-        class="input input-name"
-        type="text"
-        placeholder="Name"
-        bind:value={nameValue}
-        required
-      />
-      <input
-        class="input input-email"
-        type="text"
-        bind:value={email}
-        placeholder="Email"
-        use:validate={email}
-        class:invalid={!isValid}
-        required
-      />
-      <textarea
-        class="input input-message"
-        bind:value={textareaValue}
-        placeholder="Message"
-        required
-      />
-      <button disabled={!isValid} class="btn btn-submit" type="submit">
-        {#if isSending}
-          <span class="progress-wrapper">
-            <Progress />
-          </span>
-        {:else}
-          submit
-        {/if}
-      </button>
-    </form>
-  </div>
-</section>
+<IntersectionObserver {element} bind:intersecting once>
+  <section class:intersecting id="contact-us" class="contact-us" bind:this={element}>
+    <div class="container">
+      <form class="contact-form" bind:this={contactForm} onsubmit={onSubmit}>
+        <h2 class="title title-contact">contact us</h2>
+        <input
+          class="input input-name"
+          type="text"
+          placeholder="Name"
+          bind:value={nameValue}
+          required
+        />
+        <input
+          class="input input-email"
+          type="text"
+          bind:value={email}
+          placeholder="Email"
+          use:validate={email}
+          class:invalid={!isValid}
+          required
+        />
+        <textarea
+          class="input input-message"
+          bind:value={textareaValue}
+          placeholder="Message"
+          required
+        ></textarea>
+        <button disabled={!isValid} class="btn btn-submit" type="submit">
+          {#if isSending}
+            <span class="progress-wrapper">
+              <Progress />
+            </span>
+          {:else}
+            submit
+          {/if}
+        </button>
+      </form>
+    </div>
+  </section>
+</IntersectionObserver>
 
-<div class="popup-container" class:open={isOpen} on:click={onClose} bind:this={popUpBlock}>
+<div
+  class="popup-container"
+  class:open={isOpen}
+  onclick={onClose}
+  onkeydown={(e) => (e.key === 'Enter' || e.key === ' ' ? onClose() : null)}
+  bind:this={popUpBlock}
+  role="button"
+  tabindex="0"
+  aria-label="Close popup"
+>
   <div class="popup" class:open={isOpen}>
-    <span class="popup-close success" />
+    <span class="popup-close success"></span>
     <span class="popup-thanks">Thanks for filling out our form!</span>
     <p class="popup-text">
       We will look over your message and get back to you by tomorrow. Your friends at MailCheck!
     </p>
   </div>
   <div class="popup" class:open={isError && isOpen}>
-    <span class="popup-close error" />
+    <span class="popup-close error"></span>
     <span class="popup-thanks">Something went wrong!</span>
     <p class="popup-text">Please try again later</p>
   </div>

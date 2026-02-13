@@ -1,58 +1,51 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
-  import mailFloat from '$lib/Features/mail-float.png?format=webp;png;avif&srcset';
+  import IntersectionObserver from 'svelte-intersection-observer';
+  import mailFloat from '$lib/Features/mail-float.png?enhanced';
 
-  let intersecting: boolean;
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
 </script>
 
-<section
-  id="features"
-  class="features"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="section-heading sm-left">
-    <h2 class="title">The Features</h2>
-    <p class="section-title-lg">Features</p>
-    <p class="section-subtitle">We improve our service everyday</p>
-  </div>
-  <div class="welcome-flex">
-    <img class="mail" srcset={mailFloat} width="765" height="575" alt="mail" />
-    <ul class="welcome-items">
-      <li>
-        <span class="digits">01</span>
-        <p class="text-thin item">Turn your cold emails into a hot leads</p>
-      </li>
-      <li>
-        <span class="digits">02</span>
-        <p class="text-thin item">Validate emails through social networks</p>
-      </li>
-      <li>
-        <span class="digits">03</span>
-        <p class="text-thin item">
-          Increase your delivery rate up to 5 times with our validation algorithm
-        </p>
-      </li>
-      <li>
-        <span class="digits">04</span>
-        <p class="text-thin item">Spend less on outbound marketing</p>
-      </li>
-      <li>
-        <span class="digits">05</span>
-        <p class="text-thin item">Risk-free 40 days money-back guarantee</p>
-      </li>
-      <li>
-        <span class="digits">06</span>
-        <p class="text-thin item">Don't pay for a duplicate in the list</p>
-      </li>
-    </ul>
-  </div>
-</section>
+<IntersectionObserver {element} bind:intersecting once>
+  <section id="features" class="features" class:intersecting bind:this={element}>
+    <div class="section-heading sm-left">
+      <h2 class="title">The Features</h2>
+      <p class="section-title-lg">Features</p>
+      <p class="section-subtitle">We improve our service everyday</p>
+    </div>
+    <div class="welcome-flex">
+      <enhanced:img class="mail" src={mailFloat} width="765" height="575" alt="mail" />
+      <ul class="welcome-items">
+        <li>
+          <span class="digits">01</span>
+          <p class="text-thin item">Turn your cold emails into a hot leads</p>
+        </li>
+        <li>
+          <span class="digits">02</span>
+          <p class="text-thin item">Validate emails through social networks</p>
+        </li>
+        <li>
+          <span class="digits">03</span>
+          <p class="text-thin item">
+            Increase your delivery rate up to 5 times with our validation algorithm
+          </p>
+        </li>
+        <li>
+          <span class="digits">04</span>
+          <p class="text-thin item">Spend less on outbound marketing</p>
+        </li>
+        <li>
+          <span class="digits">05</span>
+          <p class="text-thin item">Risk-free 40 days money-back guarantee</p>
+        </li>
+        <li>
+          <span class="digits">06</span>
+          <p class="text-thin item">Don't pay for a duplicate in the list</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</IntersectionObserver>
 
 <style lang="scss">
   .features {

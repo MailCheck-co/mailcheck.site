@@ -3,8 +3,8 @@
   import logo from '$lib/Header/mailcheck-logo.svg';
 
   /*MOBILE MENU*/
-  let open = false;
-  let isActive = false;
+  let open = $state(false);
+  let isActive = $state(false);
 
   function toggleSubMenu() {
     isActive = !isActive;
@@ -24,14 +24,16 @@
         <a class="nav-link" aria-label="pricing" href="/#pricing">Pricing</a>
         <a class="nav-link" aria-label="contact us" href="/#contact-us">Contact Us</a>
         <div class="sub-nav">
-          <button class="nav-link nav-btn-not">Case Studies <span class="drop-arrow" /></button>
+          <button class="nav-link nav-btn-not">Case Studies <span class="drop-arrow"></span></button
+          >
           <div class="sub-nav-inner">
             <div class="pre-flex">
               <div class="sub-nav-flex">
                 <a
                   class="header-sub-link"
                   aria-label="King Billy × Mailcheck"
-                  href="/case-studies/king-billy-4x-deposit-conversion">
+                  href="/case-studies/king-billy-4x-deposit-conversion"
+                >
                   <div class="header-sub-link-inner">
                     <div class="sub-link-avatar">KB</div>
                     <div class="sub-link-data">
@@ -53,13 +55,15 @@
           rel="external nofollow"
           aria-label="Request a demo"
           target="_blank"
-          class="btn btn-start btn-request">Request a demo</a>
+          class="btn btn-start btn-request">Request a demo</a
+        >
         <a
           rel="external"
           target="_blank"
           href="https://app.mailcheck.co/"
           class="btn btn-sign-in"
-          aria-label="sign in">
+          aria-label="sign in"
+        >
           sign in
         </a>
       </div>
@@ -68,66 +72,81 @@
 </header>
 
 <!--Mobile menu-->
-<button class="burger-wrapper" class:open on:click={() => (open = !open)} id="burger">
-  <span class="burger" />
+<button
+  class="burger-wrapper"
+  class:open
+  onclick={() => (open = !open)}
+  id="burger"
+  aria-label="Toggle menu"
+>
+  <span class="burger"></span>
 </button>
 <nav class="mobile-menu" class:open id="mobile-menu">
   <a
     class="nav-link mobile-menu-links"
-    on:click={() => (open = !open)}
+    onclick={() => (open = !open)}
     aria-label="features"
-    href="/#features">Features</a>
+    href="/#features">Features</a
+  >
   <a class="nav-link mobile-menu-links" aria-label="pricing" href="/#pricing">Pricing</a>
   <a class="nav-link mobile-menu-links" aria-label="contact us" href="/#contact-us">Contact Us</a>
   <div class="sub-mobile">
     <button
       class="nav-link mobile-menu-links"
       class:active={isActive}
-      on:click={toggleSubMenu}
-      aria-expanded={isActive}>
+      onclick={toggleSubMenu}
+      aria-expanded={isActive}
+    >
       Case Studies
-      <span class="drop-arrow" />
+      <span class="drop-arrow"></span>
     </button>
     <div class="sub-mobile-links" class:active={isActive}>
       <div class="sub-mobile-links-inner">
         <a
           class="nav-link mobile-menu-links"
-          on:click={() => (open = !open)}
+          onclick={() => (open = !open)}
           aria-label="King Billy × Mailcheck"
           href="/case-studies/king-billy-4x-deposit-conversion"
-          >King Billy × Mailcheck — 4× Deposit Conversions</a>
+          >King Billy × Mailcheck — 4× Deposit Conversions</a
+        >
       </div>
     </div>
   </div>
   <a
     class="nav-link mobile-menu-links"
-    on:click={() => (open = !open)}
+    onclick={() => (open = !open)}
     aria-label="blog"
-    href="/blog">Blog</a>
-  <a class="nav-link mobile-menu-links" on:click={() => (open = !open)} aria-label="faq" href="/faq"
-    >FAQ</a>
+    href="/blog">Blog</a
+  >
+  <a class="nav-link mobile-menu-links" onclick={() => (open = !open)} aria-label="faq" href="/faq"
+    >FAQ</a
+  >
   <a
     rel="external"
     href="https://app.mailcheck.co/"
     target="_blank"
     aria-label="sign in"
-    class="btn btn-sign-in mobile-btn">Sign in</a>
+    class="btn btn-sign-in mobile-btn">Sign in</a
+  >
   <a
     href="https://calendly.com/fm--29/15min"
     rel="external nofollow"
     target="_blank"
     class="btn btn-bordered btn-invert"
-    aria-label="Request a demo">Request a demo</a>
+    aria-label="Request a demo">Request a demo</a
+  >
 </nav>
 
 <button
   class="burger-wrapper"
   class:open
-  on:click={() => (open = !open)}
+  onclick={() => (open = !open)}
   id="burger"
   aria-controls="mobile-menu"
-  aria-expanded={open}>
-  <span class="burger" />
+  aria-expanded={open}
+  aria-label="Toggle menu"
+>
+  <span class="burger"></span>
 </button>
 
 <style lang="scss">

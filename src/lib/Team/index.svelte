@@ -1,60 +1,54 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
-  import SerhiiAva from './serhii-karetnyk.png?w=200&format=webp;png;avif&srcset';
-  import KonstantinAva from '$lib/Team/konstantin-nosov.png?w=200&format=webp;png;avif&srcset';
-  import FaraAva from '$lib/Team/fara-muhammadiev.png?w=200&format=webp;png;avif&srcset';
+  import IntersectionObserver from 'svelte-intersection-observer';
+  import SerhiiAva from './serhii-karetnyk.png?enhanced';
+  import KonstantinAva from '$lib/Team/konstantin-nosov.png?enhanced';
+  import FaraAva from '$lib/Team/fara-muhammadiev.png?enhanced';
 
-  let intersecting: boolean;
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
 </script>
 
-<section
-  class="team"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="container">
-    <div class="section-wrapper">
-      <div class="section-heading sm-left">
-        <h2 class="title">Mailcheck team</h2>
-        <p class="section-title-lg">Team</p>
-      </div>
-      <div class="team-members">
-        <div class="team-member csm">
-          <div class="team-member-avatar">
-            <img srcset={SerhiiAva} alt="csm" class="avatar" />
-          </div>
-          <div class="team-member-info">
-            <p class="team-member-name">Serhii Karetnyk</p>
-            <p class="team-member-description">CSM</p>
-          </div>
+<IntersectionObserver {element} bind:intersecting once>
+  <section class="team" class:intersecting bind:this={element}>
+    <div class="container">
+      <div class="section-wrapper">
+        <div class="section-heading sm-left">
+          <h2 class="title">Mailcheck team</h2>
+          <p class="section-title-lg">Team</p>
         </div>
-        <div class="team-member cto">
-          <div class="team-member-avatar">
-            <img srcset={KonstantinAva} alt="cto" class="avatar" />
+        <div class="team-members">
+          <div class="team-member csm">
+            <div class="team-member-avatar">
+              <enhanced:img src={SerhiiAva} alt="csm" class="avatar" />
+            </div>
+            <div class="team-member-info">
+              <p class="team-member-name">Serhii Karetnyk</p>
+              <p class="team-member-description">CSM</p>
+            </div>
           </div>
-          <div class="team-member-info">
-            <p class="team-member-name">Konstantin Nosov</p>
-            <p class="team-member-description">CTO / Founder</p>
+          <div class="team-member cto">
+            <div class="team-member-avatar">
+              <enhanced:img src={KonstantinAva} alt="cto" class="avatar" />
+            </div>
+            <div class="team-member-info">
+              <p class="team-member-name">Konstantin Nosov</p>
+              <p class="team-member-description">CTO / Founder</p>
+            </div>
           </div>
-        </div>
-        <div class="team-member own">
-          <div class="team-member-avatar">
-            <img srcset={FaraAva} alt="own" class="avatar" />
-          </div>
-          <div class="team-member-info">
-            <p class="team-member-name">Fara Muhammadiev</p>
-            <p class="team-member-description">Product Owner</p>
+          <div class="team-member own">
+            <div class="team-member-avatar">
+              <enhanced:img src={FaraAva} alt="own" class="avatar" />
+            </div>
+            <div class="team-member-info">
+              <p class="team-member-name">Fara Muhammadiev</p>
+              <p class="team-member-description">Product Owner</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</IntersectionObserver>
 
 <style lang="scss">
   .team {

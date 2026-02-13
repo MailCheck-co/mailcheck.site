@@ -1,150 +1,125 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
+  import IntersectionObserver from 'svelte-intersection-observer';
   import arrowNav from '$lib/Pricing/arrow-slide-nav.svg';
 
-  let intersecting: boolean;
-  let slider: HTMLElement;
-  let active = false;
-  let startX: number;
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
+  let slider = $state<HTMLElement>();
+  let active = $state(false);
   let scrollLeft: number;
   const SCROLL_SPEED = 4;
   const ITEMS_TO_SCROLL = 1;
   const SCROLL = ITEMS_TO_SCROLL * 340;
   const TIMEOUT = SCROLL_SPEED * 100;
 
-  function deactivate(e: { target: any }) {
+  function deactivate(e: MouseEvent | PointerEvent) {
     setTimeout(() => {
       active = false;
-      e.target.style.pointerEvents = 'auto';
+      if (e.target && (e.target as HTMLElement).style) {
+        (e.target as HTMLElement).style.pointerEvents = 'auto';
+      }
     }, TIMEOUT);
   }
 
-  function onPrev(e: { target: { style: { pointerEvents: string } } }) {
-    e.target.style.pointerEvents = 'none';
+  function onPrev(e: MouseEvent | PointerEvent) {
+    if (e.target && (e.target as HTMLElement).style)
+      (e.target as HTMLElement).style.pointerEvents = 'none';
     active = true;
-    scrollLeft = slider.scrollLeft;
-    slider.scrollLeft = scrollLeft - SCROLL;
+    if (slider) {
+      scrollLeft = slider.scrollLeft;
+      slider.scrollLeft = scrollLeft - SCROLL;
+    }
     deactivate(e);
   }
 
-  function onNext(e: { target: { style: { pointerEvents: string } } }) {
-    e.target.style.pointerEvents = 'none';
+  function onNext(e: MouseEvent | PointerEvent) {
+    if (e.target && (e.target as HTMLElement).style)
+      (e.target as HTMLElement).style.pointerEvents = 'none';
     active = true;
-    scrollLeft = slider.scrollLeft;
-    slider.scrollLeft = scrollLeft + SCROLL;
+    if (slider) {
+      scrollLeft = slider.scrollLeft;
+      slider.scrollLeft = scrollLeft + SCROLL;
+    }
     deactivate(e);
-  }
-
-  function onMouseDown(e: MouseEvent) {
-    active = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  }
-
-  function onMouseUp() {
-    active = false;
-  }
-
-  function onMouseMove(e: MouseEvent) {
-    if (!active) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * SCROLL_SPEED;
-    slider.scrollLeft = scrollLeft - walk;
   }
 </script>
 
-<section
-  id="pricing"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="section-heading sm-left">
-    <h2 class="title">Cost-effective pricing plans</h2>
-    <p class="section-title-lg">Pricing</p>
-    <p class="section-subtitle">Choose wisely.</p>
-  </div>
-  <div class="wrapper-cost">
-    <ul
-      class="cards"
-      class:active
-      bind:this={slider}
-      on:mousedown={onMouseDown}
-      on:mouseup={onMouseUp}
-      on:mouseleave={onMouseUp}
-      on:mousemove={onMouseMove}
-    >
-      <li class="card" id="pro">
-        <h3 class="title-colored">pro</h3>
-        <span class="title lowercase">$10/mo</span>
-        <span class="card-features-text"> 1,000 emails to validate included</span>
-        <span class="card-features-text"> $0.005/1 mail overage charge</span>
-        <a
-          title="choose"
-          target="_blank"
-          rel="external"
-          href="https://app.mailcheck.co/dashboard/payment_plans"
-          class="btn btn-choose">choose</a
-        >
-      </li>
-      <li class="card" id="agency">
-        <h3 class="title-colored cyan">agency</h3>
-        <span class="title lowercase">$30/mo</span>
-        <span class="card-features-text"> 5,000 emails to validate included</span>
-        <span class="card-features-text"> $0.004/1 mail overage charge</span>
-        <a
-          title="choose"
-          target="_blank"
-          rel="external"
-          href="https://app.mailcheck.co/dashboard/payment_plans"
-          class="btn btn-choose btn-cyan">choose</a
-        >
-      </li>
-      <li class="card" id="enterprise">
-        <h3 class="title-colored grey">enterprise</h3>
-        <span class="title lowercase">$90/mo</span>
-        <span class="card-features-text"> 20,000 emails to validate included</span>
-        <span class="card-features-text"> $0.003/1 mail overage charge</span>
-        <a
-          title="choose"
-          target="_blank"
-          rel="external"
-          href="https://app.mailcheck.co/dashboard/payment_plans"
-          class="btn btn-choose btn-grey">choose</a
-        >
-      </li>
-      <li class="card" id="custom">
-        <h3 class="title-colored red">custom</h3>
-        <span class="card-features-text">
-          <span class="bold">Epic</span>
-          100,000+ emails to validate included</span
-        >
-        <span class="card-features-text">
-          <span class="bold">Legendary</span>
-          1,000,000,000+ emails to validate included</span
-        >
-        <a
-          href="https://calendly.com/fm--29/15min"
-          rel="external nofollow"
-          target="_blank"
-          title="request a demo"
-          class="btn btn-choose btn-red">request a demo</a
-        >
-      </li>
-    </ul>
-  </div>
-  <div class="button button-next" on:click={onNext}>
-    <img src={arrowNav} width="20" height="20" alt="right" />
-  </div>
-  <div class="button button-prev" on:click={onPrev}>
-    <img src={arrowNav} width="20" height="20" alt="left" />
-  </div>
-</section>
+<IntersectionObserver {element} bind:intersecting once>
+  <section id="pricing" class:intersecting bind:this={element}>
+    <div class="section-heading sm-left">
+      <h2 class="title">Cost-effective pricing plans</h2>
+      <p class="section-title-lg">Pricing</p>
+      <p class="section-subtitle">Choose wisely.</p>
+    </div>
+    <div class="wrapper-cost">
+      <ul class="cards" class:active bind:this={slider}>
+        <li class="card" id="pro">
+          <h3 class="title-colored">pro</h3>
+          <span class="title lowercase">$10/mo</span>
+          <span class="card-features-text"> 1,000 emails to validate included</span>
+          <span class="card-features-text"> $0.005/1 mail overage charge</span>
+          <a
+            title="choose"
+            target="_blank"
+            rel="external"
+            href="https://app.mailcheck.co/dashboard/payment_plans"
+            class="btn btn-choose">choose</a
+          >
+        </li>
+        <li class="card" id="agency">
+          <h3 class="title-colored cyan">agency</h3>
+          <span class="title lowercase">$30/mo</span>
+          <span class="card-features-text"> 5,000 emails to validate included</span>
+          <span class="card-features-text"> $0.004/1 mail overage charge</span>
+          <a
+            title="choose"
+            target="_blank"
+            rel="external"
+            href="https://app.mailcheck.co/dashboard/payment_plans"
+            class="btn btn-choose btn-cyan">choose</a
+          >
+        </li>
+        <li class="card" id="enterprise">
+          <h3 class="title-colored grey">enterprise</h3>
+          <span class="title lowercase">$90/mo</span>
+          <span class="card-features-text"> 20,000 emails to validate included</span>
+          <span class="card-features-text"> $0.003/1 mail overage charge</span>
+          <a
+            title="choose"
+            target="_blank"
+            rel="external"
+            href="https://app.mailcheck.co/dashboard/payment_plans"
+            class="btn btn-choose btn-grey">choose</a
+          >
+        </li>
+        <li class="card" id="custom">
+          <h3 class="title-colored red">custom</h3>
+          <span class="card-features-text">
+            <span class="bold">Epic</span>
+            100,000+ emails to validate included</span
+          >
+          <span class="card-features-text">
+            <span class="bold">Legendary</span>
+            1,000,000,000+ emails to validate included</span
+          >
+          <a
+            href="https://calendly.com/fm--29/15min"
+            rel="external nofollow"
+            target="_blank"
+            title="request a demo"
+            class="btn btn-choose btn-red">request a demo</a
+          >
+        </li>
+      </ul>
+    </div>
+    <button class="button button-next" onclick={onNext} aria-label="Next slide">
+      <img src={arrowNav} width="20" height="20" alt="right" />
+    </button>
+    <button class="button button-prev" onclick={onPrev} aria-label="Previous slide">
+      <img src={arrowNav} width="20" height="20" alt="left" />
+    </button>
+  </section>
+</IntersectionObserver>
 
 <style lang="scss">
   #pricing {

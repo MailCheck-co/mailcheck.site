@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
+  import IntersectionObserver from 'svelte-intersection-observer';
   import Video from '$lib/Video/video.svelte';
 
   interface IVideo {
@@ -10,34 +9,33 @@
     date: string;
   }
 
-  export let videos: IVideo[];
-  let intersecting: boolean;
+  interface Props {
+    videos: IVideo[];
+  }
+
+  let { videos }: Props = $props();
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
   let title = 'Video Tutorials';
 </script>
 
-<section
-  class="tutorials"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="section-heading sm-left">
-    <h3 class="title-small">{title}</h3>
-    <p class="section-title-lg">Tutorials</p>
-  </div>
+<IntersectionObserver {element} bind:intersecting once>
+  <section class="tutorials" class:intersecting bind:this={element}>
+    <div class="section-heading sm-left">
+      <h3 class="title-small">{title}</h3>
+      <p class="section-title-lg">Tutorials</p>
+    </div>
 
-  <div class="grid">
-    {#each videos as video}
-      <div class="video-wrapper">
-        <Video id={video.id} title={video.title} />
-      </div>
-    {/each}
-  </div>
-  <a href="/videos" {title}>view all</a>
-</section>
+    <div class="grid">
+      {#each videos as video}
+        <div class="video-wrapper">
+          <Video id={video.id} title={video.title} />
+        </div>
+      {/each}
+    </div>
+    <a href="/videos" {title}>view all</a>
+  </section>
+</IntersectionObserver>
 
 <style lang="scss">
   .tutorials {

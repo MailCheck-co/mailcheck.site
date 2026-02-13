@@ -1,83 +1,95 @@
 <script lang="ts">
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
+  import IntersectionObserver from 'svelte-intersection-observer';
   import iconLike from '$lib/Reviews/icon-like-heart.svg';
   import iconStar from '$lib/Reviews/icon-star-rating.svg';
-  import iconProductHunt from '$lib/Reviews/logo-product-hunt.png?format=webp;png;avif&srcset';
-  import iconBeta from '$lib/Reviews/logo-beta-list.png?format=webp;png;avif&srcset';
-  import iconCapterra from '$lib/Reviews/logo-capterra.png?format=webp;png;avif&srcset';
+  import iconProductHunt from '$lib/Reviews/logo-product-hunt.png?enhanced';
+  import iconBeta from '$lib/Reviews/logo-beta-list.png?enhanced';
+  import iconCapterra from '$lib/Reviews/logo-capterra.png?enhanced';
 
-  let intersecting: boolean;
+  let intersecting = $state(false);
+  let element: HTMLElement | undefined = $state();
 </script>
 
-<section
-  class="reviews"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
-  <div class="section-heading">
-    <h2 class="title">Our customer's reviews</h2>
-    <p class="section-title-lg">Reviews</p>
-  </div>
-  <div class="container">
-    <div class="section-wrapper sm-left">
-      <div class="reviews-list">
-        <div class="reviews-item">
-          <img width="170" height="40" srcset={iconProductHunt} alt="" class="reviews-item-logo" />
-          <div class="reviews-item-rating">
-            <img src={iconStar} width="25" height="25" alt="rating 1 star" />
-            <img src={iconStar} width="25" height="25" alt="rating 2 stars" />
-            <img src={iconStar} width="25" height="25" alt="rating 3 stars" />
-            <img src={iconStar} width="25" height="25" alt="rating 4 stars" />
-            <img src={iconStar} width="25" height="25" alt="rating 5 stars" />
+<IntersectionObserver {element} bind:intersecting once>
+  <section class="reviews" class:intersecting bind:this={element}>
+    <div class="section-heading">
+      <h2 class="title">Our customer's reviews</h2>
+      <p class="section-title-lg">Reviews</p>
+    </div>
+    <div class="container">
+      <div class="section-wrapper sm-left">
+        <div class="reviews-list">
+          <div class="reviews-item">
+            <enhanced:img
+              width="170"
+              height="40"
+              src={iconProductHunt}
+              alt=""
+              class="reviews-item-logo"
+            />
+            <div class="reviews-item-rating">
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 1 star" />
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 2 stars" />
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 3 stars" />
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 4 stars" />
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 5 stars" />
+            </div>
+            <a
+              href="/l/ph"
+              target="_blank"
+              rel="external nofollow"
+              title="Read Reviews"
+              class="reviews-item-link btn">Read Reviews</a
+            >
           </div>
-          <a
-            href="/l/ph"
-            target="_blank"
-            rel="external nofollow"
-            title="Read Reviews"
-            class="reviews-item-link btn">Read Reviews</a
-          >
-        </div>
-        <div class="reviews-item">
-          <img width="120" height="40" srcset={iconBeta} alt="" class="reviews-item-logo" />
-          <div class="reviews-item-likes">
-            <span class="rating-counter">11</span>
-            <img width="25" height="25" src={iconLike} alt="" class="reviews-like-icon" />
+          <div class="reviews-item">
+            <enhanced:img width="120" height="40" src={iconBeta} alt="" class="reviews-item-logo" />
+            <div class="reviews-item-likes">
+              <span class="rating-counter">11</span>
+              <enhanced:img
+                width="25"
+                height="25"
+                src={iconLike}
+                alt=""
+                class="reviews-like-icon"
+              />
+            </div>
+            <a
+              href="/l/betalist"
+              target="_blank"
+              rel="external nofollow"
+              title="Read Reviews"
+              class="reviews-item-link btn">Read Reviews</a
+            >
           </div>
-          <a
-            href="/l/betalist"
-            target="_blank"
-            rel="external nofollow"
-            title="Read Reviews"
-            class="reviews-item-link btn">Read Reviews</a
-          >
-        </div>
-        <div class="reviews-item">
-          <img width="145" height="32" srcset={iconCapterra} alt="" class="reviews-item-logo" />
-          <div class="reviews-item-rating">
-            <img src={iconStar} width="25" height="25" alt="rating 1 star" />
-            <img src={iconStar} width="25" height="25" alt="rating 2 stars" />
-            <img src={iconStar} width="25" height="25" alt="rating 3 stars" />
-            <img src={iconStar} width="25" height="25" alt="rating 4 stars" />
-            <img src={iconStar} width="25" height="25" alt="rating 5 stars" />
+          <div class="reviews-item">
+            <enhanced:img
+              width="145"
+              height="32"
+              src={iconCapterra}
+              alt=""
+              class="reviews-item-logo"
+            />
+            <div class="reviews-item-rating">
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 1 star" />
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 2 stars" />
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 3 stars" />
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 4 stars" />
+              <enhanced:img src={iconStar} width="25" height="25" alt="rating 5 stars" />
+            </div>
+            <a
+              href="/l/capterra"
+              target="_blank"
+              rel="external nofollow"
+              title="Read Reviews"
+              class="reviews-item-link btn">Read Reviews</a
+            >
           </div>
-          <a
-            href="/l/capterra"
-            target="_blank"
-            rel="external nofollow"
-            title="Read Reviews"
-            class="reviews-item-link btn">Read Reviews</a
-          >
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</IntersectionObserver>
 
 <style lang="scss">
   .reviews {
