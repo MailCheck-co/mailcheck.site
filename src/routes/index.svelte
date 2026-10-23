@@ -1,16 +1,4 @@
 <script lang="ts" context="module">
-  /**
-   * @type {import('@sveltejs/kit').Load}
-   */
-  export async function load({ fetch }) {
-    const list = await fetch('/videos.json').then((res: Response) => res.json());
-    const videos = [list[0], list[1]];
-    return {
-      props: {
-        videos
-      }
-    };
-  }
 </script>
 
 <script lang="ts">
@@ -38,7 +26,7 @@
     date: string;
   }
 
-  export let videos: IVideo[];
+  export let videos: IVideo[] = [];
 </script>
 
 <Seo

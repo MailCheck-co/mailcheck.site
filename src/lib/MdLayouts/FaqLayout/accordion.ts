@@ -8,8 +8,8 @@ export default class Accordion {
 
   constructor(el: HTMLElement) {
     this.el = el;
-    this.summary = el.querySelector('summary');
-    this.content = el.querySelector('p, ul, ol');
+    this.summary = el.querySelector('summary') as HTMLElement;
+    this.content = el.querySelector('p, ul, ol') as HTMLElement;
     this.animation = null;
     this.isClosing = false;
     this.isExpanding = false;

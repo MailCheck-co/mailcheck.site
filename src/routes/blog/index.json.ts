@@ -1,7 +1,5 @@
 import { getPublishedPosts } from './_blog';
-import type { RequestHandler } from '@sveltejs/kit';
-
-export const GET: RequestHandler = async () => {
+export const GET = async () => {
   const body = await getPublishedPosts();
-  return { body };
+  return new Response(JSON.stringify(body), { headers: { 'content-type': 'application/json' } });
 };

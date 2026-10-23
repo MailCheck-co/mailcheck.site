@@ -1,0 +1,11 @@
+---
+import SiteLayout from '../../components/SiteLayout.astro';
+import Videos from '../../routes/videos/index.svelte';
+import { GET } from '../../routes/videos/index.json.ts';
+
+const response = await GET();
+const data = (await response.json()) as Array<{ id: string; title: string; desc: string; date: string }>;
+---
+<SiteLayout title="Email verification Video Tutorials" description="Mailcheck Email verification Video Tutorials. How to use Mailcheck for bulk and single email validation.">
+  <Videos client:load videos={data} />
+</SiteLayout>

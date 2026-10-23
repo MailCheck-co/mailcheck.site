@@ -1,0 +1,91 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "account_id": "2c9835fef0d4f0bacd0ffe1399957f42",
+  "name": "mailcheck-site",
+  "main": "./src/worker.ts",
+  "compatibility_date": "2026-10-18",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // ── Top level = pre-cutover staging on workers.dev ─────────────────────────
+  // `npm run deploy:staging`. No zone routes; every response carries
+  // X-Robots-Tag: noindex and robots.txt disallows everything.
+  "workers_dev": true,
+  // Version preview URLs would expose every uploaded version against the
+  // shared D1/R2/KV data.
+  "preview_urls": false,
+  // Workers Cache in front of the Worker. Keys exclude the hostname and include
+  // the Worker version; routes opt in via Astro's cache API (src/middleware.ts).
+  "cache": { "enabled": true },
+  "vars": {
+    "MAILCHECK_CONTENT_SOURCE": "cms",
+    "MAILCHECK_INDEXABLE": "false",
+    "CONTACT_FROM_EMAIL": "contact@mailcheck.co"
+  },
+  "images": { "binding": "IMAGES" },
+  "kv_namespaces": [{ "binding": "SESSION", "id": "fec1a792364c4460afde72f8f96cbe1f" }],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mailcheck-cms",
+      "database_id": "81355b8d-8d94-4c48-8e58-fab82b7c1323"
+    }
+  ],
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "mailcheck-media" }],
+  // Cloudflare Email Sending. The sender domain must be onboarded before use.
+  "send_email": [{ "name": "EMAIL" }],
+  // Per-IP limit for the public contact form (/api/sendMail), per Cloudflare
+  // location; the isolate-local limiter remains as a fallback.
+  "ratelimits": [
+    {
+      "name": "CONTACT_RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": { "limit": 8, "period": 60 }
+    }
+  ],
+  // EmDash scheduled publishing; 5-minute precision is enough for the blog.
+  "triggers": { "crons": ["*/5 * * * *"] },
+  // Invocation logs record full request URLs, and tracking URLs contain email
+  // addresses. Keep application logs (console.*) only.
+  "observability": { "enabled": true, "logs": { "enabled": true, "invocation_logs": false } },
+
+  "env": {
+    // ── Production cutover: `npm run deploy:production` ─────────────────────
+    // Same Worker and data. Attaches mailcheck.co/* in front of the existing
+    // proxied DNS record (Firebase origin stays untouched), disables
+    // workers.dev and makes the site indexable. Rollback: remove the route
+    // (dashboard or redeploy without it) and traffic returns to the origin.
+    // Do NOT run before owner sign-off; see docs/cloudflare-migration.md.
+    "production": {
+      "name": "mailcheck-site",
+      "workers_dev": false,
+      "preview_urls": false,
+      "routes": [{ "pattern": "mailcheck.co/*", "zone_id": "6b34245e68db7cd047a7ceed6d011840" }],
+      "cache": { "enabled": true },
+      "vars": {
+        "MAILCHECK_CONTENT_SOURCE": "cms",
+        "MAILCHECK_INDEXABLE": "true",
+        "CONTACT_FROM_EMAIL": "contact@mailcheck.co"
+      },
+      "images": { "binding": "IMAGES" },
+      "kv_namespaces": [{ "binding": "SESSION", "id": "fec1a792364c4460afde72f8f96cbe1f" }],
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "mailcheck-cms",
+          "database_id": "81355b8d-8d94-4c48-8e58-fab82b7c1323"
+        }
+      ],
+      "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "mailcheck-media" }],
+      "send_email": [{ "name": "EMAIL" }],
+      "ratelimits": [
+        {
+          "name": "CONTACT_RATE_LIMITER",
+          "namespace_id": "1001",
+          "simple": { "limit": 8, "period": 60 }
+        }
+      ],
+      "triggers": { "crons": ["*/5 * * * *"] },
+      "observability": { "enabled": true, "logs": { "enabled": true, "invocation_logs": false } }
+    }
+  }
+}

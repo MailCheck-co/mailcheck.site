@@ -148,16 +148,16 @@
   }
 
   @media all and (min-width: 992px) {
-    :global(.slidy) {
-      height: 25rem;
+    // Svelte 5 lowers the specificity of Slidy's scoped rules. Size the desktop
+    // track from its content, as the legacy cascade did, rather than 24/25rem.
+    :global(.slidy),
+    :global(.slidy .slidy-ul),
+    :global(.slidy .slidy-ul li) {
+      height: auto;
     }
 
     :global(.slidy .slidy-dots) {
       position: static !important;
-    }
-
-    :global(.slidy .slidy-ul li) {
-      height: 24rem;
     }
 
     :global(.slidy .slidy-ul li .slide) {

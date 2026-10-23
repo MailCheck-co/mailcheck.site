@@ -8,3 +8,9 @@ node_modules
 .env
 *-debug.log
 .firebase
+/.astro
+/dist
+/.wrangler
+/.dev.vars
+/emdash-env.d.ts
+/.emdash

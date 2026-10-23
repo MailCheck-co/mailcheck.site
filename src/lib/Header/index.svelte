@@ -68,9 +68,6 @@
 </header>
 
 <!--Mobile menu-->
-<button class="burger-wrapper" class:open on:click={() => (open = !open)} id="burger">
-  <span class="burger" />
-</button>
 <nav class="mobile-menu" class:open id="mobile-menu">
   <a
     class="nav-link mobile-menu-links"
@@ -220,6 +217,7 @@
   }
 
   .burger-wrapper {
+    display: none;
     padding: 0;
     background-color: var(--transparent);
     border: none;

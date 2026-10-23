@@ -1,0 +1,9 @@
+---
+import SiteLayout from '../../components/SiteLayout.astro';
+import CaseStudy from '../../routes/case-studies/king-billy-4x-deposit-conversion.svelte';
+import { websiteSchema, blogSchema } from '../../utils/json-ld';
+const title = 'Mailcheck <> King Billy Casino';
+---
+<SiteLayout {title} description={title} schemas={[websiteSchema, { ...blogSchema, name: title, description: title }]}>
+  <CaseStudy client:load posts={[]} />
+</SiteLayout>

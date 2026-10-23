@@ -1,22 +1,11 @@
 <script lang="ts" context="module">
-  /**
-   * @type {import('@sveltejs/kit').Load}
-   */
-  export async function load({ fetch }) {
-    const videos = await fetch('/videos.json').then((res: Response) => res.json());
-    return {
-      props: {
-        videos
-      }
-    };
-  }
 </script>
 
 <script lang="ts">
   import Video from '$lib/Video/video.svelte';
   import Slider from '$lib/Video/slider.svelte';
-  import FaraAva from '$lib/Video/assets/fara.png?w=46&format=webp;png;avif&srcset';
-  import FaraAvaDefault from '$lib/Video/assets/fara.png';
+  import FaraAva from '$lib/Video/assets/fara.png?url';
+  import FaraAvaDefault from '$lib/Video/assets/fara.png?url';
   import { websiteSchema } from '$utils/json-ld';
   import Seo from '$lib/Seo/index.svelte';
 
@@ -27,7 +16,7 @@
     date: string;
   }
 
-  export let videos: IVideo[];
+  export let videos: IVideo[] = [];
 </script>
 
 <Seo

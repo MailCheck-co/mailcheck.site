@@ -1,0 +1,74 @@
+name: Cloudflare Worker
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Deploy target. staging = workers.dev only; production = attaches mailcheck.co/* (cutover).'
+        type: choice
+        options: [none, staging, production]
+        default: none
+      confirm:
+        description: 'For production type mailcheck.co'
+        required: false
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22
+          cache: npm
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm test
+      - name: Build (staging config)
+        run: npm run build
+        env:
+          VITE_YOUTUBE_API_KEY: ${{ secrets.VITE_YOUTUBE_API_KEY }}
+      - name: Validate production config without deploying
+        run: CLOUDFLARE_ENV=production npx astro build && npx wrangler deploy --dry-run
+        env:
+          VITE_YOUTUBE_API_KEY: ${{ secrets.VITE_YOUTUBE_API_KEY }}
+
+  # Deploys are manual. Both targets update the same Worker (`mailcheck-site`),
+  # so after the cutover only `production` may be used: a `staging` deploy would
+  # detach mailcheck.co/* and mark the site noindex.
+  deploy:
+    needs: check
+    if: github.event_name == 'workflow_dispatch' && inputs.target != 'none' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    # Configure required reviewers on the `production` environment in GitHub.
+    environment: ${{ inputs.target }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22
+          cache: npm
+      - run: npm ci
+      - name: Deploy staging
+        if: inputs.target == 'staging'
+        run: npm run deploy:staging
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          VITE_YOUTUBE_API_KEY: ${{ secrets.VITE_YOUTUBE_API_KEY }}
+      - name: Deploy production
+        if: inputs.target == 'production'
+        run: npm run deploy:production
+        env:
+          CONFIRM_PRODUCTION_DEPLOY: ${{ inputs.confirm }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          VITE_YOUTUBE_API_KEY: ${{ secrets.VITE_YOUTUBE_API_KEY }}

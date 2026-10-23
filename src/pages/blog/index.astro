@@ -1,0 +1,14 @@
+---
+import SiteLayout from '../../components/SiteLayout.astro';
+import Blog from '../../routes/blog.svelte';
+import { getPublishedPosts } from '../../routes/blog/_blog';
+import type { IPost } from '$utils/types';
+import { websiteSchema, blogSchema } from '../../utils/json-ld';
+
+const posts = (await getPublishedPosts()) as IPost[];
+const title = 'Blog about effective email checking & communication';
+const description = 'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
+---
+<SiteLayout {title} {description} schemas={[websiteSchema, { ...blogSchema, name: title, description }]}>
+  <Blog client:load {posts} />
+</SiteLayout>

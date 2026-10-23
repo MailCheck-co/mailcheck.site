@@ -1,22 +1,11 @@
 <script lang="ts" context="module">
-  import pixels from '$lib/Case/pexels-photo.jpeg';
+  import pixels from '$lib/Case/pexels-photo.jpeg?url';
   import arrowRight from '$lib/Icons/lucide-ArrowRight-Outlined.svg?raw';
   import hands from '$lib/Icons/lucide-Handshake-Outlined.svg?raw';
   import alert from '$lib/Icons/lucide-TriangleAlert-Outlined.svg?raw';
   import lamp from '$lib/Icons/lucide-Lightbulb-Outlined.svg?raw';
   import chart from '$lib/Icons/lucide-ChartLine-Outlined.svg?raw';
   import info from '$lib/Icons/lucide-Info-Outlined.svg?raw';
-  /**
-   * @type {import('@sveltejs/kit').Load}
-   */
-  // export async function load({ fetch }) {
-  //   const posts = await fetch('/blog.json').then((res: Response) => res.json());
-  //   return {
-  //     props: {
-  //       posts
-  //     }
-  //   };
-  // }
 </script>
 
 <script lang="ts">

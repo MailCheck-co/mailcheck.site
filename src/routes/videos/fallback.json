@@ -1,0 +1,9 @@
+[
+  {"id":"XTpv879nfjc","title":"How to select the delimiter?","desc":"The delimiter is the separator located in the database, it usually defines the look of the data.","date":"13 August 2021"},
+  {"id":"YL4a5M50_Pk","title":"How to manually add emails?","desc":"Probably the fastest way to validate emails works the way that a user copy/paste emails.","date":"13 August 2021"},
+  {"id":"dFcw9wEXsAg","title":"How to adapt data in Excel? Mailcheck.co","desc":"Mailcheck.co \nEmail validation service, the best way to adapt data in your excel sheet.","date":"13 August 2021"},
+  {"id":"o1C455GQBjE","title":"Mailcheck.co email validation parameters","desc":"In this course, we're going to define Mailcheck.co email validation parameters","date":"17 August 2021"},
+  {"id":"I-N6b1M5vp8","title":"How to register an account in Mailcheck.co?","desc":"This video explains the best approach to register an account and how to choose an accurate plan or test the platform.\nhttps://app.mailcheck.co/auth/login?utm_source=youtube&utm_medium=registration&utm_campaign=youtube","date":"15 September 2021"},
+  {"id":"ZAMbvnF9rKE","title":"How to use MailChimp integration in mailcheck.co?","desc":"All necessary steps and tips to accurately set up Mailchimp. \nIt helps to locate validation results, see the dates, and how the data export happens.\nhttps://mailcheck.co/mailchimp-integration","date":"15 September 2021"},
+  {"id":"L2TCGUk0iZ0","title":"Mailcheck + SendGrid Integration instructions","desc":"Sendgrid users now can easily validate email just with a few clicks. More details shared https://mailcheck.co/sendgrid-integration","date":"5 October 2021"}
+]

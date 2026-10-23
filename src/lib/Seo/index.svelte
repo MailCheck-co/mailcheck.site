@@ -1,9 +1,7 @@
 <script lang="ts">
-  import { page } from '$app/stores';
   import data from '$utils/site-data';
   import { serializeSchema } from '$utils/json-ld';
   import type { Schema } from '$utils/json-ld';
-  import { browser } from '$app/env';
 
   export let schemas: Schema[];
   export let canonical = '';
@@ -12,6 +10,10 @@
   export let thumbnail = '/preview.jpeg';
   export let description = '';
   export let noindex = false;
+  export let pathname = '';
+  // Astro owns the document head for both SSR and hydration. Keep legacy callers
+  // inert so Svelte islands cannot overwrite the server-rendered canonical/meta.
+  export let renderHead = false;
 
   const { siteName, siteUrl, fbAppId } = data;
   const defaultDescription = data.description;
@@ -19,11 +21,9 @@
 </script>
 
 <svelte:head>
+{#if renderHead}
   <title>{title} | {siteName}</title>
-  <link
-    rel="canonical"
-    href={canonical ? siteUrl + canonical : siteUrl + ($page.url.pathname ?? '')}
-  />
+  <link rel="canonical" href={canonical ? siteUrl + canonical : siteUrl + pathname} />
   <meta name="description" content={description || defaultDescription} />
   <meta name="msapplication-TileColor" content={data.theme} />
   <meta name="theme-color" content={data.theme} />
@@ -43,7 +43,7 @@
   <meta property="op:markup_version" content="v1.0" />
   <meta property="fb:app_id" content={fbAppId} />
   <meta property="og:type" content={isPost ? 'blog' : 'website'} />
-  <meta property="og:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
+  <meta property="og:url" content={siteUrl + pathname} />
   <meta property="og:title" content={title || siteName} />
   <meta property="og:description" content={description || defaultDescription} />
   <meta property="og:image" content={defaultImage} />
@@ -54,24 +54,24 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content={data.twitterCard} />
-  <meta property="twitter:url" content="{siteUrl}{$page.url.pathname ?? ''}" />
+  <meta property="twitter:url" content={siteUrl + pathname} />
   <meta property="twitter:title" content={title || siteName} />
   <meta property="twitter:description" content={description || defaultDescription} />
   <meta property="twitter:image" content={defaultImage} />
 
   <link rel="preload" href={defaultImage} as="image" />
 
-  {#if !browser}
-    <!-- RSS Feed -->
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="RSS Feed for mailcheck.co"
-      href="/rss.xml"
-    />
+  <!-- RSS Feed -->
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="RSS Feed for mailcheck.co"
+    href="/rss.xml"
+  />
 
     <!-- JSON-LD Schema -->
     {#each schemas as schema}
       {@html serializeSchema(schema)}
-    {/each}{/if}
+    {/each}
+{/if}
 </svelte:head>

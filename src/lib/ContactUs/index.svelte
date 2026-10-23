@@ -8,15 +8,122 @@
   let email = '';
   let isOpen = false;
   let isError = false;
-  let contactForm = {
-    reset: () => {
-      ('');
-    }
-  };
+  let contactForm: HTMLFormElement;
   let popUpBlock: HTMLElement;
   let nameValue = '';
   let textareaValue = '';
   let isSending = false;
+  let turnstileContainer: HTMLElement;
+  let turnstileWidgetId: string | number | undefined;
+  let turnstileToken = '';
+  let turnstileError: Error | undefined;
+  let turnstileInit: Promise<void> | undefined;
+  let tokenWaiters: Array<{ resolve: (token: string) => void; reject: (error: Error) => void }> =
+    [];
+
+  type TurnstileApi = {
+    render: (container: HTMLElement, options: Record<string, unknown>) => string | number;
+    reset: (widgetId: string | number) => void;
+  };
+
+  type TurnstileWindow = Window & {
+    turnstile?: TurnstileApi;
+    __mailcheckTurnstileScript?: Promise<TurnstileApi>;
+  };
+
+  const rejectTokenWaiters = (error: Error) => {
+    for (const waiter of tokenWaiters.splice(0)) waiter.reject(error);
+  };
+
+  const loadTurnstile = (): Promise<TurnstileApi> => {
+    const turnstileWindow = window as TurnstileWindow;
+    if (turnstileWindow.turnstile) return Promise.resolve(turnstileWindow.turnstile);
+    if (turnstileWindow.__mailcheckTurnstileScript) {
+      return turnstileWindow.__mailcheckTurnstileScript;
+    }
+    turnstileWindow.__mailcheckTurnstileScript = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+      script.async = true;
+      script.defer = true;
+      script.onload = () =>
+        turnstileWindow.turnstile
+          ? resolve(turnstileWindow.turnstile)
+          : reject(new Error('Turnstile failed to initialize'));
+      script.onerror = () => reject(new Error('Turnstile failed to load'));
+      document.head.appendChild(script);
+    });
+    return turnstileWindow.__mailcheckTurnstileScript;
+  };
+
+  const initializeTurnstile = () => {
+    if (turnstileInit) return turnstileInit;
+    const siteKey = document.querySelector<HTMLMetaElement>(
+      'meta[name="turnstile-site-key"]'
+    )?.content;
+    if (!siteKey) return Promise.resolve();
+    turnstileInit = loadTurnstile()
+      .then((turnstile) => {
+        turnstileWidgetId = turnstile.render(turnstileContainer, {
+          sitekey: siteKey,
+          appearance: 'interaction-only',
+          action: 'contact',
+          'refresh-expired': 'auto',
+          'response-field': false,
+          callback: (token: string) => {
+            turnstileError = undefined;
+            turnstileToken = token;
+            for (const waiter of tokenWaiters.splice(0)) waiter.resolve(token);
+          },
+          'expired-callback': () => {
+            turnstileToken = '';
+          },
+          'error-callback': () => {
+            turnstileToken = '';
+            turnstileError = new Error('Turnstile challenge failed');
+            rejectTokenWaiters(turnstileError);
+          }
+        });
+      })
+      .catch((error) => {
+        turnstileInit = undefined;
+        throw error;
+      });
+    return turnstileInit;
+  };
+
+  const waitForTurnstileToken = async () => {
+    const siteKey = document.querySelector<HTMLMetaElement>(
+      'meta[name="turnstile-site-key"]'
+    )?.content;
+    if (!siteKey) return undefined;
+    await initializeTurnstile();
+    if (turnstileError) throw turnstileError;
+    if (turnstileToken) return turnstileToken;
+    return new Promise<string>((resolve, reject) => {
+      const waiter = { resolve, reject };
+      tokenWaiters.push(waiter);
+      const timeout = window.setTimeout(() => {
+        tokenWaiters = tokenWaiters.filter((candidate) => candidate !== waiter);
+        reject(new Error('Turnstile challenge timed out'));
+      }, 20_000);
+      waiter.resolve = (token) => {
+        window.clearTimeout(timeout);
+        resolve(token);
+      };
+      waiter.reject = (error) => {
+        window.clearTimeout(timeout);
+        reject(error);
+      };
+    });
+  };
+
+  const resetTurnstile = () => {
+    turnstileToken = '';
+    turnstileError = undefined;
+    const turnstile = (window as TurnstileWindow).turnstile;
+    if (turnstile && turnstileWidgetId !== undefined) turnstile.reset(turnstileWidgetId);
+  };
   function validate() {
     return {
       update() {
@@ -36,26 +143,33 @@
   const onSubmit = async (e: Event) => {
     e.preventDefault();
     isSending = true;
+    isError = false;
     isValid = true;
     const referrerValue = document.referrer;
-    const data = {
-      name: nameValue,
-      email,
-      subject: textareaValue,
-      referrer: referrerValue
-    };
 
     try {
-      await fetch('/api/sendMail', {
+      const token = await waitForTurnstileToken();
+      const data = {
+        name: nameValue,
+        email,
+        subject: textareaValue,
+        referrer: referrerValue,
+        ...(token ? { turnstileToken: token } : {})
+      };
+      const response = await fetch('/api/sendMail', {
         method: 'POST',
         body: JSON.stringify(data)
       });
+      if (!response.ok) throw new Error(`Contact form request failed (${response.status})`);
       isOpen = true;
       contactForm.reset();
     } catch (e) {
       isOpen = true;
       isError = true;
       console.error(e);
+    } finally {
+      resetTurnstile();
+      isSending = false;
     }
 
     document.body.classList.add('fixed');
@@ -77,10 +191,17 @@
   on:enter={(event) => {
     const { inView } = event.detail;
     intersecting = inView;
+    if (inView) initializeTurnstile().catch(() => {});
   }}
 >
   <div class="container">
-    <form class="contact-form" bind:this={contactForm} on:submit={onSubmit}>
+    <form
+      class="contact-form"
+      bind:this={contactForm}
+      on:submit={onSubmit}
+      on:focusin={() => initializeTurnstile().catch(() => {})}
+      on:input={() => initializeTurnstile().catch(() => {})}
+    >
       <h2 class="title title-contact">contact us</h2>
       <input
         class="input input-name"
@@ -104,6 +225,7 @@
         placeholder="Message"
         required
       />
+      <div class="turnstile-widget" bind:this={turnstileContainer} />
       <button disabled={!isValid} class="btn btn-submit" type="submit">
         {#if isSending}
           <span class="progress-wrapper">
@@ -212,6 +334,11 @@
           background-color: var(--primary-accent);
         }
       }
+
+      .turnstile-widget {
+        width: min(100%, 300px);
+        min-height: 0;
+      }
     }
   }
 
@@ -271,7 +398,7 @@
     display: none;
     width: 100%;
     height: 100%;
-    background: url('../footer/assets/city-transparent.png') no-repeat center 50%;
+    background: url('../Footer/assets/city-transparent.png') no-repeat center 50%;
     background-size: 150% 150%;
 
     &.open {

@@ -4,7 +4,6 @@
 </script>
 
 <script lang="ts">
-  import { page } from '$app/stores';
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
   import data from '$utils/site-data';
@@ -14,6 +13,7 @@
   export let canonical = '';
   export let noindex = false;
   export let thumbnail = '';
+  export let pathname = '';
 </script>
 
 <Seo
@@ -23,11 +23,12 @@
   {canonical}
   {noindex}
   {thumbnail}
+  {pathname}
   schemas={[
     {
       ...articleSchema,
       image: thumbnail,
-      url: data.siteUrl + $page.url.pathname,
+       url: data.siteUrl + pathname,
       name: title,
       description: description,
       backstory: description,

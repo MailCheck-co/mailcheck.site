@@ -1,0 +1,12 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: no-referrer-when-downgrade
+  X-UA-Compatible: ie=edge
+  X-XSS-Protection: 1; mode=block
+
+/_astro/*
+  Cache-Control: max-age=1209600
+
+/js/*
+  Cache-Control: max-age=1209600

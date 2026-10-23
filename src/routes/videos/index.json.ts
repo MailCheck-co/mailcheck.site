@@ -1,11 +1,15 @@
 import fetchData from './_videos';
-import type { RequestHandler } from '@sveltejs/kit';
-
-export const GET: RequestHandler = async () => {
-  const response = await fetchData();
-  let videos;
+// Snapshot of the public production feed; never fetch our own endpoint after cutover.
+import fallbackVideos from './fallback.json';
+export const GET = async () => {
+  const headers = { 'content-type': 'application/json' };
+  if (!import.meta.env.VITE_YOUTUBE_API_KEY) {
+    return new Response(JSON.stringify(fallbackVideos), { headers });
+  }
+  const response = (await fetchData()) as { items?: any[] };
+  let videos: typeof fallbackVideos = [];
   try {
-    videos = response.items.map((video: any) => {
+    videos = (response.items ?? []).map((video: any) => {
       const date = new Date(video.snippet.publishedAt);
       const month = [
         'January',
@@ -33,7 +37,5 @@ export const GET: RequestHandler = async () => {
     console.error('Youtube api error: ', response);
   }
 
-  return {
-    body: videos
-  };
+  return new Response(JSON.stringify(videos?.length ? videos : fallbackVideos), { headers });
 };

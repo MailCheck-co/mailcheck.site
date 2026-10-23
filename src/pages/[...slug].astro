@@ -1,0 +1,160 @@
+---
+import SiteLayout from '../components/SiteLayout.astro';
+import ArticleLayout from '../lib/MdLayouts/ArticleLayout.svelte';
+import FaqLayout from '../lib/MdLayouts/FaqLayout/FaqLayout.svelte';
+import ContactUs from '../lib/ContactUs/index.svelte';
+import Video from '../lib/Video/video.svelte';
+import { marked, Renderer } from 'marked';
+import GithubSlugger from 'github-slugger';
+import { websiteSchema, articleSchema } from '../utils/json-ld';
+import NotFound from '../routes/404.svelte';
+import { getCmsDocument, usesCms } from '../server/cms-content';
+import { sanitizeMarkdown } from '../server/markdown-security';
+import mediaManifest from '../../seed/media.json';
+import { imageUrl } from '../server/media-images';
+
+const slug = Astro.params.slug ?? '';
+const source = import.meta.glob('../routes/**/*.md', { eager: true, query: '?raw', import: 'default' });
+const assetSource = import.meta.glob('../routes/**/*.{png,jpg,jpeg,webp,gif,svg}', {
+  eager: true,
+  query: '?url',
+  import: 'default'
+}) as Record<string, string>;
+const legacyImages = import.meta.glob('../routes/**/*.{png,jpg,jpeg,webp,gif}', {
+  eager: true,
+  query: '?legacy-width=880',
+  import: 'default'
+}) as Record<string, string>;
+const legacyEntry = Object.entries(source).find(([path]) => {
+  const normalized = path.replace(/^.*\/routes\//, '').replace(/\/index\.md$/, '');
+  return normalized === slug;
+});
+
+const cms = usesCms() ? await getCmsDocument(slug) : null;
+const entry = cms ? cms.document : legacyEntry;
+if (!entry) Astro.response.status = 404;
+if (cms?.isPreview) {
+  Astro.response.headers.set('Cache-Control', 'private, no-store');
+  Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+}
+const raw = legacyEntry?.[1] ?? '';
+const frontmatterMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+const legacyMetadata = Object.fromEntries((frontmatterMatch?.[1] ?? '').split('\n').filter(Boolean).map((line) => {
+  const index = line.indexOf(':');
+  return [line.slice(0, index).trim(), line.slice(index + 1).trim().replace(/^['"]|['"]$/g, '')];
+}));
+const metadata: Record<string, string> = cms ? cms.document?.metadata ?? {} : legacyMetadata;
+const content = cms ? cms.document?.content ?? '' : frontmatterMatch?.[2] ?? '';
+const entryDirectory = cms?.document?.directory ?? legacyEntry?.[0]?.replace(/\/index\.md$/, '') ?? '';
+const scriptValues = Object.fromEntries(
+  [...content.matchAll(/(?:let|const)\s+(\w+)\s*=\s*['"]([^'"]*)['"]/g)].map((match) => [match[1], match[2]])
+);
+const expandVariables = (value: string) =>
+  value.replace(/\{(\w+)\}/g, (_, key: string) => scriptValues[key] ?? metadata[key] ?? '');
+
+const resolveMarkdownImages = (value: string) =>
+  value.replace(/!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)/g, (_, alt, imagePath, imageTitle) => {
+    const cleanPath = imagePath.split('?')[0].replace(/^\.\//, '');
+    const requestedWidth = new URLSearchParams(imagePath.split('?')[1]).get('width');
+    const assets = requestedWidth === '880' ? legacyImages : assetSource;
+    const sourcePath = `${entryDirectory}/${cleanPath}`;
+    const mediaKey = `${sourcePath.replace(/^\.\.\//, 'src/')}|original`;
+    const mapped = (mediaManifest.assets as Record<string, { url: string; storageKey: string }>)[mediaKey];
+    const resolved = cms && mapped ? mapped.url : assets[sourcePath] ?? imagePath;
+    const title = imageTitle ? ` "${imageTitle}"` : '';
+    return `![${alt}](${resolved}${title})`;
+  });
+
+type ContentSegment =
+  | { kind: 'markdown'; html: string }
+  | { kind: 'video'; id: string; title: string };
+
+const slugger = new GithubSlugger();
+const renderer = new Renderer();
+const defaultImage = renderer.image;
+renderer.image = function (token) {
+  const image = defaultImage.call(this, token);
+  // Editors select one original; delivery sizes/formats are server concerns.
+  const key = token.href.match(/^\/_emdash\/api\/media\/file\/(legacy\/[a-f0-9]{64}\.(?:png|jpe?g|webp|gif|avif)|[A-Za-z0-9_-]+\.(?:png|jpe?g|webp|gif|avif))$/)?.[1];
+  if (!cms || !key) return image;
+  const sizes = '(max-width: 940px) calc(100vw - 60px), 880px';
+  const srcset = (format: string) => [440, 880, 1760].map((width) => `${imageUrl(key, width, format)} ${width}w`).join(', ');
+  const fallback = image.replace(/src="[^"]*"/, `src="${imageUrl(key)}"`)
+    .replace(/\s*\/?>$/, ` srcset="${srcset('webp')}" sizes="${sizes}" width="880">`);
+  return `<picture><source type="image/avif" srcset="${srcset('avif')}" sizes="${sizes}">${fallback}</picture>`;
+};
+renderer.heading = function ({ text, depth, tokens }) {
+  const id = slugger.slug(text.replace(/<[^>]*>/g, ''));
+  return `<h${depth} id="${id}"><a href="#${id}">${this.parser.parseInline(tokens)}</a></h${depth}>\n`;
+};
+const renderMarkdown = (value: string) => sanitizeMarkdown(expandVariables(String(marked.parse(
+  value.replace(/^ {4}(?=<\/?summary[\s>])/gm, ''),
+  { renderer }
+))));
+const segments: ContentSegment[] = [];
+const videoPattern = /<Video\s+id=\{(\w+)\}\s+title=\{(\w+)\}\s*\/>/g;
+let cursor = 0;
+for (const match of content.matchAll(videoPattern)) {
+  const index = match.index ?? 0;
+  const markdown = content.slice(cursor, index).replace(/<script[\s\S]*?<\/script>/gi, '');
+  if (markdown.trim()) {
+    segments.push({ kind: 'markdown', html: renderMarkdown(resolveMarkdownImages(markdown)) });
+  }
+  segments.push({
+    kind: 'video',
+    id: scriptValues[match[1]] ?? '',
+    title: scriptValues[match[2]] ?? ''
+  });
+  cursor = index + match[0].length;
+}
+const remainingMarkdown = content.slice(cursor).replace(/<script[\s\S]*?<\/script>/gi, '');
+if (remainingMarkdown.trim()) {
+  segments.push({
+    kind: 'markdown',
+    html: renderMarkdown(resolveMarkdownImages(remainingMarkdown))
+  });
+}
+const isFaq = slug === 'faq';
+const description = !entry ? 'Page not found: 404' : isFaq ? metadata.title : metadata.description;
+const thumbnailPath = metadata.thumbnailImg?.split('?')[0].replace(/^\.\//, '');
+const thumbnail = /^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg ?? '') ? metadata.thumbnailImg : assetSource[`${entryDirectory}/${thumbnailPath}`] || 'https://mailcheck.co/favicon.png';
+const schemas = isFaq || !entry ? [websiteSchema] : [
+  { ...articleSchema, image: thumbnail === 'https://mailcheck.co/favicon.png' ? '' : thumbnail, url: `https://mailcheck.co/${slug}`,
+    name: metadata.title, description, backstory: description, headline: metadata.title },
+  websiteSchema
+];
+---
+<SiteLayout title={metadata.title || 'Page not found'} {description} canonical={entry ? metadata.canonical : '/'}
+  pathname={entry ? Astro.url.pathname : '/404'} noindex={!entry || !!cms?.isPreview || metadata.noindex === 'true'} isPost={!!entry}
+  thumbnail={isFaq ? '/preview.jpeg' : thumbnail} {schemas}>
+  {!entry && <meta slot="head" http-equiv="refresh" content="5;https://mailcheck.co/" />}
+  {entry ? (
+    isFaq ? (
+      <FaqLayout client:load title={metadata.title} canonical={metadata.canonical} noindex={metadata.noindex === 'true'}>
+        {segments.map((segment) =>
+          segment.kind === 'video' ? (
+            <Video client:visible id={segment.id} title={segment.title} />
+          ) : (
+            <Fragment set:html={segment.html} />
+          )
+        )}
+      </FaqLayout>
+    ) : (
+      <ArticleLayout title={metadata.title} description={metadata.description} canonical={metadata.canonical} noindex={metadata.noindex === 'true'} pathname={Astro.url.pathname}>
+        {segments.map((segment) =>
+          segment.kind === 'video' ? (
+            <Video client:visible id={segment.id} title={segment.title} />
+          ) : (
+            <Fragment set:html={segment.html} />
+          )
+        )}
+      </ArticleLayout>
+    )
+  ) : <NotFound />}
+  {entry && (slug.startsWith('blog/') || slug === 'affiliates') && <ContactUs client:load />}
+</SiteLayout>
+<style is:global>
+  .services-table { width: 100%; border-collapse: collapse; color: #ffffff; }
+  .services-table th, .services-table td { padding: 8px; text-align: left; vertical-align: top; }
+  .services-table thead th { font-weight: bold; font-size: 1.4em; text-align: center; }
+</style>

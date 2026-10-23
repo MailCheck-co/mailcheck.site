@@ -1,38 +1,24 @@
-# create-svelte
+# mailcheck.co
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+Public site, CMS, contact form and short-link redirects for mailcheck.co: Astro 7 SSR with
+Svelte components and EmDash CMS on a Cloudflare Worker (`mailcheck-site`,
+D1 + R2 + KV). Firebase Hosting and Cloud Functions are retired.
 
 ```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+npm ci
+npm run dev          # local dev server
+npm test             # unit tests (no network, no credentials)
+npm run build        # Worker build into dist/
 ```
 
-> Note: the `@next` is temporary
+Deploys are manual (see `.github/workflows/cloudflare.yml`):
 
-## Developing
+- `npm run deploy:staging` — workers.dev only, `noindex`. Only before cutover.
+- `npm run deploy:production` — attaches `mailcheck.co/*`; requires
+  `CONFIRM_PRODUCTION_DEPLOY=mailcheck.co` and passing readiness checks.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Docs:
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+- `docs/cloudflare-migration.md` — architecture, caching, cutover and rollback.
+- `docs/worker-secrets.md` — runtime variables and secrets.
+- `docs/cms-editorial-workflow.md` — editing content in the CMS.

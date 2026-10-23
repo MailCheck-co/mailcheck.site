@@ -1,5 +1,5 @@
 <script>
-  import sassb from './sass-b.png';
+  import sassb from './sass-b.png?url';
   import ContactUs from '$lib/ContactUs/index.svelte';
 
   const promocode = 'SBMailcheck60';

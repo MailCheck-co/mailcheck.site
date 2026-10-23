@@ -1,7 +1,6 @@
 import { getPublishedPosts } from './blog/_blog';
-import type { RequestHandler } from '@sveltejs/kit';
-
-export const GET: RequestHandler = async () => {
+import { escapeXml } from '../server/cms-document';
+export const GET = async () => {
   const maxAge = 600;
   const posts = await getPublishedPosts();
   const body = `<?xml version="1.0" encoding="UTF-8" ?>
@@ -15,10 +14,10 @@ export const GET: RequestHandler = async () => {
       .map(
         (post) => `<item>
           <guid>https://mailcheck.co/blog/${post.slug}</guid>
-          <title>${post.title}</title>
+          <title>${escapeXml(post.title)}</title>
           <link>https://mailcheck.co/blog/${post.slug}</link>
-          <pubDate>${post.date}</pubDate>
-          <description>${post.description}</description>
+          <pubDate>${escapeXml(post.date)}</pubDate>
+          <description>${escapeXml(post.description)}</description>
           </item>`
       )
       .join('')}
@@ -29,8 +28,5 @@ export const GET: RequestHandler = async () => {
     'Cache-Control': `max-age=0, s-max-age=${maxAge}`,
     'Content-Type': 'application/xml'
   };
-  return {
-    headers,
-    body
-  };
+  return new Response(body, { headers });
 };

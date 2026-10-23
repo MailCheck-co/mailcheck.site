@@ -1,15 +1,17 @@
-import slugFromPath from '$utils/slugFromPath';
+import slugFromBlogPath from '$utils/slugFromBlogPath';
+import { getCmsPosts, usesCms } from '../../server/cms-content';
 
 export const getPublishedPosts = async () => {
-  const modules = import.meta.glob('/**/*.md');
+  if (usesCms()) return getCmsPosts();
+  const modules = import.meta.glob('./*/index.md');
 
-  const postPromises = [];
+  const postPromises: Promise<Record<string, any>>[] = [];
 
   for (const [path, resolver] of Object.entries(modules)) {
-    const slug = slugFromPath(path);
-    const promise = resolver().then((post) => ({
+    const slug = slugFromBlogPath(path);
+    const promise = (resolver as () => Promise<any>)().then((post) => ({
       slug,
-      ...post.metadata
+      ...(post.frontmatter ?? post.metadata ?? {})
     }));
 
     postPromises.push(promise);

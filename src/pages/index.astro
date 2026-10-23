@@ -1,0 +1,13 @@
+---
+import SiteLayout from '../components/SiteLayout.astro';
+import Home from '../routes/index.svelte';
+import { GET } from '../routes/videos/index.json.ts';
+import { websiteSchema, organizationSchema } from '../utils/json-ld';
+
+const list = await GET();
+const data = (await list.json()) as Array<{ id: string; title: string; desc: string; date: string }>;
+const selectedVideos = [data[0], data[1]].filter(Boolean);
+---
+<SiteLayout title="Online email verification tool. Bulk check and cleaning" schemas={[websiteSchema, organizationSchema]}>
+  <Home client:load videos={selectedVideos} />
+</SiteLayout>

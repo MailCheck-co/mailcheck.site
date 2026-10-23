@@ -1,15 +1,4 @@
 <script lang="ts" context="module">
-  /**
-   * @type {import('@sveltejs/kit').Load}
-   */
-  export async function load({ fetch }) {
-    const posts = await fetch('/blog.json').then((res: Response) => res.json());
-    return {
-      props: {
-        posts
-      }
-    };
-  }
 </script>
 
 <script lang="ts">
@@ -18,7 +7,7 @@
   import { websiteSchema, blogSchema } from '$utils/json-ld';
   import type { IPost } from '$utils/types';
 
-  export let posts: IPost[];
+  export let posts: IPost[] = [];
   const title = 'Blog about effective email checking & communication';
   const description =
     'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';

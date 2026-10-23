@@ -1,0 +1,7 @@
+---
+import SiteLayout from '../../../components/SiteLayout.astro';
+import Promo from '../../../routes/promo/social-bee/index.svelte';
+---
+<SiteLayout title="MailCheck Promotion" description="MailCheck promotion" canonical="/" noindex={true}>
+  <Promo client:load />
+</SiteLayout>

@@ -1,0 +1,8 @@
+---
+import SiteLayout from '../components/SiteLayout.astro';
+import NotFound from '../routes/404.svelte';
+---
+<SiteLayout title="Page not found" description="Page not found: 404" canonical="/" noindex={true} pathname="/404">
+  <meta slot="head" http-equiv="refresh" content="5;https://mailcheck.co/" />
+  <NotFound />
+</SiteLayout>
