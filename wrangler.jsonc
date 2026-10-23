@@ -19,7 +19,8 @@
   "vars": {
     "MAILCHECK_CONTENT_SOURCE": "cms",
     "MAILCHECK_INDEXABLE": "false",
-    "CONTACT_FROM_EMAIL": "contact@mailcheck.co"
+    "CONTACT_FROM_EMAIL": "contact@mailcheck.co",
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAFjHHMUEdzVj088q"
   },
   "images": { "binding": "IMAGES" },
   "kv_namespaces": [{ "binding": "SESSION", "id": "fec1a792364c4460afde72f8f96cbe1f" }],
@@ -64,7 +65,8 @@
       "vars": {
         "MAILCHECK_CONTENT_SOURCE": "cms",
         "MAILCHECK_INDEXABLE": "true",
-        "CONTACT_FROM_EMAIL": "contact@mailcheck.co"
+        "CONTACT_FROM_EMAIL": "contact@mailcheck.co",
+        "TURNSTILE_SITE_KEY": "0x4AAAAAAFjHHMUEdzVj088q"
       },
       "images": { "binding": "IMAGES" },
       "kv_namespaces": [{ "binding": "SESSION", "id": "fec1a792364c4460afde72f8f96cbe1f" }],
