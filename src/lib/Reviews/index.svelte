@@ -1,8 +1,8 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import iconLike from '$lib/Reviews/icon-like-heart.svg';
-  import iconStar from '$lib/Reviews/icon-star-rating.svg';
+  import iconLike from '$lib/Reviews/icon-like-heart.svg?url';
+  import iconStar from '$lib/Reviews/icon-star-rating.svg?url';
   import iconProductHunt from '$lib/Reviews/logo-product-hunt.png?format=webp;png;avif&srcset';
   import iconBeta from '$lib/Reviews/logo-beta-list.png?format=webp;png;avif&srcset';
   import iconCapterra from '$lib/Reviews/logo-capterra.png?format=webp;png;avif&srcset';

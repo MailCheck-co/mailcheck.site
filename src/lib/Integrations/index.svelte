@@ -2,15 +2,15 @@
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
   // assets
-  import makeCom from '$lib/Integrations/make.com.svg';
-  import mailchimp from '$lib/Integrations/mailchimp-logo.svg';
-  import n8n from '$lib/Integrations/n8n-logo.svg';
-  import sendgrid from '$lib/Integrations/sendgrid.svg';
-  import WP from '$lib/Integrations/WordPress_logo.svg';
-  import zapier from '$lib/Integrations/zapier-official.svg';
-  import mailerLite from '$lib/Integrations/mailer-lite.svg';
-  import woodpecker from '$lib/Integrations/woodpecker.svg';
-  import activeCampaign from '$lib/Integrations/active-campaign-logo.svg';
+  import makeCom from '$lib/Integrations/make.com.svg?url';
+  import mailchimp from '$lib/Integrations/mailchimp-logo.svg?url';
+  import n8n from '$lib/Integrations/n8n-logo.svg?url';
+  import sendgrid from '$lib/Integrations/sendgrid.svg?url';
+  import WP from '$lib/Integrations/WordPress_logo.svg?url';
+  import zapier from '$lib/Integrations/zapier-official.svg?url';
+  import mailerLite from '$lib/Integrations/mailer-lite.svg?url';
+  import woodpecker from '$lib/Integrations/woodpecker.svg?url';
+  import activeCampaign from '$lib/Integrations/active-campaign-logo.svg?url';
 
   let intersecting: boolean;
 </script>

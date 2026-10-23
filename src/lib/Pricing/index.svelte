@@ -1,7 +1,7 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import arrowNav from '$lib/Pricing/arrow-slide-nav.svg';
+  import arrowNav from '$lib/Pricing/arrow-slide-nav.svg?url';
 
   let intersecting: boolean;
   let slider: HTMLElement;

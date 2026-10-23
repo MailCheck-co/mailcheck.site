@@ -1,12 +1,12 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import k5Logo from '$lib/Testimonials/5k-logo.svg';
-  import baglletLogo from '$lib/Testimonials/bagllet.svg';
-  import sammyLogo from '$lib/Testimonials/sammy-logo.svg';
-  import zitkaniLogo from '$lib/Testimonials/zitkani.svg';
-  import echoLogo from '$lib/Testimonials/echo-logo.svg';
-  import arrowNav from '$lib/Testimonials/arrow-slide-nav.svg';
+  import k5Logo from '$lib/Testimonials/5k-logo.svg?url';
+  import baglletLogo from '$lib/Testimonials/bagllet.svg?url';
+  import sammyLogo from '$lib/Testimonials/sammy-logo.svg?url';
+  import zitkaniLogo from '$lib/Testimonials/zitkani.svg?url';
+  import echoLogo from '$lib/Testimonials/echo-logo.svg?url';
+  import arrowNav from '$lib/Testimonials/arrow-slide-nav.svg?url';
 
   let intersecting;
   let slider;

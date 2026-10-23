@@ -1,13 +1,13 @@
 <script lang="ts">
-  import esLogo from '$lib/Footer/assets/es-logo.svg';
-  import mailcheckLogo from '$lib/Footer/assets/mailcheck-logo.svg';
-  import iconTwitter from '$lib/Footer/assets/icon-twitter.svg';
-  import iconFacebook from '$lib/Footer/assets/icon-facebook.svg';
-  import iconLinkedin from '$lib/Footer/assets/icon-linkedin.svg';
-  import iconGitHub from '$lib/Footer/assets/icon-github.svg';
-  import iconYoutube from '$lib/Footer/assets/youtube-light.svg';
-  import iconMoneyBack from '$lib/Footer/assets/icon-money-back.svg';
-  import iconRSS from '$lib/Footer/assets/rss.svg';
+  import esLogo from '$lib/Footer/assets/es-logo.svg?url';
+  import mailcheckLogo from '$lib/Footer/assets/mailcheck-logo.svg?url';
+  import iconTwitter from '$lib/Footer/assets/icon-twitter.svg?url';
+  import iconFacebook from '$lib/Footer/assets/icon-facebook.svg?url';
+  import iconLinkedin from '$lib/Footer/assets/icon-linkedin.svg?url';
+  import iconGitHub from '$lib/Footer/assets/icon-github.svg?url';
+  import iconYoutube from '$lib/Footer/assets/youtube-light.svg?url';
+  import iconMoneyBack from '$lib/Footer/assets/icon-money-back.svg?url';
+  import iconRSS from '$lib/Footer/assets/rss.svg?url';
 
   export let footerBg = true;
 

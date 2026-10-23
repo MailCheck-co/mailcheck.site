@@ -1,6 +1,6 @@
 <script lang="ts">
   import ToTop from '$lib/ToTop/index.svelte';
-  import logo from '$lib/Header/mailcheck-logo.svg';
+  import logo from '$lib/Header/mailcheck-logo.svg?url';
 
   /*MOBILE MENU*/
   let open = false;

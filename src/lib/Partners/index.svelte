@@ -1,12 +1,12 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import acellLogo from '$lib/Partners/acell-mail.svg';
-  import k5Logo from '$lib/Partners/5k-logo.svg';
-  import baglletLogo from '$lib/Partners/bagllet.svg';
-  import sammyLogo from '$lib/Partners/sammy-logo.svg';
-  import zitkaniLogo from '$lib/Partners/zitkani.svg';
-  import echoLogo from '$lib/Partners/echo-logo.svg';
+  import acellLogo from '$lib/Partners/acell-mail.svg?url';
+  import k5Logo from '$lib/Partners/5k-logo.svg?url';
+  import baglletLogo from '$lib/Partners/bagllet.svg?url';
+  import sammyLogo from '$lib/Partners/sammy-logo.svg?url';
+  import zitkaniLogo from '$lib/Partners/zitkani.svg?url';
+  import echoLogo from '$lib/Partners/echo-logo.svg?url';
 
   let intersecting: boolean;
 </script>

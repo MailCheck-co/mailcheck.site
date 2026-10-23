@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
-  import arrowNav from '$lib/ToTop/arrow-slide-nav.svg';
+  import arrowNav from '$lib/ToTop/arrow-slide-nav.svg?url';
 
   let currentPosition: number;
 

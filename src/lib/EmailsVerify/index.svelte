@@ -2,7 +2,7 @@
   import Progress from '$lib/Progress/index.svelte';
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import arrowIcon from '$lib/EmailsVerify/icon-arrow-right.svg';
+  import arrowIcon from '$lib/EmailsVerify/icon-arrow-right.svg?url';
 
   export let isChecking = false;
   export let isChecked = false;
