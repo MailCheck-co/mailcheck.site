@@ -2,10 +2,22 @@
 import SiteLayout from '../../components/SiteLayout.astro';
 import Videos from '../../routes/videos/index.svelte';
 import { GET } from '../../routes/videos/index.json.ts';
+import { websiteSchema, videoObjectSchema } from '../../utils/json-ld';
 
 const response = await GET();
 const data = (await response.json()) as Array<{ id: string; title: string; desc: string; date: string }>;
+const videoSchemas = data.map((video) => videoObjectSchema({
+  id: video.id,
+  title: video.title,
+  description: video.desc,
+  date: video.date,
+  pageUrl: 'https://mailcheck.co/videos'
+}));
 ---
-<SiteLayout title="Email verification Video Tutorials" description="Mailcheck Email verification Video Tutorials. How to use Mailcheck for bulk and single email validation.">
+<SiteLayout
+  title="Email Verification Video Tutorials"
+  description="Mailcheck email verification video tutorials for bulk validation, single-address checks, and integrations."
+  schemas={[websiteSchema, ...videoSchemas]}
+>
   <Videos client:load videos={data} />
 </SiteLayout>

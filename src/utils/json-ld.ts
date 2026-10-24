@@ -1,5 +1,15 @@
 import type {
-  Thing, WithContext, Organization, WebSite, Blog, Article, BlogPosting, WebPage, FAQPage, BreadcrumbList
+  Thing,
+  WithContext,
+  Organization,
+  WebSite,
+  Blog,
+  Article,
+  BlogPosting,
+  WebPage,
+  FAQPage,
+  BreadcrumbList,
+  VideoObject
 } from 'schema-dts';
 import data from './site-data';
 
@@ -91,7 +101,10 @@ export const articleSchema: WithContext<Article> = {
 };
 
 export function webPageSchema({
-  url, name, description, image
+  url,
+  name,
+  description,
+  image
 }: {
   url: string;
   name: string;
@@ -122,8 +135,41 @@ export function breadcrumbListSchema(items: BreadcrumbItem[]): WithContext<Bread
   };
 }
 
+export function videoObjectSchema({
+  id,
+  title,
+  description,
+  date,
+  pageUrl
+}: {
+  id: string;
+  title: string;
+  description: string;
+  date?: string;
+  pageUrl: string;
+}): WithContext<VideoObject> {
+  const isoDate = toIsoDate(date);
+  const embedUrl = `https://www.youtube.com/embed/${encodeURIComponent(id)}`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    '@id': `${embedUrl}#video`,
+    name: title,
+    description,
+    thumbnailUrl: `https://i.ytimg.com/vi/${encodeURIComponent(id)}/maxresdefault.jpg`,
+    embedUrl,
+    url: pageUrl,
+    ...(isoDate ? { uploadDate: isoDate } : {}),
+    publisher
+  };
+}
+
 export function blogPostingSchema({
-  url, title, description, image, date
+  url,
+  title,
+  description,
+  image,
+  date
 }: {
   url: string;
   title: string;

@@ -105,6 +105,16 @@ describe('Public-site migration regressions', { skip: !base }, () => {
     assert.match(integration.html, /"@type":"BreadcrumbList"/);
   });
 
+  it('exposes VideoObject structured data for tutorial pages', async () => {
+    for (const path of ['/', '/videos']) {
+      const { response, html } = await fetchPage(path);
+      assert.equal(response.status, 200);
+      assert.match(html, /"@type":"VideoObject"/);
+      assert.match(html, /"embedUrl":"https:\/\/www\.youtube\.com\/embed\//);
+      assert.match(html, /"thumbnailUrl":"https:\/\/i\.ytimg\.com\/vi\//);
+    }
+  });
+
   it('keeps metadata titles brand-safe and fixes duplicate descriptions', async () => {
     const home = await fetchPage('/');
     const n8n = await fetchPage('/n8n-integration');
