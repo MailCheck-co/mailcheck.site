@@ -1,6 +1,6 @@
 // CMS schema for short-link targets (replaces the DNS TXT records used by
-// the Firebase internal redirect function). Shared by scripts/prepare-cms-seed.mjs (fresh
-// databases) and scripts/tracking-targets.mjs (existing database + import).
+// the Firebase internal redirect function). Shared by the tracking-target
+// importer and the runtime plugin.
 // Runtime counterpart: src/server/tracking-targets.ts — the patterns must
 // match (asserted in tests/tracking-targets.test.mjs).
 

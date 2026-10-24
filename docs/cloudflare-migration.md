@@ -58,7 +58,6 @@ with an empty cache. Policy lives in `src/middleware.ts`:
 npm run check -- --yes
 npx tsc --noEmit
 npm test            # backend, images, cms, rendering, media, readiness, edge
-npm run cms:check
 npm run build
 
 # Start/restart the Cloudflare-compatible preview after rebuilding:

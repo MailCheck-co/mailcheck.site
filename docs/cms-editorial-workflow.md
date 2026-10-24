@@ -8,9 +8,10 @@ The staging Worker uses D1/EmDash for the existing Markdown routes when
 - `posts` (Blog posts): 50 published blog posts, `/blog/{slug}`.
 - `pages` (Pages): 15 published Markdown pages, `/{slug}`.
 
-The remote publication counts were verified directly in
-D1 after activation. The Markdown bootstrap seed intentionally remains drafts
-and non-routable; activation is a separate guarded operation, not a seed edit.
+The remote publication counts were verified directly in D1 after the migration.
+The CMS database is the authoritative source for published posts and pages;
+the repository no longer contains a content bootstrap seed or an activation
+workflow.
 Owner setup was completed by the user on 2026-10-18. Read-only verification
 confirmed `needsSetup: false`, one admin user and one registered admin passkey;
 the owner was not changed by activation. A fresh sign-in and
@@ -29,9 +30,8 @@ The media catalogue now contains **originals only**: 218 source references map
 to 216 unique original assets (identical source bytes are deduplicated).
 215 accidentally registered migration renditions were removed from the catalogue;
 their R2 objects remain for old URLs and rollback compatibility. No content or
-original bytes were deleted. `seed/media.json` separates original `assets` from
-the old `compatibilityRenditions` inventory; `cms:media` prepares originals only
-and `cms:activate` never registers derived variants as editorial assets.
+original bytes were deleted. `src/data/cms-media-manifest.json` is a runtime
+mapping for those original legacy media URLs; it is not a CMS content seed.
 
 Content images use `/media/image/{storageKey}?w=880&f=avif` (or `webp`), reading
 the single original from R2 and transforming with the Cloudflare Images binding.
@@ -91,52 +91,23 @@ DNS migrates passkeys or disable authentication to work around it.
 The setup window is now owner-claimed. Do not rerun setup or reset D1. The
 earlier content import did not create an owner or assign a guessed email.
 
-## Reproducible preparation
+## Validation
+
+The repository contains runtime CMS projection, rendering, media and lifecycle
+checks. The lifecycle test uses disposable local bindings and an inline fixture;
+it does not require a repository seed or write to staging:
 
 ```sh
-npm run cms:prepare
-npm run cms:check
-npm run test:cms
-npm run cms:media
-npm run test:cms-rendering
-```
-
-`scripts/prepare-cms-seed.mjs` regenerates `seed/seed.json` deterministically
-from the repository, without network access or database writes. `cms:check`
-fails if the generated seed is stale. This is a one-way bootstrap snapshot,
-not a synchronization mechanism for edited CMS records.
-
-For a disposable local rehearsal only:
-
-```sh
-npx emdash seed seed/seed.json --database /tmp/opencode/mailcheck-cms-rehearsal.sqlite --skip-media
-```
-
-The EmDash CLI command above writes a local SQLite database; it does **not**
-import into remote D1. The initial staging import used the installed EmDash setup API
-with `includeContent: true`, `onConflict: skip`, and its built-in query budget.
-It created 65 drafts. A repeated local import created zero duplicates and
-skipped all 65 existing entries. After owner setup, use authenticated supported
-CMS tools for imports, not the unauthenticated setup endpoint.
-
-Activation rehearsals (local binding seed/import must already be present):
-
-```sh
-npm run cms:activate -- --database /tmp/opencode/mailcheck-cms-rehearsal.sqlite
-npm run cms:activate -- --database /tmp/opencode/mailcheck-cms-rehearsal.sqlite --apply
-# Or operate on the local Wrangler bindings used by Astro preview:
-npm run cms:activate -- --local-bindings --apply
+npm test
+npx astro check
+npx tsc --noEmit
+npm run build
 CMS_LIFECYCLE_URL=http://localhost:4321 npm run test:cms-lifecycle
 ```
 
-`cms:activate -- --remote` is a read-only plan pinned to the staging account,
-Worker, D1 ID and R2 bucket. `--apply` uploads/checks media, updates collection
-presentation/preview URLs and publishes only unchanged imported drafts. It
-refuses edited/pending revisions and uses publication revision preconditions.
-Successful activation records `mailcheck:cms_bootstrap_complete`; subsequent
-runs refuse to republish editorially unpublished entries. It never configures
-DNS, Worker custom domains, owner credentials or production integration secrets.
-Do not use this bootstrap as an ongoing publishing tool.
+Content changes are made through the authenticated EmDash admin and published
+there. Do not recreate a repository snapshot or use a migration command to
+overwrite edited CMS records.
 
 ## Editing existing content
 
@@ -180,12 +151,10 @@ Before removing derivative catalogue rows (2026-10-18):
 
 `00000003-0000074c-00005108-3846f36e4c16abfdbce91f17657659fd`
 
-Catalogue cleanup is `npm run cms:media-normalize -- --remote` (read-only plan),
-then `--apply`. It is pinned to staging, verifies known migration checksums and
-metadata, refuses edited/referenced derivatives, saves a recovery row snapshot
-outside the repository and deletes no R2 objects. It leaves unrelated uploads
-untouched and can safely be rerun. Do not use a general media-delete API for
-this operation: that could also remove the objects required by old links.
+The derivative catalogue cleanup was completed during the migration. Its R2
+objects remain available for old links, while the repository retains only the
+runtime original-media manifest. No repeatable cleanup command is kept in the
+application repository.
 
 Ordinary `wrangler d1 export` failed because EmDash has virtual/FTS tables.
 No usable SQL backup was claimed and no tables were removed to bypass this.
@@ -202,7 +171,7 @@ restore. No restore was performed.
   pending revision isolation, SEO noindex in sitemap, unpublish and republish.
   It only mutates disposable local bindings, never staging.
 - Public-site regression suite: 20 checks, including all 65 Markdown URLs.
-- CMS projection/sanitization/media tests: 5; existing CMS seed tests: 3.
+- CMS projection/sanitization/media tests cover the runtime CMS contract.
 - Sampled local/deployed CMS desktop/mobile article captures match the previous staging captures
   exactly (1280 × 3751 and 390 × 6001, zero differing pixels). This is sampled evidence, not a
   claim of sitewide pixel equality. Make/N8N screenshot restoration still needs
