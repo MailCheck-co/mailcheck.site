@@ -28,6 +28,7 @@ export default defineConfig({
     svelte(),
     react({ include: ['**/*.{jsx,tsx}'] }),
     emdash({
+      siteUrl: 'https://mailcheck.co',
       database: d1({ binding: 'DB' }),
       storage: r2({ binding: 'MEDIA' }),
       plugins: [
