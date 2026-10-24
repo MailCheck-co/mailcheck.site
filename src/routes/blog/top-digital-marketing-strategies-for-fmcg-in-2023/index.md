@@ -4,7 +4,7 @@ title: Top Digital Marketing Strategies for FMCG in 2023
 date: 07.04.2023
 readingTime: 3 min read
 snippet: The FMCG sector is set to undergo additional change as 2023 approaches, with digitalization continuing to be at the forefront of change.
-description: The FMCG sector is set to undergo additional change as 2023 approaches, with digitalization continuing to be at the forefront of change. FMCG companies need to modify their marketing strategies in order to stay ahead of the curve given the growth of e-commerce and the importance of having a strong online presence.
+description: Discover FMCG marketing strategies for 2023, including AI, influencers, social media, email validation, and mobile optimization.
 thumbnailImg: ./fmcg.jpg?format=jpg&width=880
 ---
 

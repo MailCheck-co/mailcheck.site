@@ -43,7 +43,7 @@
             </div>
           </div>
           <div class="image-box">
-            <img src={pixels} alt="" />
+            <img src={pixels} alt="A person using a laptop with email message illustrations" />
           </div>
         </div>
       </div>
@@ -71,8 +71,8 @@
             registration, affecting over <span class="colored-bold">18%</span> of new sign-ups.
           </li>
           <li>
-            Elevated email bounce rates, consistently exceeding <span class="colored-bold"
-              >12%</span> for critical communications such as welcome emails and promotional offers.
+            Elevated email bounce rates, consistently exceeding <span class="colored-bold">12%</span
+            > for critical communications such as welcome emails and promotional offers.
           </li>
           <li>
             Ineffective marketing campaigns due to poor deliverability, resulting in wasted budget
