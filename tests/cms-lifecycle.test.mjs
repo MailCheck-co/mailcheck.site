@@ -1,5 +1,4 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 import { getPlatformProxy } from 'wrangler';
 import { Kysely } from 'kysely';
@@ -53,14 +52,16 @@ test(
       }
     };
     try {
-      const seed = JSON.parse(
-        await readFile(new URL('../seed/seed.json', import.meta.url), 'utf8')
-      );
       const data = {
-        ...seed.content.posts[0].data,
         title: 'CMS lifecycle public title',
         markdown: 'Public article text.\n\n## Public heading',
+        description: 'CMS lifecycle test description',
         snippet: 'Public snippet',
+        legacy_date: '25.10.2026',
+        reading_time: '1 min read',
+        noindex: false,
+        canonical: '',
+        thumbnail_source: '',
         source_path: 'src/routes/blog/cms-lifecycle/index.md',
         legacy_metadata: { private: 'PRIVATE-METADATA-TEXT' }
       };

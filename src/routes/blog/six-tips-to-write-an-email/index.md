@@ -4,7 +4,7 @@ title: SIX TIPS TO WRITE AN EMAIL
 date: 18.06.2020
 readingTime: 7 min read
 snippet: It is no doubt that electronic mail as a marketing tool has proven its undeniable effectiveness. No matter what kind of business you run, if you don’t use email to stay in touch with your customers, you are probably losing a good chunk of income that you could be making.
-description: Six tips to write an email that prompts your subscribers to action. What does it take to create a compelling email that helps you grow the number of your customers?
+description: Learn six practical tips for writing emails that engage subscribers, prompt action, and grow your customer base.
 thumbnailImg: ./simple-action.jpg?format=jpg&width=880
 ---
 

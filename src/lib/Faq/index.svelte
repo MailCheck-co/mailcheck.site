@@ -21,8 +21,10 @@
     <div class="accordion">
       <div class="accordion-column">
         <div class="tab">
-          <input class="input-radio" type="checkbox" name="acc-tabs" />
-          <span class="tab-label">Where do you get the data for verification?</span>
+          <input id="faq-data-source" class="input-radio" type="checkbox" name="acc-tabs" />
+          <label class="tab-label" for="faq-data-source">
+            Where do you get the data for verification?
+          </label>
           <div class="tab-content">
             <p class="tab-text">
               We take the data from public sources, system search, social networks, and open
@@ -32,8 +34,8 @@
         </div>
 
         <div class="tab">
-          <input class="input-radio" type="checkbox" name="acc-tabs" />
-          <span class="tab-label">How to interpret a trust rate?</span>
+          <input id="faq-trust-rate" class="input-radio" type="checkbox" name="acc-tabs" />
+          <label class="tab-label" for="faq-trust-rate">How to interpret a trust rate?</label>
           <div class="tab-content">
             <p class="tab-text">
               * Emails with a trust rate of 0-49% are Risky and most likely INVALID, we don't
@@ -44,8 +46,10 @@
         </div>
 
         <div class="tab">
-          <input class="input-radio" type="checkbox" name="acc-tabs" />
-          <span class="tab-label">What is the delimiter and how to use it?</span>
+          <input id="faq-delimiter" class="input-radio" type="checkbox" name="acc-tabs" />
+          <label class="tab-label" for="faq-delimiter">
+            What is the delimiter and how to use it?
+          </label>
           <div class="tab-content">
             <p class="tab-text">
               A delimiter is the comma character, which acts as a field delimiter, we ask to set it
@@ -57,8 +61,8 @@
 
       <div class="accordion-column">
         <div class="tab">
-          <input class="input-radio" type="checkbox" name="acc-tabs" />
-          <span class="tab-label">Is my data protected?</span>
+          <input id="faq-data-protection" class="input-radio" type="checkbox" name="acc-tabs" />
+          <label class="tab-label" for="faq-data-protection">Is my data protected?</label>
           <div class="tab-content">
             <p class="tab-text">
               All information about our users is protected by Google systems, we do really care
@@ -68,8 +72,10 @@
         </div>
 
         <div class="tab">
-          <input class="input-radio" type="checkbox" name="acc-tabs" />
-          <span class="tab-label">How many free email verifications do you offer?</span>
+          <input id="faq-free-verifications" class="input-radio" type="checkbox" name="acc-tabs" />
+          <label class="tab-label" for="faq-free-verifications">
+            How many free email verifications do you offer?
+          </label>
           <div class="tab-content">
             <p class="tab-text">
               We allow 100 free email validations if the billing information was verified, and 10
@@ -81,8 +87,10 @@
         </div>
 
         <div class="tab">
-          <input class="input-radio" type="checkbox" name="acc-tabs" />
-          <span class="tab-label">I was charged more than my plan costs</span>
+          <input id="faq-charged-more" class="input-radio" type="checkbox" name="acc-tabs" />
+          <label class="tab-label" for="faq-charged-more">
+            I was charged more than my plan costs
+          </label>
           <div class="tab-content">
             <p class="tab-text">
               Mailcheck works on a subscription basis and if you have any of the paid plans (PRO,
@@ -94,10 +102,10 @@
         </div>
 
         <div class="tab">
-          <input class="input-radio" type="checkbox" name="acc-tabs" />
-          <span class="tab-label"
-            >Why Mailcheck.co is better than other email validation tools?</span
-          >
+          <input id="faq-why-mailcheck" class="input-radio" type="checkbox" name="acc-tabs" />
+          <label class="tab-label" for="faq-why-mailcheck">
+            Why Mailcheck.co is better than other email validation tools?
+          </label>
           <div class="tab-content">
             <p class="tab-text">
               When it comes to email verification services, there are many popular options. However,
@@ -211,6 +219,11 @@
       height: var(--size-40);
       cursor: pointer;
       opacity: 0;
+
+      &:focus-visible ~ .tab-label {
+        outline: 2px solid var(--primary-accent);
+        outline-offset: 4px;
+      }
 
       &:checked ~ .tab-content {
         height: auto;

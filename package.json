@@ -3,13 +3,7 @@
   "version": "3.0.0",
   "description": "An application to clean your subscription list from bounces, and enrich data about customers.",
   "scripts": {
-    "cms:prepare": "node scripts/prepare-cms-seed.mjs",
-    "cms:check": "node scripts/prepare-cms-seed.mjs --check && emdash seed --validate",
-    "cms:media": "node scripts/prepare-cms-media.mjs",
-    "cms:activate": "node scripts/activate-cms.mjs",
-    "cms:remove-archival": "node scripts/remove-cms-archival-fields.mjs",
     "cms:tracking": "node scripts/tracking-targets.mjs",
-    "cms:media-normalize": "node scripts/normalize-cms-media.mjs",
     "readiness:secrets": "node scripts/check-worker-readiness.mjs",
     "dev": "astro dev",
     "build": "astro build",
@@ -20,7 +14,6 @@
     "test:site": "node --test tests/site.test.mjs",
     "test:site-http": "node --test tests/site-http.test.mjs",
     "test:images": "node --test tests/legacy-images.test.mjs",
-    "test:cms": "node --test tests/cms-seed.test.mjs",
     "test:cms-rendering": "node --test tests/cms-rendering.test.mjs",
     "test:cms-lifecycle": "node --test tests/cms-lifecycle.test.mjs",
     "test:cms-media": "node --test tests/cms-media.test.mjs",
@@ -31,7 +24,7 @@
     "lint:style": "stylelint \"src/**/*.+(scss|css|svelte)\"",
     "lint:style:fix": "stylelint \"src/**/*.+(scss|css|svelte)\" --fix",
     "format": "prettier --write --plugin-search-dir=. .",
-    "test": "node --test tests/backend.test.mjs tests/legacy-images.test.mjs tests/cms-seed.test.mjs tests/cms-rendering.test.mjs tests/media-images.test.mjs tests/worker-readiness.test.mjs tests/edge.test.mjs tests/tracking-targets.test.mjs",
+    "test": "node --test tests/backend.test.mjs tests/legacy-images.test.mjs tests/cms-rendering.test.mjs tests/media-images.test.mjs tests/worker-readiness.test.mjs tests/edge.test.mjs tests/tracking-targets.test.mjs",
     "deploy:staging": "astro build && wrangler deploy",
     "deploy:production": "node scripts/confirm-production-deploy.mjs && node scripts/check-worker-readiness.mjs && CLOUDFLARE_ENV=production astro build && wrangler deploy",
     "spell": "npx cspell lint \"**/*.{ts,svelte,scss,md}\" -c configs/.cspell.json --no-progress",
@@ -119,8 +112,5 @@
   "url": "https://mailcheck.co/",
   "engines": {
     "node": ">=22.22.0"
-  },
-  "emdash": {
-    "seed": "seed/seed.json"
   }
 }

@@ -1,6 +1,6 @@
 import { defineMiddleware } from 'astro:middleware';
 import { usesCms } from './server/cms-content';
-import manifest from '../seed/media.json';
+import manifest from './data/cms-media-manifest.json';
 
 const originals = new Set(
   Object.entries(manifest.assets)

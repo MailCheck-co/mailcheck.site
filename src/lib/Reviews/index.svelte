@@ -27,7 +27,13 @@
     <div class="section-wrapper sm-left">
       <div class="reviews-list">
         <div class="reviews-item">
-          <img width="170" height="40" srcset={iconProductHunt} alt="" class="reviews-item-logo" />
+          <img
+            width="170"
+            height="40"
+            srcset={iconProductHunt}
+            alt="Product Hunt"
+            class="reviews-item-logo"
+          />
           <div class="reviews-item-rating">
             <img src={iconStar} width="25" height="25" alt="rating 1 star" />
             <img src={iconStar} width="25" height="25" alt="rating 2 stars" />
@@ -44,10 +50,10 @@
           >
         </div>
         <div class="reviews-item">
-          <img width="120" height="40" srcset={iconBeta} alt="" class="reviews-item-logo" />
+          <img width="120" height="40" srcset={iconBeta} alt="BetaList" class="reviews-item-logo" />
           <div class="reviews-item-likes">
             <span class="rating-counter">11</span>
-            <img width="25" height="25" src={iconLike} alt="" class="reviews-like-icon" />
+            <img width="25" height="25" src={iconLike} alt="likes" class="reviews-like-icon" />
           </div>
           <a
             href="/l/betalist"
@@ -58,7 +64,13 @@
           >
         </div>
         <div class="reviews-item">
-          <img width="145" height="32" srcset={iconCapterra} alt="" class="reviews-item-logo" />
+          <img
+            width="145"
+            height="32"
+            srcset={iconCapterra}
+            alt="Capterra"
+            class="reviews-item-logo"
+          />
           <div class="reviews-item-rating">
             <img src={iconStar} width="25" height="25" alt="rating 1 star" />
             <img src={iconStar} width="25" height="25" alt="rating 2 stars" />

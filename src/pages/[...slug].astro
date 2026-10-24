@@ -11,7 +11,7 @@ import { websiteSchema, blogSchema, webPageSchema, blogPostingSchema, faqPageSch
 import NotFound from '../routes/404.svelte';
 import { getCmsDocument, usesCms } from '../server/cms-content';
 import { sanitizeMarkdown } from '../server/markdown-security';
-import mediaManifest from '../../seed/media.json';
+import mediaManifest from '../data/cms-media-manifest.json';
 import { imageUrl } from '../server/media-images';
 import data from '../utils/site-data';
 import { getPublishedPosts, getRelatedPosts, paginatePosts } from '../routes/blog/_blog';
@@ -148,7 +148,7 @@ const breadcrumbs = isPost
         ]
       : [];
 const description = !entry ? 'Page not found: 404' : metadata.description;
-const archiveTitle = `Blog about effective email checking & communication — page ${blogPageNumber}`;
+const archiveTitle = `Email Marketing Blog — page ${blogPageNumber}`;
 const archiveDescription = 'Older Mailcheck articles about email checking, deliverability, marketing, and effective communication.';
 const pageTitle = isBlogArchive ? archiveTitle : metadata.title || 'Page not found';
 const pageDescription = isBlogArchive ? archiveDescription : description;

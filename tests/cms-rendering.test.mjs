@@ -2,7 +2,6 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
-import sharp from 'sharp';
 import { cmsDocument, publicPost, sortPosts, escapeXml } from '../src/server/cms-document.ts';
 import { sanitizeMarkdown } from '../src/server/markdown-security.ts';
 
@@ -91,29 +90,24 @@ test('Markdown sanitization preserves FAQ/tables/anchors and blocks stored XSS',
   assert.doesNotMatch(html, /onerror|javascript:|<script|<iframe|<style|display:none/);
 });
 
-test('media manifest maps original and 880px content-addressed bytes deterministically', async () => {
+test('media manifest maps original content-addressed bytes deterministically', async () => {
   const manifest = JSON.parse(
-    await readFile(new URL('../seed/media.json', import.meta.url), 'utf8')
+    await readFile(new URL('../src/data/cms-media-manifest.json', import.meta.url), 'utf8')
   );
   assert.equal(Object.keys(manifest.assets).length, 218);
   assert.ok(Object.keys(manifest.assets).every((key) => key.endsWith('|original')));
   assert.equal(new Set(Object.values(manifest.assets).map((asset) => asset.storageKey)).size, 216);
   const asset =
-    manifest.compatibilityRenditions[
-      'src/routes/blog/10-abandoned-cart-hacks-that-rise-sales/abandoned-cart-hacks.jpg|880'
+    manifest.assets[
+      'src/routes/blog/10-abandoned-cart-hacks-that-rise-sales/abandoned-cart-hacks.jpg|original'
     ];
   assert.ok(asset);
-  assert.equal(asset.width, 880);
-  assert.equal(asset.height, 586);
-  const bytes = await sharp(
+  const bytes = await readFile(
     new URL(
       '../src/routes/blog/10-abandoned-cart-hacks-that-rise-sales/abandoned-cart-hacks.jpg',
       import.meta.url
-    ).pathname
-  )
-    .resize({ width: 880 })
-    .webp()
-    .toBuffer();
+    )
+  );
   assert.equal(createHash('sha256').update(bytes).digest('hex'), asset.sha256);
   assert.equal(asset.url, `/_emdash/api/media/file/${asset.storageKey}`);
 });

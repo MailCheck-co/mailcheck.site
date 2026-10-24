@@ -10,13 +10,17 @@
   export let posts: IPost[] = [];
   export let page = 1;
   export let totalPages = 1;
-  const title = 'Blog about effective email checking & communication';
+  const title = 'Email Marketing Blog';
   const description =
     'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
-  const pageTitle = page === 1 ? title : `${title} — page ${page}`;
+  const pageTitle = page === 1 ? title : `Email Marketing Blog — page ${page}`;
 </script>
 
-<Seo {description} {title} schemas={[websiteSchema, { ...blogSchema, name: title, description }]} />
+<Seo
+  {description}
+  title={pageTitle}
+  schemas={[websiteSchema, { ...blogSchema, name: pageTitle, description }]}
+/>
 
 <main class="blog-page" id="blog">
   <div class="container">
