@@ -12,17 +12,18 @@ export const GET = async () => {
     <link>https://mailcheck.co/</link>
     <description>An application to clean your subscription list from bounces, and enrich data with customers. Verify your real customers in one way</description>
     ${posts
-      .map(
-        (post) => `<item>
+      .map((post) => {
+        const isoDate = toIsoDate(String(post.date));
+        const parsedDate = isoDate ? new Date(`${isoDate}T00:00:00Z`) : new Date(0);
+        const pubDate = Number.isNaN(parsedDate.getTime()) ? new Date(0) : parsedDate;
+        return `<item>
            <guid>https://mailcheck.co/blog/${post.slug}</guid>
            <title>${escapeXml(post.title)}</title>
            <link>https://mailcheck.co/blog/${post.slug}</link>
-           <pubDate>${escapeXml(
-             new Date(`${toIsoDate(String(post.date)) ?? '1970-01-01'}T00:00:00Z`).toUTCString()
-           )}</pubDate>
+           <pubDate>${escapeXml(pubDate.toUTCString())}</pubDate>
            <description>${escapeXml(post.description)}</description>
-          </item>`
-      )
+          </item>`;
+      })
       .join('')}
   </channel>
 </rss>
