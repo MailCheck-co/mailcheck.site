@@ -1,6 +1,6 @@
 ---
 import SiteLayout from '../components/SiteLayout.astro';
-import Home from '../routes/index.svelte';
+import HomeSections from '../components/HomeSections.astro';
 import { GET } from '../routes/videos/index.json.ts';
 import { websiteSchema, organizationSchema, videoObjectSchema } from '../utils/json-ld';
 
@@ -20,5 +20,5 @@ const videoSchemas = selectedVideos.map((video) => videoObjectSchema({
   description="Verify email addresses in bulk or through an API, reduce bounces, and keep your marketing lists clean with Mailcheck."
   schemas={[websiteSchema, organizationSchema, ...videoSchemas]}
 >
-  <Home client:load videos={selectedVideos} />
+  <HomeSections videos={selectedVideos} />
 </SiteLayout>

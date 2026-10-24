@@ -1,14 +1,11 @@
 <script lang="ts">
   import Progress from '$lib/Progress/index.svelte';
-  import { inview } from 'svelte-inview';
-  import { inviewOptions } from '$utils/site-data';
   import arrowIcon from '$lib/EmailsVerify/icon-arrow-right.svg?url';
 
   export let isChecking = false;
   export let isChecked = false;
   export let validityClass = '';
 
-  let intersecting: boolean;
   let emailResult = '';
   let existsResult = '';
   let smtpResult = '';
@@ -202,15 +199,7 @@
   };
 </script>
 
-<div
-  class="container"
-  class:intersecting
-  use:inview={inviewOptions}
-  on:enter={(event) => {
-    const { inView } = event.detail;
-    intersecting = inView;
-  }}
->
+<div class="container">
   <div class="wrapper-main sm-left">
     <h1 class="title">Verification email addresses online in one click</h1>
     <p class="main-text">
@@ -343,7 +332,7 @@
   }
 
   .container {
-    @include intersection;
+    opacity: 1;
   }
 
   .wrapper-main {

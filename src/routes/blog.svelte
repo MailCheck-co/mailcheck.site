@@ -2,7 +2,6 @@
 </script>
 
 <script lang="ts">
-  import ContactUs from '$lib/ContactUs/index.svelte';
   import Breadcrumbs from '../components/Breadcrumbs.svelte';
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, blogSchema } from '$utils/json-ld';
@@ -79,8 +78,6 @@
     </div>
   </div>
 </main>
-
-<ContactUs />
 
 <style lang="scss">
   .blog-page {

@@ -40,13 +40,16 @@ export default defineConfig({
           id: 'mailcheck-tracking-targets',
           version: '1.0.0',
           format: 'native',
-          entrypoint: fileURLToPath(new URL('./src/cms/tracking-targets-plugin.ts', import.meta.url))
+          entrypoint: fileURLToPath(
+            new URL('./src/cms/tracking-targets-plugin.ts', import.meta.url)
+          )
         }
       ]
     })
   ],
   vite: {
     plugins: [legacyImages()],
+    build: { assetsInlineLimit: 0 },
     resolve: {
       alias: {
         $lib: fileURLToPath(new URL('./src/lib', import.meta.url)),

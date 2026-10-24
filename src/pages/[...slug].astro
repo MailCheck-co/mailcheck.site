@@ -205,7 +205,7 @@ const schemas = isBlogArchive
   </Fragment>}
   {!entry && !isBlogArchive && <meta slot="head" http-equiv="refresh" content="5;https://mailcheck.co/" />}
   {isBlogArchive ? (
-    <Blog client:load posts={blogPageData!.posts} page={blogPageNumber} totalPages={blogPageData!.totalPages} />
+    <Blog posts={blogPageData!.posts} page={blogPageNumber} totalPages={blogPageData!.totalPages} />
   ) : entry ? (
     isFaq ? (
       <FaqLayout client:load title={metadata.title} canonical={metadata.canonical} noindex={metadata.noindex === 'true'}>
@@ -229,7 +229,7 @@ const schemas = isBlogArchive
       </ArticleLayout>
     )
   ) : <NotFound />}
-  {entry && (slug.startsWith('blog/') || slug === 'affiliates') && <ContactUs client:load />}
+  {(isBlogArchive || (entry && (slug.startsWith('blog/') || slug === 'affiliates'))) && <ContactUs client:visible />}
 </SiteLayout>
 <style is:global>
   .services-table { width: 100%; border-collapse: collapse; color: #ffffff; }

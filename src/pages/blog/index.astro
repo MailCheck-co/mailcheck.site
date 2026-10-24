@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../../components/SiteLayout.astro';
 import Blog from '../../routes/blog.svelte';
+import ContactUs from '../../lib/ContactUs/index.svelte';
 import { getPublishedPosts, paginatePosts } from '../../routes/blog/_blog';
 import type { IPost } from '$utils/types';
 import { websiteSchema, blogSchema, breadcrumbListSchema } from '../../utils/json-ld';
@@ -23,5 +24,6 @@ const breadcrumbs = breadcrumbListSchema([
   <Fragment slot="head">
     {totalPages > 1 && <link rel="next" href="https://mailcheck.co/blog/2" />}
   </Fragment>
-  <Blog client:load {posts} page={1} {totalPages} />
+  <Blog {posts} page={1} {totalPages} />
+  <ContactUs client:visible />
 </SiteLayout>
