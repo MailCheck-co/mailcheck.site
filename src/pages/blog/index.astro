@@ -7,7 +7,7 @@ import type { IPost } from '$utils/types';
 import { websiteSchema, blogSchema, breadcrumbListSchema } from '../../utils/json-ld';
 
 const { posts, totalPages } = paginatePosts((await getPublishedPosts()) as IPost[], 1);
-const title = 'Blog about effective email checking & communication';
+const title = 'Email Marketing Blog';
 const description = 'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
 const canonicalPath = '/blog';
 const breadcrumbs = breadcrumbListSchema([
