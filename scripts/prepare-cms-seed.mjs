@@ -18,7 +18,8 @@ export function parseLegacyDocument(raw, sourcePath) {
     const key = line.slice(0, index).trim();
     if (Object.hasOwn(metadata, key)) throw new Error(`Duplicate ${key}: ${sourcePath}`);
     const value = line.slice(index + 1).trim();
-    metadata[key] = value === 'true' ? true : value === 'false' ? false : value.replace(/^(['"])(.*)\1$/, '$2');
+    metadata[key] =
+      value === 'true' ? true : value === 'false' ? false : value.replace(/^(['"])(.*)\1$/, '$2');
   }
   if (!metadata.title) throw new Error(`Missing title: ${sourcePath}`);
   return { metadata, body: match[2] };
@@ -26,7 +27,12 @@ export function parseLegacyDocument(raw, sourcePath) {
 
 const fields = [
   { slug: 'title', label: 'Title', type: 'string', required: true, searchable: true },
-  { slug: 'markdown', label: 'Legacy Markdown (includes HTML/Svelte syntax)', type: 'text', required: true },
+  {
+    slug: 'markdown',
+    label: 'Legacy Markdown (includes HTML/Svelte syntax)',
+    type: 'text',
+    required: true
+  },
   { slug: 'description', label: 'SEO description', type: 'text' },
   { slug: 'snippet', label: 'Snippet', type: 'text' },
   { slug: 'legacy_date', label: 'Original date (DD.MM.YYYY)', type: 'string' },
@@ -38,15 +44,22 @@ const fields = [
   { slug: 'thumbnail_source', label: 'Original relative thumbnail reference', type: 'string' },
   { slug: 'source_path', label: 'Repository source', type: 'string', required: true },
   { slug: 'source_sha256', label: 'Original document SHA-256', type: 'string', required: true },
-  { slug: 'source_document', label: 'Original document including frontmatter (backup)', type: 'text', required: true },
+  {
+    slug: 'source_document',
+    label: 'Original document including frontmatter (backup)',
+    type: 'text',
+    required: true
+  },
   { slug: 'legacy_metadata', label: 'Original typed frontmatter', type: 'json' },
   { slug: 'asset_sources', label: 'Repository image references (not yet R2 media)', type: 'json' }
 ];
 
 export async function createCmsSeed(projectRoot = root) {
   const routes = resolve(projectRoot, 'src/routes');
-  const paths = (await readdir(routes, { recursive: true })).filter((path) => path.endsWith('/index.md')).sort();
-  const content = { legacy_posts: [], legacy_pages: [], tracking_targets: [] };
+  const paths = (await readdir(routes, { recursive: true }))
+    .filter((path) => path.endsWith('/index.md'))
+    .sort();
+  const content = { posts: [], pages: [], tracking_targets: [] };
   for (const path of paths) {
     const raw = await readFile(resolve(routes, path), 'utf8');
     const sourcePath = `src/routes/${path}`;
@@ -54,14 +67,19 @@ export async function createCmsSeed(projectRoot = root) {
     const isPost = path.startsWith('blog/');
     const route = `/${path.replace(/\/index\.md$/, '')}`;
     const slug = isPost ? route.slice('/blog/'.length) : route.slice(1);
-    const collection = isPost ? 'legacy_posts' : 'legacy_pages';
-    const references = [...body.matchAll(/!\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g)].map((match) => match[1]);
+    const collection = isPost ? 'posts' : 'pages';
+    const references = [...body.matchAll(/!\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g)].map(
+      (match) => match[1]
+    );
     if (metadata.thumbnailImg) references.push(metadata.thumbnailImg);
     const assetSources = [];
     for (const reference of [...new Set(references)].sort()) {
       if (/^(?:https?:|data:|\/)/.test(reference)) continue;
-      const assetPath = posix.normalize(posix.join(posix.dirname(sourcePath), reference.split('?')[0]));
-      if (!assetPath.startsWith('src/routes/')) throw new Error(`Asset escapes routes: ${sourcePath}`);
+      const assetPath = posix.normalize(
+        posix.join(posix.dirname(sourcePath), reference.split('?')[0])
+      );
+      if (!assetPath.startsWith('src/routes/'))
+        throw new Error(`Asset escapes routes: ${sourcePath}`);
       try {
         const bytes = await readFile(resolve(projectRoot, assetPath));
         assetSources.push({ reference, source_path: assetPath, sha256: sha256(bytes) });
@@ -99,21 +117,24 @@ export async function createCmsSeed(projectRoot = root) {
     version: '1',
     defaultLocale: 'en',
     meta: {
-      name: 'Mailcheck legacy content',
-      description: 'Lossless draft archive: 50 blog posts and 15 Markdown pages. Public rendering and R2 media migration are not enabled.'
+      name: 'Mailcheck content',
+      description:
+        'Lossless draft archive: 50 blog posts and 15 Markdown pages. Public rendering and R2 media migration are not enabled.'
     },
     settings: { title: 'Mailcheck', tagline: 'Email verification and list cleaning' },
     collections: [
-      { slug: 'legacy_posts', label: 'Legacy blog posts', labelSingular: 'Legacy blog post', sortOrder: 0 },
-      { slug: 'legacy_pages', label: 'Legacy pages', labelSingular: 'Legacy page', sortOrder: 1 }
-    ].map((collection) => ({
-      ...collection,
-      description: 'Migration drafts only. Publishing does not update public routes yet.',
-      routable: false,
-      supports: ['drafts', 'revisions'],
-      titleField: 'title',
-      fields
-    })).concat(trackingTargetsCollection),
+      { slug: 'posts', label: 'Blog posts', labelSingular: 'Blog post', sortOrder: 0 },
+      { slug: 'pages', label: 'Pages', labelSingular: 'Page', sortOrder: 1 }
+    ]
+      .map((collection) => ({
+        ...collection,
+        description: 'Public content. Edit Markdown, preview, then publish.',
+        routable: false,
+        supports: ['drafts', 'revisions'],
+        titleField: 'title',
+        fields
+      }))
+      .concat(trackingTargetsCollection),
     content
   };
   const validation = validateSeed(seed);
@@ -126,12 +147,17 @@ export async function prepareCmsSeed({ check = false } = {}) {
   const target = resolve(root, 'seed/seed.json');
   const json = `${JSON.stringify(seed, null, 2)}\n`;
   if (check) {
-    if (await readFile(target, 'utf8') !== json) throw new Error('CMS seed is stale. Run npm run cms:prepare.');
+    if ((await readFile(target, 'utf8')) !== json)
+      throw new Error('CMS seed is stale. Run npm run cms:prepare.');
   } else {
     await mkdir(dirname(target), { recursive: true });
     await writeFile(target, json);
   }
-  console.log(`CMS seed ${check ? 'verified' : 'prepared'}: ${seed.content.legacy_posts.length} posts, ${seed.content.legacy_pages.length} pages, all drafts.`);
+  console.log(
+    `CMS seed ${check ? 'verified' : 'prepared'}: ${seed.content.posts.length} posts, ${
+      seed.content.pages.length
+    } pages, all drafts.`
+  );
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

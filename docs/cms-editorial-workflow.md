@@ -5,8 +5,8 @@
 The staging Worker uses D1/EmDash for the existing Markdown routes when
 `MAILCHECK_CONTENT_SOURCE=cms` (configured in `wrangler.jsonc`):
 
-- `legacy_posts` (Blog posts): 50 published blog posts, `/blog/{slug}`.
-- `legacy_pages` (Pages): 15 published Markdown pages, `/{slug}`.
+- `posts` (Blog posts): 50 published blog posts, `/blog/{slug}`.
+- `pages` (Pages): 15 published Markdown pages, `/{slug}`.
 
 The remote publication counts were verified directly in
 D1 after activation. The lossless bootstrap seed intentionally remains drafts
@@ -50,7 +50,7 @@ workers.dev and on zone routes alike):
   After **Replace original**, visitors see the new image within about a minute;
   browsers always revalidate (`max-age=0, must-revalidate`).
 - Public CMS pages, `/blog`, `/blog.json`, RSS and sitemap are cached at the edge
-  for up to a day and tagged `legacy_posts`/`legacy_pages`. EmDash purges those
+  for up to a day and tagged `posts`/`pages`. EmDash purges those
   tags on publish, unpublish, edit, schedule and scheduled publication, so the
   next request renders fresh content. Browsers revalidate on every navigation.
 - Preview links (`?_preview=`), signed-in editors and any `private`/`no-store`

@@ -4,22 +4,28 @@ import { getLiveCollection } from 'astro:content';
 import { getDb } from 'emdash/runtime';
 import { cmsDocument, publicPost, sortPosts } from './cms-document';
 
-export const usesCms = () => (env as unknown as Record<string, unknown>).MAILCHECK_CONTENT_SOURCE === 'cms';
+export const usesCms = () =>
+  (env as unknown as Record<string, unknown>).MAILCHECK_CONTENT_SOURCE === 'cms';
 
 export async function getCmsDocument(route: string) {
   const isPost = route.startsWith('blog/');
   const slug = isPost ? route.slice(5) : route;
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) return { document: null, isPreview: false };
-  const result = await getEmDashEntry(isPost ? 'legacy_posts' : 'legacy_pages', slug);
+  const result = await getEmDashEntry(isPost ? 'posts' : 'pages', slug);
   if (result.error) throw new Error('CMS content is temporarily unavailable');
-  return { document: result.entry ? cmsDocument(result.entry.data, isPost) : null, isPreview: result.isPreview };
+  return {
+    document: result.entry ? cmsDocument(result.entry.data, isPost) : null,
+    isPreview: result.isPreview
+  };
 }
 
-async function getPublishedDocuments(type: 'legacy_posts' | 'legacy_pages') {
+async function getPublishedDocuments(type: 'posts' | 'pages') {
   // Feed/listing queries are always public snapshots, even for a logged-in
   // editor. Draft overlays and preview tokens only affect single-entry pages.
   const { entries, error } = await getLiveCollection('_emdash', {
-    type, status: 'published', locale: 'en'
+    type,
+    status: 'published',
+    locale: 'en'
   });
   if (error || !entries) throw new Error('CMS posts are temporarily unavailable');
   // EmDash maps a missing collection table to an empty list. This site never
@@ -32,26 +38,40 @@ async function getPublishedDocuments(type: 'legacy_posts' | 'legacy_pages') {
   const seo = new Map<string, Record<string, unknown>>();
   for (let offset = 0; offset < entries.length; offset += 80) {
     const ids = entries.slice(offset, offset + 80).map((entry) => String(entry.data.id));
-    const rows = await db.selectFrom('_emdash_seo').selectAll()
-      .where('collection', '=', type).where('content_id', 'in', ids).execute();
-    for (const row of rows) seo.set(row.content_id, { title: row.seo_title,
-      description: row.seo_description, image: row.seo_image, canonical: row.seo_canonical, noIndex: row.seo_no_index === 1 });
+    const rows = await db
+      .selectFrom('_emdash_seo')
+      .selectAll()
+      .where('collection', '=', type)
+      .where('content_id', 'in', ids)
+      .execute();
+    for (const row of rows)
+      seo.set(row.content_id, {
+        title: row.seo_title,
+        description: row.seo_description,
+        image: row.seo_image,
+        canonical: row.seo_canonical,
+        noIndex: row.seo_no_index === 1
+      });
   }
-  return entries.map((entry) => cmsDocument({ ...entry.data, seo: seo.get(String(entry.data.id)) }, type === 'legacy_posts'))
+  return entries
+    .map((entry) =>
+      cmsDocument({ ...entry.data, seo: seo.get(String(entry.data.id)) }, type === 'posts')
+    )
     .filter((document) => document !== null);
 }
 
 export async function getCmsPosts() {
-  return sortPosts((await getPublishedDocuments('legacy_posts')).map(publicPost));
+  return sortPosts((await getPublishedDocuments('posts')).map(publicPost));
 }
 
 export async function getCmsPostPaths() {
-  return (await getPublishedDocuments('legacy_posts'))
-    .filter((document) => document.metadata.noindex !== 'true').map((document) => `/blog/${document.slug}`);
+  return (await getPublishedDocuments('posts'))
+    .filter((document) => document.metadata.noindex !== 'true')
+    .map((document) => `/blog/${document.slug}`);
 }
 
 export async function getCmsPagePaths() {
-  return (await getPublishedDocuments('legacy_pages'))
+  return (await getPublishedDocuments('pages'))
     .filter((document) => document.metadata.noindex !== 'true')
     .map((document) => `/${document.slug}`);
 }

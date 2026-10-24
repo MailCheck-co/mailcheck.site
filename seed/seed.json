@@ -2,7 +2,7 @@
   "version": "1",
   "defaultLocale": "en",
   "meta": {
-    "name": "Mailcheck legacy content",
+    "name": "Mailcheck content",
     "description": "Lossless draft archive: 50 blog posts and 15 Markdown pages. Public rendering and R2 media migration are not enabled."
   },
   "settings": {
@@ -11,11 +11,11 @@
   },
   "collections": [
     {
-      "slug": "legacy_posts",
-      "label": "Legacy blog posts",
-      "labelSingular": "Legacy blog post",
+      "slug": "posts",
+      "label": "Blog posts",
+      "labelSingular": "Blog post",
       "sortOrder": 0,
-      "description": "Migration drafts only. Publishing does not update public routes yet.",
+      "description": "Public content. Edit Markdown, preview, then publish.",
       "routable": false,
       "supports": [
         "drafts",
@@ -114,11 +114,11 @@
       ]
     },
     {
-      "slug": "legacy_pages",
-      "label": "Legacy pages",
-      "labelSingular": "Legacy page",
+      "slug": "pages",
+      "label": "Pages",
+      "labelSingular": "Page",
       "sortOrder": 1,
-      "description": "Migration drafts only. Publishing does not update public routes yet.",
+      "description": "Public content. Edit Markdown, preview, then publish.",
       "routable": false,
       "supports": [
         "drafts",
@@ -276,9 +276,9 @@
     }
   ],
   "content": {
-    "legacy_posts": [
+    "posts": [
       {
-        "id": "legacy_posts:10-abandoned-cart-hacks-that-rise-sales",
+        "id": "posts:10-abandoned-cart-hacks-that-rise-sales",
         "slug": "10-abandoned-cart-hacks-that-rise-sales",
         "status": "draft",
         "data": {
@@ -320,7 +320,7 @@
         }
       },
       {
-        "id": "legacy_posts:10-tips-for-the-email-marketing-approach",
+        "id": "posts:10-tips-for-the-email-marketing-approach",
         "slug": "10-tips-for-the-email-marketing-approach",
         "status": "draft",
         "data": {
@@ -362,7 +362,7 @@
         }
       },
       {
-        "id": "legacy_posts:10-tips-to-warm-up-your-cold-emails",
+        "id": "posts:10-tips-to-warm-up-your-cold-emails",
         "slug": "10-tips-to-warm-up-your-cold-emails",
         "status": "draft",
         "data": {
@@ -414,7 +414,7 @@
         }
       },
       {
-        "id": "legacy_posts:5-marketing-tasks-you-must-automate-asap",
+        "id": "posts:5-marketing-tasks-you-must-automate-asap",
         "slug": "5-marketing-tasks-you-must-automate-asap",
         "status": "draft",
         "data": {
@@ -466,7 +466,7 @@
         }
       },
       {
-        "id": "legacy_posts:7-reasons-to-enforce-email-marketing",
+        "id": "posts:7-reasons-to-enforce-email-marketing",
         "slug": "7-reasons-to-enforce-email-marketing",
         "status": "draft",
         "data": {
@@ -513,7 +513,7 @@
         }
       },
       {
-        "id": "legacy_posts:automated-email-list-monitoring-why-is-it-important",
+        "id": "posts:automated-email-list-monitoring-why-is-it-important",
         "slug": "automated-email-list-monitoring-why-is-it-important",
         "status": "draft",
         "data": {
@@ -555,7 +555,7 @@
         }
       },
       {
-        "id": "legacy_posts:buy-an-email-list-yes-or-not",
+        "id": "posts:buy-an-email-list-yes-or-not",
         "slug": "buy-an-email-list-yes-or-not",
         "status": "draft",
         "data": {
@@ -597,7 +597,7 @@
         }
       },
       {
-        "id": "legacy_posts:catch-all-email-servers-what-you-need-to-know",
+        "id": "posts:catch-all-email-servers-what-you-need-to-know",
         "slug": "catch-all-email-servers-what-you-need-to-know",
         "status": "draft",
         "data": {
@@ -649,7 +649,7 @@
         }
       },
       {
-        "id": "legacy_posts:crypto-marketing-agencies-in-2023",
+        "id": "posts:crypto-marketing-agencies-in-2023",
         "slug": "crypto-marketing-agencies-in-2023",
         "status": "draft",
         "data": {
@@ -691,7 +691,7 @@
         }
       },
       {
-        "id": "legacy_posts:csv-file-theoretical-aspects-and-practical-usage",
+        "id": "posts:csv-file-theoretical-aspects-and-practical-usage",
         "slug": "csv-file-theoretical-aspects-and-practical-usage",
         "status": "draft",
         "data": {
@@ -733,7 +733,7 @@
         }
       },
       {
-        "id": "legacy_posts:customization-of-selling-cart-x-tips",
+        "id": "posts:customization-of-selling-cart-x-tips",
         "slug": "customization-of-selling-cart-x-tips",
         "status": "draft",
         "data": {
@@ -780,7 +780,7 @@
         }
       },
       {
-        "id": "legacy_posts:do-subscribers-love-your-emails",
+        "id": "posts:do-subscribers-love-your-emails",
         "slug": "do-subscribers-love-your-emails",
         "status": "draft",
         "data": {
@@ -822,7 +822,7 @@
         }
       },
       {
-        "id": "legacy_posts:does-buying-email-lists-still-work",
+        "id": "posts:does-buying-email-lists-still-work",
         "slug": "does-buying-email-lists-still-work",
         "status": "draft",
         "data": {
@@ -869,7 +869,7 @@
         }
       },
       {
-        "id": "legacy_posts:e-commerce-trends-on-the-rise-in-2021",
+        "id": "posts:e-commerce-trends-on-the-rise-in-2021",
         "slug": "e-commerce-trends-on-the-rise-in-2021",
         "status": "draft",
         "data": {
@@ -911,7 +911,7 @@
         }
       },
       {
-        "id": "legacy_posts:effective-email-marketing-in-2022",
+        "id": "posts:effective-email-marketing-in-2022",
         "slug": "effective-email-marketing-in-2022",
         "status": "draft",
         "data": {
@@ -958,7 +958,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-blasts-what-they-are",
+        "id": "posts:email-blasts-what-they-are",
         "slug": "email-blasts-what-they-are",
         "status": "draft",
         "data": {
@@ -1005,7 +1005,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-bounce-rate-explaining-and-reduceing",
+        "id": "posts:email-bounce-rate-explaining-and-reduceing",
         "slug": "email-bounce-rate-explaining-and-reduceing",
         "status": "draft",
         "data": {
@@ -1047,7 +1047,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-marketing-campaign-metrics-for-small-business",
+        "id": "posts:email-marketing-campaign-metrics-for-small-business",
         "slug": "email-marketing-campaign-metrics-for-small-business",
         "status": "draft",
         "data": {
@@ -1094,7 +1094,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-marketing-for-small-business-tips",
+        "id": "posts:email-marketing-for-small-business-tips",
         "slug": "email-marketing-for-small-business-tips",
         "status": "draft",
         "data": {
@@ -1136,7 +1136,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-marketing-for-small-business",
+        "id": "posts:email-marketing-for-small-business",
         "slug": "email-marketing-for-small-business",
         "status": "draft",
         "data": {
@@ -1183,7 +1183,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-marketing-in-post-covid-19-times",
+        "id": "posts:email-marketing-in-post-covid-19-times",
         "slug": "email-marketing-in-post-covid-19-times",
         "status": "draft",
         "data": {
@@ -1225,7 +1225,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-marketing-mistakes",
+        "id": "posts:email-marketing-mistakes",
         "slug": "email-marketing-mistakes",
         "status": "draft",
         "data": {
@@ -1267,7 +1267,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-marketing-stay-up-to-date",
+        "id": "posts:email-marketing-stay-up-to-date",
         "slug": "email-marketing-stay-up-to-date",
         "status": "draft",
         "data": {
@@ -1304,7 +1304,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-marketing-trends-for-a-small-business",
+        "id": "posts:email-marketing-trends-for-a-small-business",
         "slug": "email-marketing-trends-for-a-small-business",
         "status": "draft",
         "data": {
@@ -1351,7 +1351,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-personalization-stats-that-will-make-you-think",
+        "id": "posts:email-personalization-stats-that-will-make-you-think",
         "slug": "email-personalization-stats-that-will-make-you-think",
         "status": "draft",
         "data": {
@@ -1393,7 +1393,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-validation-manual-or-automatic",
+        "id": "posts:email-validation-manual-or-automatic",
         "slug": "email-validation-manual-or-automatic",
         "status": "draft",
         "data": {
@@ -1434,7 +1434,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-validation-the-right-approach",
+        "id": "posts:email-validation-the-right-approach",
         "slug": "email-validation-the-right-approach",
         "status": "draft",
         "data": {
@@ -1481,7 +1481,7 @@
         }
       },
       {
-        "id": "legacy_posts:email-verification-services-the-complete-guide-to-use",
+        "id": "posts:email-verification-services-the-complete-guide-to-use",
         "slug": "email-verification-services-the-complete-guide-to-use",
         "status": "draft",
         "data": {
@@ -1523,7 +1523,7 @@
         }
       },
       {
-        "id": "legacy_posts:emails-validation-api-will-increase-conversion",
+        "id": "posts:emails-validation-api-will-increase-conversion",
         "slug": "emails-validation-api-will-increase-conversion",
         "status": "draft",
         "data": {
@@ -1570,7 +1570,7 @@
         }
       },
       {
-        "id": "legacy_posts:google-plus-is-shutting-down-so-what",
+        "id": "posts:google-plus-is-shutting-down-so-what",
         "slug": "google-plus-is-shutting-down-so-what",
         "status": "draft",
         "data": {
@@ -1612,7 +1612,7 @@
         }
       },
       {
-        "id": "legacy_posts:hosting-email-at-home-isnt-a-good-idea",
+        "id": "posts:hosting-email-at-home-isnt-a-good-idea",
         "slug": "hosting-email-at-home-isnt-a-good-idea",
         "status": "draft",
         "data": {
@@ -1654,7 +1654,7 @@
         }
       },
       {
-        "id": "legacy_posts:how-mailcheck-can-help-your-business",
+        "id": "posts:how-mailcheck-can-help-your-business",
         "slug": "how-mailcheck-can-help-your-business",
         "status": "draft",
         "data": {
@@ -1696,7 +1696,7 @@
         }
       },
       {
-        "id": "legacy_posts:how-saas-onboarding-emails-can-improve-your-conversions",
+        "id": "posts:how-saas-onboarding-emails-can-improve-your-conversions",
         "slug": "how-saas-onboarding-emails-can-improve-your-conversions",
         "status": "draft",
         "data": {
@@ -1738,7 +1738,7 @@
         }
       },
       {
-        "id": "legacy_posts:how-to-boost-your-email-marketing-in-gambling",
+        "id": "posts:how-to-boost-your-email-marketing-in-gambling",
         "slug": "how-to-boost-your-email-marketing-in-gambling",
         "status": "draft",
         "data": {
@@ -1780,7 +1780,7 @@
         }
       },
       {
-        "id": "legacy_posts:how-to-bootstrap-your-saas-startup",
+        "id": "posts:how-to-bootstrap-your-saas-startup",
         "slug": "how-to-bootstrap-your-saas-startup",
         "status": "draft",
         "data": {
@@ -1827,7 +1827,7 @@
         }
       },
       {
-        "id": "legacy_posts:how-to-keep-your-emails-away-from-the-spam",
+        "id": "posts:how-to-keep-your-emails-away-from-the-spam",
         "slug": "how-to-keep-your-emails-away-from-the-spam",
         "status": "draft",
         "data": {
@@ -1869,7 +1869,7 @@
         }
       },
       {
-        "id": "legacy_posts:low-open-rate-what-can-you-do",
+        "id": "posts:low-open-rate-what-can-you-do",
         "slug": "low-open-rate-what-can-you-do",
         "status": "draft",
         "data": {
@@ -1911,7 +1911,7 @@
         }
       },
       {
-        "id": "legacy_posts:mailcheck-helped",
+        "id": "posts:mailcheck-helped",
         "slug": "mailcheck-helped",
         "status": "draft",
         "data": {
@@ -1949,7 +1949,7 @@
         }
       },
       {
-        "id": "legacy_posts:mailcheck-integration-all-you-need-to-know",
+        "id": "posts:mailcheck-integration-all-you-need-to-know",
         "slug": "mailcheck-integration-all-you-need-to-know",
         "status": "draft",
         "data": {
@@ -1996,7 +1996,7 @@
         }
       },
       {
-        "id": "legacy_posts:mailcheck-scholarship-2019",
+        "id": "posts:mailcheck-scholarship-2019",
         "slug": "mailcheck-scholarship-2019",
         "status": "draft",
         "data": {
@@ -2038,7 +2038,7 @@
         }
       },
       {
-        "id": "legacy_posts:maximizing-your-email-marketing-efforts-with-mailcheckcos-validation-features",
+        "id": "posts:maximizing-your-email-marketing-efforts-with-mailcheckcos-validation-features",
         "slug": "maximizing-your-email-marketing-efforts-with-mailcheckcos-validation-features",
         "status": "draft",
         "data": {
@@ -2130,7 +2130,7 @@
         }
       },
       {
-        "id": "legacy_posts:newsletter-personalization-and-sales",
+        "id": "posts:newsletter-personalization-and-sales",
         "slug": "newsletter-personalization-and-sales",
         "status": "draft",
         "data": {
@@ -2172,7 +2172,7 @@
         }
       },
       {
-        "id": "legacy_posts:paid-g-suite-may-increase-email-bounce-rate",
+        "id": "posts:paid-g-suite-may-increase-email-bounce-rate",
         "slug": "paid-g-suite-may-increase-email-bounce-rate",
         "status": "draft",
         "data": {
@@ -2210,7 +2210,7 @@
         }
       },
       {
-        "id": "legacy_posts:peaple-based-marketing-why-you-should-use-it",
+        "id": "posts:peaple-based-marketing-why-you-should-use-it",
         "slug": "peaple-based-marketing-why-you-should-use-it",
         "status": "draft",
         "data": {
@@ -2252,7 +2252,7 @@
         }
       },
       {
-        "id": "legacy_posts:senders-reputation-all-you-need-to-know",
+        "id": "posts:senders-reputation-all-you-need-to-know",
         "slug": "senders-reputation-all-you-need-to-know",
         "status": "draft",
         "data": {
@@ -2299,7 +2299,7 @@
         }
       },
       {
-        "id": "legacy_posts:six-tips-to-write-an-email",
+        "id": "posts:six-tips-to-write-an-email",
         "slug": "six-tips-to-write-an-email",
         "status": "draft",
         "data": {
@@ -2346,7 +2346,7 @@
         }
       },
       {
-        "id": "legacy_posts:top-digital-marketing-strategies-for-fmcg-in-2023",
+        "id": "posts:top-digital-marketing-strategies-for-fmcg-in-2023",
         "slug": "top-digital-marketing-strategies-for-fmcg-in-2023",
         "status": "draft",
         "data": {
@@ -2388,7 +2388,7 @@
         }
       },
       {
-        "id": "legacy_posts:what-is-branding-10-steps-to-creating-the-best-branding-strategy-for-your-ecommerce-store",
+        "id": "posts:what-is-branding-10-steps-to-creating-the-best-branding-strategy-for-your-ecommerce-store",
         "slug": "what-is-branding-10-steps-to-creating-the-best-branding-strategy-for-your-ecommerce-store",
         "status": "draft",
         "data": {
@@ -2430,7 +2430,7 @@
         }
       },
       {
-        "id": "legacy_posts:what-is-email-api-and-why-do-i-need-one",
+        "id": "posts:what-is-email-api-and-why-do-i-need-one",
         "slug": "what-is-email-api-and-why-do-i-need-one",
         "status": "draft",
         "data": {
@@ -2482,7 +2482,7 @@
         }
       },
       {
-        "id": "legacy_posts:x-ways-to-increase-email-deliverability",
+        "id": "posts:x-ways-to-increase-email-deliverability",
         "slug": "x-ways-to-increase-email-deliverability",
         "status": "draft",
         "data": {
@@ -2534,9 +2534,9 @@
         }
       }
     ],
-    "legacy_pages": [
+    "pages": [
       {
-        "id": "legacy_pages:activecampaign-integration",
+        "id": "pages:activecampaign-integration",
         "slug": "activecampaign-integration",
         "status": "draft",
         "data": {
@@ -2591,7 +2591,7 @@
         }
       },
       {
-        "id": "legacy_pages:affiliates",
+        "id": "pages:affiliates",
         "slug": "affiliates",
         "status": "draft",
         "data": {
@@ -2620,7 +2620,7 @@
         }
       },
       {
-        "id": "legacy_pages:cookies",
+        "id": "pages:cookies",
         "slug": "cookies",
         "status": "draft",
         "data": {
@@ -2651,7 +2651,7 @@
         }
       },
       {
-        "id": "legacy_pages:create-api-key",
+        "id": "pages:create-api-key",
         "slug": "create-api-key",
         "status": "draft",
         "data": {
@@ -2691,7 +2691,7 @@
         }
       },
       {
-        "id": "legacy_pages:faq",
+        "id": "pages:faq",
         "slug": "faq",
         "status": "draft",
         "data": {
@@ -2720,7 +2720,7 @@
         }
       },
       {
-        "id": "legacy_pages:integromat-integration",
+        "id": "pages:integromat-integration",
         "slug": "integromat-integration",
         "status": "draft",
         "data": {
@@ -2835,7 +2835,7 @@
         }
       },
       {
-        "id": "legacy_pages:mailchimp-integration",
+        "id": "pages:mailchimp-integration",
         "slug": "mailchimp-integration",
         "status": "draft",
         "data": {
@@ -2925,7 +2925,7 @@
         }
       },
       {
-        "id": "legacy_pages:mailerlite-integration",
+        "id": "pages:mailerlite-integration",
         "slug": "mailerlite-integration",
         "status": "draft",
         "data": {
@@ -2990,7 +2990,7 @@
         }
       },
       {
-        "id": "legacy_pages:make-com-integration",
+        "id": "pages:make-com-integration",
         "slug": "make-com-integration",
         "status": "draft",
         "data": {
@@ -3185,7 +3185,7 @@
         }
       },
       {
-        "id": "legacy_pages:n8n-integration",
+        "id": "pages:n8n-integration",
         "slug": "n8n-integration",
         "status": "draft",
         "data": {
@@ -3265,7 +3265,7 @@
         }
       },
       {
-        "id": "legacy_pages:privacy",
+        "id": "pages:privacy",
         "slug": "privacy",
         "status": "draft",
         "data": {
@@ -3296,7 +3296,7 @@
         }
       },
       {
-        "id": "legacy_pages:sendgrid-integration",
+        "id": "pages:sendgrid-integration",
         "slug": "sendgrid-integration",
         "status": "draft",
         "data": {
@@ -3401,7 +3401,7 @@
         }
       },
       {
-        "id": "legacy_pages:terms",
+        "id": "pages:terms",
         "slug": "terms",
         "status": "draft",
         "data": {
@@ -3432,7 +3432,7 @@
         }
       },
       {
-        "id": "legacy_pages:woodpecker-integration",
+        "id": "pages:woodpecker-integration",
         "slug": "woodpecker-integration",
         "status": "draft",
         "data": {
@@ -3492,7 +3492,7 @@
         }
       },
       {
-        "id": "legacy_pages:zapier-integration",
+        "id": "pages:zapier-integration",
         "slug": "zapier-integration",
         "status": "draft",
         "data": {

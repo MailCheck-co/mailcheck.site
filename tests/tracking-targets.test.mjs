@@ -2,12 +2,19 @@ import assert from 'node:assert/strict';
 import { registerHooks } from 'node:module';
 import { test } from 'node:test';
 import * as shared from '../configs/tracking-targets-collection.mjs';
-import { parseZoneTxtRecords, targetsFromZone, validateTargets } from '../scripts/tracking-targets.mjs';
+import {
+  parseZoneTxtRecords,
+  targetsFromZone,
+  validateTargets
+} from '../scripts/tracking-targets.mjs';
 
 registerHooks({
   resolve(specifier, context, nextResolve) {
     if (specifier === 'cloudflare:workers') {
-      return { shortCircuit: true, url: 'data:text/javascript,export const exports = globalThis.__trackingExports;' };
+      return {
+        shortCircuit: true,
+        url: 'data:text/javascript,export const exports = globalThis.__trackingExports;'
+      };
     }
     if (specifier === '../server/tracking-targets') {
       return nextResolve('../server/tracking-targets.ts', context);
@@ -17,7 +24,13 @@ registerHooks({
 });
 
 let purges = 0;
-globalThis.__trackingExports = { TrackingTargets: { purge: async () => { purges += 1; } } };
+globalThis.__trackingExports = {
+  TrackingTargets: {
+    purge: async () => {
+      purges += 1;
+    }
+  }
+};
 const runtime = await import('../src/server/tracking-targets.ts');
 const plugin = (await import('../src/cms/tracking-targets-plugin.ts')).createPlugin();
 
@@ -32,7 +45,12 @@ test('runtime and CMS schema share kinds and validation patterns', () => {
 
 test('buildTrackingTargets normalizes keys and skips invalid rows', () => {
   const { targets, skipped } = runtime.buildTrackingTargets([
-    { kind: 'short_link', key: 'Pricing', url: 'https://mailcheck.co/pricing', updated_at: '2026-10-02' },
+    {
+      kind: 'short_link',
+      key: 'Pricing',
+      url: 'https://mailcheck.co/pricing',
+      updated_at: '2026-10-02'
+    },
     { kind: 'short_link', key: 'x', url: 'javascript:alert(1)' },
     { kind: 'image', key: 'x', url: 'https://example.com' }
   ]);
@@ -43,11 +61,23 @@ test('buildTrackingTargets normalizes keys and skips invalid rows', () => {
 test('findTrackingTarget: exact key, then `*`, else error', () => {
   const targets = runtime.emptyTrackingTargets();
   targets.short_link = { '*': 'https://mailcheck.co/404', pricing: 'https://mailcheck.co/pricing' };
-  assert.equal(runtime.findTrackingTarget(targets, 'short_link', 'PRICING').href, 'https://mailcheck.co/pricing');
-  assert.equal(runtime.findTrackingTarget(targets, 'short_link', 'missing').href, 'https://mailcheck.co/404');
-  assert.equal(runtime.findTrackingTarget(targets, 'short_link', 'x'.repeat(500)).href, 'https://mailcheck.co/404');
+  assert.equal(
+    runtime.findTrackingTarget(targets, 'short_link', 'PRICING').href,
+    'https://mailcheck.co/pricing'
+  );
+  assert.equal(
+    runtime.findTrackingTarget(targets, 'short_link', 'missing').href,
+    'https://mailcheck.co/404'
+  );
+  assert.equal(
+    runtime.findTrackingTarget(targets, 'short_link', 'x'.repeat(500)).href,
+    'https://mailcheck.co/404'
+  );
   const empty = runtime.emptyTrackingTargets();
-  assert.throws(() => runtime.findTrackingTarget(empty, 'short_link', undefined), /No short_link tracking target/);
+  assert.throws(
+    () => runtime.findTrackingTarget(empty, 'short_link', undefined),
+    /No short_link tracking target/
+  );
 });
 
 test('getTrackingTargets memoizes per source, coalesces concurrent loads and fails on errors', async () => {
@@ -62,7 +92,10 @@ test('getTrackingTargets memoizes per source, coalesces concurrent loads and fai
       return Response.json(table);
     }
   };
-  const [a, b] = await Promise.all([runtime.getTrackingTargets(source, 0), runtime.getTrackingTargets(source, 0)]);
+  const [a, b] = await Promise.all([
+    runtime.getTrackingTargets(source, 0),
+    runtime.getTrackingTargets(source, 0)
+  ]);
   assert.deepEqual(a, table);
   assert.equal(a, b);
   await runtime.getTrackingTargets(source, 29_000);
@@ -70,16 +103,21 @@ test('getTrackingTargets memoizes per source, coalesces concurrent loads and fai
   await runtime.getTrackingTargets(source, 31_000);
   assert.equal(calls, 2);
   runtime.resetTrackingTargetsMemo();
-  await assert.rejects(runtime.getTrackingTargets({ fetch: async () => new Response(null, { status: 503 }) }), /HTTP 503/);
+  await assert.rejects(
+    runtime.getTrackingTargets({ fetch: async () => new Response(null, { status: 503 }) }),
+    /HTTP 503/
+  );
 });
 
 test('zone export import maps TXT records under the short-link domain', () => {
-  const records = parseZoneTxtRecords([
-    '$ORIGIN mailcheck.co.',
-    '*.l.mailcheck.co.\t1\tIN\tTXT\t"https://mailcheck.co/404"',
-    'pricing.l 1 IN TXT "https://mailcheck.co/" "pricing" ; split string',
-    '_dmarc 1 IN TXT "v=DMARC1; p=none"'
-  ].join('\n'));
+  const records = parseZoneTxtRecords(
+    [
+      '$ORIGIN mailcheck.co.',
+      '*.l.mailcheck.co.\t1\tIN\tTXT\t"https://mailcheck.co/404"',
+      'pricing.l 1 IN TXT "https://mailcheck.co/" "pricing" ; split string',
+      '_dmarc 1 IN TXT "v=DMARC1; p=none"'
+    ].join('\n')
+  );
   assert.equal(records.get('pricing.l.mailcheck.co'), 'https://mailcheck.co/pricing');
   const entries = targetsFromZone(records, { short_link: 'l.mailcheck.co' });
   assert.deepEqual(entries.map(({ kind, key, url }) => `${kind}|${key}|${url}`).sort(), [
@@ -103,11 +141,16 @@ test('import validation rejects bad kinds, keys, URLs and duplicates', () => {
 });
 
 test('CMS plugin purges the tracking cache only for tracking_targets state changes', async () => {
-  const hooks = ['content:afterPublish', 'content:afterUnpublish', 'content:afterDelete', 'content:afterRestore'];
+  const hooks = [
+    'content:afterPublish',
+    'content:afterUnpublish',
+    'content:afterDelete',
+    'content:afterRestore'
+  ];
   for (const name of hooks) {
     const hook = plugin.hooks[name];
     assert.ok(hook, name);
-    await hook.handler({ collection: 'legacy_posts', content: {} }, {});
+    await hook.handler({ collection: 'posts', content: {} }, {});
     await hook.handler({ collection: 'tracking_targets', content: {} }, {});
   }
   assert.equal(purges, hooks.length);

@@ -45,7 +45,7 @@ with an empty cache. Policy lives in `src/middleware.ts`:
 - Code-only pages (home, videos, promo, case study): edge 1 day, browser
   `max-age=14400` as on Firebase.
 - CMS pages, `/blog`, `/blog.json`, RSS, sitemap: edge 1 day tagged
-  `legacy_posts`/`legacy_pages`, purged by EmDash on publish/edit/unpublish;
+  `posts`/`pages`, purged by EmDash on publish/edit/unpublish;
   browser `public, max-age=0, must-revalidate`.
 - Preview, sessions, editors, Set-Cookie and all backend endpoints (`/api`,
   `/l`): never stored.
