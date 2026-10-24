@@ -25,7 +25,9 @@ export async function GET() {
   const archivePosts = await getPublishedPosts();
   const postPaths = usesCms()
     ? await getCmsPostPaths()
-    : archivePosts.map((post) => `/blog/${post.slug}`);
+    : archivePosts
+        .filter((post) => post.noindex !== true && post.noindex !== 'true')
+        .map((post) => `/blog/${post.slug}`);
   const pageCount = Math.ceil(archivePosts.length / BLOG_PAGE_SIZE);
   const paginationPaths = Array.from(
     { length: Math.max(0, pageCount - 1) },

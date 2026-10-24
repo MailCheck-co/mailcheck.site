@@ -24,7 +24,7 @@ const thumbnailUrl = new URL(thumbnail, data.siteUrl).href;
 const isPreview = Astro.url.searchParams.has('_preview');
 ---
 <title>{title} | {data.siteName}</title>
-<link rel="canonical" href={canonicalUrl} />
+{!(noindex || isPreview) && <link rel="canonical" href={canonicalUrl} />}
 <meta name="description" content={description || data.description} />
 <meta name="msapplication-TileColor" content={data.theme} />
 <meta name="theme-color" content={data.theme} />

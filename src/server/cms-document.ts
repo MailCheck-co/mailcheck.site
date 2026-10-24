@@ -48,8 +48,11 @@ export function publicPost(document: CmsDocument) {
 
 export function sortPosts<T extends { slug: string; date: string }>(posts: T[]): T[] {
   const date = (value: string) => {
-    const [day, month, year] = value.split('.');
-    return Date.parse(`${year}-${month}-${day}`) || 0;
+    const trimmed = value.trim();
+    const legacy = trimmed.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
+    if (legacy) return Date.parse(`${legacy[3]}-${legacy[2]}-${legacy[1]}T00:00:00Z`) || 0;
+    const timestamp = Date.parse(trimmed);
+    return Number.isNaN(timestamp) ? 0 : timestamp;
   };
   // The legacy sorter put equal-date entries in reverse folder order.
   return posts.sort((a, b) => date(b.date) - date(a.date) || b.slug.localeCompare(a.slug));
