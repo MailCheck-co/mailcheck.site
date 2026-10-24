@@ -49,7 +49,7 @@
     "prettier-plugin-svelte": "^2.9.0",
     "sass": "^1.105.2",
     "schema-dts": "^1.1.0",
-    "stylelint": "^14.16.1",
+    "stylelint": "^17.16.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier-scss": "^0.0.1",
     "svelte": "^5.43.6",
