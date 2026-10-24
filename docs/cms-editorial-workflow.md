@@ -9,7 +9,7 @@ The staging Worker uses D1/EmDash for the existing Markdown routes when
 - `pages` (Pages): 15 published Markdown pages, `/{slug}`.
 
 The remote publication counts were verified directly in
-D1 after activation. The lossless bootstrap seed intentionally remains drafts
+D1 after activation. The Markdown bootstrap seed intentionally remains drafts
 and non-routable; activation is a separate guarded operation, not a seed edit.
 Owner setup was completed by the user on 2026-10-18. Read-only verification
 confirmed `needsSetup: false`, one admin user and one registered admin passkey;
@@ -22,9 +22,8 @@ serve archival source. `MAILCHECK_CONTENT_SOURCE` can be changed back to the
 legacy renderer for a deliberate deployment rollback; do not do so as a
 transparent fallback, since that would restore unpublished content.
 
-Each imported entry retains the original Markdown body, complete source document,
-SHA-256, frontmatter (including legacy publication state), repository path,
-original URL, relative image references and asset hashes. HTML, Svelte variables
+Each imported entry retains the original Markdown body, selected frontmatter,
+repository source path and original thumbnail reference. HTML, Svelte variables
 and `<Video>` syntax are preserved rather than lossy-converted to rich text.
 The media catalogue now contains **originals only**: 218 source references map
 to 216 unique original assets (identical source bytes are deduplicated).
@@ -144,7 +143,8 @@ Do not use this bootstrap as an ongoing publishing tool.
 1. Open <https://mailcheck-site.dev-2c9.workers.dev/_emdash/admin> and sign in.
 2. Open Blog posts or Pages and select an existing entry.
 3. Edit title, Markdown, description, snippet, original date (DD.MM.YYYY),
-   reading time or thumbnail URL. Do not edit source backup/hash/reference fields.
+   reading time or thumbnail URL. Do not edit the repository source path or
+   original frontmatter fields.
 4. Save the draft, then use Preview. Preview links are signed, private/no-store,
    and noindex. Do not paste preview links into logs or public discussions.
 5. Publish to make the article/listing/feed changes public. Saving a pending
@@ -161,9 +161,9 @@ event handlers, arbitrary iframes or JavaScript URLs); FAQ tables/details,
 heading anchors, legacy variable substitution and Video components remain.
 
 **Scope limitation:** editing/previewing/publishing the existing content is
-supported. Creating entirely new entries still needs a separate schema migration
-to relax NOT NULL archival source fields. Dashboard quick-create is disabled;
-do not fabricate source hashes/documents to work around validation. Home,
+supported. Creating entirely new entries still requires a repository source path
+because legacy relative image references resolve against it. Dashboard
+quick-create is disabled; do not fabricate source paths to work around validation. Home,
 promotions, case studies and video-list components remain code-managed.
 
 ## Recovery evidence

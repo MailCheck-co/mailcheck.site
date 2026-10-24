@@ -1,5 +1,4 @@
 import assert from 'node:assert/strict';
-import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 import { validateSeed } from 'emdash/seed';
@@ -29,29 +28,27 @@ test('CMS seed contains all Markdown as non-routable drafts without loss', async
   );
   assert.deepEqual(seed.content.tracking_targets, []);
   const entries = Object.values(seed.content).flat();
-  assert.equal(new Set(entries.map((entry) => entry.data.legacy_path)).size, 65);
+  const archivalFields = [
+    'source_document',
+    'source_sha256',
+    'asset_sources',
+    'legacy_published',
+    'legacy_path'
+  ];
   for (const entry of entries) {
     assert.equal(entry.status, 'draft');
+    for (const field of archivalFields) assert.equal(field in entry.data, false, field);
     const original = await readFile(
       new URL(`../${entry.data.source_path}`, import.meta.url),
       'utf8'
     );
-    assert.equal(entry.data.source_document, original);
-    assert.equal(entry.data.source_sha256, createHash('sha256').update(original).digest('hex'));
     assert.equal(entry.data.markdown, parseLegacyDocument(original, entry.data.source_path).body);
   }
-  assert.equal(entries.find((entry) => entry.data.legacy_path === '/terms').data.canonical, '/');
-  assert.equal(entries.find((entry) => entry.data.legacy_path === '/terms').data.noindex, true);
-  assert.equal(seed.content.posts.filter((entry) => entry.data.legacy_published).length, 50);
+  assert.equal(entries.find((entry) => entry.slug === 'terms').data.canonical, '/');
+  assert.equal(entries.find((entry) => entry.slug === 'terms').data.noindex, true);
   assert.equal(
-    entries.find((entry) => entry.slug === 'make-com-integration').data.asset_sources.length,
-    33
-  );
-  const helpPost = entries.find((entry) => entry.slug === 'mailcheck-helped');
-  assert.ok(
-    helpPost.data.asset_sources.some(
-      (asset) => asset.missing && asset.reference.startsWith('./email-bounce-rate.jpg')
-    )
+    seed.content.posts.filter((entry) => entry.data.legacy_metadata.published).length,
+    50
   );
 });
 

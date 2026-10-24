@@ -7,6 +7,7 @@
     "cms:check": "node scripts/prepare-cms-seed.mjs --check && emdash seed --validate",
     "cms:media": "node scripts/prepare-cms-media.mjs",
     "cms:activate": "node scripts/activate-cms.mjs",
+    "cms:remove-archival": "node scripts/remove-cms-archival-fields.mjs",
     "cms:tracking": "node scripts/tracking-targets.mjs",
     "cms:media-normalize": "node scripts/normalize-cms-media.mjs",
     "readiness:secrets": "node scripts/check-worker-readiness.mjs",
