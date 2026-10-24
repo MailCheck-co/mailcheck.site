@@ -1,4 +1,6 @@
-import type { Thing, WithContext, Organization, WebSite, Blog, Article } from 'schema-dts';
+import type {
+  Thing, WithContext, Organization, WebSite, Blog, Article, BlogPosting, WebPage, FAQPage
+} from 'schema-dts';
 import data from './site-data';
 
 export type Schema = Thing | WithContext<Thing>;
@@ -6,6 +8,24 @@ export type Schema = Thing | WithContext<Thing>;
 export function serializeSchema(thing: Schema): string {
   return `<script type="application/ld+json">${JSON.stringify(thing, null, 2)}</script>`;
 }
+
+export function toIsoDate(value?: string): string | undefined {
+  const date = value?.trim();
+  if (!date) return undefined;
+  const legacy = date.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
+  if (legacy) return `${legacy[3]}-${legacy[2]}-${legacy[1]}`;
+  if (/^\d{4}-\d{2}-\d{2}/.test(date)) return date.slice(0, 10);
+  const timestamp = Date.parse(date);
+  return Number.isNaN(timestamp) ? undefined : new Date(timestamp).toISOString().slice(0, 10);
+}
+
+const publisher = {
+  '@type': 'Organization' as const,
+  '@id': `${data.siteUrl}#organization`,
+  name: data.siteName,
+  url: data.siteUrl,
+  logo: `${data.siteUrl}/favicon.png`
+};
 
 export const websiteSchema: WithContext<WebSite> = {
   '@context': 'https://schema.org',
@@ -64,6 +84,72 @@ export const articleSchema: WithContext<Article> = {
     }
   }
 };
+
+export function webPageSchema({
+  url, name, description, image
+}: {
+  url: string;
+  name: string;
+  description: string;
+  image?: string;
+}): WithContext<WebPage> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': url,
+    url,
+    name,
+    description,
+    ...(image ? { image } : {})
+  };
+}
+
+export function blogPostingSchema({
+  url, title, description, image, date
+}: {
+  url: string;
+  title: string;
+  description: string;
+  image?: string;
+  date?: string;
+}): WithContext<BlogPosting> {
+  const isoDate = toIsoDate(date);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': url,
+    url,
+    name: title,
+    headline: title,
+    description,
+    ...(image ? { image } : {}),
+    ...(isoDate ? { datePublished: isoDate, dateModified: isoDate } : {}),
+    articleSection: 'Emails, Antispam, Marketing, Subscriptions, Mailings',
+    author: publisher,
+    publisher,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url }
+  };
+}
+
+export function faqPageSchema(
+  url: string,
+  questions: Array<{ question: string; answer: string }>
+): WithContext<FAQPage> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': url,
+    url,
+    mainEntity: questions.map(({ question, answer }) => ({
+      '@type': 'Question' as const,
+      name: question,
+      acceptedAnswer: {
+        '@type': 'Answer' as const,
+        text: answer
+      }
+    }))
+  };
+}
 
 export const organizationSchema: WithContext<Organization> = {
   '@context': 'https://schema.org',

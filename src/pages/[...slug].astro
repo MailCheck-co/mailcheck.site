@@ -6,12 +6,13 @@ import ContactUs from '../lib/ContactUs/index.svelte';
 import Video from '../lib/Video/video.svelte';
 import { marked, Renderer } from 'marked';
 import GithubSlugger from 'github-slugger';
-import { websiteSchema, articleSchema } from '../utils/json-ld';
+import { websiteSchema, webPageSchema, blogPostingSchema, faqPageSchema } from '../utils/json-ld';
 import NotFound from '../routes/404.svelte';
 import { getCmsDocument, usesCms } from '../server/cms-content';
 import { sanitizeMarkdown } from '../server/markdown-security';
 import mediaManifest from '../../seed/media.json';
 import { imageUrl } from '../server/media-images';
+import data from '../utils/site-data';
 
 const slug = Astro.params.slug ?? '';
 const source = import.meta.glob('../routes/**/*.md', { eager: true, query: '?raw', import: 'default' });
@@ -115,17 +116,31 @@ if (remainingMarkdown.trim()) {
   });
 }
 const isFaq = slug === 'faq';
+const isPost = !!entry && slug.startsWith('blog/');
 const description = !entry ? 'Page not found: 404' : isFaq ? metadata.title : metadata.description;
 const thumbnailPath = metadata.thumbnailImg?.split('?')[0].replace(/^\.\//, '');
 const thumbnail = /^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg ?? '') ? metadata.thumbnailImg : assetSource[`${entryDirectory}/${thumbnailPath}`] || 'https://mailcheck.co/favicon.png';
-const schemas = isFaq || !entry ? [websiteSchema] : [
-  { ...articleSchema, image: thumbnail === 'https://mailcheck.co/favicon.png' ? '' : thumbnail, url: `https://mailcheck.co/${slug}`,
-    name: metadata.title, description, backstory: description, headline: metadata.title },
+const pageUrl = new URL(metadata.canonical || Astro.url.pathname, data.siteUrl).href;
+const thumbnailUrl = new URL(thumbnail, data.siteUrl).href;
+const cleanText = (value: string) => value
+  .replace(/<script[\s\S]*?<\/script>/gi, '')
+  .replace(/<Video[^>]*\/>/gi, '')
+  .replace(/!\[([^\]]*)\]\([^)]*\)/g, '$1')
+  .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/[\*_`>#-]/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
+const faqQuestions = isFaq ? [...content.matchAll(/<details>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/gi)]
+  .map((match) => ({ question: cleanText(match[1]), answer: cleanText(match[2]) }))
+  .filter(({ question, answer }) => question && answer) : [];
+const schemas = !entry ? [websiteSchema] : isFaq ? [websiteSchema, faqPageSchema(pageUrl, faqQuestions)] : isPost ? [
+  blogPostingSchema({ url: pageUrl, title: metadata.title, description, image: thumbnail === 'https://mailcheck.co/favicon.png' ? undefined : thumbnailUrl, date: metadata.date }),
   websiteSchema
-];
+] : [websiteSchema, webPageSchema({ url: pageUrl, name: metadata.title, description, image: thumbnailUrl })];
 ---
 <SiteLayout title={metadata.title || 'Page not found'} {description} canonical={entry ? metadata.canonical : '/'}
-  pathname={entry ? Astro.url.pathname : '/404'} noindex={!entry || !!cms?.isPreview || metadata.noindex === 'true'} isPost={!!entry}
+  pathname={entry ? Astro.url.pathname : '/404'} noindex={!entry || !!cms?.isPreview || metadata.noindex === 'true'} {isPost}
   thumbnail={isFaq ? '/preview.jpeg' : thumbnail} {schemas}>
   {!entry && <meta slot="head" http-equiv="refresh" content="5;https://mailcheck.co/" />}
   {entry ? (

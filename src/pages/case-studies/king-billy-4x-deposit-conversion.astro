@@ -1,9 +1,10 @@
 ---
 import SiteLayout from '../../components/SiteLayout.astro';
 import CaseStudy from '../../routes/case-studies/king-billy-4x-deposit-conversion.svelte';
-import { websiteSchema, blogSchema } from '../../utils/json-ld';
+import { websiteSchema, webPageSchema } from '../../utils/json-ld';
 const title = 'Mailcheck <> King Billy Casino';
+const description = 'How Mailcheck helped King Billy Casino improve email verification, deliverability, and player conversion.';
 ---
-<SiteLayout {title} description={title} schemas={[websiteSchema, { ...blogSchema, name: title, description: title }]}>
+<SiteLayout {title} {description} schemas={[websiteSchema, webPageSchema({ url: 'https://mailcheck.co/case-studies/king-billy-4x-deposit-conversion', name: title, description })]}>
   <CaseStudy client:load posts={[]} />
 </SiteLayout>

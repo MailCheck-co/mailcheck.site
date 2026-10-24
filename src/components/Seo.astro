@@ -17,8 +17,8 @@ const {
   title, description = data.description, canonical = '', pathname = Astro.url.pathname,
   noindex = false, isPost = false, thumbnail = '/preview.jpeg', schemas = [websiteSchema]
 } = Astro.props;
-const url = data.siteUrl + pathname;
 const canonicalUrl = new URL(canonical || pathname, data.siteUrl).href;
+const thumbnailUrl = new URL(thumbnail, data.siteUrl).href;
 // Preview URLs carry a signed draft token; never disclose them via Referer to
 // analytics, chat, video or image third parties. Public pages keep the legacy policy.
 const isPreview = Astro.url.searchParams.has('_preview');
@@ -41,20 +41,20 @@ const isPreview = Astro.url.searchParams.has('_preview');
 <meta name="format-detection" content="telephone=no" />
 <meta property="op:markup_version" content="v1.0" />
 <meta property="fb:app_id" content={data.fbAppId} />
-<meta property="og:type" content={isPost ? 'blog' : 'website'} />
-<meta property="og:url" content={url} />
+<meta property="og:type" content={isPost ? 'article' : 'website'} />
+<meta property="og:url" content={canonicalUrl} />
 <meta property="og:title" content={title || data.siteName} />
 <meta property="og:description" content={description || data.description} />
-<meta property="og:image" content={thumbnail} />
+<meta property="og:image" content={thumbnailUrl} />
 <meta property="og:image:alt" content={description || data.description} />
 <meta property="business:contact_data:country_name" content="Ukraine" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content={data.siteName} />
-<meta property="twitter:card" content={data.twitterCard} />
-<meta property="twitter:url" content={url} />
-<meta property="twitter:title" content={title || data.siteName} />
-<meta property="twitter:description" content={description || data.description} />
-<meta property="twitter:image" content={thumbnail} />
-<link rel="preload" href={thumbnail} as="image" />
+<meta name="twitter:card" content={data.twitterCard} />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={title || data.siteName} />
+<meta name="twitter:description" content={description || data.description} />
+<meta name="twitter:image" content={thumbnailUrl} />
+<link rel="preload" href={thumbnailUrl} as="image" />
 <link rel="alternate" type="application/rss+xml" title="RSS Feed for mailcheck.co" href="/rss.xml" />
 {schemas.map((schema) => <script is:inline type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />)}
