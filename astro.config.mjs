@@ -5,6 +5,7 @@ import { cacheCloudflare } from '@astrojs/cloudflare/cache';
 import react from '@astrojs/react';
 import svelte from '@astrojs/svelte';
 import { d1, r2 } from '@emdash-cms/cloudflare';
+import { cloudflareEmail } from '@emdash-cms/cloudflare/plugins';
 import emdash from 'emdash/astro';
 import { legacyImages } from './configs/legacy-images.mjs';
 
@@ -30,6 +31,9 @@ export default defineConfig({
       database: d1({ binding: 'DB' }),
       storage: r2({ binding: 'MEDIA' }),
       plugins: [
+        cloudflareEmail({
+          from: { email: 'contact@mailcheck.co', name: 'Mailcheck CMS' }
+        }),
         {
           // Purges the cached short-link table (src/server/tracking-targets.ts).
           id: 'mailcheck-tracking-targets',
