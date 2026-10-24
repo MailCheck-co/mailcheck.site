@@ -1,9 +1,14 @@
 import type {
-  Thing, WithContext, Organization, WebSite, Blog, Article, BlogPosting, WebPage, FAQPage
+  Thing, WithContext, Organization, WebSite, Blog, Article, BlogPosting, WebPage, FAQPage, BreadcrumbList
 } from 'schema-dts';
 import data from './site-data';
 
 export type Schema = Thing | WithContext<Thing>;
+
+export type BreadcrumbItem = {
+  name: string;
+  url: string;
+};
 
 export function serializeSchema(thing: Schema): string {
   return `<script type="application/ld+json">${JSON.stringify(thing, null, 2)}</script>`;
@@ -101,6 +106,19 @@ export function webPageSchema({
     name,
     description,
     ...(image ? { image } : {})
+  };
+}
+
+export function breadcrumbListSchema(items: BreadcrumbItem[]): WithContext<BreadcrumbList> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem' as const,
+      position: index + 1,
+      name: item.name,
+      item: new URL(item.url, data.siteUrl).href
+    }))
   };
 }
 

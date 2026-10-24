@@ -1,9 +1,9 @@
 ---
-title: FAQ. Frequently Asked Question
+title: Email Verification FAQ
 date: 25.06.2020
 readingTime: 1 min read
 snippet: Frequent Questions
-description: frequently Asked Question about an online email verification service - Mailcheck
+description: Answers about email verification, bulk list cleaning, API usage, integrations, credits, and deliverability with Mailcheck.
 ---
 
 <script>

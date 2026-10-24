@@ -16,6 +16,7 @@
 </script>
 
 <section
+  id="integrations"
   class="integrations"
   class:intersecting
   use:inview={inviewOptions}

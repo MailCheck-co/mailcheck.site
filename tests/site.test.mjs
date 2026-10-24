@@ -88,6 +88,32 @@ describe('Public-site migration regressions', { skip: !base }, () => {
     assert.match(html, /id="burger"[^>]*aria-controls="mobile-menu"[^>]*aria-expanded="false"/);
   });
 
+  it('renders breadcrumbs, BreadcrumbList schema, and related articles on content pages', async () => {
+    const post = await fetchPage('/blog/mailcheck-helped');
+    assert.equal(post.response.status, 200);
+    assert.match(post.html, /aria-label="Breadcrumb"/);
+    assert.match(post.html, /Home/);
+    assert.match(post.html, /Blog/);
+    assert.match(post.html, /"@type":"BreadcrumbList"/);
+    assert.match(post.html, /Related articles/);
+    assert.match(post.html, /href="\/blog\/[a-z0-9-]+"/);
+
+    const integration = await fetchPage('/n8n-integration');
+    assert.equal(integration.response.status, 200);
+    assert.match(integration.html, /aria-label="Breadcrumb"/);
+    assert.match(integration.html, /Integrations/);
+    assert.match(integration.html, /"@type":"BreadcrumbList"/);
+  });
+
+  it('keeps metadata titles brand-safe and fixes duplicate descriptions', async () => {
+    const home = await fetchPage('/');
+    const n8n = await fetchPage('/n8n-integration');
+    const duplicate = await fetchPage('/blog/mailcheck-helped');
+    assert.doesNotMatch(home.html, /<title>[^<]*\| Mailcheck \| Mailcheck<\/title>/);
+    assert.doesNotMatch(n8n.html, /<title>[^<]*\| Mailcheck \| Mailcheck<\/title>/);
+    assert.match(duplicate.html, /553 businesses used smarter email validation/);
+  });
+
   it('preserves legacy heading anchors and page-specific social thumbnails', async () => {
     const guide = await fetchPage('/make-com-integration');
     assert.match(guide.html, /<h1 id="title"><a href="#title">/);

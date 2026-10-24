@@ -5,7 +5,11 @@
 
 <script lang="ts">
   import Seo from '$lib/Seo/index.svelte';
+  import Breadcrumbs from '../../components/Breadcrumbs.svelte';
+  import RelatedArticles from '../../components/RelatedArticles.svelte';
   import { websiteSchema, articleSchema } from '$utils/json-ld';
+  import type { BreadcrumbItem } from '$utils/json-ld';
+  import type { IPost } from '$utils/types';
   import data from '$utils/site-data';
 
   export let title = '';
@@ -14,6 +18,8 @@
   export let noindex = false;
   export let thumbnail = '';
   export let pathname = '';
+  export let breadcrumbs: BreadcrumbItem[] = [];
+  export let relatedPosts: IPost[] = [];
 </script>
 
 <Seo
@@ -28,7 +34,7 @@
     {
       ...articleSchema,
       image: thumbnail,
-       url: data.siteUrl + pathname,
+      url: data.siteUrl + pathname,
       name: title,
       description: description,
       backstory: description,
@@ -40,7 +46,9 @@
 
 <div class="container" id="article">
   <div class="content-block">
+    <Breadcrumbs items={breadcrumbs} />
     <slot />
+    <RelatedArticles posts={relatedPosts} />
   </div>
 </div>
 

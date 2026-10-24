@@ -1,9 +1,9 @@
 ---
-title: N8N Integration
+title: n8n Email Verification Integration
 date: 18.04.2024
 readingTime: 2 min read
 snippet: Guide on how to integrate Mailcheck using N8N
-description: Guide on how to integrate Mailcheck using N8N
+description: Connect Mailcheck with n8n to validate email addresses, reduce bounces, and automate list-cleaning workflows.
 ---
 
 # **{title}**

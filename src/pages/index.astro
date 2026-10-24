@@ -8,6 +8,10 @@ const list = await GET();
 const data = (await list.json()) as Array<{ id: string; title: string; desc: string; date: string }>;
 const selectedVideos = [data[0], data[1]].filter(Boolean);
 ---
-<SiteLayout title="Online email verification tool. Bulk check and cleaning" schemas={[websiteSchema, organizationSchema]}>
+<SiteLayout
+  title="Email Verification & Validation Tool"
+  description="Verify email addresses in bulk or through an API, reduce bounces, and keep your marketing lists clean with Mailcheck."
+  schemas={[websiteSchema, organizationSchema]}
+>
   <Home client:load videos={selectedVideos} />
 </SiteLayout>

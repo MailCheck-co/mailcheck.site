@@ -1,5 +1,6 @@
 import slugFromBlogPath from '$utils/slugFromBlogPath';
 import { getCmsPosts, usesCms } from '../../server/cms-content';
+import type { IPost } from '$utils/types';
 
 export const BLOG_PAGE_SIZE = 10;
 
@@ -37,4 +38,51 @@ export function paginatePosts<T>(posts: T[], page: number) {
     posts: posts.slice(start, start + BLOG_PAGE_SIZE),
     totalPages
   };
+}
+
+const stopWords = new Set([
+  'about',
+  'after',
+  'and',
+  'for',
+  'from',
+  'how',
+  'the',
+  'this',
+  'what',
+  'with',
+  'your'
+]);
+
+function keywords(value: string) {
+  return new Set(
+    value
+      .toLowerCase()
+      .match(/[a-z0-9]+/g)
+      ?.filter((word) => word.length > 3 && !stopWords.has(word)) ?? []
+  );
+}
+
+export function getRelatedPosts(posts: IPost[], currentSlug: string, limit = 3) {
+  const current = posts.find((post) => post.slug === currentSlug);
+  if (!current) return posts.slice(0, limit);
+  const currentKeywords = keywords(
+    [current.title, current.description ?? '', current.snippet].join(' ')
+  );
+
+  return posts
+    .filter((post) => post.slug !== currentSlug)
+    .map((post, index) => {
+      const candidateKeywords = keywords(
+        [post.title, post.description ?? '', post.snippet].join(' ')
+      );
+      const score = [...candidateKeywords].reduce(
+        (total, word) => total + (currentKeywords.has(word) ? 1 : 0),
+        0
+      );
+      return { post, index, score };
+    })
+    .sort((a, b) => b.score - a.score || a.index - b.index)
+    .slice(0, limit)
+    .map(({ post }) => post);
 }

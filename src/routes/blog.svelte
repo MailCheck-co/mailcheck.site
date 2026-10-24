@@ -3,6 +3,7 @@
 
 <script lang="ts">
   import ContactUs from '$lib/ContactUs/index.svelte';
+  import Breadcrumbs from '../components/Breadcrumbs.svelte';
   import Seo from '$lib/Seo/index.svelte';
   import { websiteSchema, blogSchema } from '$utils/json-ld';
   import type { IPost } from '$utils/types';
@@ -21,6 +22,15 @@
 <main class="blog-page" id="blog">
   <div class="container">
     <div class="content-block">
+      <Breadcrumbs
+        items={[
+          { name: 'Home', url: '/' },
+          {
+            name: page === 1 ? 'Blog' : `Blog page ${page}`,
+            url: page === 1 ? '/blog' : `/blog/${page}`
+          }
+        ]}
+      />
       <h1 class="title">{pageTitle}</h1>
 
       {#each posts as post (post.slug)}
