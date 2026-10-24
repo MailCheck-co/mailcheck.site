@@ -49,7 +49,7 @@ test(
         assert.equal(response.status, 200);
         assert.equal(html.includes(slug), visible, `${path}: fixture visibility`);
         assert.ok(!html.includes('PRIVATE-PENDING-TEXT'), `${path}: no pending draft leak`);
-        assert.ok(!html.includes('ARCHIVAL-BACKUP-TEXT'), `${path}: no source backup leak`);
+        assert.ok(!html.includes('PRIVATE-METADATA-TEXT'), `${path}: no private metadata leak`);
       }
     };
     try {
@@ -61,8 +61,8 @@ test(
         title: 'CMS lifecycle public title',
         markdown: 'Public article text.\n\n## Public heading',
         snippet: 'Public snippet',
-        legacy_path: `/blog/${slug}`,
-        source_document: 'ARCHIVAL-BACKUP-TEXT'
+        source_path: 'src/routes/blog/cms-lifecycle/index.md',
+        legacy_metadata: { private: 'PRIVATE-METADATA-TEXT' }
       };
       const created = unwrap(
         await handleContentCreate(db, 'posts', { slug, status: 'draft', locale: 'en', data })

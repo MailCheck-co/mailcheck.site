@@ -189,9 +189,9 @@ comparison baseline.
    delivery no longer creates separate editorial entries. Local lifecycle checks cover
    draft/preview/publish/pending edit/unpublish and sitemap noindex; public tests
    pass 20/20. Owner registration remains intact. Fresh owner sign-in, recovery
-   and an owner-driven edit/preview/publish still need acceptance. Creating new
-   entries needs an archival-field schema migration; editing existing entries
-   works. Home/video/promo/case-study components remain code-managed. See
+   and an owner-driven edit/preview/publish still need acceptance. The archival
+   CMS fields have been removed from staging; creating new entries still requires
+   a repository source path for legacy relative image resolution. Home/video/promo/case-study components remain code-managed. See
    `docs/cms-editorial-workflow.md` for recovery points, limitations and the
    origin-bound passkey warning. Secrets are not needed for this CMS work.
 3. **Visual review is still required**, particularly mobile navigation, sliders,

@@ -1,13 +1,10 @@
-import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
-import { dirname, posix, resolve } from 'node:path';
+import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateSeed } from 'emdash/seed';
 import { trackingTargetsCollection } from '../configs/tracking-targets-collection.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const sha256 = (text) => createHash('sha256').update(text).digest('hex');
-
 export function parseLegacyDocument(raw, sourcePath) {
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   if (!match) throw new Error(`Missing frontmatter: ${sourcePath}`);
@@ -37,21 +34,11 @@ const fields = [
   { slug: 'snippet', label: 'Snippet', type: 'text' },
   { slug: 'legacy_date', label: 'Original date (DD.MM.YYYY)', type: 'string' },
   { slug: 'reading_time', label: 'Reading time', type: 'string' },
-  { slug: 'legacy_path', label: 'Original URL path', type: 'string', required: true, unique: true },
-  { slug: 'legacy_published', label: 'Published in legacy site', type: 'boolean' },
   { slug: 'noindex', label: 'Exclude from search engines', type: 'boolean' },
   { slug: 'canonical', label: 'Canonical override', type: 'string' },
   { slug: 'thumbnail_source', label: 'Original relative thumbnail reference', type: 'string' },
   { slug: 'source_path', label: 'Repository source', type: 'string', required: true },
-  { slug: 'source_sha256', label: 'Original document SHA-256', type: 'string', required: true },
-  {
-    slug: 'source_document',
-    label: 'Original document including frontmatter (backup)',
-    type: 'text',
-    required: true
-  },
-  { slug: 'legacy_metadata', label: 'Original typed frontmatter', type: 'json' },
-  { slug: 'asset_sources', label: 'Repository image references (not yet R2 media)', type: 'json' }
+  { slug: 'legacy_metadata', label: 'Original typed frontmatter', type: 'json' }
 ];
 
 export async function createCmsSeed(projectRoot = root) {
@@ -68,27 +55,6 @@ export async function createCmsSeed(projectRoot = root) {
     const route = `/${path.replace(/\/index\.md$/, '')}`;
     const slug = isPost ? route.slice('/blog/'.length) : route.slice(1);
     const collection = isPost ? 'posts' : 'pages';
-    const references = [...body.matchAll(/!\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g)].map(
-      (match) => match[1]
-    );
-    if (metadata.thumbnailImg) references.push(metadata.thumbnailImg);
-    const assetSources = [];
-    for (const reference of [...new Set(references)].sort()) {
-      if (/^(?:https?:|data:|\/)/.test(reference)) continue;
-      const assetPath = posix.normalize(
-        posix.join(posix.dirname(sourcePath), reference.split('?')[0])
-      );
-      if (!assetPath.startsWith('src/routes/'))
-        throw new Error(`Asset escapes routes: ${sourcePath}`);
-      try {
-        const bytes = await readFile(resolve(projectRoot, assetPath));
-        assetSources.push({ reference, source_path: assetPath, sha256: sha256(bytes) });
-      } catch (error) {
-        if (error.code !== 'ENOENT') throw error;
-        // Preserve broken legacy references for review; do not fabricate files.
-        assetSources.push({ reference, source_path: assetPath, missing: true });
-      }
-    }
     content[collection].push({
       id: `${collection}:${slug}`,
       slug,
@@ -100,16 +66,11 @@ export async function createCmsSeed(projectRoot = root) {
         snippet: metadata.snippet ?? '',
         legacy_date: metadata.date ?? '',
         reading_time: metadata.readingTime ?? '',
-        legacy_path: route,
-        legacy_published: metadata.published === true,
         noindex: metadata.noindex === true,
         canonical: metadata.canonical ?? '',
         thumbnail_source: metadata.thumbnailImg ?? '',
         source_path: sourcePath,
-        source_sha256: sha256(raw),
-        source_document: raw,
-        legacy_metadata: metadata,
-        asset_sources: assetSources
+        legacy_metadata: metadata
       }
     });
   }
@@ -119,7 +80,7 @@ export async function createCmsSeed(projectRoot = root) {
     meta: {
       name: 'Mailcheck content',
       description:
-        'Lossless draft archive: 50 blog posts and 15 Markdown pages. Public rendering and R2 media migration are not enabled.'
+        'Markdown draft archive: 50 blog posts and 15 Markdown pages. Public rendering and R2 media migration are not enabled.'
     },
     settings: { title: 'Mailcheck', tagline: 'Email verification and list cleaning' },
     collections: [

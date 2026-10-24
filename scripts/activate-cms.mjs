@@ -218,7 +218,7 @@ try {
         label: post ? 'Blog posts' : 'Pages',
         labelSingular: post ? 'Blog post' : 'Page',
         description:
-          'Public content. Edit Markdown, preview, then publish. Original source fields are migration backups, not editable content.',
+          'Public content. Edit Markdown, preview, then publish. Repository source and original frontmatter fields support legacy media and metadata.',
         routable: true,
         urlPattern: post ? '/blog/{slug}' : '/{slug}',
         hasSeo: true,
@@ -232,12 +232,8 @@ try {
       await registry.updateField(collection.slug, 'thumbnail_source', {
         label: 'Thumbnail URL or original relative reference'
       });
-      await registry.updateField(collection.slug, 'asset_sources', {
-        label: 'Original asset references (migration backup)'
-      });
-      // Archive fields have NOT NULL constraints. Relaxing them requires a
-      // separate table/schema migration; this switch enables existing-entry
-      // editing, not an untested new-entry workflow.
+      // `source_path` remains required because legacy relative image references
+      // still resolve against the repository route directory.
     }
     for (const { collection, item, expected } of plan) {
       const current = await handleContentGet(db, collection, item.id, 'en');
