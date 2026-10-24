@@ -67,7 +67,7 @@
             </div>
           </div>
         </div>
-        <a class="nav-link footer-nav-link" aria-label="blog" href="/#blog">Blog</a>
+        <a class="nav-link footer-nav-link" aria-label="blog" href="/blog">Blog</a>
         <a
           class="nav-link footer-nav-link"
           href="/l/docs#tag--email"
