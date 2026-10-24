@@ -7,7 +7,7 @@ import Blog from '../routes/blog.svelte';
 import Video from '../lib/Video/video.svelte';
 import { marked, Renderer } from 'marked';
 import GithubSlugger from 'github-slugger';
-import { websiteSchema, blogSchema, webPageSchema, blogPostingSchema, faqPageSchema, breadcrumbListSchema } from '../utils/json-ld';
+import { websiteSchema, blogSchema, webPageSchema, blogPostingSchema, faqPageSchema, breadcrumbListSchema, videoObjectSchema } from '../utils/json-ld';
 import NotFound from '../routes/404.svelte';
 import { getCmsDocument, usesCms } from '../server/cms-content';
 import { sanitizeMarkdown } from '../server/markdown-security';
@@ -19,7 +19,7 @@ import type { IPost } from '$utils/types';
 
 const slug = Astro.params.slug ?? '';
 if (slug === 'blog/1') return Astro.redirect('/blog', 301);
-const blogPageNumber = Number(slug.match(/^blog\/([2-9]\d*)$/)?.[1] ?? NaN);
+const blogPageNumber = Number(slug.match(/^blog\/([1-9]\d*)$/)?.[1] ?? NaN);
 const blogPageData = Number.isInteger(blogPageNumber)
   ? paginatePosts((await getPublishedPosts()) as IPost[], blogPageNumber)
   : null;
@@ -154,10 +154,20 @@ const pageTitle = isBlogArchive ? archiveTitle : metadata.title || 'Page not fou
 const pageDescription = isBlogArchive ? archiveDescription : description;
 const archiveCanonical = isBlogArchive ? `/blog/${blogPageNumber}` : '';
 const thumbnailPath = metadata.thumbnailImg?.split('?')[0].replace(/^\.\//, '');
-const thumbnail = /^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg ?? '') ? metadata.thumbnailImg : assetSource[`${entryDirectory}/${thumbnailPath}`] || 'https://mailcheck.co/favicon.png';
+const thumbnailAsset = assetSource[`${entryDirectory}/${thumbnailPath}`];
+const hasThumbnail = Boolean(metadata.thumbnailImg && (/^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg) || thumbnailAsset));
+const thumbnail = hasThumbnail ? (/^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg) ? metadata.thumbnailImg : thumbnailAsset) : '/preview.jpeg';
 const pageUrl = new URL(archiveCanonical || metadata.canonical || Astro.url.pathname, data.siteUrl).href;
 const thumbnailUrl = new URL(thumbnail, data.siteUrl).href;
 const breadcrumbSchema = breadcrumbs.length ? breadcrumbListSchema(breadcrumbs) : null;
+const videoSchemas = segments.filter((segment): segment is Extract<ContentSegment, { kind: 'video' }> => segment.kind === 'video')
+  .map((video) => videoObjectSchema({
+    id: video.id,
+    title: video.title,
+    description: pageDescription,
+    date: metadata.date,
+    pageUrl
+  }));
 const cleanText = (value: string) => value
   .replace(/<script[\s\S]*?<\/script>/gi, '')
   .replace(/<Video[^>]*\/>/gi, '')
@@ -175,14 +185,15 @@ const schemas = isBlogArchive
   : !entry
     ? [websiteSchema]
     : isFaq
-      ? [websiteSchema, faqPageSchema(pageUrl, faqQuestions)]
-      : isPost
-        ? [
-            blogPostingSchema({ url: pageUrl, title: metadata.title, description, image: thumbnail === 'https://mailcheck.co/favicon.png' ? undefined : thumbnailUrl, date: metadata.date }),
-            websiteSchema,
-            ...(breadcrumbSchema ? [breadcrumbSchema] : [])
-          ]
-        : [websiteSchema, webPageSchema({ url: pageUrl, name: metadata.title, description, image: thumbnailUrl }), ...(breadcrumbSchema ? [breadcrumbSchema] : [])];
+       ? [websiteSchema, faqPageSchema(pageUrl, faqQuestions), ...videoSchemas]
+       : isPost
+         ? [
+             blogPostingSchema({ url: pageUrl, title: metadata.title, description, image: hasThumbnail ? thumbnailUrl : undefined, date: metadata.date }),
+             websiteSchema,
+             ...(breadcrumbSchema ? [breadcrumbSchema] : []),
+             ...videoSchemas
+           ]
+         : [websiteSchema, webPageSchema({ url: pageUrl, name: metadata.title, description, image: thumbnailUrl }), ...(breadcrumbSchema ? [breadcrumbSchema] : []), ...videoSchemas];
 ---
 <SiteLayout title={pageTitle} description={pageDescription} canonical={isBlogArchive ? archiveCanonical : entry ? metadata.canonical : '/'}
   pathname={isBlogArchive || entry ? Astro.url.pathname : '/404'} noindex={!entry && !isBlogArchive || !!cms?.isPreview || metadata.noindex === 'true'} {isPost}

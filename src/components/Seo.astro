@@ -55,6 +55,5 @@ const isPreview = Astro.url.searchParams.has('_preview');
 <meta name="twitter:title" content={title || data.siteName} />
 <meta name="twitter:description" content={description || data.description} />
 <meta name="twitter:image" content={thumbnailUrl} />
-<link rel="preload" href={thumbnailUrl} as="image" />
 <link rel="alternate" type="application/rss+xml" title="RSS Feed for mailcheck.co" href="/rss.xml" />
 {schemas.map((schema) => <script is:inline type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />)}

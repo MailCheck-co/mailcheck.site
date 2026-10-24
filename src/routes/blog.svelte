@@ -23,23 +23,31 @@
   <div class="container">
     <div class="content-block">
       <Breadcrumbs
-        items={[
-          { name: 'Home', url: '/' },
-          {
-            name: page === 1 ? 'Blog' : `Blog page ${page}`,
-            url: page === 1 ? '/blog' : `/blog/${page}`
-          }
-        ]}
+        items={page === 1
+          ? [
+              { name: 'Home', url: '/' },
+              { name: 'Blog', url: '/blog' }
+            ]
+          : [
+              { name: 'Home', url: '/' },
+              { name: 'Blog', url: '/blog' },
+              { name: `Page ${page}`, url: `/blog/${page}` }
+            ]}
       />
       <h1 class="title">{pageTitle}</h1>
 
       {#each posts as post (post.slug)}
-        <a class="article-title" href="/blog/{post.slug}">{post.title}</a>
+        <h2 class="article-title">
+          <a class="article-title-link" href="/blog/{post.slug}">{post.title}</a>
+        </h2>
         <p class="article-date">Date: {post.date}</p>
         <p class="article-snippet">
           {post.snippet}
-          <a sveltekit:prefetch class="text-thin text-thin-link" href="/blog/{post.slug}"
-            >[Read more...]</a
+          <a
+            sveltekit:prefetch
+            class="text-thin text-thin-link"
+            href="/blog/{post.slug}"
+            aria-label={`Read more about ${post.title}`}>[Read more...]</a
           >
         </p>
       {/each}
@@ -47,7 +55,9 @@
       {#if totalPages > 1}
         <nav class="pagination" aria-label="Blog pagination">
           {#if page > 1}
-            <a class="pagination-link" href={page === 2 ? '/blog' : `/blog/${page - 1}`} rel="prev">← Newer posts</a>
+            <a class="pagination-link" href={page === 2 ? '/blog' : `/blog/${page - 1}`} rel="prev"
+              >← Newer posts</a
+            >
           {/if}
           <div class="pagination-pages">
             {#each Array(totalPages) as _, index}
@@ -55,7 +65,9 @@
               {#if pageNumber === page}
                 <span class="pagination-current" aria-current="page">{pageNumber}</span>
               {:else}
-                <a class="pagination-link" href={pageNumber === 1 ? '/blog' : `/blog/${pageNumber}`}>{pageNumber}</a>
+                <a class="pagination-link" href={pageNumber === 1 ? '/blog' : `/blog/${pageNumber}`}
+                  >{pageNumber}</a
+                >
               {/if}
             {/each}
           </div>
@@ -123,6 +135,11 @@
             text-align: left;
             text-transform: uppercase;
             text-decoration: none;
+
+            &-link {
+              color: inherit;
+              text-decoration: inherit;
+            }
 
             &:hover {
               color: var(--primary-white);

@@ -16,7 +16,7 @@ export default defineConfig({
   redirects: {
     '/scholarship': '/blog/mailcheck-scholarship-2019',
     '/make-integration': '/make-com-integration',
-    '/increaseEmailsDeliverability': '/blog/x-ways-increase-emails-deliverability'
+    '/increaseEmailsDeliverability': '/blog/x-ways-to-increase-email-deliverability'
   },
   publicDir: './static',
   adapter: cloudflare(),

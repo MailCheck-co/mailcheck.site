@@ -156,7 +156,7 @@ export function videoObjectSchema({
     '@id': `${embedUrl}#video`,
     name: title,
     description,
-    thumbnailUrl: `https://i.ytimg.com/vi/${encodeURIComponent(id)}/maxresdefault.jpg`,
+    thumbnailUrl: `https://i.ytimg.com/vi/${encodeURIComponent(id)}/hqdefault.jpg`,
     embedUrl,
     url: pageUrl,
     ...(isoDate ? { uploadDate: isoDate } : {}),
@@ -218,7 +218,7 @@ export function faqPageSchema(
 export const organizationSchema: WithContext<Organization> = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  '@id': data.siteUrl,
+  '@id': `${data.siteUrl}#organization`,
   url: data.siteUrl,
   name: data.siteName,
   legalName: data.siteName,
@@ -229,7 +229,7 @@ export const organizationSchema: WithContext<Organization> = {
     email: data.email,
     contactType: 'customer service'
   },
-  sameAs: [data.siteUrl, data.twitter, data.facebook, data.linkedin, data.github],
+  sameAs: [data.twitter, data.facebook, data.linkedin, data.github],
   logo: {
     '@type': 'ImageObject',
     name: 'Mailcheck Logo',

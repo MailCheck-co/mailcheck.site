@@ -4,7 +4,7 @@ title: 5 Marketing Tasks You Must Automate ASAP
 date: 13.10.2022
 readingTime: 4 min read
 snippet: Marketing automation is on the rise like never before. It involves using different tools to automate repetitive marketing tasks like tracking customer engagement, sending welcome emails, new product launch emails and so on. If you are an emerging marketer looking to optimize your marketing operations, here is an undeniable list of tasks that you need to automate.
-description: Some ideas that help you to build an effective email marketing strategy and get a high response from your mail list.
+description: Discover five marketing tasks to automate, from email and social campaigns to analytics, split testing, and marketing funnels.
 thumbnailImg: ./marketing-tasks-email.jpg?format=jpg&width=880
 ---
 

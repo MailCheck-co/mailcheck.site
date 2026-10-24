@@ -1,5 +1,6 @@
 import { getPublishedPosts } from './blog/_blog';
 import { escapeXml } from '../server/cms-document';
+import { toIsoDate } from '../utils/json-ld';
 export const GET = async () => {
   const maxAge = 600;
   const posts = await getPublishedPosts();
@@ -13,11 +14,13 @@ export const GET = async () => {
     ${posts
       .map(
         (post) => `<item>
-          <guid>https://mailcheck.co/blog/${post.slug}</guid>
-          <title>${escapeXml(post.title)}</title>
-          <link>https://mailcheck.co/blog/${post.slug}</link>
-          <pubDate>${escapeXml(post.date)}</pubDate>
-          <description>${escapeXml(post.description)}</description>
+           <guid>https://mailcheck.co/blog/${post.slug}</guid>
+           <title>${escapeXml(post.title)}</title>
+           <link>https://mailcheck.co/blog/${post.slug}</link>
+           <pubDate>${escapeXml(
+             new Date(`${toIsoDate(String(post.date)) ?? '1970-01-01'}T00:00:00Z`).toUTCString()
+           )}</pubDate>
+           <description>${escapeXml(post.description)}</description>
           </item>`
       )
       .join('')}
@@ -25,7 +28,7 @@ export const GET = async () => {
 </rss>
 `;
   const headers = {
-    'Cache-Control': `max-age=0, s-max-age=${maxAge}`,
+    'Cache-Control': `max-age=0, s-maxage=${maxAge}`,
     'Content-Type': 'application/xml'
   };
   return new Response(body, { headers });
