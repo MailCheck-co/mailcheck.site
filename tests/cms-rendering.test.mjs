@@ -35,6 +35,7 @@ test('new CMS documents support absolute uploaded media and dedicated SEO fields
 
 test('blog sorting is chronological and RSS fields are XML-safe', () => {
   assert.deepEqual(sortPosts([{slug:'old',date:'31.12.2019'}, {slug:'recent',date:'01.01.2020'}]).map(p=>p.slug), ['recent','old']);
+  assert.deepEqual(sortPosts([{slug:'old',date:'2023-12-31'}, {slug:'recent',date:'2024-01-01'}]).map(p=>p.slug), ['recent','old']);
   assert.equal(escapeXml('A & B < C "D"'), 'A &amp; B &lt; C &quot;D&quot;');
 });
 

@@ -1,5 +1,6 @@
 import { getPublishedPosts } from './blog/_blog';
 import { escapeXml } from '../server/cms-document';
+import { toIsoDate } from '../utils/json-ld';
 export const GET = async () => {
   const maxAge = 600;
   const posts = await getPublishedPosts();
@@ -11,21 +12,24 @@ export const GET = async () => {
     <link>https://mailcheck.co/</link>
     <description>An application to clean your subscription list from bounces, and enrich data with customers. Verify your real customers in one way</description>
     ${posts
-      .map(
-        (post) => `<item>
-          <guid>https://mailcheck.co/blog/${post.slug}</guid>
-          <title>${escapeXml(post.title)}</title>
-          <link>https://mailcheck.co/blog/${post.slug}</link>
-          <pubDate>${escapeXml(post.date)}</pubDate>
-          <description>${escapeXml(post.description)}</description>
-          </item>`
-      )
+      .map((post) => {
+        const isoDate = toIsoDate(String(post.date));
+        const parsedDate = isoDate ? new Date(`${isoDate}T00:00:00Z`) : new Date(0);
+        const pubDate = Number.isNaN(parsedDate.getTime()) ? new Date(0) : parsedDate;
+        return `<item>
+           <guid>https://mailcheck.co/blog/${post.slug}</guid>
+           <title>${escapeXml(post.title)}</title>
+           <link>https://mailcheck.co/blog/${post.slug}</link>
+           <pubDate>${escapeXml(pubDate.toUTCString())}</pubDate>
+           <description>${escapeXml(post.description)}</description>
+          </item>`;
+      })
       .join('')}
   </channel>
 </rss>
 `;
   const headers = {
-    'Cache-Control': `max-age=0, s-max-age=${maxAge}`,
+    'Cache-Control': `max-age=0, s-maxage=${maxAge}`,
     'Content-Type': 'application/xml'
   };
   return new Response(body, { headers });

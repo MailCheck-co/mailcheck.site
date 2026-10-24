@@ -32,6 +32,7 @@ jobs:
           node-version: 22.22
           cache: npm
       - run: npm ci
+      - run: npx astro sync
       - run: npx tsc --noEmit
       - run: npm test
       - name: Build (staging config)

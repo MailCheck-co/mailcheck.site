@@ -16,7 +16,7 @@ export default defineConfig({
   redirects: {
     '/scholarship': '/blog/mailcheck-scholarship-2019',
     '/make-integration': '/make-com-integration',
-    '/increaseEmailsDeliverability': '/blog/x-ways-increase-emails-deliverability'
+    '/increaseEmailsDeliverability': '/blog/x-ways-to-increase-email-deliverability'
   },
   publicDir: './static',
   adapter: cloudflare(),
@@ -40,13 +40,16 @@ export default defineConfig({
           id: 'mailcheck-tracking-targets',
           version: '1.0.0',
           format: 'native',
-          entrypoint: fileURLToPath(new URL('./src/cms/tracking-targets-plugin.ts', import.meta.url))
+          entrypoint: fileURLToPath(
+            new URL('./src/cms/tracking-targets-plugin.ts', import.meta.url)
+          )
         }
       ]
     })
   ],
   vite: {
     plugins: [legacyImages()],
+    build: { assetsInlineLimit: 0 },
     resolve: {
       alias: {
         $lib: fileURLToPath(new URL('./src/lib', import.meta.url)),

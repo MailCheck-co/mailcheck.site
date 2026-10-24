@@ -14,7 +14,7 @@ export async function getCmsDocument(route: string) {
   const result = await getEmDashEntry(isPost ? 'posts' : 'pages', slug);
   if (result.error) throw new Error('CMS content is temporarily unavailable');
   return {
-    document: result.entry ? cmsDocument(result.entry.data, isPost) : null,
+    document: result.entry ? cmsDocument(result.entry.data as unknown as Record<string, unknown>, isPost) : null,
     isPreview: result.isPreview
   };
 }

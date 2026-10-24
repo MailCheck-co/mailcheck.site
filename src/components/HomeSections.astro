@@ -1,0 +1,108 @@
+---
+import EmailsVerify from '../lib/EmailsVerify/index.svelte';
+import Partners from '../lib/Partners/index.svelte';
+import Features from '../lib/Features/index.svelte';
+import Choose from '../lib/Choose/index.svelte';
+import Pricing from '../lib/Pricing/index.svelte';
+import Reviews from '../lib/Reviews/index.svelte';
+import Integrations from '../lib/Integrations/index.svelte';
+import Team from '../lib/Team/index.svelte';
+import Testimonials from '../lib/Testimonials/index.svelte';
+import Faq from '../lib/Faq/index.svelte';
+import ContactUs from '../lib/ContactUs/index.svelte';
+import Cta from '../lib/Cta/index.svelte';
+import Affiliate from '../lib/Affiliate/index.svelte';
+import Videos from '../lib/Video/videos.svelte';
+
+interface Props {
+  videos: { id: string; title: string; desc: string; date: string }[];
+}
+
+const { videos } = Astro.props;
+---
+
+<main class="manage-customers" id="main">
+  <EmailsVerify client:load />
+  <Partners client:visible />
+  <Features client:visible />
+  <Choose client:visible />
+  <Pricing client:visible />
+  <Reviews client:visible />
+  <Integrations client:visible />
+  <Team client:visible />
+  <Testimonials client:visible />
+  <Videos client:visible {videos} />
+  <Affiliate client:visible />
+  <Faq client:visible />
+  <ContactUs client:visible />
+  <Cta client:visible />
+</main>
+
+<style lang="scss">
+  .manage-customers {
+    position: relative;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 45.625rem;
+      background: url('../routes/lines.svg') no-repeat center;
+      background-size: 100% 66%, 40.875rem 46.25rem;
+      content: '';
+      pointer-events: none;
+    }
+
+    &::after {
+      transform: scaleX(-1);
+    }
+  }
+
+  @media only screen and (min-width: 1920px) {
+    .manage-customers::before {
+      background-position: 0 35%, 70.9375rem 0;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .manage-customers::before {
+      background-position: 0 35%, 48.75rem calc(#{var(--size-20)} * -1);
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .manage-customers::before {
+      background-position: 0 35%, 44.6875rem -0.9375rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .manage-customers::before {
+      margin-top: -6.25rem;
+      padding-top: 6.25rem;
+      background-position: top 35% left 30%;
+      background-size: auto;
+    }
+
+    .manage-customers::after {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .manage-customers::before {
+      background-position: center left 35%;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .manage-customers::before {
+      background-position: 6.25rem -3.5rem;
+      background-size: 0, 40.875rem 46.25rem;
+    }
+  }
+</style>

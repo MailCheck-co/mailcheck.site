@@ -1,9 +1,9 @@
 ---
-title: Make.com Integration Guide
+title: Make.com Email Verification Integration
 date: 06.08.2022
 readingTime: 5 min read
 snippet: Guide on how to integrate Mailcheck using Make.com
-description: A step-by-step guide on how to integrate Mailcheck using Make.com
+description: Connect Mailcheck with Make.com to verify email addresses, clean lists, and automate deliverability workflows.
 ---
 
 # **{title}**

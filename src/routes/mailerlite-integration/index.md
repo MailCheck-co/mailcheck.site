@@ -1,9 +1,9 @@
 ---
-title: MailerLite Integration Guide
+title: MailerLite Email Verification Integration
 date: 20.05.2022
 readingTime: 2 min read
 snippet: Guide on how to integrate Mailcheck using Mailerlite
-description: Guide on how to integrate Mailcheck using Mailerlite
+description: Connect Mailcheck with MailerLite to validate subscribers, reduce bounces, and keep email campaigns healthy.
 ---
 
 # **{title}**

@@ -3,17 +3,27 @@ import SiteLayout from '../components/SiteLayout.astro';
 import ArticleLayout from '../lib/MdLayouts/ArticleLayout.svelte';
 import FaqLayout from '../lib/MdLayouts/FaqLayout/FaqLayout.svelte';
 import ContactUs from '../lib/ContactUs/index.svelte';
+import Blog from '../routes/blog.svelte';
 import Video from '../lib/Video/video.svelte';
 import { marked, Renderer } from 'marked';
 import GithubSlugger from 'github-slugger';
-import { websiteSchema, articleSchema } from '../utils/json-ld';
+import { websiteSchema, blogSchema, webPageSchema, blogPostingSchema, faqPageSchema, breadcrumbListSchema, videoObjectSchema } from '../utils/json-ld';
 import NotFound from '../routes/404.svelte';
 import { getCmsDocument, usesCms } from '../server/cms-content';
 import { sanitizeMarkdown } from '../server/markdown-security';
 import mediaManifest from '../../seed/media.json';
 import { imageUrl } from '../server/media-images';
+import data from '../utils/site-data';
+import { getPublishedPosts, getRelatedPosts, paginatePosts } from '../routes/blog/_blog';
+import type { IPost } from '$utils/types';
 
 const slug = Astro.params.slug ?? '';
+if (slug === 'blog/1') return Astro.redirect('/blog', 301);
+const blogPageNumber = Number(slug.match(/^blog\/([1-9]\d*)$/)?.[1] ?? NaN);
+const blogPageData = Number.isInteger(blogPageNumber)
+  ? paginatePosts((await getPublishedPosts()) as IPost[], blogPageNumber)
+  : null;
+const isBlogArchive = !!blogPageData && blogPageNumber <= blogPageData.totalPages;
 const source = import.meta.glob('../routes/**/*.md', { eager: true, query: '?raw', import: 'default' });
 const assetSource = import.meta.glob('../routes/**/*.{png,jpg,jpeg,webp,gif,svg}', {
   eager: true,
@@ -30,9 +40,9 @@ const legacyEntry = Object.entries(source).find(([path]) => {
   return normalized === slug;
 });
 
-const cms = usesCms() ? await getCmsDocument(slug) : null;
-const entry = cms ? cms.document : legacyEntry;
-if (!entry) Astro.response.status = 404;
+const cms = isBlogArchive ? null : usesCms() ? await getCmsDocument(slug) : null;
+const entry = isBlogArchive ? null : cms ? cms.document : legacyEntry;
+if (!entry && !isBlogArchive) Astro.response.status = 404;
 if (cms?.isPreview) {
   Astro.response.headers.set('Cache-Control', 'private, no-store');
   Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
@@ -115,20 +125,88 @@ if (remainingMarkdown.trim()) {
   });
 }
 const isFaq = slug === 'faq';
-const description = !entry ? 'Page not found: 404' : isFaq ? metadata.title : metadata.description;
+const isPost = !!entry && slug.startsWith('blog/');
+const isIntegration = !!entry && slug.endsWith('-integration');
+const relatedPosts = isPost ? getRelatedPosts((await getPublishedPosts()) as IPost[], slug.slice('blog/'.length)) : [];
+const breadcrumbs = isPost
+  ? [
+      { name: 'Home', url: '/' },
+      { name: 'Blog', url: '/blog' },
+      { name: metadata.title, url: Astro.url.pathname }
+    ]
+  : isBlogArchive
+    ? [
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: `Page ${blogPageNumber}`, url: Astro.url.pathname }
+      ]
+    : isIntegration
+      ? [
+          { name: 'Home', url: '/' },
+          { name: 'Integrations', url: '/#integrations' },
+          { name: metadata.title, url: Astro.url.pathname }
+        ]
+      : [];
+const description = !entry ? 'Page not found: 404' : metadata.description;
+const archiveTitle = `Blog about effective email checking & communication — page ${blogPageNumber}`;
+const archiveDescription = 'Older Mailcheck articles about email checking, deliverability, marketing, and effective communication.';
+const pageTitle = isBlogArchive ? archiveTitle : metadata.title || 'Page not found';
+const pageDescription = isBlogArchive ? archiveDescription : description;
+const archiveCanonical = isBlogArchive ? `/blog/${blogPageNumber}` : '';
 const thumbnailPath = metadata.thumbnailImg?.split('?')[0].replace(/^\.\//, '');
-const thumbnail = /^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg ?? '') ? metadata.thumbnailImg : assetSource[`${entryDirectory}/${thumbnailPath}`] || 'https://mailcheck.co/favicon.png';
-const schemas = isFaq || !entry ? [websiteSchema] : [
-  { ...articleSchema, image: thumbnail === 'https://mailcheck.co/favicon.png' ? '' : thumbnail, url: `https://mailcheck.co/${slug}`,
-    name: metadata.title, description, backstory: description, headline: metadata.title },
-  websiteSchema
-];
+const thumbnailAsset = assetSource[`${entryDirectory}/${thumbnailPath}`];
+const thumbnailIsSvg = /\.svg$/i.test(thumbnailPath ?? '');
+const hasThumbnail = Boolean(!thumbnailIsSvg && metadata.thumbnailImg && (/^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg) || thumbnailAsset));
+const thumbnail = hasThumbnail ? (/^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg) ? metadata.thumbnailImg : thumbnailAsset) : '/preview.jpeg';
+const pageUrl = new URL(archiveCanonical || metadata.canonical || Astro.url.pathname, data.siteUrl).href;
+const thumbnailUrl = new URL(thumbnail, data.siteUrl).href;
+const breadcrumbSchema = breadcrumbs.length ? breadcrumbListSchema(breadcrumbs) : null;
+const videoSchemas = segments.filter((segment): segment is Extract<ContentSegment, { kind: 'video' }> => segment.kind === 'video')
+  .map((video) => videoObjectSchema({
+    id: video.id,
+    title: video.title,
+    description: pageDescription,
+    date: metadata.date,
+    pageUrl
+  }));
+const cleanText = (value: string) => value
+  .replace(/<script[\s\S]*?<\/script>/gi, '')
+  .replace(/<Video[^>]*\/>/gi, '')
+  .replace(/!\[([^\]]*)\]\([^)]*\)/g, '$1')
+  .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/[\*_`>#-]/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
+const faqQuestions = isFaq ? [...content.matchAll(/<details>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/gi)]
+  .map((match) => ({ question: cleanText(match[1]), answer: cleanText(match[2]) }))
+  .filter(({ question, answer }) => question && answer) : [];
+const schemas = isBlogArchive
+  ? [websiteSchema, { ...blogSchema, url: pageUrl, name: pageTitle, description: pageDescription }, ...(breadcrumbSchema ? [breadcrumbSchema] : [])]
+  : !entry
+    ? [websiteSchema]
+    : isFaq
+       ? [websiteSchema, faqPageSchema(pageUrl, faqQuestions), ...videoSchemas]
+       : isPost
+         ? [
+             blogPostingSchema({ url: pageUrl, title: metadata.title, description, image: hasThumbnail ? thumbnailUrl : undefined, date: metadata.date }),
+             websiteSchema,
+             ...(breadcrumbSchema ? [breadcrumbSchema] : []),
+             ...videoSchemas
+           ]
+         : [websiteSchema, webPageSchema({ url: pageUrl, name: metadata.title, description, image: thumbnailUrl }), ...(breadcrumbSchema ? [breadcrumbSchema] : []), ...videoSchemas];
 ---
-<SiteLayout title={metadata.title || 'Page not found'} {description} canonical={entry ? metadata.canonical : '/'}
-  pathname={entry ? Astro.url.pathname : '/404'} noindex={!entry || !!cms?.isPreview || metadata.noindex === 'true'} isPost={!!entry}
+<SiteLayout title={pageTitle} description={pageDescription} canonical={isBlogArchive ? archiveCanonical : entry ? metadata.canonical : '/'}
+  pathname={isBlogArchive || entry ? Astro.url.pathname : '/404'} noindex={!entry && !isBlogArchive || !!cms?.isPreview || metadata.noindex === 'true'} {isPost}
   thumbnail={isFaq ? '/preview.jpeg' : thumbnail} {schemas}>
-  {!entry && <meta slot="head" http-equiv="refresh" content="5;https://mailcheck.co/" />}
-  {entry ? (
+  {isBlogArchive && <Fragment slot="head">
+    <link rel="prev" href={`https://mailcheck.co${blogPageNumber === 2 ? '/blog' : `/blog/${blogPageNumber - 1}`}`} />
+    {blogPageNumber < blogPageData!.totalPages && <link rel="next" href={`https://mailcheck.co/blog/${blogPageNumber + 1}`} />}
+  </Fragment>}
+  {!entry && !isBlogArchive && <meta slot="head" http-equiv="refresh" content="5;https://mailcheck.co/" />}
+  {isBlogArchive ? (
+    <Blog posts={blogPageData!.posts} page={blogPageNumber} totalPages={blogPageData!.totalPages} />
+  ) : entry ? (
     isFaq ? (
       <FaqLayout client:load title={metadata.title} canonical={metadata.canonical} noindex={metadata.noindex === 'true'}>
         {segments.map((segment) =>
@@ -140,7 +218,7 @@ const schemas = isFaq || !entry ? [websiteSchema] : [
         )}
       </FaqLayout>
     ) : (
-      <ArticleLayout title={metadata.title} description={metadata.description} canonical={metadata.canonical} noindex={metadata.noindex === 'true'} pathname={Astro.url.pathname}>
+      <ArticleLayout title={metadata.title} description={metadata.description} canonical={metadata.canonical} noindex={metadata.noindex === 'true'} pathname={Astro.url.pathname} breadcrumbs={breadcrumbs} relatedPosts={relatedPosts}>
         {segments.map((segment) =>
           segment.kind === 'video' ? (
             <Video client:visible id={segment.id} title={segment.title} />
@@ -151,7 +229,7 @@ const schemas = isFaq || !entry ? [websiteSchema] : [
       </ArticleLayout>
     )
   ) : <NotFound />}
-  {entry && (slug.startsWith('blog/') || slug === 'affiliates') && <ContactUs client:load />}
+  {(isBlogArchive || (entry && (slug.startsWith('blog/') || slug === 'affiliates'))) && <ContactUs client:visible />}
 </SiteLayout>
 <style is:global>
   .services-table { width: 100%; border-collapse: collapse; color: #ffffff; }
