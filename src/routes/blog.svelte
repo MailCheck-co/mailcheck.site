@@ -8,9 +8,12 @@
   import type { IPost } from '$utils/types';
 
   export let posts: IPost[] = [];
+  export let page = 1;
+  export let totalPages = 1;
   const title = 'Blog about effective email checking & communication';
   const description =
     'Blog about building effective b2b and b2c email communications: guides and templates, trends & best practices, tips & tricks';
+  const pageTitle = page === 1 ? title : `${title} — page ${page}`;
 </script>
 
 <Seo {description} {title} schemas={[websiteSchema, { ...blogSchema, name: title, description }]} />
@@ -18,18 +21,39 @@
 <main class="blog-page" id="blog">
   <div class="container">
     <div class="content-block">
-      <h1 class="title">{title}</h1>
+      <h1 class="title">{pageTitle}</h1>
 
       {#each posts as post (post.slug)}
-        <a class="article-title" href="blog/{post.slug}">{post.title}</a>
+        <a class="article-title" href="/blog/{post.slug}">{post.title}</a>
         <p class="article-date">Date: {post.date}</p>
         <p class="article-snippet">
           {post.snippet}
-          <a sveltekit:prefetch class="text-thin text-thin-link" href="blog/{post.slug}"
+          <a sveltekit:prefetch class="text-thin text-thin-link" href="/blog/{post.slug}"
             >[Read more...]</a
           >
         </p>
       {/each}
+
+      {#if totalPages > 1}
+        <nav class="pagination" aria-label="Blog pagination">
+          {#if page > 1}
+            <a class="pagination-link" href={page === 2 ? '/blog' : `/blog/${page - 1}`} rel="prev">← Newer posts</a>
+          {/if}
+          <div class="pagination-pages">
+            {#each Array(totalPages) as _, index}
+              {@const pageNumber = index + 1}
+              {#if pageNumber === page}
+                <span class="pagination-current" aria-current="page">{pageNumber}</span>
+              {:else}
+                <a class="pagination-link" href={pageNumber === 1 ? '/blog' : `/blog/${pageNumber}`}>{pageNumber}</a>
+              {/if}
+            {/each}
+          </div>
+          {#if page < totalPages}
+            <a class="pagination-link" href={`/blog/${page + 1}`} rel="next">Older posts →</a>
+          {/if}
+        </nav>
+      {/if}
     </div>
   </div>
 </main>
@@ -43,6 +67,39 @@
 
     .container {
       .content-block {
+        .pagination {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: var(--size-16);
+          margin-top: var(--size-32);
+          padding-top: var(--size-20);
+          border-top: 1px solid rgb(255 255 255 / 20%);
+
+          &-pages {
+            display: flex;
+            gap: var(--size-12);
+            align-items: center;
+          }
+
+          &-link,
+          &-current {
+            color: var(--color-link);
+            font-size: var(--size-16);
+            text-decoration: none;
+          }
+
+          &-link:hover {
+            text-decoration: underline;
+          }
+
+          &-current {
+            color: var(--primary-white);
+            font-weight: var(--weight-500);
+          }
+        }
+
         .article {
           &-title {
             width: 100%;

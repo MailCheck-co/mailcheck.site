@@ -35,12 +35,13 @@ describe('Public-site migration regressions', { skip: !base }, () => {
     assert.equal(rss.response.status, 200);
     assert.equal(sitemap.response.status, 200);
     assert.equal((rss.html.match(/<item>/g) || []).length, 50);
-    assert.equal((sitemap.html.match(/<loc>/g) || []).length, 66);
+    assert.equal((sitemap.html.match(/<loc>/g) || []).length, 70);
     assert.ok(rss.html.includes('/blog/mailcheck-helped'));
     assert.ok(sitemap.html.includes('/blog/mailcheck-helped'));
+    assert.ok(sitemap.html.includes('/blog/2'));
   });
 
-  for (const path of ['/', '/blog', '/videos', '/faq', '/make-com-integration',
+  for (const path of ['/', '/blog', '/blog/2', '/videos', '/faq', '/make-com-integration',
     '/blog/mailcheck-helped', '/case-studies/king-billy-4x-deposit-conversion']) {
     it(`renders SEO in the initial document and valid image URLs: ${path}`, async () => {
       const { response, html } = await fetchPage(path);
@@ -57,6 +58,22 @@ describe('Public-site migration regressions', { skip: !base }, () => {
       assert.equal(response.headers.get('x-frame-options'), 'SAMEORIGIN');
     });
   }
+
+  it('paginates the blog from newest to oldest posts', async () => {
+    const first = await fetchPage('/blog');
+    const second = await fetchPage('/blog/2');
+    assert.equal(first.response.status, 200);
+    assert.equal(second.response.status, 200);
+    assert.match(first.html, /rel="next" href="https:\/\/mailcheck\.co\/blog\/2"/);
+    assert.match(second.html, /rel="prev" href="https:\/\/mailcheck\.co\/blog"/);
+    assert.match(second.html, /Older Mailcheck articles/);
+    assert.match(second.html, /aria-current="page">2</);
+    const last = await fetchPage('/blog/5');
+    const beyond = await fetchPage('/blog/6');
+    assert.equal(last.response.status, 200);
+    assert.doesNotMatch(last.html, /rel="next"/);
+    assert.equal(beyond.response.status, 404);
+  });
 
   it('renders all FAQ summaries as interactive HTML, not code blocks', async () => {
     const { html } = await fetchPage('/faq');

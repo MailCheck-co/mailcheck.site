@@ -1,6 +1,8 @@
 import slugFromBlogPath from '$utils/slugFromBlogPath';
 import { getCmsPosts, usesCms } from '../../server/cms-content';
 
+export const BLOG_PAGE_SIZE = 10;
+
 export const getPublishedPosts = async () => {
   if (usesCms()) return getCmsPosts();
   const modules = import.meta.glob('./*/index.md');
@@ -27,3 +29,12 @@ export const getPublishedPosts = async () => {
       : -1;
   });
 };
+
+export function paginatePosts<T>(posts: T[], page: number) {
+  const totalPages = Math.max(1, Math.ceil(posts.length / BLOG_PAGE_SIZE));
+  const start = (page - 1) * BLOG_PAGE_SIZE;
+  return {
+    posts: posts.slice(start, start + BLOG_PAGE_SIZE),
+    totalPages
+  };
+}

@@ -3,18 +3,27 @@ import SiteLayout from '../components/SiteLayout.astro';
 import ArticleLayout from '../lib/MdLayouts/ArticleLayout.svelte';
 import FaqLayout from '../lib/MdLayouts/FaqLayout/FaqLayout.svelte';
 import ContactUs from '../lib/ContactUs/index.svelte';
+import Blog from '../routes/blog.svelte';
 import Video from '../lib/Video/video.svelte';
 import { marked, Renderer } from 'marked';
 import GithubSlugger from 'github-slugger';
-import { websiteSchema, webPageSchema, blogPostingSchema, faqPageSchema } from '../utils/json-ld';
+import { websiteSchema, blogSchema, webPageSchema, blogPostingSchema, faqPageSchema } from '../utils/json-ld';
 import NotFound from '../routes/404.svelte';
 import { getCmsDocument, usesCms } from '../server/cms-content';
 import { sanitizeMarkdown } from '../server/markdown-security';
 import mediaManifest from '../../seed/media.json';
 import { imageUrl } from '../server/media-images';
 import data from '../utils/site-data';
+import { getPublishedPosts, paginatePosts } from '../routes/blog/_blog';
+import type { IPost } from '$utils/types';
 
 const slug = Astro.params.slug ?? '';
+if (slug === 'blog/1') return Astro.redirect('/blog', 301);
+const blogPageNumber = Number(slug.match(/^blog\/([2-9]\d*)$/)?.[1] ?? NaN);
+const blogPageData = Number.isInteger(blogPageNumber)
+  ? paginatePosts((await getPublishedPosts()) as IPost[], blogPageNumber)
+  : null;
+const isBlogArchive = !!blogPageData && blogPageNumber <= blogPageData.totalPages;
 const source = import.meta.glob('../routes/**/*.md', { eager: true, query: '?raw', import: 'default' });
 const assetSource = import.meta.glob('../routes/**/*.{png,jpg,jpeg,webp,gif,svg}', {
   eager: true,
@@ -31,9 +40,9 @@ const legacyEntry = Object.entries(source).find(([path]) => {
   return normalized === slug;
 });
 
-const cms = usesCms() ? await getCmsDocument(slug) : null;
-const entry = cms ? cms.document : legacyEntry;
-if (!entry) Astro.response.status = 404;
+const cms = isBlogArchive ? null : usesCms() ? await getCmsDocument(slug) : null;
+const entry = isBlogArchive ? null : cms ? cms.document : legacyEntry;
+if (!entry && !isBlogArchive) Astro.response.status = 404;
 if (cms?.isPreview) {
   Astro.response.headers.set('Cache-Control', 'private, no-store');
   Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
@@ -118,9 +127,14 @@ if (remainingMarkdown.trim()) {
 const isFaq = slug === 'faq';
 const isPost = !!entry && slug.startsWith('blog/');
 const description = !entry ? 'Page not found: 404' : isFaq ? metadata.title : metadata.description;
+const archiveTitle = `Blog about effective email checking & communication — page ${blogPageNumber}`;
+const archiveDescription = 'Older Mailcheck articles about email checking, deliverability, marketing, and effective communication.';
+const pageTitle = isBlogArchive ? archiveTitle : metadata.title || 'Page not found';
+const pageDescription = isBlogArchive ? archiveDescription : description;
+const archiveCanonical = isBlogArchive ? `/blog/${blogPageNumber}` : '';
 const thumbnailPath = metadata.thumbnailImg?.split('?')[0].replace(/^\.\//, '');
 const thumbnail = /^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg ?? '') ? metadata.thumbnailImg : assetSource[`${entryDirectory}/${thumbnailPath}`] || 'https://mailcheck.co/favicon.png';
-const pageUrl = new URL(metadata.canonical || Astro.url.pathname, data.siteUrl).href;
+const pageUrl = new URL(archiveCanonical || metadata.canonical || Astro.url.pathname, data.siteUrl).href;
 const thumbnailUrl = new URL(thumbnail, data.siteUrl).href;
 const cleanText = (value: string) => value
   .replace(/<script[\s\S]*?<\/script>/gi, '')
@@ -134,16 +148,22 @@ const cleanText = (value: string) => value
 const faqQuestions = isFaq ? [...content.matchAll(/<details>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/gi)]
   .map((match) => ({ question: cleanText(match[1]), answer: cleanText(match[2]) }))
   .filter(({ question, answer }) => question && answer) : [];
-const schemas = !entry ? [websiteSchema] : isFaq ? [websiteSchema, faqPageSchema(pageUrl, faqQuestions)] : isPost ? [
+const schemas = isBlogArchive ? [websiteSchema, { ...blogSchema, url: pageUrl, name: pageTitle, description: pageDescription }] : !entry ? [websiteSchema] : isFaq ? [websiteSchema, faqPageSchema(pageUrl, faqQuestions)] : isPost ? [
   blogPostingSchema({ url: pageUrl, title: metadata.title, description, image: thumbnail === 'https://mailcheck.co/favicon.png' ? undefined : thumbnailUrl, date: metadata.date }),
   websiteSchema
 ] : [websiteSchema, webPageSchema({ url: pageUrl, name: metadata.title, description, image: thumbnailUrl })];
 ---
-<SiteLayout title={metadata.title || 'Page not found'} {description} canonical={entry ? metadata.canonical : '/'}
-  pathname={entry ? Astro.url.pathname : '/404'} noindex={!entry || !!cms?.isPreview || metadata.noindex === 'true'} {isPost}
+<SiteLayout title={pageTitle} description={pageDescription} canonical={isBlogArchive ? archiveCanonical : entry ? metadata.canonical : '/'}
+  pathname={isBlogArchive || entry ? Astro.url.pathname : '/404'} noindex={!entry && !isBlogArchive || !!cms?.isPreview || metadata.noindex === 'true'} {isPost}
   thumbnail={isFaq ? '/preview.jpeg' : thumbnail} {schemas}>
-  {!entry && <meta slot="head" http-equiv="refresh" content="5;https://mailcheck.co/" />}
-  {entry ? (
+  {isBlogArchive && <Fragment slot="head">
+    <link rel="prev" href={`https://mailcheck.co${blogPageNumber === 2 ? '/blog' : `/blog/${blogPageNumber - 1}`}`} />
+    {blogPageNumber < blogPageData!.totalPages && <link rel="next" href={`https://mailcheck.co/blog/${blogPageNumber + 1}`} />}
+  </Fragment>}
+  {!entry && !isBlogArchive && <meta slot="head" http-equiv="refresh" content="5;https://mailcheck.co/" />}
+  {isBlogArchive ? (
+    <Blog client:load posts={blogPageData!.posts} page={blogPageNumber} totalPages={blogPageData!.totalPages} />
+  ) : entry ? (
     isFaq ? (
       <FaqLayout client:load title={metadata.title} canonical={metadata.canonical} noindex={metadata.noindex === 'true'}>
         {segments.map((segment) =>
