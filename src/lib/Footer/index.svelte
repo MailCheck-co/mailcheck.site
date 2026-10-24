@@ -242,6 +242,7 @@
 <style lang="scss">
   .footer {
     position: relative;
+    margin-top: auto;
     padding-top: 6.25rem;
     background: var(--footer-gradient);
   }
