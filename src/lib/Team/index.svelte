@@ -1,9 +1,13 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
+  import ResponsiveImage from '$lib/ResponsiveImage/index.svelte';
   import SerhiiAva from './serhii-karetnyk.png?w=200&format=webp;png;avif&srcset';
   import KonstantinAva from '$lib/Team/konstantin-nosov.png?w=200&format=webp;png;avif&srcset';
   import FaraAva from '$lib/Team/fara-muhammadiev.png?w=200&format=webp;png;avif&srcset';
+  import serhiiOriginal from './serhii-karetnyk.png?url';
+  import konstantinOriginal from './konstantin-nosov.png?url';
+  import faraOriginal from './fara-muhammadiev.png?url';
 
   let intersecting: boolean;
 </script>
@@ -26,7 +30,16 @@
       <div class="team-members">
         <div class="team-member csm">
           <div class="team-member-avatar">
-            <img srcset={SerhiiAva} alt="csm" class="avatar" />
+            <ResponsiveImage
+              src={serhiiOriginal}
+              srcset={SerhiiAva}
+              width="200"
+              height="200"
+              alt="csm"
+              class="avatar"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="team-member-info">
             <p class="team-member-name">Serhii Karetnyk</p>
@@ -35,7 +48,16 @@
         </div>
         <div class="team-member cto">
           <div class="team-member-avatar">
-            <img srcset={KonstantinAva} alt="cto" class="avatar" />
+            <ResponsiveImage
+              src={konstantinOriginal}
+              srcset={KonstantinAva}
+              width="200"
+              height="200"
+              alt="cto"
+              class="avatar"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="team-member-info">
             <p class="team-member-name">Konstantin Nosov</p>
@@ -44,7 +66,16 @@
         </div>
         <div class="team-member own">
           <div class="team-member-avatar">
-            <img srcset={FaraAva} alt="own" class="avatar" />
+            <ResponsiveImage
+              src={faraOriginal}
+              srcset={FaraAva}
+              width="200"
+              height="200"
+              alt="own"
+              class="avatar"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="team-member-info">
             <p class="team-member-name">Fara Muhammadiev</p>
@@ -87,7 +118,7 @@
       border-radius: var(--size-10);
       transform: rotate(45deg);
 
-      .avatar {
+      :global(.avatar) {
         position: absolute;
         top: 0;
         left: 0;

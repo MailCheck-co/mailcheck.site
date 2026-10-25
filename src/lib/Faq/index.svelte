@@ -1,7 +1,9 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
+  import ResponsiveImage from '$lib/ResponsiveImage/index.svelte';
   import filterImg from '$lib/MdLayouts/FaqLayout/filter.png?format=webp;png;avif&srcset';
+  import filterOriginal from '$lib/MdLayouts/FaqLayout/filter.png?url';
 
   let intersecting: boolean;
 </script>
@@ -160,7 +162,16 @@
 
     <a href="/faq" title="faq" class="btn btn-start">Learn More</a>
 
-    <img class="filter-img" srcset={filterImg} width="444" height="568" alt="filter" />
+    <ResponsiveImage
+      class="filter-img"
+      src={filterOriginal}
+      srcset={filterImg}
+      width="444"
+      height="568"
+      alt="filter"
+      loading="lazy"
+      decoding="async"
+    />
   </div>
 </section>
 
@@ -197,7 +208,7 @@
       width: 48%;
     }
 
-    .filter-img {
+    :global(.filter-img) {
       position: absolute;
       top: 75px;
       right: 0;
@@ -353,7 +364,7 @@
         margin: 0 0 var(--size-50) 0;
       }
 
-      .filter-img {
+      :global(.filter-img) {
         transform: none;
       }
 
@@ -377,7 +388,7 @@
         width: 100%;
       }
 
-      .filter-img {
+      :global(.filter-img) {
         width: 50%;
         min-width: 10%;
         max-width: 70%;

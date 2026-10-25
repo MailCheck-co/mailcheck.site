@@ -2,8 +2,10 @@
   import { onMount } from 'svelte';
   import Seo from '$lib/Seo/index.svelte';
   import ContactUs from '$lib/ContactUs/index.svelte';
+  import ResponsiveImage from '$lib/ResponsiveImage/index.svelte';
   import { websiteSchema } from '$utils/json-ld';
   import filterImg from './filter.png?format=webp;png;avif&srcset';
+  import filterOriginal from './filter.png?url';
   import Accordion from './accordion';
 
   export let title = '';
@@ -27,7 +29,16 @@
   <div class="accordion">
     <slot />
   </div>
-  <img class="filter-img" srcset={filterImg} width="444" height="568" alt="filter" />
+  <ResponsiveImage
+    class="filter-img"
+    src={filterOriginal}
+    srcset={filterImg}
+    width="444"
+    height="568"
+    alt="filter"
+    loading="lazy"
+    decoding="async"
+  />
 </div>
 
 <ContactUs />
@@ -159,7 +170,7 @@
     word-break: break-word;
   }
 
-  .filter-img {
+  .wrapper-questions :global(.filter-img) {
     position: absolute;
     top: 6rem;
     right: 0;
@@ -201,7 +212,7 @@
       top: 4px;
     }
 
-    .filter-img {
+    .wrapper-questions :global(.filter-img) {
       order: -1;
       width: 50%;
       min-width: 10%;

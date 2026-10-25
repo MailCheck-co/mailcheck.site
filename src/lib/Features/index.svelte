@@ -1,7 +1,9 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
+  import ResponsiveImage from '$lib/ResponsiveImage/index.svelte';
   import mailFloat from '$lib/Features/mail-float.png?format=webp;png;avif&srcset';
+  import mailFloatOriginal from './mail-float.png?url';
 
   let intersecting: boolean;
 </script>
@@ -22,7 +24,16 @@
     <p class="section-subtitle">We improve our service everyday</p>
   </div>
   <div class="welcome-flex">
-    <img class="mail" srcset={mailFloat} width="765" height="575" alt="mail" />
+    <ResponsiveImage
+      class="mail"
+      src={mailFloatOriginal}
+      srcset={mailFloat}
+      width="765"
+      height="575"
+      alt="mail"
+      loading="lazy"
+      decoding="async"
+    />
     <ul class="welcome-items">
       <li>
         <span class="digits">01</span>
@@ -74,7 +85,7 @@
     margin: 4.69rem auto 0;
   }
 
-  .mail {
+  .welcome-flex :global(.mail) {
     min-width: 10%;
     margin: var(--size-20) 0;
   }
@@ -108,7 +119,7 @@
   }
 
   @media only screen and (max-width: 1024px) {
-    .mail {
+    .welcome-flex :global(.mail) {
       position: absolute;
       transform: translateY(-15%);
       opacity: 0.3;
@@ -147,7 +158,7 @@
       line-height: var(--size-28);
     }
 
-    .mail {
+    .welcome-flex :global(.mail) {
       top: 0;
       right: -10%;
       z-index: -1;
