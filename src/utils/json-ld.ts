@@ -104,13 +104,19 @@ export function webPageSchema({
   url,
   name,
   description,
-  image
+  image,
+  datePublished,
+  dateModified
 }: {
   url: string;
   name: string;
   description: string;
   image?: string;
+  datePublished?: string;
+  dateModified?: string;
 }): WithContext<WebPage> {
+  const published = toIsoDate(datePublished);
+  const modified = toIsoDate(dateModified) ?? published;
   return {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -118,7 +124,9 @@ export function webPageSchema({
     url,
     name,
     description,
-    ...(image ? { image } : {})
+    ...(image ? { image } : {}),
+    ...(published ? { datePublished: published } : {}),
+    ...(modified ? { dateModified: modified } : {})
   };
 }
 
@@ -169,15 +177,18 @@ export function blogPostingSchema({
   title,
   description,
   image,
-  date
+  date,
+  dateModified
 }: {
   url: string;
   title: string;
   description: string;
   image?: string;
   date?: string;
+  dateModified?: string;
 }): WithContext<BlogPosting> {
-  const isoDate = toIsoDate(date);
+  const published = toIsoDate(date);
+  const modified = toIsoDate(dateModified) ?? published;
   return {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -187,7 +198,8 @@ export function blogPostingSchema({
     headline: title,
     description,
     ...(image ? { image } : {}),
-    ...(isoDate ? { datePublished: isoDate, dateModified: isoDate } : {}),
+    ...(published ? { datePublished: published } : {}),
+    ...(modified ? { dateModified: modified } : {}),
     articleSection: 'Emails, Antispam, Marketing, Subscriptions, Mailings',
     author: publisher,
     publisher,

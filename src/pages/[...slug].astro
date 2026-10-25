@@ -101,29 +101,34 @@ const renderMarkdown = (value: string) => sanitizeMarkdown(expandVariables(Strin
   value.replace(/^ {4}(?=<\/?summary[\s>])/gm, ''),
   { renderer }
 ))));
-const segments: ContentSegment[] = [];
-const videoPattern = /<Video\s+id=\{(\w+)\}\s+title=\{(\w+)\}\s*\/>/g;
-let cursor = 0;
-for (const match of content.matchAll(videoPattern)) {
-  const index = match.index ?? 0;
-  const markdown = content.slice(cursor, index).replace(/<script[\s\S]*?<\/script>/gi, '');
-  if (markdown.trim()) {
-    segments.push({ kind: 'markdown', html: renderMarkdown(resolveMarkdownImages(markdown)) });
+const contentWithoutScript = content.replace(/<script[\s\S]*?<\/script>/gi, '');
+const buildSegments = (value: string): ContentSegment[] => {
+  const result: ContentSegment[] = [];
+  const videoPattern = /<Video\s+id=\{(\w+)\}\s+title=\{(\w+)\}\s*\/>/g;
+  let cursor = 0;
+  for (const match of value.matchAll(videoPattern)) {
+    const index = match.index ?? 0;
+    const markdown = value.slice(cursor, index);
+    if (markdown.trim()) {
+      result.push({ kind: 'markdown', html: renderMarkdown(resolveMarkdownImages(markdown)) });
+    }
+    result.push({
+      kind: 'video',
+      id: scriptValues[match[1]] ?? '',
+      title: scriptValues[match[2]] ?? ''
+    });
+    cursor = index + match[0].length;
   }
-  segments.push({
-    kind: 'video',
-    id: scriptValues[match[1]] ?? '',
-    title: scriptValues[match[2]] ?? ''
-  });
-  cursor = index + match[0].length;
-}
-const remainingMarkdown = content.slice(cursor).replace(/<script[\s\S]*?<\/script>/gi, '');
-if (remainingMarkdown.trim()) {
-  segments.push({
-    kind: 'markdown',
-    html: renderMarkdown(resolveMarkdownImages(remainingMarkdown))
-  });
-}
+  const remainingMarkdown = value.slice(cursor);
+  if (remainingMarkdown.trim()) {
+    result.push({
+      kind: 'markdown',
+      html: renderMarkdown(resolveMarkdownImages(remainingMarkdown))
+    });
+  }
+  return result;
+};
+const segments = buildSegments(contentWithoutScript);
 const isFaq = slug === 'faq';
 const isPost = !!entry && slug.startsWith('blog/');
 const isIntegration = !!entry && slug.endsWith('-integration');
@@ -160,6 +165,8 @@ const hasThumbnail = Boolean(!thumbnailIsSvg && metadata.thumbnailImg && (/^(?:h
 const thumbnail = hasThumbnail ? (/^(?:https?:\/\/|\/)/.test(metadata.thumbnailImg) ? metadata.thumbnailImg : thumbnailAsset) : '/preview.jpeg';
 const pageUrl = new URL(archiveCanonical || metadata.canonical || Astro.url.pathname, data.siteUrl).href;
 const thumbnailUrl = new URL(thumbnail, data.siteUrl).href;
+const publishedDate = cms?.document?.publishedAt ?? cms?.document?.createdAt ?? metadata.date;
+const modifiedDate = cms?.document?.updatedAt ?? publishedDate;
 const breadcrumbSchema = breadcrumbs.length ? breadcrumbListSchema(breadcrumbs) : null;
 const videoSchemas = segments.filter((segment): segment is Extract<ContentSegment, { kind: 'video' }> => segment.kind === 'video')
   .map((video) => videoObjectSchema({
@@ -178,9 +185,26 @@ const cleanText = (value: string) => value
   .replace(/[\*_`>#-]/g, ' ')
   .replace(/\s+/g, ' ')
   .trim();
-const faqQuestions = isFaq ? [...content.matchAll(/<details>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/gi)]
-  .map((match) => ({ question: cleanText(match[1]), answer: cleanText(match[2]) }))
-  .filter(({ question, answer }) => question && answer) : [];
+type FaqColumn = {
+  className: string;
+  items: Array<{ summary: string; summaryHtml: string; segments: ContentSegment[] }>;
+};
+const faqColumns: FaqColumn[] = isFaq
+  ? [...contentWithoutScript.matchAll(/<div class="accordion-column(?:\s+([^"]+))?">([\s\S]*?)<\/div>/gi)].map((column) => ({
+      className: column[1]?.trim() ?? '',
+      items: [...column[2].matchAll(/<details>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/gi)].map((item) => ({
+        summary: cleanText(item[1]),
+        summaryHtml: sanitizeMarkdown(expandVariables(String(marked.parseInline(item[1].trim(), { renderer })))),
+        segments: buildSegments(item[2])
+      }))
+    }))
+  : [];
+const faqQuestions = faqColumns.flatMap((column) => column.items
+  .map(({ summary, segments: itemSegments }) => ({
+    question: summary,
+    answer: cleanText(itemSegments.map((segment) => segment.kind === 'markdown' ? segment.html : '').join(''))
+  }))
+  .filter(({ question, answer }) => question && answer));
 const schemas = isBlogArchive
   ? [websiteSchema, { ...blogSchema, url: pageUrl, name: pageTitle, description: pageDescription }, ...(breadcrumbSchema ? [breadcrumbSchema] : [])]
   : !entry
@@ -189,12 +213,31 @@ const schemas = isBlogArchive
        ? [websiteSchema, faqPageSchema(pageUrl, faqQuestions), ...videoSchemas]
        : isPost
          ? [
-             blogPostingSchema({ url: pageUrl, title: metadata.title, description, image: hasThumbnail ? thumbnailUrl : undefined, date: metadata.date }),
+             blogPostingSchema({
+               url: pageUrl,
+               title: metadata.title,
+               description,
+               image: hasThumbnail ? thumbnailUrl : undefined,
+               date: publishedDate,
+               dateModified: modifiedDate
+             }),
              websiteSchema,
              ...(breadcrumbSchema ? [breadcrumbSchema] : []),
              ...videoSchemas
            ]
-         : [websiteSchema, webPageSchema({ url: pageUrl, name: metadata.title, description, image: thumbnailUrl }), ...(breadcrumbSchema ? [breadcrumbSchema] : []), ...videoSchemas];
+         : [
+             websiteSchema,
+             webPageSchema({
+               url: pageUrl,
+               name: metadata.title,
+               description,
+               image: thumbnailUrl,
+               datePublished: publishedDate,
+               dateModified: modifiedDate
+             }),
+             ...(breadcrumbSchema ? [breadcrumbSchema] : []),
+             ...videoSchemas
+           ];
 ---
 <SiteLayout title={pageTitle} description={pageDescription} canonical={isBlogArchive ? archiveCanonical : entry ? metadata.canonical : '/'}
   pathname={isBlogArchive || entry ? Astro.url.pathname : '/404'} noindex={!entry && !isBlogArchive || !!cms?.isPreview || metadata.noindex === 'true'} {isPost}
@@ -209,13 +252,22 @@ const schemas = isBlogArchive
   ) : entry ? (
     isFaq ? (
       <FaqLayout client:load title={metadata.title} canonical={metadata.canonical} noindex={metadata.noindex === 'true'}>
-        {segments.map((segment) =>
-          segment.kind === 'video' ? (
-            <Video client:visible id={segment.id} title={segment.title} />
-          ) : (
-            <Fragment set:html={segment.html} />
-          )
-        )}
+        {faqColumns.map((column) => (
+          <div class={`accordion-column ${column.className}`}>
+            {column.items.map((item) => (
+              <details>
+                <summary set:html={item.summaryHtml} />
+                {item.segments.map((segment) =>
+                  segment.kind === 'video' ? (
+                    <Video client:visible id={segment.id} title={segment.title} />
+                  ) : (
+                    <Fragment set:html={segment.html} />
+                  )
+                )}
+              </details>
+            ))}
+          </div>
+        ))}
       </FaqLayout>
     ) : (
       <ArticleLayout title={metadata.title} description={metadata.description} canonical={metadata.canonical} noindex={metadata.noindex === 'true'} pathname={Astro.url.pathname} breadcrumbs={breadcrumbs} relatedPosts={relatedPosts}>

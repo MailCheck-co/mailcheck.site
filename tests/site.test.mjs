@@ -41,8 +41,13 @@ describe('Public-site migration regressions', { skip: !base }, () => {
     assert.ok(rss.html.includes('/blog/mailcheck-helped'));
     assert.ok(sitemap.html.includes('/blog/mailcheck-helped'));
     assert.ok(sitemap.html.includes('/blog/2'));
+    assert.match(
+      sitemap.html,
+      /<url><loc>https:\/\/mailcheck\.co\/blog\/mailcheck-helped<\/loc><lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/
+    );
+    assert.ok((sitemap.html.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g) || []).length > 0);
     assert.match(rss.html, /<pubDate>\w{3}, \d{2} \w{3} \d{4} \d{2}:\d{2}:\d{2} GMT<\/pubDate>/);
-    assert.equal(rss.response.headers.get('cache-control'), 'max-age=0, s-maxage=600');
+    assert.equal(rss.response.headers.get('cache-control'), 'public, max-age=0, must-revalidate');
   });
 
   for (const path of [
@@ -91,6 +96,14 @@ describe('Public-site migration regressions', { skip: !base }, () => {
     const { html } = await fetchPage('/faq');
     assert.equal((html.match(/<summary>/g) || []).length, 37);
     assert.equal((html.match(/<details>/g) || []).length, 37);
+    assert.equal((html.match(/<div class="accordion-column (?:left|right)">/g) || []).length, 2);
+    const videoIslands = [
+      ...html.matchAll(/<astro-island[^>]*component-url="[^"]*video[^"]*"[^>]*client="visible"/g)
+    ];
+    assert.equal(videoIslands.length, 4);
+    for (const { index = 0 } of videoIslands) {
+      assert.ok(html.lastIndexOf('<details>', index) > html.lastIndexOf('</details>', index));
+    }
     assert.doesNotMatch(html, /&lt;summary&gt;/);
   });
 
@@ -151,10 +164,13 @@ describe('Public-site migration regressions', { skip: !base }, () => {
     const guide = await fetchPage('/make-com-integration');
     assert.match(guide.html, /<h1 id="title"><a href="#title">/);
     const post = await fetchPage('/blog/10-abandoned-cart-hacks-that-rise-sales');
-    assert.match(post.html, /property="og:image" content="\/_astro\/abandoned-cart-hacks\.[^"]+"/);
     assert.match(
       post.html,
-      /property="twitter:image" content="\/_astro\/abandoned-cart-hacks\.[^"]+"/
+      /property="og:image" content="https:\/\/mailcheck\.co\/_astro\/abandoned-cart-hacks\.[^"]+"/
+    );
+    assert.match(
+      post.html,
+      /name="twitter:image" content="https:\/\/mailcheck\.co\/_astro\/abandoned-cart-hacks\.[^"]+"/
     );
   });
 
@@ -198,8 +214,9 @@ describe('Public-site migration regressions', { skip: !base }, () => {
   it('keeps promotion pages out of the search index', async () => {
     const { response, html } = await fetchPage('/promo/social-bee');
     assert.equal(response.status, 200);
-    assert.match(html.split('</head>')[0], /<meta name="robots" content="noindex"/);
-    assert.ok(html.includes('rel="canonical" href="https://mailcheck.co/"'));
+    const head = html.split('</head>')[0];
+    assert.match(head, /<meta name="robots" content="noindex"/);
+    assert.doesNotMatch(head, /rel="canonical"/);
   });
 
   it('renders the legacy error page with 404 status and short cache lifetime', async () => {

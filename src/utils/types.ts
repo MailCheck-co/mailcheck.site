@@ -3,6 +3,10 @@ export type IPost = {
   title: string;
   snippet: string;
   date: Date | string;
+  createdAt?: string;
+  updatedAt?: string;
+  publishedAt?: string;
+  noindex?: boolean | string;
   thumbnail: string;
   description?: string;
 };
