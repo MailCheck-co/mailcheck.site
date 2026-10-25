@@ -399,6 +399,11 @@
     width: 100%;
     height: 100%;
     background: url('../Footer/assets/city-transparent.png') no-repeat center 50%;
+    background-image: image-set(
+      url('../Footer/assets/city-transparent.avif') type('image/avif'),
+      url('../Footer/assets/city-transparent.webp') type('image/webp'),
+      url('../Footer/assets/city-transparent.png') type('image/png')
+    );
     background-size: 150% 150%;
 
     &.open {

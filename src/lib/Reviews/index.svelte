@@ -1,11 +1,15 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
+  import ResponsiveImage from '$lib/ResponsiveImage/index.svelte';
   import iconLike from '$lib/Reviews/icon-like-heart.svg?url';
   import iconStar from '$lib/Reviews/icon-star-rating.svg?url';
   import iconProductHunt from '$lib/Reviews/logo-product-hunt.png?format=webp;png;avif&srcset';
   import iconBeta from '$lib/Reviews/logo-beta-list.png?format=webp;png;avif&srcset';
   import iconCapterra from '$lib/Reviews/logo-capterra.png?format=webp;png;avif&srcset';
+  import productHuntOriginal from './logo-product-hunt.png?url';
+  import betaOriginal from './logo-beta-list.png?url';
+  import capterraOriginal from './logo-capterra.png?url';
 
   let intersecting: boolean;
 </script>
@@ -27,10 +31,13 @@
     <div class="section-wrapper sm-left">
       <div class="reviews-list">
         <div class="reviews-item">
-          <img
+          <ResponsiveImage
             width="170"
             height="40"
+            src={productHuntOriginal}
             srcset={iconProductHunt}
+            loading="lazy"
+            decoding="async"
             alt="Product Hunt"
             class="reviews-item-logo"
           />
@@ -50,7 +57,16 @@
           >
         </div>
         <div class="reviews-item">
-          <img width="120" height="40" srcset={iconBeta} alt="BetaList" class="reviews-item-logo" />
+          <ResponsiveImage
+            width="120"
+            height="40"
+            src={betaOriginal}
+            srcset={iconBeta}
+            alt="BetaList"
+            class="reviews-item-logo"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="reviews-item-likes">
             <span class="rating-counter">11</span>
             <img width="25" height="25" src={iconLike} alt="likes" class="reviews-like-icon" />
@@ -64,10 +80,13 @@
           >
         </div>
         <div class="reviews-item">
-          <img
+          <ResponsiveImage
             width="145"
             height="32"
+            src={capterraOriginal}
             srcset={iconCapterra}
+            loading="lazy"
+            decoding="async"
             alt="Capterra"
             class="reviews-item-logo"
           />
@@ -110,7 +129,7 @@
     justify-content: center;
   }
 
-  .reviews-item-logo {
+  .reviews-item :global(.reviews-item-logo) {
     max-width: 100%;
     margin-bottom: var(--size-20);
   }
@@ -172,7 +191,7 @@
       margin-bottom: var(--size-18);
     }
 
-    .reviews-item-logo {
+    .reviews-item :global(.reviews-item-logo) {
       width: 25%;
       margin-right: var(--size-16);
       margin-bottom: 0;

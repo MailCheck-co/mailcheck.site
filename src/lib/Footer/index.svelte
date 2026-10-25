@@ -253,6 +253,11 @@
     width: 100%;
     height: 64rem;
     background: url('assets/city-transparent.png') no-repeat center;
+    background-image: image-set(
+      url('assets/city-transparent.avif') type('image/avif'),
+      url('assets/city-transparent.webp') type('image/webp'),
+      url('assets/city-transparent.png') type('image/png')
+    );
     background-size: cover;
     transform: translateY(-105%);
     opacity: 0.4;

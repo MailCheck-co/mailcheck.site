@@ -26,22 +26,70 @@
   </div>
   <div class="partners-list">
     <div class="partners-list-item">
-      <img width="150" height="60" src={k5Logo} alt="5000 miles" class="partners-logo" />
+      <img
+        width="150"
+        height="60"
+        src={k5Logo}
+        alt="5000 miles"
+        class="partners-logo"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
     <div class="partners-list-item">
-      <img width="150" height="60" src={baglletLogo} alt="Bagllet" class="partners-logo" />
+      <img
+        width="150"
+        height="60"
+        src={baglletLogo}
+        alt="Bagllet"
+        class="partners-logo"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
     <div class="partners-list-item">
-      <img width="150" height="19" src={acellLogo} alt="Acell Mail" class="partners-logo" />
+      <img
+        width="150"
+        height="19"
+        src={acellLogo}
+        alt="Acell Mail"
+        class="partners-logo"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
     <div class="partners-list-item">
-      <img width="150" height="60" src={sammyLogo} alt="Sammy-logo" class="partners-logo" />
+      <img
+        width="150"
+        height="60"
+        src={sammyLogo}
+        alt="Sammy-logo"
+        class="partners-logo"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
     <div class="partners-list-item">
-      <img width="150" height="60" src={zitkaniLogo} alt="Zitkani" class="partners-logo" />
+      <img
+        width="150"
+        height="60"
+        src={zitkaniLogo}
+        alt="Zitkani"
+        class="partners-logo"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
     <div class="partners-list-item">
-      <img width="150" height="60" src={echoLogo} alt="ECHO" class="partners-logo" />
+      <img
+        width="150"
+        height="60"
+        src={echoLogo}
+        alt="ECHO"
+        class="partners-logo"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   </div>
 </section>

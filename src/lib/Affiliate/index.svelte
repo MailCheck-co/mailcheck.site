@@ -1,7 +1,9 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import { inviewOptions } from '$utils/site-data';
-  import imgAffiliate from './invite-friends.jpg?w=500&format=webp;png;avif&srcset';
+  import ResponsiveImage from '$lib/ResponsiveImage/index.svelte';
+  import imgAffiliate from './invite-friends.jpg?w=500&format=webp;jpeg;avif&srcset';
+  import affiliateOriginal from './invite-friends.jpg?url';
 
   let intersecting: boolean;
 </script>
@@ -24,7 +26,16 @@
     <div class="affiliate-block">
       <div class="affiliate-block-inner">
         <div class="affiliate-block-image">
-          <img srcset={imgAffiliate} width="500" class="affiliate-image" alt="Invite friends" />
+          <ResponsiveImage
+            src={affiliateOriginal}
+            srcset={imgAffiliate}
+            width="500"
+            height="333"
+            class="affiliate-image"
+            alt="Invite friends"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
         <div class="affiliate-block-content">
           <p class="section-description">
