@@ -2,7 +2,7 @@ import { env } from 'cloudflare:workers';
 import { getEmDashEntry } from 'emdash';
 import { getLiveCollection } from 'astro:content';
 import { getDb } from 'emdash/runtime';
-import { cmsDocument, publicPost, sortPosts } from './cms-document';
+import { cmsDocument, publicPage, publicPost, sortPosts } from './cms-document';
 
 export const usesCms = () =>
   (env as unknown as Record<string, unknown>).MAILCHECK_CONTENT_SOURCE === 'cms';
@@ -14,7 +14,9 @@ export async function getCmsDocument(route: string) {
   const result = await getEmDashEntry(isPost ? 'posts' : 'pages', slug);
   if (result.error) throw new Error('CMS content is temporarily unavailable');
   return {
-    document: result.entry ? cmsDocument(result.entry.data as unknown as Record<string, unknown>, isPost) : null,
+    document: result.entry
+      ? cmsDocument(result.entry.data as unknown as Record<string, unknown>, isPost)
+      : null,
     isPreview: result.isPreview
   };
 }
@@ -70,8 +72,12 @@ export async function getCmsPostPaths() {
     .map((document) => `/blog/${document.slug}`);
 }
 
-export async function getCmsPagePaths() {
+export async function getCmsPages() {
   return (await getPublishedDocuments('pages'))
     .filter((document) => document.metadata.noindex !== 'true')
-    .map((document) => `/${document.slug}`);
+    .map(publicPage);
+}
+
+export async function getCmsPagePaths() {
+  return (await getCmsPages()).map((page) => `/${page.slug}`);
 }

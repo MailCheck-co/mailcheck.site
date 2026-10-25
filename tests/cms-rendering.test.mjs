@@ -1,9 +1,32 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
+import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
+import { registerHooks } from 'node:module';
+import path from 'node:path';
 import { test } from 'node:test';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { cmsDocument, publicPost, sortPosts, escapeXml } from '../src/server/cms-document.ts';
 import { sanitizeMarkdown } from '../src/server/markdown-security.ts';
+
+registerHooks({
+  resolve(specifier, context, nextResolve) {
+    if (
+      (specifier.startsWith('./') || specifier.startsWith('../')) &&
+      !path.extname(specifier) &&
+      context.parentURL
+    ) {
+      const parentDir = path.dirname(fileURLToPath(context.parentURL));
+      const candidateTs = path.resolve(parentDir, `${specifier}.ts`);
+      if (existsSync(candidateTs)) {
+        return nextResolve(pathToFileURL(candidateTs).href, context);
+      }
+    }
+    return nextResolve(specifier, context);
+  }
+});
+
+const { blogPostingSchema, webPageSchema } = await import('../src/utils/json-ld.ts');
 
 test('CMS projection preserves source image directory, editor fields and safe public JSON', () => {
   const document = cmsDocument(
@@ -15,6 +38,9 @@ test('CMS projection preserves source image directory, editor fields and safe pu
       source_path: 'src/routes/blog/old-slug/index.md',
       legacy_metadata: { private: 'PRIVATE METADATA' },
       legacy_date: '15.06.2023',
+      createdAt: new Date('2023-06-14T12:00:00Z'),
+      updatedAt: new Date('2023-06-15T12:00:00Z'),
+      publishedAt: new Date('2023-06-15T12:00:00Z'),
       noindex: 1
     },
     true
@@ -22,6 +48,9 @@ test('CMS projection preserves source image directory, editor fields and safe pu
   assert.equal(document.directory, '../routes/blog/old-slug');
   assert.equal(document.metadata.title, 'New title');
   assert.equal(document.metadata.noindex, 'true');
+  assert.equal(document.createdAt, '2023-06-14T12:00:00.000Z');
+  assert.equal(document.updatedAt, '2023-06-15T12:00:00.000Z');
+  assert.equal(document.publishedAt, '2023-06-15T12:00:00.000Z');
   assert.equal(
     cmsDocument(
       { slug: 'x', title: 'x', markdown: 'x', noindex: true, seo: { noIndex: false } },
@@ -32,9 +61,33 @@ test('CMS projection preserves source image directory, editor fields and safe pu
   const post = publicPost(document);
   assert.equal(post.slug, 'new-slug');
   assert.equal(post.published, true);
+  assert.equal(post.noindex, 'true');
+  assert.equal(post.createdAt, '2023-06-14T12:00:00.000Z');
   assert.doesNotMatch(JSON.stringify(post), /PRIVATE METADATA|legacy_metadata|markdown/);
   assert.equal(cmsDocument({ slug: '../../etc', title: 'x', markdown: 'x' }, false), null);
   assert.equal(cmsDocument({ slug: 'x', title: '', markdown: 'x' }, false), null);
+});
+
+test('structured data keeps publication and modification dates distinct', () => {
+  const post = blogPostingSchema({
+    url: 'https://mailcheck.co/blog/example',
+    title: 'Example',
+    description: 'Description',
+    date: '2025-10-06T00:00:00.000Z',
+    dateModified: '2026-10-24T21:22:18.343Z'
+  });
+  assert.equal(post.datePublished, '2025-10-06');
+  assert.equal(post.dateModified, '2026-10-24');
+
+  const page = webPageSchema({
+    url: 'https://mailcheck.co/example',
+    name: 'Example',
+    description: 'Description',
+    datePublished: '2025-10-06',
+    dateModified: '2026-10-24'
+  });
+  assert.equal(page.datePublished, '2025-10-06');
+  assert.equal(page.dateModified, '2026-10-24');
 });
 
 test('new CMS documents support absolute uploaded media and dedicated SEO fields', () => {
