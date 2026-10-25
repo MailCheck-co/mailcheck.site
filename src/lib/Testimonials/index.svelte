@@ -87,7 +87,15 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img width="119" height="94" class="slide-logo" src={baglletLogo} alt="Bagllet" />
+              <img
+                width="119"
+                height="94"
+                class="slide-logo"
+                src={baglletLogo}
+                alt="Bagllet"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <p class="slide-text">
               Been using Mailcheck for about 6 months now. Tried other services before but decided
@@ -103,7 +111,15 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img width="94" height="94" class="slide-logo" src={sammyLogo} alt="Sammy Icon" />
+              <img
+                width="94"
+                height="94"
+                class="slide-logo"
+                src={sammyLogo}
+                alt="Sammy Icon"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <p class="slide-text">
               "Probably one of the most comfortable validation services, simple in use.
@@ -114,7 +130,15 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img width="94" height="94" class="slide-logo" src={k5Logo} alt="5000 miles" />
+              <img
+                width="94"
+                height="94"
+                class="slide-logo"
+                src={k5Logo}
+                alt="5000 miles"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <p class="slide-text">
               Name of the brand popped my attention, I decided to try because was planning to launch
@@ -129,7 +153,15 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img width="150" height="88" class="slide-logo" src={zitkaniLogo} alt="Zitkani" />
+              <img
+                width="150"
+                height="88"
+                class="slide-logo"
+                src={zitkaniLogo}
+                alt="Zitkani"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <p class="slide-text">
               The file I have checked have been accepted by MailerLite, thank you! Your service did
@@ -141,7 +173,15 @@
         <li class="testimonial-slide">
           <div class="slider-item">
             <div class="slide-logo-wrapper">
-              <img width="150" height="88" class="slide-logo" src={echoLogo} alt="ECHO" />
+              <img
+                width="150"
+                height="88"
+                class="slide-logo"
+                src={echoLogo}
+                alt="ECHO"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <p class="slide-text">
               So far, the best mail validation service we tried. It doesn’t rely only on mx check
@@ -155,10 +195,10 @@
       </ul>
     </div>
     <div class="testimonials-button testimonials-button-next" on:click={onNext}>
-      <img src={arrowNav} width="20" height="20" alt="right" />
+      <img src={arrowNav} width="20" height="20" alt="right" loading="lazy" decoding="async" />
     </div>
     <div class="testimonials-button testimonials-button-prev" on:click={onPrev}>
-      <img src={arrowNav} width="20" height="20" alt="left" />
+      <img src={arrowNav} width="20" height="20" alt="left" loading="lazy" decoding="async" />
     </div>
   </div>
 </section>
