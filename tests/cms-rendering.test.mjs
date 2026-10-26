@@ -110,6 +110,36 @@ test('video upload dates include a timezone-qualified time', () => {
     pageUrl: 'https://mailcheck.co/videos'
   });
   assert.equal(timestampVideo.uploadDate, '2025-10-06T10:34:56.000Z');
+
+  const timezoneFreeVideo = videoObjectSchema({
+    id: 'example-3',
+    title: 'Example video 3',
+    description: 'Description',
+    date: '2025-10-06T12:34:56',
+    pageUrl: 'https://mailcheck.co/videos'
+  });
+  assert.equal(timezoneFreeVideo.uploadDate, '2025-10-06T12:34:56.000Z');
+
+  assert.equal(
+    videoObjectSchema({
+      id: 'example-4',
+      title: 'Example video 4',
+      description: 'Description',
+      date: '31.02.2024',
+      pageUrl: 'https://mailcheck.co/videos'
+    }).uploadDate,
+    undefined
+  );
+  assert.equal(
+    videoObjectSchema({
+      id: 'example-5',
+      title: 'Example video 5',
+      description: 'Description',
+      date: '2024-02-30',
+      pageUrl: 'https://mailcheck.co/videos'
+    }).uploadDate,
+    undefined
+  );
 });
 
 test('new CMS documents support absolute uploaded media and dedicated SEO fields', () => {
