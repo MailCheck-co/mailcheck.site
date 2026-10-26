@@ -34,6 +34,16 @@ export function toIsoDate(value?: string): string | undefined {
   return Number.isNaN(timestamp) ? undefined : new Date(timestamp).toISOString().slice(0, 10);
 }
 
+export function toIsoDateTime(value?: string): string | undefined {
+  const date = value?.trim();
+  if (!date) return undefined;
+  const legacy = date.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
+  if (legacy) return `${legacy[3]}-${legacy[2]}-${legacy[1]}T00:00:00.000Z`;
+  const calendarDate = date.match(/^(?:\d{1,2} [A-Za-z]+ \d{4}|[A-Za-z]+ \d{1,2}, \d{4})$/);
+  const timestamp = Date.parse(calendarDate ? `${date} 00:00:00 UTC` : date);
+  return Number.isNaN(timestamp) ? undefined : new Date(timestamp).toISOString();
+}
+
 const publisher = {
   '@type': 'Organization' as const,
   '@id': `${data.siteUrl}#organization`,
@@ -156,7 +166,7 @@ export function videoObjectSchema({
   date?: string;
   pageUrl: string;
 }): WithContext<VideoObject> {
-  const isoDate = toIsoDate(date);
+  const isoDate = toIsoDateTime(date);
   const embedUrl = `https://www.youtube.com/embed/${encodeURIComponent(id)}`;
   return {
     '@context': 'https://schema.org',
