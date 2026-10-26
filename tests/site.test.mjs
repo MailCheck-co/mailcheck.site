@@ -143,6 +143,7 @@ describe('Public-site migration regressions', { skip: !base }, () => {
       assert.match(html, /"@type":"VideoObject"/);
       assert.match(html, /"embedUrl":"https:\/\/www\.youtube\.com\/embed\//);
       assert.match(html, /"thumbnailUrl":"https:\/\/i\.ytimg\.com\/vi\/[^\"]+\/hqdefault\.jpg"/);
+      assert.match(html, /"uploadDate":"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z"/);
       assert.match(html, /aria-label="Play video:/);
     }
   });

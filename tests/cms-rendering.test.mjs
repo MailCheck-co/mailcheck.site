@@ -26,7 +26,9 @@ registerHooks({
   }
 });
 
-const { blogPostingSchema, webPageSchema } = await import('../src/utils/json-ld.ts');
+const { blogPostingSchema, videoObjectSchema, webPageSchema } = await import(
+  '../src/utils/json-ld.ts'
+);
 
 test('CMS projection preserves source image directory, editor fields and safe public JSON', () => {
   const document = cmsDocument(
@@ -88,6 +90,56 @@ test('structured data keeps publication and modification dates distinct', () => 
   });
   assert.equal(page.datePublished, '2025-10-06');
   assert.equal(page.dateModified, '2026-10-24');
+});
+
+test('video upload dates include a timezone-qualified time', () => {
+  const video = videoObjectSchema({
+    id: 'example',
+    title: 'Example video',
+    description: 'Description',
+    date: '13 August 2021',
+    pageUrl: 'https://mailcheck.co/videos'
+  });
+  assert.equal(video.uploadDate, '2021-08-13T00:00:00.000Z');
+
+  const timestampVideo = videoObjectSchema({
+    id: 'example-2',
+    title: 'Example video 2',
+    description: 'Description',
+    date: '2025-10-06T12:34:56+02:00',
+    pageUrl: 'https://mailcheck.co/videos'
+  });
+  assert.equal(timestampVideo.uploadDate, '2025-10-06T10:34:56.000Z');
+
+  const timezoneFreeVideo = videoObjectSchema({
+    id: 'example-3',
+    title: 'Example video 3',
+    description: 'Description',
+    date: '2025-10-06T12:34:56',
+    pageUrl: 'https://mailcheck.co/videos'
+  });
+  assert.equal(timezoneFreeVideo.uploadDate, '2025-10-06T12:34:56.000Z');
+
+  assert.equal(
+    videoObjectSchema({
+      id: 'example-4',
+      title: 'Example video 4',
+      description: 'Description',
+      date: '31.02.2024',
+      pageUrl: 'https://mailcheck.co/videos'
+    }).uploadDate,
+    undefined
+  );
+  assert.equal(
+    videoObjectSchema({
+      id: 'example-5',
+      title: 'Example video 5',
+      description: 'Description',
+      date: '2024-02-30',
+      pageUrl: 'https://mailcheck.co/videos'
+    }).uploadDate,
+    undefined
+  );
 });
 
 test('new CMS documents support absolute uploaded media and dedicated SEO fields', () => {
