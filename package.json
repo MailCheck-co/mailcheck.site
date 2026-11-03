@@ -57,7 +57,7 @@
     "svelte-preprocess": "^6.0.3",
     "tslib": "^2.5.0",
     "typescript": "^5.9.3",
-    "wrangler": "^4.151.1"
+    "wrangler": "^4.157.0"
   },
   "type": "module",
   "dependencies": {
